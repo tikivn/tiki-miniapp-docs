@@ -25,6 +25,20 @@ module.exports = {
       'Styles': 1,
       'Components': 2,
       'Patterns': 3,
+      // api
+      'API Overview': 0,
+      'Basic': 1,
+      'Tiki Open APIs': 2,
+      'Network': 3,
+      'Navigator': 4,
+      'Device': 5,
+
+      'Tổng quan về API': 0,
+      'Cơ bản': 1,
+      'Tiki Open APIs': 2,
+      'Network': 3,
+      'Điều hướng': 4,
+      'Thiết bị': 5,
     },
   },
   ...commonConfig 

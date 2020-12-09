@@ -35,14 +35,19 @@ module.exports = {
     'docs/design/comps': pickerGenerator('design'),
     'docs/design/styles': pickerGenerator('design'),
     'docs/design/patterns': pickerGenerator('design'),
-
     // framework
     'docs/framework': pickerGenerator('framework'),
     'docs/framework/config': pickerGenerator('framework'),
-
+    // api
+    'docs/api': pickerGenerator('api'),
+    'docs/api/basic': pickerGenerator('api'),
+    'docs/api/open': pickerGenerator('api'),
+    'docs/api/device': pickerGenerator('api'),
+    'docs/api/interface': pickerGenerator('api'),
+    'docs/api/navigator': pickerGenerator('api'),
+    'docs/api/network': pickerGenerator('api'),
     // others
     'docs/component': pickerGenerator('component'),
-    'docs/api': pickerGenerator('api'),
     'docs/ide': pickerGenerator('ide'),
   },
   plugins: [
