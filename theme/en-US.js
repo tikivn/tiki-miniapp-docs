@@ -3,6 +3,11 @@ module.exports = {
   messages: {
     'app.header.menu.home': 'Home',
     'app.header.menu.getting-started': 'Getting Started',
+    'app.header.menu.framework': 'Framework',
+    'app.header.menu.component': 'Component',
+    'app.header.menu.api': 'API',
+    'app.header.menu.ide': 'Dev Tools',
+    'app.footer.lang': 'Tiếng Việt',
     // 
     'app.header.menu.language': 'Doc',
     'app.header.menu.edit': 'Editor',
@@ -48,7 +53,6 @@ module.exports = {
     'app.footer.fengdie.slogan': 'Mobile web app builder',
     'app.footer.seeconf': 'Seeking Experience & Engineering Conference',
     'app.footer.xcloud': 'Ant Experience Cloud',
-    'app.footer.lang': '中文',
     'app.layout.notification.title': 'Need Github star',
     'app.layout.notification.content': 'We need your support, please click the button to help us increase.',
   },

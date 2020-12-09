@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { IntlProvider } from 'react-intl';
 import { ConfigProvider } from 'antd';
-import zhCN from 'antd/es/locale/zh_CN';
 import { enquireScreen } from 'enquire-js';
 import Animate from 'rc-animate';
 
 import enLocale from '../../en-US';
-import cnLocale from '../../zh-CN';
+import vnLocale from '../../vi-VN';
 import * as utils from '../utils';
 
 import Header from './Header';
 import Footer from './Footer';
+import enUS from '../../en-US';
 
 let isMobile;
 enquireScreen((b) => {
@@ -25,7 +25,7 @@ class Layout extends React.PureComponent {
   constructor(props) {
     super(props);
     const { pathname } = props.location;
-    const appLocale = utils.isZhCN(pathname) ? cnLocale : enLocale;
+    const appLocale = utils.isEnUS(pathname) ? enLocale : vnLocale;
 
     this.state = {
       appLocale,
@@ -53,8 +53,8 @@ class Layout extends React.PureComponent {
     });
     return (
       <IntlProvider locale={appLocale.locale} messages={appLocale.messages}>
-        <ConfigProvider locale={appLocale.locale === 'zh-CN' ? zhCN : null}>
-          <div className={(pathname === '/' || pathname === 'index-cn') ? 'home' : ''}>
+        <ConfigProvider locale={appLocale.locale === 'en-US' ? enUS : null}>
+          <div className={(pathname === '/' || pathname === 'index-en') ? 'home' : ''}>
             <div className="header-placeholder" />
             <Header {...restProps} isMobile={this.state.isMobile} />
             <Animate component="div" transitionName="landing-move">

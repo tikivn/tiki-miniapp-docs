@@ -23,28 +23,27 @@
         }
       }
       var pathname = location.pathname;
-      function isZhCN(pathname) {
-        return /-cn\/?$/.test(pathname);
+      function isEnUS(pathname) {
+        return /-en\/?$/.test(pathname);
       }
-      function getLocalizedPathname(path, zhCN) {
+      function getLocalizedPathname(path, enUS) {
         var pathname = path.startsWith('/') ? path : '/' + path;
-        if (!zhCN) { // to enUS
-          return /\/?index-cn/.test(pathname) ? '/' : pathname.replace('-cn', '');
+        if (!enUS) { // to enUS
+          return /\/?index-en/.test(pathname) ? '/' : pathname.replace('-en', '');
         } else if (pathname === '/') {
-          return '/index-cn';
+          return '/index-en';
         } else if (pathname.endsWith('/')) {
-          return pathname.replace(/\/$/, '-cn/');
+          return pathname.replace(/\/$/, '-en/');
         }
-        return pathname + '-cn';
+        return pathname + '-en';
       }
-      if (isLocalStorageNameSupported() && (pathname === '/' || pathname === '/index-cn')) {
-        var lang = (window.localStorage && localStorage.getItem('locale')) || (navigator.language.toLowerCase() === 'zh-cn' ? 'zh-CN' : 'en-US');
-        // safari is 'zh-cn', while other browser is 'zh-CN';
-        if ((lang === 'zh-CN') !== isZhCN(pathname)) {
-          location.pathname = getLocalizedPathname(pathname, lang === 'zh-CN');
+      if (isLocalStorageNameSupported() && (pathname === '/' || pathname === '/index-en')) {
+        var lang = (window.localStorage && localStorage.getItem('locale')) || 'vi-VN'; //(navigator.language.toLowerCase() === 'en-us' ? 'en-US' : 'vi-VN');
+        if ((lang === 'en-US') !== isEnUS(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, lang === 'en-US');
         }
       }
-      document.documentElement.className += isZhCN(pathname) ? 'zh-cn' : 'en-us';
+      document.documentElement.className += isEnUS(pathname) ? 'en-us' : 'vi-vn';
     })()
   </script>
   <!--[if lte IE 10]>
@@ -83,7 +82,6 @@
   <div id="react-content">
     {{ content | safe }}
   </div>
-  <script src="{{ root }}common.js"></script>
   <script src="{{ root }}index.js"></script>
 </body>
 

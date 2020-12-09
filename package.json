@@ -2,9 +2,10 @@
   "name": "tiki-miniapp-docs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "start": "bisheng start -c ./bisheng.config.js",
+    "build": "bisheng build -c ./bisheng.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

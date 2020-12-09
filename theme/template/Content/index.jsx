@@ -24,7 +24,7 @@ export default collect(async (nextProps) => {
   if (!pageData) {
     throw 404; // eslint-disable-line no-throw-literal
   }
-  const locale = utils.isZhCN(pathname) ? 'zh-CN' : 'en-US';
+  const locale = utils.isEnUS(pathname) ? 'en-US' : 'vi-VN';
   const pageDataPromise = typeof pageData === 'function'
     ? pageData() : (pageData[locale] || pageData.index[locale] || pageData.index)();
   const demosFetcher = nextProps.utils.get(nextProps.data, [...pageDataPath, 'demo']);

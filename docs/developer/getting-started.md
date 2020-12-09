@@ -1,6 +1,6 @@
 ---
 order: 0
 title: 
-  vn-VN: Bắt đầu
+  vi-VN: Bắt đầu
   en-US: Getting Started
 ---

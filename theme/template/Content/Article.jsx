@@ -1,10 +1,10 @@
 import React from 'react';
-import { FormattedMessage, injectIntl } from 'react-intl';
+import { /* FormattedMessage, */ injectIntl } from 'react-intl';
 import DocumentTitle from 'react-document-title';
 import { getChildren } from 'jsonml.js/lib/utils';
 import { Anchor } from 'antd';
 import delegate from 'delegate';
-import EditButton from './EditButton';
+// import EditButton from './EditButton';
 import { ping } from '../utils';
 
 class Article extends React.PureComponent {
@@ -52,7 +52,7 @@ class Article extends React.PureComponent {
       ['ul', { className: 'toc' }].concat(getChildren(content.toc))
     ));
     return (
-      <DocumentTitle title={`${title[locale] || title} - Ant Design Landing`}>
+      <DocumentTitle title={`${title[locale] || title} - Tiki MiniApp`}>
         <article className="markdown" ref={(node) => { this.node = node; }}>
           <h1>
             {title[locale] || title}
@@ -64,13 +64,13 @@ class Article extends React.PureComponent {
                   </span>
                 )
             }
-            <EditButton
+            {/* <EditButton
               title={<FormattedMessage id="app.content.edit-page" />}
               filename={
                 filename.indexOf('scaffold/src/components') >= 0
                   ? 'xxx' : filename
               }
-            />
+            /> */}
           </h1>
           {
             !description ? null

@@ -11,16 +11,15 @@ module.exports = {
   themeConfig: {
     root: '/',
     categoryOrder: {
-      介绍: 0,
-      设计指引: 1,
-      编辑器教程: 2,
-      使用教程: 3,
-      实践案例: 4,
-      设计资源: 5,
-      Introduce: 0,
-      Guide: 1,
-      'Edit-help': 2,
-      Tutorial: 3,
+      // developer
+      'Bắt đầu': 0,
+      'Hướng dẫn nhà phát triển': 1,
+      'Ví dụ mẫu': 2,
+      'Khái niệm': 3,
+      'Getting Started': 0,
+      'MiniApp Development Guide': 1,
+      'Quick Example': 2,
+      'Terms': 3,
     },
   },
   ...commonConfig 

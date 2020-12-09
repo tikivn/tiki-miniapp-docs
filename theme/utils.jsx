@@ -1,7 +1,7 @@
 import React from 'react';
 import deepEql from 'deep-eql';
 // import tempData from './templates/template/element/template.config';
-import { isZhCN, getLocalizedPathname } from './template/utils';
+import { isEnUS, getLocalizedPathname } from './template/utils';
 
 const tempData = {};
 
@@ -56,7 +56,6 @@ function mergeDataToChild(newData, _data, useDelete) {
   const data = _data;
   Object.keys(newData).forEach((key) => {
     if (typeof newData[key] === 'object') {
-      // 数组直接用 newData 的;
       if (Array.isArray(newData[key])) {
         data[key] = newData[key];
         return;
@@ -104,7 +103,7 @@ export function getNewHref(port, hash, remHash, $path = '', setLocal = true) {
   child = isLocalMode || !child ? '' : `/${child}`;
   let path = '';
   if (setLocal) {
-    path = getLocalizedPathname($path, isZhCN(location.pathname));
+    path = getLocalizedPathname($path, isEnUS(location.pathname));
   }
   const href = `${protocol}//${winLocation.hostname}${isLocalMode ? `:${port}` : ''}${child}${path}${newHash}`;
   return href;
@@ -188,13 +187,11 @@ export function objectEqual(obj1, obj2) {
   if (!obj1 || !obj2 || getEnumerableKeys(obj1).length !== getEnumerableKeys(obj2).length) {
     return false;
   }
-  // animation 写在标签上的进行判断是否相等， 判断每个参数有没有 function;
   let equalBool = true;
   const setEqualBool = ($a, $b) => {
     const objA = getEnumerableKeys($a).length > getEnumerableKeys($b).length ? $a : $b;
     const objB = getEnumerableKeys($a).length > getEnumerableKeys($b).length ? $b : $a;
     getEnumerableKeys(objA).forEach((key) => {
-      // 如果前面有参数匹配不相同则直接返回；
       if (!equalBool) {
         return;
       }

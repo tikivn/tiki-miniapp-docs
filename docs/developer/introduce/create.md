@@ -1,10 +1,11 @@
 ---
 order: 0
+section: 'developer'
 category:
-  vn-VN: Hướng dẫn nhà phát triển 
+  vi-VN: Hướng dẫn nhà phát triển 
   en-US: MiniApp Development Guide
 title: 
-  vn-VN: Tạo Mini App của bạn
+  vi-VN: Tạo Mini App của bạn
   en-US: Create your Mini App
 ---
 

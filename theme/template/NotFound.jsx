@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'bisheng/router';
-// import * as utils from './utils';
 
 export default function NotFound() {
   return (
@@ -8,8 +7,8 @@ export default function NotFound() {
       <section>
         <h1>404</h1>
         <p>
-          你要找的页面不存在
-          <Link to="dsf">返回首页</Link>
+          Sorry, we couldn't find that page ...
+          <Link to="/">Back to home</Link>
         </p>
       </section>
       <style

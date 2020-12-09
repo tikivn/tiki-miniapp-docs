@@ -15,22 +15,22 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-    notification.open({
-      placement: 'bottomLeft',
-      duration: 10000,
-      message: this.props.intl.formatMessage({ id: 'app.layout.notification.title' }),
-      description: (
-        <div>
-          {this.props.intl.formatMessage({ id: 'app.layout.notification.content' })}
-          <GitHubButton
-            type="stargazers"
-            namespace="ant-design"
-            repo="ant-design-landing"
-            style={{ display: 'inline-block', verticalAlign: 'middle', marginLeft: 8 }}
-          />
-        </div>
-      ),
-    });
+    // notification.open({
+    //   placement: 'bottomLeft',
+    //   duration: 10000,
+    //   message: this.props.intl.formatMessage({ id: 'app.layout.notification.title' }),
+    //   description: (
+    //     <div>
+    //       {this.props.intl.formatMessage({ id: 'app.layout.notification.content' })}
+    //       <GitHubButton
+    //         type="stargazers"
+    //         namespace="ant-design"
+    //         repo="ant-design-landing"
+    //         style={{ display: 'inline-block', verticalAlign: 'middle', marginLeft: 8 }}
+    //       />
+    //     </div>
+    //   ),
+    // });
   }
 
   handleLangChange = () => {
@@ -39,31 +39,51 @@ class Header extends React.Component {
     const currentHref = window.location.href.substr(currentProtocol.length);
 
     if (utils.isLocalStorageNameSupported()) {
-      localStorage.setItem('locale', utils.isZhCN(pathname) ? 'en-US' : 'zh-CN');
+      localStorage.setItem('locale', utils.isEnUS(pathname) ? 'vi-VN' : 'en-US');
     }
 
     window.location.href = currentProtocol + currentHref.replace(
       window.location.pathname,
-      utils.getLocalizedPathname(pathname, !utils.isZhCN(pathname)),
+      utils.getLocalizedPathname(pathname, !utils.isEnUS(pathname)),
     );
   }
 
   getMenuToRender = (lang) => {
     const { isMobile, location, intl } = this.props;
-    const isZhCN = intl.locale === 'zh-CN';
+    const isEnUS = intl.locale === 'en-US';
     const menuMode = isMobile ? 'inline' : 'horizontal';
-    const module = location.pathname.replace(/(^\/|\/$)/g, '').split('/')[0];// .slice(0, -1).join('/');
+    const module = location.pathname.replace(/(^\/|\/$)/g, '').split('/').slice(0, 2).join('/');
     const activeMenuItem = (module.match('index') && 'home') || module;
     return (
       <Menu mode={menuMode} selectedKeys={[activeMenuItem]} id="nav" key="nav">
         <Menu.Item key="home">
-          <Link to={utils.getLocalizedPathname('/', isZhCN)}>
+          <Link to={utils.getLocalizedPathname('/', isEnUS)}>
             <FormattedMessage id="app.header.menu.home" />
           </Link>
         </Menu.Item>
-        <Menu.Item key="Getting Started">
-          <Link to={utils.getLocalizedPathname('/docs/getting-started', isZhCN)}>
+        <Menu.Item key="docs/developer">
+          <Link to={utils.getLocalizedPathname('/docs/developer/getting-started', isEnUS)}>
             <FormattedMessage id="app.header.menu.getting-started" />
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="docs/framework">
+          <Link to={utils.getLocalizedPathname('/docs/framework/overview', isEnUS)}>
+            <FormattedMessage id="app.header.menu.framework" />
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="docs/component">
+          <Link to={utils.getLocalizedPathname('/docs/component/overview', isEnUS)}>
+            <FormattedMessage id="app.header.menu.component" />
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="docs/api">
+          <Link to={utils.getLocalizedPathname('/docs/api/overview', isEnUS)}>
+            <FormattedMessage id="app.header.menu.api" />
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="docs/ide">
+          <Link to={utils.getLocalizedPathname('/docs/ide/overview', isEnUS)}>
+            <FormattedMessage id="app.header.menu.ide" />
           </Link>
         </Menu.Item>
         {
@@ -81,7 +101,7 @@ class Header extends React.Component {
     const { isMobile, intl } = this.props;
     const lang = (<FormattedMessage id="app.footer.lang" />);
     const menu = this.getMenuToRender(lang);
-    const isZhCN = intl.locale === 'zh-CN';
+    const isEnUs = intl.locale === 'en-US';
     return (
       <div id="header" className="header page-wrapper">
         {isMobile && (
@@ -91,7 +111,7 @@ class Header extends React.Component {
         )}
         <Row className="page">
           <Col md={6} sm={24}>
-            <Link className="logo" to={utils.getLocalizedPathname('/', isZhCN)}>
+            <Link className="logo" to={utils.getLocalizedPathname('/', isEnUs)}>
               <img alt="logo" src="https://gw.alipayobjects.com/zos/rmsportal/SVDdpZEbAlWBFuRGIIIL.svg" />
               <span>
                 LANDING
@@ -104,7 +124,7 @@ class Header extends React.Component {
                 <div className="menu">
                   {menu}
                   <a
-                    href="https://github.com/ant-design/ant-design-landing"
+                    href="https://github.com/tikivn/miniapp"
                     alt="git"
                     target="_blank"
                     className="gitbtn"

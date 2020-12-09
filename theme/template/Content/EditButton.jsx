@@ -5,7 +5,7 @@ import { EditOutlined } from '@ant-design/icons';
 export default function EditButton({
   title,
   filename,
-  sourcePath = 'https://github.com/ant-design/ant-design-landing/edit/master/',
+  sourcePath = 'https://github.com/tikivn/tiki-miniapp-docs',
 }) {
   return (
     <Tooltip title={title}>

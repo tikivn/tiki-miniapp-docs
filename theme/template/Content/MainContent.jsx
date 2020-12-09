@@ -28,12 +28,12 @@ function getModuleData(props) {
   const moduleName = pathname.split('/').filter((item) => item).slice(0, -1).join('/');
 
   const moduleData = props.picked[moduleName];
-  const excludedSuffix = utils.isZhCN(props.location.pathname) ? 'en-US.md' : 'zh-CN.md';
+  const excludedSuffix = utils.isEnUS(props.location.pathname) ? 'vi-VN.md' : 'en-US.md';
   return moduleData.filter(({ meta }) => !meta.filename.endsWith(excludedSuffix));
 }
 
 function fileNameToPath(filename) {
-  const snippets = filename.replace(/(\/index)?((\.zh-CN)|(\.en-US))?\.md$/i, '').split('/');
+  const snippets = filename.replace(/(\/index)?((\.vi-VN)|(\.en-US))?\.md$/i, '').split('/');
   return snippets[snippets.length - 1];
 }
 
@@ -48,7 +48,7 @@ function getCurrentModule(pathname) {
 function getSideBarOpenKeys(props, prevModule) {
   const pathname = props.location.pathname;
   const currentModule = getCurrentModule(pathname);
-  const locale = utils.isZhCN(pathname) ? 'zh-CN' : 'en-US';
+  const locale = utils.isEnUS(pathname) ? 'en-US' : 'vi-VN';
   if (prevModule !== currentModule) {
     const moduleData = getModuleData(props);
     const shouldOpenKeys = utils.getMenuItems(
@@ -136,10 +136,10 @@ class MainContent extends React.PureComponent {
       </span>,
     ];
     const disabled = item.disabled;
-    const url = item.filename.replace(/(\/index)?((\.zh-CN)|(\.en-US))?\.md$/i, '').replace('scaffold/src/', '');
+    const url = item.filename.replace(/(\/index)?((\.vi-VN)|(\.en-US))?\.md$/i, '').replace('scaffold/src/', '');
     const child = !item.link ? (
       <Link
-        to={utils.getLocalizedPathname(/^components/.test(url) ? `${url}/` : url, locale === 'zh-CN')}
+        to={utils.getLocalizedPathname(/^components/.test(url) ? `${url}/` : url, locale === 'en-US')}
         disabled={disabled}
       >
         {text}
@@ -173,33 +173,35 @@ class MainContent extends React.PureComponent {
       locale,
       themeConfig,
     );
-    return menuItems.map((menuItem) => {
-      if (menuItem.children) {
-        return (
-          <SubMenu title={(
-            <h4>
-              {menuItem.title}
-            </h4>
-          )}
-            key={menuItem.title}
-          >
-            {menuItem.children.map((child) => {
-              if (child.type === 'type') {
-                return (
-                  <Menu.ItemGroup title={child.title} key={child.title}>
-                    {child.children.sort((a, b) => {
-                      return a.title.charCodeAt(0) - b.title.charCodeAt(0);
-                    }).map((leaf) => this.generateMenuItem(false, leaf))}
-                  </Menu.ItemGroup>
-                );
-              }
-              return this.generateMenuItem(false, child);
-            })}
-          </SubMenu>
-        );
-      }
-      return this.generateMenuItem(true, menuItem);
-    });
+    console.log(menuItems);
+    return menuItems
+      .map((menuItem) => {
+        if (menuItem.children) {
+          return (
+            <SubMenu title={(
+              <h4>
+                {menuItem.title}
+              </h4>
+            )}
+              key={menuItem.title}
+            >
+              {menuItem.children.map((child) => {
+                if (child.type === 'type') {
+                  return (
+                    <Menu.ItemGroup title={child.title} key={child.title}>
+                      {child.children.sort((a, b) => {
+                        return a.title.charCodeAt(0) - b.title.charCodeAt(0);
+                      }).map((leaf) => this.generateMenuItem(false, leaf))}
+                    </Menu.ItemGroup>
+                  );
+                }
+                return this.generateMenuItem(false, child);
+              })}
+            </SubMenu>
+          );
+        }
+        return this.generateMenuItem(true, menuItem);
+      });
   }
 
   flattenMenu(menu) {

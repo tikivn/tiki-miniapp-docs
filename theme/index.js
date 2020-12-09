@@ -25,8 +25,13 @@ module.exports = {
   },
   pick: {
     docs: pickerGenerator(),
-    'docs/introduce': pickerGenerator(),
-    'docs/quick-example': pickerGenerator(),
+    'docs/developer': pickerGenerator('developer'),
+    'docs/developer/introduce': pickerGenerator('developer'),
+    'docs/developer/quick-example': pickerGenerator('developer'),
+    'docs/component': pickerGenerator('component'),
+    'docs/api': pickerGenerator('api'),
+    'docs/framework': pickerGenerator('framework'),
+    'docs/ide': pickerGenerator('ide'),
   },
   plugins: [
     'bisheng-plugin-description',
@@ -40,15 +45,15 @@ module.exports = {
     indexRoute: { component: homeTmpl },
     childRoutes: [
       {
-        path: 'index-cn',
+        path: 'index-en',
         component: homeTmpl,
       },
       {
-        path: '/docs/:children',
+        path: '/docs/:module/:children',
         component: contentTmpl,
       },
       {
-        path: '/docs/:file/:children',
+        path: '/docs/:module/:file/:children',
         component: contentTmpl,
       },
     ],

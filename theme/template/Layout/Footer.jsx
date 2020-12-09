@@ -6,7 +6,7 @@ import * as utils from '../utils';
 class Footer extends React.PureComponent {
   render() {
     const { pathname } = this.props.location;
-    const isZhCN = utils.isZhCN(pathname);
+    const isEnUS = utils.isEnUS(pathname);
     return (
       <footer id="footer" className="dark">
         <div className="footer-wrap">
@@ -101,7 +101,7 @@ class Footer extends React.PureComponent {
                   <a
                     target="_blank"
                     rel="noopener"
-                    href={`http://ant.design/docs/spec/work-with-us${isZhCN ? '-cn' : ''}`}
+                    href={`http://ant.design/docs/spec/work-with-us${isEnUS ? '-en' : ''}`}
                   >
                     <FormattedMessage id="app.footer.work-with-us" />
                   </a>

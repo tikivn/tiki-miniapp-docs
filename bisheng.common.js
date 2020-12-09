@@ -63,13 +63,13 @@ function alertBabelConfig(rules) {
 module.exports = {
   filePathMapper(filePath) {
     if (filePath === '/index.html') {
-      return ['/index.html', '/index-cn.html'];
+      return ['/index.html', '/index-en.html'];
     }
     if (filePath.endsWith('/index.html')) {
-      return [filePath, filePath.replace(/\/index\.html$/, '-cn/index.html')];
+      return [filePath, filePath.replace(/\/index\.html$/, '-en/index.html')];
     }
-    if (filePath !== '/404.html' && filePath !== '/index-cn.html') {
-      return [filePath, filePath.replace(/\.html$/, '-cn.html')];
+    if (filePath !== '/404.html' && filePath !== '/index-en.html') {
+      return [filePath, filePath.replace(/\.html$/, '-en.html')];
     }
     return filePath;
   },

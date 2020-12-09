@@ -43,33 +43,28 @@ export function getMenuItems(moduleData, locale, themeConfig) {
     return i;
   }).sort(sortFn);
 }
-export function isZhCN(pathname) {
-  return /-cn\/?$/.test(pathname);
+export function isEnUS(pathname) {
+  return /-en\/?$/.test(pathname);
 }
 
-export function getLocalizedPathname(path, zhCN) {
+export function getLocalizedPathname(path, enUS) {
   const pathname = path.startsWith('/') ? path : `/${path}`;
-  if (!zhCN) { // to enUS
-    if (/^\/?index-cn/.test(pathname)) {
+  if (!enUS) { // to enUS
+    if (/^\/?index-en/.test(pathname)) {
       return '/';
     }
-    return /\/?index-cn/.test(pathname) ? pathname.replace('/index-cn', '') : pathname.replace('-cn', '');
+    return /\/?index-en/.test(pathname) ? pathname.replace('/index-en', '') : pathname.replace('-en', '');
   } if (pathname === '/') {
-    return '/index-cn';
+    return '/index-en';
   } if (pathname.endsWith('/')) {
-    return pathname.replace(/\/$/, '-cn/');
+    return pathname.replace(/\/$/, '-en/');
   }
-  return `${pathname}-cn`;
+  return `${pathname}-en`;
 }
 
 export function ping(callback) {
   // eslint-disable-next-line
-  const url =
-    'https://private-a'
-    + 'lipay'
-    + 'objects.alip'
-    + 'ay.com/alip'
-    + 'ay-rmsdeploy-image/rmsportal/RKuAiriJqrUhyqW.png';
+  const url = 'https://salt.tikicdn.com/ts/upload/d4/ca/89/28d85ed27396c1beebad8a3fec18bfe4.png';
   const img = new Image();
   let done;
   const finish = (status) => {
