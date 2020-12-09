@@ -29,15 +29,20 @@ module.exports = {
     'docs/developer': pickerGenerator('developer'),
     'docs/developer/introduce': pickerGenerator('developer'),
     'docs/developer/quick-example': pickerGenerator('developer'),
+
     // design
     'docs/design': pickerGenerator('design'),
     'docs/design/comps': pickerGenerator('design'),
     'docs/design/styles': pickerGenerator('design'),
     'docs/design/patterns': pickerGenerator('design'),
+
+    // framework
+    'docs/framework': pickerGenerator('framework'),
+    'docs/framework/config': pickerGenerator('framework'),
+
     // others
     'docs/component': pickerGenerator('component'),
     'docs/api': pickerGenerator('api'),
-    'docs/framework': pickerGenerator('framework'),
     'docs/ide': pickerGenerator('ide'),
   },
   plugins: [

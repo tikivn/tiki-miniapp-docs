@@ -72,6 +72,7 @@ class Article extends React.PureComponent {
               }
             /> */}
           </h1>
+          <hr />
           {
             !description ? null
               : utils.toReactComponent(
