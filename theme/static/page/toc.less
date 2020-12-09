@@ -1,0 +1,43 @@
+.toc-affix {
+  position: absolute;
+  top: 8px;
+  right: -174px;
+  .ant-affix {
+    background: #fff;
+  }
+  .ant-anchor {
+    font-size: 12px;
+    margin: 16px 0;
+    border-left: 1px solid #ebedf0;
+    list-style: none;
+    a {
+      padding-left: 16px;
+      display: block;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: @site-text-color;
+      width: 110px;
+    }
+    .ant-anchor-link-active a {
+      border-color: @primary-color;
+      color: @primary-color;
+    }
+    .ant-anchor-ink:before {
+      display: none;
+    }
+    .ant-anchor-link-title {
+      padding: 0;
+    }
+  }
+}
+
+.toc-affix-bottom {
+  position: absolute;
+  bottom: 88px;
+  right: 20px;
+  .ant-affix {
+    background: #fff;
+  }
+}

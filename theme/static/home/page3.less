@@ -1,0 +1,47 @@
+.page3 {
+  .page {
+    h1 {
+      margin: 128px auto 64px;
+    }
+  }
+  .rc-autoresponsive {
+    transition: height .3s @ease-out;
+  }
+  & &-content {
+    min-height: 175px;
+    &-header {
+      margin-bottom: 64px;
+      width: 100%;
+      min-height: 32px;
+      text-align: center;
+      .ant-radio-button-wrapper {
+        transition: border-color .3s @ease-out, box-shadow .3s @ease-out, color .3s @ease-out;
+        border-radius: 4px;
+        margin: 0 8px 8px;
+        width: 100px;
+        text-align: center;
+        border: 1px solid @site-home-line;
+        &:before {
+          display: none;
+        }
+      }
+      .ant-radio-button-wrapper-checked {
+        background: @primary-color;
+        border-color: @primary-color;
+        color: #fff;
+      }
+    }
+    &-item {
+      border: 1px solid @site-home-line;
+      border-radius: 4px;
+      overflow: hidden;
+      &.queue-anim-entering,
+      &.queue-anim-leaving {
+        transition: none !important;
+      }
+      img {
+        display: block;
+      }
+    }
+  }
+}

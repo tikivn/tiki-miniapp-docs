@@ -1,0 +1,108 @@
+.page2 {
+  background: #edf1f5;
+  .item-wrapper {
+    position: relative;
+    border-radius: 4px;
+    max-width: 356px;
+    margin: 0 auto 48px;
+    overflow: hidden;
+    background: #fff;
+    .mouseHover(rgb(163, 177, 191), 0, 12px, 24px);
+    box-shadow: 0 8px 24px rgba(163, 177, 191, 0.35);
+    .img-wrapper {
+      height: 410px;
+      overflow: hidden;
+      .img {
+        width: 100%;
+        height: 410px;
+        background-size: cover;
+        background-position: center top;
+      }
+      .ant-spin {
+        height: 410px;
+        max-height: 410px;
+      }
+    }
+    p,
+    .handle {
+      line-height: 48px;
+      font-size: 14px;
+      height: 48px;
+      margin: 0;
+      font-weight: 700;
+    }
+    p {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background: fade(#fff, 75);
+      transition: transform .3s @ease-out;
+    }
+    .handle {
+      background: @primary-color;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      transform: translateY(100%);
+      transition: transform .3s @ease-out;
+      a {
+        color: #fff;
+        .anticon {
+          margin-right: 8px;
+        }
+      }
+    }
+    &:hover {
+      /* .img {
+        animation: ImgAnim 2s @ease-in-out infinite alternate forwards;
+      } */
+      p {
+        transform: translateY(-100%);
+      }
+      .handle {
+        transform: translateY(0%);
+      }
+    }
+  }
+  .page2-content {
+    &-wrapper {
+      min-height: 514px;
+      position: relative;
+      .pagination {
+        display: flex;
+        justify-content: center;
+        margin: 24px auto;
+        width: 100%;
+      }
+      .tween-group {
+        transition: height .45s @ease-in-out;
+        >.tween-one-entering,
+        >.tween-one-leaving {
+          position: absolute;
+          width: ~"calc(100% + 48px)";
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+  .bg {
+    width: 1401px;
+    height: 1843px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -700px;
+    svg {
+      overflow: initial;
+    }
+  }
+}
+
+/* @keyframes ImgAnim {
+  to {
+    background-position-y: 100%;
+  }
+} */

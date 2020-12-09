@@ -1,0 +1,117 @@
+.page1 {
+  .page1-content {
+    min-height: 266px;
+  }
+  &-item {
+    text-align: center;
+    &-link {
+      display: block;
+      width: 180px;
+      margin: auto;
+      &:focus {
+        text-decoration: none;
+      }
+    }
+    &:nth-child(1) {
+      .page1-item-img {
+        box-shadow: 0 16px 32px rgba(166, 55, 112, 0.1);
+        &:hover {
+          box-shadow: 0 20px 36px rgba(166, 55, 112, 0.3);
+        }
+      }
+      .point-wrapper i {
+        background: #eb2f96;
+        border-color: #eb2f96;
+      }
+    }
+    &:nth-child(2) {
+      .page1-item-img {
+        box-shadow: 0 16px 32px rgba(191, 188, 21, 0.1);
+        &:hover {
+          box-shadow: 0 20px 36px rgba(191, 188, 21, 0.3);
+        }
+      }
+      .point-wrapper i {
+        background: #fadb14;
+        border-color: #fadb14;
+      }
+    }
+    &:nth-child(3) {
+      .page1-item-img {
+        box-shadow: 0 16px 32px rgba(73, 101, 166, 0.1);
+        &:hover {
+          box-shadow: 0 20px 36px rgba(73, 101, 166, 0.3);
+        }
+      }
+      .point-wrapper i {
+        background: #2f54eb;
+        border-color: #2f54eb;
+      }
+    }
+    &-img {
+      width: 180px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      background: #fff;
+      position: relative;
+      z-index: 1;
+      transition: box-shadow .3s @ease-out, transform .3s @ease-out;
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+    &-title {
+      margin-top: 56px;
+      font-size: 20px;
+      color: #0d1a26;
+    }
+    p {
+      color: #697b8c;
+      margin-top: 8px;
+    }
+  }
+  .point-wrapper {
+    position: absolute;
+    width: 0;
+    left: 50%;
+    top: 0;
+    z-index: 0;
+    .point-0 {
+      width: 4px;
+      height: 4px;
+    }
+    .point-2 {
+      width: 10px;
+      height: 10px;
+    }
+    .point-ring {
+      width: 12px;
+      height: 12px;
+      border-style: solid;
+      border-width: 1px;
+      background: transparent !important;
+    }
+    .point-ring-0 {
+      width: 4px;
+      height: 4px;
+    }
+    .point-1 {
+      width: 12px;
+      height: 12px;
+    }
+    .point-3 {
+      width: 21px;
+      height: 21px;
+    }
+    i {
+      display: inline-block;
+      border-radius: 100%;
+      position: absolute;
+      opacity: 0;
+      transform: translate(0, 30px);
+    }
+  }
+}
