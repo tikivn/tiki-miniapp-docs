@@ -173,7 +173,6 @@ class MainContent extends React.PureComponent {
       locale,
       themeConfig,
     );
-    console.log(menuItems);
     return menuItems
       .map((menuItem) => {
         if (menuItem.children) {

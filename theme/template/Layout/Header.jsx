@@ -86,6 +86,11 @@ class Header extends React.Component {
             <FormattedMessage id="app.header.menu.ide" />
           </Link>
         </Menu.Item>
+        <Menu.Item key="docs/design">
+          <Link to={utils.getLocalizedPathname('/docs/design/overview', isEnUS)}>
+            <FormattedMessage id="app.header.menu.design" />
+          </Link>
+        </Menu.Item>
         {
           isMobile && (
             <Menu.Item key="lang" onClick={this.handleLangChange}>
@@ -114,7 +119,7 @@ class Header extends React.Component {
             <Link className="logo" to={utils.getLocalizedPathname('/', isEnUs)}>
               <img alt="logo" src="https://gw.alipayobjects.com/zos/rmsportal/SVDdpZEbAlWBFuRGIIIL.svg" />
               <span>
-                LANDING
+                Tiki MiniApp
               </span>
             </Link>
           </Col>
@@ -123,14 +128,6 @@ class Header extends React.Component {
               <Col md={18} sm={0}>
                 <div className="menu">
                   {menu}
-                  <a
-                    href="https://github.com/tikivn/miniapp"
-                    alt="git"
-                    target="_blank"
-                    className="gitbtn"
-                  >
-                    Github
-                  </a>
                   <a className="gitbtn" onClick={this.handleLangChange}>
                     {lang}
                   </a>

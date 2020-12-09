@@ -7,6 +7,7 @@ module.exports = {
     'app.header.menu.component': 'Component',
     'app.header.menu.api': 'API',
     'app.header.menu.ide': 'Dev Tools',
+    'app.header.menu.design': 'Thiết kế',
     'app.footer.lang': 'Tiếng Việt',
     // 
     'app.header.menu.language': 'Doc',

@@ -20,6 +20,11 @@ module.exports = {
       'MiniApp Development Guide': 1,
       'Quick Example': 2,
       'Terms': 3,
+      // design
+      'Tổng quan về thiết kế': 0,
+      'Styles': 1,
+      'Components': 2,
+      'Patterns': 3,
     },
   },
   ...commonConfig 
