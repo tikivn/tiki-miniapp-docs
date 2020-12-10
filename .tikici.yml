@@ -1,5 +1,7 @@
 version: '2'
-config: {  }
+config:
+  slack_notify: true
+  slack_channel: 'tiki-miniapp-docs-ci'
 jobs:
   build_docker:
     steps:
