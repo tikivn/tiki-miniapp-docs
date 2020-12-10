@@ -11,20 +11,18 @@ jobs:
     steps:
       - deploy_dev:
           cluster: dev
-          namespace: marketplace
+          namespace: social-commerce
           workload: tiki-miniapp-docs
           spinnaker_pipeline: generic-v2
           deployment_config: dev
   deploy_prod:
     steps:
       - deploy_production:
-          cluster: k8s-marketplace-prod
+          cluster: k8s-social-commerce-prod
           namespace: default
           workload: tiki-miniapp-docs
           spinnaker_pipeline: generic-v2
           deployment_config: prod
-environment:
-  BUILD_IMAGE: 'maven:3.6-jdk-11'
 workflows:
   jenkins_pipeline:
     jobs:
@@ -33,7 +31,7 @@ workflows:
             branches:
               only:
                 - develop
-                - main
+                - master
       - publish_docker:
           requires:
             - build_docker
@@ -41,7 +39,7 @@ workflows:
             branches:
               only:
                 - develop
-                - main
+                - master
       - deploy_dev:
           requires:
             - publish_docker
@@ -55,7 +53,7 @@ workflows:
           filters:
             branches:
               only:
-                - main
+                - master
 deployment_config:
   dev:
     ingress:
@@ -73,3 +71,7 @@ deployment_config:
             - path: /
               port: '80'
     replicaCount: 1
+    resource:
+      requests:
+        memory: 512Mi
+        cpu: 500m
