@@ -15,7 +15,7 @@ function alertTheme(rules) {
             sourceMap: true,
             javascriptEnabled: true,
             modifyVars: {
-              '@primary-color': '#2F54EB',
+              '@primary-color': '#1B6BFF',
               '@text-color': '#314659',
             },
           };
@@ -27,7 +27,7 @@ function alertTheme(rules) {
             options: {
               sourceMap: true,
               modifyVars: {
-                '@primary-color': '#2F54EB',
+                '@primary-color': '#1B6BFF',
                 '@text-color': '#314659',
               },
             },

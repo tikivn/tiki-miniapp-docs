@@ -140,6 +140,7 @@
 }
 
 .markdown > table {
+  table-layout: auto;
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
@@ -157,8 +158,9 @@
 
 .markdown > table th,
 .markdown > table td {
+  width: 10%;
   border: 1px solid @site-border-color-split;
-  padding: 16px 24px;
+  padding: 8px 16px;
   text-align: left;
 }
 
@@ -227,16 +229,16 @@
   line-height: @line-height-base;
   td:first-child {
     font-weight: 500;
-    width: 20%;
+    width: 10%;
     font-family: "Lucida Console", Consolas, Menlo, Courier, monospace;
   }
   td:nth-child(3) {
-    width: 22%;
+    width: 10%;
     font-size: 12px;
     font-family: "Lucida Console", Consolas, Menlo, Courier, monospace;
   }
   td:last-child {
-    width: 13%;
+    width: 50%;
     font-size: 12px;
     font-family: "Lucida Console", Consolas, Menlo, Courier, monospace;
   }

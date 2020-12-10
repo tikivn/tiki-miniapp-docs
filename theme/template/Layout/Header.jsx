@@ -117,7 +117,7 @@ class Header extends React.Component {
         <Row className="page">
           <Col md={6} sm={24}>
             <Link className="logo" to={utils.getLocalizedPathname('/', isEnUs)}>
-              <img alt="logo" src="https://gw.alipayobjects.com/zos/rmsportal/SVDdpZEbAlWBFuRGIIIL.svg" />
+              <img alt="logo" src="https://salt.tikicdn.com/ts/upload/1a/ed/25/3bda057a9a3b096c2208965a3ffcf272.png" />
               <span>
                 Tiki MiniApp
               </span>

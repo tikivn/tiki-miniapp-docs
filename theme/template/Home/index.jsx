@@ -13,10 +13,9 @@ function Home(props) {
     <DocumentTitle title={`Tiki MiniApp - ${props.intl.formatMessage({ id: 'app.home.slogan' })}`}>
       <div className="home-wrapper">
         <Banner isMobile={props.isMobile} />
-        <Page1 isMobile={props.isMobile} />
+        {/* <Page1 isMobile={props.isMobile} />
         <Page2 isMobile={props.isMobile} />
-        <Page3 isMobile={props.isMobile} />
-        <Page4 isMobile={props.isMobile} />
+        <Page4 isMobile={props.isMobile} /> */}
       </div>
     </DocumentTitle>
   );

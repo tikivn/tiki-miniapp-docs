@@ -2,11 +2,12 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
-import Link from 'rc-scroll-anim/lib/ScrollLink';
+import { Link } from 'react-router';
 import BannerAnim, { Element } from 'rc-banner-anim';
-import GitHubButton from 'react-github-button';
 import { getNewHref } from '../../utils';
+import { isEnUS } from '../utils';
 
+const isEN = isEnUS(location.href);
 const { BgElement } = Element;
 
 const getAnimConfig = (e) => {
@@ -111,34 +112,21 @@ export default function Banner({ isMobile }) {
             className="logo-wrapper"
             key="logo"
           >
-            <i key="left" className="vertical left" />
-            <i key="top" className="horizontal top" />
-            <i key="right" className="vertical right" />
-            <i key="bottom" className="horizontal bottom" />
-            <img key="img" alt="logo" src="https://gw.alipayobjects.com/zos/rmsportal/SVDdpZEbAlWBFuRGIIIL.svg" />
+            <img key="img" alt="logo" src="https://salt.tikicdn.com/ts/upload/e4/de/e2/d114c7a8981c8f33e2dab8550b55822d.png" />
           </QueueAnim>
           <p className="introduce" key="introduce">
             <FormattedMessage id="app.home.introduce" />
           </p>
           <div className="button-wrapper" key="button">
-            <Link component="a" toHash={false} to="page2" className="btn-temp home-button">
-              <FormattedMessage id="app.home.select-template" />
+            <Link component="a" toHash={false} className="btn-temp home-button">
+              <FormattedMessage id="app.home.join-program" />
             </Link>
-            {!isMobile && (
-              <a
-                className="btn-editor home-button"
-                href={getNewHref('7112')}
-              >
-                <FormattedMessage id="app.home.enter-editor" />
-              </a>
-            )}
-          </div>
-          <div className="git-button" key="git">
-            <GitHubButton
-              type="stargazers"
-              namespace="ant-design"
-              repo="ant-design-landing"
-            />
+            <Link
+              className="btn-editor home-button"
+              to={`/docs/developer/getting-started${isEN ? '-en' : ''}`}
+            >
+              <FormattedMessage id="app.home.getting-started" />
+            </Link>
           </div>
         </QueueAnim>
       </Element>

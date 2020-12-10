@@ -39,7 +39,7 @@ export default function Page2() {
           </p>
           <div key="a">
             <a className="home-button" href={getNewHref('7112')}>
-              <FormattedMessage id="app.home.enter-editor" />
+              <FormattedMessage id="app.home.join-program" />
             </a>
           </div>
         </QueueAnim>

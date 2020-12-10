@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 10
 category:
   vi-VN: Hướng dẫn nhà phát triển 
   en-US: MiniApp Development Guide

@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 20
 category:
   vi-VN: Ví dụ mẫu
   en-US: Quick Example
