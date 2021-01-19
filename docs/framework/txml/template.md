@@ -59,7 +59,7 @@ Bạn cũng có thể gán dữ liệu vào thuộc tính `is` của thẻ `<tem
   <view> even </view>
 </template>
 
-<block t:for="{{[1, 2, 3, 4, 5]}}">
+<block tiki:for="{{[1, 2, 3, 4, 5]}}">
   <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"/>
 </block>
 ```

@@ -52,7 +52,7 @@ Page({
 Các thuộc tính điều kiện cũng cần phải bao bởi dấu ngoặc kép `"`.
 
 ```xml
-<view t:if="{{condition}}"></view>
+<view tiki:if="{{condition}}"></view>
 ```
 
 ```js
@@ -80,7 +80,7 @@ Các từ khoá cũng cần phải bao trong dấu ngoặc kép `"`.
 
 Trong dấu `{{}}`, bạn có thể sử dụng các phép tính toán đơn giản. TXML hỗ trợ các hàm sau
 
-### Hàm kiểm tra (tendary)
+### Hàm kiểm tra (ternary)
 
 ```xml
 <view hidden="{{flag ? true: false}}">Hidden</view>
@@ -111,7 +111,7 @@ Kết quả sẽ là
 ### Hàm logic
 
 ```xml
-<view t:if="{{length > 5}}"></view>
+<view tiki:if="{{length > 5}}"></view>
 ```
 
 ### Hàm xử lý chuỗi
@@ -164,7 +164,7 @@ Bạn có thể kết hợp các thuộc tính lại để tạo các Object ho�
 ### Mảng
 
 ```xml
-<view t:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view>
+<view tiki:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view>
 ```
 
 ```js

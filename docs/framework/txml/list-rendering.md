@@ -8,14 +8,14 @@ title:
   en-US: List rendering
 ---
 
-## t:for
+## tiki:for
 
-Trong một Component, bằng việc sử dụng thuộc tính `t:for` để gán một mảng dữ liệu vào TXML, bạn có thể sử dụng mảng dữ liệu đó để render.
+Trong một Component, bằng việc sử dụng thuộc tính `tiki:for` để gán một mảng dữ liệu vào TXML, bạn có thể sử dụng mảng dữ liệu đó để render.
 
-Khi sử dụng `t:for`, mỗi item của mảng có thể truy xuất vào 2 giá trị `index` và `item`.
+Khi sử dụng `tiki:for`, mỗi item của mảng có thể truy xuất vào 2 giá trị `index` và `item`.
 
 ```xml
-<view t:for="{{array}}">
+<view tiki:for="{{array}}">
   {{index}}: {{item.message}}
 </view>
 ```
@@ -35,49 +35,49 @@ Page({
 });
 ```
 
-Bạn cũng có thể sử dụng `t:for-item` để gán tên khác thay vì giá trị mặc định `item`.
-Tương tự, bạn có thể sử dụng `t:for-index` để gán tên khác cho `index`.
+Bạn cũng có thể sử dụng `tiki:for-item` để gán tên khác thay vì giá trị mặc định `item`.
+Tương tự, bạn có thể sử dụng `tiki:for-index` để gán tên khác cho `index`.
 
 ```xml
-<view t:for="{{array}}" t:for-index="idx" t:for-item="itemName">
+<view tiki:for="{{array}}" tiki:for-index="idx" tiki:for-item="itemName">
   {{idx}}: {{itemName.message}}
 </view>
 ```
 
-`t:for` cũng có thể sử dụng lồng nhau. Dưới đây là một ví dụ
+`tiki:for` cũng có thể sử dụng lồng nhau. Dưới đây là một ví dụ
 
 ```xml
-<view t:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" t:for-item="i">
-  <view t:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" t:for-item="j">
-    <view t:if="{{i <= j}}">
+<view tiki:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" tiki:for-item="i">
+  <view tiki:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" tiki:for-item="j">
+    <view tiki:if="{{i <= j}}">
       {{i}} * {{j}} = {{i * j}}
     </view>
   </view>
 </view>
 ```
 
-## block t:for
+## block tiki:for
 
-Giống như `t:if`, bạn có thể sử dụng `t:for` trên thẻ `<block>`
+Giống như `tiki:if`, bạn có thể sử dụng `tiki:for` trên thẻ `<block>`
 
 ```xml
-<block t:for="{{[1, 2, 3]}}">
+<block tiki:for="{{[1, 2, 3]}}">
   <view> {{index}}: </view>
   <view> {{item}} </view>
 </block>
 ```
 
-### t:key
+### tiki:key
 
-Để định danh các phần tử trong mảng, TXML cung cấp hàm thuộc tính `t:key`.
-Bằng việc sử dụng `t:key`, khi dữ liệu trong mảng thay đổi, Mini App Framework sẽ không cập nhật chứ không tạo mới các Component.
+Để định danh các phần tử trong mảng, TXML cung cấp hàm thuộc tính `tiki:key`.
+Bằng việc sử dụng `tiki:key`, khi dữ liệu trong mảng thay đổi, Mini App Framework sẽ không cập nhật chứ không tạo mới các Component.
 
-`t:key` có thể sử dụng theo 2 cách
+`tiki:key` có thể sử dụng theo 2 cách
 
-1. nhận một giá trị string, string này là thuộc tính để định danh id cho item trong mảng
+- `tiki:key` nhận một giá trị string, string này là thuộc tính để định danh id cho item trong mảng
 
 ```xml
-<switch t:for="{{objectArray}}" t:key="unique" style="display: block;"> {{item.id}} </switch>
+<switch tiki:for="{{objectArray}}" tiki:key="unique" style="display: block;"> {{item.id}} </switch>
 ```
 
 ```js
@@ -95,13 +95,13 @@ Page({
 });
 ```
 
-Mỗi phần tử trong mảng `objectArray` đều có thuộc tính `unique`, bằng việc sử dụng `t:key="unique"` trong TXML,
+Mỗi phần tử trong mảng `objectArray` đều có thuộc tính `unique`, bằng việc sử dụng `tiki:key="unique"` trong TXML,
 chúng ta xác định rằng key của item là sẽ là thuộc tính `unique` này.
 
-2. nhân giá trị là từ khoá `*this`, có nghĩa là key của item là chính nó. Chúng ta chỉ nên sử dụng `t:key="*this"` nếu như mảng chỉ chứa các chuỗi, hoặc các number
+- `tiki:key` cũng có thể nhận giá trị là từ khoá `*this`, có nghĩa là key của item là chính nó. Chúng ta chỉ nên sử dụng `tiki:key="*this"` nếu như mảng chỉ chứa các chuỗi, hoặc các number
 
 ```xml
-<switch t:for="{{numberArray}}" t:key="*this" style="display: block;"> {{item}} </switch>
+<switch tiki:for="{{numberArray}}" tiki:key="*this" style="display: block;"> {{item}} </switch>
 ```
 
 ```js
@@ -110,19 +110,4 @@ Page({
     numberArray: [1, 2, 3, 4],
   },
 });
-```
-
-**Chú ý**
-Khi giá trị của `t:for` là một chuỗi, thì chuỗi đó sẽ được coi như một mảng các ký tự
-
-```xml
-<view t:for="array">
-  {{item}}
-</view>
-```
-
-```xml
-<view t:for="{{['a','r','r','a','y']}}">
-  {{item}}
-</view>
 ```

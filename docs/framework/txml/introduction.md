@@ -21,10 +21,10 @@ Sau đây là một ví dụ về TXML
 
 ```xml
 <!-- pages/index/index.txml -->
-<view t:for="{{items}}"> {{item}} </view>
-<view t:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
-<view t:elif="{{view == 'APP'}}"> APP </view>
-<view t:else> alipay </view>
+<view tiki:for="{{items}}"> {{item}} </view>
+<view tiki:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+<view tiki:elif="{{view == 'APP'}}"> APP </view>
+<view tiki:else> alipay </view>
 <view onTap="add"> {{count}} </view>
 ```
 
