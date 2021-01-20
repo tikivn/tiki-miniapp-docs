@@ -16,6 +16,7 @@
     "bisheng-plugin-antd": "^1.3.2",
     "bisheng-plugin-description": "^0.1.4",
     "bisheng-plugin-toc": "^0.4.4",
+    "file-loader": "^6.2.0",
     "react": "^17.0.1",
     "react-color": "^2.19.3",
     "react-dom": "^17.0.1",
