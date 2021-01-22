@@ -12,7 +12,7 @@ Các thuộc tính
 
 | Property | Type    | Default Value | Description                                       |
 | -------- | ------- | ------------- | ------------------------------------------------- |
-| size     | string  | "medium"      | Kích thước của button (big/medium/small)          |
+| size     | string  | "big"         | Kích thước của button (big/medium/small)          |
 | type     | string  | "primary"     | Giao diện của button (primary/secondary/tertiary) |
 | loading  | boolean | false         | Hiển thị icon loading                             |
 | disabled | boolean | false         | Disabled button                                   |
