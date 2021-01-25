@@ -41,6 +41,7 @@ module.exports = {
     "docs/framework/txml": pickerGenerator("framework"),
     "docs/framework/sjs": pickerGenerator("framework"),
     "docs/framework/component": pickerGenerator("framework"),
+    "docs/framework/event": pickerGenerator("framework"),
 
     // api
     "docs/api": pickerGenerator("api"),
