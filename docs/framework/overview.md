@@ -57,7 +57,7 @@ Nói một cách khác 2 layers dù tách biệt nhưng vẫn luôn được đ�
 ```xml
 <view>
   <text>Hello {data.name}</text>
-</view>;
+</view>
 ```
 
 ```js
