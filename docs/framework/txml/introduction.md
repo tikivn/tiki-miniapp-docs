@@ -49,7 +49,7 @@ Page({
 và file `.tcss` tương ứng
 
 ```css
-/* pages/index/index.acss */
+/* pages/index/index.tcss */
 view {
   padding-left: 10px;
 }
