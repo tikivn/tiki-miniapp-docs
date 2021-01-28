@@ -2,11 +2,16 @@ FROM node:12.14.0-alpine AS builder
 
 WORKDIR /app
 
-COPY . /app
+COPY package*.json ./
+COPY yarn.lock ./
+RUN yarn install
 
-RUN npm install --no-cache && \
-    npm build
+COPY ./ /app/
+RUN yarn run build
 
-EXPOSE 7111
+FROM nginx:1.18.0-alpine
 
-CMD ["npm","start"]
+COPY --from=builder /app/_site/ /usr/share/nginx/html/
+COPY --from=builder /app/deploy/default.conf /etc/nginx/conf.d/default.conf 
+
+EXPOSE 80
