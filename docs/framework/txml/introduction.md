@@ -24,7 +24,7 @@ Sau đây là một ví dụ về TXML
 <view tiki:for="{{items}}"> {{item}} </view>
 <view tiki:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
 <view tiki:elif="{{view == 'APP'}}"> APP </view>
-<view tiki:else> alipay </view>
+<view tiki:else> Tiki MiniApp</view>
 <view onTap="add"> {{count}} </view>
 ```
 
