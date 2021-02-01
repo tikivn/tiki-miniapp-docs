@@ -1,5 +1,5 @@
 ---
-order: 11
+order: 12
 category:
   vi-VN: Thành phần cơ bản
   en-US: Basic components
