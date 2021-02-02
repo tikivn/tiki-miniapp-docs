@@ -39,7 +39,6 @@ module.exports = {
     "docs/framework": pickerGenerator("framework"),
     "docs/framework/config": pickerGenerator("framework"),
     "docs/framework/txml": pickerGenerator("framework"),
-    "docs/framework/sjs": pickerGenerator("framework"),
     "docs/framework/component": pickerGenerator("framework"),
     "docs/framework/event": pickerGenerator("framework"),
 
