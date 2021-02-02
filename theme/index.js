@@ -51,6 +51,9 @@ module.exports = {
     "docs/api/interface": pickerGenerator("api"),
     "docs/api/navigator": pickerGenerator("api"),
     "docs/api/network": pickerGenerator("api"),
+
+    "docs/api/interactive": pickerGenerator("api"),
+
     // others
     "docs/component": pickerGenerator("component"),
     "docs/component/basic": pickerGenerator("component"),
