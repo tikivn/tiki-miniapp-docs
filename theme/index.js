@@ -39,7 +39,6 @@ module.exports = {
     "docs/framework": pickerGenerator("framework"),
     "docs/framework/config": pickerGenerator("framework"),
     "docs/framework/txml": pickerGenerator("framework"),
-    "docs/framework/sjs": pickerGenerator("framework"),
     "docs/framework/component": pickerGenerator("framework"),
     "docs/framework/event": pickerGenerator("framework"),
 
@@ -51,6 +50,10 @@ module.exports = {
     "docs/api/interface": pickerGenerator("api"),
     "docs/api/navigator": pickerGenerator("api"),
     "docs/api/network": pickerGenerator("api"),
+
+    "docs/api/interactive": pickerGenerator("api"),
+    "docs/api/application": pickerGenerator("api"),
+
     // others
     "docs/component": pickerGenerator("component"),
     "docs/component/basic": pickerGenerator("component"),
