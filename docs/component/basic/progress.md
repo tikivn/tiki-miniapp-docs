@@ -69,5 +69,5 @@ Page({
 
 ```__react
 import image from '../../../theme/static/images/progress-component.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Text" src={image}/>, mountNode);
+ReactDOM.render(<img style={{maxWidth: 414}} alt="Progres" src={image}/>, mountNode);
 ```
