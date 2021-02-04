@@ -8,7 +8,7 @@ title:
   en-US: my.hideToast
 ---
 
-# Gới thiệu
+# Giới thiệu
 my.hideToast là api để hide toast thủ công.
 ## Sample Code
 

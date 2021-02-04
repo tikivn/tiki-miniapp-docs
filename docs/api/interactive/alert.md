@@ -8,7 +8,8 @@ title:
   en-US: my.alert
 ---
 
-# Gới thiệu
+# Giới thiệu
+
 my.alert là api để hiển thị Alert. Có thể set được title, content, buttonText...
 ## Sample Code
 

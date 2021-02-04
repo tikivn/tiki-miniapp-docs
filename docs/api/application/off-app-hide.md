@@ -8,7 +8,7 @@ title:
   en-US: my.offAppHide
 ---
 
-# Gới thiệu
+# Giới thiệu
 
 **my.offAppHide** là API dùng để remove listener của event `onAppHide` từ trước
 
@@ -40,5 +40,5 @@ Page({
 
 | Attributes | Type     | Description                                                           |
 | ---------- | -------- | --------------------------------------------------------------------- |
-| callback    | Function | Callback đã đăng ký event background của app.                          |
+| callback    | Function | Callback đã đăng ký event `onAppHide` của app.                          |
 

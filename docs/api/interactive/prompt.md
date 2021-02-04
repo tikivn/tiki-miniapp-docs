@@ -8,7 +8,7 @@ title:
   en-US: my.prompt
 ---
 
-# Gới thiệu
+# Giới thiệu
 my.prompt là api để hiển thị prompt popup, để user có thể nhập giá tri vào.
 ## Sample Code
 

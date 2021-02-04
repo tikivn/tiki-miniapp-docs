@@ -8,7 +8,7 @@ title:
   en-US: my.hideLoading
 ---
 
-# Gới thiệu
+# Giới thiệu
 my.hideLoading là api để hide loading.
 ## Sample Code
 

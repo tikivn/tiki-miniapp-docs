@@ -8,7 +8,7 @@ title:
   en-US: my.onAppShow
 ---
 
-# Gới thiệu
+# Giới thiệu
 
 **my.onAppShow** là API dùng để lắng nghe sự kiện app show, tương đương với function `onShow` trong app.js
 

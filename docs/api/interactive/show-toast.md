@@ -8,7 +8,7 @@ title:
   en-US: my.showToast
 ---
 
-# Gới thiệu
+# Giới thiệu
 my.showToast là api để hiển thị toast popup slide từ top và tự hide đi sau 1 khoảng thời gian được set hoặc dùng api `my.hideToast`
 
 ## Sample Code

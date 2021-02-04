@@ -8,7 +8,7 @@ title:
   en-US: my.onAppHide
 ---
 
-# Gới thiệu
+# Giới thiệu
 
 **my.onAppHide** là API dùng để lắng nghe sự kiện app hide (app enter background), tương đương với function `onHide` trong app.js
 

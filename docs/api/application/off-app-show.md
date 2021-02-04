@@ -8,7 +8,7 @@ title:
   en-US: my.offAppShow
 ---
 
-# Gới thiệu
+# Giới thiệu
 
 **my.offAppShow** là API dùng để remove listener của event `onAppShow` từ trước
 
@@ -40,5 +40,5 @@ Page({
 
 | Attributes | Type     | Description                                                           |
 | ---------- | -------- | --------------------------------------------------------------------- |
-| callback    | Function | Callback đã đăng ký event foreground của app.                          |
+| callback    | Function | Callback đã đăng ký event `onAppShow` của app.                          |
 

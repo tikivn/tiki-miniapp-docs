@@ -8,7 +8,7 @@ title:
   en-US: my.confirm
 ---
 
-# Gới thiệu
+# Giới thiệu
 my.confirm là api để hiển thị Confirm popup. Có thể set được title, content, text của button confirm và cancel
 ## Sample Code
 

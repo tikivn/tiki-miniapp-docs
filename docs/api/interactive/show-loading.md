@@ -8,7 +8,7 @@ title:
   en-US: my.showLoading
 ---
 
-# Gới thiệu
+# Giới thiệu
 my.showLoading là api để hiển thị Loading. Có thể manual tắt loading bằng cách dùng api my.hideLoading
 ## Sample Code
 

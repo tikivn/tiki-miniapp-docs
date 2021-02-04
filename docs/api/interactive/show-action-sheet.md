@@ -8,7 +8,7 @@ title:
   en-US: my.showActionSheet
 ---
 
-# Gới thiệu
+# Giới thiệu
 my.showActionSheet là api để hiển thị bottom popup để user có thể chọn option.
 ## Sample Code
 
