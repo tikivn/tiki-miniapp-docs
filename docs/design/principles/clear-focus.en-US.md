@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 11
 category: Design Principles
 title: Clear Focus
 ---

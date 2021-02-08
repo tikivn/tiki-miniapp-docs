@@ -35,6 +35,7 @@ module.exports = {
     "docs/design/comps": pickerGenerator("design"),
     "docs/design/styles": pickerGenerator("design"),
     "docs/design/patterns": pickerGenerator("design"),
+    "docs/design/principles": pickerGenerator("design"),
     // framework
     "docs/framework": pickerGenerator("framework"),
     "docs/framework/config": pickerGenerator("framework"),

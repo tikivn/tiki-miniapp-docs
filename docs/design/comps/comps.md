@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 30
 category:
   vi-VN: Components
   en-US: Components

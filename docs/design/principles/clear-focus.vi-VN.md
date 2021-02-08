@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 11
 category: Nguyên tắc thiết kế
 title: Tập trung
 ---

@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 40
 category:
   vi-VN: Patterns
   en-US: Patterns
