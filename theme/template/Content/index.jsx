@@ -5,7 +5,7 @@ import * as utils from '../utils';
 export default collect(async (nextProps) => {
   const pathname = nextProps.location.pathname;
 
-  const path = pathname.replace('-cn', '');
+  const path = pathname.replace('-en', '');
 
   const pageDataPath = path.split('/');
 

@@ -18,8 +18,8 @@ const { easing } = TweenOne;
 
 function getActiveMenuItem(props) {
   const { children } = props.params;
-  return (children && children.replace('-cn', ''))
-    || props.location.pathname.replace(/(^\/|-cn$)/g, '');
+  return (children && children.replace('-en', ''))
+    || props.location.pathname.replace(/(^\/|-en$)/g, '');
 }
 
 function getModuleData(props) {
