@@ -54,7 +54,7 @@ module.exports = {
 
     "docs/api/interactive": pickerGenerator("api"),
     "docs/api/application": pickerGenerator("api"),
-
+    "docs/api/pull-refresh": pickerGenerator("api"),
     // others
     "docs/component": pickerGenerator("component"),
     "docs/component/basic": pickerGenerator("component"),
