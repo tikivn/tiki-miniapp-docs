@@ -8,9 +8,6 @@ We aim to build inclusive products by considering any special needs of our users
 
 We follow the Web Content Accessibility Guidelines (WCAG) requirements:
 
-</br>
-</br>
-
 ## 1. Provide sufficient contrast between foreground and background
 Foreground text needs to have sufficient contrast with background colors. This includes text on images, background gradients, buttons, and other elements. This does not apply for logos, or incidental text, such as text that happens to be in a photograph. The links below provide more information on the minimum contrast ratio as required by the WCAG and how to check contrast. “Contrast ratio” is a short version of the more technically correct term “luminance contrast ratio”.
 
@@ -43,5 +40,5 @@ Provide a place in your design for alternatives for images and media. For exampl
 - Captions and descriptions for tables or complex graphs
 Work with content authors and developers to provide alternatives for non-text content.
 
-### 10.Provide controls for content that starts automatically
+## 10.Provide controls for content that starts automatically
 Provide visible controls to allow users to stop any animations or auto-playing sound. This applies to carousels, image sliders, background sound, and videos.
