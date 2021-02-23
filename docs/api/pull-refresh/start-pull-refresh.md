@@ -8,32 +8,39 @@ title:
   en-US: my.startPullDownRefresh
 ---
 
-# Giới thiệu
-`my.startPullDownRefresh` là api để active tính năng pull down to refresh, khi được gọi sẽ có animation loading tương đương với việc manual pull down list. 
-Hàm `onPullDownRefresh` của `page` sẽ được trigger.
-Sau khi đã lấy được dữ liệu, có thể gọi `my.stopPullDownRefresh` để stop loading.
+## Giới thiệu
+
+`my.startPullDownRefresh` là api để active tính năng pull down to refresh, khi được gọi sẽ có animation loading tương đương với việc manual pull down list. Hàm `onPullDownRefresh` của `page` sẽ được trigger. Sau khi đã lấy được dữ liệu, có thể gọi `my.stopPullDownRefresh` để stop loading.
+
 Tuy nhiên hàm `my.startPullDownRefresh` chỉ hoạt động khi thoả mãn 2 điều kiện:
+
 - Trong `app.json` `allowsBounceVertical` phải set = `YES` hoặc không cần set vì đã được set mặc định  
   
-  ```json
-  {
-    "window": {
-      "defaultTitle": "My App",
-      "titleBarColor": "#fff",
-      "backgroundColor": "#F5F7FC",
-      "allowsBounceVertical": "NO"
-    }
+```json
+{
+  "window": {
+    "defaultTitle": "My App",
+    "titleBarColor": "#fff",
+    "backgroundColor": "#F5F7FC",
+    "allowsBounceVertical": "NO"
   }
-  ```
+}
+```
+
 - Trong `index.json` của page phải enable `pullRefresh`
- ```json
- { "pullRefresh": true }
- ```
+
+```json
+{ "pullRefresh": true }
+```
 
  Vì vây muốn disable tính năng pull to refresh chỉ cần set `allowsBounceVertical` thành `NO` hoặc `pullRefresh` thành `false`
 
-# Sample Code
+## Sử dụng
+
+### Sample Code
+
 **index.json**
+
 ```json
 {
     "defaultTitle": "Pull down to refresh",
@@ -42,6 +49,7 @@ Tuy nhiên hàm `my.startPullDownRefresh` chỉ hoạt động khi thoả mãn 2
 ```
 
 **index.txml**
+
 ```xml
 <view class="page">
   <view class="page-description">Pull down to refresh API</view>
@@ -56,6 +64,7 @@ Tuy nhiên hàm `my.startPullDownRefresh` chỉ hoạt động khi thoả mãn 2
 ```
 
 **index.js**
+
 ```js
 Page({
   onPullDownRefresh() {
@@ -71,7 +80,8 @@ Page({
 })
 ```
 
-# Chi tiết
+### Chi tiết
+
 | Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
 | ------- | --------------- | ------- | --------------- |
 | success | Function | No | Callback khi pull down animation trigger success |

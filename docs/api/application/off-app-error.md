@@ -8,21 +8,23 @@ title:
   en-US: my.offAppError
 ---
 
-# Giới thiệu
+## Giới thiệu
 
 **my.offAppError** là API dùng để remove listener của event `onAppError` từ trước
 
-# Sử dụng
+## Sử dụng
 
-## Sample Code
+### Sample Code
 
-index.txml
+**index.txml**
+
 ```xml
 <button size="default" onTap="onTriggerError" type="primary">Trigger app error</button>
 <button size="default" onTap="onDisableAppError" type="primary">Off app error event</button>
 ```
 
-index.js
+**index.js**
+
 ```js
 Page({
   onLoad(query) {
@@ -41,9 +43,8 @@ Page({
 })
 ```
 
-## API Params
+### API Params
 
 | Attributes | Type     | Description                                                           |
 | ---------- | -------- | --------------------------------------------------------------------- |
 | callback    | Function | Callback đã đăng ký event `onError` của app.                          |
-

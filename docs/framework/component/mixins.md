@@ -48,7 +48,7 @@ const methods = {
 Component({
   mixins: [lifecycle, initialState, defaultProps, methods],
   data: {
-    name: "alipay",
+    name: "tiki",
   },
 });
 ```

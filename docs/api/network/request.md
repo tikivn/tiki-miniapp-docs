@@ -8,20 +8,20 @@ title:
   en-US: my.request
 ---
 
-# Giới thiệu
+## Giới thiệu
 
 **my.request** là API dùng để thực hiện các network request.
 
-**Lưu ý:** ứng dụng của bạn sẽ được chạy trong môi trường cô lập thuần javascript nên sẽ không có các hàm gọi network thông thường như `fetch` hay `XMLHttpRequest`. Để thực hiện gọi network bạn phải dùng qua `my.request`. 
+**Lưu ý:** ứng dụng của bạn sẽ được chạy trong môi trường cô lập thuần javascript nên sẽ không có các hàm gọi network thông thường như `fetch` hay `XMLHttpRequest`. Để thực hiện gọi network bạn phải dùng qua `my.request`.
 
-## Lưu ý khi sử dụng
+### Lưu ý khi sử dụng
 
 - `my.request` hiện chỉ hỗ trợ những request qua giao thức **https**.
-- Bạn cần phải cấu hình whitelist domain trước khi có thể gọi network tới domain đó. 
+- Bạn cần phải cấu hình whitelist domain trước khi có thể gọi network tới domain đó.
 
-# Sử dụng
+## Sử dụng
 
-## Sample Code
+### Sample Code
 
 ```jsx
 <View style={styles.page}>
@@ -60,7 +60,7 @@ Page({
 })
 ```
 
-## API Params
+### API Params
 
 Để cấu hình việc gọi network, bạn cần truyền object với các thuộc tính sau:
 
@@ -76,13 +76,11 @@ Page({
 | fail       | Function | No       | Callback function khi việc gọi network thất bại.                                                     |
 | comlete    | Function | No       | Callback function khi việc gọi network kết thúc cho dù thành công hay thất bại.                      |
 
-
-### Callback function payload
+#### Callback function payload
 
 TODO
 
-
-## Return value
+### Return value
 
 API trả về network request task. Bạn có thể thực hiện huỷ việc gọi network thông qua network request task.
 

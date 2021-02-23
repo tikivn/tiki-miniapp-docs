@@ -8,20 +8,22 @@ title:
   en-US: my.offAppHide
 ---
 
-# Giới thiệu
+## Giới thiệu
 
 **my.offAppHide** là API dùng để remove listener của event `onAppHide` từ trước
 
-# Sử dụng
+## Sử dụng
 
-## Sample Code
+### Sample Code
 
-index.txml
+**index.txml**
+
 ```xml
 <button size="default" onTap="onDisableAppHide" type="primary">Off app hide event</button>
 ```
 
-index.js
+**index.js**
+
 ```js
 Page({
   onLoad(query) {
@@ -36,9 +38,8 @@ Page({
 })
 ```
 
-## API Params
+### API Params
 
 | Attributes | Type     | Description                                                           |
 | ---------- | -------- | --------------------------------------------------------------------- |
 | callback    | Function | Callback đã đăng ký event `onAppHide` của app.                          |
-

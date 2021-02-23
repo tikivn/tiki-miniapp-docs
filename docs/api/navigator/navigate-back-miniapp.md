@@ -8,13 +8,13 @@ title:
   en-US: my.navigateBackMiniApp
 ---
 
-# Giới thiệu
+## Giới thiệu
 
 **my.navigateBackMiniApp** là API dùng để quay lại app trước đó. API chỉ gọi thành công khi app hiện tại được mở từ một app khác trước đó.
 
-# Sử dụng
+## Sử dụng
 
-## Sample Code
+### Sample Code
 
 ```jsx
 <View style={styles.page}>
@@ -44,7 +44,7 @@ Page({
 })
 ```
 
-## API Params
+### API Params
 
 | Attributes | Type     | Required | Description                                                           |
 | ---------- | -------- | -------- | --------------------------------------------------------------------- |

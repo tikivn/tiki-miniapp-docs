@@ -8,10 +8,16 @@ title:
   en-US: my.stopPullDownRefresh
 ---
 
-# Giới thiệu
+## Giới thiệu
+
 `my.stopPullDownRefresh` là api để stop loading khi đã gọi `my.startPullDownRefresh` hoặc manual pull down. Khi đã có được dữ liệu, phải gọi hàm này để tắt loading.
-# Sample Code
+
+## Sử dụng
+
+### Sample Code
+
 **index.json**
+
 ```json
 {
     "defaultTitle": "Pull down to refresh",
@@ -20,6 +26,7 @@ title:
 ```
 
 **index.txml**
+
 ```xml
 <view class="page">
   <view class="page-description">Pull down to refresh API</view>
@@ -34,6 +41,7 @@ title:
 ```
 
 **index.js**
+
 ```js
 Page({
   onPullDownRefresh() {
@@ -49,7 +57,8 @@ Page({
 })
 ```
 
-# Chi tiết
+### Chi tiết
+
 | Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
 | ------- | --------------- | ------- | --------------- |
 | success | Function | No | Callback khi stop pull down animation trigger success |

@@ -8,18 +8,18 @@ title:
   en-US: my.navigateTo
 ---
 
-# Giới thiệu
+## Giới thiệu
 
 **my.navigateTo** là API dùng để di chuyển từ màn hình hiện tại tới màn hình mong muốn trong ứng dụng.
 
-## Lưu ý khi sử dụng
+### Lưu ý khi sử dụng
 
 - Bạn có thể dùng `my.navigateBack` để quay về màn hình trước đó.
 - `my.navigateTo` không dùng để chuyển đổi trang giữa các tab trong TabBar. Để thực hiện tác vụ đó bạn cần dùng `my.switchTab`.
 
-# Sử dụng
+## Sử dụng
 
-## Sample Code
+### Sample Code
 
 ```jsx
 <View style={styles.page}>
@@ -48,7 +48,7 @@ Page({
 })
 ```
 
-## API Params
+### API Params
 
 | Attributes | Type     | Required | Description |
 | ---------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

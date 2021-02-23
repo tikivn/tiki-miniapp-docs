@@ -8,15 +8,16 @@ title:
   en-US: my.offUnhandledRejection
 ---
 
-# Giới thiệu
+## Giới thiệu
 
 **my.offUnhandledRejection** là API dùng để remove listener của event `onUnhandledRejection` từ trước
 
-# Sử dụng
+## Sử dụng
 
-## Sample Code
+### Sample Code
 
-index.js
+**index.js**
+
 ```js
 Page({
   onLoad(query) {
@@ -30,7 +31,8 @@ Page({
 })
 ```
 
-app.js
+**app.js**
+
 ```js
 App({
   onShow(options) {
@@ -43,9 +45,9 @@ App({
   }
 })
 ```
-## API Params
+
+### API Params
 
 | Attributes | Type     | Description                                                           |
 | ---------- | -------- | --------------------------------------------------------------------- |
 | callback    | Function | Callback đã đăng ký event `onUnhandledRejection` của app.                          |
-

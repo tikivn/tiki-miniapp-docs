@@ -8,13 +8,13 @@ title:
   en-US: my.navigateToMiniApp
 ---
 
-# Giới thiệu
+## Giới thiệu
 
 **my.navigateToMiniApp** là API dùng để di chuyển giữa các app.
 
-# Sử dụng
+## Sử dụng
 
-## Sample Code
+### Sample Code
 
 ```jsx
 <View style={styles.page}>
@@ -47,7 +47,7 @@ Page({
 })
 ```
 
-## API Params
+### API Params
 
 | Attributes | Type     | Required | Description                                                           |
 | ---------- | -------- | -------- | --------------------------------------------------------------------- |

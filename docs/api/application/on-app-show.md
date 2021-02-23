@@ -8,20 +8,22 @@ title:
   en-US: my.onAppShow
 ---
 
-# Giới thiệu
+## Giới thiệu
 
 **my.onAppShow** là API dùng để lắng nghe sự kiện app show, tương đương với function `onShow` trong app.js
 
-# Sử dụng
+## Sử dụng
 
-## Sample Code
+### Sample Code
 
-index.txml
+**index.txml**
+
 ```xml
 <button size="default" onTap="onDisableAppShow" type="primary">Off app show event</button>
 ```
 
-index.js
+**index.js**
+
 ```js
 Page({
   onLoad(query) {
@@ -36,9 +38,8 @@ Page({
 })
 ```
 
-## API Params
+### API Params
 
 | Attributes | Type     | Description                                                           |
 | ---------- | -------- | --------------------------------------------------------------------- |
 | callback    | Function | Callback để catch event foreground của app.                          |
-

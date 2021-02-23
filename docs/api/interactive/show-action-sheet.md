@@ -8,11 +8,16 @@ title:
   en-US: my.showActionSheet
 ---
 
-# Giới thiệu
-my.showActionSheet là api để hiển thị bottom popup để user có thể chọn option.
-## Sample Code
+## Giới thiệu
 
-index.txml
+my.showActionSheet là api để hiển thị bottom popup để user có thể chọn option.
+
+## Sử dụng
+
+### Sample Code
+
+**index.txml**
+
 ```xml
 <view class="page">
   <view class="page-description">Confirm API</view>
@@ -25,7 +30,8 @@ index.txml
 </view>
 ```
 
-index.js
+**index.js**
+
 ```js
 Page({
   onActionSheet() {
@@ -44,7 +50,8 @@ Page({
 })
 ```
 
-## Chi tiết
+### Chi tiết
+
 | Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
 | ------- | --------------- | ------- | --------------- |
 | title | String | No | Title của action sheet |

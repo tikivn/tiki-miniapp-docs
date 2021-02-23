@@ -8,13 +8,13 @@ title:
   en-US: my.navigateBack
 ---
 
-# Giới thiệu
+## Giới thiệu
 
 **my.navigateTo** là API dùng để đóng màn hình hiện tại và trở lại màn hình trước đó.
 
-# Sử dụng
+## Sử dụng
 
-## Sample Code
+### Sample Code
 
 ```jsx
 <View style={styles.page}>
@@ -43,7 +43,7 @@ Page({
 })
 ```
 
-## API Params
+### API Params
 
 | Attributes | Type   | Required | Description                                                                                                                                                 |
 | ---------- | ------ | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |

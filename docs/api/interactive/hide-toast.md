@@ -8,11 +8,16 @@ title:
   en-US: my.hideToast
 ---
 
-# Giới thiệu
-my.hideToast là api để hide toast thủ công.
-## Sample Code
+## Giới thiệu
 
-index.txml
+my.hideToast là api để hide toast thủ công.
+
+## Sử dụng
+
+### Sample Code
+
+**index.txml**
+
 ```xml
 <view class="page">
   <view class="page-description">Loading API</view>
@@ -25,7 +30,8 @@ index.txml
 </view>
 ```
 
-index.js
+**index.js**
+
 ```js
 Page({
   onHideToast() {
@@ -50,7 +56,8 @@ Page({
 })
 ```
 
-## Chi tiết
+### Chi tiết
+
 | Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
 | ------- | --------------- | ------- | --------------- |
 | success | Function | No | Callback khi toast hide success |

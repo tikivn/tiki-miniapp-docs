@@ -8,15 +8,16 @@ title:
   en-US: my.onUnhandledRejection
 ---
 
-# Giới thiệu
+## Giới thiệu
 
 **my.onUnhandledRejection** là API dùng để lắng nghe sự kiện khi 1 Promise reject xảy ra nhưng không được handle, tương đương với function `onUnhandledRejection` trong app.js
 
-# Sử dụng
+## Sử dụng
 
-## Sample Code
+### Sample Code
 
-index.js
+**index.js**
+
 ```js
 Page({
   onLoad(query) {
@@ -28,7 +29,8 @@ Page({
 })
 ```
 
-app.js
+**app.js**
+
 ```js
 App({
   onUnhandledRejection(res) {
@@ -37,9 +39,9 @@ App({
   }
 })
 ```
-## API Params
+
+### API Params
 
 | Attributes | Type     | Description                                                           |
 | ---------- | -------- | --------------------------------------------------------------------- |
 | callback    | Function | Callback để catch unhandle reject của Promise. |
-

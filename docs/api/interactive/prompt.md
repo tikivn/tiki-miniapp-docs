@@ -8,11 +8,16 @@ title:
   en-US: my.prompt
 ---
 
-# Giới thiệu
-my.prompt là api để hiển thị prompt popup, để user có thể nhập giá tri vào.
-## Sample Code
+## Giới thiệu
 
-index.txml
+my.prompt là api để hiển thị prompt popup, để user có thể nhập giá tri vào.
+
+## Sử dụng
+
+### Sample Code
+
+**index.txml**
+
 ```xml
 <view class="page">
   <view class="page-description">Confirm API</view>
@@ -25,7 +30,8 @@ index.txml
 </view>
 ```
 
-index.js
+**index.js**
+
 ```js
 Page({
   onPrompt() {
@@ -45,7 +51,8 @@ Page({
 })
 ```
 
-## Chi tiết
+### Chi tiết
+
 | Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
 | ------- | --------------- | ------- | --------------- |
 | title | String | No | Title của prompt box |

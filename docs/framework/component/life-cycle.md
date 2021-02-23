@@ -11,7 +11,7 @@ title:
 Các hàm life cycle của Custom Component được gọi bởi Framework tại những thời điểm nhất định.
 Hình vẽ sau mô tả các thời điểm này
 
-![image](https://gw.alipayobjects.com/zos/skylark-tools/public/files/bdaab100786e03cf78914b9a1207cfe3.png)
+![component life cycle](https://salt.tikicdn.com/ts/upload/ca/9a/64/bb457e44059821f804b5ef3853ae2c41.png)
 
 | hàm                 | tham số               | mô tả                                                                           |
 | ------------------- | --------------------- | ------------------------------------------------------------------------------- |

@@ -8,12 +8,16 @@ title:
   en-US: my.showToast
 ---
 
-# Giới thiệu
-my.showToast là api để hiển thị toast popup slide từ top và tự hide đi sau 1 khoảng thời gian được set hoặc dùng api `my.hideToast`
+## Giới thiệu
 
-## Sample Code
+`my.showToast` là api để hiển thị toast popup slide từ top và tự hide đi sau 1 khoảng thời gian được set hoặc dùng api `my.hideToast`
 
-index.txml
+## Sử dụng
+
+### Sample Code
+
+**index.txml**
+
 ```xml
 <view class="page">
   <view class="page-description">Toast API</view>
@@ -26,7 +30,8 @@ index.txml
 </view>
 ```
 
-index.js
+**index.js**
+
 ```js
 Page({
   onToast() {
@@ -48,7 +53,8 @@ Page({
 })
 ```
 
-## Chi tiết
+### Chi tiết
+
 | Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
 | ------- | --------------- | ------- | --------------- |
 | type | String | No | success hoặc fail |

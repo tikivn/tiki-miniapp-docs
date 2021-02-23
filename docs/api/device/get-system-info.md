@@ -8,13 +8,13 @@ title:
   en-US: my.getSystemInfo
 ---
 
-# Gới thiệu
+## Giới thiệu
 
 **my.getSystemInfo** là API dùng để lấy thông tin của hệ thống.
 
-# Sử dụng
+## Sử dụng
 
-## Sample Code
+### Sample Code
 
 ```jsx
 <View style={styles.page}>
@@ -49,7 +49,7 @@ Page({
 })
 ```
 
-## API Params
+### API Params
 
 | Attributes | Type     | Required | Description                                                           |
 | ---------- | -------- | -------- | --------------------------------------------------------------------- |
@@ -57,7 +57,7 @@ Page({
 | fail       | Function | No       | Callback function khi thất bại.                                       |
 | comlete    | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
 
-## Giá trị trong success callback 
+### Giá trị trong success callback
 
 Khi việc gọi API thành công, framework sẽ trả về thông tin về thiết bị như sau:
 

@@ -8,12 +8,16 @@ title:
   en-US: my.alert
 ---
 
-# Giới thiệu
+## Giới thiệu
 
 my.alert là api để hiển thị Alert. Có thể set được title, content, buttonText...
-## Sample Code
 
-index.txml
+## Sử dụng
+
+### Sample Code
+
+**index.txml**
+
 ```xml
 <view class="page">
   <view class="page-description">Alert API</view>
@@ -26,7 +30,8 @@ index.txml
 </view>
 ```
 
-index.js
+**index.js**
+
 ```js
 Page({
   onAlert() {
@@ -48,7 +53,8 @@ Page({
 })
 ```
 
-## Chi tiết
+### Chi tiết
+
 | Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
 | ------- | --------------- | ------- | --------------- |
 | title | String | No | Title của alert box |

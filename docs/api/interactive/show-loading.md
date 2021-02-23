@@ -8,11 +8,16 @@ title:
   en-US: my.showLoading
 ---
 
-# Giới thiệu
-my.showLoading là api để hiển thị Loading. Có thể manual tắt loading bằng cách dùng api my.hideLoading
-## Sample Code
+## Giới thiệu
 
-index.txml
+`my.showLoading` là api để hiển thị Loading. Có thể manual tắt loading bằng cách dùng api `my.hideLoading`.
+
+## Sử dụng
+
+### Sample Code
+
+**index.txml**
+
 ```xml
 <view class="page">
   <view class="page-description">Loading API</view>
@@ -25,7 +30,8 @@ index.txml
 </view>
 ```
 
-index.js
+**index.js**
+
 ```js
 Page({
   onLoading() {
@@ -37,7 +43,8 @@ Page({
 })
 ```
 
-## Chi tiết
+### Chi tiết
+
 | Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
 | ------- | --------------- | ------- | --------------- |
 | content | String | No | Content message của loading box |

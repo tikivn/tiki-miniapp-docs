@@ -8,13 +8,13 @@ title:
   en-US: my.SDKVersion
 ---
 
-# Giới thiệu
+## Giới thiệu
 
-**my.SDKVersion** là API dùng để lấy version hiện tại của SDK. 
+**my.SDKVersion** là API dùng để lấy version hiện tại của SDK.
 
-# Sử dụng
+## Sử dụng
 
-## Sample code
+### Sample code
 
 ```jsx
 <View>
@@ -33,6 +33,6 @@ Page({
 })
 ```
 
-## Return value
+### Return value
 
 API sẽ trả về version hiện tại của SDK kiểu chuỗi.
