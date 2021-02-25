@@ -8,17 +8,17 @@ title:
   en-US: text
 ---
 
-Các thuộc tính
+## Giới thiệu
 
-| Property        | Type    | Default Value | Description                                                                                    |
-| --------------- | ------- | ------------- | ---------------------------------------------------------------------------------------------- |
-| selectable      | boolean | false         | Cho phép nội dung có thể được chọn hay không, nếu là true thì có thể chọn và sao chép nội dung |
-| number-of-lines | number  | null          | Số dòng tối đa mà nội dung trong text được hiển thị, nếu quá số dòng sẽ hiển thị ... ở cuối    |
+text
 
-Code mẫu
+## Sử dụng
 
-```jsx
-/* txml */
+### Sample Code
+
+**index.txml**
+
+```xml
 <view class="container">
   <view class="block">
     <text>{{ text }}</text>
@@ -34,7 +34,6 @@ Code mẫu
 ```
 
 ```css
-/* tcss */
 .container {
   min-height: 100%;
   background-color: var(--gray20);
@@ -54,8 +53,7 @@ button {
 }
 ```
 
-```jsx
-/* js */
+```js
 const text = 'This is first line\nThis is second line';
 const extraLine = [];
 const longText =
@@ -82,6 +80,13 @@ Page({
   },
 });
 ```
+
+### Chi tiết
+
+| Property        | Type    | Default Value | Description                                                                                    |
+| --------------- | ------- | ------------- | ---------------------------------------------------------------------------------------------- |
+| selectable      | boolean | false         | Cho phép nội dung có thể được chọn hay không, nếu là true thì có thể chọn và sao chép nội dung |
+| number-of-lines | number  | null          | Số dòng tối đa mà nội dung trong text được hiển thị, nếu quá số dòng sẽ hiển thị ... ở cuối    |
 
 ```__react
 import image from '../../../theme/static/images/text-component.png'

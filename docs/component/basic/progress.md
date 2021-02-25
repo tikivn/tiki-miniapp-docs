@@ -8,23 +8,17 @@ title:
   en-US: progress
 ---
 
-Các thuộc tính
+## Giới thiệu
 
-| Property         | Type          | Default Value | Required | Description                                       |
-| ---------------- | ------------- | ------------- | -------- | ------------------------------------------------- |
-| percent          | number        |               | Không    | Hiển thị phần trăm progress. Giá trị từ 0 tới 100 |
-| show-info        | boolean       | false         | Không    | Hiển thị phần trăm ở bên phải thanh progress      |
-| border-radius    | number/string | 0             | Không    | Giá trị border radius trên thanh progress         |
-| font-size        | number/string | 14            | Không    | Kích thước font chữ trên thanh progress           |
-| stroke-width     | number/string | 4             | Không    | Kích thước thanh progress                         |
-| active-color     | color         | 4             | Không    | Màu của thanh phần trăm hiển thị                  |
-| background-color | color         | 4             | Không    | Màu của thanh progress                            |
-| active           | boolean       | false         | Không    | Sử dụng animation cho thanh progress              |
+Thanh tiến trình
 
-Code mẫu
+## Sử dụng
 
-```jsx
-/* txml */
+### Sample Code
+
+**index.txml**
+
+```xml
 <view class="container">
   <view class="block">
     <progress />
@@ -38,8 +32,9 @@ Code mẫu
 </view>
 ```
 
+**index.tcss**
+
 ```css
-/* tcss */
 .container {
   min-height: 100%;
   background-color: var(--gray20);
@@ -58,7 +53,9 @@ progress {
 }
 ```
 
-```jsx
+**index.js**
+
+```js
 /* js */
 Page({
   data: {
@@ -66,6 +63,19 @@ Page({
   },
 });
 ```
+
+### Chi tiết
+
+| Property         | Type          | Default Value | Required | Description                                       |
+| ---------------- | ------------- | ------------- | -------- | ------------------------------------------------- |
+| percent          | number        |               | Không    | Hiển thị phần trăm progress. Giá trị từ 0 tới 100 |
+| show-info        | boolean       | false         | Không    | Hiển thị phần trăm ở bên phải thanh progress      |
+| border-radius    | number/string | 0             | Không    | Giá trị border radius trên thanh progress         |
+| font-size        | number/string | 14            | Không    | Kích thước font chữ trên thanh progress           |
+| stroke-width     | number/string | 4             | Không    | Kích thước thanh progress                         |
+| active-color     | color         | 4             | Không    | Màu của thanh phần trăm hiển thị                  |
+| background-color | color         | 4             | Không    | Màu của thanh progress                            |
+| active           | boolean       | false         | Không    | Sử dụng animation cho thanh progress              |
 
 ```__react
 import image from '../../../theme/static/images/progress-component.png'
