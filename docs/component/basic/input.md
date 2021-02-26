@@ -8,29 +8,17 @@ title:
   en-US: input
 ---
 
-Các thuộc tính
+## Giới thiệu
 
-| Property               | Type    | Default Value | Required | Description                                                                                                                                                                                                                                                     |
-| ---------------------- | ------- | ------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| value                  | string  |               | Không    | Giá trị khởi tạo                                                                                                                                                                                                                                                |
-| type                   | string  |               | Không    | Loại input.<br/>**Hỗ trợ cả iOS và Android**: default/number-pad/decimal-pad/numeric/email-address/phone-pad <br/>**Chỉ hỗ trợ iOS**: ascii-capable/numbers-and-punctuation/url/name-phone-pad/twitter/web-search<br />**Chỉ hỗ trợ Android**: visible-password |
-| placeholder            | string  |               | Không    | Nội dung hiển thị trước khi người dùng nhập giá trị của input                                                                                                                                                                                                   |
-| placeholder-text-color | color   |               | Không    | Màu chữ của placeholder                                                                                                                                                                                                                                         |
-| disabled               | boolean | false         | Không    | Màu chữ của placeholder                                                                                                                                                                                                                                         |
-| maxlength              | number  | 14            | Không    | Giới hạn số ký tự được nhập                                                                                                                                                                                                                                     |
-| focus                  | boolean | false         | Không    | Tự động focus vào input                                                                                                                                                                                                                                         |
-| confirm-type           | string  | done          | Không    | Nội dung hiển thị cho phím return (Nhập). <br />**Hỗ trợ cho cả iOS và Android**: done/go/next/search/send<br/>**Chỉ hỗ trợ iOS: default/emergency-call/google/join/route/yahoo**<br/>Chỉ hỗ trợ Android: none/previous                                         |
-| selection-start        | number  | -1            | Không    | Vị trí bắt đầu của con trỏ. Nó chỉ có hiệu lực trong khi focus là true và cần được sử dụng `selection-end`                                                                                                                                                      |
-| selection-end          | number  | -1            | Không    | Vị trí kết thúc của con trỏ. Nó chỉ có hiệu lực khi focus là true và cần được sử dụng `selection-start`                                                                                                                                                         |
-| onInput                | event   |               | Không    | Sự kiện sẽ được gọi khi nội dung của input bị thay đổi, `event.detail = { value: value }`                                                                                                                                                                       |
-| onConfirm              | event   |               | Không    | Sự kiện sẽ được gọi khi nhấn nút submit (return/Nhập) , `event.detail = { value: value }`                                                                                                                                                                       |
-| onFocus                | event   |               | Không    | Sự kiện sẽ được gọi khi input được focus , `event.detail = { value: value }`                                                                                                                                                                                    |
-| onBlur                 | event   |               | Không    | Sự kiện sẽ được gọi khi input không được focus nữa , `event.detail = { value: value }`                                                                                                                                                                          |
+Dùng để nhập giá trị
 
-Code mẫu
+## Sử dụng
 
-```jsx
-/* txml */
+### Sample Code
+
+**index.txml**
+
+```xml
 <view class="container">
   <view class="block">
     <text class="header">Events</text>
@@ -75,36 +63,9 @@ Code mẫu
 </view>
 ```
 
-```css
-/* tcss */
-.container {
-  min-height: 100%;
-  background-color: var(--gray20);
-  padding: 16px;
-}
+**index.js**
 
-.block {
-  background-color: white;
-  margin: 8px 0;
-  padding: 16px;
-  border-radius: var(--border-radius-rounded-4px);
-}
-
-.item {
-  margin: 8px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-}
-
-.item input {
-  margin-left: 16px;
-}
-```
-
-```jsx
-/* js */
+```js
 Page({
   data: {
     inputTypes: [
@@ -155,6 +116,54 @@ Page({
   },
 });
 ```
+
+**index.tcss**
+
+```css
+.container {
+  min-height: 100%;
+  background-color: var(--gray20);
+  padding: 16px;
+}
+
+.block {
+  background-color: white;
+  margin: 8px 0;
+  padding: 16px;
+  border-radius: var(--border-radius-rounded-4px);
+}
+
+.item {
+  margin: 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.item input {
+  margin-left: 16px;
+}
+```
+
+### Chi tiết
+
+| Property               | Type    | Default Value | Required | Description                                                                                                                                                                                                                                                     |
+| ---------------------- | ------- | ------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| value                  | string  |               | Không    | Giá trị khởi tạo                                                                                                                                                                                                                                                |
+| type                   | string  |               | Không    | Loại input.<br/>**Hỗ trợ cả iOS và Android**: default/number-pad/decimal-pad/numeric/email-address/phone-pad <br/>**Chỉ hỗ trợ iOS**: ascii-capable/numbers-and-punctuation/url/name-phone-pad/twitter/web-search<br />**Chỉ hỗ trợ Android**: visible-password |
+| placeholder            | string  |               | Không    | Nội dung hiển thị trước khi người dùng nhập giá trị của input                                                                                                                                                                                                   |
+| placeholder-text-color | color   |               | Không    | Màu chữ của placeholder                                                                                                                                                                                                                                         |
+| disabled               | boolean | false         | Không    | Màu chữ của placeholder                                                                                                                                                                                                                                         |
+| maxlength              | number  | 14            | Không    | Giới hạn số ký tự được nhập                                                                                                                                                                                                                                     |
+| focus                  | boolean | false         | Không    | Tự động focus vào input                                                                                                                                                                                                                                         |
+| confirm-type           | string  | done          | Không    | Nội dung hiển thị cho phím return (Nhập). <br />**Hỗ trợ cho cả iOS và Android**: done/go/next/search/send<br/>**Chỉ hỗ trợ iOS: default/emergency-call/google/join/route/yahoo**<br/>Chỉ hỗ trợ Android: none/previous                                         |
+| selection-start        | number  | -1            | Không    | Vị trí bắt đầu của con trỏ. Nó chỉ có hiệu lực trong khi focus là true và cần được sử dụng `selection-end`                                                                                                                                                      |
+| selection-end          | number  | -1            | Không    | Vị trí kết thúc của con trỏ. Nó chỉ có hiệu lực khi focus là true và cần được sử dụng `selection-start`                                                                                                                                                         |
+| onInput                | event   |               | Không    | Sự kiện sẽ được gọi khi nội dung của input bị thay đổi, `event.detail = { value: value }`                                                                                                                                                                       |
+| onConfirm              | event   |               | Không    | Sự kiện sẽ được gọi khi nhấn nút submit (return/Nhập) , `event.detail = { value: value }`                                                                                                                                                                       |
+| onFocus                | event   |               | Không    | Sự kiện sẽ được gọi khi input được focus , `event.detail = { value: value }`                                                                                                                                                                                    |
+| onBlur                 | event   |               | Không    | Sự kiện sẽ được gọi khi input không được focus nữa , `event.detail = { value: value }`                                                                                                                                                                          |
 
 ```__react
 import image from '../../../theme/static/images/input-component.png'

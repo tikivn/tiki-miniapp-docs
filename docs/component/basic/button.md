@@ -8,20 +8,17 @@ title:
   en-US: button
 ---
 
-Các thuộc tính
+## Giới thiệu
 
-| Property | Type    | Default Value | Description                                       |
-| -------- | ------- | ------------- | ------------------------------------------------- |
-| size     | string  | "big"         | Kích thước của button (big/medium/small)          |
-| type     | string  | "primary"     | Giao diện của button (primary/secondary/tertiary) |
-| loading  | boolean | false         | Hiển thị icon loading                             |
-| disabled | boolean | false         | Disabled button                                   |
-| onTap    | event   | null          | Sự kiện khi tap vào button                        |
+button
 
-Code mẫu
+## Sử dụng
 
-```jsx
-/* txml */
+### Sample Code
+
+**index.txml**
+
+```xml
 <view class="container">
   <view class="block">
     <text>type: primary</text>
@@ -78,8 +75,9 @@ Code mẫu
 </view>
 ```
 
+**index.tcss**
+
 ```css
-/* tcss */
 .container {
   min-height: 100%;
   background-color: var(--gray20);
@@ -99,8 +97,9 @@ button {
 }
 ```
 
-```jsx
-/* js */
+**index.js**
+
+```js
 Page({
   data: {},
   onLoad() {},
@@ -118,6 +117,16 @@ Page({
   },
 });
 ```
+
+### Chi tiết
+
+| Property | Type    | Default Value | Description                                       |
+| -------- | ------- | ------------- | ------------------------------------------------- |
+| size     | string  | "big"         | Kích thước của button (big/medium/small)          |
+| type     | string  | "primary"     | Giao diện của button (primary/secondary/tertiary) |
+| loading  | boolean | false         | Hiển thị icon loading                             |
+| disabled | boolean | false         | Disabled button                                   |
+| onTap    | event   | null          | Sự kiện khi tap vào button                        |
 
 ```__react
 import image from '../../../theme/static/images/button-component.png'
