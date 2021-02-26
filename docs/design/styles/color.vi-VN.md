@@ -1,5 +1,5 @@
 ---
-order: 30
+order: 20
 category: Global style
 title: Colors
 ---
