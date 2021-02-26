@@ -1,7 +1,6 @@
 ---
 order: 40
-category: Components
-type: Basic components
+category: Basic components
 title: Date pickers
 ---
 

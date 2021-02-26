@@ -1,7 +1,6 @@
 ---
 order: 44
-category: Components
-type: Basic components
+category: Basic components
 title: Switch
 ---
 

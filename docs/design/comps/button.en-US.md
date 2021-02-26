@@ -1,7 +1,6 @@
 ---
 order: 31
-category: Components
-type: Basic components
+category: Basic components
 title: Button
 ---
 

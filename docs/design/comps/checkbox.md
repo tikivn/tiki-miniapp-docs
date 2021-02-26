@@ -1,7 +1,6 @@
 ---
 order: 43
-category: Components
-type: Basic components
+category: Basic components
 title: Checkbox
 ---
 
