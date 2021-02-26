@@ -12,7 +12,7 @@ If you don't have an account, please go to [www.figma.com](http://www.figma.com)
 
 ## **Add Tiny Design System to your library**
 
-### Option 1: Duplicate file from the Figma Community
+### Option 1: Duplicate file from the Figma community
 We published the Tiny Design System on the Figma community to help you easily comment and update the latest version of the library. You can access and duplicate the file [here](https://www.figma.com/file/BX3tjbObOr3ADeLMJymPV0/MiniApp-External-library?node-id=154%3A352). If you need help, you can learn how to do it [here](https://help.figma.com/hc/en-us/articles/360038510873-Use-files-from-the-Community).
 
 ### Option 2: Download local file

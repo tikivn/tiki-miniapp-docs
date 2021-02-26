@@ -29,12 +29,12 @@ Tiny Design System được xây dụng bởi các Components (Basic và Advance
 
 ## Styles
 
-Tiny Design System is also built with Styles. These are Colors, Text styles, Effects that can be reused across your designs. Learn more about Styles and how to use them [here](https://help.figma.com/hc/en-us/articles/360039238753-Styles-in-Figma).
+Các Components của Tiny Design System được tạo thành bởi Styles. Styles bao gồm những yếu tố như Colors, Text styles, Effects được sử dụng xuyên suốt trong tất cả các Components. Tìm hiểu thêm về Styles [tại đây](https://help.figma.com/hc/en-us/articles/360039238753-Styles-in-Figma).
 
 ## Auto Layout
 
-Components in the Tiny Design System were built with Auto Layout feature. Auto Layout makes designs that grow to fill or shrink to fit, and reflow as their contents change. Learn more about Auto Layout [here](https://help.figma.com/hc/en-us/articles/360040451373-Create-dynamic-designs-with-Auto-Layout).
+Hầu hết các Components của Tiny Design System đều được xây dựng với tính năng Auto Layout. Auto Layout giúp cho thiết kế của bạn có thể tùy biến về mặt kích thước mà không làm bể bố cục. Tìm hiểu thêm về Auto Layout [tại đây](https://help.figma.com/hc/en-us/articles/360040451373-Create-dynamic-designs-with-Auto-Layout).
 
 ## Variants
 
-Tiny Design System uses Variants that allow to group and organize similar components into a single container with properties. This simplifies the component library and makes it easier for everyone to find what they need. Learn more about Variants [here](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants).
+Tiny Design System sử dụng tính năng Variants để sắp xếp và tổng hợp các Components giống nhau về chức năng nhưng khác nhau về thuộc tính thành một thể thống nhất. Variants giúp cho bạn dễ dàng tìm kiếm và lựa chọn các thuộc tính cho Components một cách dễ dàng nhât. Tìm hiểu thêm về Variants [tại đây](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants).
