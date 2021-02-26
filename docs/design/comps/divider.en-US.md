@@ -1,6 +1,7 @@
 ---
 order: 32
-category: Basic components
+category: Components
+type: Basic components
 title: Divider
 ---
 

@@ -1,6 +1,7 @@
 ---
 order: 36
-category: Basic components
+category: Components
+type: Basic components
 title: Steps
 ---
 

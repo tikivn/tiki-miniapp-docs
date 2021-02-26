@@ -1,6 +1,7 @@
 ---
 order: 35
-category: Basic components
+category: Components
+type: Basic components
 title: Tooltip
 ---
 

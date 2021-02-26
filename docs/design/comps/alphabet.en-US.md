@@ -1,6 +1,7 @@
 ---
 order: 45
-category: Basic components
+category: Components
+type: Basic components
 title: Alphabet bar
 ---
 
