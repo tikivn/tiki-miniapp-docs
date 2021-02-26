@@ -92,5 +92,5 @@ Page({
 
 ```__react
 import image from '../../../theme/static/images/radio-component.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Text" src={image}/>, mountNode);
+ReactDOM.render(<img style={{maxWidth: 414}} alt="Switch" src={image}/>, mountNode);
 ```
