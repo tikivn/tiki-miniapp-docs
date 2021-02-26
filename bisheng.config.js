@@ -10,7 +10,12 @@ module.exports = {
   htmlTemplate: './theme/static/template.html',
   themeConfig: {
     root: '/',
-    categoryOrder: {},
+    categoryOrder: {
+    },
+    typeOrder: {
+      'Basic components': 1,
+      'Advanced components': 2,
+    },
   },
   ...commonConfig 
 };
