@@ -36,10 +36,12 @@ module.exports = {
     "docs/design/styles": pickerGenerator("design"),
     "docs/design/patterns": pickerGenerator("design"),
     "docs/design/principles": pickerGenerator("design"),
+
     // framework
     "docs/framework": pickerGenerator("framework"),
     "docs/framework/config": pickerGenerator("framework"),
     "docs/framework/txml": pickerGenerator("framework"),
+    "docs/framework/tcss": pickerGenerator("framework"),
     "docs/framework/component": pickerGenerator("framework"),
     "docs/framework/event": pickerGenerator("framework"),
 
@@ -51,10 +53,12 @@ module.exports = {
     "docs/api/interface": pickerGenerator("api"),
     "docs/api/navigator": pickerGenerator("api"),
     "docs/api/network": pickerGenerator("api"),
-
     "docs/api/interactive": pickerGenerator("api"),
     "docs/api/application": pickerGenerator("api"),
     "docs/api/pull-refresh": pickerGenerator("api"),
+    "docs/api/navigation-bar": pickerGenerator("api"),
+    "docs/api/tab-bar": pickerGenerator("api"),
+
     // others
     "docs/component": pickerGenerator("component"),
     "docs/component/basic": pickerGenerator("component"),
