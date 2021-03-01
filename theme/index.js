@@ -36,10 +36,12 @@ module.exports = {
     "docs/design/styles": pickerGenerator("design"),
     "docs/design/patterns": pickerGenerator("design"),
     "docs/design/principles": pickerGenerator("design"),
+
     // framework
     "docs/framework": pickerGenerator("framework"),
     "docs/framework/config": pickerGenerator("framework"),
     "docs/framework/txml": pickerGenerator("framework"),
+    "docs/framework/tcss": pickerGenerator("framework"),
     "docs/framework/component": pickerGenerator("framework"),
     "docs/framework/event": pickerGenerator("framework"),
 
