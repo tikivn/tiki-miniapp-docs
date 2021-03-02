@@ -77,6 +77,6 @@ Page({
 | controlled | boolean | Nếu giá trị là true, thì component chỉ thay đổi thông qua `setData`             |
 
 ```__react
-import image from '../../../theme/static/images/switch.png'
+import image from '../../../theme/static/images/switch-component.png'
 ReactDOM.render(<img style={{maxWidth: 414}} alt="Switch" src={image}/>, mountNode);
 ```
