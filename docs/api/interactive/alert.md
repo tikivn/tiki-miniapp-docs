@@ -3,7 +3,7 @@ order: 61
 category:
   vi-VN: Interactive Feedback
   en-US: Interactive Feedback
-title: 
+title:
   vi-VN: my.alert
   en-US: my.alert
 ---
@@ -50,16 +50,16 @@ Page({
       },
     });
   },
-})
+});
 ```
 
 ### Chi tiết
 
-| Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
-| ------- | --------------- | ------- | --------------- |
-| title | String | No | Title của alert box |
-| content | String | No | Content message của alert box |
-| buttonText | String | No | Text của button, mặc định là OK |
-| success | Function | No | Callback khi alert show success |
-| fail | Function | No | Callback khi alert show fail |
-| complete | Function | No | Callback khi alert đã được show |
+| Thuộc tính | Kiểu dữ liệu | Required | Mô tả                           |
+| ---------- | ------------ | -------- | ------------------------------- |
+| title      | String       | No       | Title của alert box             |
+| content    | String       | No       | Content message của alert box   |
+| buttonText | String       | No       | Text của button, mặc định là OK |
+| success    | Function     | No       | Callback khi alert show success |
+| fail       | Function     | No       | Callback khi alert show fail    |
+| complete   | Function     | No       | Callback khi alert đã được show |
