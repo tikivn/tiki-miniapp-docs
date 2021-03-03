@@ -86,9 +86,13 @@ Page({
 
 ### Chi tiết
 
-| Property | Type  | Description                                                                               |
-| -------- | ----- | ----------------------------------------------------------------------------------------- |
-| onChange | event | Sự kiện được gọi khi giá trị của các radio bị thay đổi, `event.detail = { value: value }` |
+| Property | Type    | Description                                                                     |
+| -------- | ------- | ------------------------------------------------------------------------------- |
+| value    | string  | Giá trị của radio                                                               |
+| checked  | boolean | Chỉ định radio có được chọn hay không                                           |
+| disabled | boolean | Disable switch component                                                        |
+| color    | string  | Màu của component, sử dụng mã màu như trong css                                 |
+| onChange | event   | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { checked: checked }` |
 
 ```__react
 import image from '../../../theme/static/images/radio-component.png'
