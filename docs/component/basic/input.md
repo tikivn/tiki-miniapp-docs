@@ -12,6 +12,10 @@ title:
 
 Dùng để nhập giá trị
 
+## Giới hạn
+
+- Chưa hỗ trợ style cho placeholder bên trong class
+
 ## Sử dụng
 
 ### Sample Code
