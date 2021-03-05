@@ -13,8 +13,6 @@ module.exports = {
     categoryOrder: {
     },
     typeOrder: {
-      'Basic components': 1,
-      'Advanced components': 2,
     },
   },
   ...commonConfig 
