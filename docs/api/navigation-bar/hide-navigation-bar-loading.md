@@ -4,8 +4,8 @@ category:
   vi-VN: Thanh điều hướng
   en-US: Navigation Bar
 title:
-  vi-VN: my.hideNavigationBarLoading (chưa ready)
-  en-US: my.hideNavigationBarLoading (chưa ready)
+  vi-VN: my.hideNavigationBarLoading
+  en-US: my.hideNavigationBarLoading
 ---
 
 ## Giới thiệu
@@ -15,10 +15,23 @@ title:
 ## Sử dụng
 
 ### Sample Code
+**index.txml**
+```xml
+<view>
+  <view class="block-content">
+    <button class="button-full" onTap="showLoading">Show navigation bar loading</button>
+    <button class="button-full" onTap="hideLoading">Hide navigation bar loading</button>
+  </view>
+</view>
+```
 
+**index.js**
 ```js
 Page({
-  onReady() {
+  showLoading() {
+    my.showNavigationBarLoading();
+  },
+  hideLoading() {
     my.hideNavigationBarLoading();
   },
 });

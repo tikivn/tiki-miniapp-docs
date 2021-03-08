@@ -4,8 +4,8 @@ category:
   vi-VN: Thanh điều hướng
   en-US: Navigation Bar
 title:
-  vi-VN: my.setNavigationBar (chưa ready)
-  en-US: my.setNavigationBar (chưa ready)
+  vi-VN: my.setNavigationBar
+  en-US: my.setNavigationBar
 ---
 
 ## Giới thiệu
@@ -45,10 +45,10 @@ Page({
 | Attributes        | Type     | Required | Description                                                                                         |
 | ----------------- | -------- | -------- | --------------------------------------------------------------------------------------------------- |
 | title             | string   | no       | Navigation Bar title                                                                                |
-| image             | string   | no       | Image URL được sử dụng để render trên title                                                         |
-| backgroundColor   | HexColor | no       | Background color của Navigation Bar                                                                 |
+| image             | string   | no       | Image URL được sử dụng để render trên title. Khi image được set thì `title` sẽ không còn hiệu lực   |
+| titleBarColor     | HexColor | no       | Background color của Navigation Bar                                                                 |
 | borderBottomColor | HexColor | no       | Nếu `backgroundColor` được set, thì `borderBottomColor` sẽ luôn nhận giá trị bằng `backgroundColor` |
-| reset             | Boolean  | no       | Reset về màu mặc định                                                                               |
+| reset             | Boolean  | no       | Reset về `titleBarColor` và `borderBottomColor` về màu mặc định                                     |
 | success           | Function | No       | Callback function khi thành công.                                                                   |
 | fail              | Function | No       | Callback function khi thất bại.                                                                     |
 | complete          | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                               |
