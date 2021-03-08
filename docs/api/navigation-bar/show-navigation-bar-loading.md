@@ -4,8 +4,8 @@ category:
   vi-VN: Thanh điều hướng
   en-US: Navigation Bar
 title:
-  vi-VN: my.showNavigationBarLoading (chưa ready)
-  en-US: my.showNavigationBarLoading (chưa ready)
+  vi-VN: my.showNavigationBarLoading
+  en-US: my.showNavigationBarLoading
 ---
 
 ## Giới thiệu
