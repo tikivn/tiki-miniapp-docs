@@ -4,8 +4,8 @@ category:
   vi-VN: Thanh điều hướng
   en-US: Navigation Bar
 title:
-  vi-VN: my.getTitleColor (chưa ready)
-  en-US: my.getTitleColor (chưa ready)
+  vi-VN: my.getTitleColor
+  en-US: my.getTitleColor
 ---
 
 ## Giới thiệu
