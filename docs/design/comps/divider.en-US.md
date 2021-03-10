@@ -1,5 +1,5 @@
 ---
-order: 32
+order: 42
 category: Basic components
 title: Divider
 ---

@@ -1,5 +1,5 @@
 ---
-order: 20
+order: 30
 category: Nền tảng chung
 title: Kích thước màn hình để thiết kế
 ---

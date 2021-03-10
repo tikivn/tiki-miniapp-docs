@@ -1,5 +1,5 @@
 ---
-order: 49
+order: 59
 category: Basic components
 title: Snack bar
 ---

@@ -1,5 +1,5 @@
 ---
-order: 42
+order: 52
 category: Basic components
 title: Textarea
 ---

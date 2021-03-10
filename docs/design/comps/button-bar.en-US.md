@@ -1,5 +1,5 @@
 ---
-order: 48
+order: 58
 category: Basic components
 title: Button bar
 ---

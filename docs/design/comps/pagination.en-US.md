@@ -1,5 +1,5 @@
 ---
-order: 37
+order: 47
 category: Basic components
 title: Pagination
 ---

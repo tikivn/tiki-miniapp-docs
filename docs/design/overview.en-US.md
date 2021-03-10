@@ -32,6 +32,12 @@ Tiny design principles:
 - [Positive vibe](https://miniapp.tiki.vn/docs/design/principles/positive-en)
 - [Accessible](https://miniapp.tiki.vn/docs/design/principles/accessible-en)
 
+Tiny design guidelines:
+- [Navigation](https://miniapp.tiki.vn/docs/design/guideline/navigation-en)
+- [Information architecture]()
+- [Clear progress]()
+- [Feedback]()
+
 Tiny styles
 - [Size of design screen](https://miniapp.tiki.vn/docs/design/styles/frame-en)
 - [Colors](https://miniapp.tiki.vn/docs/design/styles/color-en)

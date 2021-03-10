@@ -1,5 +1,5 @@
 ---
-order: 20
+order: 30
 category: Global style
 title: Size of design screen
 ---

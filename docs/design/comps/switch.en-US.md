@@ -1,5 +1,5 @@
 ---
-order: 44
+order: 54
 category: Basic components
 title: Switch
 ---

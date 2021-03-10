@@ -1,5 +1,5 @@
 ---
-order: 31
+order: 41
 category: Basic components
 title: Button
 ---

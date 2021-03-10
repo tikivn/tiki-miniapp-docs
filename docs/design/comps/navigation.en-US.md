@@ -1,5 +1,5 @@
 ---
-order: 47
+order: 57
 category: Basic components
 title: Navigation bar
 ---
