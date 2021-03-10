@@ -3,7 +3,7 @@ order: 0
 category: Tiny design
 title: Overview
 ---
-<img style="width: 48px" class="preview" src="https://salt.tikicdn.com/ts/social/ec/68/28/dd5ecb58d2e344fb98ceb9598c376ce8.png" alt="intro">
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/ec/68/28/dd5ecb58d2e344fb98ceb9598c376ce8.png" alt="intro" style="width: 48px" >
 
 ## **Introduction**
 
@@ -12,7 +12,7 @@ The Mini-app design team builds a design system for the Mini-app platform based 
 
 </br>
 
-<img style="width: 48px" class="preview" src="https://salt.tikicdn.com/ts/social/33/d9/57/c84a51d1456d498f181f9fdeed565a8f.png" alt="tool">
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/33/d9/57/c84a51d1456d498f181f9fdeed565a8f.png" alt="tool" style="width: 48px" >
 
 ## **Tool and resources**
 
@@ -22,7 +22,7 @@ We use Figma tool to build the Tiny Design System with atomic design methodology
 
 </br>
 
-<img style="width: 48px" class="preview" src="https://salt.tikicdn.com/ts/social/36/4c/7e/c269800a2d1aae270f123261b49c5112.png" alt="guidelines">
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/36/4c/7e/c269800a2d1aae270f123261b49c5112.png" alt="guidelines" style="width: 48px" >
 
 ## **Guidelines**
 
