@@ -3,7 +3,7 @@ order: 0
 category: Tiny design
 title: Overview
 ---
-<img style="width: 48px" src="https://salt.tikicdn.com/ts/social/ec/68/28/dd5ecb58d2e344fb98ceb9598c376ce8.png" alt="intro">
+<img style="width: 48px" class="preview" src="https://salt.tikicdn.com/ts/social/ec/68/28/dd5ecb58d2e344fb98ceb9598c376ce8.png" alt="intro">
 
 ## **Introduction**
 
@@ -12,7 +12,7 @@ The Mini-app design team builds a design system for the Mini-app platform based 
 
 </br>
 
-<img style="width: 48px" src="https://salt.tikicdn.com/ts/social/33/d9/57/c84a51d1456d498f181f9fdeed565a8f.png" alt="tool">
+<img style="width: 48px" class="preview" src="https://salt.tikicdn.com/ts/social/33/d9/57/c84a51d1456d498f181f9fdeed565a8f.png" alt="tool">
 
 ## **Tool and resources**
 
@@ -22,18 +22,18 @@ We use Figma tool to build the Tiny Design System with atomic design methodology
 
 </br>
 
-<img style="width: 48px" src="https://salt.tikicdn.com/ts/social/36/4c/7e/c269800a2d1aae270f123261b49c5112.png" alt="guidelines">
+<img style="width: 48px" class="preview" src="https://salt.tikicdn.com/ts/social/36/4c/7e/c269800a2d1aae270f123261b49c5112.png" alt="guidelines">
 
 ## **Guidelines**
 
 Tiny design principles:
-- [Transparency]()
-- [Clear focus]()
-- [Positive vibe]()
-- [Accessible]()
+- [Transparency](https://miniapp.tiki.vn/docs/design/principles/transparency-en)
+- [Clear focus](https://miniapp.tiki.vn/docs/design/principles/clear-focus-en)
+- [Positive vibe](https://miniapp.tiki.vn/docs/design/principles/positive-en)
+- [Accessible](https://miniapp.tiki.vn/docs/design/principles/accessible-en)
 
 Tiny styles
-- [Size of design screen]()
-- [Colors]()
-- [Typography]()
-- [Iconography]()
+- [Size of design screen](https://miniapp.tiki.vn/docs/design/styles/frame-en)
+- [Colors](https://miniapp.tiki.vn/docs/design/styles/color-en)
+- [Typography](https://miniapp.tiki.vn/docs/design/styles/font-en)
+- [Iconography](https://miniapp.tiki.vn/docs/design/styles/icon-en)
