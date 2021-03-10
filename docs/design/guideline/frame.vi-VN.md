@@ -1,7 +1,7 @@
 ---
-order: 30
-category: Nền tảng chung
-title: Kích thước màn hình để thiết kế
+order: 24
+category: Quy định trong thiết kế
+title: Kích thước màn hình
 ---
 
 <center>

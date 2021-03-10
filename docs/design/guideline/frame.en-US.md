@@ -1,6 +1,6 @@
 ---
-order: 30
-category: Global style
+order: 24
+category: Design Guidelines
 title: Size of design screen
 ---
 

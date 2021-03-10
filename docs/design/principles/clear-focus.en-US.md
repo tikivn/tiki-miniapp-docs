@@ -1,7 +1,7 @@
 ---
 order: 11
 category: Design Principles
-title: Clear Focus
+title: Clear focus
 ---
 
 ## Focus on task

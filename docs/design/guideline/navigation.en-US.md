@@ -1,7 +1,7 @@
 ---
 order: 20
 category: Design Guidelines
-title: Good Navigation
+title: Navigation
 ---
 
 ## Tiny official navigation bar
