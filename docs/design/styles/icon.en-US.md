@@ -1,5 +1,5 @@
 ---
-order: 22
+order: 23
 category: Global style
 title: Iconography
 ---
