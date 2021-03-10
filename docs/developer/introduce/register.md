@@ -9,7 +9,7 @@ title:
 ---
 ## Đăng ký tài khoản Nhà phát triển
 
-Tại trang chủ [MiniApp](https://miniapp.tiki.vn/), bấm nút **Đăng ký nhà phát triển**
+Tại trang chủ [MiniApp](/), bấm nút **Đăng ký nhà phát triển**
 
 <img style="width: 100%" src="https://salt.tikicdn.com/ts/social/98/53/44/8c7b9973f3ac3914b78765a4c4020c42.png" alt="Trang chủ MiniApp"/>
 
@@ -34,7 +34,7 @@ Tài khoản Cá nhân không thể chuyển đổi thành tài khoản Công ty
 
 ## Điều khoản và Chính sách bảo mật
 
-Đọc và Đồng ý với [*Điều khoản & Điều lệ*](https://miniapp.tiki.vn/), [*Chính sách bảo mật*](https://miniapp.tiki.vn/) của Tiki MiniApp
+Đọc và Đồng ý với [*Điều khoản & Điều lệ*](./terms), [*Chính sách bảo mật*](./policies) của Tiki MiniApp
 
 <img style="width: 100%" src="https://salt.tikicdn.com/ts/social/04/af/b8/165158b288f342821083d3cea824caa0.png" alt="terms & conditions"/>
 
