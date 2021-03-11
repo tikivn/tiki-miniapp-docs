@@ -15,6 +15,15 @@ Compnent avatar dùng để hiển thị hình ảnh của user, tên, hoặc te
 ## Sử dụng
 
 ### Sample Code:
+Khai báo components:
+```json
+{
+  "defaultTitle": "Avatar",
+  "usingComponents": {
+    "avatar": "@tikivn/mini-ui/lib/avatar/index"
+  }
+}
+```
 
 #### Shape: circle
 
