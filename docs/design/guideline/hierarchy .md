@@ -11,4 +11,5 @@ When designing each screen, we must ensure:
 - The hierarchy and level of information are clear.
 - The level of information should not be too much.
 
+
 ## Clear action

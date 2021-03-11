@@ -37,9 +37,9 @@ Tiny design guidelines:
 - [Information architecture]()
 - [Clear progress]()
 - [Feedback]()
+- [Size of design screen](https://miniapp.tiki.vn/docs/design/styles/frame-en)
 
 Tiny styles
-- [Size of design screen](https://miniapp.tiki.vn/docs/design/styles/frame-en)
 - [Colors](https://miniapp.tiki.vn/docs/design/styles/color-en)
 - [Typography](https://miniapp.tiki.vn/docs/design/styles/font-en)
 - [Iconography](https://miniapp.tiki.vn/docs/design/styles/icon-en)

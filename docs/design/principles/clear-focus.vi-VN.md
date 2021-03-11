@@ -5,7 +5,8 @@ title: Tập trung
 ---
 
 ## Tập trung vào tác vụ
-Theo nguyên tắc chung, hãy cố gắng tránh xa bất kỳ thứ gì yêu cầu người dùng phải nhớ để quay lại ứng dụng của bạn để hoàn thành nhiệm vụ, rất có thể họ sẽ không làm vậy.<br/>
+Theo nguyên tắc chung, hãy cố gắng tránh xa bất kỳ thứ gì yêu cầu người dùng phải nhớ để quay lại ứng dụng của bạn để hoàn thành nhiệm vụ, rất có thể họ sẽ không làm vậy.
+
 Khi người dùng đang trong luồng hoàn thành tác vụ nào đó, hãy giúp họ hoàn thành trong khoảng thời gian ngắn nhất có thể bằng cách loại bỏ các yếu tố gây mất tập trung (ví dụ: những tác vụ phụ khác) trên màn hình đó.
 
 
