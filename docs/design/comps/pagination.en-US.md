@@ -1,7 +1,6 @@
 ---
-order: 37
-category: Components
-type: Basic components
+order: 47
+category: Basic components
 title: Pagination
 ---
 

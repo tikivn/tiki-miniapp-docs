@@ -1,7 +1,6 @@
 ---
-order: 34
-category: Components
-type: Basic components
+order: 44
+category: Basic components
 title: Badge
 ---
 

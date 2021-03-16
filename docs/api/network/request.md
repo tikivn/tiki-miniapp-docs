@@ -3,7 +3,7 @@ order: 30
 category:
   vi-VN: Network
   en-US: Network
-title: 
+title:
   vi-VN: my.request
   en-US: my.request
 ---
@@ -30,10 +30,13 @@ title:
       <Text>my.request</Text>
       <Text>{JSON.stringify(data.response)}</Text>
       <View style={styles.page__section__buttons}>
-        <Button title={data.loading ? 'Loading...' : 'Query'} onPress={makeRequest} />
+        <Button
+          title={data.loading ? "Loading..." : "Query"}
+          onPress={makeRequest}
+        />
         <Button title="Clear" onPress={clear} />
       </View>
-    </View>   
+    </View>
   </View>
 </View>
 ```
@@ -47,17 +50,17 @@ Page({
   makeRequest() {
     this.setData({ loading: true });
     my.request({
-      url: 'https://httpbin.org/post',
-      method: 'POST',
+      url: "https://httpbin.org/post",
+      method: "POST",
       success: (response) => {
         this.setData({ response, loading: false });
-      }
-    })
+      },
+    });
   },
   clear() {
-    this.setData({ response: {} })
-  }
-})
+    this.setData({ response: {} });
+  },
+});
 ```
 
 ### API Params
@@ -74,7 +77,7 @@ Page({
 | dataType   | String   | No       | Quy định format trả về sau request. Mặc định là JSON. Bạn có thể truyền text nếu muốn nhận raw data. |
 | success    | Function | No       | Callback function khi việc gọi network thành công.                                                   |
 | fail       | Function | No       | Callback function khi việc gọi network thất bại.                                                     |
-| comlete    | Function | No       | Callback function khi việc gọi network kết thúc cho dù thành công hay thất bại.                      |
+| complete   | Function | No       | Callback function khi việc gọi network kết thúc cho dù thành công hay thất bại.                      |
 
 #### Callback function payload
 
@@ -85,6 +88,6 @@ TODO
 API trả về network request task. Bạn có thể thực hiện huỷ việc gọi network thông qua network request task.
 
 ```js
-const task = my.reuqest({ url: 'https://tiki.vn/api' });
+const task = my.reuqest({ url: "https://tiki.vn/api" });
 task.abort();
 ```

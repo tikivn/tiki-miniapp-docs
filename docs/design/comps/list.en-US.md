@@ -1,7 +1,6 @@
 ---
-order: 33
-category: Components
-type: Basic components
+order: 43
+category: Basic components
 title: List
 ---
 

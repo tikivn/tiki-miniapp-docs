@@ -1,7 +1,6 @@
 ---
-order: 39
-category: Components
-type: Basic components
+order: 49
+category: Basic components
 title: Input steppers
 ---
 

@@ -1,7 +1,6 @@
 ---
-order: 46
-category: Components
-type: Basic components
+order: 56
+category: Basic components
 title: Progress bar
 ---
 

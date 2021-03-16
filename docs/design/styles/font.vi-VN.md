@@ -1,5 +1,5 @@
 ---
-order: 21
+order: 32
 category: Global style
 title: Typography
 ---

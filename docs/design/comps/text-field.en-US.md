@@ -1,7 +1,6 @@
 ---
-order: 41
-category: Components
-type: Basic components
+order: 51
+category: Basic components
 title: Text field
 ---
 

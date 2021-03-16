@@ -1,7 +1,6 @@
 ---
-order: 42
-category: Components
-type: Basic components
+order: 52
+category: Basic components
 title: Textarea
 ---
 

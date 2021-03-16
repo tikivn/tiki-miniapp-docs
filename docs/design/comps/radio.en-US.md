@@ -1,7 +1,6 @@
 ---
-order: 43
-category: Components
-type: Basic components
+order: 53
+category: Basic components
 title: Radio button
 ---
 

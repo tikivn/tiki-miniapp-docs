@@ -1,7 +1,6 @@
 ---
-order: 48
-category: Components
-type: Basic components
+order: 58
+category: Basic components
 title: Button bar
 ---
 

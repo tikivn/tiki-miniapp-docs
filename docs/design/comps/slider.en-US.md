@@ -1,7 +1,6 @@
 ---
-order: 38
-category: Components
-type: Basic components
+order: 48
+category: Basic components
 title: Slider
 ---
 
