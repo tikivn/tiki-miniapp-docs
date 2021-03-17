@@ -34,12 +34,11 @@ Tiny design principles:
 
 Tiny design guidelines:
 - [Navigation](https://miniapp.tiki.vn/docs/design/guideline/navigation-en)
-- [Information architecture]()
-- [Clear progress]()
-- [Feedback]()
+- [Distinguishable content hierarchy ](https://miniapp.tiki.vn/docs/design/guideline/hierarchy-en)
+- [Clear progress](https://miniapp.tiki.vn/docs/design/guideline/clear-progress-en)
+- [Size of design screen](https://miniapp.tiki.vn/docs/design/styles/frame-en)
 
 Tiny styles
-- [Size of design screen](https://miniapp.tiki.vn/docs/design/styles/frame-en)
 - [Colors](https://miniapp.tiki.vn/docs/design/styles/color-en)
 - [Typography](https://miniapp.tiki.vn/docs/design/styles/font-en)
 - [Iconography](https://miniapp.tiki.vn/docs/design/styles/icon-en)

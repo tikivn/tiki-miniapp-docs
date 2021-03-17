@@ -168,32 +168,34 @@ Bạn có thể sử dụng 2 thuộc tính `style` và `class` trong TXML để
 }
 ```
 
-## Thứ tự import 
+## CSS Selector
+
+TCSS hỗ trợ các loại Selector sau
+
+- selector với class name. VD: `.class1`, `.class2`
+- selector với thẻ cho các basic component. Cụ thể là các thẻ `view`, `input`, `text`, `icon`, `progress`, `radio`, `radio-group`, `label`, `checkbox`, `checkbox-group`, `switch`.
+- selector cho các item con. VD: `view > .class1`
+- selector cho các item con và cháu. VD: `view .class1`
+
+## Thứ tự import
 
 Khi một Page được render, các tcss sẽ được import theo thứ tự như sau
 
 - app.tcss sẽ được import trước tiên
-- Khi một Page sử dụng nhiều component, component này cũng có thể sử dụng các component khác. Tất cả các component (bao gồm cả các Component con của một Component) mà một Page sử dụng, sẽ được sort theo 2 tiêu chí: (1) Component nào ớ dưới lá, (2) đường dẫn của chúng.  Thứ tự sort này sẽ quyết định xem tcss của Component nào được import vào trước, tcss của Component nào được import vào sau.
+- Khi một Page sử dụng nhiều component, component này cũng có thể sử dụng các component khác. Tất cả các component (bao gồm cả các Component con của một Component) mà một Page sử dụng, sẽ được sort theo 2 tiêu chí: (1) Component nào ớ dưới lá, (2) đường dẫn của chúng. Thứ tự sort này sẽ quyết định xem tcss của Component nào được import vào trước, tcss của Component nào được import vào sau.
 - cuối cùng là index.tcss của chính page đó
 
-Do được import cuối cùng, nên tcss của Page có thể override tcss của các Component con. 
+Do được import cuối cùng, nên tcss của Page có thể override tcss của các Component con.
 
 Ví dụ: Giả sử chúng ta có một Mini App với cấu trúc như sau
 
 ```jsx
-app.tcss
-pages/
-	page1/
-		index.tcss
-components/
-	component1/
-		index.tcss
-	component2/
-		index.tcss
-	component3/
-		index.tcss
-	component4/
-		index.tcss
+app.tcss;
+pages / page1 / index.tcss;
+components / component1 / index.tcss;
+component2 / index.tcss;
+component3 / index.tcss;
+component4 / index.tcss;
 ```
 
 Giả sử rằng:
@@ -202,7 +204,7 @@ Giả sử rằng:
 - component1 sử dụng component4
 - component4 sử dụng component2 và component3
 
-Thế thì khi đó, thứ tự import của tcss sẽ là 
+Thế thì khi đó, thứ tự import của tcss sẽ là
 
 - app.tcss
 - components/component2/index.tcss

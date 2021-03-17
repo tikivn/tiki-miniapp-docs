@@ -50,8 +50,17 @@ Page({
 | Attributes | Type     | Required | Description                                                                                                                      |
 | ---------- | -------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | appId      | String   | Yes      | appId của miniapp muốn di chuyển tới.                                                                                            |
+| appMeta    | Object   | No       | appMeta của một app.                                                                                                             |
 | path       | String   | No       | Đường dẫn tới màn hình muốn mở của app được chuyển tới. Nếu không được quy định thì màn hình đầu tiên sẽ được mở.                |
 | extraData  | Object   | No       | Dữ liệu cần được truyền cho app được nhảy tới.<br> App được nhảy tới sẽ lấy thông tin qua hàm `App.onLaunch()` và `App.onShow()` |
 | success    | Function | No       | Callback function khi thành công.                                                                                                |
 | fail       | Function | No       | Callback function khi thất bại.                                                                                                  |
 | complete   | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                                                            |
+
+### Các thuộc tính của `appMeta`
+
+| Attributes             | Type   | Required | Description                                                                           |
+| ---------------------- | ------ | -------- | ------------------------------------------------------------------------------------- |
+| cdnBaseUrl             | String | No       | Base CDN để load các file config của Mini App. Base CDN phải là subdomain của tiki.vn |
+| frameworkVersion       | String | No       | Framework version                                                                     |
+| frameworkCdnBaseDomain | String | No       | Framework base CDN phải là subdomain của Tiki                                         |

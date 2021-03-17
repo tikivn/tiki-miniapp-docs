@@ -9,3 +9,7 @@ Vài giây đầu tiên khi vào một Mini App là thời điểm quan trọng 
 
 ## Điều hướng rõ ràng
 Mini App là một khái niệm mới đối với người dùng Việt Nam, họ có thể chưa quen với việc điều hướng mới của ứng dụng. Để giúp người dùng cảm nhận trực quan vị trí của họ trong quy trình làm việc, độ sâu điều hướng tối đa được đề xuất là ba cấp. Trong trường hợp có nhiều hơn ba cấp, hãy cân nhắc sử dụng thanh menu dưới màn hình  hoặc thanh tiến trình để bật điều hướng ngang giữa các phần của bạn. Bạn có thể đọc thêm về các quy định điều hướng [tại đây](https://miniapp.tiki.vn/docs/design/guideline/navigation-en)
+
+<center>
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/03/b3/e5/c7bdf880a5699915f0abd87f352834ca.png" alt="navigation" style="height: 400px" >
+</center>
