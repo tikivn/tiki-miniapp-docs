@@ -4,4 +4,7 @@ category: Global style
 title: Colors
 ---
 
-Tổng quan về design components
+```__react
+import {Color} from '../../theme/template/Design';
+ReactDOM.render(<Color color={{ name: 'gray', count: 13 }} direction="horizontal" />, mountNode);
+```
