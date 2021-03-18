@@ -61,6 +61,7 @@ module.exports = {
 
     // others
     'docs/component': pickerGenerator('component'),
+    'docs/component/advance': pickerGenerator('component'),
     'docs/component/basic': pickerGenerator('component'),
     'docs/component/media': pickerGenerator('component'),
     'docs/component/view-container': pickerGenerator('component'),
