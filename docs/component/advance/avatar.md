@@ -1,8 +1,8 @@
 ---
-order: 10
+order: 11
 category:
-  vi-VN: Thành phần cơ bản
-  en-US: Basic components
+  vi-VN: Thành phần nâng cao
+  en-US: Advance components
 title:
   vi-VN: avatar
   en-US: avatar
