@@ -7,6 +7,11 @@ title: Colors
 
 Our color tokens are a foundational part of our design system. We use color to visually communicate information, functions in our experiences.
 
+### Global tokens
+
+
+### Alias tokens
+
 ```__react
 import {Color} from '../../../theme/template/Design';
 ReactDOM.render(<Color color={{ name: 'gray', count: 13 }} direction="horizontal" />, mountNode);
