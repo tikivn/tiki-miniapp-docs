@@ -3,6 +3,7 @@ order: 31
 category: Thiết kế chung
 title: Màu sắc
 ---
+Chúng tôi sử dụng màu sắc để truyền đạt thông tin một cách trực quan, các chức năng trong trải nghiệm của chúng tôi.
 
 ## Hệ thống màu của Tiny
 
@@ -20,24 +21,23 @@ import en from '../../../theme/template/Design/Color/global-en';
 ReactDOM.render(<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />, mountNode);
 ```
 
-## Accessibility
+## Khả năng sử dụng
 
-Using various forms of contrast is the most important consideration when making user-friendly color and interface choices. Awareness of standards and best practices is the key to accessible color selection.
+Sử dụng các dạng tương phản khác nhau là điều quan trọng nhất cần cân nhắc khi đưa ra lựa chọn màu sắc và giao diện thân thiện với người dùng. Nhận thức về các tiêu chuẩn và thực hành tốt nhất là chìa khóa để lựa chọn màu sắc dễ tiếp cận.
 
-The color families in each palette contain ten values from 10 to 100. White and Black sit outside those values.
+Các màu trong mỗi bảng màu chứa mười giá trị được đánh số từ 10 đến 100. Trắng và Đen nằm ngoài các giá trị đó.
 
-Meet WCAG AA accessibility requirements for minimum contrast.
+Đáp ứng các yêu cầu của WCAG AA để có độ tương phản tối thiểu.
 
-Black text is WCAG AA accessible on colors ranging from 10 to 50. White text is accessible on colors from 60 to 100.
-
-- Small text is any size below 24px and requires a 4.5:1 contrast ratio
-- Large text is anything above 24px and requires a 3:1 contrast ratio
+- Văn bản màu xám đen theo quy chuẩn của WCAG AA nằm trong vùng màu từ 10 đến 50. Văn bản màu trắng nằm trên mảng có vùng màu từ 60 đến 100.
+- Văn bản nhỏ dưới 24px phải có tỷ lệ tương phản là 4.5:1.
+- Văn bản lớn trên 24px phải có tỷ lệ tương phản là 3:1.
 
 ## Color tokens
 
-Our color tokens are a foundational part of our design system. We use color to visually communicate information, functions in our experiences.
+Các color tokens là một phần nền tảng trong hệ thống thiết kế của Tiny.
 
-### Text
+### Màu của văn bản
 
 ```__react
 import {Color} from '../../../theme/template/Design';
@@ -46,7 +46,7 @@ import en from '../../../theme/template/Design/Color/text-en';
 ReactDOM.render(<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />, mountNode);
 ```
 
-### Icon
+### Màu của icon
 
 ```__react
 import {Color} from '../../../theme/template/Design';
@@ -55,7 +55,7 @@ import en from '../../../theme/template/Design/Color/icon-en';
 ReactDOM.render(<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />, mountNode);
 ```
 
-### Border
+### Màu của viền
 
 ```__react
 import {Color} from '../../../theme/template/Design';
@@ -64,7 +64,7 @@ import en from '../../../theme/template/Design/Color/border-en';
 ReactDOM.render(<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />, mountNode);
 ```
 
-### Background
+### Màu của nền
 
 ```__react
 import {Color} from '../../../theme/template/Design';

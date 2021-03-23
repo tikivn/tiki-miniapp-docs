@@ -3,7 +3,7 @@ order: 31
 category: Global style
 title: Colors
 ---
-
+We use color to visually communicate information, functions in our experiences.
 ## The Tiny color theme
 
 The color theme includes default colors for:
@@ -28,14 +28,13 @@ The color families in each palette contain ten values from 10 to 100. White and 
 
 Meet WCAG AA accessibility requirements for minimum contrast.
 
-Black text is WCAG AA accessible on colors ranging from 10 to 50. White text is accessible on colors from 60 to 100.
-
-- Small text is any size below 24px and requires a 4.5:1 contrast ratio
-- Large text is anything above 24px and requires a 3:1 contrast ratio
+- Black text is WCAG AA accessible in colors ranging from 10 to 50. White text is accessible in colors from 60 to 100.
+- Small text is any size below 24px and requires a 4.5:1 contrast ratio.
+- Large text is anything above 24px and requires a 3:1 contrast ratio.
 
 ## Color tokens
 
-Our color tokens are a foundational part of our design system. We use color to visually communicate information, functions in our experiences.
+Our color tokens are a foundational part of our design system.
 
 ### Text
 
