@@ -1,5 +1,5 @@
 export default {
-  headers: ['Key path', 'Value'],
+  headers: ['System prop', 'Core token'],
   contents: [
     [
       {
