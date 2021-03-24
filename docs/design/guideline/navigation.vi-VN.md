@@ -17,12 +17,12 @@ Hộp điều hướng bao gồm 2 thành phần chính: nút Tùy chọn & nút
 - Khi bấm nút Tùy chọn, menu hệ thống sẽ hiện lên.
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/37/b6/92/d07c55ff15341b918570238109ed4e5e.png" alt="more icon" style="height: 400px" >
 </br>
-- Khi bấm nút Đóng, mini app đang sử dụng đó sẽ được tắt.
+- Khi bấm nút Đóng, MiniApp đang sử dụng đó sẽ được tắt.
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/ea/80/ec/53b8b14009c6e3b13bcfc742c78c083f.png" alt="close icon" style="height: 400px" >
 </br>
 
 Nút Quay lại có 2 trường hợp:
-- Tại trang chủ của Mini app đó, nút này sẽ được ẩn đi.
+- Tại trang chủ của MiniApp đó, nút này sẽ được ẩn đi.
 - Khi người dùng vào sâu hơn trong ứng dụng, nút Quay lại sẽ hiện ra để giúp người dùng có thể trở lại trang trước đó
     > <em>Lưu ý: Nút Quay lại luôn luôn là icon mũi tên quay lại. Không được sử dụng icon Đóng làm người dùng lẫn lộn với nút Đóng trong Hộp điều hướng</em>
 

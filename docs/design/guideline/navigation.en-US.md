@@ -18,12 +18,12 @@ The Navigation box included 2 elements: More & Close icon.
 - Click More icon to display the system menu sheet.
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/37/b6/92/d07c55ff15341b918570238109ed4e5e.png" alt="more icon" style="height: 400px" >
 </br>
-- Click Close icon to exit the current Mini app.
+- Click Close icon to exit the current MiniApp.
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/ea/80/ec/53b8b14009c6e3b13bcfc742c78c083f.png" alt="close icon" style="height: 400px" >
 </br>
 
 The Return action has 2 cases:
-- At the homescreen of the current Mini app, the navigation action always be hidden.
+- At the homescreen of the current MiniApp, the navigation action always be hidden.
 - When the user go deeper in the app, the Back icon was appeared to help user can return to the previous screen.
     > <em>Attention: The return action should always be the Back icon. Do not use the Close icon to make users confuse with the Close icon at Navigation box. </em>
 
