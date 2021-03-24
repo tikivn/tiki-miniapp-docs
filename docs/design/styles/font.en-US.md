@@ -33,6 +33,8 @@ We use [Inter typeface](https://fonts.google.com/specimen/Inter?preview.text_typ
 | 12px        | font-height-x-small  |
 
 ## Font weight
+In most cases, just Regular 400 and Medium 500 should be enough. In the case of important information, bold 700 could be used.
+
 | Font weight | Token               |
 |-------------|---------------------|
 | Black 900   | font-weight-black   |

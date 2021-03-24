@@ -33,6 +33,8 @@ Chúng tôi chọn [bộ font Inter](https://fonts.google.com/specimen/Inter?pre
 | 12px        | font-height-x-small  |
 
 ## Độ dày
+Trong hầu hết các trường hợp, chỉ cần Regular 400 và Medium 500 là đủ. Trong trường hợp có thông tin quan trọng, Bold 700 có thể được sử dụng.
+
 | Font weight | Token               |
 |-------------|---------------------|
 | Black 900   | font-weight-black   |
