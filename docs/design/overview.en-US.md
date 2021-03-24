@@ -17,8 +17,8 @@ The Mini-app design team builds a design system for the Mini-app platform based 
 ## **Tool and resources**
 
 We use Figma tool to build the Tiny Design System with atomic design methodology.
-- [How to use Tiny Design System]()
-- [Design resources]()
+- [How to use Tiny Design System](https://miniapp.tiki.vn/docs/design/figma/started-en)
+- [Design resources](https://miniapp.tiki.vn/docs/design/figma/download-en)
 
 </br>
 

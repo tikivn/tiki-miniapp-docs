@@ -17,7 +17,7 @@ Nếu bạn chưa có tài khoản, vui lòng truy cập [www.figma.com](http://
 Chúng tôi đã upload Tiny Design System trên Figma Community để giúp bạn dễ dàng gởi nhận xét và cập nhật phiên bản mới nhất của Tiny. Bạn có thể truy cập và duplicate file [tại đây](https://www.figma.com/file/BX3tjbObOr3ADeLMJymPV0/MiniApp-External-library?node-id=154%3A352). Nếu bạn cần trợ giúp, bạn có thể tìm hiểu [tại đây](https://help.figma.com/hc/en-us/articles/360038510873-Use-files-from-the-Community).
 
 #### Cách 2: Tải file
-Bạn có thể tải file trực tiếp [tại đây](https://miniapp.tiki.vn/docs/design/principles/accessible-en). Sau khi tải file, vui lòng kích hoạt Tiny Design System trong Figma của bạn. Nếu bạn cần trợ giúp, bạn có thể học cách làm điều đó [tại đây](https://help.figma.com/hc/en-us/articles/360038743434-Enable-libraries-in-drafts-teams-and-files).
+Bạn có thể tải file trực tiếp [tại đây](https://miniapp.tiki.vn/docs/design/figma/download-en). Sau khi tải file, vui lòng kích hoạt Tiny Design System trong Figma của bạn. Nếu bạn cần trợ giúp, bạn có thể học cách làm điều đó [tại đây](https://help.figma.com/hc/en-us/articles/360038743434-Enable-libraries-in-drafts-teams-and-files).
 </br>
 
 ---
