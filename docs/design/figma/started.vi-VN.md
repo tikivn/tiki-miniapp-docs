@@ -6,10 +6,12 @@ title: Khởi đầu
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/c2/bc/c5/4f02823afd77ccd272768c1578b077d9.png" alt="account" style="width: 48px" >
 
 # **Cài đặt**
-## **Tạo tài khoản Figma**
+### **Tạo tài khoản Figma**
 Nếu bạn chưa có tài khoản, vui lòng truy cập [www.figma.com](http://www.figma.com) để đăng ký. Nếu bạn cần trợ giúp về việc đăng ký, bạn có thể tìm hiểu cách thực hiện [tại đây](https://help.figma.com/hc/en-us/articles/360039811114-Create-a-Figma-account).
 
-## **Thêm Tiny vào thư viện thiết kế**
+</br>
+
+### **Thêm Tiny vào thư viện thiết kế**
 
 #### Cách 1: Duplicate tập tin từ Figma Community
 Chúng tôi đã upload Tiny Design System trên Figma Community để giúp bạn dễ dàng gởi nhận xét và cập nhật phiên bản mới nhất của Tiny. Bạn có thể truy cập và duplicate file [tại đây](https://www.figma.com/file/BX3tjbObOr3ADeLMJymPV0/MiniApp-External-library?node-id=154%3A352). Nếu bạn cần trợ giúp, bạn có thể tìm hiểu [tại đây](https://help.figma.com/hc/en-us/articles/360038510873-Use-files-from-the-Community).

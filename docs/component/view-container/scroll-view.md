@@ -18,7 +18,7 @@ title:
 - Bạn cần thiết lập thuộc tính height cho `scroll-view` thông qua [inline-style](https://miniapp.tiki.vn/docs/framework/tcss/tcss-introduction#Inline-style) hoặc [tcss](https://miniapp.tiki.vn/docs/framework/tcss/tcss-introduction)
 - `scroll-view` không hỗ trợ cả `scroll-x` và `scroll-y` cùng lúc, khi cả 2 thuộc tính này là `false`, thanh scroll sẽ không hoạt động
 - `scroll-view` chỉ hỗ trợ bạn ẩn hoặc hiện thanh scroll, không có tùy chỉnh cho việc pull-down refresh hoặc custom thanh scroll
-- Để dùng thuộc tính `scroll-into-view` bạn cần để các component vào bên trong thẻ view [view](https://miniapp.tiki.vn/docs/component/view-container/view) và khai báo id cho nó
+- Để dùng thuộc tính `scroll-into-view` bạn cần để các component vào bên trong thẻ [view](https://miniapp.tiki.vn/docs/component/view-container/view) và khai báo id cho nó
 - Không nên dùng dùng `onScroll` để thiết lập giá trị của `scroll-top` hoặc `scroll-left` qua biến trong data, có thể dẫn đến trường hợp thanh scroll bị giật
 
 ## Sử dụng

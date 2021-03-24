@@ -7,22 +7,27 @@ title:
   vi-VN: Đăng ký Nhà phát triển
   en-US: Register a Developer Account
 ---
+## Giới thiệu
+
+**Tài khoản Nhà phát triển (Developer Account)** - là tài khoản dùng để phát hành ứng dụng lên Tiki MiniApp Platform. Có 2 loại khoản:
+
+  • **Tài khoản Cá nhân** - phù hợp với các cá nhân có nhu cầu phát triển và phát hành ứng dụng lên Tiki. Ứng dụng được phát hành dưới tài khoản Cá nhân sẽ không có khả năng kinh doanh, khai thác lợi nhuận trên nền tảng Tiki. Tài khoản Cá nhân sẽ bị giới hạn trong một số nhóm ngành nhất định.
+
+  • **Tài khoản Công ty** - dành cho các đối tượng có Giấy Phép Kinh Doanh và mong muốn phát hành ứng dụng trên nền tảng Tiki. Ứng dụng được phát hành dưới dạng tài khoản Công ty sẽ có khả năng khai thác kinh doanh, thu loại nhuận và thực hiện đối soát định kỳ.
+
+Tài khoản Cá nhân không thể chuyển đổi thành tài khoản Công ty và ngược lại.
+
+[Tìm hiểu thêm sự khác nhau giữa các loại tài khoản Nhà phát triển.](./docs/developer/introduce/register#Loại-tài-khoản-để-đăng-ký)
+
 ## Đăng ký tài khoản Nhà phát triển
 
 Tại trang chủ [MiniApp](/), bấm nút **Đăng ký nhà phát triển**
 
 <img style="width: 100%" src="https://salt.tikicdn.com/ts/social/98/53/44/8c7b9973f3ac3914b78765a4c4020c42.png" alt="Trang chủ MiniApp"/>
 
-
 ## Loại tài khoản để đăng ký
 
-Chọn loại tài khoản Nhà phát triển, trong đó:
-
-**Tài khoản Cá nhân** - phù hợp với các cá nhân có nhu cầu phát triển và phát hành ứng dụng lên Tiki. Ứng dụng được phát hành dưới tài khoản Cá nhân sẽ không có khả năng kinh doanh, khai thác lợi nhuận trên nền tảng Tiki. Tài khoản Cá nhân sẽ bị giới hạn trong một số nhóm ngành nhất định.
-
-**Tài khoản Công ty** - dành cho các đối tượng có Giấy Phép Kinh Doanh và mong muốn phát hành ứng dụng trên nền tảng Tiki. Ứng dụng được phát hành dưới dạng tài khoản Công ty sẽ có khả năng khai thác kinh doanh, thu loại nhuận và thực hiện đối soát định kỳ.
-
-Tài khoản Cá nhân không thể chuyển đổi thành tài khoản Công ty và ngược lại.
+Chọn loại tài khoản Nhà phát triển.
 
 | **Chức năng** | **Tài khoản Cá nhân**  | **Tài khoản Công ty** | 
 | ----------- | ----------- | ----------- |
@@ -40,9 +45,9 @@ Tài khoản Cá nhân không thể chuyển đổi thành tài khoản Công ty
 
 ## Chọn danh mục/nhóm ngành nghề
 
-Nhà có phát triển có thể đăng ký phát hánh ứng dụng trên nhiều danh mục/nhóm ngành nghề nếu đạt đủ các yêu cầu về pháp lý.
+Nhà phát triển có thể đăng ký phát hánh ứng dụng trên nhiều danh mục/nhóm ngành nghề nếu đạt đủ các yêu cầu về pháp lý.
 
-Danh mục/nhóm ngành nghề có thể bổ sung sau tùy theo lĩnh vực và quy mô mở rộng kinh doanh của Nhà phát triển. Khi bổ sung danh mục/nhóm ngành nghề mới, Nhà phát triển vẫn phải cung cấp đầy đủ về pháp lý để được phát hành ứng dụng trên danh mục/nhóm ngành nghề mới.
+Danh mục/nhóm ngành nghề có thể bổ sung sau tùy theo lĩnh vực và quy mô mở rộng kinh doanh của Nhà phát triển. Khi bổ sung danh mục/nhóm ngành nghề mới, Nhà phát triển phải cung cấp đầy đủ về pháp lý để được phát hành ứng dụng trên danh mục/nhóm ngành nghề mới.
 
 <img style="width: 100%" src="https://salt.tikicdn.com/ts/social/99/ed/35/fa2ca7d7c4ac3bd822e5ca09f66b71df.png" alt="categories"/>
 
@@ -63,7 +68,7 @@ Lựa chọn lĩnh vực kinh doanh phù hợp với ứng dụng mà Công ty b
 
 ### Các danh mục dành cho Cá nhân
 
-Danh mục dành cho Cá nhân sẽ có hạn chế so với Công ty và không cần cung cấp các giấy tờ tương ứng
+Danh mục dành cho tài khoản Cá nhân sẽ có hạn chế so với Công ty và không cần cung cấp giấy tờ tương ứng
 
 | **Ngành nghề** | **Phạm vi dịch vụ**  |
 | ----------- | ----------- |
@@ -78,3 +83,17 @@ Danh mục dành cho Cá nhân sẽ có hạn chế so với Công ty và không
 ## Xác thực tài khoản E-mail
 
 Đăng nhập vào E-mail đã liên kết với tài khoản Tiki, tìm e-mail **Bạn vừa đăng ký tài khoản Nhà phát triển Tiki MiniApp**, click vào nút **Xác thực tài khoản**
+
+Sau khi hoàn thành bước **Xác thực E-mail**, đối với:<br/>
+  • **Tài khoản Cá nhân** - Có thể lập tức tiến hành phát triển và phát hành ứng dụng<br/>
+  • **Tài khoản Công ty** - Sẽ được chuyển tiếp cho đội ngũ Tiki MiniApp xem xét về tính hợp lệ của các loại giấy tờ đi kèm nhóm Ngành nghề đăng ký. Kết quả sẽ được phản hồi qua đại  chỉ E-mail liên lạc được cung cấp.
+
+## Trạng thái tài khoản
+
+| Trạng Thái | Mô tả |
+|------------|------------------------------------------------------------------------|
+| Waiting for Review | Đã hoàn thành bước xác thực E-mail, chờ Tiki xem xét.<br/>_Ghi chú: Đối với tài khoản Cá nhân sẽ không có trạng thái Waiting for Review_|
+| Active| Tài khoản Nhà phát triển đã được xem xét và hợp lệ.  _Ghi chú: Đối với tài khoản Cá nhân sẽ ở trạng thái Active ngay sau khi xác thực E-mail thành công._|
+| Rejected | Tài khoản Nhà phát triển đã được xem xét và cần bổ sung, cập nhật thêm thông tin.|
+| Suspended | Tài khoản Nhà phát triển bị đình chỉ bởi Tiki. Các ứng dụng đã phát hành vẫn có thể được tìm thấy và sử dụng bởi người dùng cuối.<br/> Trong thời gian bị đình, Nhà phát triển không thể:<br/>      • Tạo ứng dụng mới.<br/>      • Cập nhật phiên bản mới cho ứng dụng đã phát hành.<br/>      • Không thể thực hiện đối soát/thanh toán doanh thu. |
+| Terminated | Tài khoản Nhà phát triển bị đình chỉ bởi Tiki.<br/> Tài khoản không thể:<br/>      • Tạo ứng dụng mới.<br/>      • Cập nhật phiên bản mới cho ứng dụng đã phát hành.<br/>       • Không thể thực hiện đối soát/thanh toán doanh thu. |

@@ -21,9 +21,10 @@ Bấm nút **"Tạo ứng dụng mới"** tại góc trên bên phải
 
 Nội dung được điền tại đây sẽ hiển thị ở phía người dùng cuối trong phần mô tả ứng dụng:
 
-  • Tên ứng dụng: tối đa 255 ký tự, người dùng có thể tìm thấy ứng dụng thông qua tên ứng dụng
-  • App ID: là chuỗi ký tự duy nhất bao gồm chữ và số tự nhiên, khuyến khích sử dụng chuỗi nghịch đảo của tên miền công ty bạn. VD: vn.tiki.miniapp
-  • Hình đại diện: tối đa , tối thiểu , dung lượng tối đa: 10Mb
+  • Tên ứng dụng: tối đa 255 ký tự, người dùng có thể tìm thấy ứng dụng thông qua tên ứng dụng.<br/>
+  • App ID: là chuỗi ký tự duy nhất bao gồm chữ và số tự nhiên, khuyến khích sử dụng chuỗi nghịch đảo của tên miền công ty bạn. VD: vn.tiki.miniapp<br/>
+  • Hình đại diện: tối đa , tối thiểu 600x600 , dung lượng tối đa: 10Mb<br/>
+
 
 Mô tả ứng dụng có thể thay đổi mỗi lần phát hành phiên bản mới trừ App ID.
 
@@ -34,6 +35,9 @@ Mô tả ứng dụng có thể thay đổi mỗi lần phát hành phiên bản
 Bấm **"Hoàn tất"** để xác nhận tạo ứng dụng mới với thông tin vừa điền.
 
 Ứng dụng sau khi tạo thành công sẽ xuất hiện tại [App Management](/dev-center/apps) với trạng thái Nháp (Draft).
+
+## Các trạng thái của một ứng dụng
+
 
 ## Các trạng thái của một ứng dụng
 

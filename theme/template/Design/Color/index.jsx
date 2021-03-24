@@ -1,45 +1,56 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Tooltip, Button } from 'antd';
-import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-import data from './data';
-
-const Cat = ({value}) => <span>{value}</span>;
-const ColorItem = ({locale,value, text})=> { 
+const Cat = ({ value }) => <span>{value}</span>;
+const ColorItem = ({ locale, value, text }) => {
   const [copied, setCopied] = useState(false);
   const timeout = useRef(null);
-  const copyText= locale === 'vi-VN' ? 'Đã sao chép' : 'Copied';
+  const copyText = locale === 'vi-VN' ? 'Đã sao chép' : 'Copied';
 
   useEffect(() => {
     if (copied) {
       if (timeout.current) {
-        clearTimeout(timeout.current)
+        clearTimeout(timeout.current);
       }
       timeout.current = setTimeout(() => {
         setCopied(false);
-      }, 3000)
+      }, 3000);
     }
-  }, [copied])
+  }, [copied]);
 
+  return (
+    <Tooltip placement="topLeft" title={value}>
+      <CopyToClipboard text={value} onCopy={() => setCopied(true)}>
+        <Button style={{ alignItems: 'center', display: 'flex' }}>
+          <span
+            style={{
+              width: 12,
+              height: 12,
+              borderRadius: 6,
+              backgroundColor: value,
+              marginRight: 4,
+            }}
+          ></span>
+          {copied ? copyText : text}
+        </Button>
+      </CopyToClipboard>
+    </Tooltip>
+  );
+};
 
+const Color = ({ en, vi, locale = 'vi-VN' }) => {
+  const localeData = locale === 'vi-VN' ? vi : en;
 
-  return <Tooltip placement="topLeft" title={value}>
-    <CopyToClipboard text={value} onCopy={() => setCopied(true)}>
-      <Button style={{alignItems: 'center',display: 'flex'}}>
-        <span style={{width: 12, height: 12, borderRadius: 6, backgroundColor:value,marginRight: 4 }}></span>
-        {copied ? copyText : text}
-    </Button>
-  </CopyToClipboard>
-</Tooltip>;
-}
-const Color = ({locale = 'vi-VN'}) => {
-  const localeData = data[locale];
+  if (!localeData) {
+    return null;
+  }
 
   return (
     <table>
       <thead>
         <tr>
-          {localeData.headers.map((item) => (
+          {localeData.headers.map(item => (
             <td key={item}>{item}</td>
           ))}
         </tr>
@@ -55,16 +66,15 @@ const Color = ({locale = 'vi-VN'}) => {
               }
 
               if (colValue.type === 'cat') {
-                component = <Cat value={colValue.value} />
+                component = <Cat value={colValue.value} />;
               } else if (colValue.type === 'color') {
-                component = <ColorItem locale={locale} {...colValue}/>
+                component = <ColorItem locale={locale} {...colValue} />;
               } else {
-                component = <span>{colValue.value}</span>
+                component = <span>{colValue.value}</span>;
               }
 
               return <td key={colIndex}>{component}</td>;
-              }
-            )}
+            })}
           </tr>
         ))}
       </tbody>
