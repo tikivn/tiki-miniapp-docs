@@ -1,11 +1,11 @@
 ---
 order: 11
 category:
-  vi-VN: Thành phần nâng cao
-  en-US: Advance components
+    vi-VN: Thành phần nâng cao
+    en-US: Advance components
 title:
-  vi-VN: avatar
-  en-US: avatar
+    vi-VN: avatar
+    en-US: avatar
 ---
 
 ## Giới thiệu
@@ -15,19 +15,22 @@ Compnent avatar dùng để hiển thị hình ảnh của user, tên, hoặc te
 ## Sử dụng
 
 ### Sample Code:
+
 Khai báo components:
+
 ```json
 {
-  "defaultTitle": "Avatar",
-  "usingComponents": {
-    "avatar": "@tikivn/mini-ui/lib/avatar/index"
-  }
+    "defaultTitle": "Avatar",
+    "usingComponents": {
+        "avatar": "@tikivn/mini-ui/lib/avatar/index"
+    }
 }
 ```
 
 #### Shape: circle
 
-*index.txml*
+_index.txml_
+
 ```xml
 <view class="container">
  <view class="content" style="margin-top:32px">
@@ -41,7 +44,8 @@ Khai báo components:
 </view>
 ```
 
-*Result:*
+_Result:_
+
 ```__react
 import image from '../../../theme/static/images/avatar-circle.png'
 ReactDOM.render(<img style={{maxWidth: 414}} alt="Avatar" src={image}/>, mountNode);
@@ -49,7 +53,8 @@ ReactDOM.render(<img style={{maxWidth: 414}} alt="Avatar" src={image}/>, mountNo
 
 #### Shape: standard
 
-*index.txml*
+_index.txml_
+
 ```xml
 <view class="container">
   <view class="content" style="margin-top:32px">
@@ -62,17 +67,22 @@ ReactDOM.render(<img style={{maxWidth: 414}} alt="Avatar" src={image}/>, mountNo
   </view>
 </view>
 ```
-*Result*
+
+_Result_
+
 ```__react
 import image from '../../../theme/static/images/avatar-standard.png'
 ReactDOM.render(<img style={{maxWidth: 414}} alt="Avatar" src={image}/>, mountNode);
 ```
 
 ### Advance
+
 Sử dụng component avatar để implement user item
 
 #### Sample
-*index.tcss*
+
+_index.tcss_
+
 ```xml
 <view class="content">
   <list>
@@ -94,12 +104,14 @@ ReactDOM.render(<img style={{maxWidth: 414}} alt="Avatar" src={image}/>, mountNo
 ```
 
 #### Sample
-*index.tcss*
+
+_index.tcss_
+
 ```xml
 <view class="content">
     <view class="avatar-wrapper">
-        <avatar 
-            size="md" 
+        <avatar
+            size="md"
             shape="standard"
             src="https://www.denofgeek.com/wp-content/uploads/2016/11/avatar-sequel.jpg"
           />
@@ -108,29 +120,32 @@ ReactDOM.render(<img style={{maxWidth: 414}} alt="Avatar" src={image}/>, mountNo
     </view>
 </view>
 ```
-*index.tcss*
+
+_index.tcss_
+
 ```css
 .avatar-wrapper {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 8px;
 }
 .avatar-info {
-  padding: 8;
-  max-width: 300px;
+    padding: 8;
+    max-width: 300px;
 }
 .avatar-info-name {
-  font-size: 16px;
-  font-weight: 500;
+    font-size: 16px;
+    font-weight: 500;
 }
 .avatar-info-desc {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
 }
 ```
-*Result*
+
+_Result_
 
 ```__react
 import image from '../../../theme/static/images/avatar-column.png'
@@ -138,24 +153,25 @@ ReactDOM.render(<img style={{maxWidth: 414}} alt="Button" src={image}/>, mountNo
 ```
 
 **index.js**
+
 ```js
 Page({
-  data: {},
-  onError() {
-    console.log('Onload error');
-  },
+    data: {},
+    onError() {
+        console.log("Onload error");
+    },
 });
 ```
 
 ### Chi tiết
 
-| Property | Type    | Default Value | Description                                       |
-| -------- | ------- | ------------- | ------------------------------------------------- |
-| size     | string  | md          | Kích thước avatar (lg/md/xs)                      |
-| shape    | string  | circle      | Các giá trị: "circle","standard"                  |
-| src      | string  | ""            | source hình ảnh                                   |
-| style    | string  | ""            | Disabled button                                   |
-| onError  | event   | null          | Trigger khi load ảnh không thành công             |
+| Property | Type   | Default Value | Description                           |
+| -------- | ------ | ------------- | ------------------------------------- |
+| size     | string | md            | Kích thước avatar (lg/md/xs)          |
+| shape    | string | circle        | Các giá trị: "circle","standard"      |
+| src      | string | ""            | source hình ảnh                       |
+| style    | string | ""            | Disabled button                       |
+| onError  | event  | null          | Trigger khi load ảnh không thành công |
 
 ```__react
 import image from '../../../theme/static/images/avatar-full.png'
