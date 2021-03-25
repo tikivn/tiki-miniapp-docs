@@ -75,10 +75,11 @@ Danh mục dành cho tài khoản Cá nhân sẽ có hạn chế so với Công 
 | Công cụ - Tiện ích | To-do List <br /> Máy tính
 
 ## Cung cấp giấy tờ liên quan
-
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/d1/fd/66/761cd88107448759de8172d7702a1910.png" alt="đăng ký tài khoản Tiki MiniApp Cá nhân"/>
+<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/43/3b/56/5c8e995612882a8a5a1b4c6d6fd085ca.png" alt="đăng ký tài khoản Tiki MiniApp Cá nhân"/>
+<p style="text-align: center; font-style: italic">Tài khoản Nhà phát triển Cá nhân</p>
 
 <img style="width: 100%" src="https://salt.tikicdn.com/ts/social/74/8c/10/c1d7fde59f93fb8717c59e765b74c200.png" alt="đăng ký tài khoản Tiki MiniApp Công ty"/>
+<p style="text-align: center; font-style: italic">Tài khoản Nhà phát triển Công ty cần cung cấp các loại giấy tờ liên quan</p>
 
 ## Xác thực tài khoản E-mail
 
