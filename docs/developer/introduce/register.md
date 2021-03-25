@@ -58,7 +58,7 @@ Lựa chọn lĩnh vực kinh doanh phù hợp với ứng dụng mà Công ty b
 | **Ngành nghề** | **Phạm vi dịch vụ**  | **Yêu cầu về pháp lý** | 
 | ----------- | ----------- | ----------- |
 | Bưu chính - Viễn thông | Gửi/Nhận hàng <br /> Chuyển phát nhanh <br /> Dịch vụ bưu chính <br /> Theo dõi kiện hàng | Giấy phép kinh doanh
-| Giáo dục | Khóa huấn luyện <br /> Thông tin giáo dục <br/> Khóa dọc trực tuyến | Giấy phép kinh doanh <br /> Giấy phép hành nghề
+| Giáo dục | Khóa huấn luyện <br /> Thông tin giáo dục <br/> Khóa học trực tuyến | Giấy phép kinh doanh <br /> Giấy phép hành nghề
 | Chăm sóc sức khỏe| Cơ sở y tế công cộng <br/> Cơ sở y tế tư nhân <br/> Dịch vụ y tế </br> Dịch vụ tư vấn sức khỏe | Giấy phép kinh doanh <br /> Giấy phép hành nghề
 | Chính phủ - Cơ quan chức năng| Quyết toán thuế | Giấy chứng nhận thẩm quyền
 | Tài chính | Ngân hàng <br/> Tín dụng <br/> Đầu tư <br/> Chứng khoán <br/> Tư vấn tài chính <br/> Môi giới tài chính <br/> Bảo hiểm <br/> | Giấy phép kinh doanh

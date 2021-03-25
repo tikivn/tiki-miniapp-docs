@@ -38,9 +38,6 @@ Bấm **"Hoàn tất"** để xác nhận tạo ứng dụng mới với thông 
 
 ## Các trạng thái của một ứng dụng
 
-
-## Các trạng thái của một ứng dụng
-
 | **Trạng thái** | **Mô tả** |
 | ----- | --------------- |
 | Draft | • Ứng dụng chưa phát hành trên Store
