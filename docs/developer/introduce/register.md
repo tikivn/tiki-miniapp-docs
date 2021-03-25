@@ -85,7 +85,7 @@ Danh mục dành cho tài khoản Cá nhân sẽ có hạn chế so với Công 
 Đăng nhập vào E-mail đã liên kết với tài khoản Tiki, tìm e-mail **Bạn vừa đăng ký tài khoản Nhà phát triển Tiki MiniApp**, click vào nút **Xác thực tài khoản**
 
 Sau khi hoàn thành bước **Xác thực E-mail**, đối với:<br/>
-  • **Tài khoản Cá nhân** - Có thể lập tức tiến hành phát triển và phát hành ứng dụng<br/>
+  • **Tài khoản Cá nhân** - Có thể lập tức tiến hành phát triển và phát hành ứng dụng.<br/>
   • **Tài khoản Công ty** - Sẽ được chuyển tiếp cho đội ngũ Tiki MiniApp xem xét về tính hợp lệ của các loại giấy tờ đi kèm nhóm Ngành nghề đăng ký. Kết quả sẽ được phản hồi qua đại  chỉ E-mail liên lạc được cung cấp.
 
 ## Trạng thái tài khoản

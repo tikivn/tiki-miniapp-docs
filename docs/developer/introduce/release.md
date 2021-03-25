@@ -67,7 +67,7 @@ B1: Tại trang chi tiết của một ứng dụng, chọn xem chi tiết một
 
 <img style="width: 100%" src="https://salt.tikicdn.com/ts/social/d6/80/1f/a461b17200c3cf3adcbe105d26cbd336.jpg"/>
 
-B2: Tại trang chi tiết của một bản cập nhật, liệt kê các bản Builds đã được đăng tải bao gồm: Build number, Trạng thái đăng tải, Người đăng tải
+B2: Tại trang chi tiết của một bản cập nhật, liệt kê các bản Builds đã được đăng tải bao gồm: Build number, Trạng thái đăng tải, Người đăng tải...
 
 <img style="width: 100%" src="https://salt.tikicdn.com/ts/social/94/eb/79/64bd892ce74eb42393b5f6719c8d3987.png"/>
 
