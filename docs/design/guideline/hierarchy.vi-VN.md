@@ -10,15 +10,15 @@ Khi thiết kế mỗi màn hình, chúng ta phải đảm bảo:
 - Người dùng có thể phân biệt nội dung / hành động chính và phụ trong màn hình.
 - Hệ thống phân cấp và mức độ thông tin rõ ràng.
 - Mức độ thông tin không nên quá nhiều.
-<center>
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/28/59/70/6959d9f7ac5d8b464f0f17e0197274ff.png" alt="information" style="height: 600px" >
-</center>
-</br>
+
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/28/59/70/6959d9f7ac5d8b464f0f17e0197274ff.png" alt="information" width="100%" />
+
+<br />
 
 ## Hành động rõ ràng
 Giao diện có thể giúp người dùng nhanh chóng hiểu và tránh các yếu tố can thiệp làm phân tán quyết định của người dùng trên màn hình.
-<center>
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/37/37/be/9cfbb8a8edcf8d7c11eac6978e82659f.png" alt="prominent" style="height: 600px" >
-</center>
-</br>
+
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/37/37/be/9cfbb8a8edcf8d7c11eac6978e82659f.png" alt="prominent" width="100%" />
+
+<br />
 

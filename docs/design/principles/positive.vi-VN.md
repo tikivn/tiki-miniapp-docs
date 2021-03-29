@@ -9,9 +9,8 @@ Khi người dùng nhận được thông báo tiêu cực (từ chối quyền 
 
 Nguyên tắc này nên được áp dụng triệt để trong ngôn ngữ, hình ảnh, minh họa, v.v. của ứng dụng.
 
-<center>
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/e0/1c/78/c9a4897dc2579b5009230f7fff01a5fc.png" alt="no internet" style="height: 400px" >
-</center>
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/e0/1c/78/c9a4897dc2579b5009230f7fff01a5fc.png" alt="no internet" height="400px" >
+
 
 ## Tăng cảm giác tích cực
 Cân nhắc tạo các chi tiết nhỏ mang tính tích cực để khuyến khích người dùng tiếp tục tác vụ hoặc cung cấp phản hồi trực quan trong quá trình tương tác. Điều này bao gồm nhưng không giới hạn việc sử dụng ngôn ngữ, hình ảnh, minh họa, hiệu ứng, âm thanh, biểu tượng, màu sắc, v.v.
