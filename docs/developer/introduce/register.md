@@ -58,7 +58,7 @@ Lựa chọn lĩnh vực kinh doanh phù hợp với ứng dụng mà Công ty b
 | **Ngành nghề** | **Phạm vi dịch vụ**  | **Yêu cầu về pháp lý** | 
 | ----------- | ----------- | ----------- |
 | Bưu chính - Viễn thông | Gửi/Nhận hàng <br /> Chuyển phát nhanh <br /> Dịch vụ bưu chính <br /> Theo dõi kiện hàng | Giấy phép kinh doanh
-| Giáo dục | Khóa huấn luyện <br /> Thông tin giáo dục <br/> Khóa dọc trực tuyến | Giấy phép kinh doanh <br /> Giấy phép hành nghề
+| Giáo dục | Khóa huấn luyện <br /> Thông tin giáo dục <br/> Khóa học trực tuyến | Giấy phép kinh doanh <br /> Giấy phép hành nghề
 | Chăm sóc sức khỏe| Cơ sở y tế công cộng <br/> Cơ sở y tế tư nhân <br/> Dịch vụ y tế </br> Dịch vụ tư vấn sức khỏe | Giấy phép kinh doanh <br /> Giấy phép hành nghề
 | Chính phủ - Cơ quan chức năng| Quyết toán thuế | Giấy chứng nhận thẩm quyền
 | Tài chính | Ngân hàng <br/> Tín dụng <br/> Đầu tư <br/> Chứng khoán <br/> Tư vấn tài chính <br/> Môi giới tài chính <br/> Bảo hiểm <br/> | Giấy phép kinh doanh
@@ -75,17 +75,18 @@ Danh mục dành cho tài khoản Cá nhân sẽ có hạn chế so với Công 
 | Công cụ - Tiện ích | To-do List <br /> Máy tính
 
 ## Cung cấp giấy tờ liên quan
-
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/d1/fd/66/761cd88107448759de8172d7702a1910.png" alt="đăng ký tài khoản Tiki MiniApp Cá nhân"/>
+<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/43/3b/56/5c8e995612882a8a5a1b4c6d6fd085ca.png" alt="đăng ký tài khoản Tiki MiniApp Cá nhân"/>
+<p style="text-align: center; font-style: italic">Tài khoản Nhà phát triển Cá nhân</p>
 
 <img style="width: 100%" src="https://salt.tikicdn.com/ts/social/74/8c/10/c1d7fde59f93fb8717c59e765b74c200.png" alt="đăng ký tài khoản Tiki MiniApp Công ty"/>
+<p style="text-align: center; font-style: italic">Tài khoản Nhà phát triển Công ty cần cung cấp các loại giấy tờ liên quan</p>
 
 ## Xác thực tài khoản E-mail
 
 Đăng nhập vào E-mail đã liên kết với tài khoản Tiki, tìm e-mail **Bạn vừa đăng ký tài khoản Nhà phát triển Tiki MiniApp**, click vào nút **Xác thực tài khoản**
 
 Sau khi hoàn thành bước **Xác thực E-mail**, đối với:<br/>
-  • **Tài khoản Cá nhân** - Có thể lập tức tiến hành phát triển và phát hành ứng dụng<br/>
+  • **Tài khoản Cá nhân** - Có thể lập tức tiến hành phát triển và phát hành ứng dụng.<br/>
   • **Tài khoản Công ty** - Sẽ được chuyển tiếp cho đội ngũ Tiki MiniApp xem xét về tính hợp lệ của các loại giấy tờ đi kèm nhóm Ngành nghề đăng ký. Kết quả sẽ được phản hồi qua đại  chỉ E-mail liên lạc được cung cấp.
 
 ## Trạng thái tài khoản

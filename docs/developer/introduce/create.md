@@ -13,7 +13,7 @@ Sau khi đăng ký và xác thực tài khoản thành công, Nhà phát triển
 
 ## Tạo mới ứng dụng
 
-Bấm nút **"Tạo ứng dụng mới"** tại góc trên bên phải
+Bấm nút **"Tạo ứng dụng mới"** tại góc trên bên phải.
 
 <img style="width: 100%" src="https://salt.tikicdn.com/ts/social/79/c3/16/543e3c4fb4bb2fe15a0f6f517f9de30c.png" alt="app management - empty"/>
 
@@ -35,9 +35,6 @@ Mô tả ứng dụng có thể thay đổi mỗi lần phát hành phiên bản
 Bấm **"Hoàn tất"** để xác nhận tạo ứng dụng mới với thông tin vừa điền.
 
 Ứng dụng sau khi tạo thành công sẽ xuất hiện tại [App Management](/dev-center/apps) với trạng thái Nháp (Draft).
-
-## Các trạng thái của một ứng dụng
-
 
 ## Các trạng thái của một ứng dụng
 
