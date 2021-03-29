@@ -5,7 +5,7 @@ category:
   en-US: View containers
 title:
   vi-VN: view
-  en-US: label
+  en-US: view
 ---
 
 WIP
