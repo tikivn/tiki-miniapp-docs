@@ -40,4 +40,4 @@ Chúng tôi cung cấp 3 loại phối màu cho thanh điều hướng để b�
 - Màu nền mặc định
 - Màu nền sáng
 - Màu nền tối 
-> <em>Lưu ý: Bạn có thể đổi màu nền túy ý. Hệ thống sẽ tự động chỉnh màu của chữ và icon lại theo 1 trong 3 phối màu ở trên, tùy vào sắc độ màu nền của bạn</em>
+> <em>Lưu ý: Bạn có thể đổi màu nền tùy ý. Hệ thống sẽ tự động chỉnh màu của chữ và icon lại theo 1 trong 3 phối màu ở trên, tùy vào sắc độ màu nền của bạn</em>
