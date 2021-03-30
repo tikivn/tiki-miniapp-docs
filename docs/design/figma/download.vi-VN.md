@@ -1,6 +1,6 @@
 ---
 order: 51
-category: Figma
+category: Tài nguyên thiết kế
 title: Tải về
 ---
 

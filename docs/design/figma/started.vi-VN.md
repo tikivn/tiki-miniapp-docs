@@ -1,7 +1,7 @@
 ---
 order: 50
-category: Figma
-title: Khởi đầu
+category: Tài nguyên thiết kế
+title: Cách sử dụng
 ---
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/c2/bc/c5/4f02823afd77ccd272768c1578b077d9.png" alt="account" width="48px" />
 

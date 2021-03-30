@@ -1,6 +1,6 @@
 ---
 order: 50
-category: Figma
+category: Design resources
 title: Getting started
 ---
 

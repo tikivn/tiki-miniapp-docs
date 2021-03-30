@@ -1,6 +1,6 @@
 ---
 order: 51
-category: Figma
+category: Design resources
 title: Download here
 ---
 
