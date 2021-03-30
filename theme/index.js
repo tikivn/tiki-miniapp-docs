@@ -36,6 +36,8 @@ module.exports = {
     'docs/design/styles': pickerGenerator('design'),
     'docs/design/patterns': pickerGenerator('design'),
     'docs/design/principles': pickerGenerator('design'),
+    'docs/design/guideline': pickerGenerator('design'),
+    'docs/design/figma': pickerGenerator('design'),
 
     // framework
     'docs/framework': pickerGenerator('framework'),

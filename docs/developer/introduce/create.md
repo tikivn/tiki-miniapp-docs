@@ -5,7 +5,7 @@ category:
   vi-VN: Hướng dẫn nhà phát triển 
   en-US: MiniApp Development Guide
 title: 
-  vi-VN: Tạo Mini App của bạn
+  vi-VN: Tạo MiniApp của bạn
   en-US: Create your Mini App
 ---
 
@@ -21,10 +21,9 @@ Bấm nút **"Tạo ứng dụng mới"** tại góc trên bên phải.
 
 Nội dung được điền tại đây sẽ hiển thị ở phía người dùng cuối trong phần mô tả ứng dụng:
 
-  • Tên ứng dụng: tối đa 255 ký tự, người dùng có thể tìm thấy ứng dụng thông qua tên ứng dụng.<br/>
-  • App ID: là chuỗi ký tự duy nhất bao gồm chữ và số tự nhiên, khuyến khích sử dụng chuỗi nghịch đảo của tên miền công ty bạn. VD: vn.tiki.miniapp<br/>
-  • Hình đại diện: tối đa , tối thiểu 600x600 , dung lượng tối đa: 10Mb<br/>
-
+* Tên ứng dụng: tối đa 50 ký tự, người dùng có thể tìm thấy ứng dụng thông qua tên ứng dụng.<br/>
+* App ID: tối đa 255 ký tự, gồm các nhóm ký tự bắt đầu bằng chữ cái, cho phép chữ số và dấu gạch dưới (_) được ngăn cách bằng dấu chấm (.). Khuyến khích sử dụng chuỗi nghịch đảo của tên miền công ty bạn. VD: vn.tiki.demo.
+* Hình đại diện: kích thước tối thiểu 600x600, dung lượng tối đa: 10Mb, định dạng PNG.
 
 Mô tả ứng dụng có thể thay đổi mỗi lần phát hành phiên bản mới trừ App ID.
 
