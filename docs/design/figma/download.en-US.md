@@ -4,7 +4,7 @@ category: Figma
 title: Download here
 ---
 
-### Version Beta
+### Beta
 Mar 30th, 2021
 
 The first version includes **7 global styles** and **29 components** in Tiny Design System.

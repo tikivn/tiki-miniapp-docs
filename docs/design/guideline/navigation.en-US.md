@@ -7,18 +7,20 @@ title: Navigation
 ## Tiny official navigation bar
 The navigation bar is uniformly provided by the framework by default, and designers cannot customize its position and style.
 
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/68/31/ae/8a1e44d17711239d971201fdbe7e0dfb.png" alt="navigation" width="600px" />
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/68/31/ae/8a1e44d17711239d971201fdbe7e0dfb.png" alt="navigation" width="500px" />
 
 
 ## Navigation behaviours
 
 The Navigation box included 2 elements: More & Close icon.
 - Click More icon to display the system menu sheet.
+<br />
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/37/b6/92/d07c55ff15341b918570238109ed4e5e.png" alt="more icon" height="400px" />
+
 <br />
 
 - Click Close icon to exit the current MiniApp.
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/ea/80/ec/53b8b14009c6e3b13bcfc742c78c083f.png" alt="close icon" height="400px" />
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/ea/80/ec/53b8b14009c6e3b13bcfc742c78c083f.png" alt="close icon" width="100%" />
 <br />
 
 The Return action has 2 cases:

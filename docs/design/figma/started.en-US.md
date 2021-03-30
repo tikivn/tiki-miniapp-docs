@@ -8,12 +8,10 @@ title: Getting started
 
 # **Setting it up**
 
-### **Create a Figma account**
+### **1. Create a Figma account**
 If you don't have an account, please go to [www.figma.com](http://www.figma.com) and sign up. If you need help with signing up you can learn how to do it [here](https://help.figma.com/hc/en-us/articles/360039811114-Create-a-Figma-account).
 
-<br />
-
-### **Add Tiny Design System to your library**
+### **2. Add Tiny Design System to your library**
 
 #### Option 1: Duplicate file from the Figma community
 We published the Tiny Design System on the Figma community to help you easily comment and update the latest version of the library. You can access and duplicate the file [here](https://www.figma.com/community/file/958198956095698455/Tiny-v1-Beta). If you need help, you can learn how to do it [here](https://help.figma.com/hc/en-us/articles/360038510873-Use-files-from-the-Community).

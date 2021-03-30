@@ -14,10 +14,11 @@ Chúng tôi cung cấp một chuẩn chung của thanh điều hướng nhằm t
 ## Cách điều hướng
 Hộp điều hướng bao gồm 2 thành phần chính: nút Tùy chọn & nút Đóng.
 - Khi bấm nút Tùy chọn, menu hệ thống sẽ hiện lên.
+<br />
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/37/b6/92/d07c55ff15341b918570238109ed4e5e.png" alt="more icon" height="400px" />
 <br />
 - Khi bấm nút Đóng, MiniApp đang sử dụng đó sẽ được tắt.
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/ea/80/ec/53b8b14009c6e3b13bcfc742c78c083f.png" alt="close icon" height="400px" />
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/ea/80/ec/53b8b14009c6e3b13bcfc742c78c083f.png" alt="close icon" width="100%" />
 <br />
 
 Nút Quay lại có 2 trường hợp:
