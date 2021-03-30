@@ -11,13 +11,13 @@ When designing each screen, we must ensure:
 - The hierarchy and level of information are clear.
 - The level of information should not be too much.
 
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/28/59/70/6959d9f7ac5d8b464f0f17e0197274ff.png" alt="information" width="100%" />
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/28/59/70/6959d9f7ac5d8b464f0f17e0197274ff.png" alt="information" height="600px" />
 
 <br />
 
 ## Clear action
 The interface can help users quickly understand and avoid interference factors that have to distract the user's decision on the screen.
 
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/37/37/be/9cfbb8a8edcf8d7c11eac6978e82659f.png" alt="prominent" width="100%" />
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/37/37/be/9cfbb8a8edcf8d7c11eac6978e82659f.png" alt="prominent" height="600px" />
 
 <br />

@@ -23,7 +23,7 @@ Hộp điều hướng bao gồm 2 thành phần chính: nút Tùy chọn & nút
 Nút Quay lại có 2 trường hợp:
 - Tại trang chủ của MiniApp đó, nút này sẽ được ẩn đi.
 - Khi người dùng vào sâu hơn trong ứng dụng, nút Quay lại sẽ hiện ra để giúp người dùng có thể trở lại trang trước đó
-    > <em>Lưu ý: Nút Quay lại luôn luôn là icon mũi tên quay lại. Không được sử dụng icon Đóng làm người dùng lẫn lộn với nút Đóng trong Hộp điều hướng</em>
+    > *Lưu ý: Nút Quay lại luôn luôn là icon mũi tên quay lại. Không được sử dụng icon Đóng làm người dùng lẫn lộn với nút Đóng trong Hộp điều hướng*
 
     <img class="img-basic" src="https://salt.tikicdn.com/ts/social/03/b3/e5/c7bdf880a5699915f0abd87f352834ca.png" alt="return" height="400px" />
 
