@@ -12,7 +12,4 @@ e.g: Try not to pop up the ads dialog immediately after the user enters the home
 
 The flow should be meet user expectations, avoid outside user anticipated matters interrupting the user decision.
 
-<center>
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/cf/e9/44/a076a65a9a463af4c23ca10e6cac117a.png" alt="smooth" style="height: 600px" >
-</center>
-</br>
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/cf/e9/44/a076a65a9a463af4c23ca10e6cac117a.png" alt="smooth" height="600px" />
