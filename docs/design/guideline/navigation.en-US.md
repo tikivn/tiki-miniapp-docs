@@ -7,7 +7,7 @@ title: Navigation
 ## Tiny official navigation bar
 The navigation bar is uniformly provided by the framework by default, and designers cannot customize its position and style.
 
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/68/31/ae/8a1e44d17711239d971201fdbe7e0dfb.png" alt="navigation" width="500px" />
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/e0/09/8d/9b0cdc4c0aea07794f05f290ec9bfccf.png" alt="navigation" width="500px" />
 
 
 ## Navigation behaviours
