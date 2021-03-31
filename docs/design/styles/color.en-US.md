@@ -4,6 +4,8 @@ category: Global style
 title: Colors
 ---
 We use color to visually communicate information, functions in our experiences.
+
+
 ## The Tiny color theme
 
 The color theme includes default colors for:
@@ -32,6 +34,7 @@ Meet WCAG AA accessibility requirements for minimum contrast.
 - Small text is any size below 24px and requires a 4.5:1 contrast ratio.
 - Large text is anything above 24px and requires a 3:1 contrast ratio.
 
+
 ## Color tokens
 
 Our color tokens are a foundational part of our design system.
@@ -45,6 +48,7 @@ import en from '../../../theme/template/Design/Color/text-en';
 ReactDOM.render(<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />, mountNode);
 ```
 
+
 ### Icon
 
 ```__react
@@ -54,6 +58,7 @@ import en from '../../../theme/template/Design/Color/icon-en';
 ReactDOM.render(<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />, mountNode);
 ```
 
+
 ### Border
 
 ```__react
@@ -62,6 +67,7 @@ import vi from '../../../theme/template/Design/Color/border-vi';
 import en from '../../../theme/template/Design/Color/border-en';
 ReactDOM.render(<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />, mountNode);
 ```
+
 
 ### Background
 

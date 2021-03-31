@@ -26,6 +26,7 @@ Circle icon or prominent icon content is limited to the 20 x 20px live area, wit
 
 ---
 
+
 ## Icon style
 
 ### Line
@@ -59,9 +60,9 @@ The line icon set is our main icon set. Line icons are used as:
 - Icon shapes are bold and geometric
 - 2px corner-radius whenever possible.
 
----
 
 ---
+
 
 ## Icon size
 

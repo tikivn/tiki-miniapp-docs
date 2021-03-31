@@ -22,7 +22,11 @@ Vùng được thiết kế cho những icon dạng bình thường là 16 x 16p
 Vùng được thiết kế cho những icon đặc biệt như hình tròn hoặc icon quan trọng là 20 x 20px, bằng với Live area của một icon. <br />
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/6e/cd/0a/65e110e4a4a2646b75f2c264ff477ed4.png" alt="normal icon" height="300px" />
 
+
 ---
+
+---
+
 
 ## Các dạng icon
 
@@ -58,9 +62,9 @@ Bộ icon dạng nét là bộ icon sử dụng chính trong Tiny. Icon nét đ�
 - Hình dạng phải rõ ràng, theo các khối hình học đơn giản.
 - Bo góc 2px khi có thể.
 
----
 
 ---
+
 
 ## Kích thước icon
 
