@@ -5,6 +5,7 @@ title: Typography
 ---
 
 ## Typeface
+
 We use [Inter typeface](https://fonts.google.com/specimen/Inter?preview.text_type=custom) to establish visual hierarchy through style, weight to support deliberate communications for all platforms.
 
 ## Font size
@@ -23,6 +24,7 @@ We use [Inter typeface](https://fonts.google.com/specimen/Inter?preview.text_typ
 | 10px      | font-size-x-small  |
 
 ## Line height
+
 | Line height | Token                |
 |-------------|----------------------|
 | 56px        | font-height-2x-large |
@@ -33,6 +35,7 @@ We use [Inter typeface](https://fonts.google.com/specimen/Inter?preview.text_typ
 | 12px        | font-height-x-small  |
 
 ## Font weight
+
 In most cases, just Regular 400 and Medium 500 should be enough. In the case of important information, bold 700 could be used.
 
 | Font weight | Token               |
@@ -45,6 +48,7 @@ In most cases, just Regular 400 and Medium 500 should be enough. In the case of 
 | Thin 100    | font-weight-thin    |
 
 ## Font style
+
 | Font style    | Token                    |
 |---------------|--------------------------|
 | Normal        | font-style-normal        |
