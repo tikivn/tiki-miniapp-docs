@@ -428,31 +428,32 @@ ReactDOM.render(<RenderImage />, mountNode);
 
 ### Chi tiết props
 
-| Property      | Type    | Default Value                 | Description                                                               |
-| ------------- | ------- | ----------------------------- | ------------------------------------------------------------------------- |
-| show          | boolean | false                         | hiển thị popup hay không                                                  |
-| showClose     | boolean | true                          | popup show với animation                                                  |
-| mask          | boolean | true                          | hiển thị mask, sử dụng với props onClose để đóng popup khi click vào mask |
-| onModalClick  | string  | "top","right","bottom","left" | vị trí hiển thị popup                                                     |
-| onModalClose  | number  | 0                             | zIndex của popup                                                          |
-| topImage      | event   |                               | mask=true, khi click vào mask sẽ trigger function onClose                 |
-| topImageSize  | event   |                               | mask=true, khi click vào mask sẽ trigger function onClose                 |
-| buttons       | event   |                               | mask=true, khi click vào mask sẽ trigger function onClose                 |
-| onButtonClick | event   |                               | mask=true, khi click vào mask sẽ trigger function onClose                 |
-| advice        | event   |                               | mask=true, khi click vào mask sẽ trigger function onClose                 |
-| zIndex        | event   |                               | mask=true, khi click vào mask sẽ trigger function onClose                 |
-| onMaskClick   | event   |                               | mask=true, khi click vào mask sẽ trigger function onClose                 |
+| Property      | Type                    | Default Value      | Description                                                                       |
+| ------------- | ----------------------- | ------------------ | --------------------------------------------------------------------------------- |
+| show          | boolean                 | false              | hiện/ẩn modal                                                                     |
+| showClose     | boolean                 | true               | hiển thị button đóng modal, Cần implement props **onModalClose**                  |
+| mask          | boolean                 | true               | hiển thị mask                                                                     |
+| onMaskClick   | event                   | () => void         | trigger function này khi click vào mask                                           |
+| onModalClose  | event                   | () => void         | function này sẽ được trigger khi click vào close button                           |
+| onModalClick  | event                   | () => void         | function này sẽ được trigger khi click vào modal                                  |
+| topImage      | string                  | undefined          | hiển thị hình ảnh ở trên top của modal                                            |
+| topImageSize  | 'lg', 'md', 'sm'        | md                 | quyết định size render của topImage                                               |
+| buttons       | Button[]                | undefined          | custom bottom buttons, implement props **onButtonClick** bind function vào button |
+| onButtonClick | event                   | (e:Object) => void | function sẽ được bind và trigger khi click vào custom button                      |
+| buttonsLayout | 'horizontal','vertical' | 'horizontal'       | mask=true, khi click vào mask sẽ trigger function onClose                         |
+| advice        | boolean                 | false              | close button ở bottom                                                             |
+| zIndex        | string,number           |                    | set zIndex của modal                                                              |
 
 ### buttons
 
-| Property | Type    | Default Value | Description              |
-| -------- | ------- | ------------- | ------------------------ |
-| text     | boolean | false         | hiển thị popup hay không |
-| extStyle | boolean | true          | popup show với animation |
+| Property | Type   | Default Value | Description                   |
+| -------- | ------ | ------------- | ----------------------------- |
+| text     | string | ''            | hiển thị text button          |
+| extStyle | string | ''            | apply custom style cho button |
 
 ### slots
 
-| Property | Type    | Default Value | Description              |
-| -------- | ------- | ------------- | ------------------------ |
-| header   | boolean | false         | hiển thị popup hay không |
-| footer   | boolean | true          | popup show với animation |
+| Property | Type    | Default Value | Description                       |
+| -------- | ------- | ------------- | --------------------------------- |
+| header   | boolean | false         | render component ở section header |
+| footer   | boolean | true          | render component ở section footer |
