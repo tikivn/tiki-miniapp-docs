@@ -5,6 +5,7 @@ title: Font chữ
 ---
 
 ## Typeface
+
 Chúng tôi chọn [bộ font Inter](https://fonts.google.com/specimen/Inter?preview.text_type=custom) để thiết lập hệ thống phân cấp thông qua phong cách, trọng lượng để hỗ trợ giao tiếp có chủ ý cho tất cả các nền tảng.
 
 ## Kích thước
@@ -23,6 +24,7 @@ Chúng tôi chọn [bộ font Inter](https://fonts.google.com/specimen/Inter?pre
 | 10px      | font-size-x-small  |
 
 ## Chiều cao
+
 | Line height | Token                |
 |-------------|----------------------|
 | 56px        | font-height-2x-large |
@@ -33,6 +35,7 @@ Chúng tôi chọn [bộ font Inter](https://fonts.google.com/specimen/Inter?pre
 | 12px        | font-height-x-small  |
 
 ## Độ dày
+
 Trong hầu hết các trường hợp, chỉ cần Regular 400 và Medium 500 là đủ. Trong trường hợp có thông tin quan trọng, Bold 700 có thể được sử dụng.
 
 | Font weight | Token               |
@@ -45,6 +48,7 @@ Trong hầu hết các trường hợp, chỉ cần Regular 400 và Medium 500 l
 | Thin 100    | font-weight-thin    |
 
 ## Thể loại
+
 | Font style    | Token                    |
 |---------------|--------------------------|
 | Normal        | font-style-normal        |

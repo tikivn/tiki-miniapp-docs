@@ -9,23 +9,29 @@ title: Getting started
 # **Setting it up**
 
 ### **1. Create a Figma account**
+
 If you don't have an account, please go to [www.figma.com](http://www.figma.com) and sign up. If you need help with signing up you can learn how to do it [here](https://help.figma.com/hc/en-us/articles/360039811114-Create-a-Figma-account).
 
 ### **2. Add Tiny Design System to your library**
 
 #### Option 1: Duplicate file from the Figma community
+
 We published the Tiny Design System on the Figma community to help you easily comment and update the latest version of the library. You can access and duplicate the file [here](https://www.figma.com/community/file/958198956095698455/Tiny-v1-Beta). If you need help, you can learn how to do it [here](https://help.figma.com/hc/en-us/articles/360038510873-Use-files-from-the-Community).
 
 #### Option 2: Download local file
+
 You can download the file [here](https://miniapp.tiki.vn/docs/design/figma/download-en). After download, please enable the Tiny library in your Figma. If you need help, you can learn how to do it [here](https://help.figma.com/hc/en-us/articles/360038743434-Enable-libraries-in-drafts-teams-and-files).
-<br />
+
 
 ---
 
-<br />
+---
+
+
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/33/d9/57/c84a51d1456d498f181f9fdeed565a8f.png" alt="account" width="48px" />
 
 # **Using it**
+
 If you are new to Figma I highly recommend visiting their [Getting Started help page](https://help.figma.com/hc/en-us/categories/360002051613-Getting-Started) or watching [Beginner's Guide to Figma](https://www.youtube.com/watch?v=Cx2dkpBxst8&list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4&ab_channel=Figma) on their YouTube channel.
 
 ### Components

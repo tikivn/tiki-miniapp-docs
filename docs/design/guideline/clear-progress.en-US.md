@@ -7,6 +7,7 @@ title: Smooth experience
 When the user is performing a certain process, it should be avoided the unrelated content interrupts the user.
 
 ## Smooth experience
+
 The flow experience should be smooth, avoiding user distraction during operation. 
 e.g: Try not to pop up the ads dialog immediately after the user enters the homepage, so as not to interrupt the user's use of the core content of the service.
 
