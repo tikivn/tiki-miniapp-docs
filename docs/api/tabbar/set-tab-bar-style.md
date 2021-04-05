@@ -4,8 +4,8 @@ category:
   vi-VN: Tab Bar
   en-US: Tab Bar
 title:
-  vi-VN: my.setTabBarStyle (chưa ready)
-  en-US: my.setTabBarStyle (chưa ready)
+  vi-VN: my.setTabBarStyle
+  en-US: my.setTabBarStyle
 ---
 
 ## Giới thiệu
