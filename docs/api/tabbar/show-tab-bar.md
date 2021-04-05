@@ -4,8 +4,8 @@ category:
   vi-VN: Tab Bar
   en-US: Tab Bar
 title:
-  vi-VN: my.showTabBar (chưa ready)
-  en-US: my.showTabBar (chưa ready)
+  vi-VN: my.showTabBa
+  en-US: my.showTabBar
 ---
 
 ## Giới thiệu

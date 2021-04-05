@@ -4,8 +4,8 @@ category:
   vi-VN: Tab Bar
   en-US: Tab Bar
 title:
-  vi-VN: my.hideTabBarRedDot (chưa ready)
-  en-US: my.hideTabBarRedDot (chưa ready)
+  vi-VN: my.hideTabBarRedDot
+  en-US: my.hideTabBarRedDot
 ---
 
 ## Giới thiệu

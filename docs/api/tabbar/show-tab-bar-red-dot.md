@@ -4,8 +4,8 @@ category:
   vi-VN: Tab Bar
   en-US: Tab Bar
 title:
-  vi-VN: my.showTabBarRedDot (chưa ready)
-  en-US: my.showTabBarRedDot (chưa ready)
+  vi-VN: my.showTabBarRedDot
+  en-US: my.showTabBarRedDot
 ---
 
 ## Giới thiệu
