@@ -38,7 +38,7 @@ Xem hướng dẫn tại trang [Tạo MiniApp của bạn](/docs/developer/intro
 
 ### Tạo một project mới trên Tiki MiniApp Studio
 
-Xem hướng dẫn tại trang [...](/docs/ide/development).
+Xem hướng dẫn tại [đây](/docs/ide/start-page).
 
 ## Coding
 
