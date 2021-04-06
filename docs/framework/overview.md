@@ -5,7 +5,7 @@ title:
   en-US: Framework Overview
 ---
 
-Tiki MiniApp Framework được thiết kế để cho phép các nhà phát triển xây dựng ứng dụng của mình với trải nghiệm native app trên nền tàng Tiki một cách dễ dàng và đa dạng tính năng nhất có thể.
+Tiki MiniApp Framework được thiết kế để cho phép các nhà phát triển xây dựng ứng dụng của mình với trải nghiệm native app trên nền tảng Tiki một cách dễ dàng và đa dạng tính năng nhất có thể.
 
 Một ứng dụng MiniApp bao gồm 2 thành phần chính đó là `app` và `page`. Trong đó `app` là thể hiện của toàn ứng dụng (tương đương với `UIApplicationDelegate` của iOS hoặc `Application` của android). `Page` là đại diện của một màn hình trong ứng dụng và trong một ứng dụng sẽ có thể bao gồm một hoặc nhiều pages.
 
@@ -76,7 +76,7 @@ Page({
 
 Trong ví dụ trên biến `name` trong object `data` ở logic layer sẽ được bind với biết `data.name` ở view layer (Tương tự như biến `state` ở reactjs).
 
-Khi ứng dụng được chạy, hàm `onLoad` sẽ được chạy và việc `setData({ name })` sẽ lập tứng cập nhật biến `name` ở trong data ở view layer.
+Khi ứng dụng được chạy, hàm `onLoad` sẽ được chạy và việc `setData({ name })` sẽ lập từng cập nhật biến `name` ở trong data ở view layer.
 
 ## Quản lý Page
 
@@ -100,7 +100,7 @@ Page({
 
 ## Components
 
-Framework cung cấp nhiều nhất có thể các UI Components từ đơn giản tới phức tạp theo design system của Tiki. Bằng cách kết hợp các thành phần đó lại, nhà phát triển có thể xây dựng các ứng dụng với những trải nghiệm tốt nhất cho khách hàng với thới gian ngắn nhất.
+Framework cung cấp nhiều nhất có thể các UI Components từ đơn giản tới phức tạp theo design system của Tiki. Bằng cách kết hợp các thành phần đó lại, nhà phát triển có thể xây dựng các ứng dụng với những trải nghiệm tốt nhất cho khách hàng với thời gian ngắn nhất.
 
 ## JSAPIs
 
