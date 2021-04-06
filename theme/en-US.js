@@ -9,7 +9,7 @@ module.exports = {
     'app.header.menu.ide': 'Studio',
     'app.header.menu.design': 'Design',
     'app.home.introduce': 'Build anything meaningful on Tiki.',
-    'app.home.join-program': 'Join developer program',
+    'app.home.join-program': 'Download MiniApp Studio',
     'app.home.getting-started': 'Getting Started',
     'app.footer.lang': 'Tiếng Việt',
     'app.footer.join-program': 'Start building an app',
