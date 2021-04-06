@@ -6,7 +6,7 @@ module.exports = {
     'app.header.menu.framework': 'Framework',
     'app.header.menu.component': 'Components',
     'app.header.menu.api': 'API',
-    'app.header.menu.ide': 'Dev Tools',
+    'app.header.menu.ide': 'Studio',
     'app.header.menu.design': 'Design',
     'app.home.introduce': 'Xây dựng mọi ứng dụng cùng Tiki.',
     'app.home.join-program': 'Đăng ký nhà phát triển',
