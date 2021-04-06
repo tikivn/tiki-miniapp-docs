@@ -18,6 +18,7 @@ title:
 - Các `icon` trong `tabs` bạn có thể tìm thấy ở đây: [icon](https://miniapp.tiki.vn/docs/component/basic/icon)
 - Số lượng các phần tử trong biến `tabs` và số component trong thẻ `<tabs>` nên bằng nhau
 - Nếu số lượng `tab` từ 2 trở lên và chiều cao của các `tab` khác nhau, thanh scroll của `tab` có chiều cao ngắn hơn sẽ bị ảnh hưởng
+- Bạn cần khai báo `flex: 1` cho container chứa `tabs`
 
 ## Sử dụng
 
