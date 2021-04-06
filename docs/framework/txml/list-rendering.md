@@ -70,7 +70,7 @@ Giống như `tiki:if`, bạn có thể sử dụng `tiki:for` trên thẻ `<blo
 ### tiki:key
 
 Để định danh các phần tử trong mảng, TXML cung cấp hàm thuộc tính `tiki:key`.
-Bằng việc sử dụng `tiki:key`, khi dữ liệu trong mảng thay đổi, Mini App Framework sẽ không cập nhật chứ không tạo mới các Component.
+Bằng việc sử dụng `tiki:key`, khi dữ liệu trong mảng thay đổi, Mini App Framework sẽ chỉ cập nhật các dữ liệu thay đổi dựa vào key.
 
 `tiki:key` có thể sử dụng theo 2 cách
 

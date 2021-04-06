@@ -59,7 +59,7 @@ TouchEvent touch event object (kế thừa từ BaseEvent), attribute list:
 ```changedTouches``` là 1 mảng giống như ```touches``` nhưng sẽ chỉ ra sự thay đổi của các điểm được touch. Ví dụ
 `onTouchStart` thì changedTouches sẽ thay đổi từ mảng rỗng sang mảng các điểm được touch
 `onTouchMove` thì changeTouches sẽ thay đổi toạ độ các điểm được touch
-`onTouchEnd`, `onTouchCancel` thì changeTouches sẽ thay đổi về mảng rỗng
+`onTouchEnd`, `onTouchCancel` thì changeTouches sẽ thay đổi về mảng rỗng.
 
 ### Touch object
 

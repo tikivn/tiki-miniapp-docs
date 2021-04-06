@@ -8,7 +8,7 @@ title:
   en-US: Mixins
 ---
 
-Khi implement nhiều Custom Component, và các Custom Component này có nhiều logic sử dụng chung, bạn có thể sử dụng mixins để sử dụng lại các code logic.
+Khi implement nhiều Custom Component, và các Custom Component này có nhiều logic sử dụng chung, bạn có thể dùng mixins để sử dụng lại các code logic.
 
 ```js
 // /mixins/lifecycle.js

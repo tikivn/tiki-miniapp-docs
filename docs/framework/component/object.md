@@ -10,7 +10,7 @@ title:
 
 **Chú ý**
 
-Các hàm xử lý sự kiện của (ví dụ như `onTap`) là không được hỗ trợ mặc định, các Custom Component phải từ cài đặt các hàm này.
+Các hàm xử lý sự kiện của một component (ví dụ như `onTap`) không được hỗ trợ mặc định, các Custom Component phải cài đặt các hàm này.
 
 ## Component Constructor
 
@@ -29,23 +29,23 @@ Component({
     onMyClick(ev) {
       my.alert({});
       this.props.onXX({ ...ev, e2: 1 });
-    },
-  },
+    }
+  }
 });
 ```
 
-| tên                 | kiểu     | bắt buộc | mô tả                                                              |
-| ------------------- | -------- | -------- | ------------------------------------------------------------------ |
-| data                | Object   | không    | Các trạng thái nội tại của Component                               |
-| props               | Object   | không    | Các giá trị mặc định cho external data                             |
-| onInit              | Function | không    | Hàm này được gọi khi component được khởi tạo                       |
-| deriveDataFromProps | Function | không    | Hàm đượcgọi khi comment được khởi tạo, và trước khi nó được update |
-| didMount            | Function | khoông   | Hàm được gọi sau khi Component được mount                          |
-| didUpdate           | Function | khoông   | Hàm được gọi sau khi Component được update                         |
-| didUnmount          | Function | không    | Hàm được gọi sau khi Component được unmount                        |
-| mixins              | Array    | không    | Cơ chế để sử dụng lại code giữa các Component                      |
-| methods             | Object   | không    | Các hàm xử lý sự kiện hoặc bất kỳ method nào được thêm mới         |
-| ref                 | Function | không    | Xác định giá trị được trả về khi Component được tham chiếu bởi ref |
+| tên                 | kiểu     | bắt buộc | mô tả                                                               |
+| ------------------- | -------- | -------- | ------------------------------------------------------------------- |
+| data                | Object   | không    | Các trạng thái nội tại của Component                                |
+| props               | Object   | không    | Các giá trị mặc định cho external data                              |
+| onInit              | Function | không    | Hàm này được gọi khi component được khởi tạo                        |
+| deriveDataFromProps | Function | không    | Hàm được gọi khi comment được khởi tạo, và trước khi nó được update |
+| didMount            | Function | khoông   | Hàm được gọi sau khi Component được mount                           |
+| didUpdate           | Function | khoông   | Hàm được gọi sau khi Component được update                          |
+| didUnmount          | Function | không    | Hàm được gọi sau khi Component được unmount                         |
+| mixins              | Array    | không    | Cơ chế để sử dụng lại code giữa các Component                       |
+| methods             | Object   | không    | Các hàm xử lý sự kiện hoặc bất kỳ method nào được thêm mới          |
+| ref                 | Function | không    | Xác định giá trị được trả về khi Component được tham chiếu bởi ref  |
 
 ## methods
 

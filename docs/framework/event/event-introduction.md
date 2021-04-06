@@ -80,5 +80,5 @@ Tất cả bubbling events:
 | touchEnd | Kết thúc touch |
 | touchCancel | Khi touch action bị huỷ bỏ do có call reminder hoặc 1 popup |
 | tap | user tap |
-| longTap | nhấn giữ lâu hơn 500ms |
+| longTap | Nhấn giữ lâu hơn 500ms |
 
