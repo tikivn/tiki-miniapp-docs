@@ -1,15 +1,13 @@
 ---
 order: 0
-title: 
+title:
   vi-VN: Bắt đầu
   en-US: Getting Started
 ---
 
-Tiki MiniApp là giải pháp hoàn toàn mới và hiện đại giúp cho các đối tác của Tiki có thể dễ dàng, nhanh chóng và ít tốt kém phát triển ứng dụng và dịch vụ của mình trên nền tảng của Tiki. Nhờ đó các doanh nghiệp có thể tập trung vào dịch vụ cốt lõi của mình và mang tới sản phẩm cũng như dịch vụ tốt nhất cho khách hàng, trong khi vẫn thừa hưởng được tất cả lợi ích của việc chuyển đổi số.
+Tiki MiniApp là giải pháp hoàn toàn mới và hiện đại giúp cho các đối tác của Tiki có thể dễ dàng, nhanh chóng và ít tốn kém phát triển ứng dụng và dịch vụ của mình trên nền tảng của Tiki. Nhờ đó các doanh nghiệp có thể tập trung vào dịch vụ cốt lõi của mình và mang tới sản phẩm cũng như dịch vụ tốt nhất cho khách hàng, trong khi vẫn thừa hưởng được tất cả lợi ích của việc chuyển đổi số.
 
-
-![miniapp](https://salt.tikicdn.com/ts/upload/4e/01/1e/732977314da243c99557819e832ba78b.png "Tiki MiniAppp")
-
+![miniapp](https://salt.tikicdn.com/ts/upload/4e/01/1e/732977314da243c99557819e832ba78b.png 'Tiki MiniAppp')
 
 Chương trình MiniApp của Tiki đi kèm với hệ thống framework đơn giản, hiệu quả với đa dạng các thành phần giao diện cũng như APIs cần thiết trong việc phát triển đa dạng ứng dụng cùng trải nghiệm native trên Tiki.
 
@@ -32,4 +30,3 @@ Nếu bạn là nhà thiết kế sản phẩm:
 Để bắt đầu việc phát triển:
 
 - [Tìm hiểu công cụ cho nhà phát triển](/docs/ide/overview)
-
