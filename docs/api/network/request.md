@@ -24,21 +24,21 @@ title:
 ### Sample Code
 
 ```jsx
-<View style={styles.page}>
-  <View style={styles.page__section}>
-    <View style={styles.page__section__content}>
-      <Text>my.request</Text>
-      <Text>{JSON.stringify(data.response)}</Text>
-      <View style={styles.page__section__buttons}>
-        <Button
+<view style={styles.page}>
+  <view style={styles.page__section}>
+    <view style={styles.page__section__content}>
+      <text>my.request</text>
+      <text>{JSON.stringify(data.response)}</text>
+      <view style={styles.page__section__buttons}>
+        <button
           title={data.loading ? "Loading..." : "Query"}
           onPress={makeRequest}
         />
-        <Button title="Clear" onPress={clear} />
-      </View>
-    </View>
-  </View>
-</View>
+        <button title="Clear" onPress={clear} />
+      </view>
+    </view>
+  </view>
+</view>
 ```
 
 ```js

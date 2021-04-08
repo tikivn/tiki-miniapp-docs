@@ -22,22 +22,22 @@ title:
 ### Sample Code
 
 ```jsx
-<View style={styles.page}>
-  <View style={styles.page__section}>
-    <View style={styles.button}>
-      <Button title="Navigate To" onPress={navigateTo} />
-    </View>
-    <View style={styles.button}>
-      <Button title="Navigate Back" onPress={navigateBack} />
-    </View>
-    <View style={styles.button}>
-      <Button title="Switch Tab" onPress={switchTab} />
-    </View>
-    <View style={styles.button}>
-      <Button title="reLaunch" onPress={reLaunch} />
-    </View>
-  </View>
-</View>
+<view style={styles.page}>
+  <view style={styles.page__section}>
+    <view style={styles.button}>
+      <button title="Navigate To" onPress={navigateTo} />
+    </view>
+    <view style={styles.button}>
+      <button title="Navigate Back" onPress={navigateBack} />
+    </view>
+    <view style={styles.button}>
+      <button title="Switch Tab" onPress={switchTab} />
+    </view>
+    <view style={styles.button}>
+      <button title="reLaunch" onPress={reLaunch} />
+    </view>
+  </view>
+</view>
 ```
 
 ```js

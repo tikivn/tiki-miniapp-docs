@@ -17,18 +17,18 @@ title:
 ### Sample Code
 
 ```jsx
-<View style={styles.page}>
-  <View style={styles.page__section}>
-    <View style={styles.page__section__content}>
-      <Text>my.getSystemInfo</Text>
-      <Text>{JSON.stringify(data.systemInfo)}</Text>
-      <View style={styles.page__section__buttons}>
-        <Button title="Query" onPress={getSystemInfo} />
-        <Button title="Clear" onPress={clear} />
-      </View>
-    </View>
-  </View>
-</View>
+<view style={styles.page}>
+  <view style={styles.page__section}>
+    <view style={styles.page__section__content}>
+      <text>my.getSystemInfo</text>
+      <text>{JSON.stringify(data.systemInfo)}</text>
+      <view style={styles.page__section__buttons}>
+        <button title="Query" onPress={getSystemInfo} />
+        <button title="Clear" onPress={clear} />
+      </view>
+    </view>
+  </view>
+</view>
 ```
 
 ```js

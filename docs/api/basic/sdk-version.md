@@ -17,9 +17,9 @@ title:
 ### Sample code
 
 ```jsx
-<View>
-  <Text>{data.SDKVersion}</Text>
-</View>
+<view>
+  <text>{data.SDKVersion}</text>
+</view>
 ```
 
 ```js
