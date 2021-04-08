@@ -16,14 +16,14 @@ title:
 
 ### Sample Code
 
-```jsx
-<view style={styles.page}>
-  <view style={styles.page__section}>
-    <view style={styles.button}>
-      <button title="Navigate To MiniApp" onPress={navigateToMiniApp} />
+```xml
+<view class="page">
+  <view class="page__section">
+    <view class="button">
+      <button onTap="navigateToMiniApp">Navigate To MiniApp</button>
     </view>
-    <view style={styles.button}>
-      <button title="Navigate back MiniApp" onPress={navigateBackMiniApp} />
+    <view class="button">
+      <button onTap="navigateBackMiniApp">Navigate back MiniApp</button>
     </view>
   </view>
 </view>
