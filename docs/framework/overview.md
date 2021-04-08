@@ -56,7 +56,7 @@ Nói một cách khác 2 layers dù tách biệt nhưng vẫn luôn được đ�
 
 ```xml
 <view>
-  <text>Hello {data.name}</text>
+  <text>Hello {{name}}</text>
 </view>
 ```
 
@@ -74,7 +74,7 @@ Page({
 });
 ```
 
-Trong ví dụ trên biến `name` trong object `data` ở logic layer sẽ được bind với biết `data.name` ở view layer (Tương tự như biến `state` ở reactjs).
+Trong ví dụ trên biến `name` trong object `data` ở logic layer sẽ được bind với biết `name` ở view layer.
 
 Khi ứng dụng được chạy, hàm `onLoad` sẽ được chạy và việc `setData({ name })` sẽ lập từng cập nhật biến `name` ở trong data ở view layer.
 
