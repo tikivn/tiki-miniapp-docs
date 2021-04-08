@@ -16,16 +16,16 @@ title:
 
 ### Sample code
 
-```jsx
+```xml
 <view>
-  <text>{data.SDKVersion}</text>
+  <text>{{SDKVersion}}</text>
 </view>
 ```
 
 ```js
 Page({
   data: {
-    SDKVersion: null
+    SDKVersion: ""
   },
   onLoad() {
     this.setData({ SDKVersion: my.SDKVersion });

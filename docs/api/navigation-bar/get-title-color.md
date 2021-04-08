@@ -16,7 +16,7 @@ title:
 
 ### Sample Code
 
-```jsx
+```xml
 <view>
   <view class="page-section-demo">
     <text>Title Color</text>

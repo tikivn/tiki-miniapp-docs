@@ -16,20 +16,20 @@ title:
 
 ### Sample Code
 
-```jsx
-<view style={styles.page}>
-  <view style={styles.page__section}>
-    <view style={styles.button}>
-      <button title="Navigate To" onPress={navigateTo} />
+```xml
+<view class="page">
+  <view class="page__section">
+    <view class="button">
+      <button onTap="navigateTo">Navigate To</button>
     </view>
-    <view style={styles.button}>
-      <button title="Navigate Back" onPress={navigateBack}  />
+    <view class="button">
+      <button onTap="navigateBack">Navigate Back</button>
     </view>
-    <view style={styles.button}>
-      <button title="Switch Tab" onPress={switchTab}  />
+    <view class="button">
+      <button onTap="switchTab">Switch Tab</button>
     </view>
-    <view style={styles.button}>
-      <button title="reLaunch" onPress={reLaunch}  />
+    <view class="button">
+      <button onTap="reLaunch">reLaunch</button>
     </view>
   </view>
 </view>
