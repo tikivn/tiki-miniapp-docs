@@ -29,7 +29,7 @@ Cung cấp các kiểu riêng biệt cho các phần tử tương tác, chẳng 
 ## 4.Cung cấp các tùy chọn điều hướng rõ ràng và nhất quán
 
 Đảm bảo rằng điều hướng trên các màn hình trong ứng dụng có cách đặt tên, kiểu và định vị nhất quán. Giúp người dùng hiểu họ đang ở đâu trong ứng dụng hoặc màn hình bằng cách cung cấp các dấu hiệu định hướng, chẳng hạn như đường dẫn và tiêu đề rõ ràng. <br />
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/e0/09/8d/543564dfdf4b46456afff669dcd7330c.png" alt="navigation" width="500px" />
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/68/31/ae/8a1e44d17711239d971201fdbe7e0dfb.png" alt="navigation" width="500px" />
 
 
 ## 5.Đảm bảo rằng các phần tử biểu mẫu bao gồm các nhãn được liên kết rõ ràng
