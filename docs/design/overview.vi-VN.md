@@ -10,7 +10,7 @@ title: Tổng quan
 
 Tiki viết tắt của “Tìm kiếm & Tiết kiệm”, hiện là trang mua sắm trực tuyến đáng tin cậy nhất trong lĩnh vực thương mai điện tử tại Việt Nam. Tronng thị trường e-commerce phát triển rất nhanh ở Việt Nam, chúng tôi là công ty đầu tiên cung cấp giải pháp công nghệ MiniApp cho đối tác.
 
-Nhóm thiết kế MiniApp đã xây dựng nên hệ thống thiết kế dành riêng cho nền tảng MiniApp dựa trên hệ thống thiết kế gốc từ Tiki với tên gọi là Tiny. Hệ thống thiết kế Tiny sẽ giúp các nhà thiết kế sản phẩm thống nhất về giao diện người dùng để tập trung vào trải nghiệm người dùng tốt hơn, cung cấp ý tưởng và sản phẩm nhanh hơn.
+Nhóm thiết kế MiniApp đã xây dựng nên hệ thống thiết kế dành riêng cho nền tảng MiniApp dựa trên hệ thống thiết kế gốc từ Tiki với tên gọi là Tiny. Hệ thống thiết kế Tiny sẽ giúp các nhà thiết kế sản phẩm thống nhất về giao diện người dùng để tập trung vào trải nghiệm người dùng tốt hơn, cung cấp ý tưởng và sản phẩm nhanh hơn. <br />
 
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/33/d9/57/c84a51d1456d498f181f9fdeed565a8f.png" alt="tool" width="48px" />
 
@@ -19,7 +19,7 @@ Nhóm thiết kế MiniApp đã xây dựng nên hệ thống thiết kế dành
 Chúng tôi sử dụng công cụ Figma để xây dựng nên hệ thống thiết kế Tiny với phương pháp thiết kế Atomic.
 
 - [Các sử dụng Tiny Design System](/docs/design/figma/started)
-- [File thiết kế](/docs/design/figma/download)
+- [File thiết kế](/docs/design/figma/download) <br />
 
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/36/4c/7e/c269800a2d1aae270f123261b49c5112.png" alt="guidelines" width="48px" />
 
