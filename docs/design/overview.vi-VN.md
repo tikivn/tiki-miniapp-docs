@@ -17,8 +17,8 @@ Nhóm thiết kế MiniApp đã xây dựng nên hệ thống thiết kế dành
 ## **Công cụ và nguồn**
 
 Chúng tôi sử dụng công cụ Figma để xây dựng nên hệ thống thiết kế Tiny với phương pháp thiết kế Atomic.
-- [Các sử dụng Tiny Design System](https://miniapp.tiki.vn/docs/design/figma/started-vi)
-- [File thiết kế](https://miniapp.tiki.vn/docs/design/figma/download-vi)
+- [Các sử dụng Tiny Design System](https://miniapp.tiki.vn/docs/design/figma/started)
+- [File thiết kế](https://miniapp.tiki.vn/docs/design/figma/download)
 
 <br />
 
@@ -27,18 +27,18 @@ Chúng tôi sử dụng công cụ Figma để xây dựng nên hệ thống thi
 ## **Các quy định trong thiết kế**
 
 Nguyên tắc thiết kế của Tiny:
-- [Minh bạch](https://miniapp.tiki.vn/docs/design/principles/transparency-vi)
-- [Tập trung](https://miniapp.tiki.vn/docs/design/principles/clear-focus-vi)
-- [Năng lượng tích cực](https://miniapp.tiki.vn/docs/design/principles/positive-vi)
-- [Dễ tiếp cận](https://miniapp.tiki.vn/docs/design/principles/accessible-vi)
+- [Minh bạch](https://miniapp.tiki.vn/docs/design/principles/transparency)
+- [Tập trung](https://miniapp.tiki.vn/docs/design/principles/clear-focus)
+- [Năng lượng tích cực](https://miniapp.tiki.vn/docs/design/principles/positive)
+- [Dễ tiếp cận](https://miniapp.tiki.vn/docs/design/principles/accessible)
 
 Quy định trong thiết kế của Tiny:
-- [Điều hướng đơn giản](https://miniapp.tiki.vn/docs/design/guideline/navigation-vi)
-- [Chính phụ rõ ràng](https://miniapp.tiki.vn/docs/design/guideline/hierarchy-vi)
-- [Trải nghiệm xuyên suốt](https://miniapp.tiki.vn/docs/design/guideline/clear-progress-vi)
-- [Kích thước màn hình](https://miniapp.tiki.vn/docs/design/styles/frame-vi)
+- [Điều hướng đơn giản](https://miniapp.tiki.vn/docs/design/guideline/navigation)
+- [Chính phụ rõ ràng](https://miniapp.tiki.vn/docs/design/guideline/hierarchy)
+- [Trải nghiệm xuyên suốt](https://miniapp.tiki.vn/docs/design/guideline/clear-progress)
+- [Kích thước màn hình](https://miniapp.tiki.vn/docs/design/styles/frame)
 
 Thiết kế chung của Tiny
-- [Màu sắc](https://miniapp.tiki.vn/docs/design/styles/color-vi)
-- [Font chữ](https://miniapp.tiki.vn/docs/design/styles/font-vi)
-- [Hệ thống icon](https://miniapp.tiki.vn/docs/design/styles/icon-vi)
+- [Màu sắc](https://miniapp.tiki.vn/docs/design/styles/color)
+- [Font chữ](https://miniapp.tiki.vn/docs/design/styles/font)
+- [Hệ thống icon](https://miniapp.tiki.vn/docs/design/styles/icon)
