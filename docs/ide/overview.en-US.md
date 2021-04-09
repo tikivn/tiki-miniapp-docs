@@ -9,6 +9,8 @@ Tiki MiniApp Studio (or Tiki IDE) is a tool created by Tiki for developes on Tik
 
 At the moment, you can download Tiki MiniApp Studio [here](https://dev-tikiscp.tbox.vn/miniapps/files/studio/0.6.0/tiki_miniapp_studio.dmg).
 
+![Tiki MiniApp Studio](https://salt.tikicdn.com/ts/upload/5d/fd/41/6f556e1d67a0d3f1d7da1dce7f230c52.jpg)
+
 ## Features
 
 ### Project management

@@ -65,11 +65,11 @@ Bên cạnh trạng thái của bản cập nhật sẽ có thêm thông tin ph�
 
 B1: Tại trang chi tiết của một ứng dụng, chọn xem chi tiết một phiên bản bằng cách bấm **Xem**
 
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/d6/80/1f/a461b17200c3cf3adcbe105d26cbd336.jpg"/>
+<img style="width: 100%" src="https://salt.tikicdn.com/ts/upload/19/d6/c2/0a4b6f53dd4fe8bed130daa316ebd19c.png" />
 
 B2: Tại trang chi tiết của một bản cập nhật, liệt kê các bản Builds đã được đăng tải bao gồm: Build number, Trạng thái đăng tải, Người đăng tải...
 
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/94/eb/79/64bd892ce74eb42393b5f6719c8d3987.png"/>
+<img style="width: 100%" src="https://salt.tikicdn.com/ts/upload/73/64/1c/a65373c67e8a1ae6465234e562b01089.png" />
 
 B3 (optional): Nhập thông tin mô tả (nếu có) cho ứng dụng tương ứng với bản cập nhật mới. Trường hợp không có thay đổi, thông tin hiển thị ra ngoài sẽ giữ nguyên.
 
