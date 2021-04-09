@@ -84,7 +84,7 @@ Caller cũng có thể truyền vào txml như sau
 <my-component>
   <view>header</view>
   <view>footer</view>
-</my-component
+</my-component>
 ```
 
 Kết quả
@@ -107,7 +107,7 @@ Ví dụ
 <!-- /components/index/index.txml -->
 <view>
   <slot>
-    <view>default slot & default value</view>
+    <view>default slot /& default value</view>
   </slot>
   <slot name="header"/>
   <view>body</view>

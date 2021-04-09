@@ -4,8 +4,8 @@ category:
   vi-VN: Tab Bar
   en-US: Tab Bar
 title:
-  vi-VN: my.setTabBarBadge (chưa ready)
-  en-US: my.setTabBarBadge (chưa ready)
+  vi-VN: my.setTabBarBadge
+  en-US: my.setTabBarBadge
 ---
 
 ## Giới thiệu

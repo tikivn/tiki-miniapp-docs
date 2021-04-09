@@ -118,9 +118,9 @@ export default function Banner({ isMobile }) {
             <FormattedMessage id="app.home.introduce" />
           </p>
           <div className="button-wrapper" key="button">
-            <Link component="a" toHash={false} className="btn-temp home-button">
+            <a href="https://dev-tikiscp.tbox.vn/miniapps/files/studio/0.6.0/tiki_miniapp_studio.dmg" className="btn-temp home-button">
               <FormattedMessage id="app.home.join-program" />
-            </Link>
+            </a>
             <Link
               className="btn-editor home-button"
               to={`/docs/developer/getting-started${isEN ? '-en' : ''}`}

@@ -4,8 +4,8 @@ category:
   vi-VN: Tab Bar
   en-US: Tab Bar
 title:
-  vi-VN: my.hideTabBar (chưa ready)
-  en-US: my.hideTabBar (chưa ready)
+  vi-VN: my.hideTabBar
+  en-US: my.hideTabBar
 ---
 
 ## Giới thiệu

@@ -23,22 +23,21 @@ title:
 
 ### Sample Code
 
-```jsx
-<View style={styles.page}>
-  <View style={styles.page__section}>
-    <View style={styles.page__section__content}>
-      <Text>my.request</Text>
-      <Text>{JSON.stringify(data.response)}</Text>
-      <View style={styles.page__section__buttons}>
-        <Button
-          title={data.loading ? "Loading..." : "Query"}
-          onPress={makeRequest}
-        />
-        <Button title="Clear" onPress={clear} />
-      </View>
-    </View>
-  </View>
-</View>
+```xml
+<view class="page">
+  <view class="page__section">
+    <view class="page__section__content">
+      <text>my.request</text>
+      <text>{{JSON.stringify(response)}}</text>
+      <view class="page__section__buttons">
+        <button 
+          onTap="makeRequest"
+        >{{loading ? "Loading..." : "Query"}}</button>
+        <button onTap="clear">Clear</button>
+      </view>
+    </view>
+  </view>
+</view>
 ```
 
 ```js

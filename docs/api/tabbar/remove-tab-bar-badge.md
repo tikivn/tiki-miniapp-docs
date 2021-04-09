@@ -4,8 +4,8 @@ category:
   vi-VN: Tab Bar
   en-US: Tab Bar
 title:
-  vi-VN: my.removeTabBarBadge (chưa ready)
-  en-US: my.removeTabBarBadge (chưa ready)
+  vi-VN: my.removeTabBarBadge
+  en-US: my.removeTabBarBadge
 ---
 
 ## Giới thiệu

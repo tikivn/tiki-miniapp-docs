@@ -16,19 +16,19 @@ title:
 
 ### Sample Code
 
-```jsx
-<View style={styles.page}>
-  <View style={styles.page__section}>
-    <View style={styles.page__section__content}>
-      <Text>my.getSystemInfo</Text>
-      <Text>{JSON.stringify(data.systemInfo)}</Text>
-      <View style={styles.page__section__buttons}>
-        <Button title="Query" onPress={getSystemInfo} />
-        <Button title="Clear" onPress={clear} />
-      </View>
-    </View>
-  </View>
-</View>
+```xml
+<view class="page">
+  <view class="page__section">
+    <view class="page__section__content">
+      <text>my.getSystemInfo</text>
+      <text>{{JSON.stringify(systemInfo)}}</text>
+      <view class="page__section__buttons">
+        <button onTap="getSystemInfo">Query</button>
+        <button onTap="clear">Clear</button>
+      </view>
+    </view>
+  </view>
+</view>
 ```
 
 ```js

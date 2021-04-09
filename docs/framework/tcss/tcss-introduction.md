@@ -181,8 +181,8 @@ TCSS hỗ trợ các loại Selector sau
 
 Khi một Page được render, các tcss sẽ được import theo thứ tự như sau
 
-- app.tcss sẽ được import trước tiên
-- Khi một Page sử dụng nhiều component, component này cũng có thể sử dụng các component khác. Tất cả các component (bao gồm cả các Component con của một Component) mà một Page sử dụng, sẽ được sort theo 2 tiêu chí: (1) Component nào ớ dưới lá, (2) đường dẫn của chúng. Thứ tự sort này sẽ quyết định xem tcss của Component nào được import vào trước, tcss của Component nào được import vào sau.
+- app.tcss sẽ được import trước tiên.
+- Khi một Page sử dụng nhiều component, component này cũng có thể sử dụng các component khác. Tất cả các component (bao gồm cả các Component con của một Component) mà một Page sử dụng, sẽ được sort theo 2 tiêu chí: (1) Component nào ở dưới lá, (2) đường dẫn của chúng. Thứ tự sort này sẽ quyết định xem tcss của Component nào được import vào trước, tcss của Component nào được import vào sau.
 - cuối cùng là index.tcss của chính page đó
 
 Do được import cuối cùng, nên tcss của Page có thể override tcss của các Component con.
