@@ -36,7 +36,7 @@ Tiny design guidelines:
 - [Navigation](https://miniapp.tiki.vn/docs/design/guideline/navigation-en)
 - [Distinguishable content hierarchy ](https://miniapp.tiki.vn/docs/design/guideline/hierarchy-en)
 - [Clear progress](https://miniapp.tiki.vn/docs/design/guideline/clear-progress-en)
-- [Size of design screen](https://miniapp.tiki.vn/docs/design/styles/frame-en)
+- [Size of design screen](https://miniapp.tiki.vn/docs/design/guideline/frame-en)
 
 Tiny styles
 - [Colors](https://miniapp.tiki.vn/docs/design/styles/color-en)

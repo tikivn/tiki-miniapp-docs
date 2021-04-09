@@ -11,6 +11,7 @@ When designing each screen, we must ensure:
 - The user can distinguish the primary and secondary content/ action in the screen.
 - The hierarchy and level of information are clear.
 - The level of information should not be too much. <br />
+
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/28/59/70/6959d9f7ac5d8b464f0f17e0197274ff.png" alt="information" height="600px" />
 
 

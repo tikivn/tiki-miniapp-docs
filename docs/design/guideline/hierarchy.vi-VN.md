@@ -11,6 +11,7 @@ Khi thiết kế mỗi màn hình, chúng ta phải đảm bảo:
 - Người dùng có thể phân biệt nội dung / hành động chính và phụ trong màn hình.
 - Hệ thống phân cấp và mức độ thông tin rõ ràng.
 - Mức độ thông tin không nên quá nhiều. <br />
+
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/28/59/70/6959d9f7ac5d8b464f0f17e0197274ff.png" alt="information" height="600px" />
 
 

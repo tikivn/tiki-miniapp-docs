@@ -36,7 +36,7 @@ Quy định trong thiết kế của Tiny:
 - [Điều hướng đơn giản](https://miniapp.tiki.vn/docs/design/guideline/navigation)
 - [Chính phụ rõ ràng](https://miniapp.tiki.vn/docs/design/guideline/hierarchy)
 - [Trải nghiệm xuyên suốt](https://miniapp.tiki.vn/docs/design/guideline/clear-progress)
-- [Kích thước màn hình](https://miniapp.tiki.vn/docs/design/styles/frame)
+- [Kích thước màn hình](https://miniapp.tiki.vn/docs/design/guideline/frame)
 
 Thiết kế chung của Tiny
 - [Màu sắc](https://miniapp.tiki.vn/docs/design/styles/color)
