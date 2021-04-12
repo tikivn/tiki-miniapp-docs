@@ -62,5 +62,4 @@ Page({
 | Attributes             | Type   | Required | Description                                                                           |
 | ---------------------- | ------ | -------- | ------------------------------------------------------------------------------------- |
 | cdnBaseUrl             | String | No       | Base CDN để load các file config của Mini App. Base CDN phải là subdomain của tiki.vn |
-| frameworkVersion       | String | No       | Framework version                                                                     |
-| frameworkCdnBaseDomain | String | No       | Framework base CDN phải là subdomain của Tiki                                         |
+| frameworkFilesLocation | String | No       | Framework files location phải là subdomain của Tiki                                   |
