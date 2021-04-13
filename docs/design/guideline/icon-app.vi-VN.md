@@ -10,7 +10,7 @@ Biểu trưng của MiniApp sẽ được hiển thị trên màn hình MiniApp 
 
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/32/70/61/80b0b8a963d34dfc33e2e6b70d79b12b.png" alt="logo" width="300px" /> <br />
 
-Kích thước tối thiểu: 600 x 600 px
+Kích thước tối thiểu: 600 x 600 px <br />
 Định dạng: png, jpg
 
 
