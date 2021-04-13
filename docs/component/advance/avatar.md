@@ -165,13 +165,12 @@ Page({
 
 ### Chi tiết
 
-| Property | Type   | Default Value | Description                           |
-| -------- | ------ | ------------- | ------------------------------------- |
-| size     | string | md            | Kích thước avatar (lg/md/xs)          |
-| shape    | string | circle        | Các giá trị: "circle","standard"      |
-| src      | string | ""            | source hình ảnh                       |
-| style    | string | ""            | Disabled button                       |
-| onError  | event  | null          | Trigger khi load ảnh không thành công |
+| Property | Type   | Default Value | Description                      |
+| -------- | ------ | ------------- | -------------------------------- |
+| size     | string | md            | Kích thước avatar (lg/md/xs)     |
+| shape    | string | circle        | Các giá trị: "circle","standard" |
+| src      | string | ""            | source hình ảnh                  |
+| style    | string | ""            | Disabled button                  |
 
 ```__react
 import image from '../../../theme/static/images/avatar-full.png'

@@ -57,7 +57,7 @@ Vai trò của thành viên trong Danh sách thành viên thường trực chỉ
 
 **B5:** Xuất hiện danh sách các ứng dụng mà thành viên mới có quyền truy cập, với vai trò là vai trò mặc định được chọn tại Bước 3. Owner có thể tùy chỉnh lại cho để phù hợp với phạm vi công việc thực tế.
 
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/6b/60/09/13327f079b95c13abe9fdbf7c65a462c.png"/>
+<img style="width: 100%" src="https://salt.tikicdn.com/ts/upload/b5/5e/0c/30104b6bfe4d39bb1136e2035b8e3b4a.jpg"/>
 
 **B6:** Bấm **Hoàn tất**
 

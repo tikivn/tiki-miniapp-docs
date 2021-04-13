@@ -310,11 +310,9 @@ _index.txml_
           topImageSize:'lg',
           buttons:[{
                 text:'Cancel',
-                extStyle:'border-top: 1px solid #ccc'
             },
             {
                 text:'Ok',
-                extStyle:'border-top: 1px solid #ccc'
             }
           ]
         }}" onTap="onTap">Vertical</button>
@@ -435,21 +433,19 @@ ReactDOM.render(<RenderImage />, mountNode);
 | mask          | boolean                 | true               | hiển thị mask                                                                     |
 | onMaskClick   | event                   | () => void         | trigger function này khi click vào mask                                           |
 | onModalClose  | event                   | () => void         | function này sẽ được trigger khi click vào close button                           |
-| onModalClick  | event                   | () => void         | function này sẽ được trigger khi click vào modal                                  |
+| animationType | 'none','slide','fade'   | none               | animation khi hiển thị modal                                                      |
 | topImage      | string                  | undefined          | hiển thị hình ảnh ở trên top của modal                                            |
 | topImageSize  | 'lg', 'md', 'sm'        | md                 | quyết định size render của topImage                                               |
 | buttons       | Button[]                | undefined          | custom bottom buttons, implement props **onButtonClick** bind function vào button |
 | onButtonClick | event                   | (e:Object) => void | function sẽ được bind và trigger khi click vào custom button                      |
 | buttonsLayout | 'horizontal','vertical' | 'horizontal'       | mask=true, khi click vào mask sẽ trigger function onClose                         |
 | advice        | boolean                 | false              | close button ở bottom                                                             |
-| zIndex        | string,number           |                    | set zIndex của modal                                                              |
 
 ### buttons
 
-| Property | Type   | Default Value | Description                   |
-| -------- | ------ | ------------- | ----------------------------- |
-| text     | string | ''            | hiển thị text button          |
-| extStyle | string | ''            | apply custom style cho button |
+| Property | Type   | Default Value | Description          |
+| -------- | ------ | ------------- | -------------------- |
+| text     | string | ''            | hiển thị text button |
 
 ### slots
 
