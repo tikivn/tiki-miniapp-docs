@@ -38,6 +38,7 @@ Quy định trong thiết kế của Tiny:
 - [Chính phụ rõ ràng](/docs/design/guideline/hierarchy)
 - [Trải nghiệm xuyên suốt](/docs/design/guideline/clear-progress)
 - [Kích thước màn hình](/docs/design/guideline/frame)
+- [Biểu trưng của MiniApp](/docs/design/guideline/icon-app)
 
 Thiết kế chung của Tiny
 

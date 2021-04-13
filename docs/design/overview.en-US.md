@@ -39,6 +39,7 @@ Tiny design guidelines:
 - [Distinguishable content hierarchy](/docs/design/guideline/hierarchy-en)
 - [Clear progress](/docs/design/guideline/clear-progress-en)
 - [Size of design screen](/docs/design/guideline/frame-en)
+- [Icon of MiniApp](/docs/design/guideline/icon-app-en)
 
 Tiny styles
 
