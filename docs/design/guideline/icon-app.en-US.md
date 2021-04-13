@@ -36,7 +36,7 @@ The safezone of your picture must be 32 x 32px.
 
 ## Guideline
 
-#### 1. Fit with the safezone 
+#### 1. Fit with the safe zone 
 
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/b8/30/d1/fa910cba9bb234c7d7e7ea81613cc663.png" alt="logo" height="250px" /> <br />
 
