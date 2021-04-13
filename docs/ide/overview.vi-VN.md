@@ -7,7 +7,7 @@ title: Tổng quan về MiniApp Studio
 
 Tiki MiniApp Studio (hoặc Tiki IDE) là công cụ dùng để phát triển mini app trên nền tảng Tiki MiniApp. Công cụ này cung cấp các tính năng như quản lý mini app, phát triển, trình giả lập, debug, và upload app lên Tiki Developer Center.
 
-Hiện tại bạn có thể tải Tiki MiniApp Studio 0.6.0 [tại đây](https://dev-tikiscp.tbox.vn/miniapps/files/studio/0.6.0/tiki_miniapp_studio.dmg).
+Hiện tại bạn có thể tải Tiki MiniApp Studio mới nhất [tại đây](https://dev-tikiscp.tbox.vn/miniapps/files/studio/latest/tiki_mini_app_studio.dmg).
 
 <img alt="Tiki MiniApp Studio" src="https://salt.tikicdn.com/ts/upload/5d/fd/41/6f556e1d67a0d3f1d7da1dce7f230c52.jpg" width="100%" />
 
