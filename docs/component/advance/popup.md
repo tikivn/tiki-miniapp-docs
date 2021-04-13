@@ -197,5 +197,4 @@ ReactDOM.render(<RenderImage />, mountNode);
 | animation | boolean | true                          | popup show với animation                                                  |
 | mask      | boolean | true                          | hiển thị mask, sử dụng với props onClose để đóng popup khi click vào mask |
 | position  | string  | "top","right","bottom","left" | vị trí hiển thị popup                                                     |
-| zIndex    | number  | 0                             | zIndex của popup                                                          |
 | onClose   | event   |                               | mask=true, khi click vào mask sẽ trigger function onClose                 |
