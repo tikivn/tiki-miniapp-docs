@@ -61,6 +61,7 @@ module.exports = {
     "docs/api/navigation-bar": pickerGenerator("api"),
     "docs/api/tabbar": pickerGenerator("api"),
     "docs/api/storage": pickerGenerator("api"),
+    "docs/api/payment": pickerGenerator("api"),
 
     // others
     "docs/component": pickerGenerator("component"),
