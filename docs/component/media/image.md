@@ -21,10 +21,9 @@ image component để hiển thị hình ảnh
 ```xml
 <view>
   <view class="block-content">
-    <view class="component-item">
+    <view onTap="onTap" class="component-item">
       <image
         onLoad="onLoad"
-        onTap="onTap"
         src="{{source}}"
         class="image-item" />
     </view>
@@ -79,7 +78,6 @@ Page({
 | resize-method | string | Cơ chế được sử dụng để thay đổi kích thước hình ảnh. Giá trị mặc định là `auto`. [Xem thêm](#resize-method)                                                          |
 | onLoad        | event  | Sự kiện được gọi khi hình ảnh được tải về thành công, `event.detail = { width, height }`                                                                             |
 | onError       | event  | Sự kiện được gọi khi hình ảnh tải về thất bại, `event.detail = { errMsg: 'Error message' }`                                                                          |
-| onTap         | event  | Sự kiện được gọi khi bấm vào hình ảnh                                                                                                                                |
 
 ### Chi tiết thuộc tính
 
@@ -149,4 +147,4 @@ Cơ chế được dùng để thay đổi kích thước của hình ảnh khi 
 
 ## Lưu ý
 
-- Bạn cần khai báo width và height của image thông qua inline style hoặc trong tcss, mặc định là width = `300` và height = `225`. Thuộc tính width và height sẽ không được kế thừa trong image
+- Bạn cần khai báo width và height của image thông qua inline style hoặc trong tcss, mặc định là width = `300px` và height = `225px`. Thuộc tính width và height sẽ không được kế thừa trong image
