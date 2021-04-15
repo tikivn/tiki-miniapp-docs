@@ -9,7 +9,7 @@ title:
   en-US: Create your Mini App
 ---
 
-Sau khi đăng ký và xác thực tài khoản thành công, Nhà phát triển có thể tiến hành tạo mới một ứng dụng để bắt đầu quá trình phát triển bằng cách truy cập [Dev Center](/dev-center/apps).
+Sau khi đăng ký và xác thực tài khoản thành công, Nhà phát triển có thể tiến hành tạo mới một ứng dụng để bắt đầu quá trình phát triển bằng cách truy cập [Dev Center](https://dev-center.tala.xyz).
 
 ## Tạo mới ứng dụng
 
@@ -33,7 +33,7 @@ Mô tả ứng dụng có thể thay đổi mỗi lần phát hành phiên bản
 
 Bấm **"Hoàn tất"** để xác nhận tạo ứng dụng mới với thông tin vừa điền.
 
-Ứng dụng sau khi tạo thành công sẽ xuất hiện tại [App Management](/dev-center/apps) với trạng thái Nháp (Draft).
+Ứng dụng sau khi tạo thành công sẽ xuất hiện tại App Management với trạng thái Nháp (Draft).
 
 ## Các trạng thái của một ứng dụng
 

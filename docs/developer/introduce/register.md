@@ -17,7 +17,7 @@ title:
 
 Tài khoản Cá nhân không thể chuyển đổi thành tài khoản Công ty và ngược lại.
 
-[Tìm hiểu thêm sự khác nhau giữa các loại tài khoản Nhà phát triển.](./docs/developer/introduce/register#Loại-tài-khoản-để-đăng-ký)
+[Tìm hiểu thêm sự khác nhau giữa các loại tài khoản Nhà phát triển.](#Loại-tài-khoản-để-đăng-ký)
 
 ## Đăng ký tài khoản Nhà phát triển
 
