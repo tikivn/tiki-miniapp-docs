@@ -46,6 +46,8 @@ module.exports = {
     "docs/framework/tcss": pickerGenerator("framework"),
     "docs/framework/component": pickerGenerator("framework"),
     "docs/framework/event": pickerGenerator("framework"),
+    "docs/framework/app": pickerGenerator("framework"),
+    "docs/framework/miniapp-page": pickerGenerator("framework"),
 
     // api
     "docs/api": pickerGenerator("api"),
