@@ -6,7 +6,7 @@ title: Clear focus
 
 ## Focus on task
 
-As a general rule, try to stay away from anything that requires users to remember to go back to your MiniApp to complete tasks, they most likely won’t. Once the user has entered a "complete-the-task" flow, help them finish the task within the shortest amount of time possible by removing other potential distractions on-screen. 
+As a general rule, try to stay away from anything that requires users to remember to go back to your Tini App to complete tasks, they most likely won’t. Once the user has entered a "complete-the-task" flow, help them finish the task within the shortest amount of time possible by removing other potential distractions on-screen. 
 
 ## Stay on the screen
 

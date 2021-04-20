@@ -1,10 +1,10 @@
 ---
 order: 25
 category: Design Guidelines
-title: MiniApp icon
+title: Tini App icon
 ---
 
-The MiniApp logo will be displayed on the MiniApp Store screen. In order to stand out among the many MiniApps, please use clear and appropriate logo cuts to ensure the beauty and completeness of the interface display.
+The Tini App logo will be displayed on the Tini App Store screen. In order to stand out among the many Tini Apps, please use clear and appropriate logo cuts to ensure the beauty and completeness of the interface display.
 
 ## Uploaded file requirements
 
@@ -19,13 +19,13 @@ Forrmat: png, jpg
 
 ## Specs
 
-### 1. MiniApp icon is a logo
+### 1. Tini App icon is a logo
 
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/4d/5e/33/27febfc0ccdae67ea217341c6ed1fc61.png" alt="logo" width="600px" /> <br />
-The most common visible size of the logo is 40 x 40px, the border radius is 14px and the safe zone of your MiniApp logo must be 24 x 24px.  
+The most common visible size of the logo is 40 x 40px, the border radius is 14px and the safe zone of your Tini App logo must be 24 x 24px.  
 
 
-### 2. MiniApp logo is a picture
+### 2. Tini App logo is a picture
 
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/f6/a8/d1/3d7433dea1523710cdd8ba021414df44.png" alt="logo" width="600px" /> <br />
 The safezone of your picture must be 32 x 32px.  

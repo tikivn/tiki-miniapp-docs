@@ -1,10 +1,10 @@
 ---
 order: 25
 category: Quy định trong thiết kế
-title: Biểu tượng của MiniApp
+title: Biểu tượng của Tini App
 ---
 
-Biểu trưng của MiniApp sẽ được hiển thị trên màn hình MiniApp Store. Để nổi bật giữa nhiều MiniApp khác nhau, vui lòng sử dụng các đường cắt logo rõ ràng và phù hợp để đảm bảo vẻ đẹp và sự hoàn chỉnh của giao diện hiển thị.
+Biểu trưng của Tini App sẽ được hiển thị trên màn hình Tini App Store. Để nổi bật giữa nhiều Tini App khác nhau, vui lòng sử dụng các đường cắt logo rõ ràng và phù hợp để đảm bảo vẻ đẹp và sự hoàn chỉnh của giao diện hiển thị.
 
 ## Những quy định về hình tải lên
 
@@ -19,12 +19,12 @@ Kích thước tối thiểu: 600 x 600 px <br />
 
 ## Thông số kỹ thuật
 
-### 1. Biểu trưng MiniApp là một logo
+### 1. Biểu trưng Tini App là một logo
 
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/4d/5e/33/27febfc0ccdae67ea217341c6ed1fc61.png" alt="logo" width="600px" /> <br />
 Kích thước hiển thị phổ biến nhất của biểu trưng là 40 x 40px, bán kính bo góc là 14px và vùng an toàn của logo bạn phải là 24 x 24px.
 
-### 2. Biểu trưng MiniApp là một hình ảnh
+### 2. Biểu trưng Tini App là một hình ảnh
 
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/f6/a8/d1/3d7433dea1523710cdd8ba021414df44.png" alt="logo" width="600px" /> <br />
 Vùng an toàn của hình ảnh phải là 32 x 32px.

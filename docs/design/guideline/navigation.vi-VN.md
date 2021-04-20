@@ -17,12 +17,12 @@ Hộp điều hướng bao gồm 2 thành phần chính: nút Tùy chọn & nút
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/37/b6/92/d07c55ff15341b918570238109ed4e5e.png" alt="more icon" height="400px" />
 
 
-- Khi bấm nút Đóng, MiniApp đang sử dụng đó sẽ được tắt. <br />
+- Khi bấm nút Đóng, Tini App đang sử dụng đó sẽ được tắt. <br />
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/ea/80/ec/53b8b14009c6e3b13bcfc742c78c083f.png" alt="close icon" width="100%" />
 
 
 Nút Quay lại có 2 trường hợp:
-- Tại trang chủ của MiniApp đó, nút này sẽ được ẩn đi.
+- Tại trang chủ của Tini App đó, nút này sẽ được ẩn đi.
 - Khi người dùng vào sâu hơn trong ứng dụng, nút Quay lại sẽ hiện ra để giúp người dùng có thể trở lại trang trước đó
     > *Lưu ý: Nút Quay lại luôn luôn là icon mũi tên quay lại. Không được sử dụng icon Đóng làm người dùng lẫn lộn với nút Đóng trong Hộp điều hướng*
 

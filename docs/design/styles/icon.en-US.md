@@ -6,7 +6,7 @@ title: Iconography
 
 We use the [Nucleo icon library](https://nucleoapp.com/) for our system icon library. They follow our attributes of focused, familiar, and inclusive in metaphor and design. Our icons act as visual support to help people move through the experience more effectively.
 
-*Disclaimer: According to the license of Nucleo, we just provide the system icon library such as navigation icons, status icons...If you want to make consistent with those icons in your MiniApp, please purchase the [Nucleo icon library](https://nucleoapp.com/).*
+*Disclaimer: According to the license of Nucleo, we just provide the system icon library such as navigation icons, status icons...If you want to make consistent with those icons in your Tini App, please purchase the [Nucleo icon library](https://nucleoapp.com/).*
 
 ## Icon overview
 
