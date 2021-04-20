@@ -46,6 +46,8 @@ module.exports = {
     "docs/framework/tcss": pickerGenerator("framework"),
     "docs/framework/component": pickerGenerator("framework"),
     "docs/framework/event": pickerGenerator("framework"),
+    "docs/framework/app": pickerGenerator("framework"),
+    "docs/framework/miniapp-page": pickerGenerator("framework"),
 
     // api
     "docs/api": pickerGenerator("api"),
@@ -61,6 +63,8 @@ module.exports = {
     "docs/api/navigation-bar": pickerGenerator("api"),
     "docs/api/tabbar": pickerGenerator("api"),
     "docs/api/storage": pickerGenerator("api"),
+    "docs/api/payment": pickerGenerator("api"),
+    "docs/api/image-picker": pickerGenerator("api"),
 
     // others
     "docs/component": pickerGenerator("component"),
