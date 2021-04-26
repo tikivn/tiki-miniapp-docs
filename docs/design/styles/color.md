@@ -13,9 +13,9 @@ Hệ thống màu bao gồm những thành phần màu như sau
 
 Các màu sắc đều có thể tùy chỉnh dựa theo ý đồ thiết kế của bạn.
 
-import {Color} from '../../../src/components/Design';
-import vi from '../../../src/components/Design/Color/global-vi';
-import en from '../../../src/components/Design/Color/global-en';
+import {Color} from '@site/src/components/Design';
+import vi from '@site/src/components/Design/Color/global-vi';
+import en from '@site/src/components/Design/Color/global-en';
 import ReactTooltip from "react-tooltip";
 
 <Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />
@@ -39,28 +39,28 @@ Các color tokens là một phần nền tảng trong hệ thống thiết kế 
 
 ### Màu của văn bản
 
-import textVi from '../../../src/components/Design/Color/text-vi';
-import textEn from '../../../src/components/Design/Color/text-en';
+import textVi from '@site/src/components/Design/Color/text-vi';
+import textEn from '@site/src/components/Design/Color/text-en';
 
 <Color color={{ name: 'gray', count: 13 }} en={textEn} vi={textVi} direction="horizontal" />
 
 ### Màu của icon
 
-import iconVi from '../../../src/components/Design/Color/icon-vi';
-import iconEn from '../../../src/components/Design/Color/icon-en';
+import iconVi from '@site/src/components/Design/Color/icon-vi';
+import iconEn from '@site/src/components/Design/Color/icon-en';
 
 <Color color={{ name: 'gray', count: 13 }} en={iconEn} vi={iconVi} direction="horizontal" />
 
 ### Màu của viền
 
-import borderVi from '../../../src/components/Design/Color/border-vi';
-import borderEn from '../../../src/components/Design/Color/border-en';
+import borderVi from '@site/src/components/Design/Color/border-vi';
+import borderEn from '@site/src/components/Design/Color/border-en';
 
 <Color color={{ name: 'gray', count: 13 }} en={borderEn} vi={borderVi} direction="horizontal" />
 
 ### Màu của nền
 
-import backgroundVi from '../../../src/components/Design/Color/background-vi';
-import backgroundEn from '../../../src/components/Design/Color/background-en';
+import backgroundVi from '@site/src/components/Design/Color/background-vi';
+import backgroundEn from '@site/src/components/Design/Color/background-en';
 
 <Color color={{ name: 'gray', count: 13 }} en={backgroundEn} vi={backgroundVi} direction="horizontal" />

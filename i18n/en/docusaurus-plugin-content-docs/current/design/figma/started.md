@@ -4,7 +4,7 @@ category: Design resources
 title: Getting started
 ---
 
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/c2/bc/c5/4f02823afd77ccd272768c1578b077d9.png" alt="account" width="48px" />
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/c2/bc/c5/4f02823afd77ccd272768c1578b077d9.png" alt="account" />
 
 # **Setting it up**
 

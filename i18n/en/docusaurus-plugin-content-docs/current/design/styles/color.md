@@ -1,26 +1,25 @@
 ---
-order: 31
-category: Global style
 title: Colors
 ---
-We use color to visually communicate information, functions in our experiences.
 
+We use color to visually communicate information, functions in our experiences.
 
 ## The Tiny color theme
 
 The color theme includes default colors for:
 
 - Primary color (your brand color) for button, navigation bar.
-- Additional UI colors, such as colors for backgrounds, surfaces, errors, typography, and iconography. 
+- Additional UI colors, such as colors for backgrounds, surfaces, errors, typography, and iconography.
 
 All of these colors can be customized for your app.
 
-```__react
-import {Color} from '../../../theme/template/Design';
-import vi from '../../../theme/template/Design/Color/global-vi';
-import en from '../../../theme/template/Design/Color/global-en';
-ReactDOM.render(<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />, mountNode);
-```
+import {Color} from '@site/src/components/Design';
+import vi from '@site/src/components/Design/Color/global-vi';
+import en from '@site/src/components/Design/Color/global-en';
+import ReactTooltip from "react-tooltip";
+
+<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />
+<ReactTooltip />
 
 ## Accessibility
 
@@ -34,47 +33,34 @@ Meet WCAG AA accessibility requirements for minimum contrast.
 - Small text is any size below 24px and requires a 4.5:1 contrast ratio.
 - Large text is anything above 24px and requires a 3:1 contrast ratio.
 
-
 ## Color tokens
 
 Our color tokens are a foundational part of our design system.
 
 ### Text
 
-```__react
-import {Color} from '../../../theme/template/Design';
-import vi from '../../../theme/template/Design/Color/text-vi';
-import en from '../../../theme/template/Design/Color/text-en';
-ReactDOM.render(<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />, mountNode);
-```
+import textVi from '@site/src/components/Design/Color/text-vi';
+import textEn from '@site/src/components/Design/Color/text-en';
 
+<Color color={{ name: 'gray', count: 13 }} en={textEn} vi={textVi} direction="horizontal" />
 
 ### Icon
 
-```__react
-import {Color} from '../../../theme/template/Design';
-import vi from '../../../theme/template/Design/Color/icon-vi';
-import en from '../../../theme/template/Design/Color/icon-en';
-ReactDOM.render(<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />, mountNode);
-```
+import iconVi from '@site/src/components/Design/Color/icon-vi';
+import iconEn from '@site/src/components/Design/Color/icon-en';
 
+<Color color={{ name: 'gray', count: 13 }} en={iconEn} vi={iconVi} direction="horizontal" />
 
 ### Border
 
-```__react
-import {Color} from '../../../theme/template/Design';
-import vi from '../../../theme/template/Design/Color/border-vi';
-import en from '../../../theme/template/Design/Color/border-en';
-ReactDOM.render(<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />, mountNode);
-```
+import borderVi from '@site/src/components/Design/Color/border-vi';
+import borderEn from '@site/src/components/Design/Color/border-en';
 
+<Color color={{ name: 'gray', count: 13 }} en={borderEn} vi={borderVi} direction="horizontal" />
 
 ### Background
 
-```__react
-import {Color} from '../../../theme/template/Design';
-import vi from '../../../theme/template/Design/Color/background-vi';
-import en from '../../../theme/template/Design/Color/background-en';
-ReactDOM.render(<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />, mountNode);
-```
+import backgroundVi from '@site/src/components/Design/Color/background-vi';
+import backgroundEn from '@site/src/components/Design/Color/background-en';
 
+<Color color={{ name: 'gray', count: 13 }} en={backgroundEn} vi={backgroundVi} direction="horizontal" />
