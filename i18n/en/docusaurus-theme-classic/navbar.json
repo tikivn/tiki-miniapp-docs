@@ -1,0 +1,26 @@
+{
+  "item.label.Bắt đầu": {
+    "message": "Getting Started",
+    "description": "Navbar item with label Bắt đầu"
+  },
+  "item.label.Framework": {
+    "message": "Framework",
+    "description": "Navbar item with label Framework"
+  },
+  "item.label.Components": {
+    "message": "Components",
+    "description": "Navbar item with label Components"
+  },
+  "item.label.API": {
+    "message": "API",
+    "description": "Navbar item with label API"
+  },
+  "item.label.Studio": {
+    "message": "Studio",
+    "description": "Navbar item with label Studio"
+  },
+  "item.label.Design": {
+    "message": "Design",
+    "description": "Navbar item with label Design"
+  }
+}

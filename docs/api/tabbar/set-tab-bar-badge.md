@@ -1,11 +1,5 @@
 ---
-order: 101
-category:
-  vi-VN: Tab Bar
-  en-US: Tab Bar
-title:
-  vi-VN: my.setTabBarBadge
-  en-US: my.setTabBarBadge
+title: my.setTabBarBadge
 ---
 
 ## Giới thiệu
@@ -19,7 +13,7 @@ title:
 ```js
 my.setTabBarBadge({
   index: 0,
-  text: 10,
+  text: 10
 });
 ```
 

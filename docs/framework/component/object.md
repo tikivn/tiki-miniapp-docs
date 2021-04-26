@@ -1,12 +1,4 @@
----
-order: 43
-category:
-  vi-VN: Component
-  en-US: Component
-title:
-  vi-VN: Component Object
-  en-US: Component Object
----
+# Component Object
 
 **Chú ý**
 
@@ -66,8 +58,8 @@ Component({
     plusOne(e) {
       console.log(e);
       this.setData({ counter: this.data.counter + 1 });
-    },
-  },
+    }
+  }
 });
 ```
 
@@ -98,7 +90,7 @@ Component({
   data: { counter: 0 },
   props: {
     onCounterPlusOneFinish: (data) => console.log(data),
-    extra: "default extra",
+    extra: 'default extra'
   },
   methods: {
     plusOne(e) {
@@ -106,8 +98,8 @@ Component({
       const counter = this.data.counter + 1;
       this.setData({ counter });
       this.props.onCounterPlusOneFinish(counter);
-    },
-  },
+    }
+  }
 });
 ```
 
@@ -126,7 +118,7 @@ Chúng ta có thể sử dụng Component như sau
 Page({
   onCounterPlusOne(data) {
     console.log(data);
-  },
+  }
 });
 ```
 
@@ -140,13 +132,13 @@ extra: external extra
 
 ## Component instance properties
 
-| tên    | kiểu   | mô tả                                                 |
-| ------ | ------ | ----------------------------------------------------- |
-| data   | Object | Component internal data                               |
-| props  | Object | Properites được truyền vào Component                  |
-| is     | String | Đường dẫn tuyệt đối của Component                     |
-| $page  | Object | Instance của page mà trong đó Component được sử dụng  |
-| $id    | Number | Component id được dùng để render Component trong TXML |
+| tên   | kiểu   | mô tả                                                 |
+| ----- | ------ | ----------------------------------------------------- |
+| data  | Object | Component internal data                               |
+| props | Object | Properites được truyền vào Component                  |
+| is    | String | Đường dẫn tuyệt đối của Component                     |
+| $page | Object | Instance của page mà trong đó Component được sử dụng  |
+| $id   | Number | Component id được dùng để render Component trong TXML |
 
 ```js
 // /components/index/index.js
@@ -156,7 +148,7 @@ Component({
     console.log(this.is);
     console.log(this.$page);
     console.log(this.$id);
-  },
+  }
 });
 ```
 
@@ -170,7 +162,7 @@ Component({
 Page({
   onReady() {
     console.log(this.xxCom);
-  },
+  }
 });
 ```
 

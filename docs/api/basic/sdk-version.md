@@ -1,11 +1,5 @@
 ---
-order: 10
-category:
-  vi-VN: Cơ bản 
-  en-US: Basic
-title: 
-  vi-VN: my.SDKVersion
-  en-US: my.SDKVersion
+title: my.SDKVersion
 ---
 
 ## Giới thiệu
@@ -25,12 +19,12 @@ title:
 ```js
 Page({
   data: {
-    SDKVersion: ""
+    SDKVersion: ''
   },
   onLoad() {
     this.setData({ SDKVersion: my.SDKVersion });
   }
-})
+});
 ```
 
 ### Return value

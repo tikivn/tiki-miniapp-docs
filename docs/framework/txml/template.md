@@ -1,12 +1,4 @@
----
-order: 24
-category:
-  vi-VN: TXML
-  en-US: TXML
-title:
-  vi-VN: Template
-  en-US: Template
----
+# Template
 
 TXML hỗ trợ bạn để có thể định nghĩa và sử dụng template.
 
@@ -42,10 +34,10 @@ Page({
   data: {
     item: {
       index: 0,
-      msg: "this is a template",
-      time: "2016-09-15",
-    },
-  },
+      msg: 'this is a template',
+      time: '2016-09-15'
+    }
+  }
 });
 ```
 

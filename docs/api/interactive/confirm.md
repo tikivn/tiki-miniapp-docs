@@ -1,11 +1,5 @@
 ---
-order: 62
-category:
-  vi-VN: Interactive Feedback
-  en-US: Interactive Feedback
-title: 
-  vi-VN: my.confirm
-  en-US: my.confirm
+title: my.confirm
 ---
 
 ## Giới thiệu
@@ -36,10 +30,10 @@ my.confirm là api để hiển thị Confirm popup. Có thể set được titl
 Page({
   onConfirm() {
     my.confirm({
-      title: "Alert title",
-      content: "Alert content",
-      confirmButtonText: "Confirm",
-      cancelButtonText: "Cancel",
+      title: 'Alert title',
+      content: 'Alert content',
+      confirmButtonText: 'Confirm',
+      cancelButtonText: 'Cancel',
       success: (result) => {
         my.alert({ title: `${result.confirm}` });
       },
@@ -47,21 +41,21 @@ Page({
         my.alert({ title: `${e}` });
       },
       complete: () => {
-        console.log("Complete");
-      },
+        console.log('Complete');
+      }
     });
-  },
-})
+  }
+});
 ```
 
 ### Chi tiết
 
-| Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
-| ------- | --------------- | ------- | --------------- |
-| title | String | No | Title của confirm box |
-| content | String | No | Content message của confirm box |
-| confirmButtonText | String | No | Text của button confirm, mặc định là OK |
-| cancelButtonText | String | No | Text của button confirm, mặc định là Cancel |
-| success | Function | No | Callback khi confirm box show success |
-| fail | Function | No | Callback khi confirm box show fail |
-| complete | Function | No | Callback khi confirm box đã được show |
+| Thuộc tính        | Kiểu dữ liệu | Required | Mô tả                                       |
+| ----------------- | ------------ | -------- | ------------------------------------------- |
+| title             | String       | No       | Title của confirm box                       |
+| content           | String       | No       | Content message của confirm box             |
+| confirmButtonText | String       | No       | Text của button confirm, mặc định là OK     |
+| cancelButtonText  | String       | No       | Text của button confirm, mặc định là Cancel |
+| success           | Function     | No       | Callback khi confirm box show success       |
+| fail              | Function     | No       | Callback khi confirm box show fail          |
+| complete          | Function     | No       | Callback khi confirm box đã được show       |

@@ -1,11 +1,5 @@
 ---
-order: 12
-category:
-    vi-VN: Thành phần nâng cao
-    en-US: Advance components
-title:
-    vi-VN: modal
-    en-US: modal
+title: modal
 ---
 
 ## Giới thiệu
@@ -21,10 +15,10 @@ Khai báo components:
 
 ```json
 {
-    "defaultTitle": "Modal",
-    "usingComponents": {
-        "modal": "@tikivn/mini-ui/lib/modal/index"
-    }
+  "defaultTitle": "Modal",
+  "usingComponents": {
+    "modal": "@tikivn/mini-ui/lib/modal/index"
+  }
 }
 ```
 
@@ -35,60 +29,60 @@ _**lưu ý đây không phải là best practise, nên sử dụng để tham kh
 
 ```js
 Page({
-    data: {
-        modal: {},
-    },
-    onLoad() {},
-    closeModal() {
-        this.setData({
-            modal: {},
-        });
-    },
-    onMaskClick() {
-        this.setData({
-            modal: {},
-        });
-    },
-    onButtonClick(e) {
-        if (e.target.dataset.index === 0) {
-            my.alert({
-                content: "item" + JSON.stringify(e.target.dataset),
-                success: () => this.setData({ modal: {} }),
-            });
-        } else if (e.target.dataset.index === 1) {
-            my.alert({
-                content: "item" + JSON.stringify(e.target.dataset),
-                success: () => this.setData({ modal: {} }),
-            });
-        } else {
-            my.alert({
-                content: "unhandle",
-                success: () => this.setData({ modal: {} }),
-            });
-        }
-    },
-    onModalClick() {
-        this.setData({
-            modal: {},
-        });
-    },
-    onModalClose() {
-        this.setData({
-            modal: {},
-        });
-    },
-    onCancel() {
-        this.setData({ modal: {} });
-    },
-    onTap(e) {
-        this.setData(e.target.dataset);
-    },
+  data: {
+    modal: {}
+  },
+  onLoad() {},
+  closeModal() {
+    this.setData({
+      modal: {}
+    });
+  },
+  onMaskClick() {
+    this.setData({
+      modal: {}
+    });
+  },
+  onButtonClick(e) {
+    if (e.target.dataset.index === 0) {
+      my.alert({
+        content: 'item' + JSON.stringify(e.target.dataset),
+        success: () => this.setData({ modal: {} })
+      });
+    } else if (e.target.dataset.index === 1) {
+      my.alert({
+        content: 'item' + JSON.stringify(e.target.dataset),
+        success: () => this.setData({ modal: {} })
+      });
+    } else {
+      my.alert({
+        content: 'unhandle',
+        success: () => this.setData({ modal: {} })
+      });
+    }
+  },
+  onModalClick() {
+    this.setData({
+      modal: {}
+    });
+  },
+  onModalClose() {
+    this.setData({
+      modal: {}
+    });
+  },
+  onCancel() {
+    this.setData({ modal: {} });
+  },
+  onTap(e) {
+    this.setData(e.target.dataset);
+  }
 });
 ```
 
 ### Basic Modal
 
--   **Khai báo modal component**
+- **Khai báo modal component**
 
 _index.txml_
 
@@ -124,7 +118,7 @@ _index.txml_
   </modal>
 ```
 
--   **Khai báo button with dataset**
+- **Khai báo button with dataset**
 
 ```xml
   <view class="button-wrapper">
@@ -143,37 +137,30 @@ _index.txml_
   </view>
 ```
 
--   **Kết quả**
+- **Kết quả**
 
-```__react
-import top from '../../../theme/static/images/modal-basic.png'
-import bottom from '../../../theme/static/images/modal-basic-footer.png'
-
-const RenderImage=()=>
-    <div style={{
-            display:'flex',
-            flexDirection:'row',
-            justifyContent:'space-around',
-            widht:'100%',
-            background:'#f2f4f5',
-            padding:'24px',
-            borderRadius:'4px'
-        }}>
-        <div>
-            <h4>Basic modal</h4>
-            <img style={{maxWidth: 300}} alt="modal" src={top}/>
-        </div>
-        <div>
-            <h4>Basic modal with footer,showClose</h4>
-            <img style={{maxWidth: 300}} alt="modal" src={bottom}/>
-        </div>
-    </div>
-ReactDOM.render(<RenderImage />, mountNode);
-```
+<div style={{
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'space-around',
+    widht:'100%',
+    background:'#f2f4f5',
+    padding:'24px',
+    borderRadius:'4px'
+  }}>
+  <div>
+      <h4>Basic modal</h4>
+      <img style={{maxWidth: 300}} alt="modal" src="/img/modal-basic.png"/>
+  </div>
+  <div>
+      <h4>Basic modal with footer,showClose</h4>
+      <img style={{maxWidth: 300}} alt="modal" src="/img/modal-basic-footer.png"/>
+  </div>
+</div>
 
 ### Image Modal
 
--   **Khai báo modal component**
+- **Khai báo modal component**
 
 _index.txml_
 
@@ -211,7 +198,7 @@ _index.txml_
   </modal>
 ```
 
--   **Khai báo button with dataset**
+- **Khai báo button with dataset**
 
 ```xml
   <view class="button-wrapper">
@@ -234,37 +221,30 @@ _index.txml_
   </view>
 ```
 
--   **Kết quả**
+- **Kết quả**
 
-```__react
-import top from '../../../theme/static/images/modal-image-md.png'
-import bottom from '../../../theme/static/images/modal-image-lg.png'
-
-const RenderImage=()=>
-    <div style={{
-            display:'flex',
-            flexDirection:'row',
-            justifyContent:'space-around',
-            widht:'100%',
-            background:'#f2f4f5',
-            padding:'24px',
-            borderRadius:'4px'
-        }}>
-        <div>
-            <h4>Image size medium</h4>
-            <img style={{maxWidth: 300}} alt="modal" src={top}/>
-        </div>
-        <div>
-            <h4>Image size large</h4>
-            <img style={{maxWidth: 300}} alt="modal" src={bottom}/>
-        </div>
+<div style={{
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'space-around',
+        widht:'100%',
+        background:'#f2f4f5',
+        padding:'24px',
+        borderRadius:'4px'
+    }}>
+    <div>
+        <h4>Image size medium</h4>
+        <img style={{maxWidth: 300}} alt="modal" src="/img/modal-image-md.png"/>
     </div>
-ReactDOM.render(<RenderImage />, mountNode);
-```
+    <div>
+        <h4>Image size large</h4>
+        <img style={{maxWidth: 300}} alt="modal" src="/img/modal-image-lg.png"/>
+    </div>
+</div>
 
 ### Custom Button
 
--   **Khai báo modal component**
+- **Khai báo modal component**
 
 _index.txml_
 
@@ -296,7 +276,7 @@ _index.txml_
 
 ```
 
--   **Khai báo button with dataset**
+- **Khai báo button with dataset**
 
 ```xml
     <view class="button-wrapper">
@@ -337,37 +317,30 @@ _index.txml_
 
 ```
 
--   **Kết quả**
+- **Kết quả**
 
-```__react
-import top from '../../../theme/static/images/modal-custom-footer.png'
-import bottom from '../../../theme/static/images/modal-custom-footer-horizontal.png'
-
-const RenderImage=()=>
-    <div style={{
-            display:'flex',
-            flexDirection:'row',
-            justifyContent:'space-around',
-            widht:'100%',
-            background:'#f2f4f5',
-            padding:'24px',
-            borderRadius:'4px'
-        }}>
-        <div>
-            <h4>Vertical buttons layout</h4>
-            <img style={{maxWidth: 300}} alt="modal" src={top}/>
-        </div>
-        <div>
-            <h4>Horizontal buttons layout</h4>
-            <img style={{maxWidth: 300}} alt="modal" src={bottom}/>
-        </div>
+<div style={{
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'space-around',
+        widht:'100%',
+        background:'#f2f4f5',
+        padding:'24px',
+        borderRadius:'4px'
+    }}>
+    <div>
+        <h4>Vertical buttons layout</h4>
+        <img style={{maxWidth: 300}} alt="modal" src="/img/modal-custom-footer.png"/>
     </div>
-ReactDOM.render(<RenderImage />, mountNode);
-```
+    <div>
+        <h4>Horizontal buttons layout</h4>
+        <img style={{maxWidth: 300}} alt="modal" src="/img/modal-custom-footer-horizontal.png"/>
+    </div>
+</div>
 
 ### Advance
 
--   **Khai báo modal component**
+- **Khai báo modal component**
 
 _index.txml_
 
@@ -386,7 +359,7 @@ _index.txml_
 
 ```
 
--   **Khai báo button with dataset**
+- **Khai báo button with dataset**
 
 ```xml
     <view class="button-wrapper">
@@ -401,28 +374,22 @@ _index.txml_
 
 ```
 
--   **Kết quả**
+- **Kết quả**
 
-```__react
-import top from '../../../theme/static/images/modal-image.png'
-
-const RenderImage=()=>
-    <div style={{
-            display:'flex',
-            flexDirection:'row',
-            justifyContent:'space-around',
-            widht:'100%',
-            background:'#f2f4f5',
-            padding:'24px',
-            borderRadius:'4px'
-        }}>
-        <div>
-            <h4>Image only</h4>
-            <img style={{maxWidth: 300}} alt="modal" src={top}/>
-        </div>
+<div style={{
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'space-around',
+        widht:'100%',
+        background:'#f2f4f5',
+        padding:'24px',
+        borderRadius:'4px'
+    }}>
+    <div>
+        <h4>Image only</h4>
+        <img style={{maxWidth: 300}} alt="modal" src="/img/modal-image.png"/>
     </div>
-ReactDOM.render(<RenderImage />, mountNode);
-```
+</div>
 
 ### Chi tiết props
 

@@ -1,12 +1,4 @@
----
-order: 20
-category:
-  vi-VN: TXML
-  en-US: TXML
-title:
-  vi-VN: Giới thiệu về TXML
-  en-US: Introduction to TXML
----
+# Giới thiệu về TXML
 
 TXML là một ngôn ngữ được thiết kế để xây dựng UI cho một ứng dụng của Tiki Mini App.
 Cú pháp của TXML có thể chia thành 5 phần:
@@ -35,14 +27,14 @@ Và đây là đoạn code JS tương ứng
 Page({
   data: {
     items: [1, 2, 3, 4, 5, 6, 7],
-    view: "Tiki Mini App",
-    count: 1,
+    view: 'Tiki Mini App',
+    count: 1
   },
   add(e) {
     this.setData({
-      count: this.data.count + 1,
+      count: this.data.count + 1
     });
-  },
+  }
 });
 ```
 

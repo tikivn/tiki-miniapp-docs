@@ -1,11 +1,5 @@
 ---
-order: 101
-category:
-  vi-VN: Tab Bar
-  en-US: Tab Bar
-title:
-  vi-VN: my.showTabBa
-  en-US: my.showTabBar
+title: my.showTabBar
 ---
 
 ## Giới thiệu
@@ -18,7 +12,7 @@ title:
 
 ```js
 my.showTabBar({
-  animation: true,
+  animation: true
 });
 ```
 

@@ -1,11 +1,5 @@
 ---
-order: 13
-category:
-  vi-VN: Thành phần cơ bản
-  en-US: Basic components
-title:
-  vi-VN: progress
-  en-US: progress
+title: progress
 ---
 
 ## Giới thiệu
@@ -59,8 +53,8 @@ progress {
 /* js */
 Page({
   data: {
-    showInfo: true,
-  },
+    showInfo: true
+  }
 });
 ```
 
@@ -77,7 +71,4 @@ Page({
 | background-color | color         | 4             | Không    | Màu của thanh progress                            |
 | active           | boolean       | false         | Không    | Sử dụng animation cho thanh progress              |
 
-```__react
-import image from '../../../theme/static/images/progress-component.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Progres" src={image}/>, mountNode);
-```
+<img style={{maxWidth: 414}} alt="Tab" src="/img/progress-component.png"/>

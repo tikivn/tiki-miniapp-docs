@@ -1,11 +1,5 @@
 ---
-order: 19
-category:
-  vi-VN: Thành phần cơ bản
-  en-US: Basic components
-title:
-  vi-VN: label
-  en-US: label
+title: label
 ---
 
 ## Giới thiệu

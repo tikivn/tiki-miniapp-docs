@@ -1,11 +1,5 @@
 ---
-order: 18
-category:
-  vi-VN: Thành phần cơ bản
-  en-US: Basic components
-title:
-  vi-VN: checkbox
-  en-US: checkbox
+title: checkbox
 ---
 
 ## Giới thiệu
@@ -53,7 +47,7 @@ title:
 Page({
   onChange(e) {
     console.log('onChange', e);
-  },
+  }
 });
 ```
 
@@ -77,7 +71,4 @@ Page({
 | icon     | string  | Loại icon hiển thị khi checkbox được chọn. Chỉ hỗ trợ 2 loại icon là `success` và `minus` ([Xem thêm](/docs/component/basic/icon)). Giá trị mặc định là `success` |
 | onChange | event   | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { checked: checked, value: value }`                                                                     |
 
-```__react
-import image from '../../../theme/static/images/checkbox-component.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Checkbox" src={image}/>, mountNode);
-```
+<img style={{maxWidth: 414}} alt="Tab" src="/img/checkbox-component.png"/>

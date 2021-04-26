@@ -1,12 +1,4 @@
----
-order: 10
-category:
-  vi-VN: Cấu hình ứng dụng 
-  en-US: Configuring MiniApp
-title: 
-  vi-VN: Cấu hình chung
-  en-US: Global Configuration
----
+# Cấu hình chung
 
 Trong một dự án, file `app.json` sẽ được dùng để cấu hình cho một ứng dụng Tiki MiniApp. Nội dung cấu hình sẽ được áp dụng cho việc quản lý các pages và path tới các page trong ứng dụng, hay cấu hình giao diện cho app như title, tabBar, ...
 
@@ -18,7 +10,7 @@ Dưới đây là ví dụ của một `app.json` với một vài cấu hình t
     "pages/tabBar/API/index",
     "pages/tabBar/component/index",
     "pages/component/view/index",
-    "pages/component/scrollview/index",
+    "pages/component/scrollview/index"
   ],
   "window": {
     "defaultTitle": "My App",
@@ -28,14 +20,14 @@ Dưới đây là ví dụ của một `app.json` với một vài cấu hình t
   },
   "tabBar": {
     "items": [
-      { 
-        "name": "API", 
+      {
+        "name": "API",
         "pagePath": "pages/tabBar/API/index",
         "icon": "images/icon_API.png",
         "activeIcon": "images/icon_API_HL.png"
       },
-      { 
-        "name": "Components", 
+      {
+        "name": "Components",
         "pagePath": "pages/tabBar/component/index",
         "icon": "images/icon_component.png",
         "activeIcon": "images/icon_component_HL.png"
@@ -53,39 +45,37 @@ Dưới đây là ví dụ của một `app.json` với một vài cấu hình t
 | window   | Object   | No       | Cấu hình hành vi của window chưa page |
 | tabBar   | Object   | No       | Cấu hình TabBar ở dưới của một page   |
 
-
 ## pages
 
 Đây là cấu hình giúp cho MiniApp Framework xác định được các pages và đường dẫn tới các files của page. Khi định nghĩa không cần xác định đuôi của file, framework sẽ tự động tìm kiếm file .json, .js, .jsx và .style dựa trên page path được quy định.
 
-**Lưu ý:** 
+**Lưu ý:**
+
 - Các pages không được quy định ở đây sẽ không được bundle khi app được build. Việc chuyển tới một page thường bị lỗi có thể do quên trong việc quy định page ở đây.
 - Item đầu tiên trong array sẽ được chọn làm trang khởi tạo khi app được mở lên. Nên cần lưu ý khi thay đổi thứ tự của item đầu tiên.
 
 Giả sử project có cấu trúc thư mục như sau:
 
 ```bash
-- miniapp-project/                      
- |- src/                      
-   |- pages/                   
-     |- index/                  
-     |  index.js               
-     |  index.json             
-     |  index.jsx              
-     |  index.style              
-   |  app.js                   
-   |  app.json                 
-   |  app.style                 
- |  package.json              
+- miniapp-project/
+ |- src/
+   |- pages/
+     |- index/
+     |  index.js
+     |  index.json
+     |  index.jsx
+     |  index.style
+   |  app.js
+   |  app.json
+   |  app.style
+ |  package.json
 ```
 
 Cấu hình để framework có thể load được `page/index/index` như sau:
 
 ```json
 {
-  "pages": [
-    "pages/index/index"
-  ]
+  "pages": ["pages/index/index"]
 }
 ```
 
@@ -128,12 +118,12 @@ Nếu ứng dụng có sử dụng Tab Bar, bạn có thể dùng cấu hình n�
 
 Với mỗi tab bar item có thể cấu hình với các thuộc tính sau:
 
-| Property        | Type     | Default Value | Description                                            |
-| --------------- | -------- | ------------- | ------------------------------------------------------ |
-| pagePath        | String   | required      | Đường dẫn tới page.                                    |
-| name   | String | required     | Tên hiển thị của item. |
-| icon | String | null     | Đường dẫn tới icon khi item chưa được chọn.                                   |
-| activeIcon           | String    | null      | Đường dẫn tới icon khi item được chọn.                      |
+| Property   | Type   | Default Value | Description                                 |
+| ---------- | ------ | ------------- | ------------------------------------------- |
+| pagePath   | String | required      | Đường dẫn tới page.                         |
+| name       | String | required      | Tên hiển thị của item.                      |
+| icon       | String | null          | Đường dẫn tới icon khi item chưa được chọn. |
+| activeIcon | String | null          | Đường dẫn tới icon khi item được chọn.      |
 
 Để hiển thị tối ưu, bạn nên chọn hình cho icon với kích cỡ 60x60 px.
 
@@ -143,14 +133,14 @@ Ví dụ cấu hình `tabBar` trong `app.json`:
 {
   "tabBar": {
     "items": [
-      { 
-        "name": "API", 
+      {
+        "name": "API",
         "pagePath": "pages/tabBar/API/index",
         "icon": "images/icon_API.png",
         "activeIcon": "images/icon_API_HL.png"
       },
-      { 
-        "name": "Components", 
+      {
+        "name": "Components",
         "pagePath": "pages/tabBar/component/index",
         "icon": "images/icon_component.png",
         "activeIcon": "images/icon_component_HL.png"

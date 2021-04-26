@@ -1,11 +1,5 @@
 ---
-order: 63
-category:
-  vi-VN: Interactive Feedback
-  en-US: Interactive Feedback
-title: 
-  vi-VN: my.showLoading
-  en-US: my.showLoading
+title: my.showLoading
 ---
 
 ## Giới thiệu
@@ -35,20 +29,20 @@ title:
 ```js
 Page({
   onLoading() {
-    my.showLoading({ content: "Loading...", delay: 1000 });
+    my.showLoading({ content: 'Loading...', delay: 1000 });
     setTimeout(() => {
       my.hideLoading();
     }, 5000);
   }
-})
+});
 ```
 
 ### Chi tiết
 
-| Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
-| ------- | --------------- | ------- | --------------- |
-| content | String | No | Content message của loading box |
-| delay | Number | No | Delay thời gian show loading |
-| success | Function | No | Callback khi loading show success |
-| fail | Function | No | Callback khi loading show fail |
-| complete | Function | No | Callback khi loading đã được show |
+| Thuộc tính | Kiểu dữ liệu | Required | Mô tả                             |
+| ---------- | ------------ | -------- | --------------------------------- |
+| content    | String       | No       | Content message của loading box   |
+| delay      | Number       | No       | Delay thời gian show loading      |
+| success    | Function     | No       | Callback khi loading show success |
+| fail       | Function     | No       | Callback khi loading show fail    |
+| complete   | Function     | No       | Callback khi loading đã được show |

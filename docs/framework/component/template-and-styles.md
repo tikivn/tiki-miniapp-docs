@@ -1,12 +1,4 @@
----
-order: 42
-category:
-  vi-VN: Component
-  en-US: Component
-title:
-  vi-VN: Template và styles
-  en-US: Template and styles
----
+# Template và styles
 
 Giống như Page, một Custom Component cũng có các file template và style riêng của nó, lần lượt nằm ở file `index.txml` và `index.tcss` tương ứng.
 
@@ -25,8 +17,8 @@ Component({
   methods: {
     onMyClick(e) {
       console.log(this.is, this.$id);
-    },
-  },
+    }
+  }
 });
 ```
 
@@ -177,11 +169,11 @@ Ví dụ:
 // /components/index/index.js
 Component({
   data: {
-    x: 1,
+    x: 1
   },
   props: {
-    y: "",
-  },
+    y: ''
+  }
 });
 ```
 
@@ -194,7 +186,7 @@ Component({
 ```js
 // /pages/index/index.js
 Page({
-  data: { y: 2 },
+  data: { y: 2 }
 });
 ```
 
@@ -227,7 +219,7 @@ Ví dụ
 ```js
 // /pages/index/index.js
 Page({
-  data: { y: 2 },
+  data: { y: 2 }
 });
 ```
 
@@ -251,8 +243,8 @@ Slot scope cho phép nội dung của slot được access vào data bên trong 
 // /components/index/index.js
 Component({
   data: {
-    x: 1,
-  },
+    x: 1
+  }
 });
 ```
 
@@ -274,7 +266,7 @@ Trong đoạn code dưới đây, chúng ta gắn `slot-scope` bằng `props`.
 ```js
 // /pages/index/index.js
 Page({
-  data: { y: 2 },
+  data: { y: 2 }
 });
 ```
 

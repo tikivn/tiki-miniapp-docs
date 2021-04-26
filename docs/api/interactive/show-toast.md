@@ -1,11 +1,5 @@
 ---
-order: 65
-category:
-  vi-VN: Interactive Feedback
-  en-US: Interactive Feedback
-title: 
-  vi-VN: my.showToast
-  en-US: my.showToast
+title: my.showToast
 ---
 
 ## Giới thiệu
@@ -55,12 +49,12 @@ Page({
 
 ### Chi tiết
 
-| Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
-| ------- | --------------- | ------- | --------------- |
-| type | String | No | success hoặc fail |
-| content | String | No | Content message của toast |
-| buttonText | String | No | Text của button, mặc định là rỗng |
-| duration | Number | No | Thời gian để hide toast, mặc định là 3000ms |
-| success | Function | No | Callback khi toast show success |
-| fail | Function | No | Callback khi toast show fail |
-| complete | Function | No | Callback khi toast đã được show |
+| Thuộc tính | Kiểu dữ liệu | Required | Mô tả                                       |
+| ---------- | ------------ | -------- | ------------------------------------------- |
+| type       | String       | No       | success hoặc fail                           |
+| content    | String       | No       | Content message của toast                   |
+| buttonText | String       | No       | Text của button, mặc định là rỗng           |
+| duration   | Number       | No       | Thời gian để hide toast, mặc định là 3000ms |
+| success    | Function     | No       | Callback khi toast show success             |
+| fail       | Function     | No       | Callback khi toast show fail                |
+| complete   | Function     | No       | Callback khi toast đã được show             |

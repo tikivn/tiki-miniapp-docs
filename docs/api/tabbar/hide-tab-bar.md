@@ -1,11 +1,5 @@
 ---
-order: 101
-category:
-  vi-VN: Tab Bar
-  en-US: Tab Bar
-title:
-  vi-VN: my.hideTabBar
-  en-US: my.hideTabBar
+title: my.hideTabBar
 ---
 
 ## Giới thiệu
@@ -18,7 +12,7 @@ title:
 
 ```js
 my.hideTabBar({
-  animation: true,
+  animation: true
 });
 ```
 

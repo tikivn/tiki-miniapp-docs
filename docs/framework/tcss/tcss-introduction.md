@@ -1,12 +1,4 @@
----
-order: 30
-category:
-  vi-VN: TCSS
-  en-US: TCSS
-title:
-  vi-VN: Giới thiệu về TCSS
-  en-US: Introduction to TCSS
----
+# Giới thiệu về TCSS
 
 TCSS là một tập ngôn ngữ được sử dụng để mô tả style của các component từ TXML. TCSS sẽ quyết định việc các TXML component được hiển thị ra sao.
 
@@ -143,7 +135,7 @@ Tiki Mini App cho phép bạn có thể import các file TCSS từ các nguồn 
 }
 
 /** app.tcss */
-@import "./common.tcss";
+@import './common.tcss';
 .middle-p {
   padding: 15px;
 }

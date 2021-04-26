@@ -1,11 +1,5 @@
 ---
-order: 14
-category:
-  vi-VN: Ví dụ mẫu
-  en-US: Quick Example
-title:
-  vi-VN: Shopping
-  en-US: Shopping
+title: Shopping
 ---
 
 ## Mục tiêu

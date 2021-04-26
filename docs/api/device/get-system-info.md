@@ -1,11 +1,5 @@
 ---
-order: 50
-category:
-  vi-VN: Thiết bị
-  en-US: Device
-title:
-  vi-VN: my.getSystemInfo
-  en-US: my.getSystemInfo
+title: my.getSystemInfo
 ---
 
 ## Giới thiệu
@@ -34,18 +28,18 @@ title:
 ```js
 Page({
   data: {
-    systemInfo: {},
+    systemInfo: {}
   },
   getSystemInfo() {
     my.getSystemInfo({
       success: (systemInfo) => {
         this.setData({ systemInfo });
-      },
+      }
     });
   },
   clear() {
     this.setData({ systemInfo: {} });
-  },
+  }
 });
 ```
 

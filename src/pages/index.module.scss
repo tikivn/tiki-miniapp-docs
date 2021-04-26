@@ -1,0 +1,391 @@
+.maxWidth {
+  max-width: 1168px;
+}
+
+.relative {
+  position: relative;
+}
+
+.flexButtons {
+  display: flex;
+
+  @media (max-width: 996px) {
+    flex-direction: column;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+.heroText {
+  margin-bottom: 24px;
+}
+
+.hero {
+  position: relative;
+  background: linear-gradient(180deg, #0b73e3 0%, #1a94ff 100%);
+  margin-bottom: 80px;
+}
+
+.heroWrapper {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 16px;
+  padding-bottom: 40px;
+
+  @media (max-width: 996px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+  }
+}
+
+.heroContent {
+  color: #fff;
+  padding-right: 298px;
+  @media (max-width: 996px) {
+    padding-right: 0;
+  }
+}
+
+.background {
+  background: linear-gradient(180deg, #0b73e3 0%, #1a94ff 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.commonButton {
+  max-width: 208px;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  flex: 1;
+  text-align: center;
+  line-height: 40px;
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media (max-width: 996px) {
+    max-width: none;
+  }
+}
+
+.secondaryButton {
+  @extend .commonButton;
+
+  color: #fff;
+  border: solid 1px #fff;
+  background: transparent;
+  margin-right: 32px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+    color: #fff;
+  }
+
+  @media (max-width: 996px) {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
+
+.primaryButton {
+  @extend .commonButton;
+
+  color: var(--brand);
+  border: solid 1px #fff;
+  background: #fff;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.roundContainer {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  margin-top: 24px;
+  margin-right: 62px;
+
+  @media (max-width: 996px) {
+    margin-right: 0;
+  }
+}
+
+.round {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: dashed 1px #fff;
+}
+
+.roundLine {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: calc(100% + 124px);
+  left: -62px;
+
+  @media (max-width: 996px) {
+    width: calc(100% + 100px);
+    left: -50px;
+  }
+
+  @media (max-width: 320px) {
+    width: calc(100% + 68px);
+    left: -36px;
+  }
+}
+
+.roundLineTop {
+  top: 8px;
+}
+
+.roundLineBottom {
+  /* 240(round) - 100 (height) - 8 (bottom) */
+  top: 132px;
+}
+
+.roundCenter {
+  position: absolute;
+  width: 81px;
+  height: 81px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
+}
+
+.ellipse {
+  background: url("/img/subtract.png") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.illustration {
+  max-width: 568px;
+  animation: float 5s ease-in-out infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  @media (max-width: 996px) {
+    max-width: 328px;
+    position: relative;
+    margin: 0 auto;
+  }
+  @media (max-width: 320px) {
+    max-width: 288px;
+  }
+}
+
+.mainContent {
+  max-width: 1200px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+.headText {
+  color: #27272a;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.gray {
+  color: #515158;
+}
+
+.tinyText {
+  color: #515158;
+  margin-bottom: 122px;
+
+  @media (max-width: 996px) {
+    margin-bottom: 40px;
+  }
+}
+
+.left50 {
+  margin-left: 50%;
+
+  @media (max-width: 996px) {
+    margin-left: 0;
+  }
+}
+
+.bgGray {
+  background-color: #f5f5fa;
+  padding: 40px 0 2px 0;
+}
+
+.becomeDeveloper {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+
+  svg {
+    min-width: 208px;
+    min-height: 208px;
+  }
+
+  @media (max-width: 996px) {
+    flex-direction: column-reverse;
+    svg {
+      width: auto;
+      min-width: auto;
+      min-height: auto;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.linkBrand {
+  @extend .commonButton;
+
+  text-decoration: none;
+  background: var(--brand);
+  color: #fff;
+  display: block;
+  text-align: center;
+  /* padding-top: 10px; */
+  font-weight: 500;
+  line-height: 40px;
+  text-decoration: none;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+}
+
+.framework {
+  margin: 0 auto;
+  margin-top: 28px;
+  max-width: 1200px;
+  padding: 0 16px;
+  overflow: hidden;
+}
+
+.frameworkContent {
+  background-color: #fff;
+  padding: 40px 24px;
+  display: flex;
+  border-radius: 8px;
+  > div {
+    width: 50%;
+  }
+
+  @media (max-width: 996px) {
+    flex-direction: column-reverse;
+    padding: 24px 16px;
+
+    > div {
+      width: 100%;
+      margin-top: -48px;
+    }
+  }
+}
+
+.frameworkSvg {
+  @media (max-width: 996px) {
+    svg {
+      margin: 0 auto;
+      margin-top: -62px;
+      max-width: 100%;
+    }
+  }
+}
+
+.rowItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ebebf0;
+  padding: 10px 0;
+  width: 100%;
+  color: #28282b;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.block {
+  background-color: #fff;
+  padding: 40px 24px;
+  border-radius: 8px;
+
+  > div {
+    color: #81818a;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  @media (max-width: 996px) {
+    padding: 16px 16px 24px 16px;
+  }
+}
+
+.svgCenter {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.blockRow {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  gap: 32px;
+  margin: 24px auto 72px auto;
+  max-width: 1200px;
+  padding: 0 16px;
+  @media (max-width: 996px) {
+    grid-auto-flow: row;
+    margin-bottom: 40px;
+    gap: 16px;
+  }
+}

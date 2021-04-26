@@ -1,11 +1,5 @@
 ---
-order: 10
-category:
-  vi-VN: Thành phần cơ bản
-  en-US: Basic components
-title:
-  vi-VN: button
-  en-US: button
+title: button
 ---
 
 ## Giới thiệu
@@ -114,7 +108,7 @@ Page({
   onShareAppMessage() {},
   onTap() {
     console.log('Button onTap');
-  },
+  }
 });
 ```
 
@@ -128,7 +122,4 @@ Page({
 | disabled | boolean | false         | Disabled button                                   |
 | onTap    | event   | null          | Sự kiện khi tap vào button                        |
 
-```__react
-import image from '../../../theme/static/images/button-component.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Button" src={image}/>, mountNode);
-```
+<img style={{maxWidth: 414}} alt="Tab" src="/img/button-component.png"/>

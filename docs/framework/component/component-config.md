@@ -1,12 +1,4 @@
----
-order: 41
-category:
-  vi-VN: Component
-  en-US: Component
-title:
-  vi-VN: Cấu hình Custom Component
-  en-US: Custom Component Configuration
----
+# Cấu hình Custom Component
 
 Khi tạo mới một Custom Component, chúng ta có thể cấu hình Custom Component bằng file `index.json` trong thư mục chứa code Custom Component.
 

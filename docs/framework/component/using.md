@@ -1,12 +1,4 @@
----
-order: 47
-category:
-  vi-VN: Component
-  en-US: Component
-title:
-  vi-VN: Sử dụng Custom Component
-  en-US: Using Custom Component
----
+# Sử dụng Custom Component
 
 Các Custom Component được sử dụng như những Component thông thường
 

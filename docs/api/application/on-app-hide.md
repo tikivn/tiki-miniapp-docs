@@ -1,11 +1,5 @@
 ---
-order: 50
-category:
-  vi-VN: Application Level
-  en-US: Application Level
-title: 
-  vi-VN: my.onAppHide
-  en-US: my.onAppHide
+title: my.onAppHide
 ---
 
 ## Giới thiệu
@@ -27,19 +21,19 @@ title:
 ```js
 Page({
   onLoad(query) {
-    my.onAppHide(this.onAppHideHandler)
+    my.onAppHide(this.onAppHideHandler);
   },
   onDisableAppHide() {
-    my.offAppHide(this.onAppHideHandler)
+    my.offAppHide(this.onAppHideHandler);
   },
   onAppHideHandler() {
-    console.log("App hide from page")
-  },
-})
+    console.log('App hide from page');
+  }
+});
 ```
 
 ### API Params
 
-| Attributes | Type     | Description                                                           |
-| ---------- | -------- | --------------------------------------------------------------------- |
-| callback    | Function | Callback để catch event background của app.                          |
+| Attributes | Type     | Description                                 |
+| ---------- | -------- | ------------------------------------------- |
+| callback   | Function | Callback để catch event background của app. |

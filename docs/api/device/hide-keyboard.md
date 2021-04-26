@@ -1,11 +1,5 @@
 ---
-order: 51
-category:
-  vi-VN: Thiết bị
-  en-US: Device
-title:
-  vi-VN: my.hideKeyboard
-  en-US: my.hideKeyboard
+title: my.hideKeyboard
 ---
 
 ## Giới thiệu
@@ -20,8 +14,8 @@ title:
 
 ```xml
 <view>
-  <block-header 
-    title="Usage" 
+  <block-header
+    title="Usage"
     description="The API for hiding the keyboard."
   />
 
@@ -42,9 +36,9 @@ title:
 ```js
 Page({
   bindHideKeyboard(e) {
-    if (e.detail.value === "123") {
+    if (e.detail.value === '123') {
       my.hideKeyboard();
     }
-  },
-})
+  }
+});
 ```

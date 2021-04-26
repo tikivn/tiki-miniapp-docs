@@ -1,11 +1,5 @@
 ---
-order: 10
-category:
-  vi-VN: Hướng dẫn nhà phát triển 
-  en-US: MiniApp Development Guide
-title: 
-  vi-VN: Đăng ký Nhà phát triển
-  en-US: Register a Developer Account
+title: Đăng ký Nhà phát triển
 ---
 ## Giới thiệu
 
@@ -17,13 +11,13 @@ title:
 
 Tài khoản Cá nhân không thể chuyển đổi thành tài khoản Công ty và ngược lại.
 
-[Tìm hiểu thêm sự khác nhau giữa các loại tài khoản Nhà phát triển.](#Loại-tài-khoản-để-đăng-ký)
+[Tìm hiểu thêm sự khác nhau giữa các loại tài khoản Nhà phát triển.](./docs/developer/introduce/register#Loại-tài-khoản-để-đăng-ký)
 
 ## Đăng ký tài khoản Nhà phát triển
 
 Tại trang chủ [MiniApp](/), bấm nút **Đăng ký nhà phát triển**
 
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/98/53/44/8c7b9973f3ac3914b78765a4c4020c42.png" alt="Trang chủ MiniApp"/>
+<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/98/53/44/8c7b9973f3ac3914b78765a4c4020c42.png" alt="Trang chủ MiniApp"/>
 
 ## Loại tài khoản để đăng ký
 
@@ -41,7 +35,7 @@ Chọn loại tài khoản Nhà phát triển.
 
 Đọc và Đồng ý với [*Điều khoản & Điều lệ*](./terms), [*Chính sách bảo mật*](./policies) của Tiki MiniApp
 
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/04/af/b8/165158b288f342821083d3cea824caa0.png" alt="terms & conditions"/>
+<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/04/af/b8/165158b288f342821083d3cea824caa0.png" alt="terms & conditions"/>
 
 ## Chọn danh mục/nhóm ngành nghề
 
@@ -49,7 +43,7 @@ Nhà phát triển có thể đăng ký phát hánh ứng dụng trên nhiều d
 
 Danh mục/nhóm ngành nghề có thể bổ sung sau tùy theo lĩnh vực và quy mô mở rộng kinh doanh của Nhà phát triển. Khi bổ sung danh mục/nhóm ngành nghề mới, Nhà phát triển phải cung cấp đầy đủ về pháp lý để được phát hành ứng dụng trên danh mục/nhóm ngành nghề mới.
 
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/99/ed/35/fa2ca7d7c4ac3bd822e5ca09f66b71df.png" alt="categories"/>
+<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/99/ed/35/fa2ca7d7c4ac3bd822e5ca09f66b71df.png" alt="categories"/>
 
 ### Các danh mục dành cho Công ty
 
@@ -59,7 +53,7 @@ Lựa chọn lĩnh vực kinh doanh phù hợp với ứng dụng mà Công ty b
 | ----------- | ----------- | ----------- |
 | Bưu chính - Viễn thông | Gửi/Nhận hàng <br /> Chuyển phát nhanh <br /> Dịch vụ bưu chính <br /> Theo dõi kiện hàng | Giấy phép kinh doanh
 | Giáo dục | Khóa huấn luyện <br /> Thông tin giáo dục <br/> Khóa học trực tuyến | Giấy phép kinh doanh <br /> Giấy phép hành nghề
-| Chăm sóc sức khỏe| Cơ sở y tế công cộng <br/> Cơ sở y tế tư nhân <br/> Dịch vụ y tế </br> Dịch vụ tư vấn sức khỏe | Giấy phép kinh doanh <br /> Giấy phép hành nghề
+| Chăm sóc sức khỏe| Cơ sở y tế công cộng <br/> Cơ sở y tế tư nhân <br/> Dịch vụ y tế <br /> Dịch vụ tư vấn sức khỏe | Giấy phép kinh doanh <br /> Giấy phép hành nghề
 | Chính phủ - Cơ quan chức năng| Quyết toán thuế | Giấy chứng nhận thẩm quyền
 | Tài chính | Ngân hàng <br/> Tín dụng <br/> Đầu tư <br/> Chứng khoán <br/> Tư vấn tài chính <br/> Môi giới tài chính <br/> Bảo hiểm <br/> | Giấy phép kinh doanh
 | Di chuyển - Vận tải | Ride-hailing / Taxi <br/> Hàng không <br/> Phí cầu đường <br/> Vé xe buýt <br/> | Giấy phép kinh doanh
@@ -75,11 +69,11 @@ Danh mục dành cho tài khoản Cá nhân sẽ có hạn chế so với Công 
 | Công cụ - Tiện ích | To-do List <br /> Máy tính
 
 ## Cung cấp giấy tờ liên quan
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/43/3b/56/5c8e995612882a8a5a1b4c6d6fd085ca.png" alt="đăng ký tài khoản Tiki MiniApp Cá nhân"/>
-<p style="text-align: center; font-style: italic">Tài khoản Nhà phát triển Cá nhân</p>
+<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/43/3b/56/5c8e995612882a8a5a1b4c6d6fd085ca.png" alt="đăng ký tài khoản Tiki MiniApp Cá nhân"/>
+<p style={{texAlign: 'center', fontStyle: 'italic'}}>Tài khoản Nhà phát triển Cá nhân</p>
 
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/74/8c/10/c1d7fde59f93fb8717c59e765b74c200.png" alt="đăng ký tài khoản Tiki MiniApp Công ty"/>
-<p style="text-align: center; font-style: italic">Tài khoản Nhà phát triển Công ty cần cung cấp các loại giấy tờ liên quan</p>
+<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/74/8c/10/c1d7fde59f93fb8717c59e765b74c200.png" alt="đăng ký tài khoản Tiki MiniApp Công ty"/>
+<p style={{texAlign: 'center', fontStyle: 'italic'}}>Tài khoản Nhà phát triển Công ty cần cung cấp các loại giấy tờ liên quan</p>
 
 ## Xác thực tài khoản E-mail
 

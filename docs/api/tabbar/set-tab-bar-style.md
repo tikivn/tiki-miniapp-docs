@@ -1,11 +1,5 @@
 ---
-order: 101
-category:
-  vi-VN: Tab Bar
-  en-US: Tab Bar
-title:
-  vi-VN: my.setTabBarStyle
-  en-US: my.setTabBarStyle
+title: my.setTabBarStyle
 ---
 
 ## Giới thiệu
@@ -18,10 +12,10 @@ title:
 
 ```js
 my.setTabBarStyle({
-  color: "#FF0000",
-  selectedColor: "#00FF00",
-  backgroundColor: "#0000FF",
-  borderStyle: "white",
+  color: '#FF0000',
+  selectedColor: '#00FF00',
+  backgroundColor: '#0000FF',
+  borderStyle: 'white'
 });
 ```
 

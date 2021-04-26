@@ -1,11 +1,5 @@
 ---
-order: 11
-category:
-    vi-VN: Thành phần nâng cao
-    en-US: Advance components
-title:
-    vi-VN: popup
-    en-US: popup
+title: popup
 ---
 
 ## Giới thiệu
@@ -20,10 +14,10 @@ Khai báo components:
 
 ```json
 {
-    "defaultTitle": "Popup",
-    "usingComponents": {
-        "popup": "@tikivn/mini-ui/lib/popup/index"
-    }
+  "defaultTitle": "Popup",
+  "usingComponents": {
+    "popup": "@tikivn/mini-ui/lib/popup/index"
+  }
 }
 ```
 
@@ -116,78 +110,62 @@ _index.js_
 
 ```js
 Page({
-    data: {
-        show: false,
-        position: "top",
-        animation: true,
-        mask: true,
-        zIndex: 10,
-        disableScroll: true,
-    },
-    onLoad() {},
-    onOk() {
-        this.setData({ show: false });
-    },
-    onCancel() {
-        this.setData({ show: false });
-    },
-    onTap(e) {
-        this.setData({ ...e.target.dataset.popup });
-    },
+  data: {
+    show: false,
+    position: 'top',
+    animation: true,
+    mask: true,
+    zIndex: 10,
+    disableScroll: true
+  },
+  onLoad() {},
+  onOk() {
+    this.setData({ show: false });
+  },
+  onCancel() {
+    this.setData({ show: false });
+  },
+  onTap(e) {
+    this.setData({ ...e.target.dataset.popup });
+  }
 });
 ```
 
 _Result: With mask_
 
-```__react
-import top from '../../../theme/static/images/popup-top.png'
-import bottom from '../../../theme/static/images/popup-bottom.png'
-import right from '../../../theme/static/images/popup-right.png'
-import left from '../../../theme/static/images/popup-left.png'
-
-const RenderImage=()=>
-    <div style={{
-            display:'flex',
-            flexDirection:'row',
-            justifyContent:'space-between',
-            widht:'100%',
-            background:'#ccc',
-            padding:'24px',
-            borderRadius:'4px'
-        }}>
-        <img style={{maxWidth: 300}} alt="popup" src={top}/>
-        <img style={{maxWidth: 300}} alt="popup" src={bottom}/>
-        <img style={{maxWidth: 300}} alt="popup" src={right}/>
-        <img style={{maxWidth: 300}} alt="popup" src={left}/>
-    </div>
-ReactDOM.render(<RenderImage />, mountNode);
-```
+<div style={{
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'space-between',
+        overflow: 'scroll',
+        widht:'100%',
+        background:'#ccc',
+        padding:'24px',
+        borderRadius:'4px'
+    }}>
+    <img style={{maxWidth: 300}} alt="popup" src="/img/popup-top.png"/>
+    <img style={{maxWidth: 300}} alt="popup" src="/img/popup-bottom.png"/>
+    <img style={{maxWidth: 300}} alt="popup" src="/img/popup-right.png"/>
+    <img style={{maxWidth: 300}} alt="popup" src="/img/popup-left.png"/>
+</div>
 
 _Result: Without mask_
 
-```__react
-import top from '../../../theme/static/images/popup-top-nomask.png'
-import bottom from '../../../theme/static/images/popup-bottom-nomask.png'
-import right from '../../../theme/static/images/popup-right-nomask.png'
-import left from '../../../theme/static/images/popup-left-nomask.png'
-
-const RenderImage=()=>
-    <div style={{
-            display:'flex',
-            flexDirection:'row',
-            justifyContent:'space-between',
-            widht:'100%',
-            background:'#ccc',
-            padding:'24px',
-            borderRadius:'4px'
-        }}>
-        <img style={{maxWidth: 300}} alt="popup" src={top}/>
-        <img style={{maxWidth: 300}} alt="popup" src={bottom}/>
-        <img style={{maxWidth: 300}} alt="popup" src={right}/>
-        <img style={{maxWidth: 300}} alt="popup" src={left}/>
-    </div>
-ReactDOM.render(<RenderImage />, mountNode);
-```
+<div style={{
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'space-between',
+        overflow: 'scroll',
+        widht:'100%',
+        background:'#ccc',
+        padding:'24px',
+        borderRadius:'4px'
+    }}>
+    <img style={{maxWidth: 300}} alt="popup" src="/img/popup-top-nomask.png"/>
+    <img style={{maxWidth: 300}} alt="popup" src="/img/popup-bottom-nomask.png"/>
+    <img style={{maxWidth: 300}} alt="popup" src="/img/popup-right-nomask.png"/>
+    <img style={{maxWidth: 300}} alt="popup" src="/img/popup-left-nomask.png"/>
+</div>
 
 ### Chi tiết
 

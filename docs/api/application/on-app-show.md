@@ -1,11 +1,5 @@
 ---
-order: 51
-category:
-  vi-VN: Application Level
-  en-US: Application Level
-title: 
-  vi-VN: my.onAppShow
-  en-US: my.onAppShow
+title: my.onAppShow
 ---
 
 ## Giới thiệu
@@ -27,19 +21,19 @@ title:
 ```js
 Page({
   onLoad(query) {
-    my.offAppShow(this.onAppShowHandler)
+    my.offAppShow(this.onAppShowHandler);
   },
   onDisableAppShow() {
-    my.offAppShow(this.onAppShowHandler)
+    my.offAppShow(this.onAppShowHandler);
   },
   onAppShowHandler() {
-    console.log("App show from page")
-  },
-})
+    console.log('App show from page');
+  }
+});
 ```
 
 ### API Params
 
-| Attributes | Type     | Description                                                           |
-| ---------- | -------- | --------------------------------------------------------------------- |
-| callback    | Function | Callback để catch event foreground của app.                          |
+| Attributes | Type     | Description                                 |
+| ---------- | -------- | ------------------------------------------- |
+| callback   | Function | Callback để catch event foreground của app. |

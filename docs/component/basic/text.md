@@ -1,11 +1,5 @@
 ---
-order: 11
-category:
-  vi-VN: Thành phần cơ bản
-  en-US: Basic components
-title:
-  vi-VN: text
-  en-US: text
+title: text
 ---
 
 ## Giới thiệu
@@ -62,22 +56,22 @@ const longText =
 Page({
   data: {
     text,
-    longText,
+    longText
   },
-  add: function() {
+  add: function () {
     extraLine.push('Other line');
     this.setData({
-      text: text + '\n' + extraLine.join('\n'),
+      text: text + '\n' + extraLine.join('\n')
     });
   },
-  remove: function() {
+  remove: function () {
     if (extraLine.length > 0) {
       extraLine.pop();
       this.setData({
-        text: text + '\n' + extraLine.join('\n'),
+        text: text + '\n' + extraLine.join('\n')
       });
     }
-  },
+  }
 });
 ```
 
@@ -88,7 +82,4 @@ Page({
 | selectable      | boolean | false         | Cho phép nội dung có thể được chọn hay không, nếu là true thì có thể chọn và sao chép nội dung |
 | number-of-lines | number  | null          | Số dòng tối đa mà nội dung trong text được hiển thị, nếu quá số dòng sẽ hiển thị ... ở cuối    |
 
-```__react
-import image from '../../../theme/static/images/text-component.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Text" src={image}/>, mountNode);
-```
+<img style={{maxWidth: 414}} alt="Tab" src="/img/text-component.png"/>

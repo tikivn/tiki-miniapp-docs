@@ -1,11 +1,5 @@
 ---
-order: 14
-category:
-  vi-VN: Hướng dẫn nhà phát triển 
-  en-US: MiniApp Development Guide
-title: 
-  vi-VN: Quản lý tài khoản
-  en-US: Member Management
+title: Quản lý tài khoản
 ---
 
 ## Giới thiệu
@@ -43,7 +37,7 @@ Một tài khoản Nhà phát triển có thể có nhiều ứng dụng. Mỗi 
 
 **B1:** Truy cập [Dev Center](/dev-center/apps) > Thiết lập tài khoản > Danh sách thanh viên.
 
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/a3/f0/05/30917e3903698af22d9d60c0c6e9e066.png"/>
+<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/a3/f0/05/30917e3903698af22d9d60c0c6e9e066.png"/>
 
 **B2:** Chọn **Thêm thành viên** tại góc trên bên phải
 
@@ -51,13 +45,13 @@ Một tài khoản Nhà phát triển có thể có nhiều ứng dụng. Mỗi 
 
 Vai trò của thành viên trong Danh sách thành viên thường trực chỉ có giá trị dùng làm gợi ý mỗi khi một ứng dụng mới được khởi tạo, quyền hạn thực tế trên từng ứng dụng sẽ được quản lý tại mục Ứng dụng > Member Management.
 
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/5c/61/b1/4975f2d185e1353e253c9dec94acff19.png"/>
+<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/5c/61/b1/4975f2d185e1353e253c9dec94acff19.png"/>
 
 **B4:** Bấm **Thêm**
 
 **B5:** Xuất hiện danh sách các ứng dụng mà thành viên mới có quyền truy cập, với vai trò là vai trò mặc định được chọn tại Bước 3. Owner có thể tùy chỉnh lại cho để phù hợp với phạm vi công việc thực tế.
 
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/upload/b5/5e/0c/30104b6bfe4d39bb1136e2035b8e3b4a.jpg"/>
+<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/upload/b5/5e/0c/30104b6bfe4d39bb1136e2035b8e3b4a.jpg"/>
 
 **B6:** Bấm **Hoàn tất**
 

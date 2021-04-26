@@ -1,14 +1,5 @@
----
-order: 50
-category:
-  vi-VN: Event
-  en-US: Event
-title: 
-  vi-VN: Giới thiệu về event
-  en-US: Event introduction
----
+# Giới thiệu về event
 
-# Introduction
 - Events là phương thức giao tiếp giữa View Layer và Logic layer
 - Events sẽ gửi các thao tác của user sang Logic layer để thực thi.
 - Event có thể được liên kết với Component và khi đạt đến điều kiện kích hoạt, hàm sự kiện tương ứng trong Logic Layer sẽ được thực thi.

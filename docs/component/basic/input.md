@@ -1,11 +1,5 @@
 ---
-order: 14
-category:
-  vi-VN: Thành phần cơ bản
-  en-US: Basic components
-title:
-  vi-VN: input
-  en-US: input
+title: input
 ---
 
 ## Giới thiệu
@@ -85,7 +79,7 @@ Page({
       'name-phone-pad',
       'twitter',
       'web-search',
-      'visible-password',
+      'visible-password'
     ],
     confirmTypes: [
       'done',
@@ -100,8 +94,8 @@ Page({
       'google',
       'join',
       'route',
-      'yahoo',
-    ],
+      'yahoo'
+    ]
   },
   onPageScroll() {
     console.log('onPageScroll');
@@ -117,7 +111,7 @@ Page({
   },
   onBlur(e) {
     console.log('onBlur', e);
-  },
+  }
 });
 ```
 
@@ -169,7 +163,4 @@ Page({
 | onFocus                | event   |               | Không    | Sự kiện sẽ được gọi khi input được focus , `event.detail = { value: value }`                                                                                                                                                                                    |
 | onBlur                 | event   |               | Không    | Sự kiện sẽ được gọi khi input không được focus nữa , `event.detail = { value: value }`                                                                                                                                                                          |
 
-```__react
-import image from '../../../theme/static/images/input-component.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Input" src={image}/>, mountNode);
-```
+<img style={{maxWidth: 414}} alt="Tab" src="/img/input-component.png"/>

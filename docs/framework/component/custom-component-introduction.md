@@ -1,12 +1,4 @@
----
-order: 40
-category:
-  vi-VN: Component
-  en-US: Component
-title:
-  vi-VN: Giới thiệu về Custom Component
-  en-US: Introduction to custom components
----
+# Giới thiệu về Custom Component
 
 Tiki MiniApp Framework hỗ trợ tính năng tạo các Custom Component trong code base của bạn.
 Giống như `Page`, một Custom Component cũng sẽ bao gồm 4 thành phần `txml`, `tcss`, `js` và `json`.
@@ -52,8 +44,8 @@ Component({
   methods: {
     handleTap() {
       this.setData({ x: this.data.x + 1 });
-    },
-  },
+    }
+  }
 });
 ```
 

@@ -1,11 +1,5 @@
 ---
-order: 12
-category:
-  vi-VN: Thành phần cơ bản
-  en-US: Basic components
-title:
-  vi-VN: icon
-  en-US: icon
+title: icon
 ---
 
 ## Giới thiệu
@@ -131,9 +125,9 @@ Page({
       'share',
       'warning_glyph',
       'success_glyph',
-      'close_glyph',
-    ],
-  },
+      'close_glyph'
+    ]
+  }
 });
 ```
 
@@ -145,7 +139,4 @@ Page({
 | size           | number | 24            | Không    | Kích thước của icon                                                                                                                                                                                                                                                                                                          |
 | color          | string |               | Không    | Màu của icon, sử dụng mã màu như trong css                                                                                                                                                                                                                                                                                   |
 
-```__react
-import image from '../../../theme/static/images/icon-component.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Text" src={image}/>, mountNode);
-```
+<img style={{maxWidth: 414}} alt="Tab" src="/img/icon-component.png"/>

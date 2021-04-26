@@ -1,11 +1,5 @@
 ---
-order: 11
-category:
-    vi-VN: Thành phần nâng cao
-    en-US: Advance components
-title:
-    vi-VN: avatar
-    en-US: avatar
+title: avatar
 ---
 
 ## Giới thiệu
@@ -20,10 +14,10 @@ Khai báo components:
 
 ```json
 {
-    "defaultTitle": "Avatar",
-    "usingComponents": {
-        "avatar": "@tikivn/mini-ui/lib/avatar/index"
-    }
+  "defaultTitle": "Avatar",
+  "usingComponents": {
+    "avatar": "@tikivn/mini-ui/lib/avatar/index"
+  }
 }
 ```
 
@@ -125,23 +119,23 @@ _index.tcss_
 
 ```css
 .avatar-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
 }
 .avatar-info {
-    padding: 8;
-    max-width: 300px;
+  padding: 8;
+  max-width: 300px;
 }
 .avatar-info-name {
-    font-size: 16px;
-    font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
 }
 .avatar-info-desc {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
 }
 ```
 
@@ -156,10 +150,10 @@ ReactDOM.render(<img style={{maxWidth: 414}} alt="Button" src={image}/>, mountNo
 
 ```js
 Page({
-    data: {},
-    onError() {
-        console.log("Onload error");
-    },
+  data: {},
+  onError() {
+    console.log('Onload error');
+  }
 });
 ```
 
@@ -172,7 +166,4 @@ Page({
 | src      | string | ""            | source hình ảnh                  |
 | style    | string | ""            | Disabled button                  |
 
-```__react
-import image from '../../../theme/static/images/avatar-full.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Button" src={image}/>, mountNode);
-```
+<img alt="Avatar" src="/img/avatar-full.png"/>

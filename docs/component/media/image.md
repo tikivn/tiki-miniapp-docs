@@ -1,11 +1,5 @@
 ---
-order: 17
-category:
-  vi-VN: Media components
-  en-US: Media components
-title:
-  vi-VN: image
-  en-US: image
+title: image
 ---
 
 ## Giới thiệu
@@ -44,7 +38,7 @@ import source from '../../../images/app_logo.png';
 
 Page({
   data: {
-    source,
+    source
   },
   onLoad(e) {
     console.log('onLoad', e);
@@ -54,7 +48,7 @@ Page({
   },
   onError(e) {
     console.log('onError', e);
-  },
+  }
 });
 ```
 
@@ -95,7 +89,7 @@ import image1 from './images/image.png';
 const image2 = require('./images/image.png');
 
 Page({
-  data: { image1, image2 },
+  data: { image1, image2 }
 });
 ```
 

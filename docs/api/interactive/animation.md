@@ -1,11 +1,5 @@
 ---
-order: 69
-category:
-  vi-VN: Interactive Feedback
-  en-US: Interactive Feedback
-title:
-  vi-VN: my.createAnimation
-  en-US: my.createAnimation
+title: my.createAnimation
 ---
 
 ## Giới thiệu
@@ -61,12 +55,17 @@ Page({
   },
   translate() {
     this.animation
-      .translate(Math.random() * 100 - 50, Math.random() * 100 - 50)
+      .translate(
+        Math.random() * 100 - 50,
+        Math.random() * 100 - 50
+      )
       .step();
     this.setData({ animation: this.animation.export() });
   },
   skew() {
-    this.animation.skew(Math.random() * 90, Math.random() * 90).step();
+    this.animation
+      .skew(Math.random() * 90, Math.random() * 90)
+      .step();
     this.setData({ animation: this.animation.export() });
   },
   rotateAndScale() {
@@ -88,7 +87,10 @@ Page({
     this.animation
       .rotate(Math.random() * 720 - 360)
       .scale(Math.random() * 2)
-      .translate(Math.random() * 100 - 50, Math.random() * 100 - 50)
+      .translate(
+        Math.random() * 100 - 50,
+        Math.random() * 100 - 50
+      )
       .skew(Math.random() * 90, Math.random() * 90)
       .step();
     this.setData({ animation: this.animation.export() });
@@ -99,7 +101,10 @@ Page({
       .step()
       .scale(Math.random() * 2)
       .step()
-      .translate(Math.random() * 100 - 50, Math.random() * 100 - 50)
+      .translate(
+        Math.random() * 100 - 50,
+        Math.random() * 100 - 50
+      )
       .step()
       .skew(Math.random() * 90, Math.random() * 90)
       .step();
@@ -116,7 +121,7 @@ Page({
       .skew(0, 0)
       .step({ duration: 0 });
     this.setData({ animation: this.animation.export() });
-  },
+  }
 });
 ```
 

@@ -1,11 +1,5 @@
 ---
-order: 41
-category:
-  vi-VN: Điều hướng
-  en-US: Navigator
-title: 
-  vi-VN: my.navigateBack
-  en-US: my.navigateBack
+title: my.navigateBack
 ---
 
 ## Giới thiệu
@@ -39,12 +33,12 @@ title:
 Page({
   navigateBack() {
     my.navigateBack();
-  },
-})
+  }
+});
 ```
 
 ### API Params
 
-| Attributes | Type   | Required | Description                                                                                                                                                 |
-| ---------- | ------ | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Attributes | Type   | Required | Description                                                                                                                                                |
+| ---------- | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | delta      | Number | No       | Số lượng giữa page hiện tại với page muốn quay lại. Ví dụ bạn muốn bỏ qua page trước đó và quay lại page trước đó nữa thì `delta = 2`. Mặc định delta = 1. |

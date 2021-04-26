@@ -1,11 +1,5 @@
 ---
-order: 23
-category:
-  vi-VN: View containers
-  en-US: View containers
-title:
-  vi-VN: tabs
-  en-US: tabs
+title: tabs
 ---
 
 ## Giới thiệu
@@ -80,15 +74,15 @@ Page({
       { title: 'Tab' },
       { title: 'Tab' },
       { title: 'Tab' },
-      { title: 'Tab' },
+      { title: 'Tab' }
     ],
     tabs2: [
       { title: 'Tab', icon: 'home' },
       { title: 'Tab', icon: 'home', showDot: true },
       { title: 'Tab', icon: 'home' },
-      { title: 'Tab', icon: 'home' },
-    ],
-  },
+      { title: 'Tab', icon: 'home' }
+    ]
+  }
 });
 ```
 
@@ -115,7 +109,4 @@ Page({
 | onTabClick                      | event   |               |          | Sự kiện được gọi khi bấm vào tab, `event.detail = { index, tab }`                                                                                      |
 | onChange                        | event   |               |          | Sự kiện được gọi khi đổi tab, `event.detail = { index, tab }`                                                                                          |
 
-```__react
-import image from '../../../theme/static/images/tab-component.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Tab" src={image}/>, mountNode);
-```
+<img style={{maxWidth: 414}} alt="Tab" src="/img/tab-component.png"/>

@@ -1,16 +1,10 @@
 ---
-order: 130
-category:
-  vi-VN: Image Picker
-  en-US: Image Picker
-title:
-  vi-VN: my.chooseImage
-  en-US: my.chooseImage
+title: my.chooseImage
 ---
 
 ## Giới thiệu
 
-**my.chooseImage** là API dùng để lấy hình từ camera hoặc từ album. 
+**my.chooseImage** là API dùng để lấy hình từ camera hoặc từ album.
 
 ## Sử dụng
 
@@ -26,39 +20,37 @@ title:
 ```js
 Page({
   data: {
-    img: undefined,
+    img: undefined
   },
   doPayment() {
     my.chooseImage({
       success: (res) => {
         this.setData({
-          img: res.uri,
+          img: res.uri
         });
-      },
+      }
     });
-  },
+  }
 });
-
 ```
 
 ### API Params
 
 Các thuộc tính:
 
-| Attributes | Type     | Required | Description                                                                                          |
-| ---------- | -------- | -------- | ---------------------------------------------------------------------------------------------------- |
-| success    | Function | No       | Callback function khi pick image được thực hiện thành công                                           |
-| fail       | Function | No       | Callback function khi pick image thất bại                                                            |
-| complete   | Function | No       | Callback function khi việc pick image kết thúc cho dù thành công hay thất bại.                       |
+| Attributes | Type     | Required | Description                                                                    |
+| ---------- | -------- | -------- | ------------------------------------------------------------------------------ |
+| success    | Function | No       | Callback function khi pick image được thực hiện thành công                     |
+| fail       | Function | No       | Callback function khi pick image thất bại                                      |
+| complete   | Function | No       | Callback function khi việc pick image kết thúc cho dù thành công hay thất bại. |
 
 ### Callback function payload
 
-| Attributes | Type     | Description                         |
-| ---------- | -------- | ----------------------------------- |
-| uri        | base64   | Data của image dạng base64 |
-| width      | number   | Chiều rộng của image  |
-| height     | number   | height của image |
-
+| Attributes | Type   | Description                |
+| ---------- | ------ | -------------------------- |
+| uri        | base64 | Data của image dạng base64 |
+| width      | number | Chiều rộng của image       |
+| height     | number | height của image           |
 
 ```__react
 import image from '../../../theme/static/images/choose-image.gif'

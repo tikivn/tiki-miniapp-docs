@@ -1,11 +1,5 @@
 ---
-order: 57
-category:
-  vi-VN: Application Level
-  en-US: Application Level
-title: 
-  vi-VN: my.offUnhandledRejection
-  en-US: my.offUnhandledRejection
+title: my.offUnhandledRejection
 ---
 
 ## Giới thiệu
@@ -24,11 +18,11 @@ Page({
     const handleRejection = (res) => {
       console.log(res.reason);
       console.log(res.promise);
-    }
+    };
     my.onUnhandledRejection(handleRejection);
     my.offUnhandledRejection(handleRejection);
-  },
-})
+  }
+});
 ```
 
 **app.js**
@@ -39,15 +33,15 @@ App({
     const handleRejection = (res) => {
       console.log(res.reason);
       console.log(res.promise);
-    }
+    };
     my.onUnhandledRejection(handleRejection);
     my.offUnhandledRejection(handleRejection);
   }
-})
+});
 ```
 
 ### API Params
 
-| Attributes | Type     | Description                                                           |
-| ---------- | -------- | --------------------------------------------------------------------- |
-| callback    | Function | Callback đã đăng ký event `onUnhandledRejection` của app.                          |
+| Attributes | Type     | Description                                               |
+| ---------- | -------- | --------------------------------------------------------- |
+| callback   | Function | Callback đã đăng ký event `onUnhandledRejection` của app. |
