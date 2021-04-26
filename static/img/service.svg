@@ -5,7 +5,7 @@
 <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="92">
 <rect width="100" height="92" rx="8" fill="url(#paint3_linear)"/>
 </mask>
-<g mask="url(#mask0)">
+<g>
 <ellipse cx="50" cy="46" rx="50" ry="50.5" fill="white" fill-opacity="0.1"/>
 <path d="M50 97.5C78.1759 97.5 101 74.4333 101 46C101 17.5667 78.1759 -5.5 50 -5.5C21.8241 -5.5 -1 17.5667 -1 46C-1 74.4333 21.8241 97.5 50 97.5Z" stroke="#242424" stroke-opacity="0.1" stroke-width="2"/>
 <ellipse cx="50" cy="46" rx="46" ry="46.5" fill="white" fill-opacity="0.2"/>

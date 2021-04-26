@@ -16,8 +16,8 @@
 
 .title {
   font-weight: 700;
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
   margin-bottom: 16px;
   margin-top: 40px;
 }
@@ -227,8 +227,8 @@
 .headText {
   color: #27272a;
   font-weight: 700;
-  line-height: 40px;
-  font-size: 28px;
+  line-height: 2.5rem;
+  font-size: 1.75rem;
   margin-bottom: 16px;
 }
 
@@ -268,6 +268,7 @@
   svg {
     min-width: 208px;
     min-height: 208px;
+    margin-left: 24px;
   }
 
   @media (max-width: 996px) {
@@ -277,6 +278,7 @@
       min-width: auto;
       min-height: auto;
       margin-bottom: 24px;
+      margin-left: 0;
     }
   }
 }
@@ -348,9 +350,6 @@
   width: 100%;
   color: #28282b;
   cursor: pointer;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
 }
 
 .block {
@@ -360,9 +359,9 @@
 
   > div {
     color: #81818a;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5rem;
   }
 
   @media (max-width: 996px) {

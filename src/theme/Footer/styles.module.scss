@@ -1,8 +1,5 @@
 .footer {
   background: var(--brand);
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: normal;
 }
 
 .footerWrapper {
@@ -32,8 +29,8 @@
 
 .groupTitle {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
   margin-bottom: 16px;
   color: #fff;
 }
@@ -90,8 +87,12 @@
   }
 }
 
-.bottom {
+.line {
   border-top: 1px solid #fff;
+  transform: scaleY(0.5);
+}
+
+.bottom {
   padding: 16px 0;
   display: flex;
   color: #fff;

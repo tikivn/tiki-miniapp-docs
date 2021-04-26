@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import DevCentetSVG from '@site/static/img/dev-center.svg';
+import DevCenterSVG from '@site/static/img/dev-center.svg';
 import ToolSVG from '@site/static/img/tool.svg';
 import AppSVG from '@site/static/img/app.svg';
 import ServiceSVG from '@site/static/img/service.svg';
@@ -49,7 +49,7 @@ function Hero() {
 
         <div className={styles.roundContainer}>
           <div className={[styles.roundLine, styles.roundLineTop].join(' ')}>
-            <DevCentetSVG />
+            <DevCenterSVG />
             <ToolSVG />
           </div>
           <div className={styles.round} />

@@ -128,6 +128,7 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footerWrapper}>
         <Content />
+        <div className={styles.line} />
         <Bottom />
       </div>
     </footer>
