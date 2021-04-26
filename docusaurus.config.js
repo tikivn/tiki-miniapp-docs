@@ -58,7 +58,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'ide/overview',
+          docId: 'studio/overview',
           position: 'right',
           label: 'Studio',
         },

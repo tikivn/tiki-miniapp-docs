@@ -23,25 +23,25 @@ module.exports = {
       ],
     },
   ],
-  ide: [
-    'ide/overview',
+  studio: [
+    'studio/overview',
     {
       type: 'category',
       label: 'Giao diện',
       collapsed: false,
-      items: ['ide/start-page', 'ide/main', 'ide/simulator'],
+      items: ['studio/start-page', 'studio/main', 'studio/simulator'],
     },
     {
       type: 'category',
       label: 'Phát triển',
       collapsed: false,
-      items: ['ide/development', 'ide/dev-assistant'],
+      items: ['studio/development', 'studio/dev-assistant'],
     },
     {
       type: 'category',
       label: 'Debug',
       collapsed: false,
-      items: ['ide/debug'],
+      items: ['studio/debug'],
     },
   ],
   framework: [
