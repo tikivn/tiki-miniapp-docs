@@ -26,18 +26,12 @@ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## Deployment
-
-```console
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
 ## Locales
 
 Default locale is `vi`, if you want to run with `en`, use below command
 
 ```console
-yarn start --local en
+yarn start --locale en
 ```
 
 To create `English` doc, please write the doc in folder `/en/docusaurus-plugin-content-docs/current`
