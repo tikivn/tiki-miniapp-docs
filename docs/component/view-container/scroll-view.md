@@ -1,19 +1,12 @@
 ---
----
-order: 21
-category:
-  vi-VN: View containers
-  en-US: View containers
-title:
-  vi-VN: scroll-view
-  en-US: scroll-view
+title: scroll-view
 ---
 
-### Giới thiệu
+## Giới thiệu
 
 `scroll-view` là một container component có thể scroll được. Thanh scroll ngoài cùng không ảnh hưởng gì đến thanh scroll của `scroll-view`.
 
-### Lưu ý
+## Lưu ý
 
 - Bạn cần thiết lập thuộc tính height cho `scroll-view` thông qua [inline-style](https://miniapp.tiki.vn/docs/framework/tcss/tcss-introduction#Inline-style) hoặc [tcss](https://miniapp.tiki.vn/docs/framework/tcss/tcss-introduction)
 - `scroll-view` không hỗ trợ cả `scroll-x` và `scroll-y` cùng lúc, khi cả 2 thuộc tính này là `false`, thanh scroll sẽ không hoạt động
@@ -63,7 +56,7 @@ const order = ['blue', 'red', 'green', 'yellow'];
 Page({
   data: {
     toView: 'red',
-    scrollTop: 100,
+    scrollTop: 100
   },
   onLoad() {
     this.scroll = debounce(this.scroll.bind(this), 100);
@@ -83,7 +76,7 @@ Page({
   scrollToTop(e) {
     console.log(e);
     this.setData({
-      scrollTop: 0,
+      scrollTop: 0
     });
   },
   tap() {
@@ -92,7 +85,7 @@ Page({
         const next = (i + 1) % order.length;
         this.setData({
           toView: order[next],
-          scrollTop: next * 200,
+          scrollTop: next * 200
         });
         break;
       }
@@ -100,9 +93,9 @@ Page({
   },
   tapMove() {
     this.setData({
-      scrollTop: this.data.scrollTop + 10,
+      scrollTop: this.data.scrollTop + 10
     });
-  },
+  }
 });
 ```
 

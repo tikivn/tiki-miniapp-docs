@@ -1,11 +1,5 @@
 ---
-order: 14
-category:
-  vi-VN: Cơ bản
-  en-US: Basic
-title:
-  vi-VN: my.getRunScene (chưa ready)
-  en-US: my.getRunScene (not ready)
+title: my.getRunScene (chưa ready)
 ---
 
 ## Giới thiệu
@@ -20,10 +14,10 @@ title:
 my.getRunScene({
   success(result) {
     my.alert({
-      title: "App version",
-      content: `${result.envVersion}`,
+      title: 'App version',
+      content: `${result.envVersion}`
     });
-  },
+  }
 });
 ```
 

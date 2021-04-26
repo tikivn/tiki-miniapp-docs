@@ -1,12 +1,4 @@
----
-order: 46
-category:
-  vi-VN: Component
-  en-US: Component
-title:
-  vi-VN: ref
-  en-US: ref
----
+# ref
 
 ## Sử dụng `ref` để truy cập vào Component Instance
 
@@ -20,7 +12,7 @@ Page({
   },
   saveRef(ref) {
     this.counter = ref;
-  },
+  }
 });
 ```
 
@@ -31,19 +23,19 @@ Page({
 ```
 
 - Bằng cách bind `ref` tới giá trị `"saveRef"`, khi `<my-component>` được render hàm `saveRef` sẽ được gọi
-- Tham số `ref` được truyền tới hàm saveRef`sẽ trỏ tới Component instance của`<my-component>`. Bằng cách này parent component có thể accesss được tới child component
+- Tham số `ref` được truyền tới hàm `saveRef` sẽ trỏ tới Component instance của`<my-component>`. Bằng cách này parent component có thể accesss được tới child component
 
 ```js
 // /components/index/index.js
 Component({
   data: {
-    counter: 0,
+    counter: 0
   },
   methods: {
     plus() {
       this.setData({ counter: this.data.counter + 1 });
-    },
-  },
+    }
+  }
 });
 ```
 
@@ -77,6 +69,6 @@ Page({
     // ref lúc này sẽ là kết quả của hàm Component.ref() được định nghĩa ở trên
     // giá trị của ref sẽ là { key: 'value' }
     this.counter = ref;
-  },
+  }
 });
 ```

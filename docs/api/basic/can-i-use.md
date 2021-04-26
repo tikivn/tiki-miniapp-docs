@@ -1,11 +1,5 @@
 ---
-order: 11
-category:
-  vi-VN: Cơ bản
-  en-US: Basic
-title:
-  vi-VN: my.canIUse (chưa ready)
-  en-US: my.canIUse (not ready)
+title: my.canIUse (chưa ready)
 ---
 
 ## Giới thiệu
@@ -17,8 +11,8 @@ title:
 ### Sample code
 
 ```js
-my.canIUse("getFileInfo");
-my.canIUse("button.open-type.share");
+my.canIUse('getFileInfo');
+my.canIUse('button.open-type.share');
 ```
 
 ### API Param

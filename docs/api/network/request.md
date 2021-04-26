@@ -1,11 +1,5 @@
 ---
-order: 30
-category:
-  vi-VN: Network
-  en-US: Network
-title:
-  vi-VN: my.request
-  en-US: my.request
+title: my.request
 ---
 
 ## Giới thiệu
@@ -30,7 +24,7 @@ title:
       <text>my.request</text>
       <text>{{JSON.stringify(response)}}</text>
       <view class="page__section__buttons">
-        <button 
+        <button
           onTap="makeRequest"
         >{{loading ? "Loading..." : "Query"}}</button>
         <button onTap="clear">Clear</button>
@@ -44,21 +38,21 @@ title:
 Page({
   data: {
     response: {},
-    loading: false,
+    loading: false
   },
   makeRequest() {
     this.setData({ loading: true });
     my.request({
-      url: "https://httpbin.org/post",
-      method: "POST",
+      url: 'https://httpbin.org/post',
+      method: 'POST',
       success: (response) => {
         this.setData({ response, loading: false });
-      },
+      }
     });
   },
   clear() {
     this.setData({ response: {} });
-  },
+  }
 });
 ```
 
@@ -87,6 +81,6 @@ TODO
 API trả về network request task. Bạn có thể thực hiện huỷ việc gọi network thông qua network request task.
 
 ```js
-const task = my.reuqest({ url: "https://tiki.vn/api" });
+const task = my.reuqest({ url: 'https://tiki.vn/api' });
 task.abort();
 ```

@@ -1,11 +1,5 @@
 ---
-order: 20
-category:
-  vi-VN: Ví dụ mẫu
-  en-US: Quick Example
-title: 
-  vi-VN: Tổng quan
-  en-US: Overview
+title: Tổng quan
 ---
 
 Hướng dẫn tạo MiniApp

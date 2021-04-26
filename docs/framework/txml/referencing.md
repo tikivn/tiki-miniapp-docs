@@ -1,12 +1,4 @@
----
-order: 25
-category:
-  vi-VN: TXML
-  en-US: TXML
-title:
-  vi-VN: Referencing
-  en-US: Referencing
----
+# Referencing
 
 TXML cung cấp 2 cách để tham chiếu tới code khác: `import` và `include`.
 

@@ -1,11 +1,5 @@
 ---
-order: 90
-category:
-  vi-VN: Thanh điều hướng
-  en-US: Navigation Bar
-title:
-  vi-VN: my.getTitleColor
-  en-US: my.getTitleColor
+title: my.getTitleColor
 ---
 
 ## Giới thiệu
@@ -31,17 +25,17 @@ title:
 ```js
 Page({
   data: {
-    titleColor: {},
+    titleColor: {}
   },
   getTitleColor() {
     my.getTitleColor({
       success: (res) => {
         this.setData({
-          titleColor: res,
+          titleColor: res
         });
-      },
+      }
     });
-  },
+  }
 });
 ```
 

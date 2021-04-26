@@ -1,7 +1,7 @@
-version: '2'
+version: "2"
 config:
   slack_notify: true
-  slack_channel: 'tiki-miniapp-docs-ci'
+  slack_channel: "tiki-miniapp-docs-ci"
 jobs:
   build_docker:
     steps:
@@ -63,7 +63,7 @@ deployment_config:
         - host: tiki-miniapp-docs.dev.tiki.services
           paths:
             - path: /
-              port: '80'
+              port: "80"
     replicaCount: 1
   prod:
     ingress:
@@ -71,7 +71,7 @@ deployment_config:
         - host: tiki-miniapp-docs.tiki.services
           paths:
             - path: /
-              port: '80'
+              port: "80"
     replicaCount: 1
     resource:
       requests:

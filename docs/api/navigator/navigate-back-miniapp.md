@@ -1,11 +1,5 @@
 ---
-order: 44
-category:
-  vi-VN: Điều hướng
-  en-US: Navigator
-title:
-  vi-VN: my.navigateBackMiniApp
-  en-US: my.navigateBackMiniApp
+title: my.navigateBackMiniApp
 ---
 
 ## Giới thiệu
@@ -34,21 +28,21 @@ Page({
   navigateBackMiniApp() {
     my.navigateBackMiniApp({
       extraData: {
-        paymentStatus: "success",
+        paymentStatus: 'success'
       },
       success() {
-        alert("DONE");
-      },
+        alert('DONE');
+      }
     });
-  },
+  }
 });
 ```
 
 ### API Params
 
-| Attributes | Type     | Required | Description                                                                                                                      |
-| ---------- | -------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| extraData  | Object   | No       | Dữ liệu cần được truyền cho app được nhảy tới.<br> App được nhảy tới sẽ lấy thông tin qua hàm `App.onLaunch()` và `App.onShow()` |
-| success    | Function | No       | Callback function khi thành công.                                                                                                |
-| fail       | Function | No       | Callback function khi thất bại.                                                                                                  |
-| complete   | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                                                            |
+| Attributes | Type     | Required | Description                                                                                                                        |
+| ---------- | -------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| extraData  | Object   | No       | Dữ liệu cần được truyền cho app được nhảy tới.<br /> App được nhảy tới sẽ lấy thông tin qua hàm `App.onLaunch()` và `App.onShow()` |
+| success    | Function | No       | Callback function khi thành công.                                                                                                  |
+| fail       | Function | No       | Callback function khi thất bại.                                                                                                    |
+| complete   | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                                                              |

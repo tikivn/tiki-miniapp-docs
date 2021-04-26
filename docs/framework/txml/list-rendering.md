@@ -1,12 +1,4 @@
----
-order: 23
-category:
-  vi-VN: TXML
-  en-US: TXML
-title:
-  vi-VN: Render list
-  en-US: List rendering
----
+# Render list
 
 ## tiki:for
 
@@ -25,13 +17,13 @@ Page({
   data: {
     array: [
       {
-        message: "foo",
+        message: 'foo'
       },
       {
-        message: "bar",
-      },
-    ],
-  },
+        message: 'bar'
+      }
+    ]
+  }
 });
 ```
 
@@ -84,14 +76,14 @@ Bằng việc sử dụng `tiki:key`, khi dữ liệu trong mảng thay đổi, 
 Page({
   data: {
     objectArray: [
-      { id: 5, unique: "unique_5" },
-      { id: 4, unique: "unique_4" },
-      { id: 3, unique: "unique_3" },
-      { id: 2, unique: "unique_2" },
-      { id: 1, unique: "unique_1" },
-      { id: 0, unique: "unique_0" },
-    ],
-  },
+      { id: 5, unique: 'unique_5' },
+      { id: 4, unique: 'unique_4' },
+      { id: 3, unique: 'unique_3' },
+      { id: 2, unique: 'unique_2' },
+      { id: 1, unique: 'unique_1' },
+      { id: 0, unique: 'unique_0' }
+    ]
+  }
 });
 ```
 
@@ -107,7 +99,7 @@ chúng ta xác định rằng key của item là sẽ là thuộc tính `unique`
 ```js
 Page({
   data: {
-    numberArray: [1, 2, 3, 4],
-  },
+    numberArray: [1, 2, 3, 4]
+  }
 });
 ```

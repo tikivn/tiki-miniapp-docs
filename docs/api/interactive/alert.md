@@ -1,11 +1,5 @@
 ---
-order: 61
-category:
-  vi-VN: Interactive Feedback
-  en-US: Interactive Feedback
-title:
-  vi-VN: my.alert
-  en-US: my.alert
+title: my.alert
 ---
 
 ## Giới thiệu
@@ -36,20 +30,20 @@ my.alert là api để hiển thị Alert. Có thể set được title, content
 Page({
   onAlert() {
     my.alert({
-      title: "Alert title",
-      content: "Alert content",
-      buttonText: "Alert Button",
+      title: 'Alert title',
+      content: 'Alert content',
+      buttonText: 'Alert Button',
       success: () => {
-        console.log("Success");
+        console.log('Success');
       },
       fail: () => {
-        console.log("Fail");
+        console.log('Fail');
       },
       complete: () => {
-        console.log("Complete");
-      },
+        console.log('Complete');
+      }
     });
-  },
+  }
 });
 ```
 

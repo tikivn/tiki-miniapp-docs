@@ -1,9 +1,4 @@
----
-order: 0
-title:
-  vi-VN: Tổng quan về framework
-  en-US: Framework Overview
----
+# Tổng quan về framework
 
 Tiki MiniApp Framework được thiết kế để cho phép các nhà phát triển xây dựng ứng dụng của mình với trải nghiệm native app trên nền tảng Tiki một cách dễ dàng và đa dạng tính năng nhất có thể.
 
@@ -63,14 +58,14 @@ Nói một cách khác 2 layers dù tách biệt nhưng vẫn luôn được đ�
 ```js
 Page({
   data: {
-    name: "Guest",
+    name: 'Guest'
   },
   onLoad() {
     // set data để thay đổi view
     this.setData({
-      name: "Nguyen Van A",
+      name: 'Nguyen Van A'
     });
-  },
+  }
 });
 ```
 
@@ -94,7 +89,7 @@ Page({
   onReady() {},
   onShow() {},
   onHide() {},
-  onUnload() {},
+  onUnload() {}
 });
 ```
 

@@ -1,11 +1,6 @@
 ---
-order: 100
-category:
-  vi-VN: Tab Bar
-  en-US: Tab Bar
-title:
-  vi-VN: Giới thiệu
-  en-US: Introduction
+sidebar_position: 1
+title: Giới thiệu
 ---
 
 ## Giới thiệu

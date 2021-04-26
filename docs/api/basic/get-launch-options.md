@@ -1,11 +1,5 @@
 ---
-order: 13
-category:
-  vi-VN: Cơ bản
-  en-US: Basic
-title:
-  vi-VN: my.getLaunchOptions (chưa ready)
-  en-US: my.getLaunchOptions (not ready)
+title: my.getLaunchOptions (chưa ready)
 ---
 
 ## Giới thiệu
@@ -20,10 +14,10 @@ title:
 my.getLaunchOptions({
   success: (res) => {
     my.alert({
-      title: "Alert",
-      content: `Query is: ${res.query}, path is: ${res.path}`,
+      title: 'Alert',
+      content: `Query is: ${res.query}, path is: ${res.path}`
     });
-  },
+  }
 });
 ```
 

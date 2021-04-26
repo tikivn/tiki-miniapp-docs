@@ -1,0 +1,138 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.developer.category.Hướng dẫn nhà phát triển": {
+    "message": "MiniApp Development Guide",
+    "description": "The label for category Hướng dẫn nhà phát triển in sidebar developer"
+  },
+  "sidebar.developer.category.Ví dụ mẫu": {
+    "message": "Quick Example",
+    "description": "The label for category Ví dụ mẫu in sidebar developer"
+  },
+  "sidebar.ide.category.Giao diện": {
+    "message": "Interface",
+    "description": "The label for category Giao diện in sidebar ide"
+  },
+  "sidebar.ide.category.Phát triển": {
+    "message": "Development",
+    "description": "The label for category Phát triển in sidebar ide"
+  },
+  "sidebar.ide.category.Debug": {
+    "message": "Debug",
+    "description": "The label for category Debug in sidebar ide"
+  },
+  "sidebar.framework.category.Cấu hình chung": {
+    "message": "Configuring Tini App",
+    "description": "The label for category Cấu hình chung in sidebar framework"
+  },
+  "sidebar.framework.category.TXML": {
+    "message": "TXML",
+    "description": "The label for category TXML in sidebar framework"
+  },
+  "sidebar.framework.category.Page": {
+    "message": "Page",
+    "description": "The label for category Page in sidebar framework"
+  },
+  "sidebar.framework.category.TCSS": {
+    "message": "TCSS",
+    "description": "The label for category TCSS in sidebar framework"
+  },
+  "sidebar.framework.category.Component": {
+    "message": "Component",
+    "description": "The label for category Component in sidebar framework"
+  },
+  "sidebar.framework.category.Event": {
+    "message": "Event",
+    "description": "The label for category Event in sidebar framework"
+  },
+  "sidebar.components.category.View containers": {
+    "message": "View containers",
+    "description": "The label for category View containers in sidebar components"
+  },
+  "sidebar.components.category.Basic components": {
+    "message": "Basic components",
+    "description": "The label for category Basic components in sidebar components"
+  },
+  "sidebar.components.category.Media components": {
+    "message": "Media components",
+    "description": "The label for category Media components in sidebar components"
+  },
+  "sidebar.components.category.Advance components": {
+    "message": "Advance components",
+    "description": "The label for category Advance components in sidebar components"
+  },
+  "sidebar.api.category.Cơ bản": {
+    "message": "Basic",
+    "description": "The label for category Cơ bản in sidebar api"
+  },
+  "sidebar.api.category.Tiki Open Apis": {
+    "message": "Tiki Open Apis",
+    "description": "The label for category Tiki Open Apis in sidebar api"
+  },
+  "sidebar.api.category.Network": {
+    "message": "Network",
+    "description": "The label for category Network in sidebar api"
+  },
+  "sidebar.api.category.Điều hướng": {
+    "message": "Navigator",
+    "description": "The label for category Điều hướng in sidebar api"
+  },
+  "sidebar.api.category.Application Level": {
+    "message": "Application Level",
+    "description": "The label for category Application Level in sidebar api"
+  },
+  "sidebar.api.category.Thiết bị": {
+    "message": "Device",
+    "description": "The label for category Thiết bị in sidebar api"
+  },
+  "sidebar.api.category.Interactive Feedback": {
+    "message": "Interactive Feedback",
+    "description": "The label for category Interactive Feedback in sidebar api"
+  },
+  "sidebar.api.category.Pull down to refresh": {
+    "message": "Pull down to refresh",
+    "description": "The label for category Pull down to refresh in sidebar api"
+  },
+  "sidebar.api.category.Thanh điều hướng": {
+    "message": "Navigation Bar",
+    "description": "The label for category Thanh điều hướng in sidebar api"
+  },
+  "sidebar.api.category.Tab Bar": {
+    "message": "Tab Bar",
+    "description": "The label for category Tab Bar in sidebar api"
+  },
+  "sidebar.api.category.Storage": {
+    "message": "Storage",
+    "description": "The label for category Storage in sidebar api"
+  },
+  "sidebar.api.category.Payment": {
+    "message": "Payment",
+    "description": "The label for category Payment in sidebar api"
+  },
+  "sidebar.api.category.Image Picker": {
+    "message": "Image Picker",
+    "description": "The label for category Image Picker in sidebar api"
+  },
+  "sidebar.design.category.Tiny Design": {
+    "message": "Tiny Design",
+    "description": "The label for category Tiny Design in sidebar design"
+  },
+  "sidebar.design.category.Nguyên tắc thiết kế": {
+    "message": "Design Principles",
+    "description": "The label for category Nguyên tắc thiết kế in sidebar design"
+  },
+  "sidebar.design.category.Quy định trong thiết kế": {
+    "message": "Design Guidelines",
+    "description": "The label for category Quy định trong thiết kế in sidebar design"
+  },
+  "sidebar.design.category.Thiết kế chung": {
+    "message": "Global style",
+    "description": "The label for category Thiết kế chung in sidebar design"
+  },
+  "sidebar.design.category.Tài nguyên thiết kế": {
+    "message": "Design resources",
+    "description": "The label for category Tài nguyên thiết kế in sidebar design"
+  }
+}

@@ -1,11 +1,5 @@
 ---
-order: 56
-category:
-  vi-VN: Application Level
-  en-US: Application Level
-title: 
-  vi-VN: my.onAppError
-  en-US: my.onAppError
+title: my.onAppError
 ---
 
 ## Giới thiệu
@@ -27,20 +21,20 @@ title:
 ```js
 Page({
   onLoad(query) {
-    my.onAppError(this.onAppErrorHandler)
+    my.onAppError(this.onAppErrorHandler);
   },
   onTriggerError() {
     // call o function is not exits
     my.blabla();
   },
   onAppErrorHandler(error) {
-    console.log("App error", error)
-  },
-})
+    console.log('App error', error);
+  }
+});
 ```
 
 ### API Params
 
-| Attributes | Type     | Description                                                           |
-| ---------- | -------- | --------------------------------------------------------------------- |
-| callback    | Function | Callback để catch event app error của. Argument `error` là error message kiểu string                          |
+| Attributes | Type     | Description                                                                          |
+| ---------- | -------- | ------------------------------------------------------------------------------------ |
+| callback   | Function | Callback để catch event app error của. Argument `error` là error message kiểu string |

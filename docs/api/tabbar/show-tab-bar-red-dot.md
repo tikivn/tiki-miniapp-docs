@@ -1,11 +1,5 @@
 ---
-order: 101
-category:
-  vi-VN: Tab Bar
-  en-US: Tab Bar
-title:
-  vi-VN: my.showTabBarRedDot
-  en-US: my.showTabBarRedDot
+title: my.showTabBarRedDot
 ---
 
 ## Giới thiệu
@@ -18,7 +12,7 @@ title:
 
 ```js
 my.showTabBarRedDot({
-  index: 0,
+  index: 0
 });
 ```
 

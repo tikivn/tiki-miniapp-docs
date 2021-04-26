@@ -1,20 +1,13 @@
 ---
----
-order: 22
-category:
-  vi-VN: View containers
-  en-US: View containers
-title:
-  vi-VN: web-view
-  en-US: web-view
+title: web-view
 ---
 
-### Giới thiệu
+## Giới thiệu
 
 `web-view` là một container componet dùng để hiển thị nội dung html trong một miniapp. Vì miniapp không thể nhảy qua một trang web ngoài tiki, thế nên để hiện thị nội dung trang đó
 bạn có thể dùng web-view để hiển thị.
 
-### Lưu ý khi sử dụng
+## Lưu ý khi sử dụng
 
 - Mỗi page chỉ có thể trình bày 1 web-view. web-view sẽ tự động trình bày toàn màn hình, tất cả các components khác sẽ bị che bởi web-view đó.
 - Để đảm bảo cam kết avaibility của nội dung trong web-view khi khách hàng sử dụng, bạn cần phải có tài khoản công ty hoặc doanh nghiệp.
@@ -38,16 +31,20 @@ Page({
     const webview = my.createWebViewContext('web-view1');
     webview.postMessage('pong');
   }
-})
+});
 ```
 
 **h5.html**
+
 ```html
-<script type="text/javascript" src="https://tiki/tf-miniapp.webview.js"></script>
+<script
+  type="text/javascript"
+  src="https://tiki/tf-miniapp.webview.js"
+></script>
 <script>
   my.navigateTo({ url: 'pages/user-info/index' });
   my.postMessage('ping');
-  window.onmessage = function() {
+  window.onmessage = function () {
     alert(JSON.stringify(e.data)); // this will alert "pong" message
   };
   window.addEventListener('message', (e) => {
@@ -66,4 +63,3 @@ Page({
 | my.getUserInfo   | Dùng để lấy các thông tin cơ bản của users (tên, ảnh). [my.getUserInfo](https://miniapp.tiki.vn/docs/api/open/get-user-info).                                   |
 | my.request       | Dùng để thực hiện các network request. [my.request](https://miniapp.tiki.vn/docs/api/network/request).                                                          |
 | my.postMessage   | Dùng để gửi message tới webview. Message sẽ được gửi tới listener của `window.onmessage` hay `window.addEventListener('message', listener)`.                    |
-

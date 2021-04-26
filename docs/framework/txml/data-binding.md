@@ -1,12 +1,4 @@
----
-order: 21
-category:
-  vi-VN: TXML
-  en-US: TXML
-title:
-  vi-VN: Gán dữ liệu vào TXML
-  en-US: Data binding
----
+# Gán dữ liệu vào TXML
 
 Dữ liệu được gán vào TXML từ trường `data` của `Page` hoặc `Component` tương ứng.
 
@@ -19,8 +11,8 @@ Ví dụ, ở file `pages/page1/index.js` chúng ta định nghĩa Page như sau
 ```js
 Page({
   data: {
-    message: "Hello world",
-  },
+    message: 'Hello world'
+  }
 });
 ```
 
@@ -42,8 +34,8 @@ TXML cũng cho phép gán dữ liệu vào thuộc tính của Component. Giá t
 ```js
 Page({
   data: {
-    id: 0,
-  },
+    id: 0
+  }
 });
 ```
 
@@ -58,8 +50,8 @@ Các thuộc tính điều kiện cũng cần phải bao bởi dấu ngoặc ké
 ```js
 Page({
   data: {
-    condition: false,
-  },
+    condition: false
+  }
 });
 ```
 
@@ -97,8 +89,8 @@ Page({
   data: {
     a: 1,
     b: 2,
-    c: 3,
-  },
+    c: 3
+  }
 });
 ```
 
@@ -123,8 +115,8 @@ Kết quả sẽ là
 ```js
 Page({
   data: {
-    name: "tiki miniapp",
-  },
+    name: 'tiki miniapp'
+  }
 });
 ```
 
@@ -144,10 +136,10 @@ hello tiki miniapp
 Page({
   data: {
     object: {
-      key: "Hello ",
+      key: 'Hello '
     },
-    array: ["tiki miniapp"],
-  },
+    array: ['tiki miniapp']
+  }
 });
 ```
 
@@ -170,8 +162,8 @@ Bạn có thể kết hợp các thuộc tính lại để tạo các Object ho�
 ```js
 Page({
   data: {
-    zero: 0,
-  },
+    zero: 0
+  }
 });
 ```
 
@@ -187,8 +179,8 @@ Kết quả sẽ là mảng `[0, 1, 2, 3, 4]`
 Page({
   data: {
     a: 1,
-    b: 2,
-  },
+    b: 2
+  }
 });
 ```
 
@@ -205,13 +197,13 @@ Page({
   data: {
     obj1: {
       a: 1,
-      b: 2,
+      b: 2
     },
     obj2: {
       c: 3,
-      d: 4,
-    },
-  },
+      d: 4
+    }
+  }
 });
 ```
 
@@ -226,9 +218,9 @@ Nếu key và value của object giống nhau, chúng ta có thể sử dụng c
 ```js
 Page({
   data: {
-    foo: "my-foo",
-    bar: "my-bar",
-  },
+    foo: 'my-foo',
+    bar: 'my-bar'
+  }
 });
 ```
 
@@ -245,14 +237,14 @@ Page({
   data: {
     obj1: {
       a: 1,
-      b: 2,
+      b: 2
     },
     obj2: {
       b: 3,
-      c: 4,
+      c: 4
     },
-    a: 5,
-  },
+    a: 5
+  }
 });
 ```
 

@@ -1,11 +1,5 @@
 ---
-order: 18
-category:
-  vi-VN: Thành phần cơ bản
-  en-US: Basic components
-title:
-  vi-VN: checkbox-group
-  en-US: checkbox-group
+title: checkbox-group
 ---
 
 ## Giới thiệu
@@ -53,7 +47,7 @@ title:
 Page({
   onChange(e) {
     console.log('onChange', e);
-  },
+  }
 });
 ```
 

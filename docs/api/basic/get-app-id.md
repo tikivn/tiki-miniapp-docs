@@ -1,11 +1,5 @@
 ---
-order: 12
-category:
-  vi-VN: Cơ bản
-  en-US: Basic
-title:
-  vi-VN: my.getAppId (chưa ready)
-  en-US: my.getAppId (not ready)
+title: my.getAppId (chưa ready)
 ---
 
 ## Giới thiệu
@@ -20,10 +14,10 @@ title:
 my.getAppId({
   success: (res) => {
     my.alert({
-      title: "Alert",
-      content: `App id is ${res}`,
+      title: 'Alert',
+      content: `App id is ${res}`
     });
-  },
+  }
 });
 ```
 

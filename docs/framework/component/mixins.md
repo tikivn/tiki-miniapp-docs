@@ -1,12 +1,4 @@
----
-order: 45
-category:
-  vi-VN: Component
-  en-US: Component
-title:
-  vi-VN: Mixins
-  en-US: Mixins
----
+# Mixins
 
 Khi implement nhiều Custom Component, và các Custom Component này có nhiều logic sử dụng chung, bạn có thể dùng mixins để sử dụng lại các code logic.
 
@@ -14,42 +6,42 @@ Khi implement nhiều Custom Component, và các Custom Component này có nhi�
 // /mixins/lifecycle.js
 export default {
   onInit() {
-    console.log("init");
+    console.log('init');
   },
   deriveDataFromProps(nextProps) {},
   didMount() {},
   didUpdate(prevProps, prevData) {},
-  didUnmount() {},
+  didUnmount() {}
 };
 ```
 
 ```js
 // /components/index/index.js
-import lifecycle from "/mixins/lifecycle";
+import lifecycle from '/mixins/lifecycle';
 
 const initialState = {
   data: {
-    isLogin: false,
-  },
+    isLogin: false
+  }
 };
 
 const defaultProps = {
   props: {
-    age: 30,
-  },
+    age: 30
+  }
 };
 
 const methods = {
   methods: {
-    onTapHandler() {},
-  },
+    onTapHandler() {}
+  }
 };
 
 Component({
   mixins: [lifecycle, initialState, defaultProps, methods],
   data: {
-    name: "tiki",
-  },
+    name: 'tiki'
+  }
 });
 ```
 

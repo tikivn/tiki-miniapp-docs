@@ -1,11 +1,5 @@
 ---
-order: 15
-category:
-  vi-VN: Thành phần cơ bản
-  en-US: Basic components
-title:
-  vi-VN: radio
-  en-US: radio
+title: radio
 ---
 
 ## Giới thiệu
@@ -42,12 +36,12 @@ Page({
       { name: 'polymer', value: 'Polymer' },
       { name: 'vue', value: 'Vue.js' },
       { name: 'ember', value: 'Ember.js' },
-      { name: 'backbone', value: 'Backbone.js', disabled: true },
-    ],
+      { name: 'backbone', value: 'Backbone.js', disabled: true }
+    ]
   },
   onChange(e) {
     console.log('onChange', e);
-  },
+  }
 });
 ```
 
@@ -94,7 +88,4 @@ Page({
 | color    | string  | Màu của component, sử dụng mã màu như trong css                                 |
 | onChange | event   | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { checked: checked }` |
 
-```__react
-import image from '../../../theme/static/images/radio-component.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Switch" src={image}/>, mountNode);
-```
+<img style={{maxWidth: 414}} alt="Tab" src="/img/radio-component.png"/>

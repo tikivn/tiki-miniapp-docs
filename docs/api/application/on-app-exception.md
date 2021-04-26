@@ -1,11 +1,5 @@
 ---
-order: 56
-category:
-  vi-VN: Application Level
-  en-US: Application Level
-title: 
-  vi-VN: my.onUnhandledRejection
-  en-US: my.onUnhandledRejection
+title: my.onUnhandledRejection
 ---
 
 ## Giới thiệu
@@ -25,8 +19,8 @@ Page({
       console.log(res.reason);
       console.log(res.promise);
     });
-  },
-})
+  }
+});
 ```
 
 **app.js**
@@ -37,11 +31,11 @@ App({
     console.log(res.reason);
     console.log(res.promise);
   }
-})
+});
 ```
 
 ### API Params
 
-| Attributes | Type     | Description                                                           |
-| ---------- | -------- | --------------------------------------------------------------------- |
-| callback    | Function | Callback để catch unhandle reject của Promise. |
+| Attributes | Type     | Description                                    |
+| ---------- | -------- | ---------------------------------------------- |
+| callback   | Function | Callback để catch unhandle reject của Promise. |

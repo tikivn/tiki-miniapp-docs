@@ -1,11 +1,5 @@
 ---
-order: 80
-category:
-  vi-VN: Pull down to refresh
-  en-US: Pull down to refresh
-title: 
-  vi-VN: my.startPullDownRefresh
-  en-US: my.startPullDownRefresh
+title: my.startPullDownRefresh
 ---
 
 ## Giới thiệu
@@ -14,8 +8,8 @@ title:
 
 Tuy nhiên hàm `my.startPullDownRefresh` chỉ hoạt động khi thoả mãn 2 điều kiện:
 
-- Trong `app.json` `allowsBounceVertical` phải set = `YES` hoặc không cần set vì đã được set mặc định  
-  
+- Trong `app.json` `allowsBounceVertical` phải set = `YES` hoặc không cần set vì đã được set mặc định
+
 ```json
 {
   "window": {
@@ -33,7 +27,7 @@ Tuy nhiên hàm `my.startPullDownRefresh` chỉ hoạt động khi thoả mãn 2
 { "pullRefresh": true }
 ```
 
- Vì vây muốn disable tính năng pull to refresh chỉ cần set `allowsBounceVertical` thành `NO` hoặc `pullRefresh` thành `false`
+Vì vây muốn disable tính năng pull to refresh chỉ cần set `allowsBounceVertical` thành `NO` hoặc `pullRefresh` thành `false`
 
 ## Sử dụng
 
@@ -43,8 +37,8 @@ Tuy nhiên hàm `my.startPullDownRefresh` chỉ hoạt động khi thoả mãn 2
 
 ```json
 {
-    "defaultTitle": "Pull down to refresh",
-    "pullRefresh": true
+  "defaultTitle": "Pull down to refresh",
+  "pullRefresh": true
 }
 ```
 
@@ -82,8 +76,8 @@ Page({
 
 ### Chi tiết
 
-| Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
-| ------- | --------------- | ------- | --------------- |
-| success | Function | No | Callback khi pull down animation trigger success |
-| fail | Function | No | Callback khi pull down animation trigger fail |
-| complete | Function | No | Callback sau khi pull down animation trigger  |
+| Thuộc tính | Kiểu dữ liệu | Required | Mô tả                                            |
+| ---------- | ------------ | -------- | ------------------------------------------------ |
+| success    | Function     | No       | Callback khi pull down animation trigger success |
+| fail       | Function     | No       | Callback khi pull down animation trigger fail    |
+| complete   | Function     | No       | Callback sau khi pull down animation trigger     |

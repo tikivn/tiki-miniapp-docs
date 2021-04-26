@@ -1,11 +1,5 @@
 ---
-order: 91
-category:
-  vi-VN: Thanh điều hướng
-  en-US: Navigation Bar
-title:
-  vi-VN: my.hideBackHome 
-  en-US: my.hideBackHome 
+title: my.hideBackHome
 ---
 
 ## Giới thiệu
@@ -19,12 +13,13 @@ title:
 ```js
 Page({
   onReady() {
-    my.hideBackHome({hide: true});
-  },
+    my.hideBackHome({ hide: true });
+  }
 });
 ```
 
 ### API Params
-| Property        | Type     | Required | Description                                                                                   |
-| --------------- | -------- | ------------- | ---------------------------------------------------------------------------------------- |
-| hide            | Boolean  |     Yes       | set = true nếu muốn hide back button, set = false nếu muốn show lại back button          |
+
+| Property | Type    | Required | Description                                                                     |
+| -------- | ------- | -------- | ------------------------------------------------------------------------------- |
+| hide     | Boolean | Yes      | set = true nếu muốn hide back button, set = false nếu muốn show lại back button |

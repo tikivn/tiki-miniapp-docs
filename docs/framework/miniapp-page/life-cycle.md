@@ -1,12 +1,4 @@
----
-order: 23
-category:
-  vi-VN: Miniapp Page
-  en-US: Miniapp Page
-title:
-  vi-VN: Life cycle
-  en-US: Life cycle
----
+# Life cycle
 
 Các hàm life cycle của Page được gọi bởi Framework tại những thời điểm nhất định.
 Hình vẽ sau mô tả các thời điểm này

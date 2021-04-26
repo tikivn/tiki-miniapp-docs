@@ -1,11 +1,5 @@
 ---
-order: 101
-category:
-  vi-VN: Tab Bar
-  en-US: Tab Bar
-title:
-  vi-VN: my.removeTabBarBadge
-  en-US: my.removeTabBarBadge
+title: my.removeTabBarBadge
 ---
 
 ## Giới thiệu
@@ -18,7 +12,7 @@ title:
 
 ```js
 my.removeTabBarBadge({
-  index: 0,
+  index: 0
 });
 ```
 

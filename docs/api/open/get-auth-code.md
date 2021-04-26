@@ -1,11 +1,5 @@
 ---
-order: 20
-category:
-  vi-VN: Tiki Open APIs
-  en-US: Tiki Open APIs
-title:
-  vi-VN: my.getAuthCode
-  en-US: my.getAuthCode
+title: my.getAuthCode
 ---
 
 ## Giới thiệu
@@ -24,9 +18,9 @@ Page({
   getAuthCode() {
     my.getAuthCode({
       success: (res) => {},
-      fail: (res) => {},
+      fail: (res) => {}
     });
-  },
+  }
 });
 ```
 

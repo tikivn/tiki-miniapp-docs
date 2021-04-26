@@ -1,0 +1,16 @@
+.button {
+  height: 32px;
+  padding: 4px 16px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #ebebf0;
+  text-align: center;
+  outline: 0;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--brand);
+  }
+}

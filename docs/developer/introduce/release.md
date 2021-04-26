@@ -1,11 +1,5 @@
 ---
-order: 13
-category:
-  vi-VN: Hướng dẫn nhà phát triển 
-  en-US: MiniApp Development Guide
-title: 
-  vi-VN: Quy trình review, release và vận hành
-  en-US: Review, release & operation
+title: Quy trình review, release và vận hành
 ---
 
 ## Giới thiệu
@@ -24,7 +18,7 @@ Có hai loại trạng thái phát hành:
 
 ## Trạng thái của ứng dụng
 
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/90/1c/96/20bf71c4abe5e2e75d61ee6ce55c9830.jpg"/>
+<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/90/1c/96/20bf71c4abe5e2e75d61ee6ce55c9830.jpg"/>
 
 | Status | Description |
 | - | ------ |
@@ -38,7 +32,7 @@ Có hai loại trạng thái phát hành:
 
 Bên cạnh trạng thái của bản cập nhật sẽ có thêm thông tin phụ cho biết tình trạng đăng tải của các Builds. Một bản cập nhật có thể có nhiều builds và chỉ một build duy nhất được phân bối đến người dùng cuối.
 
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/social/35/18/80/117bbbf7daf9a3a3b3e1a17473207fa3.jpg"/>
+<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/35/18/80/117bbbf7daf9a3a3b3e1a17473207fa3.jpg"/>
 
 ### App Version
 
@@ -65,11 +59,11 @@ Bên cạnh trạng thái của bản cập nhật sẽ có thêm thông tin ph�
 
 B1: Tại trang chi tiết của một ứng dụng, chọn xem chi tiết một phiên bản bằng cách bấm **Xem**
 
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/upload/19/d6/c2/0a4b6f53dd4fe8bed130daa316ebd19c.png" />
+<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/upload/19/d6/c2/0a4b6f53dd4fe8bed130daa316ebd19c.png" />
 
 B2: Tại trang chi tiết của một bản cập nhật, liệt kê các bản Builds đã được đăng tải bao gồm: Build number, Trạng thái đăng tải, Người đăng tải...
 
-<img style="width: 100%" src="https://salt.tikicdn.com/ts/upload/73/64/1c/a65373c67e8a1ae6465234e562b01089.png" />
+<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/upload/73/64/1c/a65373c67e8a1ae6465234e562b01089.png" />
 
 B3 (optional): Nhập thông tin mô tả (nếu có) cho ứng dụng tương ứng với bản cập nhật mới. Trường hợp không có thay đổi, thông tin hiển thị ra ngoài sẽ giữ nguyên.
 

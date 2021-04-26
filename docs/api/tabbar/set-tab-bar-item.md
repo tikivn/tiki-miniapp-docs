@@ -1,11 +1,5 @@
 ---
-order: 101
-category:
-  vi-VN: Tab Bar
-  en-US: Tab Bar
-title:
-  vi-VN: my.setTabBarItem (chưa ready)
-  en-US: my.setTabBarItem (chưa ready)
+title: my.setTabBarItem (chưa ready)
 ---
 
 ## Giới thiệu
@@ -19,9 +13,9 @@ title:
 ```js
 my.setTabBarItem({
   index: 0,
-  text: "text",
-  iconPath: "/image/iconPath",
-  selectedIconPath: "/image/selectedIconPath",
+  text: 'text',
+  iconPath: '/image/iconPath',
+  selectedIconPath: '/image/selectedIconPath'
 });
 ```
 

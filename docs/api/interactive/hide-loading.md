@@ -1,11 +1,5 @@
 ---
-order: 64
-category:
-  vi-VN: Interactive Feedback
-  en-US: Interactive Feedback
-title: 
-  vi-VN: my.hideLoading
-  en-US: my.hideLoading
+title: my.hideLoading
 ---
 
 ## Giới thiệu
@@ -35,18 +29,18 @@ my.hideLoading là api để hide loading.
 ```js
 Page({
   onLoading() {
-    my.showLoading({ content: "Loading..." });
+    my.showLoading({ content: 'Loading...' });
     setTimeout(() => {
       my.hideLoading();
     }, 5000);
   }
-})
+});
 ```
 
 ### Chi tiết
 
-| Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
-| ------- | --------------- | ------- | --------------- |
-| success | Function | No | Callback khi loading hide success |
-| fail | Function | No | Callback khi loading hide fail |
-| complete | Function | No | Callback khi loading đã được hide |
+| Thuộc tính | Kiểu dữ liệu | Required | Mô tả                             |
+| ---------- | ------------ | -------- | --------------------------------- |
+| success    | Function     | No       | Callback khi loading hide success |
+| fail       | Function     | No       | Callback khi loading hide fail    |
+| complete   | Function     | No       | Callback khi loading đã được hide |

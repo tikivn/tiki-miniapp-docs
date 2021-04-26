@@ -1,11 +1,5 @@
 ---
-order: 16
-category:
-  vi-VN: Thành phần cơ bản
-  en-US: Basic components
-title:
-  vi-VN: switch
-  en-US: switch
+title: switch
 ---
 
 ## Giới thiệu
@@ -52,8 +46,8 @@ title:
 ```js
 Page({
   onChange(e) {
-    console.log("onChange", e);
-  },
+    console.log('onChange', e);
+  }
 });
 ```
 
@@ -76,7 +70,4 @@ Page({
 | onChange   | event   | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { checked: checked }` |
 | controlled | boolean | Nếu giá trị là true, thì component chỉ thay đổi thông qua `setData`             |
 
-```__react
-import image from '../../../theme/static/images/switch-component.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Switch" src={image}/>, mountNode);
-```
+<img style={{maxWidth: 414}} alt="Tab" src="/img/switch-component.png"/>

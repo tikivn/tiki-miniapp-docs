@@ -1,0 +1,132 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
+
+:root {
+  --brand: #1a94ff;
+
+  --ifm-color-primary: #1b6bff;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+
+  --ifm-navbar-background-color: #0b73e3;
+  --ifm-navbar-height: 72px;
+  --ifm-navbar-link-color: #fff;
+  --ifm-navbar-link-hover-color: #fff;
+
+  --ifm-navbar-search-input-background-color: #fff;
+  --ifm-navbar-search-input-icon: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 5C7.68629 5 5 7.68629 5 11C5 14.3137 7.68629 17 11 17C14.3137 17 17 14.3137 17 11C17 7.68629 14.3137 5 11 5ZM3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11Z' fill='%2381818A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.2929 15.2929C15.6834 14.9024 16.3166 14.9024 16.7071 15.2929L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L15.2929 16.7071C14.9024 16.3166 14.9024 15.6834 15.2929 15.2929Z' fill='%2381818A'/%3E%3C/svg%3E%0A");
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.navbar {
+  box-shadow: none;
+}
+
+.navbar__search-input {
+  height: 40px;
+  outline: none;
+  padding: 0 30px 0 40px;
+  background: var(--ifm-navbar-search-input-background-color)
+    var(--ifm-navbar-search-input-icon) no-repeat 12px center / 24px 24px;
+  &::placeholder {
+    color: #81818a;
+  }
+}
+
+.dropdown--right {
+  .navbar__link {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: solid 1px #fff;
+    svg {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
+    &:hover {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  font-weight: 500;
+  &:after {
+    content: "";
+    display: flex;
+    width: calc(100% + 20px);
+    height: 2px;
+    margin-top: -2px;
+    margin-left: -10px;
+    margin-right: -10px;
+    position: relative;
+    top: 16px;
+    background: #fff;
+  }
+}
+
+@media (max-width: 996px) {
+  .navbar__items {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .navbar__toggle {
+    path {
+      stroke: #fff;
+    }
+  }
+  .menu__link {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+    svg {
+      display: none;
+    }
+  }
+  .navbar__link:hover,
+  .navbar__link--active {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.markdown {
+  table {
+    border-collapse: collapse;
+    display: table;
+    width: 100%;
+  }
+}

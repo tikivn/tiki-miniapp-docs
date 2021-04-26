@@ -1,11 +1,5 @@
 ---
-order: 93
-category:
-  vi-VN: Thanh điều hướng
-  en-US: Navigation Bar
-title:
-  vi-VN: my.setNavigationBar
-  en-US: my.setNavigationBar
+title: my.setNavigationBar
 ---
 
 ## Giới thiệu
@@ -28,15 +22,15 @@ Page({
       title,
       backgroundColor,
       borderBottomColor,
-      image,
+      image
     });
   },
   resetNavigationBar() {
     my.setNavigationBar({
       reset: true,
-      title: "Navigation Bar",
+      title: 'Navigation Bar'
     });
-  },
+  }
 });
 ```
 

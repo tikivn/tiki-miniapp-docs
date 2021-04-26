@@ -1,11 +1,5 @@
 ---
-order: 20
-category:
-  vi-VN: Tiki Open APIs
-  en-US: Tiki Open APIs
-title:
-  vi-VN: my.getUserInfo
-  en-US: my.getUserInfo
+title: my.getUserInfo
 ---
 
 ## Giới thiệu
@@ -21,9 +15,9 @@ Page({
   getTitleColor() {
     my.getUserInfo({
       success: (res) => {},
-      fail: (res) => {},
+      fail: (res) => {}
     });
-  },
+  }
 });
 ```
 

@@ -1,11 +1,5 @@
 ---
-order: 14
-category:
-  vi-VN: Thành phần cơ bản
-  en-US: Basic components
-title:
-  vi-VN: radio-group
-  en-US: radio-group
+title: radio-group
 ---
 
 ## Giới thiệu
@@ -42,12 +36,12 @@ Page({
       { name: 'polymer', value: 'Polymer' },
       { name: 'vue', value: 'Vue.js' },
       { name: 'ember', value: 'Ember.js' },
-      { name: 'backbone', value: 'Backbone.js', disabled: true },
-    ],
+      { name: 'backbone', value: 'Backbone.js', disabled: true }
+    ]
   },
   onChange(e) {
     console.log('onChange', e);
-  },
+  }
 });
 ```
 

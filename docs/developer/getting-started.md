@@ -1,8 +1,5 @@
 ---
-order: 0
-title:
-  vi-VN: Bắt đầu
-  en-US: Getting Started
+title: Bắt đầu
 ---
 
 Tiki MiniApp là giải pháp hoàn toàn mới và hiện đại giúp cho các đối tác của Tiki có thể dễ dàng, nhanh chóng và ít tốn kém phát triển ứng dụng và dịch vụ của mình trên nền tảng của Tiki. Nhờ đó các doanh nghiệp có thể tập trung vào dịch vụ cốt lõi của mình và mang tới sản phẩm cũng như dịch vụ tốt nhất cho khách hàng, trong khi vẫn thừa hưởng được tất cả lợi ích của việc chuyển đổi số.

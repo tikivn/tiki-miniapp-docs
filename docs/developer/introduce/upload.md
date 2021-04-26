@@ -1,12 +1,5 @@
 ---
-order: 12
-section: 'developer'
-category:
-  vi-VN: Hướng dẫn nhà phát triển 
-  en-US: MiniApp Development Guide
-title: 
-  vi-VN: Quy trình đăng tải ứng dụng
-  en-US: Upload MiniApp Process
+title: Quy trình đăng tải ứng dụng
 ---
 
 ## Sử dụng App ID

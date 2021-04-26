@@ -1,15 +1,8 @@
 ---
----
-order: 22
-category:
-  vi-VN: View containers
-  en-US: View containers
-title:
-  vi-VN: carousel
-  en-US: carousel
+title: carousel
 ---
 
-### Giới thiệu
+## Giới thiệu
 
 `carousel` là một container componet hỗ trợ các hiệu ứng lướt cho các phần tử bên trong.
 
@@ -42,7 +35,7 @@ Page({
   data: {},
   onChange(e) {
     console.log('onChange :>> ', e);
-  },
+  }
 });
 ```
 

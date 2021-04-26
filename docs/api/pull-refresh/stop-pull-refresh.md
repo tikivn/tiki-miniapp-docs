@@ -1,11 +1,5 @@
 ---
-order: 81
-category:
-  vi-VN: Pull down to refresh
-  en-US: Pull down to refresh
-title: 
-  vi-VN: my.stopPullDownRefresh
-  en-US: my.stopPullDownRefresh
+title: my.stopPullDownRefresh
 ---
 
 ## Giới thiệu
@@ -20,8 +14,8 @@ title:
 
 ```json
 {
-    "defaultTitle": "Pull down to refresh",
-    "pullRefresh": true
+  "defaultTitle": "Pull down to refresh",
+  "pullRefresh": true
 }
 ```
 
@@ -59,8 +53,8 @@ Page({
 
 ### Chi tiết
 
-| Thuộc tính     | Kiểu dữ liệu  | Required | Mô tả |
-| ------- | --------------- | ------- | --------------- |
-| success | Function | No | Callback khi stop pull down animation trigger success |
-| fail | Function | No | Callback khi stop pull down animation trigger fail |
-| complete | Function | No | Callback sau khi stop pull down animation  |
+| Thuộc tính | Kiểu dữ liệu | Required | Mô tả                                                 |
+| ---------- | ------------ | -------- | ----------------------------------------------------- |
+| success    | Function     | No       | Callback khi stop pull down animation trigger success |
+| fail       | Function     | No       | Callback khi stop pull down animation trigger fail    |
+| complete   | Function     | No       | Callback sau khi stop pull down animation             |

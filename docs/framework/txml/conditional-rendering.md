@@ -1,12 +1,4 @@
----
-order: 22
-category:
-  vi-VN: TXML
-  en-US: TXML
-title:
-  vi-VN: Render có điều kiện
-  en-US: Conditional rendering
----
+# Render có điều kiện
 
 ## tiki:if
 

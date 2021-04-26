@@ -1,11 +1,7 @@
 ---
-order: 44
-category:
-  vi-VN: Component
-  en-US: Component
-title:
-  vi-VN: Life cycle
-  en-US: Life cycle
+sidebar_label: Component
+sidebar_position: 3
+title: Life cycle
 ---
 
 Các hàm life cycle của Custom Component được gọi bởi Framework tại những thời điểm nhất định.
@@ -37,14 +33,14 @@ Ví dụ 1
 // /components/index/index.js
 Component({
   data: {
-    counter: 0,
+    counter: 0
   },
   onInit() {
     this.setData({
       counter: 1,
-      is: this.is,
+      is: this.is
     });
-  },
+  }
 });
 ```
 
@@ -69,7 +65,7 @@ Component({
   onInit() {
     this.xxx = 2;
     this.data = { counter: 0 };
-  },
+  }
 });
 ```
 
@@ -98,15 +94,15 @@ Hàm này được gọi sau khi Component nhận các `data` và `props` mới.
 // /components/index/index.js
 Component({
   data: {
-    counter: 5,
+    counter: 5
   },
   deriveDataFromProps(nextProps) {
     if (this.data.counter < nextProps.pCounter) {
       this.setData({
-        counter: nextProps.pCounter,
+        counter: nextProps.pCounter
       });
     }
-  },
+  }
 });
 ```
 
@@ -119,11 +115,11 @@ Component({
 // /pages/index/index.js
 Page({
   data: {
-    counter: 1,
+    counter: 1
   },
   plus() {
     this.setData({ counter: this.data.counter + 1 });
-  },
+  }
 });
 ```
 
@@ -143,13 +139,13 @@ Component({
   didMount() {
     let that = this;
     my.httpRequest({
-      url: "http://httpbin.org/post",
-      success: function(res) {
+      url: 'http://httpbin.org/post',
+      success: function (res) {
         console.log(res);
-        that.setData({ name: "hello tiki" });
-      },
+        that.setData({ name: 'hello tiki' });
+      }
     });
-  },
+  }
 });
 ```
 
@@ -162,7 +158,7 @@ Component({
   data: {},
   didUpdate(prevProps, prevData) {
     console.log(prevProps, this.props, prevData, this.data);
-  },
+  }
 });
 ```
 
@@ -180,7 +176,7 @@ Component({
   data: {},
   didUnmount() {
     console.log(this);
-  },
+  }
 });
 ```
 
@@ -198,8 +194,8 @@ Component({
   },
   methods: {
     triggerError() {
-      throw new Error("i am custom error");
-    },
-  },
+      throw new Error('i am custom error');
+    }
+  }
 });
 ```

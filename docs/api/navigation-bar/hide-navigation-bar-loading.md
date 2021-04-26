@@ -1,11 +1,5 @@
 ---
-order: 92
-category:
-  vi-VN: Thanh điều hướng
-  en-US: Navigation Bar
-title:
-  vi-VN: my.hideNavigationBarLoading
-  en-US: my.hideNavigationBarLoading
+title: my.hideNavigationBarLoading
 ---
 
 ## Giới thiệu
@@ -15,7 +9,9 @@ title:
 ## Sử dụng
 
 ### Sample Code
+
 **index.txml**
+
 ```xml
 <view>
   <view class="block-content">
@@ -26,6 +22,7 @@ title:
 ```
 
 **index.js**
+
 ```js
 Page({
   showLoading() {
@@ -33,6 +30,6 @@ Page({
   },
   hideLoading() {
     my.hideNavigationBarLoading();
-  },
+  }
 });
 ```

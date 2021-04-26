@@ -1,11 +1,5 @@
 ---
-order: 101
-category:
-  vi-VN: Tab Bar
-  en-US: Tab Bar
-title:
-  vi-VN: my.hideTabBarRedDot
-  en-US: my.hideTabBarRedDot
+title: my.hideTabBarRedDot
 ---
 
 ## Giới thiệu
@@ -18,7 +12,7 @@ title:
 
 ```js
 my.hideTabBarRedDot({
-  index: 0,
+  index: 0
 });
 ```
 

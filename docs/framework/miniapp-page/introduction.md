@@ -1,14 +1,7 @@
----
-order: 20
-category:
-  vi-VN: Miniapp Page
-  en-US: Miniapp Page
-title:
-  vi-VN: Giới thiệu về Miniapp Page
-  en-US: Miniapp Page introduction
----
+# Giới thiệu về Page
 
-Miniapp page là 1 instance đại diện cho các pages của app. Mỗi page được chia thành 1 folder và có 4 thành phần `txml`, `tcss`, `js` và `json`.
+Page là 1 instance đại diện cho các pages của app. Mỗi page được chia thành 1 folder và có 4 thành phần `txml`, `tcss`, `js` và `json`.
+
 - index.js: chứa code logic của Page
 - index.txml: chứa code về layout của Page
 - index.tcss: chứa code về style của Page
@@ -22,8 +15,8 @@ Khởi tạo data cho page
 Page({
   data: {
     title: 'Tiki',
-    array: [{user: 'Alex'}, {user: 'Lucy'}],
-  },
+    array: [{ user: 'Alex' }, { user: 'Lucy' }]
+  }
 });
 ```
 
@@ -40,14 +33,15 @@ Handle event cho page
 ```xml
 <view onTap="handleTap">click me</view>
 ```
-Khi user click button `click me`, function `handleTap` sẽ được trigger. 
+
+Khi user click button `click me`, function `handleTap` sẽ được trigger.
 Xử lí event ở file **index.js**
 
 ```js
 Page({
   handleTap() {
     console.log('yo! view tap!');
-  },
+  }
 });
 ```
 
@@ -61,12 +55,12 @@ Giả sử chúng ta muốn rerender lại page, sử dụng hàm this.setData()
 ```js
 Page({
   data: {
-    text: 'init data',
+    text: 'init data'
   },
   changeText() {
     this.setData({
-      text: 'changed data',
+      text: 'changed data'
     });
-  },
+  }
 });
 ```
