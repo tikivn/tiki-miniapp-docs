@@ -12,5 +12,3 @@ Ví dụ: Cố gắng không bật hộp thoại quảng cáo ngay sau khi ngư�
 Trải nghiệm phải đáp ứng kỳ vọng của người dùng, tránh các vấn đề bên ngoài dự đoán của người dùng làm gián đoạn quyết định của họ.
 
 <img className="img-basic" src="https://salt.tikicdn.com/ts/social/cf/e9/44/a076a65a9a463af4c23ca10e6cac117a.png" alt="smooth" />
-
-<br />

@@ -17,15 +17,15 @@ Vùng được thiết kế cho những icon dạng bình thường là 16 x 16p
 Vùng được thiết kế cho những icon đặc biệt như hình tròn hoặc icon quan trọng là 20 x 20px, bằng với Live area của một icon. <br />
 <img className="img-basic" src="https://salt.tikicdn.com/ts/social/6e/cd/0a/65e110e4a4a2646b75f2c264ff477ed4.png" alt="normal icon" />
 
----
 
 ---
+
 
 ## Các dạng icon
 
 ### Dạng nét
 
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/9b/1b/79/2b4de89a0e44b329bcb6b81836a976f9.png" alt="line icon" />
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/9b/1b/79/2b4de89a0e44b329bcb6b81836a976f9.png" alt="line icon" width="160px"/>
 
 #### Cách dùng
 
@@ -43,7 +43,7 @@ Bộ icon dạng nét là bộ icon sử dụng chính trong Tiny. Icon nét đ�
 
 ### Dạng mảng
 
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/ec/9c/42/7bd49b1602da727010533c372517d6e8.png" alt="glyph icon" />
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/ec/9c/42/7bd49b1602da727010533c372517d6e8.png" alt="glyph icon" width="160px"/>
 
 #### Cách dùng
 

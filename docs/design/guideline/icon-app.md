@@ -6,7 +6,7 @@ Biểu trưng của Tini App sẽ được hiển thị trên màn hình Tini Ap
 
 ## Những quy định về hình tải lên
 
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/32/70/61/80b0b8a963d34dfc33e2e6b70d79b12b.png" alt="logo" /> <br />
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/32/70/61/80b0b8a963d34dfc33e2e6b70d79b12b.png" alt="logo" width="500px"/> <br />
 
 Kích thước tối thiểu: 600 x 600 px <br />
 Định dạng: png, jpg

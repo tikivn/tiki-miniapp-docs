@@ -33,6 +33,7 @@ We use [Inter typeface](https://fonts.google.com/specimen/Inter?preview.text_typ
 | 40px        | font-height-x-large  |
 | 32px        | font-height-large    |
 | 24px        | font-height-medium   |
+| 20px        | font-height-base     |
 | 16px        | font-height-small    |
 | 12px        | font-height-x-small  |
 
