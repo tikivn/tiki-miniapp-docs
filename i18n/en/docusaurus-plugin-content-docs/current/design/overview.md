@@ -22,7 +22,7 @@ The Tini Apps design team builds a design system for the Tini Apps platform base
 We use Figma tool to build the Tiny Design System with atomic design methodology.
 
 - [How to use Tiny Design System](/en/docs/design/figma/started)
-- [Design resources](/en/docs/design/figma/download) <br />
+- [Design resources](https://www.figma.com/community/file/958198956095698455/Tiny-design-system) <br />
 
 
 ---

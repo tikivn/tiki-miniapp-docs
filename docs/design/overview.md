@@ -21,7 +21,7 @@ Nhóm thiết kế Tini Apps đã xây dựng nên hệ thống thiết kế dà
 Chúng tôi sử dụng công cụ Figma để xây dựng nên hệ thống thiết kế Tiny với phương pháp thiết kế Atomic.
 
 - [Các sử dụng Tiny Design System](/docs/design/figma/started)
-- [File thiết kế](/docs/design/figma/download) <br />
+- [File thiết kế](https://www.figma.com/community/file/958198956095698455/Tiny-design-system) <br />
 
 
 ---
