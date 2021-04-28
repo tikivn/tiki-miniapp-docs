@@ -6,7 +6,7 @@ title: Tổng quan
 
 <img class="img-basic" src="https://salt.tikicdn.com/ts/social/ec/68/28/dd5ecb58d2e344fb98ceb9598c376ce8.png" alt="intro" width="48px" />
 
-Tiki viết tắt của “Tìm kiếm & Tiết kiệm”, hiện là trang mua sắm trực tuyến đáng tin cậy nhất trong lĩnh vực thương mai điện tử tại Việt Nam. Tronng thị trường e-commerce phát triển rất nhanh ở Việt Nam, chúng tôi là công ty đầu tiên cung cấp giải pháp công nghệ Tini Apps cho đối tác.
+Tiki viết tắt của “Tìm kiếm & Tiết kiệm”, hiện là trang mua sắm trực tuyến đáng tin cậy nhất trong lĩnh vực thương mai điện tử tại Việt Nam. Trong thị trường e-commerce phát triển rất nhanh ở Việt Nam, chúng tôi là công ty đầu tiên cung cấp giải pháp công nghệ Tini Apps cho đối tác.
 
 Nhóm thiết kế Tini Apps đã xây dựng nên hệ thống thiết kế dành riêng cho nền tảng Tini Apps dựa trên hệ thống thiết kế gốc từ Tiki với tên gọi là Tiny. Hệ thống thiết kế Tiny sẽ giúp các nhà thiết kế sản phẩm thống nhất về giao diện người dùng để tập trung vào trải nghiệm người dùng tốt hơn, cung cấp ý tưởng và sản phẩm nhanh hơn. <br />
 
