@@ -25,7 +25,7 @@ Vùng được thiết kế cho những icon đặc biệt như hình tròn ho�
 
 ### Dạng nét
 
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/9b/1b/79/2b4de89a0e44b329bcb6b81836a976f9.png" alt="line icon" width="160px"/>
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/9b/1b/79/2b4de89a0e44b329bcb6b81836a976f9.png" alt="line icon" width="100px"/>
 
 #### Cách dùng
 
@@ -43,7 +43,7 @@ Bộ icon dạng nét là bộ icon sử dụng chính trong Tiny. Icon nét đ�
 
 ### Dạng mảng
 
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/ec/9c/42/7bd49b1602da727010533c372517d6e8.png" alt="glyph icon" width="160px"/>
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/ec/9c/42/7bd49b1602da727010533c372517d6e8.png" alt="glyph icon" width="100px"/>
 
 #### Cách dùng
 

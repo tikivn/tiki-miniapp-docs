@@ -2,9 +2,9 @@
 title: Cách sử dụng
 ---
 
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/c2/bc/c5/4f02823afd77ccd272768c1578b077d9.png" alt="account" width="48px" />
-
 ## Cài đặt
+
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/c2/bc/c5/4f02823afd77ccd272768c1578b077d9.png" alt="account" width="48px" />
 
 ### 1. Tạo tài khoản Figma
 Nếu bạn chưa có tài khoản, vui lòng truy cập [www.figma.com](http://www.figma.com) để đăng ký. Nếu bạn cần trợ giúp về việc đăng ký, bạn có thể tìm hiểu cách thực hiện [tại đây](https://help.figma.com/hc/en-us/articles/360039811114-Create-a-Figma-account).
@@ -23,9 +23,9 @@ Bạn có thể tải file trực tiếp [tại đây](/docs/design/figma/downlo
 ---
 
 
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/33/d9/57/c84a51d1456d498f181f9fdeed565a8f.png" alt="account" width="48px" />
-
 ## Sử dụng
+
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/33/d9/57/c84a51d1456d498f181f9fdeed565a8f.png" alt="account" width="48px" />
 
 Nếu bạn là người dùng mới của Figma, bạn có thể tìm hiểu tại trang này [Getting Started help page](https://help.figma.com/hc/en-us/categories/360002051613-Getting-Started) hoặc xem những video hướng dẫn từ kênh Youtube [Beginner's Guide to Figma](https://www.youtube.com/watch?v=Cx2dkpBxst8&list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4&ab_channel=Figma).
 

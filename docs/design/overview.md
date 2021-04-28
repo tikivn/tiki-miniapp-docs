@@ -2,9 +2,9 @@
 title: Tổng quan
 ---
 
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/ec/68/28/dd5ecb58d2e344fb98ceb9598c376ce8.png" alt="intro" width="48px" />
+## Giới thiệu
 
-## **Giới thiệu**
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/ec/68/28/dd5ecb58d2e344fb98ceb9598c376ce8.png" alt="intro" width="48px" />
 
 Tiki viết tắt của “Tìm kiếm & Tiết kiệm”, hiện là trang mua sắm trực tuyến đáng tin cậy nhất trong lĩnh vực thương mai điện tử tại Việt Nam. Tronng thị trường e-commerce phát triển rất nhanh ở Việt Nam, chúng tôi là công ty đầu tiên cung cấp giải pháp công nghệ Tini Apps cho đối tác.
 
@@ -14,9 +14,9 @@ Nhóm thiết kế Tini Apps đã xây dựng nên hệ thống thiết kế dà
 ---
 
 
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/33/d9/57/c84a51d1456d498f181f9fdeed565a8f.png" alt="tool" width="48px" />
+## Công cụ và nguồn
 
-## **Công cụ và nguồn**
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/33/d9/57/c84a51d1456d498f181f9fdeed565a8f.png" alt="tool" width="48px" />
 
 Chúng tôi sử dụng công cụ Figma để xây dựng nên hệ thống thiết kế Tiny với phương pháp thiết kế Atomic.
 
@@ -27,9 +27,9 @@ Chúng tôi sử dụng công cụ Figma để xây dựng nên hệ thống thi
 ---
 
 
-<img class="img-basic" src="https://salt.tikicdn.com/ts/social/36/4c/7e/c269800a2d1aae270f123261b49c5112.png" alt="guidelines" width="48px" />
+## Các quy định trong thiết kế
 
-## **Các quy định trong thiết kế**
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/36/4c/7e/c269800a2d1aae270f123261b49c5112.png" alt="guidelines" width="48px" />
 
 Nguyên tắc thiết kế của Tiny:
 

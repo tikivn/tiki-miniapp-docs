@@ -4,9 +4,9 @@ category: Tiny design
 title: Overview
 ---
 
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/ec/68/28/dd5ecb58d2e344fb98ceb9598c376ce8.png" alt="intro" />
+## Introduction
 
-## **Introduction**
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/ec/68/28/dd5ecb58d2e344fb98ceb9598c376ce8.png" alt="intro" />
 
 Tiki (short for “Tìm kiếm & Tiết kiệm”, which means “Search & Save”) is Vietnam’s fastest and most trusted e-commerce platform. In an already fast-growing Vietnam e-commerce market, we are the first in the country to offer Tini Apps technology for partners. <br />
 The Tini Apps design team builds a design system for the Tini Apps platform based on the Tiki design system with the name Tiny. The Tiny Design System will help product designers to uniform the user interfaces to focus on a better user experience, deliver ideas and products faster. <br />
@@ -15,9 +15,9 @@ The Tini Apps design team builds a design system for the Tini Apps platform base
 ---
 
 
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/33/d9/57/c84a51d1456d498f181f9fdeed565a8f.png" alt="tool" />
+## Tool and resources
 
-## **Tool and resources**
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/33/d9/57/c84a51d1456d498f181f9fdeed565a8f.png" alt="tool" />
 
 We use Figma tool to build the Tiny Design System with atomic design methodology.
 
@@ -28,9 +28,9 @@ We use Figma tool to build the Tiny Design System with atomic design methodology
 ---
 
 
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/36/4c/7e/c269800a2d1aae270f123261b49c5112.png" alt="guidelines" />
+## Guidelines
 
-## **Guidelines**
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/36/4c/7e/c269800a2d1aae270f123261b49c5112.png" alt="guidelines" />
 
 Tiny design principles:
 

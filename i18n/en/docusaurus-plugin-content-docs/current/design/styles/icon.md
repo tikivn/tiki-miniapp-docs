@@ -27,7 +27,7 @@ Circle icon or prominent icon content is limited to the 20 x 20px live area, wit
 
 ### Line
 
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/9b/1b/79/2b4de89a0e44b329bcb6b81836a976f9.png" alt="line icon" width="160px"/>
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/9b/1b/79/2b4de89a0e44b329bcb6b81836a976f9.png" alt="line icon" width="100px"/>
 
 #### Usage
 
@@ -45,7 +45,7 @@ The line icon set is our main icon set. Line icons are used as:
 
 ### Glyph
 
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/ec/9c/42/7bd49b1602da727010533c372517d6e8.png" alt="glyph icon" width="160px"/>
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/ec/9c/42/7bd49b1602da727010533c372517d6e8.png" alt="glyph icon" width="100px"/>
 
 #### Usage
 

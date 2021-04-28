@@ -4,9 +4,9 @@ category: Design resources
 title: Getting started
 ---
 
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/c2/bc/c5/4f02823afd77ccd272768c1578b077d9.png" alt="account" />
-
 ## Setting it up
+
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/c2/bc/c5/4f02823afd77ccd272768c1578b077d9.png" alt="account" />
 
 ### 1. Create a Figma account
 
@@ -22,13 +22,13 @@ We published the Tiny Design System on the Figma community to help you easily co
 
 You can download the file [here](/docs/design/figma/download-en). After download, please enable the Tiny library in your Figma. If you need help, you can learn how to do it [here](https://help.figma.com/hc/en-us/articles/360038743434-Enable-libraries-in-drafts-teams-and-files).
 
----
 
 ---
 
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/33/d9/57/c84a51d1456d498f181f9fdeed565a8f.png" alt="account" width="48px" />
 
 ## Using it
+
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/33/d9/57/c84a51d1456d498f181f9fdeed565a8f.png" alt="account" width="48px" />
 
 If you are new to Figma I highly recommend visiting their [Getting Started help page](https://help.figma.com/hc/en-us/categories/360002051613-Getting-Started) or watching [Beginner's Guide to Figma](https://www.youtube.com/watch?v=Cx2dkpBxst8&list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4&ab_channel=Figma) on their YouTube channel.
 
