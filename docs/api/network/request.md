@@ -72,10 +72,6 @@ Page({
 | fail       | Function | No       | Callback function khi việc gọi network thất bại.                                                     |
 | complete   | Function | No       | Callback function khi việc gọi network kết thúc cho dù thành công hay thất bại.                      |
 
-#### Callback function payload
-
-TODO
-
 ### Return value
 
 API trả về network request task. Bạn có thể thực hiện huỷ việc gọi network thông qua network request task.
