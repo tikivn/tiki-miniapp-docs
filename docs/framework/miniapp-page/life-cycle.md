@@ -3,10 +3,7 @@
 Các hàm life cycle của Page được gọi bởi Framework tại những thời điểm nhất định.
 Hình vẽ sau mô tả các thời điểm này
 
-```__react
-import image from '../../../theme/static/images/page-lifecycle.png'
-ReactDOM.render(<img style={{width: '100%'}} alt="page-lifecycle" src={image}/>, mountNode);
-```
+<img style={{width: '100%'}} alt="page-lifecycle" src='/img/page-lifecycle.png'/>;
 
 | hàm               | tham số               | mô tả                                                              |
 | ----------------- | --------------------- | ------------------------------------------------------------------ |
