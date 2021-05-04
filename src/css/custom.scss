@@ -31,6 +31,8 @@
 
 body {
   font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .docusaurus-highlight-code-line {
@@ -119,10 +121,37 @@ body {
   }
 }
 
+header {
+  h1 {
+    font-size: 2rem !important;
+    line-height: 2.5rem !important;
+  }
+}
+
 .markdown {
   table {
     border-collapse: collapse;
     display: table;
     width: 100%;
+  }
+  h2 {
+    --ifm-h2-font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+  h3 {
+    --ifm-h3-font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  h4 {
+    --ifm-h4-font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  h5 {
+    --ifm-h5-font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  h6 {
+    --ifm-h2-font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
