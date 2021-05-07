@@ -71,6 +71,9 @@ module.exports = {
         {type: 'localeDropdown', position: 'right'},
       ],
     },
+    gtag: {
+      trackingID: 'UA-15036050-25',
+    },
   },
   plugins: [
     'docusaurus-plugin-sass',
@@ -80,6 +83,7 @@ module.exports = {
         hashed: true,
       },
     ],
+    '@docusaurus/plugin-google-gtag',
   ],
   presets: [
     [
