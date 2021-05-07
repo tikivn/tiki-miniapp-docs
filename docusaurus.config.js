@@ -83,7 +83,6 @@ module.exports = {
         hashed: true,
       },
     ],
-    '@docusaurus/plugin-google-gtag',
   ],
   presets: [
     [
