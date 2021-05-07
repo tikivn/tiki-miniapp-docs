@@ -11,15 +11,15 @@
     "message": "Quick Example",
     "description": "The label for category Ví dụ mẫu in sidebar developer"
   },
-  "sidebar.ide.category.Giao diện": {
+  "sidebar.studio.category.Giao diện": {
     "message": "Interface",
     "description": "The label for category Giao diện in sidebar ide"
   },
-  "sidebar.ide.category.Phát triển": {
+  "sidebar.studio.category.Phát triển": {
     "message": "Development",
     "description": "The label for category Phát triển in sidebar ide"
   },
-  "sidebar.ide.category.Debug": {
+  "sidebar.studio.category.Debug": {
     "message": "Debug",
     "description": "The label for category Debug in sidebar ide"
   },
