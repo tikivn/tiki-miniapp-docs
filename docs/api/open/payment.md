@@ -1,5 +1,0 @@
----
-title: my.payment
----
-
-TODO
