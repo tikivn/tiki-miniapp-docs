@@ -34,9 +34,7 @@ function Hero() {
             các công cụ được xây dựng sẵn của Tiki MiniApp.
           </p>
           <div className={styles.flexButtons}>
-            <Link
-              to="#"
-              className={[styles.secondaryButton]}>
+            <Link to="#" className={[styles.secondaryButton]}>
               Tải về Tini Studio
             </Link>
             <Link
@@ -170,8 +168,8 @@ function Studio() {
         triển, trình giả lập, debug, và upload app lên Tini Developer Center.
       </p>
       {[
-        ['Tìm hiểu công cụ cho nhà phát triển', '/docs/ide/overview'],
-        ['Tini Studio', '/docs/ide/overview'],
+        ['Tìm hiểu công cụ cho nhà phát triển', '/docs/studio/overview'],
+        ['Tini Studio', '/docs/studio/overview'],
       ].map((item, index) => (
         <RowItem key={index} text={item[0]} url={item[1]} />
       ))}
