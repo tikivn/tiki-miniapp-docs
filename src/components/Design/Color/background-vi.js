@@ -184,6 +184,18 @@ export default {
     [
       {
         type: 'color',
+        text: 'background-input-disable',
+        value: '#F5F5FA',
+      },
+      {
+        type: 'color',
+        text: 'gray10',
+        value: '#F5F5FA',
+      },
+    ],
+    [
+      {
+        type: 'color',
         text: 'background-button-solid-disable',
         value: '#EBEBF0',
       },
