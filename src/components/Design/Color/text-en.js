@@ -4,7 +4,7 @@ export default {
     [
       {
         "type": "color",
-        "text": "text-button-primary-default",
+        "text": "text-button-solid-default",
         "value": "#FFFFFF"
       },
       {
@@ -16,7 +16,7 @@ export default {
     [
       {
         "type": "color",
-        "text": "text-button-primary-disable",
+        "text": "text-button-solid-disable",
         "value": "#FFFFFF"
       },
       {
@@ -112,7 +112,7 @@ export default {
     [
       {
         "type": "color",
-        "text": "text-button-secondary-disable",
+        "text": "text-button-outline-disable",
         "value": "#C4C4CF"
       },
       {
@@ -124,7 +124,7 @@ export default {
     [
       {
         "type": "color",
-        "text": "text-button-tertiary-disable",
+        "text": "text-button-ghost-disable",
         "value": "#C4C4CF"
       },
       {
@@ -304,7 +304,7 @@ export default {
     [
       {
         "type": "color",
-        "text": "text-button-secondary-default",
+        "text": "text-button-outline-default",
         "value": "#1A94FF"
       },
       {
@@ -316,7 +316,7 @@ export default {
     [
       {
         "type": "color",
-        "text": "text-button-tertiary-default",
+        "text": "text-button-ghost-default",
         "value": "#1A94FF"
       },
       {

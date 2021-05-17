@@ -4,43 +4,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-button-primary-overlay-hover',
-        value: '#FFFFFF',
-      },
-      {
-        type: 'color',
-        text: 'white',
-        value: '#FFFFFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-button-primary-overlay-active',
-        value: '#FFFFFF',
-      },
-      {
-        type: 'color',
-        text: 'white',
-        value: '#FFFFFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
         text: 'background-input',
-        value: '#FFFFFF',
-      },
-      {
-        type: 'color',
-        text: 'white',
-        value: '#FFFFFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-switch-hover',
         value: '#FFFFFF',
       },
       {
@@ -220,7 +184,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-button-primary-disable',
+        text: 'background-button-solid-disable',
         value: '#EBEBF0',
       },
       {
@@ -388,48 +352,12 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-button-primary-default',
+        text: 'background-button-solid-default',
         value: '#1A94FF',
       },
       {
         type: 'color',
         text: 'brand',
-        value: '#1A94FF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-button-tertiary-overlay-hover',
-        value: '#1A94FF',
-      },
-      {
-        type: 'color',
-        text: 'brand 16%',
-        value: '#1A94FF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-button-tertiary-overlay-active',
-        value: '#1A94FF',
-      },
-      {
-        type: 'color',
-        text: 'brand 32%',
-        value: '#1A94FF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-selection-overlay-hover',
-        value: '#1A94FF',
-      },
-      {
-        type: 'color',
-        text: 'brand 16%',
         value: '#1A94FF',
       },
     ],
@@ -454,18 +382,6 @@ export default {
       {
         type: 'color',
         text: 'brand',
-        value: '#1A94FF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-switch-active-disable',
-        value: '#1A94FF',
-      },
-      {
-        type: 'color',
-        text: 'brand 40%',
         value: '#1A94FF',
       },
     ],
@@ -508,18 +424,6 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-list-overlay-hover',
-        value: '#1A94FF',
-      },
-      {
-        type: 'color',
-        text: 'brand 8%',
-        value: '#1A94FF',
-      },
-    ],
-    [
-      {
-        type: 'color',
         text: 'background-progress-active',
         value: '#1A94FF',
       },
@@ -527,6 +431,102 @@ export default {
         type: 'color',
         text: 'brand',
         value: '#1A94FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-button-solid-overlay-hover',
+        value: '#5CB3FF',
+      },
+      {
+        type: 'color',
+        text: 'blue50',
+        value: '#5CB3FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-switch-hover',
+        value: '#5CB3FF',
+      },
+      {
+        type: 'color',
+        text: 'blue50',
+        value: '#5CB3FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-button-solid-overlay-active',
+        value: '#94CDFF',
+      },
+      {
+        type: 'color',
+        text: 'blue40',
+        value: '#94CDFF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-switch-active-disable',
+        value: '#94CDFF',
+      },
+      {
+        type: 'color',
+        text: 'blue40',
+        value: '#94CDFF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-button-ghost-overlay-active',
+        value: '#C2E1FF',
+      },
+      {
+        type: 'color',
+        text: 'blue30',
+        value: '#C2E1FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-button-ghost-overlay-hover',
+        value: '#DBEEFF',
+      },
+      {
+        type: 'color',
+        text: 'blue20',
+        value: '#DBEEFF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-selection-overlay-hover',
+        value: '#DBEEFF',
+      },
+      {
+        type: 'color',
+        text: 'blue 20',
+        value: '#DBEEFF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-list-overlay-hover',
+        value: '#F0F8FF',
+      },
+      {
+        type: 'color',
+        text: 'blue10',
+        value: '#F0F8FF',
       },
     ],
   ],

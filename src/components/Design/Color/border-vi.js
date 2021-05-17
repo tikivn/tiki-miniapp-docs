@@ -4,43 +4,31 @@ export default {
     [
       {
         type: 'color',
-        text: 'border-button-secondary-overlay-hover',
-        value: '#FFFFFF',
+        text: 'border-button-ghost-overlay-hover',
+        value: '#5CB3FF',
       },
       {
         type: 'color',
-        text: 'white 32%',
-        value: '#FFFFFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'border-button-secondary-overlay-active',
-        value: '#FFFFFF',
-      },
-      {
-        type: 'color',
-        text: 'white 54%',
-        value: '#FFFFFF',
+        text: 'blue 50',
+        value: '#5CB3FF',
       },
     ],
     [
       {
         type: 'color',
-        text: 'border-button-secondary-disable',
-        value: '#EBEBF0',
+        text: 'border-button-ghost-overlay-active',
+        value: '#94CDFF',
       },
       {
         type: 'color',
-        text: 'gray20',
-        value: '#EBEBF0',
+        text: 'blue 40',
+        value: '#94CDFF',
       },
     ],
     [
       {
         type: 'color',
-        text: 'border-button-secondary-disable',
+        text: 'border-button-ghost-disable',
         value: '#EBEBF0',
       },
       {
@@ -160,7 +148,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'border-button-secondary-default',
+        text: 'border-button-ghost-default',
         value: '#1A94FF',
       },
       {
@@ -195,3 +183,4 @@ export default {
     ],
   ],
 };
+

@@ -4,7 +4,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'icon-button-primary-default',
+        text: 'icon-button-solid-default',
         value: '#FFFFFF',
       },
       {
@@ -16,7 +16,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'icon-button-primary-disable',
+        text: 'icon-button-solid-disable',
         value: '#FFFFFF',
       },
       {
@@ -88,7 +88,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'icon-button-secondary-disable',
+        text: 'icon-button-outline-disable',
         value: '#C4C4CF',
       },
       {
@@ -100,7 +100,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'icon-button-tertiary-disable',
+        text: 'icon-button-ghost-disable',
         value: '#C4C4CF',
       },
       {
@@ -208,7 +208,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'icon-button-secondary-default',
+        text: 'icon-button-outline-default',
         value: '#1A94FF',
       },
       {
@@ -220,7 +220,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'icon-button-tertiary-default',
+        text: 'icon-button-ghost-default',
         value: '#1A94FF',
       },
       {

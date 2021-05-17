@@ -148,6 +148,66 @@ export default {
     [
       {
         type: 'color',
+        text: 'blue 50',
+        value: '#5CB3FF',
+      },
+      {
+        type: 'color',
+        text: '#5CB3FF',
+        value: '#5CB3FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'blue 40',
+        value: '#94CDFF',
+      },
+      {
+        type: 'color',
+        text: '#94CDFF',
+        value: '#94CDFF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'blue 30',
+        value: '#C2E1FF',
+      },
+      {
+        type: 'color',
+        text: '#C2E1FF',
+        value: '#C2E1FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'blue 20',
+        value: '#DBEEFF',
+      },
+      {
+        type: 'color',
+        text: '#DBEEFF',
+        value: '#DBEEFF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'blue 10',
+        value: '#F0F8FF',
+      },
+      {
+        type: 'color',
+        text: '#F0F8FF',
+        value: '#F0F8FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
         text: 'success',
         value: '#2DC275',
       },
