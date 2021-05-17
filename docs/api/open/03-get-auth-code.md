@@ -1,5 +1,5 @@
 ---
-title: my.getAuthCode
+title: 'my.getAuthCode'
 ---
 
 ## Giới thiệu
