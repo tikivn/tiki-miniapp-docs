@@ -114,7 +114,7 @@ function Framework() {
           <h3 className={styles.headText}>Tini Framework</h3>
           <p className={styles.gray}>
             Tini Framework được thiết kế để cho phép các nhà phát triển xây dựng
-            ứng dụng với trải nghiệm native app trên nền tàng Tiki một cách dễ
+            ứng dụng với trải nghiệm native app trên nền tảng Tiki một cách dễ
             dàng và đa dạng tính năng nhất có thể.
           </p>
           {[
