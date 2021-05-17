@@ -168,7 +168,10 @@ function Studio() {
         triển, trình giả lập, debug, và upload app lên Tini Developer Center.
       </p>
       {[
-        ['Tìm hiểu công cụ cho nhà phát triển', '/docs/studio/overview'],
+        [
+          'Tìm hiểu công cụ cho nhà phát triển',
+          '/docs/developer/getting-started',
+        ],
         ['Tini Studio', '/docs/studio/overview'],
       ].map((item, index) => (
         <RowItem key={index} text={item[0]} url={item[1]} />
