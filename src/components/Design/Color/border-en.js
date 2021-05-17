@@ -4,30 +4,6 @@ export default {
     [
       {
         type: 'color',
-        text: 'border-button-ghost-overlay-hover',
-        value: '#5CB3FF',
-      },
-      {
-        type: 'color',
-        text: 'blue 50',
-        value: '#5CB3FF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'border-button-ghost-overlay-active',
-        value: '#94CDFF',
-      },
-      {
-        type: 'color',
-        text: 'blue 40',
-        value: '#94CDFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
         text: 'border-button-ghost-disable',
         value: '#EBEBF0',
       },
@@ -179,6 +155,30 @@ export default {
         type: 'color',
         text: 'brand',
         value: '#1A94FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'border-button-ghost-overlay-hover',
+        value: '#5CB3FF',
+      },
+      {
+        type: 'color',
+        text: 'blue50',
+        value: '#5CB3FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'border-button-ghost-overlay-active',
+        value: '#94CDFF',
+      },
+      {
+        type: 'color',
+        text: 'blue40',
+        value: '#94CDFF',
       },
     ],
   ],
