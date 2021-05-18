@@ -1,5 +1,5 @@
 ---
-title: Cách Tính Signature để gọi vào Backend
+title: Cách Tính Signature
 ---
 
 ## Signature Là Gì?
