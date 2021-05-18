@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{820:function(n,e){n.exports={content:["article",["p","Tổng quan về design components"]],meta:{order:0,category:{"vi-VN":"Patterns","en-US":"Patterns"},title:{"vi-VN":"Tổng quan về patterns","en-US":"Pattern Overview"},filename:"docs/design/patterns/patterns.md"},toc:["ul"]}}}]);

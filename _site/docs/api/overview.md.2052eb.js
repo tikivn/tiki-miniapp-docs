@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{805:function(e,n){e.exports={content:["article"],meta:{order:0,title:{"vi-VN":"Tổng quan về API","en-US":"API Overview"},filename:"docs/api/overview.md"},toc:["ul"]}}}]);

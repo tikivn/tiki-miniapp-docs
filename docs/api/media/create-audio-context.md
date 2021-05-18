@@ -11,7 +11,7 @@ title: my.createAudioContext
 ### Sample Code
 
 ```xml
-<audio id="audio1" src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_5MG.mp3" name="Sample Audio" author="Unknown" /
+<audio id="audio1" src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_5MG.mp3" name="Sample Audio" author="Unknown" />
 ```
 
 ```js

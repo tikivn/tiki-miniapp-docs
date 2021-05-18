@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{817:function(n,o){n.exports={content:["article",["p","Tổng quan về design components"]],meta:{order:0,category:{"vi-VN":"Components","en-US":"Components"},title:{"vi-VN":"Tổng quan vể components","en-US":"Components Overview"},filename:"docs/design/comps/comps.md"},toc:["ul"]}}}]);

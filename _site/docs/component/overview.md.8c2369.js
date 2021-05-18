@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{817:function(e,n){e.exports={content:["article"],meta:{order:0,title:{"vi-VN":"Tổng quan về Component","en-US":"Component Overview"},filename:"docs/component/overview.md"},toc:["ul"]}}}]);

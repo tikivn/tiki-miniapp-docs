@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{816:function(e,i){e.exports={content:["article"],meta:{order:0,title:{"vi-VN":"Tổng quan về MiniApp Studio","en-US":"MiniApp Studio Overview"},filename:"docs/ide/overview.md"},toc:["ul"]}}}]);

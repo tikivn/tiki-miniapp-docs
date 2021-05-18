@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{809:function(e,n){e.exports={content:["article",["p","Hướng dẫn quản lý tài khoản"]],meta:{order:0,category:{"vi-VN":"Hướng dẫn nhà phát triển","en-US":"MiniApp Development Guide"},title:{"vi-VN":"Quản lý tài khoản","en-US":"Member Management"},filename:"docs/developer/introduce/member.md"},toc:["ul"]}}}]);

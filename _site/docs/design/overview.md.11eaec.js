@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{819:function(e,n){e.exports={content:["article"],meta:{order:0,title:{"vi-VN":"Tổng quan về thiết kế","en-US":"Design Overview"},filename:"docs/design/overview.md"},toc:["ul"]}}}]);
