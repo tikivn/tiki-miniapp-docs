@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{815:function(e,n){e.exports={content:["article",["p","TODO"]],meta:{order:21,category:{"vi-VN":"Tiki Open APIs","en-US":"Tiki Open APIs"},title:{"vi-VN":"my.payment","en-US":"my.payment"},filename:"docs/api/open/payment.md"},toc:["ul"]}}}]);

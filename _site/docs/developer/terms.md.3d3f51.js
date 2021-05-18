@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{829:function(e,n){e.exports={content:["article"],meta:{order:3,title:{"vi-VN":"Khái niệm","en-US":"Terms"},filename:"docs/developer/terms.md"},toc:["ul"]}}}]);

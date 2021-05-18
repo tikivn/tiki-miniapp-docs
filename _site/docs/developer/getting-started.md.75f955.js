@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{807:function(e,t){e.exports={content:["article"],meta:{order:0,title:{"vi-VN":"Bắt đầu","en-US":"Getting Started"},filename:"docs/developer/getting-started.md"},toc:["ul"]}}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{813:function(e,n){e.exports={content:["article",["p","Hướng dẫn tạo MiniApp"]],meta:{order:0,category:{"vi-VN":"Ví dụ mẫu","en-US":"Quick Example"},title:{"vi-VN":"Tổng quan","en-US":"Overview"},filename:"docs/developer/quick-example/quick-example.md"},toc:["ul"]}}}]);
