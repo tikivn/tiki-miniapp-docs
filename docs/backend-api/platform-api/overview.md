@@ -10,7 +10,7 @@ Ngoài các APIs mà Tini App có thể thay mặt user gọi cho Tiki thì còn
 
 Các APIs của platform được thiết kế để gọi từ backend-2-backend. Để gọi được các API này thì bạn cần có client ID và client secret của Tini App của bạn. Hai thông tin này sẽ được lưu ở backend của bạn và dùng để gọi cho platform backend. Team Tini App platform chủ yếu sử dụng GraphQL APIs. Bạn có thể tìm hiểu thêm về GraphQL qua phần References ở dưới.
 
-_Khác với [Open APIs](open-api), platform API phải được gọi trực tiếp từ backend của Tini App vì chỉ có backend của Tini App mới có thể có secret để ký các request giữa Tini App Backend và platform backend_
+_Khác với [Open APIs](../open-api/overview), platform API phải được gọi trực tiếp từ backend của Tini App vì chỉ có backend của Tini App mới có thể có secret để ký các request giữa Tini App Backend và platform backend_
 
 ### Chú ý
 
@@ -23,9 +23,29 @@ _Khác với [Open APIs](open-api), platform API phải được gọi trực ti
 
 1. Xác định schema của API đó thông qua công cụ inspection của GraphQL
 
-1. Ký request của bạn dùng client secret
+1. Biết cách sign request của bạn với client secret
 
-Ví dụ API lấy access token
+Ví dụ [GraphQL API](https://graphql.org/) để lấy access token sẽ có dạng
+
+```graphql
+query {
+  get_auth_access_token(
+    input: {
+      code: "THUxTF3HmbPpGxmvDieTCX4kXcb601njUriFUET0RvY.eCZa27znIuM8JGC-IUSM-S_G_YrgP7OH8BTGdba706E"
+      client_id: "a1qvgyRzP9pMj0n5ulOG04fdelIHuNqB"
+      timestamp: 1620470539433
+      signature: "3ef20afed474d9368371fc8eaf4a529b39a7025b4863e1afbc13bdb6db8cc5f1"
+    }
+  ) {
+    access_token
+    refresh_token
+    expires_in
+    scopes
+  }
+}
+```
+
+Khi gọi API này với cURL sẽ như sau:
 
 ```bash
 # Endpoint này của Tiki sử dụng GraphQL API
@@ -55,7 +75,7 @@ Response:
 
 ### References
 
-- Tham khảo cách gọi Open APIs ở [đây](open-api)
+- Tham khảo cách gọi Open APIs ở [đây](../open-api/overview)
 - Tham khảo cách tính signature ở [đây](calculate-signature)
 - Tham khảo về GraphQL ở [đây](https://graphql.org/)
 

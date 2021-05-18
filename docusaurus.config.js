@@ -58,6 +58,12 @@ module.exports = {
         },
         {
           type: 'doc',
+          docId: 'backend-api/overview',
+          position: 'right',
+          label: 'Backend API',
+        },
+        {
+          type: 'doc',
           docId: 'studio/overview',
           position: 'right',
           label: 'Studio',

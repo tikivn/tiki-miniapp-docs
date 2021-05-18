@@ -304,6 +304,27 @@ module.exports = {
       ],
     },
   ],
+  'Backend API': [
+    'backend-api/overview',
+    {
+      type: 'category',
+      label: 'Open API',
+      items: [
+        'backend-api/open-api/overview',
+        'backend-api/open-api/user-profile',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Platform API',
+      items: [
+        'backend-api/platform-api/overview',
+        'backend-api/platform-api/calculate-signature',
+        'backend-api/platform-api/exchange-auth-token',
+        'backend-api/platform-api/payment',
+      ],
+    },
+  ],
   design: [
     {
       type: 'category',
