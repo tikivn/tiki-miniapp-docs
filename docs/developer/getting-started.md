@@ -26,4 +26,4 @@ Nếu bạn là nhà thiết kế sản phẩm:
 
 Để bắt đầu việc phát triển:
 
-- [Tìm hiểu công cụ cho nhà phát triển](/docs/ide/overview)
+- [Tìm hiểu công cụ cho nhà phát triển](/docs/stuio/overview)

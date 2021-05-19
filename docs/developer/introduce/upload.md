@@ -4,7 +4,7 @@ title: Quy trình đăng tải ứng dụng
 
 ## Sử dụng App ID
 
-Sau khi [tạo ứng dụng](/docs/developer/introduce/create) với App ID mong muốn, bạn sử dụng thông tin này cho project tạo với [Tiki MiniApp Studio](/docs/ide/overview). Thông qua việc tạo project mới hoặc sửa tập tin package.json:
+Sau khi [tạo ứng dụng](/docs/developer/introduce/create) với App ID mong muốn, bạn sử dụng thông tin này cho project tạo với [Tiki MiniApp Studio](/docs/studio/overview). Thông qua việc tạo project mới hoặc sửa tập tin package.json:
 
 <img alt="Tạo project mới" src="https://salt.tikicdn.com/ts/social/a6/73/d8/c2ddf82aa64a89863e9ab9dfaeee9c3e.jpg" width="100%" />
 <img alt="Sửa tập tin package.json" src="https://salt.tikicdn.com/ts/upload/cb/ca/e7/fbbf3160bfbbba86508991a1eb860ab0.jpg" width="100%" />
