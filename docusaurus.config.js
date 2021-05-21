@@ -60,7 +60,7 @@ module.exports = {
           type: 'doc',
           docId: 'backend-api/overview',
           position: 'right',
-          label: 'Backend API',
+          label: 'Server Side',
         },
         {
           type: 'doc',
