@@ -127,9 +127,9 @@ Page({
 
 ### Chi tiết
 
-| Thuộc tính   | Kiểu dữ liệu | Required | Mô tả                                                                                                                                                             |
-| ------------ | ------------ | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| duration     | Number       | No       | Thời gian để animation được thực hiện, mặc định là 400ms                                                                                                          |
-| timeFunction | String       | No       | Hiệu ứng để thực hiện animation, có thể nhận các giá trị: `linear`, `ease`, `ease-in`, `ease-out`, `ease-in-out`, `step-start`, `step-end`. Mặc định là `linear`. |
-| initialValue | Number       | No       | Giá trị khởi tạo của Animation Value. Mặc định là 0 .                                                                                                             |
-| value        | Number       | No       | Giá trị cuối cùng của Animation.                                                                                                                                  |
+| Thuộc tính      | Kiểu dữ liệu | Required | Mô tả                                                                                                                                                             |
+| --------------- | ------------ | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| duration        | Number       | No       | Thời gian để animation được thực hiện, mặc định là 400ms                                                                                                          |
+| timeFunction    | String       | No       | Hiệu ứng để thực hiện animation, có thể nhận các giá trị: `linear`, `ease`, `ease-in`, `ease-out`, `ease-in-out`, `step-start`, `step-end`. Mặc định là `linear`. |
+| delay           | Number       | No       | Animation delay time (in ms).                                                                                                                                     |
+| transformOrigin | string       | No       | Giá trị ban đầu của CSS transform.                                                                                                                                |
