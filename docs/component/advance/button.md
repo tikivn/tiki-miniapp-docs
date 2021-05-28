@@ -4,11 +4,7 @@ title: button
 
 ## Giới thiệu
 
-[Tiny Button](https://www.figma.com/file/C2Nq0TcxMbe0vvuVpLY4Gh/?node-id=549%3A6274) là advanced button component được Tiny UI Design System Community phát triển.
-Một button component cơ bản sẽ hiển thị đẹp trên bất kỳ nền tảng nào. Hỗ trợ các mức độ tùy chỉnh tối thiểu.
-
-Nếu button này không phù hợp với ứng dụng của bạn, bạn có thể tạo button của riêng mình bằng cách sử dụng component này hoặc button mặc định. 
-Hoặc, hãy xem các button component khác do cộng đồng xây dựng.
+[Tiny Button](https://www.figma.com/file/C2Nq0TcxMbe0vvuVpLY4Gh/?node-id=549%3A6274) là một button component được xây dựng dựa trên Design System của Tiki.
 
 
 <img alt="Tiki Tiny Button - Tiny UI Design System Community" src="https://i.imgur.com/O4p4xQG.png"/>
