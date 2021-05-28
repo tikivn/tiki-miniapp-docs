@@ -16,7 +16,7 @@ Hoặc, hãy xem các button component khác do cộng đồng xây dựng.
 
 ## Sử dụng
 
-### Sample Code:
+### Sample Code
 
 Khai báo components:
 > Khai báo dưới đây sẽ thay thế `<button/>` mặc định của framework. Nếu không muốn điều này xảy ra, bạn có thể sử dụng tên khác tùy ý.
@@ -41,134 +41,25 @@ Page({
   }
 });
 ```
- 
-## Props Reference
-<!-- Props Reference -->
-### `onTap`
+  
+### Chi tiết
 
-Trình xử lý được gọi khi người dùng nhấn vào nút.
+#### Props Reference
 
-| Type  |
-| :---- | 
-| function([EventObject](/docs/framework/event/event-object)) | 
+| Property | Type    | Default Value | Description                                       |
+| :------- | :------ | :------------ | ------------------------------------------------- |
+| onTap    | function([EventObject](/docs/framework/event/event-object)) | | Hàm xử lý được gọi khi người dùng nhấn vào nút. |
+| size     | enum('large', 'medium', 'small')  | `large` | Kích thước của button. |
+| type     | enum('solid', 'outline', 'ghost') | `solid` | Kiểu định sẵn của button. | 
+| shape    | enum('pill', 'rounded', 'circle') | `pill` | Hình dạng định sẵn của button. | 
+| disabled | bool | `false` | Nếu set về `true`, tắt tất cả interactions cho button. | 
+| skeleton  | bool | `false` | Nếu set về `true`, tắt tất cả interactions cho button và hiển thị default skeleton. | 
+| loading  | bool | `false` | Nếu set về `true`, tắt tất cả interactions cho button, hiển thị loading indicator. | 
+| iconName  | enum([icon:type](/docs/component/basic/icon)) | | Hiển thị một icon ở vị trí mặc định, icon sẽ bị ẩn nếu `loading` được đặt về `true`. Xem danh sách icon [tại đây](/docs/component/basic/icon). | 
+| formType  | [`formType`](/docs/component/basic/button) | | Xem [button:`formType`](/docs/component/basic/button). | 
+| class  | string | | Class của button. | 
+| style  | string | | Inline styles cho button. | 
 
----
-
-
-### `size`
-
-Kích thước của button.
-
-| Type                              | Default               |
-| :----                             | :-------------------- |
-| enum('large', 'medium', 'small')  | `large`               |
-
----
-
-
-### `type`
-
-
-Kiểu định sẵn của button.
-
-| Type                              | Default               |
-| :----                             | :-------------------- |
-| enum('solid', 'outline', 'ghost')  | `solid`               |
-
----
-
-
-### `shape`
-
-Hình dạng định sẵn của button.
-
-| Type                              | Default               |
-| :----                             | :-------------------- |
-| enum('pill', 'rounded', 'circle')  | `pill`               |
-
----
-
-
-### `disabled`
-
-Nếu set về `true`, tắt tất cả interactions cho button.
-
-| Type | Default |
-| :---- | :------- |
-| bool | `false` |
-
----
-
-
-### `skeleton`
-
-Nếu set về `true`, tắt tất cả interactions cho button và hiển thị default skeleton.
-
-| Type | Default |
-| :---- | :------- |
-| bool | `false` |
-
----
-
-
-### `loading`
-
-Nếu set về `true`, tắt tất cả interactions cho button, hiển thị loading indicator.
-
-| Type | Default |
-| :---- | :------- |
-| bool | `false` |
-
----
-
-
-### `disabled`
-
-Nếu set về `true`, tắt tất cả interactions cho button.
-
-| Type | Default |
-| :---- | :------- |
-| bool | `false` |
-
----
-
-
-### `iconName`
-
-Hiển thị một icon ở vị trí mặc định, icon sẽ bị ẩn nếu `loading` được đặt về `true`
-
-| Type  |
-| :---- | 
-| enum([icon:type](/docs/component/basic/icon)) | 
-
----
-
-
-### `formType`
-
-Xem [button:`formType`](/docs/component/basic/button)
-
----
-
-
-### `class`
-
-Class của button.
-
-| Type  |
-| :---- | 
-| string | 
-
----
-
-
-### `style`
-
-Inline styles cho button.
-
-| Type  |
-| :---- | 
-| string | 
-
----
-
+---   
+     
+  
