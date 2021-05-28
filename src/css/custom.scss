@@ -94,6 +94,12 @@ body {
   }
 }
 
+.navbar__item {
+  .dropdown__menu {
+    background-color: #fff;
+  }
+}
+
 @media (max-width: 996px) {
   .navbar__items {
     display: flex;
