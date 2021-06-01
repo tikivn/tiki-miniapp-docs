@@ -4,7 +4,7 @@ title: radio
 
 ## Giới thiệu
 
-`radio` dùng để chọn một giá trị
+`radio` dùng để chọn một giá trị. Để nhóm nhiều `radio` lại với nhau, bạn cần sử dụng [radio-group](/docs/component/form/radio-group)
 
 ## Sử dụng
 
@@ -38,9 +38,6 @@ Page({
       { name: 'ember', value: 'Ember.js' },
       { name: 'backbone', value: 'Backbone.js', disabled: true }
     ]
-  },
-  onChange(e) {
-    console.log('onChange', e);
   }
 });
 ```
@@ -80,12 +77,9 @@ Page({
 
 ### Chi tiết
 
-| Property | Type    | Description                                                                     |
-| -------- | ------- | ------------------------------------------------------------------------------- |
-| value    | string  | Giá trị của radio                                                               |
-| checked  | boolean | Chỉ định radio có được chọn hay không                                           |
-| disabled | boolean | Disable switch component                                                        |
-| color    | string  | Màu của component, sử dụng mã màu như trong css                                 |
-| onChange | event   | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { checked: checked }` |
-
-<img style={{maxWidth: 414}} alt="Tab" src="/img/radio-component.png"/>
+| Property | Type    | Description                                              |
+| -------- | ------- | -------------------------------------------------------- |
+| value    | string  | Giá trị của radio                                        |
+| checked  | boolean | Chỉ định radio có được chọn hay không. Mặc định là false |
+| disabled | boolean | Disable radio component                                  |
+| color    | string  | Màu của component, sử dụng mã màu như trong css          |

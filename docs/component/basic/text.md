@@ -81,5 +81,3 @@ Page({
 | --------------- | ------- | ------------- | ---------------------------------------------------------------------------------------------- |
 | selectable      | boolean | false         | Cho phép nội dung có thể được chọn hay không, nếu là true thì có thể chọn và sao chép nội dung |
 | number-of-lines | number  | null          | Số dòng tối đa mà nội dung trong text được hiển thị, nếu quá số dòng sẽ hiển thị ... ở cuối    |
-
-<img style={{maxWidth: 414}} alt="Tab" src="/img/text-component.png"/>

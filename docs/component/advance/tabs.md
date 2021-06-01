@@ -2,6 +2,8 @@
 title: tabs
 ---
 
+## Component đang được cập nhật. Vẫn chưa sẵn sàng để sử dụng
+
 ## Giới thiệu
 
 `tabs`

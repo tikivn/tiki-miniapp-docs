@@ -2,6 +2,8 @@
 title: badge
 ---
 
+## Component đang được cập nhật. Vẫn chưa sẵn sàng để sử dụng
+
 ## Giới thiệu
 
 Red dots, số hoặc kí tự, dùng để nhắc nhở cho user khi có update, hoặc hiển thị thông báo.
