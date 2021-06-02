@@ -35,7 +35,7 @@ Cung cấp các kiểu riêng biệt cho các phần tử tương tác, chẳng 
 ## 6. Cung cấp phản hồi dễ dàng nhận biết
 
 Cung cấp phản hồi cho các tương tác, chẳng hạn như xác nhận việc gửi biểu mẫu, cảnh báo người dùng khi có sự cố hoặc thông báo cho người dùng về các thay đổi trên màn hình. Hướng dẫn phải dễ dàng xác định. Phản hồi quan trọng yêu cầu hành động của người dùng phải được trình bày theo phong cách nổi bật. <br />
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/5a/86/80/7198ef84b92c03c907415d99b64e0ae6.png" alt="feedback" />
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/9c/d2/ab/35d174ef10ad93f045944acbc9919a95.png" alt="feedback" />
 
 ## 7. Sử dụng tiêu đề và khoảng cách để nhóm nội dung liên quan
 

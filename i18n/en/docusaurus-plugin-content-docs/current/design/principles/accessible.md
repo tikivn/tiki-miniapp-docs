@@ -36,7 +36,7 @@ Ensure that all fields have a descriptive label adjacent to the field. For left-
 ## 6. Provide easily identifiable feedback
 
 Provide feedback for interactions, such as confirming form submission, alerting the user when something goes wrong, or notifying the user of changes on the screen. Instructions should be easy to identify. Important feedback that requires user action should be presented in a prominent style. <br />
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/5a/86/80/7198ef84b92c03c907415d99b64e0ae6.png" alt="feedback" />
+<img className="img-basic" src="https://salt.tikicdn.com/ts/social/9c/d2/ab/35d174ef10ad93f045944acbc9919a95.png" alt="feedback" />
 
 ## 7. Use headings and spacing to group related content
 

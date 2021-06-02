@@ -6,7 +6,7 @@ title: Getting started
 
 ## Setting it up
 
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/c2/bc/c5/4f02823afd77ccd272768c1578b077d9.png" alt="account" />
+<img class="img-basic" src="https://salt.tikicdn.com/ts/social/c2/bc/c5/4f02823afd77ccd272768c1578b077d9.png" alt="account" width="48px" />
 
 ### 1. Create a Figma account
 
