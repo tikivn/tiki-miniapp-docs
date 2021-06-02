@@ -148,7 +148,10 @@ function Tiny() {
       </p>
       {[
         ['Tìm hiểu về Tiny', '/docs/design/overview'],
-        ['Tiny Figma', '/docs/design/figma/download'],
+        [
+          'Tiny Figma',
+          'https://www.figma.com/community/file/958198956095698455/Tini-design-system',
+        ],
       ].map((item, index) => (
         <RowItem key={index} text={item[0]} url={item[1]} />
       ))}
