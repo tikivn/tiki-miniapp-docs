@@ -4,7 +4,7 @@ title: text
 
 ## Giới thiệu
 
-text
+Thẻ text tương đồng với thẻ span trong html, giúp để trình bày một nội dung văn bản. Hai thẻ text mặc định sẽ được trình bày trên cùng một dòng nếu đứng gần nhau. Khi muốn xuống dòng bạn có thể sử dụng \n.
 
 ## Sử dụng
 
@@ -15,7 +15,7 @@ text
 ```xml
 <view class="container">
   <view class="block">
-    <text>{{ text }}</text>
+    <text>{{ text }}\n</text>
     <button onTap="add">Add line</button>
     <button type="secondary" onTap="remove">
       Remove line
@@ -81,5 +81,3 @@ Page({
 | --------------- | ------- | ------------- | ---------------------------------------------------------------------------------------------- |
 | selectable      | boolean | false         | Cho phép nội dung có thể được chọn hay không, nếu là true thì có thể chọn và sao chép nội dung |
 | number-of-lines | number  | null          | Số dòng tối đa mà nội dung trong text được hiển thị, nếu quá số dòng sẽ hiển thị ... ở cuối    |
-
-<img style={{maxWidth: 414}} alt="Tab" src="/img/text-component.png"/>

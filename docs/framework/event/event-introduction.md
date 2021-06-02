@@ -64,12 +64,16 @@ Trong ví dụ trên, nhấp vào view3 sẽ kích hoạt handleTap3 và handleT
 
 Tất cả bubbling events:
 
-| Loại event     | Điều kiện kích hoạt  |
-| ------- | --------------- |
-| touchStart | Khi bắt đầu touch |
-| touchMove | Touch move |
-| touchEnd | Kết thúc touch |
-| touchCancel | Khi touch action bị huỷ bỏ do có call reminder hoặc 1 popup |
-| tap | user tap |
-| longTap | Nhấn giữ lâu hơn 500ms |
+| Loại event           | Điều kiện kích hoạt                                                |
+| -------------------- | ------------------------------------------------------------------ |
+| touchStart           | Khi bắt đầu touch                                                  |
+| touchMove            | Touch move                                                         |
+| touchEnd             | Kết thúc touch                                                     |
+| touchCancel          | Khi touch action bị huỷ bỏ do có call reminder hoặc 1 popup        |
+| tap                  | user tap                                                           |
+| longTap              | Nhấn giữ lâu hơn 500ms                                             |
+| onAnimationStart     | Sự kiện này được kích hoạt khi CSS transition hoàn tất.            |
+| onAnimationIteration | Sự kiện này được kích hoạt khi CSS Animation kết thúc 1 iteration. |
+| onAnimationEnd       | Sự kiện này được kích hoạt khi CSS Animation kết thúc.             |
+| onTransitionEnd      | Sự kiện này được kích hoạt khi CSS transition hoàn tất.            |
 

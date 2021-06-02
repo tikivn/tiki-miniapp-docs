@@ -4,7 +4,7 @@ title: carousel
 
 ## Giới thiệu
 
-`carousel` là một container componet hỗ trợ các hiệu ứng lướt cho các phần tử bên trong.
+`carousel` là một container componet hỗ trợ các hiệu ứng lướt cho các phần tử bên trong. Các thành phần bên trong `carousel` cần được bọc bởi `carousel-item`
 
 ## Sử dụng
 
@@ -15,15 +15,21 @@ title: carousel
 ```xml
 <view>
   <carousel onChange="onChange">
-    <view class="item red">
-      <text>1</text>
-    </view>
-    <view class="item green">
-      <text>2</text>
-    </view>
-    <view class="item yellow">
-      <text>3</text>
-    </view>
+    <carousel-item>
+      <view class="item red">
+        <text>1</text>
+      </view>
+    </carousel-item>
+    <carousel-item>
+      <view class="item red">
+        <text>2</text>
+      </view>
+    </carousel-item>
+    <carousel-item>
+      <view class="item red">
+        <text>3</text>
+      </view>
+    </carousel-item>
   </carousel>
 </view>
 ```
@@ -34,7 +40,7 @@ title: carousel
 Page({
   data: {},
   onChange(e) {
-    console.log('onChange :>> ', e);
+    console.log('onChange: ', e);
   }
 });
 ```
@@ -61,23 +67,17 @@ Page({
 
 ### Chi tiết
 
-| Property               | Type     | Default Value | Description                                                                  |
-| ---------------------- | -------- | ------------- | ---------------------------------------------------------------------------- |
-| indicator-dots         | boolean  | true          | Cho phép hiển thị dot                                                        |
-| indicator-color        | string   | gray-20       | Màu của dot                                                                  |
-| indicator-active-color | string   | brand         | Màu của dot đang được active                                                 |
-| autoplay               | boolean  | true          | Cho phép autoplay                                                            |
-| current                | number   | 0             | Chỉ được item được chọn theo vị trí của nó                                   |
-| duration               | number   | 500           | Thời gian để thực hiện hiệu ứng đổi item                                     |
-| interval               | number   | 5000          | Thời gian để một item tự chuyển đổi qua item khác                            |
-| cell-spacing           | number   | 4             | Khoảng cách giữa các item                                                    |
-| circular               | boolean  | true          | Cho phép `carousel` thực hiện lặp vô tận                                     |
-| swipeable              | boolean  | true          | Cho phép `carousel` swipe để đổi item khác                                   |
-| width                  | number   |               | Kích thước của `carousel`, mặc định sẽ là chiều rộng của thiết bị            |
-| slide-width            | number   |               | Kích thước của `carousel item`, mặc định sẽ là chiều rộng của thiết bị       |
-| onChange               | function |               | Sự kiện được gọi sau khi item khác được active, `event.detail = { current }` |
-
-### Lưu ý
-
-- Các component bên trong `carousel` nên là thẻ [view](https://miniapp.tiki.vn/docs/component/view-container/view)
-- Bạn nên khai báo `cell-spacing` với `circular=true` và kèm thêm `width` và `slide-width` để tránh layout bị vỡ
+| Property               | Type     | Default Value | Description                                                                                                                  |
+| ---------------------- | -------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| indicator-dots         | boolean  | false         | Cho phép hiển thị dot                                                                                                        |
+| indicator-color        | string   | gray-20       | Màu của dot                                                                                                                  |
+| indicator-active-color | string   | brand         | Màu của dot đang được active                                                                                                 |
+| active-class           | string   |               | Class được thêm vào `carousel-item` khi item đó được chọn                                                                    |
+| autoplay               | boolean  | false         | Cho phép autoplay                                                                                                            |
+| current                | number   | 0             | Chỉ được item được active với giá trị truyền vào là vị trí của item đó (bắt đầu từ 0)                                        |
+| duration               | number   | 500           | Thời gian để thực hiện hiệu ứng đổi item                                                                                     |
+| interval               | number   | 5000          | Thời gian để một item tự chuyển đổi qua item khác                                                                            |
+| vertical               | number   | false         | Hiển thị carousel theo chiều dọc, cần khai báo chiều cao cho `carousel` thông qua thuộc tính `height` ở `style` hoặc `class` |
+| circular               | boolean  | false         | Cho phép `carousel` thực hiện lặp vô tận                                                                                     |
+| disable-touch          | boolean  | false         | Cho phép user có thể touch được vào carousel để lướt hay không                                                               |
+| onChange               | function |               | Sự kiện được gọi sau khi item khác được active, `event.detail = { current }`                                                 |

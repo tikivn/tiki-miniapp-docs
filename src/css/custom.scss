@@ -21,6 +21,7 @@
   --ifm-code-font-size: 95%;
 
   --ifm-navbar-background-color: #0b73e3;
+  --ifm-background-surface-color: #0b73e3;
   --ifm-navbar-height: 72px;
   --ifm-navbar-link-color: #fff;
   --ifm-navbar-link-hover-color: #fff;
@@ -93,6 +94,12 @@ body {
   }
 }
 
+.navbar__item {
+  .dropdown__menu {
+    background-color: #fff;
+  }
+}
+
 @media (max-width: 996px) {
   .navbar__items {
     display: flex;
@@ -133,6 +140,9 @@ header {
     border-collapse: collapse;
     display: table;
     width: 100%;
+    @media (max-width: 996px) {
+      display: block;
+    }
   }
   h2 {
     --ifm-h2-font-size: 1.75rem;

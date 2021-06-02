@@ -171,8 +171,9 @@ _Result: Without mask_
 
 | Property  | Type    | Default Value                 | Description                                                               |
 | --------- | ------- | ----------------------------- | ------------------------------------------------------------------------- |
-| show      | boolean | false                         | hiển thị popup hay không                                                  |
-| animation | boolean | true                          | popup show với animation                                                  |
-| mask      | boolean | true                          | hiển thị mask, sử dụng với props onClose để đóng popup khi click vào mask |
-| position  | string  | "top","right","bottom","left" | vị trí hiển thị popup                                                     |
-| onClose   | event   |                               | mask=true, khi click vào mask sẽ trigger function onClose                 |
+| show      | boolean | false                         | Hiển thị popup hay không                                                  |
+| className | string  |                               | Thêm class cho popup                                                      |
+| animation | boolean | true                          | Popup show với animation                                                  |
+| mask      | boolean | true                          | Hiển thị mask, sử dụng với props onClose để đóng popup khi click vào mask |
+| position  | string  | "top","right","bottom","left" | Vị trí hiển thị popup                                                     |
+| onClose   | event   |                               | Mask=true, khi click vào mask sẽ trigger function onClose                 |

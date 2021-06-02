@@ -1,5 +1,5 @@
 ---
-title: my.getUserInfo
+title: 'my.getUserInfo'
 ---
 
 ## Giới thiệu

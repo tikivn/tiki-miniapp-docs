@@ -395,28 +395,30 @@ _index.txml_
 
 | Property      | Type                    | Default Value      | Description                                                                       |
 | ------------- | ----------------------- | ------------------ | --------------------------------------------------------------------------------- |
-| show          | boolean                 | false              | hiện/ẩn modal                                                                     |
-| showClose     | boolean                 | true               | hiển thị button đóng modal, Cần implement props **onModalClose**                  |
-| mask          | boolean                 | true               | hiển thị mask                                                                     |
-| onMaskClick   | event                   | () => void         | trigger function này khi click vào mask                                           |
-| onModalClose  | event                   | () => void         | function này sẽ được trigger khi click vào close button                           |
-| animationType | 'none','slide','fade'   | none               | animation khi hiển thị modal                                                      |
-| topImage      | string                  | undefined          | hiển thị hình ảnh ở trên top của modal                                            |
-| topImageSize  | 'lg', 'md', 'sm'        | md                 | quyết định size render của topImage                                               |
-| buttons       | Button[]                | undefined          | custom bottom buttons, implement props **onButtonClick** bind function vào button |
-| onButtonClick | event                   | (e:Object) => void | function sẽ được bind và trigger khi click vào custom button                      |
-| buttonsLayout | 'horizontal','vertical' | 'horizontal'       | mask=true, khi click vào mask sẽ trigger function onClose                         |
-| advice        | boolean                 | false              | close button ở bottom                                                             |
+| show          | boolean                 | false              | Hiện/ẩn modal                                                                     |
+| showClose     | boolean                 | true               | Hiển thị button đóng modal, Cần implement props **onModalClose**                  |
+| className     | string                  |                    | Thêm class cho modal                                                              |
+| mask          | boolean                 | true               | Hiển thị mask                                                                     |
+| topImage      | string                  | undefined          | Hiển thị hình ảnh ở trên top của modal                                            |
+| topImageSize  | 'lg', 'md', 'sm'        | md                 | Quyết định size render của topImage                                               |
+| buttons       | Button[]                | undefined          | Custom bottom buttons, implement props **onButtonClick** bind function vào button |
+| buttonsLayout | 'horizontal','vertical' | 'horizontal'       | Mask=true, khi click vào mask sẽ trigger function onClose                         |
+| advice        | boolean                 | false              | Close button ở bottom                                                             |
+| onModalClick  | event                   | () => void         | Trigger function này khi click vào footer slot                                    |
+| onMaskClick   | event                   | () => void         | Trigger function này khi click vào mask                                           |
+| onModalClose  | event                   | () => void         | Function này sẽ được trigger khi click vào close button                           |
+| onButtonClick | event                   | (e:Object) => void | Function sẽ được bind và trigger khi click vào custom button                      |
 
 ### buttons
 
 | Property | Type   | Default Value | Description          |
 | -------- | ------ | ------------- | -------------------- |
-| text     | string | ''            | hiển thị text button |
+| text     | string | ''            | Hiển thị text button |
+| extClass | string | ''            | Class cho button     |
 
 ### slots
 
 | Property | Type    | Default Value | Description                       |
 | -------- | ------- | ------------- | --------------------------------- |
-| header   | boolean | false         | render component ở section header |
-| footer   | boolean | true          | render component ở section footer |
+| header   | boolean | false         | Render component ở section header |
+| footer   | boolean | true          | Render component ở section footer |

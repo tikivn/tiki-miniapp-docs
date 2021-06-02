@@ -8,7 +8,7 @@ const groups = [
   {
     title: 'Tài liệu',
     items: [
-      {title: 'Studio', url: '/docs/ide/overview'},
+      {title: 'Studio', url: '/docs/studio/overview'},
       {title: 'Framework', url: '/docs/framework/overview'},
       {title: 'Component', url: '/docs/component/overview'},
       {title: 'API', url: '/docs/api/overview'},
