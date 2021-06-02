@@ -4,7 +4,7 @@ title: Màu sắc
 
 Chúng tôi sử dụng màu sắc để truyền đạt thông tin một cách trực quan, các chức năng trong trải nghiệm của chúng tôi.
 
-## Hệ thống màu của Tiny
+## Hệ thống màu của Tini
 
 Hệ thống màu bao gồm những thành phần màu như sau
 
@@ -35,7 +35,7 @@ Các màu trong mỗi bảng màu chứa mười giá trị được đánh số
 
 ## Color tokens
 
-Các color tokens là một phần nền tảng trong hệ thống thiết kế của Tiny.
+Các color tokens là một phần nền tảng trong hệ thống thiết kế của Tini.
 
 ### Màu của văn bản
 

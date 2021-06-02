@@ -2,7 +2,7 @@
 title: Điều hướng đơn giản
 ---
 
-## Thanh điều hướng chuẩn của Tiny
+## Thanh điều hướng chuẩn của Tini
 
 Chúng tôi cung cấp một chuẩn chung của thanh điều hướng nhằm thống nhất về trải nghiệm điều hướng của người dùng. Vì vậy bạn không thể thay đổi vị trí các bộ phận hay thay đổi về cách thiết kế các bộ phận đó của thanh điều hướng. <br />
 <img className="img-basic" src="https://salt.tikicdn.com/ts/social/68/31/ae/8a1e44d17711239d971201fdbe7e0dfb.png" alt="navigation" />

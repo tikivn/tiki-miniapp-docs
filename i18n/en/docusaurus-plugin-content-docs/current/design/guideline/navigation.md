@@ -4,7 +4,7 @@ category: Design Guidelines
 title: Navigation
 ---
 
-## Tiny official navigation bar
+## Tini official navigation bar
 
 The navigation bar is uniformly provided by the framework by default, and designers cannot customize its position and style. <br />
 <img className="img-basic" src="https://salt.tikicdn.com/ts/social/e0/09/8d/9b0cdc4c0aea07794f05f290ec9bfccf.png" alt="navigation" />

@@ -10,7 +10,7 @@ _Disclaimer: According to the license of Nucleo, we just provide the system icon
 
 ## Icon overview
 
-Tiny standard size icon is 24px. <br />
+Tini standard size icon is 24px. <br />
 <img className="img-basic" src="https://salt.tikicdn.com/ts/social/8d/a2/30/cdcaf1f36812d29caf0c1387b77d6029.png" alt="icon size" />
 
 Normal icon content is limited to the 16 x 16px live area (dense area), with 2px of padding. <br />

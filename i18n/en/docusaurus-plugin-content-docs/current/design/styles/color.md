@@ -4,7 +4,7 @@ title: Colors
 
 We use color to visually communicate information, functions in our experiences.
 
-## The Tiny color theme
+## The Tini color theme
 
 The color theme includes default colors for:
 

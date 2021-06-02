@@ -2,13 +2,13 @@
 title: Hệ thống icon
 ---
 
-Tiny sử dụng [thư viện icon của Nucleo](https://nucleoapp.com/) để làm bộ icon hệ thống. Bởi các icon này có các thuộc tính mà chúng tôi mong muốn là gọn gàng, quen thuộc và đơn giản ẩn dụ và thiết kế chỉnh chu. Các icon của Tiny đóng vai trò hỗ trợ trực quan để giúp mọi người trải nghiệm hiệu quả hơn.
+Tini sử dụng [thư viện icon của Nucleo](https://nucleoapp.com/) để làm bộ icon hệ thống. Bởi các icon này có các thuộc tính mà chúng tôi mong muốn là gọn gàng, quen thuộc và đơn giản ẩn dụ và thiết kế chỉnh chu. Các icon của Tini đóng vai trò hỗ trợ trực quan để giúp mọi người trải nghiệm hiệu quả hơn.
 
 _Tuyên bố từ chối trách nhiệm: Theo giấy phép sử dụng của Nucleo, chúng tôi chỉ cung cấp bộ icon hệ thống như các icon điều hướng, icon trạng thái... Nếu bạn muốn đồng bộ với những icon đó trong Tini App, vui lòng mua [thư viện icon của Nucleo](https://nucleoapp.com/)._
 
 ## Tổng quan về icon
 
-Kích thước tiêu chuẩn của Tiny là 24px. <br />
+Kích thước tiêu chuẩn của Tini là 24px. <br />
 <img className="img-basic" src="https://salt.tikicdn.com/ts/social/8d/a2/30/cdcaf1f36812d29caf0c1387b77d6029.png" alt="icon size" />
 
 Vùng được thiết kế cho những icon dạng bình thường là 16 x 16px, cách Live area là 2px. <br />
@@ -29,7 +29,7 @@ Vùng được thiết kế cho những icon đặc biệt như hình tròn ho�
 
 #### Cách dùng
 
-Bộ icon dạng nét là bộ icon sử dụng chính trong Tiny. Icon nét được sử dụng như:
+Bộ icon dạng nét là bộ icon sử dụng chính trong Tini. Icon nét được sử dụng như:
 
 - Các yếu tố hỗ trợ cho nội dung.
 - Hành động điều hướng (Quay lại, Tìm kiếm, Thông tin, v.v.).

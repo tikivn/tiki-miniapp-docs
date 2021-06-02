@@ -12,15 +12,15 @@ title: Getting started
 
 If you don't have an account, please go to [www.figma.com](http://www.figma.com) and sign up. If you need help with signing up you can learn how to do it [here](https://help.figma.com/hc/en-us/articles/360039811114-Create-a-Figma-account).
 
-### 2. Add Tiny Design System to your library
+### 2. Add Tini Design System to your library
 
 #### Option 1: Duplicate file from the Figma community
 
-We published the Tiny Design System on the Figma community to help you easily comment and update the latest version of the library. You can access and duplicate the file [here](https://www.figma.com/community/file/958198956095698455/Tiny-design-system). If you need help, you can learn how to do it [here](https://help.figma.com/hc/en-us/articles/360038510873-Use-files-from-the-Community).
+We published the Tini Design System on the Figma community to help you easily comment and update the latest version of the library. You can access and duplicate the file [here](https://www.figma.com/community/file/958198956095698455/Tini-design-system). If you need help, you can learn how to do it [here](https://help.figma.com/hc/en-us/articles/360038510873-Use-files-from-the-Community).
 
 #### Option 2: Download local file
 
-You can download the file [here](/docs/design/figma/download-en). After download, please enable the Tiny library in your Figma. If you need help, you can learn how to do it [here](https://help.figma.com/hc/en-us/articles/360038743434-Enable-libraries-in-drafts-teams-and-files).
+You can download the file [here](/docs/design/figma/download-en). After download, please enable the Tini library in your Figma. If you need help, you can learn how to do it [here](https://help.figma.com/hc/en-us/articles/360038743434-Enable-libraries-in-drafts-teams-and-files).
 
 
 ---
@@ -34,16 +34,16 @@ If you are new to Figma I highly recommend visiting their [Getting Started help 
 
 ### Components
 
-Tiny Design System is built with Components (Basic & Advance). These are elements you can reuse across your designs. They help to create and manage consistent designs across projects. Learn more about Components [here](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-Components-in-Figma).
+Tini Design System is built with Components (Basic & Advance). These are elements you can reuse across your designs. They help to create and manage consistent designs across projects. Learn more about Components [here](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-Components-in-Figma).
 
 ### Styles
 
-Tiny Design System is also built with Styles. These are Colors, Text styles, Effects that can be reused across your designs. Learn more about Styles and how to use them [here](https://help.figma.com/hc/en-us/articles/360039238753-Styles-in-Figma).
+Tini Design System is also built with Styles. These are Colors, Text styles, Effects that can be reused across your designs. Learn more about Styles and how to use them [here](https://help.figma.com/hc/en-us/articles/360039238753-Styles-in-Figma).
 
 ### Auto layout
 
-Components in the Tiny Design System were built with Auto Layout feature. Auto Layout makes designs that grow to fill or shrink to fit, and reflow as their contents change. Learn more about Auto Layout [here](https://help.figma.com/hc/en-us/articles/360040451373-Create-dynamic-designs-with-Auto-Layout).
+Components in the Tini Design System were built with Auto Layout feature. Auto Layout makes designs that grow to fill or shrink to fit, and reflow as their contents change. Learn more about Auto Layout [here](https://help.figma.com/hc/en-us/articles/360040451373-Create-dynamic-designs-with-Auto-Layout).
 
 ### Variants
 
-Tiny Design System uses Variants that allow to group and organize similar components into a single container with properties. This simplifies the component library and makes it easier for everyone to find what they need. Learn more about Variants [here](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants).
+Tini Design System uses Variants that allow to group and organize similar components into a single container with properties. This simplifies the component library and makes it easier for everyone to find what they need. Learn more about Variants [here](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants).
