@@ -14,7 +14,7 @@ The navigation bar is uniformly provided by the framework by default, and design
 The Navigation box included 2 elements: More & Close icon.
 
 - Click More icon to display the system menu sheet. <br />
-  <img className="img-basic" src="https://salt.tikicdn.com/ts/social/37/b6/92/d07c55ff15341b918570238109ed4e5e.png" alt="more icon"/>
+  <img className="img-basic" src="https://salt.tikicdn.com/ts/social/02/55/21/6748800424e706db6c80b3cf03767cfd.png" alt="more icon"/>
 
 - Click Close icon to exit the current Tini App.
   <img className="img-basic" src="https://salt.tikicdn.com/ts/social/ea/80/ec/53b8b14009c6e3b13bcfc742c78c083f.png" alt="close icon" /> <br />

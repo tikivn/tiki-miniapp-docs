@@ -12,7 +12,7 @@ Chúng tôi cung cấp một chuẩn chung của thanh điều hướng nhằm t
 Hộp điều hướng bao gồm 2 thành phần chính: nút Tùy chọn & nút Đóng.
 
 - Khi bấm nút Tùy chọn, menu hệ thống sẽ hiện lên. <br />
-  <img className="img-basic" src="https://salt.tikicdn.com/ts/social/37/b6/92/d07c55ff15341b918570238109ed4e5e.png" alt="more icon"/>
+  <img className="img-basic" src="https://salt.tikicdn.com/ts/social/02/55/21/6748800424e706db6c80b3cf03767cfd.png" alt="more icon"/>
 
 - Khi bấm nút Đóng, Tini App đang sử dụng đó sẽ được tắt. <br />
   <img className="img-basic" src="https://salt.tikicdn.com/ts/social/ea/80/ec/53b8b14009c6e3b13bcfc742c78c083f.png" alt="close icon" />
