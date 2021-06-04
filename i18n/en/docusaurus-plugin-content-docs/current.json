@@ -115,9 +115,9 @@
     "message": "Image Picker",
     "description": "The label for category Image Picker in sidebar api"
   },
-  "sidebar.design.category.Tiny Design": {
-    "message": "Tiny Design",
-    "description": "The label for category Tiny Design in sidebar design"
+  "sidebar.design.category.Tini Design": {
+    "message": "Tini Design",
+    "description": "The label for category Tini Design in sidebar design"
   },
   "sidebar.design.category.Nguyên tắc thiết kế": {
     "message": "Design Principles",

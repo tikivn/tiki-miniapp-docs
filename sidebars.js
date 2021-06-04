@@ -358,7 +358,7 @@ module.exports = {
   design: [
     {
       type: 'category',
-      label: 'Tiny Design',
+      label: 'Tini Design',
       items: ['design/overview'],
     },
     {

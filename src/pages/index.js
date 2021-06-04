@@ -9,7 +9,7 @@ import DevAssistantSVG from '@site/static/img/dev-assistant.svg';
 import RegisterSVG from '@site/static/img/register.svg';
 import ArrowRightSVG from '@site/static/img/arrow-right.svg';
 import FrameworkSVG from '@site/static/img/framework.svg';
-import TinySVG from '@site/static/img/tiny.svg';
+import TiniSVG from '@site/static/img/tini.svg';
 import IdeSVG from '@site/static/img/ide.svg';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.scss';
@@ -66,11 +66,11 @@ function Hero() {
   );
 }
 
-function WhatIsTinyAp() {
+function WhatIsTiniAp() {
   return (
     <div className={styles.left50}>
       <h3 className={styles.headText}>Tini Apps là gì?</h3>
-      <p className={styles.tinyText}>
+      <p className={styles.tiniText}>
         Tini Apps là giải pháp hoàn toàn mới và hiện đại giúp cho các đối tác
         của Tiki có thể dễ dàng, nhanh chóng và ít tốn kém phát triển ứng dụng
         và dịch vụ của mình trên nền tảng của Tiki. Nhờ đó các doanh nghiệp có
@@ -133,23 +133,23 @@ function Framework() {
   );
 }
 
-function Tiny() {
+function Tini() {
   return (
     <div className={styles.block}>
       <div className="head">Dành cho nhà thiết kế sản phẩm</div>
-      <TinySVG className={styles.svgCenter} />
-      <h3 className={styles.headText}>Tiny Design System</h3>
+      <TiniSVG className={styles.svgCenter} />
+      <h3 className={styles.headText}>Tini Design System</h3>
       <p className={styles.gray}>
         Nhóm thiết kế Tini đã xây dựng nên hệ thống thiết kế dành riêng cho nền
         tảng Tini Apps dựa trên hệ thống thiết kế gốc từ Tiki với tên gọi là
-        Tiny. Hệ thống thiết kế Tiny sẽ giúp các nhà thiết kế sản phẩm thống
+        Tini. Hệ thống thiết kế Tini sẽ giúp các nhà thiết kế sản phẩm thống
         nhất về giao diện người dùng để tập trung vào trải nghiệm người dùng tốt
         hơn, cung cấp ý tưởng và sản phẩm nhanh hơn.
       </p>
       {[
-        ['Tìm hiểu về Tiny', '/docs/design/overview'],
+        ['Tìm hiểu về Tini', '/docs/design/overview'],
         [
-          'Tiny Figma',
+          'Tini Figma',
           'https://www.figma.com/community/file/958198956095698455/Tini-design-system',
         ],
       ].map((item, index) => (
@@ -194,14 +194,14 @@ function Content() {
       </div>
 
       <div className={styles.mainContent}>
-        <WhatIsTinyAp />
+        <WhatIsTiniAp />
       </div>
       <div className={styles.bgGray}>
         <BecomeDeveloper />
         <Framework />
 
         <div className={styles.blockRow}>
-          <Tiny />
+          <Tini />
           <Studio />
         </div>
       </div>

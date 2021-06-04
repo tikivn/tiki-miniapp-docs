@@ -19,7 +19,7 @@ module.exports = {
       },
     },
   },
-  projectName: 'tinyapp',
+  projectName: 'tiniapp',
   themeConfig: {
     colorMode: {
       defaultMode: 'light',
