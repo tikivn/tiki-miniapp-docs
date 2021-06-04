@@ -4,7 +4,7 @@ title: my.getFileInfo
 
 ## Giới thiệu
 
-**my.getFileInfo** là API dùng để lấy thông tin file
+**my.getFileInfo** là API dùng để lấy thông tin file (có thể là local temporary file hoặc local cache file)
 ## Sử dụng
 
 ### Sample Code

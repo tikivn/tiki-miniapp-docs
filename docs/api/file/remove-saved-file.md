@@ -61,7 +61,7 @@ Các thuộc tính:
 
 | Attributes | Type     | Required | Description                                                                    |
 | ---------- | -------- | -------- | ------------------------------------------------------------------------------ |
-| filePath      | String   | Yes       |  Đường dẫn tới local file                   |
+| filePath      | String   | Yes       |  Đường dẫn tới local cache file                   |
 | success    | Function | No       | Callback function khi xoá file được thực hiện thành công                     |
 | fail       | Function | No       | Callback function khi xoá file thất bại                                      |
 | complete   | Function | No       | Callback function khi việc xoá kết thúc cho dù thành công hay thất bại. |

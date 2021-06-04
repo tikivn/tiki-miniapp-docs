@@ -80,4 +80,4 @@ Các thuộc tính:
 
 | Attributes | Type   | Description                |
 | ---------- | ------ | -------------------------- |
-| filePath  | Number  | Dung lượng của file |                                    
+| filePath  | String  | Đường dẫn của tới file đã saved |                                    
