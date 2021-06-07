@@ -41,5 +41,4 @@ _Điều kiện cần:_
 
 - Tham khảo cách gọi platform APIs ở [đây](../platform-api/overview)
 - Tham khảo cách tính signature ở [đây](../platform-api/calculate-signature)
-- Tham khảo về GraphQL ở [đây](https://graphql.org/)
 - Tham khảo một backend ngôn ngữ Go ở [đây](https://github.com/tikivn/tiniapp-backend-oauth-sample)
