@@ -13,27 +13,56 @@ Các bước để lấy auth code các bạn có thể tham khảo ở [đây](
 Sau đây là lệnh gọi mẫu bằng lệnh cURL
 
 ```bash
-# Endpoint này của Tiki sử dụng GraphQL API
+# Endpoint này của Tiki sử dụng RESTful API
 
 Request:
 
-curl 'https://api.tiki.vn/tiniapp/api/graphql/query' \
-    -H 'Content-Type: application/json' \
-    --data-binary '{"query":"query {\n  get_auth_access_token(input: {\n    code: \"THUxTF3HmbPpGxmvDieTCX4kXcb601njUriFUET0RvY.eCZa27znIuM8JGC-IUSM-S_G_YrgP7OH8BTGdba706E\"\n    client_id: \"a1qvgyRzP9pMj0n5ulOG04fdelIHuNqB\"\n    timestamp: 1620470539433\n    signature: \"3ef20afed474d9368371fc8eaf4a529b39a7025b4863e1afbc13bdb6db8cc5f1\"\n  }) {\n    access_token\n    refresh_token\n    expires_in\n    scopes\n  }\n}"}' --compressed
-
+curl -L -X POST 'https://api.tiki.vn/tiniapp-open-api/api/v1/oauth/auth/token' -H 'Content-Type: application/json' --data-raw '{
+  "code": "FEq55lKFWxhZKgHAYptytkfFI-inPI9S0R0eAJ6Zmbs.ghJJ6iKU5eiCFeyfhTAcV7sQ_Fz5gYyZNTxkLtA5gJE",
+  "client_id": "pg94irQ2EbLV1fDV",
+  "timestamp": 1622678975,
+  "signature": "fa729c7d06683ebc4bf3a7f8eb0d753b2f3bfe992a0941913c9fb7c5e4194adf"
+}'
 
 Response:
+
 {
   "data": {
-    "get_auth_access_token": {
-      "access_token": "GWzA42jrwaFyJ-bGKyBk2IpqPpP5Ehey5tY5iCwzfRw.l81CLG5R6azx4LLqIRAGj-A-Bu2Rgz8ppMKyX_NJGdo",
-      "refresh_token": "ouCuOd72UUpc-Rpvu5HaZ88MgAJSHKXlKD71QDutQXo.8jFMWYcdZ1mW9vvDmoXjlg31rbaxAF6ZuLnaRocIbhk",
-      "expires_in": 3599,
-      "scopes": [
-        "offline",
-        "user_profile"
-      ]
-    }
+    "access_token": "kxvT9fhnIsMpS2ZWruNXbQnXiadDZdDwSsOnCkbUlhs.8bmqP1rsssjERWGdO2xvCEwCOg-zov09UDVLgrx7qIg",
+    "expires_in": 3600,
+    "refresh_token": "-xMfLgwjAKyFTm6TOngU9mEygXZKL8PLBVUImlRWKOg.EqK0YGeXBr7xxH0JMahCaAoJWNTIo8_-nkEW1jY80IM",
+    "scopes": [
+      "offline",
+      "user_profile"
+    ],
+    "token_type": "bearer"
+  },
+  "error": null
+}
+```
+
+Những lỗi có thể xảy ra có response như sau:
+
+```bash
+Invalid Code:
+
+{
+  "data": null,
+  "error": {
+    "code": 400,
+    "reason": "invalid_code"
+    "message": "invalid auth code",
+  }
+}
+
+Invalid Signature:
+
+{
+  "data": null,
+  "error": {
+    "code": 400,
+    "reason": "invalid_signature"
+    "message": "invalid signature",
   }
 }
 ```
@@ -45,25 +74,56 @@ Vì auth token là token được cấp với thời gian valid ngắn. Nếu b�
 Để refresh token thì các bạn gọi API như sau
 
 ```bash
-# Endpoint này của Tiki sử dụng GraphQL API
+# Endpoint này của Tiki sử dụng RESTful API
 
 Request:
-curl 'https://api.tiki.vn/tiniapp/api/graphql/query' \
-    -H 'Content-Type: application/json' \
-    --data-binary '{"query":"query {\n  refresh_auth_access_token(input: {\n    refresh_token: \"ouCuOd72UUpc-Rpvu5HaZ88MgAJSHKXlKD71QDutQXo.8jFMWYcdZ1mW9vvDmoXjlg31rbaxAF6ZuLnaRocIbhk\"\n    client_id: \"a1qvgyRzP9pMj0n5ulOG04fdelIHuNqB\"\n    timestamp: 1620470539433\n    signature: \"6cdc51b21641d4fa5237e4a9a9810a7002aa0749a9cfd8d4c8f5d348098a3830\"\n  }) {\n    access_token\n    refresh_token\n    expires_in\n    scopes\n  }\n}"}' --compressed
+
+curl -L -X POST 'https://api.tiki.vn/tiniapp-open-api/api/v1/oauth/auth/token/refresh' -H 'Content-Type: application/json' --data-raw '{
+  "refresh_token": "-xMfLgwjAKyFTm6TOngU9mEygXZKL8PLBVUImlRWKOg.EqK0YGeXBr7xxH0JMahCaAoJWNTIo8_-nkEW1jY80IM",
+  "client_id": "pg94irQ2EbLV1fDV",
+  "timestamp": 1622678975,
+  "signature": "6feaf61c50e51c280ab379c281e291171b72d762744b9871284cfb006443507d"
+}'
 
 Response:
+
 {
   "data": {
-    "refresh_auth_access_token": {
-      "access_token": "Tz8wWPFhvUITkyTWpPBueDncMEQLVti8rz6rn7ML5Uo.C_bF66fCkHvN1zMJmd_yzth1-j3PwZQxhV-jS_VEYlg",
-      "refresh_token": "ruGaqO2JE3mtczeRb-BUhruFOkNYEWpqqN9q8oQjcVo.XwH8IHwvE_iDJi5XJdovDLbH3ZuJ6mGHxIfhfSvEiRc",
-      "expires_in": 3600,
-      "scopes": [
+    "access_token": "cXvegklVEOFLnWisSF63StGLmk9DSmphXf1HusphnA8.s3IIP4srYM7vi5eRC6IJId4_iwKDiXNJo2rZUQW4Dcc",
+    "expires_in": 3599,
+    "refresh_token": "cXvegklVEOFLnWisSF63StGLmk9DSmphXf1HusphnA8.s3IIP4srYM7vi5eRC6IJId4_iwKDiXNJo2rZUQW4Dcc",
+    "scopes": [
         "offline",
         "user_profile"
-      ]
-    }
+    ],
+    "token_type": "bearer"
+  },
+  "error": null
+}
+```
+
+Những lỗi có thể xảy ra có response như sau:
+
+```bash
+Invalid Token:
+
+{
+  "data": null,
+  "error": {
+    "code": 400,
+    "reason": "invalid_token"
+    "message": "invalid refresh token",
+  }
+}
+
+Invalid Signature:
+
+{
+  "data": null,
+  "error": {
+    "code": 400,
+    "reason": "invalid_signature"
+    "message": "invalid signature",
   }
 }
 ```
