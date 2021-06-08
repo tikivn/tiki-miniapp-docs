@@ -332,6 +332,7 @@ module.exports = {
         'backend-api/platform-api/calculate-signature',
         'backend-api/platform-api/exchange-auth-token',
         'backend-api/platform-api/payment',
+        'backend-api/platform-api/error-code',
       ],
     },
   ],
