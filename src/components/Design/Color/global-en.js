@@ -77,36 +77,36 @@ export default {
       {
         type: 'color',
         text: 'gray60',
-        value: '#81818A',
+        value: '#808089',
       },
       {
         type: 'color',
-        text: '#81818A',
-        value: '#81818A',
+        text: '#808089',
+        value: '#808089',
       },
     ],
     [
       {
         type: 'color',
         text: 'gray70',
-        value: '#65656E',
+        value: '#64646D',
       },
       {
         type: 'color',
-        text: '#65656E',
-        value: '#65656E',
+        text: '#64646D',
+        value: '#64646D',
       },
     ],
     [
       {
         type: 'color',
         text: 'gray80',
-        value: '#505057',
+        value: '#515158',
       },
       {
         type: 'color',
-        text: '#505057',
-        value: '#505057',
+        text: '#515158',
+        value: '#515158',
       },
     ],
     [
@@ -125,18 +125,30 @@ export default {
       {
         type: 'color',
         text: 'gray100',
-        value: '#28282B',
+        value: '#27272A',
       },
       {
         type: 'color',
-        text: '#28282B',
-        value: '#28282B',
+        text: '#27272A',
+        value: '#27272A',
       },
     ],
     [
       {
         type: 'color',
-        text: 'brand',
+        text: 'black',
+        value: '#000000',
+      },
+      {
+        type: 'color',
+        text: '#000000',
+        value: '#000000',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'blue',
         value: '#1A94FF',
       },
       {
@@ -148,67 +160,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'blue 50',
-        value: '#5CB3FF',
-      },
-      {
-        type: 'color',
-        text: '#5CB3FF',
-        value: '#5CB3FF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'blue 40',
-        value: '#94CDFF',
-      },
-      {
-        type: 'color',
-        text: '#94CDFF',
-        value: '#94CDFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'blue 30',
-        value: '#C2E1FF',
-      },
-      {
-        type: 'color',
-        text: '#C2E1FF',
-        value: '#C2E1FF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'blue 20',
-        value: '#DBEEFF',
-      },
-      {
-        type: 'color',
-        text: '#DBEEFF',
-        value: '#DBEEFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'blue 10',
-        value: '#F0F8FF',
-      },
-      {
-        type: 'color',
-        text: '#F0F8FF',
-        value: '#F0F8FF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'success',
+        text: 'green',
         value: '#2DC275',
       },
       {
@@ -218,9 +170,33 @@ export default {
       },
     ],
     [
+    {
+      type: 'color',
+      text: 'yellow',
+      value: '#FFC400',
+    },
+    {
+      type: 'color',
+      text: '#FFC400',
+      value: '#FFC400',
+    },
+    ],
+    [
       {
         type: 'color',
-        text: 'error',
+        text: 'orange',
+        value: '#FC820A',
+      },
+      {
+        type: 'color',
+        text: '#FC820A',
+        value: '#FC820A',
+      },
+      ],
+    [
+      {
+        type: 'color',
+        text: 'red',
         value: '#FF424E',
       },
       {

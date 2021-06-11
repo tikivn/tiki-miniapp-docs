@@ -4,12 +4,36 @@ export default {
     [
       {
         type: 'color',
+        text: 'background-panel',
+        value: '#FFFFFF',
+      },
+      {
+        type: 'color',
+        text: 'white',
+        value: '#FFFFFF',
+      },
+    ],
+    [
+      {
+        type: 'color',
         text: 'background-input',
         value: '#FFFFFF',
       },
       {
         type: 'color',
         text: 'white',
+        value: '#FFFFFF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-switch-hover',
+        value: '#FFFFFF',
+      },
+      {
+        type: 'color',
+        text: 'white 20%',
         value: '#FFFFFF',
       },
     ],
@@ -28,7 +52,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-tooltip-light',
+        text: 'background-tooltip-day',
         value: '#FFFFFF',
       },
       {
@@ -40,7 +64,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-control-hover',
+        text: 'background-sheet',
         value: '#FFFFFF',
       },
       {
@@ -52,97 +76,13 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-bar-default',
+        text: 'background-list',
         value: '#FFFFFF',
       },
       {
         type: 'color',
         text: 'white',
         value: '#FFFFFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-list-default',
-        value: '#FFFFFF',
-      },
-      {
-        type: 'color',
-        text: 'white',
-        value: '#FFFFFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-sheet-default',
-        value: '#FFFFFF',
-      },
-      {
-        type: 'color',
-        text: 'white',
-        value: '#FFFFFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-tab-horizontal',
-        value: '#FFFFFF',
-      },
-      {
-        type: 'color',
-        text: 'white',
-        value: '#FFFFFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-tab-vertical-active',
-        value: '#FFFFFF',
-      },
-      {
-        type: 'color',
-        text: 'white',
-        value: '#FFFFFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-walk-through',
-        value: '#FFFFFF',
-      },
-      {
-        type: 'color',
-        text: 'white',
-        value: '#FFFFFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-selection-default',
-        value: '#F5F5FA',
-      },
-      {
-        type: 'color',
-        text: 'gray10',
-        value: '#F5F5FA',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-toggle-disable',
-        value: '#F5F5FA',
-      },
-      {
-        type: 'color',
-        text: 'gray10',
-        value: '#F5F5FA',
       },
     ],
     [
@@ -160,7 +100,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-sheet-gray',
+        text: 'background-selection-default',
         value: '#F5F5FA',
       },
       {
@@ -172,7 +112,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-tab-vertical-inactive',
+        text: 'background-panel-inactive',
         value: '#F5F5FA',
       },
       {
@@ -184,73 +124,13 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-input-disable',
+        text: 'background-sheet-secondary',
         value: '#F5F5FA',
       },
       {
         type: 'color',
         text: 'gray10',
         value: '#F5F5FA',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-button-solid-disable',
-        value: '#EBEBF0',
-      },
-      {
-        type: 'color',
-        text: 'gray20',
-        value: '#EBEBF0',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-button-loading',
-        value: '#EBEBF0',
-      },
-      {
-        type: 'color',
-        text: 'gray20',
-        value: '#EBEBF0',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-switch-disable',
-        value: '#EBEBF0',
-      },
-      {
-        type: 'color',
-        text: 'gray20',
-        value: '#EBEBF0',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-control-inactive',
-        value: '#EBEBF0',
-      },
-      {
-        type: 'color',
-        text: 'gray20',
-        value: '#EBEBF0',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-slider-inactive',
-        value: '#EBEBF0',
-      },
-      {
-        type: 'color',
-        text: 'gray20',
-        value: '#EBEBF0',
       },
     ],
     [
@@ -268,25 +148,13 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-progress-inactive',
+        text: 'background-toggle-disabled',
         value: '#EBEBF0',
       },
       {
         type: 'color',
         text: 'gray20',
         value: '#EBEBF0',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-selection-disable',
-        value: '#C4C4CF',
-      },
-      {
-        type: 'color',
-        text: 'gray40',
-        value: '#C4C4CF',
       },
     ],
     [
@@ -304,72 +172,156 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-tooltip-dark',
-        value: '#28282B',
+        text: 'background-disabled',
+        value: '#A6A6B0',
+      },
+      {
+        type: 'color',
+        text: 'gray50 20%',
+        value: '#A6A6B0',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-skeleton',
+        value: '#A6A6B0',
+      },
+      {
+        type: 'color',
+        text: 'gray50 20%',
+        value: '#A6A6B0',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-input-disabled',
+        value: '#A6A6B0',
+      },
+      {
+        type: 'color',
+        text: 'gray50 10%',
+        value: '#A6A6B0',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-toast',
+        value: '#27272A',
       },
       {
         type: 'color',
         text: 'gray100',
-        value: '#28282B',
+        value: '#27272A',
       },
     ],
     [
       {
         type: 'color',
-        text: 'background-bar-notification',
-        value: '#28282B',
+        text: 'background-tooltip-night',
+        value: '#27272A',
       },
       {
         type: 'color',
         text: 'gray100',
-        value: '#28282B',
+        value: '#27272A',
       },
     ],
     [
       {
         type: 'color',
-        text: 'background-navigation-light',
-        value: '#28282B',
+        text: 'background-progress-inactive',
+        value: '#000000',
       },
       {
         type: 'color',
-        text: 'gray100 4%',
-        value: '#28282B',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-navigation-dark',
-        value: '#28282B',
-      },
-      {
-        type: 'color',
-        text: 'gray100 24%',
-        value: '#28282B',
+        text: 'black 10%',
+        value: '#000000',
       },
     ],
     [
       {
         type: 'color',
-        text: 'background-overlay',
-        value: '#28282B',
+        text: 'background-navigation',
+        value: '#000000',
       },
       {
         type: 'color',
-        text: 'gray100 54%',
-        value: '#28282B',
+        text: 'black 5%',
+        value: '#000000',
       },
     ],
     [
       {
         type: 'color',
-        text: 'background-button-solid-default',
+        text: 'background-paging-inactive',
+        value: '#000000',
+      },
+      {
+        type: 'color',
+        text: 'black 10%',
+        value: '#000000',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-button-default',
         value: '#1A94FF',
       },
       {
         type: 'color',
         text: 'brand',
+        value: '#1A94FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-button-hover',
+        value: '#1A94FF',
+      },
+      {
+        type: 'color',
+        text: 'brand 80%',
+        value: '#1A94FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-button-active',
+        value: '#1A94FF',
+      },
+      {
+        type: 'color',
+        text: 'brand 60%',
+        value: '#1A94FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-ghost-hover',
+        value: '#1A94FF',
+      },
+      {
+        type: 'color',
+        text: 'brand 20%',
+        value: '#1A94FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-ghost-active',
+        value: '#1A94FF',
+      },
+      {
+        type: 'color',
+        text: 'brand 40%',
         value: '#1A94FF',
       },
     ],
@@ -388,6 +340,18 @@ export default {
     [
       {
         type: 'color',
+        text: 'background-selection-overlay-active',
+        value: '#1A94FF',
+      },
+      {
+        type: 'color',
+        text: 'brand 20%',
+        value: '#1A94FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
         text: 'background-switch-active',
         value: '#1A94FF',
       },
@@ -400,36 +364,12 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-control-active',
+        text: 'background-switch-active-disabled',
         value: '#1A94FF',
       },
       {
         type: 'color',
-        text: 'brand',
-        value: '#1A94FF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-slider-active',
-        value: '#1A94FF',
-      },
-      {
-        type: 'color',
-        text: 'brand',
-        value: '#1A94FF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-bar-color',
-        value: '#1A94FF',
-      },
-      {
-        type: 'color',
-        text: 'brand',
+        text: 'brand 40%',
         value: '#1A94FF',
       },
     ],
@@ -448,97 +388,73 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-button-solid-overlay-hover',
-        value: '#5CB3FF',
+        text: 'background-toggle-overlay-hover',
+        value: '#1A94FF',
       },
       {
         type: 'color',
-        text: 'blue50',
-        value: '#5CB3FF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-switch-hover',
-        value: '#5CB3FF',
-      },
-      {
-        type: 'color',
-        text: 'blue50',
-        value: '#5CB3FF',
+        text: 'brand 20%',
+        value: '#1A94FF',
       },
     ],
     [
       {
         type: 'color',
-        text: 'background-button-solid-overlay-active',
-        value: '#94CDFF',
+        text: 'background-toggle-overlay-active',
+        value: '#1A94FF',
       },
       {
         type: 'color',
-        text: 'blue40',
-        value: '#94CDFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-switch-active-disable',
-        value: '#94CDFF',
-      },
-      {
-        type: 'color',
-        text: 'blue40',
-        value: '#94CDFF',
+        text: 'brand 40%',
+        value: '#1A94FF',
       },
     ],
     [
       {
         type: 'color',
-        text: 'background-button-ghost-overlay-active',
-        value: '#C2E1FF',
+        text: 'background-paging-active',
+        value: '#1A94FF',
       },
       {
         type: 'color',
-        text: 'blue30',
-        value: '#C2E1FF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'background-button-ghost-overlay-hover',
-        value: '#DBEEFF',
-      },
-      {
-        type: 'color',
-        text: 'blue20',
-        value: '#DBEEFF',
+        text: 'brand',
+        value: '#1A94FF',
       },
     ],
     [
       {
         type: 'color',
-        text: 'background-selection-overlay-hover',
-        value: '#DBEEFF',
+        text: 'background-paging-hover',
+        value: '#1A94FF',
       },
       {
         type: 'color',
-        text: 'blue 20',
-        value: '#DBEEFF',
+        text: 'brand 20%',
+        value: '#1A94FF',
       },
     ],
     [
       {
         type: 'color',
-        text: 'background-list-overlay-hover',
-        value: '#F0F8FF',
+        text: 'background-list-hover',
+        value: '#1A94FF',
       },
       {
         type: 'color',
-        text: 'blue10',
-        value: '#F0F8FF',
+        text: 'brand 10%',
+        value: '#1A94FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-badge',
+        value: '#FF424F',
+      },
+      {
+        type: 'color',
+        text: 'red',
+        value: '#FF424F',
       },
     ],
   ],

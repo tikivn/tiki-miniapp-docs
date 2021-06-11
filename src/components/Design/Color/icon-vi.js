@@ -16,7 +16,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'icon-button-solid-disable',
+        text: 'icon-selection',
         value: '#FFFFFF',
       },
       {
@@ -28,7 +28,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'icon-content-secondary-dark-background',
+        text: 'icon-toast',
         value: '#FFFFFF',
       },
       {
@@ -40,7 +40,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'icon-bar-dark-background',
+        text: 'icon-tooltip-night',
         value: '#FFFFFF',
       },
       {
@@ -52,163 +52,91 @@ export default {
     [
       {
         type: 'color',
-        text: 'icon-navigation-dark-background',
-        value: '#FFFFFF',
+        text: 'icon-disabled',
+        value: '#A6A6B0',
       },
       {
         type: 'color',
-        text: 'white',
-        value: '#FFFFFF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'icon-input-loading',
-        value: '#EBEBF0',
-      },
-      {
-        type: 'color',
-        text: 'gray20',
-        value: '#EBEBF0',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'icon-list-loading',
-        value: '#EBEBF0',
-      },
-      {
-        type: 'color',
-        text: 'gray20',
-        value: '#EBEBF0',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'icon-button-outline-disable',
-        value: '#C4C4CF',
-      },
-      {
-        type: 'color',
-        text: 'gray40',
-        value: '#C4C4CF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'icon-button-ghost-disable',
-        value: '#C4C4CF',
-      },
-      {
-        type: 'color',
-        text: 'gray40',
-        value: '#C4C4CF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'icon-input-disable',
-        value: '#C4C4CF',
-      },
-      {
-        type: 'color',
-        text: 'gray40',
-        value: '#C4C4CF',
+        text: 'gray50',
+        value: '#A6A6B0',
       },
     ],
     [
       {
         type: 'color',
         text: 'icon-input-default',
-        value: '#81818A',
+        value: '#808089',
       },
       {
         type: 'color',
         text: 'gray60',
-        value: '#81818A',
+        value: '#808089',
       },
     ],
     [
       {
         type: 'color',
-        text: 'icon-content-tertiary',
-        value: '#81818A',
+        text: 'icon-panel-inactive',
+        value: '#808089',
       },
       {
         type: 'color',
         text: 'gray60',
-        value: '#81818A',
+        value: '#808089',
       },
     ],
     [
       {
         type: 'color',
-        text: 'icon-list-default',
-        value: '#81818A',
+        text: 'icon-list',
+        value: '#808089',
       },
       {
         type: 'color',
         text: 'gray60',
-        value: '#81818A',
+        value: '#808089',
       },
     ],
     [
       {
         type: 'color',
-        text: 'icon-tab-inactive',
-        value: '#81818A',
-      },
-      {
-        type: 'color',
-        text: 'gray60',
-        value: '#81818A',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'icon-content-secondary-light-background',
-        value: '#28282B',
+        text: 'icon-navigation',
+        value: '#27272A',
       },
       {
         type: 'color',
         text: 'gray100',
-        value: '#28282B',
+        value: '#27272A',
       },
     ],
     [
       {
         type: 'color',
-        text: 'icon-bar-light-background',
-        value: '#28282B',
+        text: 'icon-inform',
+        value: '#27272A',
       },
       {
         type: 'color',
         text: 'gray100',
-        value: '#28282B',
+        value: '#27272A',
       },
     ],
     [
       {
         type: 'color',
-        text: 'icon-navigation-light-background',
-        value: '#28282B',
+        text: 'icon-tooltip-day',
+        value: '#27272A',
       },
       {
         type: 'color',
         text: 'gray100',
-        value: '#28282B',
+        value: '#27272A',
       },
     ],
     [
       {
         type: 'color',
-        text: 'icon-button-outline-default',
+        text: 'icon-button-outlined-default',
         value: '#1A94FF',
       },
       {
@@ -232,19 +160,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'icon-content-primary',
-        value: '#1A94FF',
-      },
-      {
-        type: 'color',
-        text: 'brand',
-        value: '#1A94FF',
-      },
-    ],
-    [
-      {
-        type: 'color',
-        text: 'icon-tab-active',
+        text: 'icon-panel-active',
         value: '#1A94FF',
       },
       {
