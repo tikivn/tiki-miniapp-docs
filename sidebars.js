@@ -376,6 +376,7 @@ module.exports = {
       label: 'Quy định trong thiết kế',
       items: [
         'design/guideline/navigation',
+        'design/guideline/frame',
         'design/guideline/clear-progress',
         'design/guideline/hierarchy',
         'design/guideline/icon-app',
