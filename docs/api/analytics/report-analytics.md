@@ -55,14 +55,14 @@ Sự kiện này được ghi nhận khi khách hàng thực hiện thanh toán 
 | ecommerce | Ecommerce | Yes      |         | Chứa thông tin của đơn hàng. |
 
 #### Ecommerce Parameters
-| Name     | Type        | Required | Example    | Description                            |
-| -------- | ----------- | -------- | ---------- | -------------------------------------- |
-| order_id | string      | Yes      | O_12345    | Mã đơn hàng.                           |
-| coupon   | string      | No       | SUMMER_FUN | Mã coupon được sử dụng trong đơn hàng. |
-| items    | Array<Item> | No       |            | Danh sách items có trong đơn hàng.     |
-| shipping | number      | No       | 5000       | Phí vận chuyển của đơn hàng.           |
-| tax      | number      | No       | 10000      | Thuế trên đơn hàng.                    |
-| value    | number      | No       | 115000     | Tổng giá trị đơn hàng.                 |
+| Name     | Type   | Required | Example    | Description                            |
+| -------- | ------ | -------- | ---------- | -------------------------------------- |
+| order_id | string | Yes      | O_12345    | Mã đơn hàng.                           |
+| coupon   | string | No       | SUMMER_FUN | Mã coupon được sử dụng trong đơn hàng. |
+| items    | Item[] | No       |            | Danh sách items có trong đơn hàng.     |
+| shipping | number | No       | 5000       | Phí vận chuyển của đơn hàng.           |
+| tax      | number | No       | 10000      | Thuế trên đơn hàng.                    |
+| value    | number | No       | 115000     | Tổng giá trị đơn hàng.                 |
 
 #### Item Parameters
 
