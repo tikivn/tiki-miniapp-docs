@@ -54,6 +54,18 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Page',
+      collapsed: true,
+      items: [
+        'framework/miniapp-page/introduction',
+        'framework/miniapp-page/config',
+        'framework/miniapp-page/style',
+        'framework/miniapp-page/life-cycle',
+        'framework/miniapp-page/get-current-pages',
+      ],
+    },
+    {
+      type: 'category',
       label: 'TXML',
       collapsed: true,
       items: [
@@ -63,18 +75,6 @@ module.exports = {
         'framework/txml/list-rendering',
         'framework/txml/template',
         'framework/txml/referencing',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Page',
-      collapsed: true,
-      items: [
-        'framework/miniapp-page/introduction',
-        'framework/miniapp-page/config',
-        'framework/miniapp-page/style',
-        'framework/miniapp-page/life-cycle',
-        'framework/miniapp-page/get-current-pages',
       ],
     },
     {
@@ -96,6 +96,20 @@ module.exports = {
         'framework/component/mixins',
         'framework/component/ref',
         'framework/component/using',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SJS',
+      collapsed: true,
+      items: [
+        'framework/sjs/introduction',
+        'framework/sjs/how-to-import',
+        'framework/sjs/variable',
+        'framework/sjs/annotation',
+        'framework/sjs/operator',
+        'framework/sjs/statement',
+        'framework/sjs/type',
       ],
     },
     {
