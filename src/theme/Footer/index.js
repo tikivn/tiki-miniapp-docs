@@ -19,17 +19,14 @@ const groups = [
     title: 'Hỗ trợ',
     items: [
       {title: 'Câu hỏi thường gặp', url: ''},
-      {title: 'Bugs', url: ''},
-      {title: 'Cộng đồng', url: ''},
-      {title: 'Sitemap', url: ''},
+      {title: 'Cộng đồng', url: '/community'},
     ],
   },
   {
     title: 'Tin tức',
     items: [
-      {title: 'Blog', url: ''},
+      {title: 'Blog', url: 'https://engineering.tiki.vn/'},
       {title: 'Case studies', url: ''},
-      {title: 'Workshop', url: ''},
     ],
   },
 ];
