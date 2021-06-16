@@ -346,7 +346,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'platform API',
+      label: 'Platform API',
       items: [
         'backend-api/platform-api/overview',
         'backend-api/platform-api/calculate-signature',
