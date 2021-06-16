@@ -4,7 +4,7 @@ title: form
 
 ## Giới thiệu
 
-- Form dùng để lưu trữ giá trị của các components [input](/docs/component/form/input), [switch](/docs/component/form/switch), [checkbox](/docs/component/form/checkbox), [radio](/docs/component/form/radio).
+- Form dùng để lưu trữ giá trị của các components [input](/docs/component/form/input), [switch](/docs/component/form/switch), [checkbox](/docs/component/form/checkbox), [radio](/docs/component/form/radio), [picker](/docs/component/form/picker).
 - Các component bên trong form cần khai báo thuộc tính `name`
 - Giá trị của form chỉ có thể được lấy thông qua hàm `onSubmit` và chỉ được gọi thông qua sự kiện tap của [button](/docs/component/form/button) với `form-type="submit"`
 
