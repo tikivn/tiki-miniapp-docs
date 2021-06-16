@@ -12,7 +12,6 @@ const groups = [
       {title: 'Framework', url: '/docs/framework/overview'},
       {title: 'Component', url: '/docs/component/overview'},
       {title: 'API', url: '/docs/api/overview'},
-      {title: 'Ví dụ mẫu', url: ''},
     ],
   },
   {
@@ -26,7 +25,7 @@ const groups = [
     title: 'Tin tức',
     items: [
       {title: 'Blog', url: 'https://engineering.tiki.vn/'},
-      {title: 'Case studies', url: ''},
+      {title: 'Hackathon', url: 'https://hackathon.tiki.vn/'},
     ],
   },
 ];

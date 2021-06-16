@@ -74,6 +74,11 @@ module.exports = {
           position: 'right',
           label: 'Design',
         },
+        {
+          label: 'Cộng đồng',
+          href: 'https://community.tiki.vn',
+          position: 'right'
+        },
         {type: 'localeDropdown', position: 'right'},
       ],
     },
