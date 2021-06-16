@@ -25,15 +25,124 @@ Sản phẩm trên sản TMDT của Tiki và sản phẩm do đối tác cung c�
 - Đăng ký sản phẩm sử dụng [Developer Center](https://developers.tiki.vn/apps)
 - Dùng SKU bạn đăng ký ở bước trên và gọi API `product_create` [platform API](../open-api/overview) để tạo sản phẩm
 
-### Gọi API để Tạo Đơn Hàng
+### Sơ đồ xử lý
+![Sơ đồ xử lý](./payment_flow.svg)
+#### Mô hình thanh toán
+ - **Bước 1**: Khách hàng tạo đơn hàng
+ - **Bước 2**: Đối tác tạo đơn hàng từ phía đối tác
+ - **Bước 3**: Đối tác gọi qua Tiki để tạo đơn hàng phía Tiki. (Thông tin đơn hàng hoàn toàn được quyết định phía đối tác)
+ - **Bước 4**: Dùng mã đơn hàng của Tiki để gọi [my.makePayment](../../api/payment/make-payment.md)
+ - **Bước 5**: Sau khi thanh toán, Tiki sẽ thực hiện hàm callback được đăng ký ở **Bước 4**
+ - **Bước 6**: Backend của đối tác xác thực giao dịch và cập nhật dịch vụ cho khách hàng
+ - **Bước 7**: Gọi api hoàn thành đơn hàng hoặc hủy đơn hàng để kết thúc
 
-Có hai trường hợp để bạn có thể sử dụng payment của Tiki như sau
 
-- Không Có Sự Tham Gia của Tini App Backend (**NOT** RECOMMENDED): Hướng này chỉ thích hợp cho các Tini App cung cấp dịch vụ với số lượng sản phẩm cố định và giá cố định.
 
-- Có Sự Tham Gia của Tini App Backend (**HIGHLY** RECOMMENDED): Tham khảo [platform API](../open-api/overview) để tạo đơn hàng từ backend
+### Tạo đơn hàng
+```
+/order
+```
 
-Sau khi tạo được đơn hàng bạn sẽ có một Order ID, bạn có thể gọi JS API [my.makePayment](make-payment) để mở màn hình thanh toán cho đơn hàng
+| Key          | Value                                                                                              |
+| ----------   | --------                                                                                           |
+| Content-Type | String                                                                                             |
+| Method       | Function                                                                                           |
+| Domain       | Production:  https://api.tiki.vn/tiniapp-open-api<br /> UAT: https://api.tala.xyz/tiniapp-open-api |
+
+#### HTTP Request
+
+| Attribute    | Type       | Required   | Not null   | Description                                                                                  |
+| ----------   | ---------- | ---------- | ---------- | ----------                                                                                   |
+| client_id    | string     | Yes        | Yes        | Thông tin tích hợp được cung cấp khi tạo tiniapp [User Profile](../open-api/user-profile.md) |
+| customer_id  | string     | Yes        | Yes        | ID người dùng Tiki                                                                           |
+| order        | **Order**  | Yes        | Yes        | Thông tin của đơn hàng                                                                       |
+| request_time | int64      | Yes        | Yes        | Thời gian tạo yêu cầu, unix time theo milliseconds                                           |
+| signature    | string     | Yes        | Yes        | [Chữ ký](./calculate-signature.md)                                                           |
+
+#### Order
+
+| Attribute        | Type        | Required   | Not null   | Description                                                    |
+| ----------       | ----------  | ---------- | ---------- | ----------                                                     |
+| items            | []**Item**  | Yes        | Yes        | Danh sách sản phẩm                                             |
+| shipping_address | **Address** | No         | Yes        | Địa chỉ giao hàng, dùng để hiện thỉ trên trang thanh toán Tiki |
+| billing_address  | **Address** | No         | Yes        | Địa chỉ thanh toán                                             |
+| extra            | string      | No         | Yes        | Thông tin bổ sung theo định dạng  ***key=value;key=value***    |
+| reference_id     | string      | No         | Yes        | ID đơn hàng của đối tác                                        |
+
+#### Item
+
+| Attribute  | Type       | Required   | Not null   | Description                                                 |
+| ---------- | ---------- | ---------- | ---------- | ----------                                                  |
+| name       | string     | Yes        | Yes        | Tên sản phẩm                                                |
+| sku        | string     | Yes        | Yes        | Mã sản phẩm ở bước **Đăng ký sản phẩm**                     |
+| quantity   | int64      | Yes        | Yes        | Số lượng sản phẩm                                           |
+| price      | int64      | Yes        | Yes        | Giá tiền sản phẩm                                           |
+| extra      | string     | No         | Yes        | Thông tin bổ sung theo định dạng  ***key=value;key=value*** |
+
+:::caution
+
+Trong một đơn hàng, các ***items*** khác nhau thì phải có sku khác nhau
+
+:::
+
+#### Address
+
+| Attribute  | Type       | Required   | Not null   | Description   |
+| ---------- | ---------- | ---------- | ---------- | ----------    |
+| name       | string     | No         | Yes        | Tên           |
+| phone      | string     | No         | Yes        | Số điện thoại |
+| email      | string     | No         | Yes        | Địa chỉ email |
+| street     | string     | No         | Yes        | Địa chỉ       |
+
+
+Ví dụ về nội dung để tạo chữ ký
+```
+{"client_id":"lGZ90rObDED2B128","customer_id":"100101547","order":{"billing_address":{"email":"","name":"","phone":"","street":""},"extra":"","items":[{"extra":"id=1","name":"Đại Dịch Tim Không Đập Thình Thịch - Corona : Từ A-Z","price":25600,"quantity":1,"sku":"1139973603662"}],"reference_id":"1","shipping_address":{"email":"long.dang@tiki.vn","name":"Long Đặng","phone":"0901020000","street":"285 Cách Mạng Tháng 8"}},"request_time":1623176376622}
+```
+
+Vi dụ về yêu cầu tạo đơn hàng
+
+```
+curl --location --request POST 'http://miniapp-open-gateway.dev.tiki.services/order' \
+--header 'Content-Type: application/json' \
+--data-raw '{"client_id":"lGZ90rObDED2B128","customer_id":"100101547","order":{"items":[{"name":"Đại Dịch Tim Không Đập Thình Thịch - Corona : Từ A-Z","sku":"1139973603662","quantity":1,"price":25600,"extra":"id=1"}],"shipping_address":{"name":"Long Đặng","phone":"0901020000","email":"long.dang@tiki.vn","street":"285 Cách Mạng Tháng 8"},"billing_address":{"name":"","phone":"","email":"","street":""},"extra":"","reference_id":"1"},"request_time":1623176376622,"signature":"4f7d1b9cacf498aba02d911e93132fa91e3d7ad6ef7ed0cfcd02e29837512a53"}'
+```
+
+#### HTTP Response
+
+[**Kết quả lỗi**](./error-code.md)
+
+| Attribute   | Type       | Required   | Not null   | Description                               |
+| ----------  | ---------- | ---------- | ---------- | ----------                                |
+| id          | string     | Yes        | Yes        | ID của đơn hàng                           |
+| status      | string     | Yes        | Yes        | Trang thái đơn hàng                       |
+| grand_total | int64      | Yes        | Yes        | Tổng số tiền mà người dùng cần thanh toán |
+
+Ví dụ về dữ liệu trả về
+
+```
+{
+  "data": {
+    "order": {
+      "id": "83429979421016087",
+      "status": "draft",
+      "grand_total": 25600
+    }
+  }
+}
+```
+
+Sau khi tạo được đơn hàng bạn sẽ có một Order ID, bạn có thể gọi JS API [my.makePayment](../../api/payment/make-payment.md) để mở màn hình thanh toán cho đơn hàng
+
+### Trạng thái đơn hàng
+
+| Status              | Description                                      |
+| ----------          | ----------                                       |
+| draft               | Đơn hàng chưa được chuyển qua trang thanh toán   |
+| waiting_for_payment | Đợi người dùng thanh toán đơn hàng               |
+| online_paid         | Người dùng đã thanh toán đơn hàng                |
+| canceled            | Đơn hàng đã bị hủy                               |
+| completed           | Đơn hàng đã hoàn thành (Đã giao hàng thành công) |
 
 ### Nhận Backend IPN Sau Khi Khách Hàng Thanh Toán
 

@@ -363,6 +363,7 @@ module.exports = {
             'backend-api/platform-api/shipping/cancel_shipment',
           ],
         },
+        'backend-api/platform-api/error-code',
       ],
     },
   ],
