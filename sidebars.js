@@ -366,6 +366,17 @@ module.exports = {
         'backend-api/platform-api/calculate-signature',
         'backend-api/platform-api/exchange-auth-token',
         'backend-api/platform-api/payment',
+        {
+          type: 'category',
+          label: 'Shipping API',
+          items: [
+            'backend-api/platform-api/shipping/overview',
+            'backend-api/platform-api/shipping/list_quotes',
+            'backend-api/platform-api/shipping/create_shipment',
+            'backend-api/platform-api/shipping/get_shipment',
+            'backend-api/platform-api/shipping/cancel_shipment',
+          ],
+        },
       ],
     },
   ],
