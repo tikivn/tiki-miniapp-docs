@@ -18,24 +18,24 @@ Sau đây là lệnh gọi mẫu bằng lệnh cURL
 Request:
 
 curl -L -X POST 'https://api.tiki.vn/tiniapp-open-api/api/v1/oauth/auth/token' -H 'Content-Type: application/json' --data-raw '{
-  "code": "FEq55lKFWxhZKgHAYptytkfFI-inPI9S0R0eAJ6Zmbs.ghJJ6iKU5eiCFeyfhTAcV7sQ_Fz5gYyZNTxkLtA5gJE",
-  "client_id": "pg94irQ2EbLV1fDV",
-  "timestamp": 1622678975,
-  "signature": "fa729c7d06683ebc4bf3a7f8eb0d753b2f3bfe992a0941913c9fb7c5e4194adf"
+  "client_id":"pg94irQ2EbLV1fDV",
+  "code":"aITD9SE46gloO8V7WYu2v8UO7TURKRQz73Yx69C0L_w.1fLlKBBXCzoGLRiSCBlHsm2rmjfqFp5USpKGTre_f7k",
+  "timestamp":1624018243197,
+  "signature":"93e925618d39eb679a5ec3540dac67c08b9ccd835377a382819869edd6244e75"
 }'
 
 Response:
 
 {
-  "data": {
-    "access_token": "kxvT9fhnIsMpS2ZWruNXbQnXiadDZdDwSsOnCkbUlhs.8bmqP1rsssjERWGdO2xvCEwCOg-zov09UDVLgrx7qIg",
-    "expires_in": 3600,
-    "refresh_token": "-xMfLgwjAKyFTm6TOngU9mEygXZKL8PLBVUImlRWKOg.EqK0YGeXBr7xxH0JMahCaAoJWNTIo8_-nkEW1jY80IM",
-    "scopes": [
+  "data":{
+    "access_token":"4Qaki2VU_IptZq3lUFXt3MWn0hH-XEKCXCsk0-i9r7o.o6aGPqgCBp3ac-0lJalWb78KJsxcNpXPBgY2poroE4E",
+    "expires_in":3600,
+    "refresh_token":"oiOvAz5-QpU57anfgSGDvSDQqa0nG4Du_9Fu7EEIiCk.uXwSpktiDzHBSmkYORc65QBGK109fJRZo175w2JasCI",
+    "scopes":[
       "offline",
       "user_profile"
     ],
-    "token_type": "bearer"
+    "token_type":"bearer"
   },
   "error": null
 }
@@ -79,24 +79,24 @@ Vì auth token là token được cấp với thời gian valid ngắn. Nếu b�
 Request:
 
 curl -L -X POST 'https://api.tiki.vn/tiniapp-open-api/api/v1/oauth/auth/token/refresh' -H 'Content-Type: application/json' --data-raw '{
-  "refresh_token": "-xMfLgwjAKyFTm6TOngU9mEygXZKL8PLBVUImlRWKOg.EqK0YGeXBr7xxH0JMahCaAoJWNTIo8_-nkEW1jY80IM",
-  "client_id": "pg94irQ2EbLV1fDV",
-  "timestamp": 1622678975,
-  "signature": "6feaf61c50e51c280ab379c281e291171b72d762744b9871284cfb006443507d"
+  "client_id":"pg94irQ2EbLV1fDV",
+  "refresh_token":"oiOvAz5-QpU57anfgSGDvSDQqa0nG4Du_9Fu7EEIiCk.uXwSpktiDzHBSmkYORc65QBGK109fJRZo175w2JasCI",
+  "timestamp":1624018489878,
+  "signature":"fe8a525334d302bc56564b3d17f0d4f204a84224c23970189415ec463911cae9"
 }'
 
 Response:
 
 {
-  "data": {
-    "access_token": "cXvegklVEOFLnWisSF63StGLmk9DSmphXf1HusphnA8.s3IIP4srYM7vi5eRC6IJId4_iwKDiXNJo2rZUQW4Dcc",
-    "expires_in": 3599,
-    "refresh_token": "cXvegklVEOFLnWisSF63StGLmk9DSmphXf1HusphnA8.s3IIP4srYM7vi5eRC6IJId4_iwKDiXNJo2rZUQW4Dcc",
-    "scopes": [
-        "offline",
-        "user_profile"
+  "data":{
+    "access_token":"adxlbxvnqH7H-lh8ToYvXCjUXZp9aWkJvHj83eFgjlg.Kc41ZuRy9lZf9XjFfpFcBKx9uhXYviz7_OP2KrxjB5E",
+    "expires_in":3600,
+    "refresh_token":"adxlbxvnqH7H-lh8ToYvXCjUXZp9aWkJvHj83eFgjlg.Kc41ZuRy9lZf9XjFfpFcBKx9uhXYviz7_OP2KrxjB5E",
+    "scopes":[
+      "offline",
+      "user_profile"
     ],
-    "token_type": "bearer"
+    "token_type":"bearer"
   },
   "error": null
 }
@@ -114,6 +114,63 @@ Invalid Token:
     "reason": "invalid_token"
     "message": "invalid refresh token",
   }
+}
+
+Invalid Signature:
+
+{
+  "data": null,
+  "error": {
+    "code": 400,
+    "reason": "invalid_signature"
+    "message": "invalid signature",
+  }
+}
+```
+
+## Get Info From Auth Token
+
+Để lấy thông tin từ Auth Token thì các bạn gọi API như sau
+
+```bash
+# Endpoint này của Tiki sử dụng RESTful API
+
+Request:
+
+curl -L -X POST 'https://api.tiki.vn/tiniapp-open-api/api/v1/oauth/me' -H 'Content-Type: application/json' --data-raw '{
+  "access_token":"adxlbxvnqH7H-lh8ToYvXCjUXZp9aWkJvHj83eFgjlg.Kc41ZuRy9lZf9XjFfpFcBKx9uhXYviz7_OP2KrxjB5E",
+  "client_id":"pg94irQ2EbLV1fDV",
+  "timestamp":1624018701875,
+  "signature":"1357adc78b8840d462e859b1132b86372a0b19ae74f7fcec211c384d0fa0784d"
+}'
+
+Response:
+
+{
+  "data":{
+    "customer_id":1,
+    "customer_name":"Ti Ni",
+    "scopes":[
+      "offline",
+      "user_profile"
+    ]
+  },
+  "error":null
+}
+```
+
+Những lỗi có thể xảy ra có response như sau:
+
+```bash
+Invalid Token:
+
+{
+  "data": null,
+  "error": {
+    "code": 400,
+    "reason": "invalid_token"
+    "message": "invalid access token",
+  },
 }
 
 Invalid Signature:
