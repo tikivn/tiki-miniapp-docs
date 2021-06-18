@@ -64,6 +64,8 @@ Khi việc gọi API thành công, framework sẽ trả về thông tin về thi
 | platform        | String | Nền tảng của hệ điều hành (iOS, Android, Web).                                                                             |
 | system          | String | Hệ điều hành chạy trên thiết bị (iOS, Android).                                                                            |
 | version         | String | Verion hiện tại của hệ điều hành (12.0, 14.0,...).                                                                         |
+| hostVersion     | String | Verion hiện tại của app Tiki                                                                                               |
+| runtimeVersion  | String | Verion hiện tại của Mini App Runtime                                                                                       |
 | freeStorage     | Number | Dung lượng bộ nhớ còn trống theo bytes.                                                                                    |
 | screenWidth     | Number | Chiều rộng theo px của màn hình thiết bị.                                                                                  |
 | screenHeight    | Number | Chiều cao theo px của màn hình thiết bị.                                                                                   |
