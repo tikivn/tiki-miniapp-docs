@@ -28,10 +28,10 @@ function Hero() {
     <header className={styles.hero}>
       <div className={styles.heroWrapper}>
         <div className={styles.heroContent}>
-          <h1 className={styles.title}>Xây dựng ứng dụng cùng Tini Apps</h1>
+          <h1 className={styles.title}>Xây dựng ứng dụng cùng Tini App</h1>
           <p className={styles.heroText}>
             Phát triển ứng dụng đa nền tảng nhanh chóng và tiện lợi thông qua
-            các công cụ được xây dựng sẵn của Tiki MiniApp.
+            các công cụ được xây dựng sẵn của Tiki Tini App.
           </p>
           <div className={styles.flexButtons}>
             <Link to="#" className={[styles.secondaryButton]}>
@@ -69,9 +69,9 @@ function Hero() {
 function WhatIsTiniAp() {
   return (
     <div className={styles.left50}>
-      <h3 className={styles.headText}>Tini Apps là gì?</h3>
+      <h3 className={styles.headText}>Tini App là gì?</h3>
       <p className={styles.tiniText}>
-        Tini Apps là giải pháp hoàn toàn mới và hiện đại giúp cho các đối tác
+        Tini App là giải pháp hoàn toàn mới và hiện đại giúp cho các đối tác
         của Tiki có thể dễ dàng, nhanh chóng và ít tốn kém phát triển ứng dụng
         và dịch vụ của mình trên nền tảng của Tiki. Nhờ đó các doanh nghiệp có
         thể tập trung vào dịch vụ cốt lõi và mang tới sản phẩm tốt nhất cho
@@ -79,10 +79,9 @@ function WhatIsTiniAp() {
         đổi số.
         <br />
         <br />
-        Chương trình MiniApp của Tiki đi kèm với hệ thống framework đơn giản,
+        Công nghệ Tini App của Tiki đi kèm với hệ thống framework đơn giản,
         hiệu quả với đa dạng các thành phần giao diện cũng như APIs cần thiết
-        trong việc phát triển đa dạng ứng dụng cùng trải nghiệm native trên
-        Tiki.
+        trong việc phát triển ứng dụng cùng trải nghiệm native trên Tiki.
       </p>
     </div>
   );
@@ -97,7 +96,7 @@ function BecomeDeveloper() {
           Đăng ký trở thành Nhà phát triển để phát triển ứng dụng đa nền tảng và
           đưa sản phẩm của bạn đến hơn 10 triệu người dùng của Tiki.
         </p>
-        <Link className={styles.linkBrand} to="/docs/developer/getting-started">
+        <Link className={styles.linkBrand} to="/docs/developer/introduce/register">
           Tìm hiểu thêm
         </Link>
       </div>
@@ -140,9 +139,9 @@ function Tini() {
       <TiniSVG className={styles.svgCenter} />
       <h3 className={styles.headText}>Tini Design System</h3>
       <p className={styles.gray}>
-        Nhóm thiết kế Tini đã xây dựng nên hệ thống thiết kế dành riêng cho nền
-        tảng Tini Apps dựa trên hệ thống thiết kế gốc từ Tiki với tên gọi là
-        Tini. Hệ thống thiết kế Tini sẽ giúp các nhà thiết kế sản phẩm thống
+        Đội ngũ thiết kế Tiki đã xây dựng nên hệ thống thiết kế dành riêng cho nền
+        tảng Tini App dựa trên hệ thống thiết kế gốc từ Tiki. 
+        Hệ thống thiết kế Tini sẽ giúp các nhà thiết kế sản phẩm thống
         nhất về giao diện người dùng để tập trung vào trải nghiệm người dùng tốt
         hơn, cung cấp ý tưởng và sản phẩm nhanh hơn.
       </p>
@@ -167,8 +166,8 @@ function Studio() {
       <h3 className={styles.headText}>Tini Studio</h3>
       <p className={styles.gray}>
         Tini Studio là công cụ dùng để phát triển mini app trên nền tảng Tini
-        Apps. Công cụ này cung cấp các tính năng như quản lý mini app, phát
-        triển, trình giả lập, debug, và upload app lên Tini Developer Center.
+        App. Công cụ này cung cấp các tính năng như quản lý, phát
+        triển app, giả lập thiết bị, debug, và tải app lên Tiki Developer Center.
       </p>
       {[
         [
