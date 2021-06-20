@@ -1,6 +1,6 @@
 # Cấu hình chung
 
-Trong một dự án, file `app.json` sẽ được dùng để cấu hình cho một ứng dụng Tiki MiniApp. Nội dung cấu hình sẽ được áp dụng cho việc quản lý các pages và path tới các page trong ứng dụng, hay cấu hình giao diện cho app như title, tabBar, ...
+Trong một dự án, file `app.json` sẽ được dùng để cấu hình cho một ứng dụng Tini App. Nội dung cấu hình sẽ được áp dụng cho việc quản lý các pages và path tới các page trong ứng dụng, hay cấu hình giao diện cho app như title, tabBar, ...
 
 Dưới đây là ví dụ của một `app.json` với một vài cấu hình thông dụng:
 
@@ -47,7 +47,7 @@ Dưới đây là ví dụ của một `app.json` với một vài cấu hình t
 
 ## pages
 
-Đây là cấu hình giúp cho MiniApp Framework xác định được các pages và đường dẫn tới các files của page. Khi định nghĩa không cần xác định đuôi của file, framework sẽ tự động tìm kiếm file .json, .js, .jsx và .style dựa trên page path được quy định.
+Đây là cấu hình giúp cho Tini App Framework xác định được các pages và đường dẫn tới các files của page. Khi định nghĩa không cần xác định đuôi của file, framework sẽ tự động tìm kiếm file .json, .js, .jsx và .style dựa trên page path được quy định.
 
 **Lưu ý:**
 

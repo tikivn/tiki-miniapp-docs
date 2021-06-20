@@ -1,10 +1,10 @@
 # Tổng quan về framework
 
-Tiki MiniApp Framework được thiết kế để cho phép các nhà phát triển xây dựng ứng dụng của mình với trải nghiệm native app trên nền tảng Tiki một cách dễ dàng và đa dạng tính năng nhất có thể.
+Tini App Framework được thiết kế để cho phép các nhà phát triển xây dựng ứng dụng của mình với trải nghiệm native app trên nền tảng Tiki một cách dễ dàng và đa dạng tính năng nhất có thể.
 
-Một ứng dụng MiniApp bao gồm 2 thành phần chính đó là `app` và `page`. Trong đó `app` là thể hiện của toàn ứng dụng (tương đương với `UIApplicationDelegate` của iOS hoặc `Application` của android). `Page` là đại diện của một màn hình trong ứng dụng và trong một ứng dụng sẽ có thể bao gồm một hoặc nhiều pages.
+Một ứng dụng Tini App bao gồm 2 thành phần chính đó là `app` và `page`. Trong đó `app` là thể hiện của toàn ứng dụng (tương đương với `UIApplicationDelegate` của iOS hoặc `Application` của android). `Page` là đại diện của một màn hình trong ứng dụng và trong một ứng dụng sẽ có thể bao gồm một hoặc nhiều pages.
 
-Cấu trúc thư mục của một MiniApp đơn giản sẽ bao gồm:
+Cấu trúc thư mục của một Tini App đơn giản sẽ bao gồm:
 
 ```
 - miniapp-project/
@@ -43,7 +43,7 @@ Mỗi `page` trong app bao gồm các files sau và được đặt trong thư m
 
 ## Reactive Data Binding
 
-Mỗi màn hình trên MiniApp được phân tách thành 2 layers riêng biệt là `Logic Layer` và `View Layer`.
+Mỗi màn hình trên Tini App được phân tách thành 2 layers riêng biệt là `Logic Layer` và `View Layer`.
 Việc phát triển `View Layer` sử dụng syntax [txml](/docs/framework/txml/introduction).
 `Logic Layer` thì được phát triển sử sử dụng ngôn ngữ Javascript. Và việc trao đổi thông tin giữa 2 layers này dựa trên hệ thống reactive data binding.
 

@@ -4,7 +4,7 @@ title: Shopping
 
 ## Mục tiêu
 
-Kết hợp với [Fake Store API](https://fakestoreapi.com/) để làm Shopping MiniApp với các chức năng:
+Kết hợp với [Fake Store API](https://fakestoreapi.com/) để làm Shopping App với các chức năng:
 
 1. Hiển thị danh sách sản phẩm với carousel và tabs
 2. Xem chi tiết sản phẩm
@@ -28,9 +28,9 @@ Kết hợp với [Fake Store API](https://fakestoreapi.com/) để làm Shoppin
 
 ### Tạo một app mới trên Dev Center
 
-Xem hướng dẫn tại trang [Tạo MiniApp của bạn](/docs/developer/introduce/create).
+Xem hướng dẫn tại trang [Tạo Tini App của bạn](/docs/developer/introduce/create).
 
-### Tạo một project mới trên Tiki MiniApp Studio
+### Tạo một project mới trên Tini Studio
 
 Xem hướng dẫn tại [đây](/docs/studio/start-page).
 
@@ -196,17 +196,19 @@ _app.js_
 App({
   cart: {
     totalPrice: 0,
-    products: [],
+    products: []
   },
   onAppAddCart(product) {
-    const index = this.cart.products.findIndex(p => p.id === product.id);
+    const index = this.cart.products.findIndex(
+      (p) => p.id === product.id
+    );
     if (index > -1) {
       this.cart.products[index].total += 1;
     } else {
       this.cart.products.push({ ...product, total: 1 });
     }
     this.cart.totalPrice += product.price;
-  },
+  }
 });
 ```
 
@@ -316,9 +318,11 @@ Component({
       this.props.onAddCart(this.props.product);
     },
     onGoToProductPage() {
-      my.navigateTo({ url: `pages/product/index?id=${this.props.product.id}` });
-    },
-  },
+      my.navigateTo({
+        url: `pages/product/index?id=${this.props.product.id}`
+      });
+    }
+  }
 });
 ```
 
@@ -381,16 +385,16 @@ import query from 'query-string';
 
 Page({
   data: {
-    product: null,
+    product: null
   },
   onLoad(e) {
     const params = query.parse(e);
     my.request({
       url: `https://fakestoreapi.com/products/${params.id}`,
       method: 'GET',
-      success: product => this.setData({ product }),
+      success: (product) => this.setData({ product })
     });
-  },
+  }
 });
 ```
 
@@ -482,11 +486,11 @@ const app = getApp();
 
 Page({
   data: {
-    cart: app.cart,
+    cart: app.cart
   },
   onShow() {
     this.setData({ cart: app.cart });
-  },
+  }
 });
 ```
 

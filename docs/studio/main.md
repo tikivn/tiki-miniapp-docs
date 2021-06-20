@@ -2,7 +2,7 @@
 title: Giao diện chính
 ---
 
-Giao diện chính của Tiki MiniApp Studio bao gồm thanh menu, thanh tính năng, trình soạn thảo, công cụ debug, và trình giả lập.
+Giao diện chính của Tini Studio bao gồm thanh menu, thanh tính năng, trình soạn thảo, công cụ debug, và trình giả lập.
 
 - **Thanh menu**: Cung cấp các tính năng cơ bản trong File, Edit, View, Tools và Help.
 - **Thanh tính năng**: Bao gồm các tính năng như Explorer (quản lý tập tin), Search (tìm kiếm), Source Control (Git).

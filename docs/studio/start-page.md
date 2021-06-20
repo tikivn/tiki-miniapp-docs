@@ -2,7 +2,7 @@
 title: Bắt đầu
 ---
 
-Lần đầu sử dụng, Tiki MiniApp Studio sẽ có giao diện như sau:
+Lần đầu sử dụng, Tini Studio sẽ có giao diện như sau:
 
 <img src="https://salt.tikicdn.com/ts/social/ce/ad/35/798aae5f194e345938cd710be0149ab0.jpg" width="100%" />
 
@@ -22,6 +22,6 @@ Khi tạo project thành công, Studio sẽ tạo sẵn một cấu trúc các t
 
 ## Mở một project đã có
 
-Bạn có thể vào menu _File > Open..._ và chọn thư mục project đã tạo từ trước để mở project trong MiniApp Studio.
+Bạn có thể vào menu _File > Open..._ và chọn thư mục project đã tạo từ trước để mở project trong Tini Studio.
 
 <img src="https://salt.tikicdn.com/ts/social/c8/db/e1/15e76c9328da9847f8da70e0d24346d5.jpg" width="100%" />

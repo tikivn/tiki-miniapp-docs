@@ -1,5 +1,5 @@
 ---
-title: Tạo MiniApp của bạn
+title: Tạo Tini App của bạn
 ---
 
 Sau khi đăng ký và xác thực tài khoản thành công, Nhà phát triển có thể tiến hành tạo mới một ứng dụng để bắt đầu quá trình phát triển bằng cách truy cập [Dev Center](/dev-center/apps).
@@ -14,9 +14,9 @@ Bấm nút **"Tạo ứng dụng mới"** tại góc trên bên phải.
 
 Nội dung được điền tại đây sẽ hiển thị ở phía người dùng cuối trong phần mô tả ứng dụng:
 
-* Tên ứng dụng: tối đa 50 ký tự, người dùng có thể tìm thấy ứng dụng thông qua tên ứng dụng.<br/>
-* App ID: tối đa 255 ký tự, gồm các nhóm ký tự bắt đầu bằng chữ cái, cho phép chữ số và dấu gạch dưới (_) được ngăn cách bằng dấu chấm (.). Khuyến khích sử dụng chuỗi nghịch đảo của tên miền công ty bạn. VD: vn.tiki.demo.
-* Hình đại diện: kích thước tối thiểu 600x600, dung lượng tối đa: 10Mb, định dạng PNG.
+- Tên ứng dụng: tối đa 50 ký tự, người dùng có thể tìm thấy ứng dụng thông qua tên ứng dụng.<br/>
+- App ID: tối đa 255 ký tự, gồm các nhóm ký tự bắt đầu bằng chữ cái, cho phép chữ số và dấu gạch dưới (\_) được ngăn cách bằng dấu chấm (.). Khuyến khích sử dụng chuỗi nghịch đảo của tên miền công ty bạn. VD: vn.tiki.demo.
+- Hình đại diện: kích thước tối thiểu 600x600, dung lượng tối đa: 10Mb, định dạng PNG.
 
 Mô tả ứng dụng có thể thay đổi mỗi lần phát hành phiên bản mới trừ App ID.
 
@@ -30,11 +30,10 @@ Bấm **"Hoàn tất"** để xác nhận tạo ứng dụng mới với thông 
 
 ## Các trạng thái của một ứng dụng
 
-| **Trạng thái** | **Mô tả** |
-| ----- | --------------- |
-| Draft | • Ứng dụng chưa phát hành trên Store
-| Production | • Ứng dụng đã phát hành trên Store, tất cả người dùng Tiki có thể tìm kiếm và sử dụng
-| Suspended | • Ứng dụng bị Đình chỉ bởi Tiki.<br/>• Nhà phát hành phải tiến hành quy trình Kháng cáo để có thể phát hành lại ứng dụng.<br/>• Ứng dụng bị đình chỉ có 90 ngày thực hiện quy trình Kháng cáo. <br/>• Trong thời gian kháng cáo, ứng dụng vẫn ở trạng thái Đình chỉ.<br/>• Người dùng cũ và mới không thề tìm kiếm hay tiếp tục sử dụng ứng dụng đó.
-| Terminated | • Sau 90 ngày kể từ ngày đỉnh chỉ, ứng dụng sẽ bị chấm dứt hoạt động vĩnh viễn.
-| Unpublished | • Ứng dụng đã phát hành trên Store nhưng được chuyển về trạng thái Unpublish bởi chính Nhà phát hành.<br/>• Người dùng cũ và mới không thề tìm kiếm hay tiếp tục sử dụng ứng dụng đó.<br/>• Nhà phát hành có thể chủ động phát hánh lại ứng dụng.
-
+| **Trạng thái** | **Mô tả**                                                                                                                                                                                                                                                                                                                                            |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Draft          | • Ứng dụng chưa phát hành trên Store                                                                                                                                                                                                                                                                                                                 |
+| Production     | • Ứng dụng đã phát hành trên Store, tất cả người dùng Tiki có thể tìm kiếm và sử dụng                                                                                                                                                                                                                                                                |
+| Suspended      | • Ứng dụng bị Đình chỉ bởi Tiki.<br/>• Nhà phát hành phải tiến hành quy trình Kháng cáo để có thể phát hành lại ứng dụng.<br/>• Ứng dụng bị đình chỉ có 90 ngày thực hiện quy trình Kháng cáo. <br/>• Trong thời gian kháng cáo, ứng dụng vẫn ở trạng thái Đình chỉ.<br/>• Người dùng cũ và mới không thề tìm kiếm hay tiếp tục sử dụng ứng dụng đó. |
+| Terminated     | • Sau 90 ngày kể từ ngày đỉnh chỉ, ứng dụng sẽ bị chấm dứt hoạt động vĩnh viễn.                                                                                                                                                                                                                                                                      |
+| Unpublished    | • Ứng dụng đã phát hành trên Store nhưng được chuyển về trạng thái Unpublish bởi chính Nhà phát hành.<br/>• Người dùng cũ và mới không thề tìm kiếm hay tiếp tục sử dụng ứng dụng đó.<br/>• Nhà phát hành có thể chủ động phát hánh lại ứng dụng.                                                                                                    |

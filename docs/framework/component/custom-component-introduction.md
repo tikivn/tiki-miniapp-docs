@@ -1,6 +1,6 @@
 # Giới thiệu về Custom Component
 
-Tiki MiniApp Framework hỗ trợ tính năng tạo các Custom Component trong code base của bạn.
+Tini App Framework hỗ trợ tính năng tạo các Custom Component trong code base của bạn.
 Giống như `Page`, một Custom Component cũng sẽ bao gồm 4 thành phần `txml`, `tcss`, `js` và `json`.
 
 Để tạo mới một Custom Component, bạn sẽ cần thực hiện 4 bước sau:

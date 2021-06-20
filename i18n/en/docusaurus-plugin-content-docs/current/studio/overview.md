@@ -1,22 +1,22 @@
 ---
-title: MiniApp Studio Overview
+title: Tini Studio Overview
 ---
 
 ## Introduction
 
-Tiki MiniApp Studio (or Tiki IDE) is a tool created by Tiki for developes on Tiki MiniApp Platform. It provides functionalities for mini app development such as project management, development, simulator, debugging and app uploader.
+Tini Studio (or Tiki IDE) is a tool created by Tiki for developes on Tini App Platform. It provides functionalities for mini app development such as project management, development, simulator, debugging and app uploader.
 
-![Tiki MiniApp Studio](https://salt.tikicdn.com/ts/upload/5d/fd/41/6f556e1d67a0d3f1d7da1dce7f230c52.jpg)
+![Tini Studio](https://salt.tikicdn.com/ts/upload/5d/fd/41/6f556e1d67a0d3f1d7da1dce7f230c52.jpg)
 
 ## Features
 
 ### Project management
 
-Similar to IDEs like Visual Studio Code, Atom..., Tiki MiniApp Studio supports creating mini app projects, file explorer, git tool, and npm package management.
+Similar to IDEs like Visual Studio Code, Atom..., Tini Studio supports creating mini app projects, file explorer, git tool, and npm package management.
 
 ### Development
 
-Tiki MiniApp Studio provides tools to improve developer's coding experience:
+Tini Studio provides tools to improve developer's coding experience:
 
 - Code editor: Supports syntax highlight for TXML, TCSS and JS APIs.
 - Autocomplete: Auto suggesting syntax and functions from TXML, TCSS and JS APIs.
@@ -32,7 +32,7 @@ The simulator is used to simulate how your mini app works in the Tiki app. You c
 
 ### Debugging
 
-To help with debugging, Tiki MiniApp Studio provides some tools for developers:
+To help with debugging, Tini Studio provides some tools for developers:
 
 - Simulator: Errors happen at runtime will be displayed right in the simulator.
 - DevTools: Errors related to network, storage... can be checked with DevTools.
@@ -40,4 +40,4 @@ To help with debugging, Tiki MiniApp Studio provides some tools for developers:
 
 ### App upload
 
-Developer can upload the app via the MiniApp Panel to Tiki Developer Center.
+Developer can upload the app via the Panel to Tiki Developer Center.

@@ -22,4 +22,4 @@ Trên ứng dụng Tiki UAT, Dev Assistant có thể được truy cập đượ
 
 ### Danh sách ứng dụng
 
-Để ứng dụng của bạn được liệt kê trong Dev Assistant, đầu tiên bạn phải [tạo ứng dụng trên Dev Center](/docs/developer/introduce/create). Sau đó, bạn chỉ cần tải ứng dụng lên Dev Center bằng MiniApp Studio là được (không cần phải Submit app for review).
+Để ứng dụng của bạn được liệt kê trong Dev Assistant, đầu tiên bạn phải [tạo ứng dụng trên Dev Center](/docs/developer/introduce/create). Sau đó, bạn chỉ cần tải ứng dụng lên Dev Center bằng Tini Studio là được (không cần phải Submit app for review).

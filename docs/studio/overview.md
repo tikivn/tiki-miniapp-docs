@@ -1,24 +1,24 @@
 ---
-title: Tổng quan về MiniApp Studio
+title: Tổng quan về Tini Studio
 ---
 
 ## Giới thiệu
 
-Tiki MiniApp Studio (hoặc Tiki IDE) là công cụ dùng để phát triển mini app trên nền tảng Tiki MiniApp. Công cụ này cung cấp các tính năng như quản lý mini app, phát triển, trình giả lập, debug, và upload app lên Tiki Developer Center.
+Tini Studio (hoặc Tiki IDE) là công cụ dùng để phát triển mini app trên nền tảng Tini App. Công cụ này cung cấp các tính năng như quản lý mini app, phát triển, trình giả lập, debug, và upload app lên Tiki Developer Center.
 
-<img alt="Tiki MiniApp Studio" src="https://salt.tikicdn.com/ts/upload/5d/fd/41/6f556e1d67a0d3f1d7da1dce7f230c52.jpg" width="100%" />
+<img alt="Tini Studio" src="https://salt.tikicdn.com/ts/upload/5d/fd/41/6f556e1d67a0d3f1d7da1dce7f230c52.jpg" width="100%" />
 
 ## Tính năng
 
 ### Quản lý các dự án mini app
 
-Tương tự như các công cụ phát triển quen thuộc như Visual Studio Code, Atom..., Tiki MiniApp Studio hỗ trợ tạo các dự án mini app, quản lý các tập tin mã nguồn, công cụ git và quản lý npm package.
+Tương tự như các công cụ phát triển quen thuộc như Visual Studio Code, Atom..., Tini Studio hỗ trợ tạo các dự án mini app, quản lý các tập tin mã nguồn, công cụ git và quản lý npm package.
 
 ### Công cụ phát triển
 
 Trong quá trình phát triển, nhà phát triển sẽ làm việc với các công cụ:
 
-- Trình soạn thảo: Hỗ trợ syntax highlight cho các ngôn ngữ chuyên biệt như TXML/TCSS và các JS API của Tiki MiniApp.
+- Trình soạn thảo: Hỗ trợ syntax highlight cho các ngôn ngữ chuyên biệt như TXML/TCSS và các JS API của Tini App.
 - Autocomplete: Tăng tốc độ code khi tự động đề xuất cú pháp và hàm của TXML/TCSS và APIs.
 - Linting: Kiểm tra nhanh các lỗi cú pháp trong quá trình phát triển.
 
@@ -32,7 +32,7 @@ Giả lập quá trình chạy mini app ngay trên máy mà không cần phải 
 
 ### Debug
 
-Tiki MiniApp Studio cung cấp một số công cụ để nhà phát triển có thể dễ dàng debug mini app:
+Tini Studio cung cấp một số công cụ để nhà phát triển có thể dễ dàng debug mini app:
 
 - Trình giả lập: Các lỗi xảy ra trong quá trình giả lập sẽ được hiển thị ngay trên trình giả lập.
 - DevTools: Các lỗi liên quan đến network, storage có thể được debug thông qua công cụ DevTools.

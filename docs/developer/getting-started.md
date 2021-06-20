@@ -2,21 +2,21 @@
 title: Bắt đầu
 ---
 
-Tiki MiniApp là giải pháp hoàn toàn mới và hiện đại giúp cho các đối tác của Tiki có thể dễ dàng, nhanh chóng và ít tốn kém phát triển ứng dụng và dịch vụ của mình trên nền tảng của Tiki. Nhờ đó các doanh nghiệp có thể tập trung vào dịch vụ cốt lõi của mình và mang tới sản phẩm cũng như dịch vụ tốt nhất cho khách hàng, trong khi vẫn thừa hưởng được tất cả lợi ích của việc chuyển đổi số.
+Tini App là giải pháp hoàn toàn mới và hiện đại giúp cho các đối tác của Tiki có thể dễ dàng, nhanh chóng và ít tốn kém phát triển ứng dụng và dịch vụ của mình trên nền tảng của Tiki. Nhờ đó các doanh nghiệp có thể tập trung vào dịch vụ cốt lõi của mình và mang tới sản phẩm cũng như dịch vụ tốt nhất cho khách hàng, trong khi vẫn thừa hưởng được tất cả lợi ích của việc chuyển đổi số.
 
 <img style={{maxWidth: 320, margin: '12px auto', display: 'flex'}} alt="Tini" src="https://salt.tikicdn.com/ts/upload/4e/01/1e/732977314da243c99557819e832ba78b.png"/>
 
-Chương trình MiniApp của Tiki đi kèm với hệ thống framework đơn giản, hiệu quả với đa dạng các thành phần giao diện cũng như APIs cần thiết trong việc phát triển đa dạng ứng dụng cùng trải nghiệm native trên Tiki.
+Tini App của Tiki đi kèm với hệ thống framework đơn giản, hiệu quả với đa dạng các thành phần giao diện cũng như APIs cần thiết trong việc phát triển các ứng dụng cùng trải nghiệm native trên Tiki.
 
-Tài liệu này giúp giới thiệu MiniApp framework, khả năng của framework cũng như đa dạng các hướng dẫn giúp cho nhà phát triển dễ dàng và nhanh chóng tiếp cận tới các khả năng và khía cạnh của chương trình MiniApp.
+Tài liệu này giúp giới thiệu Tini App framework, khả năng của framework cũng như đa dạng các hướng dẫn giúp cho nhà phát triển dễ dàng và nhanh chóng tiếp cận tới các khả năng và khía cạnh của chương trình Tini App.
 
-Để bắt đầu tham gia chương trình MiniApp của Tiki xin hãy tham khảo hướng dẫn sau:
+Để bắt đầu tham gia chương trình Tini App của Tiki xin hãy tham khảo hướng dẫn sau:
 
 - [Đăng ký nhà phát triển](/docs/developer/introduce/register)
 
 Đề tìm hiểu các thành phần của framework:
 
-- [Tìm hiểu về Tiki MiniApp Framework](/docs/framework/overview)
+- [Tìm hiểu về Tini App Framework](/docs/framework/overview)
 - [Tìm hiểu về hệ thống UI Components](/docs/component/overview)
 - [Tìm hiểu về hệ thống JSAPIs](/docs/api/overview)
 
