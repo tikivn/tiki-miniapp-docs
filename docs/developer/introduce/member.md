@@ -4,7 +4,7 @@ title: Quản lý tài khoản
 
 ## Giới thiệu
 
-Với tài khoản Nhà Phát triển là Công ty, nền tảng Tini App cho phép mời nhiều thành viên cùng tham gia phát triển ứng dụng với các vai trò **Owner**, **Admin**, **Programmer**, **Tester**.
+Nền tảng Tini App cho phép mời nhiều thành viên cùng tham gia phát triển một ứng dụng với các vai trò **Owner**, **Admin**, **Programmer**, **Tester**.
 
 Chỉ có Owner, Admin và Programmer có thể truy cập Dev Center và thực hiện các tác vụ liên quan việc phát hành ứng dụng, Tester không thể truy cập vào công cụ này.
 
@@ -12,30 +12,18 @@ Chỉ có Owner, Admin và Programmer có thể truy cập Dev Center và thực
 
 Một tài khoản Nhà phát triển có thể có nhiều ứng dụng. Mỗi ứng dụng sẽ quản lý nhóm các thành viên tham gia phát triển của chính nó.
 
-• **Owner** - Người đại diện Công ty đăng ký tài khoản Nhà phát triển (mặc định sẽ là Owner của tất cả các ứng dụng thuộc Công ty). Mỗi tài khoản Nhà phát triển chỉ có duy nhất một Owner.<br/>
-• **Admin** - Có tất cả quyền hạn trên ứng dụng mà họ được trao quyền Admin, ngoại trừ điều chỉnh thông tin Thanh toán.<br/>
-• **Programmer** - Người lập trình viên tham gia xây dựng ứng dụng. <br/>
-• **Tester** - Người chịu trách nhiệm kiểm thử ứng dụng hoặc được mời trải nghiệm một ứng dụng trước khi phát hành.
-
-|                                      | Owner | Admin | Programmer | Tester |
-| ------------------------------------ | :---: | :---: | :--------: | :----: |
-| Development and<br/>debugging in IDE |   ✓   |   ✓   |     ✓      |        |
-| Preview <br/>before go live          |   ✓   |   ✓   |     ✓      |   ✓    |
-| Upload code                          |   ✓   |   ✓   |     ✓      |        |
-| Create new version                   |   ✓   |   ✓   |            |        |
-| Submit review                        |   ✓   |   ✓   |            |        |
-| Manage App                           |   ✓   |   ✓   |            |        |
-| Statistics                           |   ✓   |   ✓   |            |        |
-| Member<br/>Management                |   ✓   |   ✓   |            |        |
-| Update<br/>Developer Account         |   ✓   |       |            |        |
+- **Owner**: Người đại diện Công ty đăng ký tài khoản Nhà phát triển (mặc định sẽ là Owner của tất cả các ứng dụng thuộc Công ty). Mỗi tài khoản Nhà phát triển chỉ có duy nhất một Owner.
+- **Admin**: Có tất cả quyền hạn trên ứng dụng mà họ được trao quyền Admin, ngoại trừ điều chỉnh thông tin Thanh toán.
+- **Programmer**: Người lập trình viên tham gia xây dựng ứng dụng.
+- **Tester**: Người chịu trách nhiệm kiểm thử ứng dụng hoặc được mời trải nghiệm một ứng dụng trước khi phát hành.
 
 ## Quản lý nhóm thành viên thường trực
 
-**Quản lý nhóm thành viên thường trực** là chức năng mở rộng giúp quản lý một hoặc nhiều nhóm phát triển cùng tham gia xây dựng nhiều ứng dụng dưới danh nghĩa một Công ty/Tổ chức.
+**Quản lý nhóm thành viên thường trực** là chức năng mở rộng giúp quản lý một hoặc nhiều nhóm phát triển cùng tham gia xây dựng nhiều ứng dụng dưới danh nghĩa một Công ty.
 
 ### Danh sách thành viên thường trực
 
-**B1:** Truy cập [Dev Center](/dev-center/apps) > Thiết lập tài khoản > Danh sách thanh viên.
+**B1:** Truy cập [Dev Center](/apps) > Thiết lập tài khoản > Danh sách thanh viên.
 
 <img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/a3/f0/05/30917e3903698af22d9d60c0c6e9e066.png"/>
 
@@ -57,9 +45,8 @@ Vai trò của thành viên trong Danh sách thành viên thường trực chỉ
 
 ### Vì sao cần quản lý riêng biệt thành viên thường trực và thành viên phát triển ứng dụng?
 
-• Trong trường hợp Công ty/Tổ chức có nhu cầu phân chia nhóm **thành viên tham gia toàn bộ ứng dụng** và **nhóm thành viên tham gia một ứng dụng cụ thể**, có thể dễ dàng quản lý bằng cách lựa chọn thêm thành viên vào Danh sách thường trực hoặc Thành viên của ứng dụng.
-
-• Mời một nhóm người ngoài Tổ chức tham gia kiểm thử/dùng thử một ứng dụng bất kì mà không ảnh hưởng đến các ứng dụng khác cùng Công ty.
+- Trong trường hợp Công ty/Tổ chức có nhu cầu phân chia nhóm **thành viên tham gia toàn bộ ứng dụng** và **nhóm thành viên tham gia một ứng dụng cụ thể**, có thể dễ dàng quản lý bằng cách lựa chọn thêm thành viên vào Danh sách thường trực hoặc Thành viên của ứng dụng.
+- Mời một nhóm người ngoài Tổ chức tham gia kiểm thử/dùng thử một ứng dụng bất kì mà không ảnh hưởng đến các ứng dụng khác cùng Công ty.
 
 ## Câu hỏi thường gặp
 

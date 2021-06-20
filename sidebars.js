@@ -11,6 +11,7 @@ module.exports = {
         'developer/introduce/upload',
         'developer/introduce/release',
         'developer/introduce/member',
+        'developer/introduce/dev-assistant'
       ],
     },
     {
@@ -18,6 +19,7 @@ module.exports = {
       label: 'Ví dụ mẫu',
       collapsed: false,
       items: [
+        'developer/quick-example/shopping',
       ],
     },
   ],
@@ -33,7 +35,7 @@ module.exports = {
       type: 'category',
       label: 'Phát triển',
       collapsed: false,
-      items: ['studio/development', 'studio/dev-assistant'],
+      items: ['studio/development'],
     },
     {
       type: 'category',

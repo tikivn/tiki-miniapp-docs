@@ -14,11 +14,11 @@ Sau khi [tạo ứng dụng](/docs/developer/introduce/create) với App ID mong
 Trong tập tin package.json, có hai giá trị bạn cần lưu ý là `version` và `buildNumber`:
 
 - `version`: Cho biết phiên bản của bản cập nhật theo định dạng `x.y.z`. Khi tải lên bản cập nhật mới, `version` của bản cập nhật mới phải lớn hơn hoặc bằng `version` hiện tại đang có trên Dev Center.
-- `buildNumber`: Cho biết lượt tải lên đối với bản cập nhật. Khi tải lên bản build mới, `buildNumber` phải lớn hơn `buildNumber` của bản build trước đó. _Lưu ý: dù version có thay đổi thì buildNumber vẫn không bị reset._
+- `buildNumber`: Cho biết lượt tải lên đối với bản cập nhật. Khi tải lên bản build mới, `buildNumber` phải lớn hơn `buildNumber` của bản build trước đó.
 
 ## Tải lên bản cập nhật
 
-Khi đã hoàn thiện bản cập nhật và nhập đầy đủ thông tin cho `version` và `buildNumber`, bạn có thể đăng tải project lên Dev Center thông qua công cụ Upload App:
+Khi đã hoàn thiện bản cập nhật và nhập đầy đủ thông tin cho `version` và `buildNumber`, bạn có thể upload app lên Dev Center thông qua công cụ Upload App:
 
 - Mở Command Palette `Cmd + Shift + P` tìm "Upload App"
 - Hoặc menu Tools > Upload App
@@ -28,14 +28,3 @@ Lưu ý:
 - Tính năng Upload App yêu cầu bạn phải đăng nhập tài khoản Dev Center trên Studio.
 - Nhớ chọn đúng Developer Account trước khi Upload App hoặc sẽ bị lỗi `invalid permission`.
 - Sau khi tải bản cập nhật lên Dev Center, máy chủ sẽ mất một khoảng thời gian để tiến hành xử lý bản build trước khi trả về trạng thái `Ready`.
-
----
-
-### Đăng nhập Studio bằng Developer Token (chỉ dành cho Hackathon)
-
-Đối với trường hợp cần đăng nhập vào Studio hoặc Dev Center nhưng không thể đăng nhập trên trang tala.xyz thì bạn có thể dùng chức năng Login with Developer Token. Các bước thực hiện như sau:
-
-1. Mở Studio từ version 1.2.6 trở lên.
-1. Dùng Command Palette `Cmd + Shift + P` tìm "Login with Developer Token"
-1. Nhập token được cấp và chọn Login
-1. Studio sẽ mở trang Dev Center và tiến hành đăng nhập
