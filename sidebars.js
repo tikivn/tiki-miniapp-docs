@@ -18,8 +18,6 @@ module.exports = {
       label: 'Ví dụ mẫu',
       collapsed: false,
       items: [
-        'developer/quick-example/quick-example',
-        'developer/quick-example/shopping',
       ],
     },
   ],
