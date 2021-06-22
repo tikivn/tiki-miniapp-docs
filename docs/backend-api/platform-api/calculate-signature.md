@@ -6,11 +6,11 @@ title: Cách Tính Signature
 
 Với mỗi request để được xác thực cần gửi những thông tin sau trong request header
 
-| Header              | Description                                   |
-| ----------          | ----------                                    |
-| X-Tiniapp-Timestamp | Thời gian gọi request, tính bằng microseconds |
-| X-Tiniapp-Client-Id | Client id được cấp khi tạo app                |
-| X-Tiniapp-Signature | Signature được tính dựa trên request body     |
+| Header              | Description                               |
+| ----------          | ----------                                |
+| X-Tiniapp-Timestamp | Unix timestamp, tính bằng milliseconds    |
+| X-Tiniapp-Client-Id | Client id được cấp khi tạo app            |
+| X-Tiniapp-Signature | Signature được tính dựa trên request body |
 
 
 ## Signature Là Gì?
