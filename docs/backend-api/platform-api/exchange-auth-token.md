@@ -17,12 +17,7 @@ Sau đây là lệnh gọi mẫu bằng lệnh cURL
 
 Request:
 
-curl -L -X POST 'https://api.tiki.vn/tiniapp-open-api/api/v1/oauth/auth/token' -H 'Content-Type: application/json' --data-raw '{
-  "client_id":"pg94irQ2EbLV1fDV",
-  "code":"aITD9SE46gloO8V7WYu2v8UO7TURKRQz73Yx69C0L_w.1fLlKBBXCzoGLRiSCBlHsm2rmjfqFp5USpKGTre_f7k",
-  "timestamp":1624018243197,
-  "signature":"93e925618d39eb679a5ec3540dac67c08b9ccd835377a382819869edd6244e75"
-}'
+curl -X 'POST' -d '{"code":"ZH_QKINym4lUvwyfFjazHWIYqR4TqNXX6BZpcp8Ibng.N9i1OHCsCcrLhBS4OWZrqpM85Sc_8BrDjzyuWwrjgXs"}' -H 'Content-Type: application/json' -H 'X-Tiniapp-Client-Id: 8GXqhWDK3EppMwf8IyQU1GHgfq2TPADe' -H 'X-Tiniapp-Signature: 4021f274a3c1bb4ac600cee6d0da3c7704a829d175bb0b81cee2d2ed007a50f1' -H 'X-Tiniapp-Timestamp: 1624332586655' 'https://api.tala.xyz/tiniapp-open-api/api/v1/oauth/auth/token'
 
 Response:
 
@@ -78,12 +73,7 @@ Vì auth token là token được cấp với thời gian valid ngắn. Nếu b�
 
 Request:
 
-curl -L -X POST 'https://api.tiki.vn/tiniapp-open-api/api/v1/oauth/auth/token/refresh' -H 'Content-Type: application/json' --data-raw '{
-  "client_id":"pg94irQ2EbLV1fDV",
-  "refresh_token":"oiOvAz5-QpU57anfgSGDvSDQqa0nG4Du_9Fu7EEIiCk.uXwSpktiDzHBSmkYORc65QBGK109fJRZo175w2JasCI",
-  "timestamp":1624018489878,
-  "signature":"fe8a525334d302bc56564b3d17f0d4f204a84224c23970189415ec463911cae9"
-}'
+curl -X 'POST' -d '{"refresh_token":"bz_fFvRjA3Yo8Sp-GCdFeks8JZYvn22rZdzNS8lBsmc.RHHz3S4cps9FFjttYZCmsaLqOP4pfa1s-7xdL1r8Xbg"}' -H 'Content-Type: application/json' -H 'X-Tiniapp-Client-Id: 8GXqhWDK3EppMwf8IyQU1GHgfq2TPADe' -H 'X-Tiniapp-Signature: 5d7189cce5baa90aaa3d4b1a74ead02c953fe9156504c0c0f987c07f879bcbde' -H 'X-Tiniapp-Timestamp: 1624332740977' 'https://api.tala.xyz/tiniapp-open-api/api/v1/oauth/auth/token/refresh'
 
 Response:
 
@@ -137,12 +127,7 @@ Invalid Signature:
 
 Request:
 
-curl -L -X POST 'https://api.tiki.vn/tiniapp-open-api/api/v1/oauth/me' -H 'Content-Type: application/json' --data-raw '{
-  "access_token":"adxlbxvnqH7H-lh8ToYvXCjUXZp9aWkJvHj83eFgjlg.Kc41ZuRy9lZf9XjFfpFcBKx9uhXYviz7_OP2KrxjB5E",
-  "client_id":"pg94irQ2EbLV1fDV",
-  "timestamp":1624018701875,
-  "signature":"1357adc78b8840d462e859b1132b86372a0b19ae74f7fcec211c384d0fa0784d"
-}'
+curl -X 'POST' -d '{"access_token":"a5lY7OEnRnLFb2JqraiiDEuo6FtC5-NDvM_g8LL18Ow.m7OZKEuPWehCktnSjPX3twvndVWLEoT6M3dLSSCKujk"}' -H 'Content-Type: application/json' -H 'X-Tiniapp-Client-Id: 8GXqhWDK3EppMwf8IyQU1GHgfq2TPADe' -H 'X-Tiniapp-Signature: 33088802bd81dd6f0282f33f35cbf87d6e9de5b97e45c8f5b979e0afcccbfdcf' -H 'X-Tiniapp-Timestamp: 1624332795944' 'https://api.tala.xyz/tiniapp-open-api/api/v1/oauth/me'
 
 Response:
 
