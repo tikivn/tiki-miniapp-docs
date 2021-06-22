@@ -115,7 +115,7 @@ func main() {
 	fmt.Println("payload: ", payload)
 	encodedPayload := base64.RawURLEncoding.EncodeToString([]byte(payload))
 	fmt.Println("encoded_payload: ", encodedPayload)
-	signature, _ := Sign(clientSecret, clientSecret)
+	signature, _ := Sign(clientSecret, encodedPayload)
 	fmt.Println("signature: ", signature)
 }
 
@@ -125,4 +125,4 @@ func main() {
 
 ```
 
-Link https://play.golang.org/p/O1CaWjEaZhP
+Link https://play.golang.org/p/HEMA2yZFl-W
