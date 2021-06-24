@@ -1,5 +1,5 @@
 ---
-title: avatar
+title: Avatar
 ---
 
 ## Giới thiệu

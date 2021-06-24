@@ -1,5 +1,5 @@
 ---
-title: modal
+title: Modal
 ---
 
 ## Giới thiệu

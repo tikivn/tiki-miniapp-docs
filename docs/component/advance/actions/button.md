@@ -1,5 +1,5 @@
 ---
-title: button
+title: Button
 ---
 
 ## Giới thiệu

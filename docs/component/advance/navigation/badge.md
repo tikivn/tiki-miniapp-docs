@@ -1,5 +1,5 @@
 ---
-title: badge
+title: Badge
 ---
 
 ## Component đang được cập nhật. Vẫn chưa sẵn sàng để sử dụng
