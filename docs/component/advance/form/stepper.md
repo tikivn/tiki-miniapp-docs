@@ -1,5 +1,5 @@
 ---
-title: stepper
+title: Stepper
 ---
 
 ## Giới thiệu

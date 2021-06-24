@@ -1,5 +1,5 @@
 ---
-title: popup
+title: Popup
 ---
 
 ## Giới thiệu

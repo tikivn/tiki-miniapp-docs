@@ -1,5 +1,5 @@
 ---
-title: tabs
+title: Tabs
 ---
 
 ## Giới thiệu
