@@ -491,7 +491,22 @@ module.exports = {
         'backend-api/platform-api/overview',
         'backend-api/platform-api/calculate-signature',
         'backend-api/platform-api/exchange-auth-token',
-        'backend-api/platform-api/payment',
+        {
+          type: 'category',
+          label: 'Thanh toán với Tiki',
+          items: [
+            'backend-api/platform-api/payment/overview',
+            'backend-api/platform-api/payment/flow',
+            'backend-api/platform-api/payment/create-order',
+            'backend-api/platform-api/payment/ipn',
+            'backend-api/platform-api/payment/get-order',
+            'backend-api/platform-api/payment/list-orders',
+            'backend-api/platform-api/payment/complete-order',
+            'backend-api/platform-api/payment/cancel-order',
+            'backend-api/platform-api/payment/order-status',
+            'backend-api/platform-api/payment/error-code',
+          ],
+        },
         {
           type: 'category',
           label: 'Shipping API',
