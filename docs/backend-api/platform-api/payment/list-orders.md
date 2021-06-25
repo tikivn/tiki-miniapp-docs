@@ -9,7 +9,7 @@ title: Lấy danh sách thông tin đơn hàng
 | Content-Type | application/json                     |
 | Method       | GET                                  |
 | Base URL     | https://api.tiki.vn/tiniapp-open-api |
-| Path         | /order                               |
+| Path         | /order/list                               |
 
 #### Parameters
 
@@ -22,10 +22,11 @@ title: Lấy danh sách thông tin đơn hàng
 Vi dụ về yêu cầu lấy thông tin đơn hàng
 
 ```
-curl --location --request GET 'https://api.tala.xyz/tiniapp-open-api/order?order_ids=88062110977884170,88062110977884171' \
+curl --location --request GET 'https://api.tala.xyz/tiniapp-open-api/order/list?order_ids=84112926079713300%2C88238130968199168' \
+--header 'Content-Type: application/json' \
 --header 'X-Tiniapp-Client-Id: 8GXqhWDK3EppMwf8IyQU1GHgfq2TPADe' \
---header 'X-Tiniapp-Signature: aa3cea0d29a16e12b903205284a09161738740c357d5b06639f930806757f6a7' \
---header 'X-Tiniapp-Timestamp: 1624561365102'
+--header 'X-Tiniapp-Signature: 4d7bf4bc83e3e9884ce7ebfb1b2477aca66d40188df2de26053f59fe1067f4d3' \
+--header 'X-Tiniapp-Timestamp: 1624613199164'
 ```
 
 #### HTTP Response
@@ -48,14 +49,14 @@ Ví dụ về dữ liệu trả về
   "data": {
     "orders": [
       {
-        "id": "77062110977884170",
-        "status": "canceled",
-        "grand_total": 1000
+        "id": "84112926079713300",
+        "status": "completed",
+        "grand_total": 220000
       },
       {
-        "id": "77062110977884171",
+        "id": "88238130968199168",
         "status": "completed",
-        "grand_total": 100000
+        "grand_total": 1000
       }
     ]
   }
