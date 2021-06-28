@@ -34,7 +34,7 @@ function Hero() {
             các công cụ được xây dựng sẵn của Tiki Tini App.
           </p>
           <div className={styles.flexButtons}>
-            <Link to="#" className={[styles.secondaryButton]}>
+            <Link to="https://community.tiki.vn/c/studio/studio-releases/13" className={[styles.secondaryButton]} id="btnDownload">
               Tải về Tini Studio
             </Link>
             <Link
