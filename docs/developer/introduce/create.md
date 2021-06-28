@@ -27,4 +27,4 @@ Mô tả ứng dụng có thể thay đổi mỗi lần phát hành phiên bản
 
 Bấm **"Hoàn tất"** để xác nhận tạo ứng dụng mới với thông tin vừa điền.
 
-Ứng dụng sau khi tạo thành công sẽ xuất hiện tại [App Management](/apps) với trạng thái Nháp (Draft). Bạn có thể xem thêm về trạng thái ứng dụng [tại đây](/docs/developer/introduce/release#trạng-thái-của-ứng-dụng).
+Ứng dụng sau khi tạo thành công sẽ xuất hiện tại [App Management](https://developer.tiki.vn/apps) với trạng thái Nháp (Draft). Bạn có thể xem thêm về trạng thái ứng dụng [tại đây](/docs/developer/introduce/release#trạng-thái-của-ứng-dụng).
