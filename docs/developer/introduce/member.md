@@ -23,7 +23,7 @@ Một tài khoản Nhà phát triển có thể có nhiều ứng dụng. Mỗi 
 
 ### Danh sách thành viên thường trực
 
-**B1:** Truy cập [Dev Center](/apps) > Thiết lập tài khoản > Danh sách thanh viên.
+**B1:** Truy cập [Dev Center](https://developer.tiki.vn/apps) > Thiết lập tài khoản > Danh sách thanh viên.
 
 <img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/a3/f0/05/30917e3903698af22d9d60c0c6e9e066.png"/>
 

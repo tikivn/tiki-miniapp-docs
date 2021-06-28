@@ -15,7 +15,7 @@ Tài khoản Cá nhân không thể chuyển đổi thành tài khoản Công ty
 
 ## Đăng ký tài khoản Nhà phát triển
 
-Truy cập vào [Dev Center](/apps) và đăng nhập bằng tài khoản Tiki của bạn để bắt đầu đăng ký.
+Truy cập vào [Dev Center](https://developer.tiki.vn/apps) và đăng nhập bằng tài khoản Tiki của bạn để bắt đầu đăng ký.
 
 ## Loại tài khoản đăng ký
 
