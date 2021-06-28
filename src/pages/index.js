@@ -188,7 +188,7 @@ function Content() {
       <div className={styles.mainContent}>
         <img
           className={styles.illustration}
-          src={useBaseUrl('/img/illustration.png')}
+          src={useBaseUrl('/img/tiniapp-ecosystem.png')}
         />
       </div>
 
