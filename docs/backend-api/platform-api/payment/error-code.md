@@ -29,7 +29,11 @@ title: Mã lỗi
 
 ### Reason
 
-| Name           | Description                                    |
-| ----------     | ----------                                     |
-| duplicate_sku  | Một sku xuất hiện nhiều lần trong một đơn hàng |
+| Name                        | Description                                    |
+| ----------                  | ----------                                     |
+| ORDER_AMOUNT_LIMIT_EXCEEDED | Giá trị đơn hàng vượt quá quy định             |
+| DUPLICATE_ITEMS             | Một sku xuất hiện nhiều lần trong một đơn hàng |
+| PRODUCT_NOT_FOUND           | Sản phẩm không tồn tại hoặc bị tắt             |
+| SELLER_NOT_FOUND            | Tài khoản seller đã liên kết không hợp lệ      |
+| INVALID_ITEM                | sku không thuộc tài khoản seller đã liên kết   |
 

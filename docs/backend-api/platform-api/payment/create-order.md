@@ -15,14 +15,14 @@ title: Tạo đơn hàng
 
 #### HTTP Request
 
-| Attribute        | Type                    | Required   | Description                                                    |
-| ----------       | ----------              | ---------- | ----------                                                     |
-| customer_id      | string                  | Yes        | ID người dùng Tiki                                             |
-| items            | []**[Item](#item)**     | Yes        | Danh sách sản phẩm                                             |
-| shipping_address | **[Address](#address)** | No         | Địa chỉ giao hàng, dùng để hiện thỉ trên trang thanh toán Tiki |
-| billing_address  | **[Address](#address)** | No         | Địa chỉ thanh toán                                             |
-| extra            | string                  | No         | Thông tin bổ sung theo định dạng  ***key=value;key=value***    |
-| reference_id     | string                  | No         | ID đơn hàng của đối tác                                        |
+| Attribute        | Type                    | Required   | Description                                                                                |
+| ----------       | ----------              | ---------- | ----------                                                                                 |
+| customer_id      | string                  | Yes        | ID người dùng Tiki, có thể lấy ở [đây](../exchange-auth-token.md#get-info-from-auth-token) |
+| items            | []**[Item](#item)**     | Yes        | Danh sách sản phẩm                                                                         |
+| shipping_address | **[Address](#address)** | No         | Địa chỉ giao hàng, dùng để hiện thỉ trên trang thanh toán Tiki                             |
+| billing_address  | **[Address](#address)** | No         | Địa chỉ thanh toán                                                                         |
+| extra            | string                  | No         | Thông tin bổ sung theo định dạng  ***key=value;key=value***                                |
+| reference_id     | string                  | No         | ID đơn hàng của đối tác                                                                    |
 
 #### Item
 
@@ -70,14 +70,14 @@ curl --location --request POST 'https://api.tiki.vn/tiniapp-open-api/order' \
 ##### Data
 | Attribute  | Type                                 | Required   | Description |
 | ---------- | ------------------------------------ | ---------- | ----------  |
-| order      | **[Order](#order)** | Yes        |             |
+| order      | **[Order](#order)**                  | Yes        |             |
 
 ##### Order
 
 | Attribute   | Type       | Required   | Not null   | Description                               |
 | ----------  | ---------- | ---------- | ---------- | ----------                                |
 | id          | string     | Yes        | Yes        | ID của đơn hàng                           |
-| status      | string     | Yes        | Yes        | [Trang thái đơn hàng](order-status)    |
+| status      | string     | Yes        | Yes        | [Trang thái đơn hàng](order-status)       |
 | grand_total | int64      | Yes        | Yes        | Tổng số tiền mà người dùng cần thanh toán |
 
 Ví dụ về dữ liệu trả về
