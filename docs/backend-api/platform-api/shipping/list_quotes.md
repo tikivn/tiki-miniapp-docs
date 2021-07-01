@@ -17,7 +17,7 @@ Lưu ý: trong response trả về, giá trị của quotes[].service.code và q
 
 ### API Address
 
-POST https://api.tiki.vn/tini-open-api/shipping/v1/quotes
+POST https://api.tiki.vn/tini-open-api/shipping/quotes
 
 ### API Params
 
