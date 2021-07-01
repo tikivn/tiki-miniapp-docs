@@ -1,11 +1,13 @@
 ---
-title: my.canIUse (chưa ready)
+title: my.canIUse
 ---
 
 ## Giới thiệu
 
 **my.canIUse** là API dùng để kiểm tra xem Runtime của Mini App hiện tại có hỗ trợ một API cụ thể hay không
 
+## Lưu ý:
+- Khả dụng từ runtime version 1.73.11 trở lên
 ## Sử dụng
 
 ### Sample code
