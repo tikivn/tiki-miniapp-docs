@@ -88,6 +88,18 @@ export default {
     [
       {
         type: 'color',
+        text: 'background-chip-default',
+        value: '#FFFFFF',
+      },
+      {
+        type: 'color',
+        text: 'white',
+        value: '#FFFFFF',
+      },
+    ],
+    [
+      {
+        type: 'color',
         text: 'background-divider-thick',
         value: '#F5F5FA',
       },
@@ -442,6 +454,30 @@ export default {
       {
         type: 'color',
         text: 'brand 10%',
+        value: '#1A94FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-date-hover',
+        value: '#1A94FF',
+      },
+      {
+        type: 'color',
+        text: 'brand 20%',
+        value: '#1A94FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-date-pressed',
+        value: '#1A94FF',
+      },
+      {
+        type: 'color',
+        text: 'brand 40%',
         value: '#1A94FF',
       },
     ],

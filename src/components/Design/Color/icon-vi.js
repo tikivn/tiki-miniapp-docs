@@ -169,5 +169,17 @@ export default {
         value: '#1A94FF',
       },
     ],
+    [
+      {
+        type: 'color',
+        text: 'icon-selection-active',
+        value: '#1A94FF',
+      },
+      {
+        type: 'color',
+        text: 'brand',
+        value: '#1A94FF',
+      },
+    ],
   ],
 };

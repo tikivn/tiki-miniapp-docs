@@ -277,5 +277,17 @@ export default {
         "value": "#1A94FF"
       }
     ],
+    [
+      {
+        "type": "color",
+        "text": "text-selection-active",
+        "value": "#1A94FF"
+      },
+      {
+        "type": "color",
+        "text": "brand",
+        "value": "#1A94FF"
+      }
+    ],
   ],
 };
