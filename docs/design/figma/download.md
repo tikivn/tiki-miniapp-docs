@@ -11,7 +11,7 @@ Làm việc ở nhà có vẻ giúp cho team design làm hiệu quả hơn đó 
 - PIN
 - Chips
 - Calendar
-- Table
+- Table <br />
 Về phần Template, cũng có thêm một template mới đó là Order management. Tiếp theo sẽ là gì? Team Tini đang suy nghĩ với phần Responsive layout...
 Đang ở đâu thì ở yên đó nha mọi người.🖖
 
@@ -28,7 +28,7 @@ Thay đổi lớn nhất của lần này là cách Tini viết tài liệu về
 Thay đổi thứ hai là về cách sắp xếp cấu trúc của các components như Text field, Textarea, List, Bottom sheet, và cùng chào đón các thành viên mới gia nhập vào gia đình của Tini:
 - Grid view
 - Inform
-- Audio player
+- Audio player <br />
 "One more thing" 1 bộ template mới cũng đã được ra mắt: Giỏ hàng.
 Quẩy thôi 🎉
 

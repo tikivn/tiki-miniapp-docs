@@ -13,7 +13,7 @@ Somehow work from home make us more productive 😂. This month we release those
 - PIN
 - Chips
 - Calendar
-- Table
+- Table <br />
 And for the template, we have Order management template. What's next? We are thinking about responsive layout...
 Stay safe, everyone.🖖
 
@@ -30,7 +30,7 @@ The biggest change is the way we documents 🎉
 The 2nd change is the new structure for Text field, Textarea, List, Bottom sheet, and welcome to our new components:
 - Grid view
 - Inform
-- Audio player
+- Audio player <br />
 One more thing, the new template is here: Cart.
 Cheers 🎉
 
