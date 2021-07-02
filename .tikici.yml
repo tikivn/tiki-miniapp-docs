@@ -64,6 +64,24 @@ deployment_config:
           paths:
             - path: /
               port: "80"
+    readinessProbe:
+      httpGet:
+        path: "/docs/framework/overview"
+        port: 80
+      failureThreshold: 3
+      initialDelaySeconds: 20
+      periodSeconds: 15
+      successThreshold: 1
+      timeoutSeconds: 3
+      livenessProbe:
+        httpGet:
+          path: "/docs/framework/overview"
+          port: 80
+        failureThreshold: 3
+        initialDelaySeconds: 60
+        periodSeconds: 60
+        successThreshold: 1
+        timeoutSeconds: 3
     replicaCount: 1
   prod:
     ingress:
@@ -72,6 +90,24 @@ deployment_config:
           paths:
             - path: /
               port: "80"
+    readinessProbe:
+      httpGet:
+        path: "/docs/framework/overview"
+        port: 80
+      failureThreshold: 3
+      initialDelaySeconds: 20
+      periodSeconds: 15
+      successThreshold: 1
+      timeoutSeconds: 3
+    livenessProbe:
+      httpGet:
+        path: "/docs/framework/overview"
+        port: 80
+      failureThreshold: 3
+      initialDelaySeconds: 60
+      periodSeconds: 60
+      successThreshold: 1
+      timeoutSeconds: 3
     replicaCount: 1
     resource:
       requests:
