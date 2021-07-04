@@ -32,12 +32,12 @@ mục gốc của dự án:
 
 Mỗi `page` trong app bao gồm các files sau và được đặt trong thư mục bất kỳ từ thư mục gốc của dự án:
 
-| File       | Required | Description                             |
-| ---------- | -------- | --------------------------------------- |
-| index.js   | yes      | Logic của page                          |
-| index.txml | yes      | Thể hiện UI của page sử dụng jsx syntax |
-| index.tcss | no       | StyleSheet áp dụng cho page             |
-| index.json | no       | Cấu hình của page                       |
+| File       | Required | Description                              |
+| ---------- | -------- | ---------------------------------------- |
+| index.js   | yes      | Logic của page                           |
+| index.txml | yes      | Thể hiện UI của page sử dụng txml syntax |
+| index.tcss | no       | StyleSheet áp dụng cho page              |
+| index.json | no       | Cấu hình của page                        |
 
 **Note:** Tên file có thể là bất kỳ và tất cả các loại file cần có cùng tên và phải cùng đặt chung thư mục.
 
