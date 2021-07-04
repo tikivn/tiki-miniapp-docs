@@ -331,10 +331,7 @@ Hàm `onGoToProductPage` được gọi khi user bấm vào `title` của produc
 Hàm `onAddCart` sẽ gọi tới `props onAddCart` đã được khai báo bên trong `txml` của page.
 Như vậy luồng gọi hàm `addCart` sẽ có được xử lý xuyên suốt từ `custom component` tới `page` rồi tới `app`
 
-```__react
-import image from '../../../theme/static/images/shopping/cart-flow.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Cart Flow" src={image}/>, mountNode);
-```
+<img alt="Badge" src="/img/shopping/cart-flow.png"/>
 
 _components/product-item/index.tcss_
 
@@ -358,10 +355,7 @@ _components/product-item/index.tcss_
 
 Mỗi `product` sẽ có width là `50%`, như vậy một dòng chúng ta sẽ hiển thị được 2 product. Dưới đây là kết quả:
 
-```__react
-import image from '../../../theme/static/images/shopping/product-list.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Product List" src={image}/>, mountNode);
-```
+<img alt="Badge" src="/img/shopping/product-list.png"/>
 
 ### 2. Coding trang product detail:
 
@@ -444,10 +438,7 @@ Trong file `txml` mình vẫn dùng lại component `price` nên trong file `ind
 
 Kết quả của trang `product`
 
-```__react
-import image from '../../../theme/static/images/shopping/product-page.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Product Page" src={image}/>, mountNode);
-```
+<img alt="Badge" src="/img/shopping/product-page.png"/>
 
 ### 3. Coding trang cart
 
@@ -590,7 +581,4 @@ Phần bottom của page sẽ luôn hiển thị dưới cùng, do đó mình c�
 
 Giao diện của trang `cart`
 
-```__react
-import image from '../../../theme/static/images/shopping/cart-page.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Cart" src={image}/>, mountNode);
-```
+<img alt="Badge" src="/img/shopping/cart-page.png"/>
