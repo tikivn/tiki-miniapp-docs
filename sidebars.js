@@ -178,7 +178,10 @@ module.exports = {
         {
           type: 'category',
           label: 'Forms',
-          items: ['component/advance/form/stepper'],
+          items: [
+            'component/advance/form/stepper',
+            'component/advance/form/textfield',
+          ],
         },
         {
           type: 'category',
@@ -187,6 +190,7 @@ module.exports = {
             'component/advance/navigation/avatar',
             'component/advance/navigation/badge',
             'component/advance/navigation/sidebar',
+            'component/advance/navigation/tabs',
           ],
         },
         {

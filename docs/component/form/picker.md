@@ -85,11 +85,13 @@ Page({
 
 ### Chi tiết
 
-| Property | Type                        | Description                                                                                                             |
-| -------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| title    | string                      | Title của picker                                                                                                        |
-| range    | array string / array object | Mảng các phần tử hiển thị trong picker, nếu bạn khai báo một mảng các đối tượng, bạn cần khai báo thêm `range-key`      |
-| rang-key | string                      | Chỉ định key nào trong object sẽ được hiển thị, được dùng khi range là mảng đối tượng                                   |
-| value    | string                      | Chỉ định index nào được chọn, bắt đầu từ 0                                                                              |
-| onChange | event                       | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { value: value }`, trong đó value là index của item được chọn |
-| disabled | boolean                     | Nếu giá trị là `true`, khi bạn bấm vào `picker` thì sẽ không hiển thị                                                   |
+| Property             | Type                        | Description                                                                                                             |
+| -------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| title                | string                      | Title của picker                                                                                                        |
+| range                | array string / array object | Mảng các phần tử hiển thị trong picker, nếu bạn khai báo một mảng các đối tượng, bạn cần khai báo thêm `range-key`      |
+| confirm-button-text  | string                      | Nội dung của button dưới footer, mặc định là `OK`. Chỉ support framework version từ 1.73.5 trở lên                      |
+| confirm-button-class | string                      | Class của button dưới footer. Chỉ support framework version từ 1.73.5 trở lên                                           |
+| rang-key             | string                      | Chỉ định key nào trong object sẽ được hiển thị, được dùng khi range là mảng đối tượng                                   |
+| value                | string                      | Chỉ định index nào được chọn, bắt đầu từ 0                                                                              |
+| onChange             | event                       | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { value: value }`, trong đó value là index của item được chọn |
+| disabled             | boolean                     | Nếu giá trị là `true`, khi bạn bấm vào `picker` thì sẽ không hiển thị                                                   |
