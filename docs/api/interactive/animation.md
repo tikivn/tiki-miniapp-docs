@@ -12,6 +12,13 @@ sử dụng hàm `export` để truyền thuộc tính animation vào các view 
 ## Sử dụng
 
 ### Sample Code
+```css
+.animation-element {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+```
 
 ```xml
 <view class="page">
