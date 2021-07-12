@@ -30,7 +30,11 @@ Response:
       "offline",
       "user_profile"
     ],
-    "token_type":"bearer"
+    "token_type":"bearer",
+    "customer": {
+      "id":1,
+      "name":"Ti Ni",
+    }
   },
   "error": null
 }
