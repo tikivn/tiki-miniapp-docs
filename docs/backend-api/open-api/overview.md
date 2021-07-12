@@ -21,7 +21,7 @@ _Điều kiện cần:_
 - Cần biết key và secret cấp cho Tini App của bạn trên Dev Center
 - Cần biết Open API mà bạn muốn gọi sẽ cần scope nào
 - Cần có được sự đồng ý của người dùng để lấy data với các scope khác nhau
-- Cần có một backend của bạn để có thể thực hiện bước trao đổi auth code lấy auth token với [Platform APIs](../platform-api/exchange-auth-token)
+- Cần có một [backend của bạn](../gcp-sponsor/intro) để có thể thực hiện bước trao đổi auth code lấy auth token với [Platform APIs](../platform-api/exchange-auth-token)
 
 ### Chi Tiết
 

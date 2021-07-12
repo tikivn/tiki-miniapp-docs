@@ -524,6 +524,14 @@ module.exports = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: 'Backend với GCP',
+      items: [
+        'backend-api/gcp-sponsor/intro',
+        'backend-api/gcp-sponsor/auth-backend',
+      ],
+    },
   ],
   design: [
     {
