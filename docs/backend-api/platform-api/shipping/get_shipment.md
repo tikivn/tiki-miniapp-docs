@@ -10,7 +10,7 @@ API này lấy ra thông tin chi tiết của đơn vận chuyển hàng.
 
 ### API Address
 
-GET https://api.tiki.vn/tini-open-api/shipping/shipments
+GET https://api.tiki.vn/tiniapp-open-api/shipping/shipments
 
 ### API Params
 

@@ -10,7 +10,7 @@ API này sẽ tạo một đơn vận chuyển hàng.
 
 ### API Address
 
-POST https://api.tiki.vn/tini-open-api/shipping/shipments
+POST https://api.tiki.vn/tiniapp-open-api/shipping/shipments
 
 ### API Params
 

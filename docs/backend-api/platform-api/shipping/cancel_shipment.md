@@ -10,7 +10,7 @@ API này huỷ một đơn vận chuyển hàng.
 
 ### API Address
 
-DELETE https://api.tiki.vn/tini-open-api/shipping/shipments
+DELETE https://api.tiki.vn/tiniapp-open-api/shipping/shipments
 
 ### API Params
 
