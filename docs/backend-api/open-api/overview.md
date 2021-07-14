@@ -21,7 +21,7 @@ _Điều kiện cần:_
 - Cần biết key và secret cấp cho Tini App của bạn trên Dev Center
 - Cần biết Open API mà bạn muốn gọi sẽ cần scope nào
 - Cần có được sự đồng ý của người dùng để lấy data với các scope khác nhau
-- Cần có một [backend của bạn](../gcp-sponsor/intro) để có thể thực hiện bước trao đổi auth code lấy auth token với [Platform APIs](../platform-api/exchange-auth-token)
+- Cần có một backend của bạn để có thể thực hiện bước trao đổi auth code lấy auth token với [Platform APIs](../platform-api/exchange-auth-token)
 
 ### Chi Tiết
 
@@ -43,4 +43,5 @@ Lưu ý để lấy được `refresh_token` cần, khi lấy `auth_code` từ `
 
 - Tham khảo cách gọi platform APIs ở [đây](../platform-api/overview)
 - Tham khảo cách tính signature ở [đây](../platform-api/calculate-signature)
+- Tham khảo một backend ngôn ngữ Python chạy trên Google Cloud ở [đây](../gcp-sponsor/intro)
 - Tham khảo một backend ngôn ngữ Go ở [đây](https://github.com/tikivn/tiniapp-backend-oauth-sample)
