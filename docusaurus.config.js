@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   title: 'Tini App',
   tagline: 'Tini App - Tiki',
@@ -77,13 +79,16 @@ module.exports = {
         {
           label: 'Cộng đồng',
           href: 'https://community.tiki.vn',
-          position: 'right'
+          position: 'right',
         },
         {type: 'localeDropdown', position: 'right'},
       ],
     },
     gtag: {
       trackingID: 'UA-15036050-25',
+    },
+    facebook: {
+      pixelId: '530213838024899',
     },
   },
   plugins: [
@@ -94,6 +99,7 @@ module.exports = {
         hashed: true,
       },
     ],
+    path.resolve(__dirname, './plugins/docusaurus-plugin-facebook-pixel'),
   ],
   presets: [
     [
