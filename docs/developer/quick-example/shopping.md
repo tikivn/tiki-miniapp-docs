@@ -2,6 +2,8 @@
 title: Shopping
 ---
 
+#### Bài viết này đã cũ nên một số tính năng có thể hoạt động không như mong muốn. Team sẽ tiến hành cập nhật lại bài viết này trong thời gian tới.
+
 ## Mục tiêu
 
 Kết hợp với [Fake Store API](https://fakestoreapi.com/) để làm Shopping App với các chức năng:

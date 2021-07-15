@@ -18,7 +18,10 @@ module.exports = {
       type: 'category',
       label: 'Ví dụ mẫu',
       collapsed: false,
-      items: ['developer/quick-example/shopping'],
+      items: [
+        'developer/quick-example/shopping',
+        'developer/quick-example/custom-header',
+      ],
     },
   ],
   studio: [
