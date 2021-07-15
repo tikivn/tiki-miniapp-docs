@@ -77,7 +77,7 @@ module.exports = {
         {
           label: 'Cộng đồng',
           href: 'https://community.tiki.vn',
-          position: 'right'
+          position: 'right',
         },
         {type: 'localeDropdown', position: 'right'},
       ],
