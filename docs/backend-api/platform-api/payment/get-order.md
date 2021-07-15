@@ -22,7 +22,7 @@ title: Lấy thông tin đơn hàng
 Vi dụ về yêu cầu lấy thông tin đơn hàng
 
 ```
-curl --location --request GET 'https://api.tala.xyz/tiniapp-open-api/order?order_id=88062110977884170' \
+curl --location --request GET 'https://api.tiki.vn/tiniapp-open-api/order?order_id=88062110977884170' \
 --header 'X-Tiniapp-Client-Id: 8GXqhWDK3EppMwf8IyQU1GHgfq2TPADe' \
 --header 'X-Tiniapp-Signature: 0df76a0d29a16e12b903205284a09161738740c357d5b06639f930806757f6a7' \
 --header 'X-Tiniapp-Timestamp: 1624561365102'
