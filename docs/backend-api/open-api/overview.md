@@ -37,8 +37,11 @@ _Điều kiện cần:_
 1. Backend của bạn sẽ gọi [Platform APIs](../platform-api/exchange-auth-token) của Tiki để exchange auth code này thành 1 auth token
 1. Sau khi có auth token thì bạn có thể sử dụng để gọi vào các open APIs mà Tiki cung cấp
 
+Lưu ý để lấy được `refresh_token` cần, khi lấy `auth_code` từ `my.getAuthCode`, bạn cần truyền thêm scope `offline` vào danh sách scopes mà `my.getAuthCode` nhận vào.
+
 ### References
 
 - Tham khảo cách gọi platform APIs ở [đây](../platform-api/overview)
 - Tham khảo cách tính signature ở [đây](../platform-api/calculate-signature)
+- Tham khảo một backend ngôn ngữ Python chạy trên Google Cloud ở [đây](../gcp-sponsor/intro)
 - Tham khảo một backend ngôn ngữ Go ở [đây](https://github.com/tikivn/tiniapp-backend-oauth-sample)
