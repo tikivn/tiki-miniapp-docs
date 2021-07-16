@@ -54,10 +54,10 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/quotes
 | ------------- | ------ | -------- | ------------------------------ |
 | coordinates   | object | yes      | thông số toạ độ                |
 | street        | string | yes      | địa chỉ đường, ví dụ: 285 CMT8 |
-| ward_name     | string | no       | địa chỉ phường                 |
-| district_name | string | no       | địa chỉ quận                   |
-| province_name | string | no       | địa chỉ tỉnh                   |
-| ward_code     | string | no       | code của quận                  |
+| ward_name     | string | yes      | địa chỉ phường                 |
+| district_name | string | yes      | địa chỉ quận                   |
+| province_name | string | yes      | địa chỉ tỉnh                   |
+| ward_code     | string | yes      | code của quận                  |
 
 **Xem thêm cách lấy ward_code [tại đây](./get_ward_code.md)**
 
@@ -67,9 +67,9 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/quotes
 | ------------- | ------ | -------- | ------------------------------ |
 | coordinates   | object | yes      | thông số toạ độ                |
 | street        | string | yes      | địa chỉ đường, ví dụ: 285 CMT8 |
-| ward_name     | string | no       | địa chỉ phường                 |
-| district_name | string | no       | địa chỉ quận                   |
-| province_name | string | no       | địa chỉ tỉnh                   |
+| ward_name     | string | yes      | địa chỉ phường                 |
+| district_name | string | yes      | địa chỉ quận                   |
+| province_name | string | yes      | địa chỉ tỉnh                   |
 | ward_code     | string | yes      | code của quận                  |
 
 **coordinates** object
