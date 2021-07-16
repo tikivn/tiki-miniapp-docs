@@ -1,5 +1,5 @@
 ---
-title: List Quotes
+title: List quotes
 ---
 
 ## Giới thiệu
@@ -14,6 +14,8 @@ Ví dụ: một đơn vận chuyển hàng từ "2 Hải Triều, Bến Nghé, Q
 Lưu ý: trong response trả về, giá trị của quotes[].service.code và quotes[].partner_code sẽ được dùng khi tạo shipment.
 
 ## Sử dụng
+
+**API này yêu cầu có [chữ ký điện tử](../calculate-signature.md) khi gửi API request**
 
 ### API Address
 
@@ -56,6 +58,8 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/quotes
 | district_name | string | no       | địa chỉ quận                   |
 | province_name | string | no       | địa chỉ tỉnh                   |
 | ward_code     | string | no       | code của quận                  |
+
+**Xem thêm cách lấy ward_code [tại đây](./get_ward_code.md)**
 
 **destination** object
 
@@ -142,8 +146,7 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/quotes
     "province_name": "Thành phố Hồ Chí Minh",
     "ward_code": "VN000000000"
   },
-  "client_id": "194ffee2-8aa4-4cb8-a96a",
-  "signature": "-pLVzpn_mv^tf8?(N#Omq-bV7M1<#RJsCnw9"-Q<,26:(2l(qEsr>12qWGa4kXt"
+  "client_id": "194ffee2-8aa4-4cb8-a96a"
 }
 ```
 

@@ -8,6 +8,8 @@ API này sẽ tạo một đơn vận chuyển hàng.
 
 ## Sử dụng
 
+**API này yêu cầu có [chữ ký điện tử](../calculate-signature.md) khi gửi API request**
+
 ### API Address
 
 POST https://api.tiki.vn/tiniapp-open-api/shipping/shipments
@@ -54,6 +56,8 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/shipments
 | district_name | string | no       | địa chỉ quận                   |
 | province_name | string | no       | địa chỉ tỉnh                   |
 | ward_code     | string | no       | code của quận                  |
+
+**Xem thêm cách lấy ward_code [tại đây](./get_ward_code.md)**
 
 **destination** object
 
@@ -126,7 +130,6 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/shipments
 {
 	"client_id": "lGZ90rObDED2B128",
 	"request_time": 1622623376,
-	"signature": "xxxx",
   "order_id": "datdao001111",
   "partner_code": "GRAB",
   "service_code": "INSTANT",
