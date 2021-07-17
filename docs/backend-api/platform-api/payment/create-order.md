@@ -19,7 +19,7 @@ title: Tạo đơn hàng
 | ----------       | ----------              | ---------- | ----------                                                                                 |
 | customer_id      | string                  | Yes        | ID người dùng Tiki, có thể lấy ở [đây](../exchange-auth-token.md#get-info-from-auth-token) |
 | items            | []**[Item](#item)**     | Yes        | Danh sách sản phẩm                                                                         |
-| shipping_address | **[Address](#address)** | No         | Địa chỉ giao hàng, dùng để hiện thỉ trên trang thanh toán Tiki                             |
+| shipping_address | **[Address](#address)** | No         | Địa chỉ giao hàng, dùng để hiện thị trên trang thanh toán Tiki (phần thông tin khách hàng)                            |
 | billing_address  | **[Address](#address)** | No         | Địa chỉ thanh toán                                                                         |
 | extra            | string                  | No         | Thông tin bổ sung theo định dạng  ***key=value;key=value***                                |
 | reference_id     | string                  | No         | ID đơn hàng của đối tác                                                                    |
