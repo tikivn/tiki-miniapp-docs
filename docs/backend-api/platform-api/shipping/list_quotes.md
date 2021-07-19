@@ -91,6 +91,7 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/quotes
 | ------------------ | ------ | ------------------------------------------ |
 | estimated_timeline | object | timeline ước chừng về việc vận chuyển hàng |
 | fee                | object | thông tin về phí vận chuyển                |
+| partner_code       | string | mã code của đối tác vận chuyển             |
 | service            | object | loại hình vận chuyển                       |
 
 **estimated_timeline** object
@@ -113,7 +114,7 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/quotes
 | ---------- | ------- | ---------------------------------------- |
 | id         | integer |                                          |
 | name       | string  | ex: TNSL-Grab Express, TNSL-NJV Standard |
-| type       | string  | ex: TG_INSTANT, TG_EXPRESS, TG_STANDARD  |
+| code       | string  | ex: TG_INSTANT, TG_EXPRESS, TG_STANDARD  |
 
 ### Request Example
 

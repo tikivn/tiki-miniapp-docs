@@ -545,6 +545,7 @@ module.exports = {
             'backend-api/platform-api/shipping/cancel_shipment',
             'backend-api/platform-api/shipping/get_ward_code',
             'backend-api/platform-api/shipping/switch_shipment_status',
+            'backend-api/platform-api/shipping/webhook',
             'backend-api/platform-api/shipping/status_flow',
           ],
         },
