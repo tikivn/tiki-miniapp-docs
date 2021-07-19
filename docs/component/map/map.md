@@ -251,3 +251,7 @@ Page({
 | fillColor   | string |         | Màu nền của circle              |
 | strokeColor | string |         | Màu viền của circle             |
 | strokeWidth | string |         | Width của viền circle           |
+
+## Lưu ý
+
+- Trong một số trường hợp map không hiển thị trên device. Bạn cần khai báo giá trị cụ thể width, height cho map mà không phải là %
