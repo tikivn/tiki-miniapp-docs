@@ -18,7 +18,7 @@ tiniapp-auth-backend
 └── requirements.txt
 ```
 
-## Các thư viện Python được sử dụng 
+## Các thư viện Python được sử dụng
 
 ```bash
 # requirements.txt
@@ -200,7 +200,7 @@ Một cách khác là bạn cũng có thể tự build bằng Docker trên môi 
   --region asia-southeast1 \
   --set-env-vars CLIENT_ID=<Client_ID được cung cấp> \
   --set-env-vars CLIENT_SECRET=<Client_secret được cung cấp> \
-  --set-env-vars AUTH_ENDPOINT=https://api.tiki.vn/tiniapp-open-api/api/v1/oauth/auth/token \
+  --set-env-vars AUTH_ENDPOINT=https://api.tiki.vn/tiniapp-open-api/oauth/auth/token \
   --allow-unauthenticated
 ```
 
