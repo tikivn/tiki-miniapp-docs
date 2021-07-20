@@ -80,4 +80,5 @@ Page({
 | vertical               | number   | false         | Hiển thị carousel theo chiều dọc, cần khai báo chiều cao cho `carousel` thông qua thuộc tính `height` ở `style` hoặc `class` |
 | circular               | boolean  | false         | Cho phép `carousel` thực hiện lặp vô tận                                                                                     |
 | disable-touch          | boolean  | false         | Cho phép user có thể touch được vào carousel để lướt hay không                                                               |
+| spacing                | number   | 0             | Khoảng cách giữa các item (đơn vị px). Chỉ hỗ trợ version >= 1.74.23                                                         |
 | onChange               | function |               | Sự kiện được gọi sau khi item khác được active, `event.detail = { current }`                                                 |
