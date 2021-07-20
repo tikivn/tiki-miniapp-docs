@@ -60,7 +60,7 @@ const init = () => ({
 
 Page({
   data: {
-    apiKey: 'AIzaSyDY6f-OwKoI7g7VtWUcBhKKieXfyHKBHw8',
+    apiKey: 'YOUR_GOOGLE_MAP_API_KEY',
     ...init()
   },
   resetMap() {
