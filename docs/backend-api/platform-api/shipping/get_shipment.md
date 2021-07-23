@@ -19,7 +19,6 @@ GET https://api.tiki.vn/tiniapp-open-api/shipping/shipments
 | Attributes  | Type   | Required | Description              |
 | ----------- | ------ | -------- | ------------------------ |
 | tracking_id | string | yes      | tracking ID của shipment |
-| client_id   | string | yes      | client ID của Tini App   |
 
 ### API Response
 
@@ -73,8 +72,7 @@ GET https://api.tiki.vn/tiniapp-open-api/shipping/shipments
 
 ```
 {
-  "tracking_id": "LOGI-101",
-  "client_id": "194ffee2-8aa4-4cb8-a96a",
+  "tracking_id": "LOGI-101"
 }
 ```
 
