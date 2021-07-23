@@ -8,7 +8,7 @@ title: Switch shipment's status
 
 API này chỉ phục vụ cho môi trường **Sandbox**, nhằm giúp developer chủ động trong việc thay đổi các trạng thái của đơn hàng vận chuyển.
 
-Lưu ý, khi ở trạng thái cuối cùng thì không thể thay đổi qua các trạng thái khác.
+Lưu ý, khi ở **trạng thái cuối cùng** thì không thể thay đổi qua các trạng thái khác.
 Xem thêm về các trạng thái đơn hàng [tại đây](./status_flow).
 
 ## Sử dụng

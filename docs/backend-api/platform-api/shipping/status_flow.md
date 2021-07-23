@@ -6,4 +6,4 @@ title: Status flow
 
 Dưới đây là hình ảnh mô tả status flow của một shipment
 
-![shipment status flow](https://tiniapp-media.tikicdn.com/doc/shipping_status_flow.png)
+![shipment status flow](https://tiniapp-media.tikicdn.com/doc/shipping_status_flow_updated.png)
