@@ -1,6 +1,6 @@
 # Tini App Docs
 
-https://miniapp.tiki.vn
+https://developers.tiki.vn
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 

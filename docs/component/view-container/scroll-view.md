@@ -8,10 +8,10 @@ title: scroll-view
 
 ## Lưu ý
 
-- Bạn cần thiết lập thuộc tính height cho `scroll-view` thông qua [inline-style](https://miniapp.tiki.vn/docs/framework/tcss/tcss-introduction#Inline-style) hoặc [tcss](https://miniapp.tiki.vn/docs/framework/tcss/tcss-introduction) nếu `scroll-x` là true
+- Bạn cần thiết lập thuộc tính height cho `scroll-view` thông qua [inline-style](https://developers.tiki.vn/docs/framework/tcss/tcss-introduction#Inline-style) hoặc [tcss](https://developers.tiki.vn/docs/framework/tcss/tcss-introduction) nếu `scroll-x` là true
 - `scroll-view` không hỗ trợ cả `scroll-x` và `scroll-y` cùng lúc, khi cả 2 thuộc tính này là `false`, thanh scroll sẽ không hoạt động
 - `scroll-view` chỉ hỗ trợ bạn scroll content được hay không, không có tùy chỉnh cho việc pull-down refresh
-- Để dùng thuộc tính `scroll-into-view` bạn cần để các component vào bên trong thẻ [view](https://miniapp.tiki.vn/docs/component/view-container/view) và khai báo id cho nó
+- Để dùng thuộc tính `scroll-into-view` bạn cần để các component vào bên trong thẻ [view](https://developers.tiki.vn/docs/component/view-container/view) và khai báo id cho nó
 - Không nên dùng dùng `onScroll` để thiết lập giá trị của `scroll-top` hoặc `scroll-left` qua biến trong data, có thể dẫn đến trường hợp thanh scroll bị giật
 
 ## Sử dụng
@@ -157,6 +157,6 @@ Page({
 | onScrollToUpper       | event   |               | Sự kiện được gọi khi thanh scroll tới vị trí trên đầu hoặc ngoài cùng bên trái của `scroll-view`                                                                                                      |
 | onScrollToLower       | event   |               | Sự kiện được gọi khi thanh scroll tới vị trí dưới cùng hoặc ngoài cùng bên phải của `scroll-view`                                                                                                     |
 | onScroll              | event   |               | Sự kiện được gọi khi đang scroll, `event.detail = { scrollLeft, scrollTop, scrollHeight, scrollWidth }`                                                                                               |
-| onTouchStart          | event   |               | Sự kiện được gọi khi bắt đầu chạm vào `scroll-view`. [Xem thêm](https://miniapp.tiki.vn/docs/framework/event/event-object#TouchEvent-touch-event-object)                                              |
-| onTouchmove           | event   |               | Sự kiện được gọi khi bạn di chuyển trong lúc chạm vào `scroll-view`. [Xem thêm](https://miniapp.tiki.vn/docs/framework/event/event-object#TouchEvent-touch-event-object)                              |
-| onTouchEnd            | event   |               | Sự kiện được gọi khi dừng chạm vào `scroll-view`. [Xem thêm](https://miniapp.tiki.vn/docs/framework/event/event-object#TouchEvent-touch-event-object)                                                 |
+| onTouchStart          | event   |               | Sự kiện được gọi khi bắt đầu chạm vào `scroll-view`. [Xem thêm](https://developers.tiki.vn/docs/framework/event/event-object#TouchEvent-touch-event-object)                                           |
+| onTouchmove           | event   |               | Sự kiện được gọi khi bạn di chuyển trong lúc chạm vào `scroll-view`. [Xem thêm](https://developers.tiki.vn/docs/framework/event/event-object#TouchEvent-touch-event-object)                           |
+| onTouchEnd            | event   |               | Sự kiện được gọi khi dừng chạm vào `scroll-view`. [Xem thêm](https://developers.tiki.vn/docs/framework/event/event-object#TouchEvent-touch-event-object)                                              |

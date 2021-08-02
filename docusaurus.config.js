@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   title: 'Tini App',
   tagline: 'Tini App - Tiki',
-  url: 'https://miniapp.tiki.vn',
+  url: 'https://developers.tiki.vn',
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',

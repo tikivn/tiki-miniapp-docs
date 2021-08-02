@@ -65,7 +65,7 @@ def auth_exchange_handler():
         return f"Error: {err}", 500
 
     ...
-    # Chuẩn bị 2 hàm tương tự cho các đường dẫn: /auth_refresh and /auth_info như mô tả trong bài: https://miniapp.tiki.vn/docs/backend-api/platform-api/exchange-auth-token
+    # Chuẩn bị 2 hàm tương tự cho các đường dẫn: /auth_refresh and /auth_info như mô tả trong bài: https://developers.tiki.vn/docs/backend-api/platform-api/exchange-auth-token
     ...
 
 if __name__ == "__main__":
@@ -89,7 +89,7 @@ import time
 
 ###########################
 # Cách tính signature bằng Python tương tự trong bài viết:
-https://miniapp.tiki.vn/docs/backend-api/platform-api/calculate-signature
+https://developers.tiki.vn/docs/backend-api/platform-api/calculate-signature
 ###########################
 
 def base64URLEncode(data):
@@ -103,7 +103,7 @@ def sign(secret, payload):
 
 ###########################
 # Chuẩn bị định dạng và thực hiện POST request theo yêu cầu hướng dẫn trong bài viết:
-https://miniapp.tiki.vn/docs/backend-api/platform-api/exchange-auth-token
+https://developers.tiki.vn/docs/backend-api/platform-api/exchange-auth-token
 ###########################
 
 def new_request_auth_exchange(data_dict):

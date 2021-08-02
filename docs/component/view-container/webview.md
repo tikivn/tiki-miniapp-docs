@@ -55,11 +55,11 @@ Page({
 
 ### Các API có thể gọi trong web-view
 
-| API              | Description                                                                                                                                                     |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| my.navigateTo    | Dùng để di chuyển từ màn hình hiện tại tới màn hình mong muốn trong ứng dụng. Xem thêm [my.navigateTo](https://miniapp.tiki.vn/docs/api/navigator/navigate-to). |
-| my.navigateBack  | Dùng để đóng màn hình hiện tại và trở lại màn hình trước đó. Xem thêm [my.navigateBack](https://miniapp.tiki.vn/docs/api/navigator/navigate-back).              |
-| my.getSystemInfo | Dùng để lấy thông tin của hệ thống. [my.getSystemInfo](https://miniapp.tiki.vn/docs/api/device/get-system-info).                                                |
-| my.getUserInfo   | Dùng để lấy các thông tin cơ bản của users (tên, ảnh). [my.getUserInfo](https://miniapp.tiki.vn/docs/api/open/get-user-info).                                   |
-| my.request       | Dùng để thực hiện các network request. [my.request](https://miniapp.tiki.vn/docs/api/network/request).                                                          |
-| my.postMessage   | Dùng để gửi message tới webview. Message sẽ được gửi tới listener của `window.onmessage` hay `window.addEventListener('message', listener)`.                    |
+| API              | Description                                                                                                                                                        |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| my.navigateTo    | Dùng để di chuyển từ màn hình hiện tại tới màn hình mong muốn trong ứng dụng. Xem thêm [my.navigateTo](https://developers.tiki.vn/docs/api/navigator/navigate-to). |
+| my.navigateBack  | Dùng để đóng màn hình hiện tại và trở lại màn hình trước đó. Xem thêm [my.navigateBack](https://developers.tiki.vn/docs/api/navigator/navigate-back).              |
+| my.getSystemInfo | Dùng để lấy thông tin của hệ thống. [my.getSystemInfo](https://developers.tiki.vn/docs/api/device/get-system-info).                                                |
+| my.getUserInfo   | Dùng để lấy các thông tin cơ bản của users (tên, ảnh). [my.getUserInfo](https://developers.tiki.vn/docs/api/open/get-user-info).                                   |
+| my.request       | Dùng để thực hiện các network request. [my.request](https://developers.tiki.vn/docs/api/network/request).                                                          |
+| my.postMessage   | Dùng để gửi message tới webview. Message sẽ được gửi tới listener của `window.onmessage` hay `window.addEventListener('message', listener)`.                       |
