@@ -1,7 +1,7 @@
 ---
 title: Tải về
 ---
-### Phiên bản 1.
+### Phiên bản 1.1
 
 30/07/2021<br />
 Mọi người vẫn ổn chứ? Tháng 7 này, Sài Gòn bận rộn với việc phòng chống Cô-Vy thì bọn mình cũng tối mặt với những công việc đột xuất ồ ạt tới...Cũng vì vậy nên với Tini Design System, lần cập nhật này team design chỉ có cải thiện cho những components đã có. Cụ thể là:
@@ -15,7 +15,7 @@ Mọi người vẫn ổn chứ? Tháng 7 này, Sài Gòn bận rộn với vi�
 Tháng tới, team sẽ chào đón một thành viên mới gia nhập. Hãy cùng đón chờ xem người anh ấy sẽ nâng tầm Tini design system như thế nào nhé.
 May the force be with you.
 
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 
