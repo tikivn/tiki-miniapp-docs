@@ -11,13 +11,10 @@ Nếu bạn chưa có tài khoản, vui lòng truy cập [www.figma.com](http://
 
 ### 2. Thêm Tini vào thư viện thiết kế
 
-#### Cách 1: Duplicate tập tin từ Figma Community
+#### Duplicate tập tin từ Figma Community
 
 Chúng tôi đã upload Tini Design System trên Figma Community để giúp bạn dễ dàng gởi nhận xét và cập nhật phiên bản mới nhất của Tini. Bạn có thể truy cập và duplicate file [tại đây](https://www.figma.com/community/file/958198956095698455/Tini-design-system). Nếu bạn cần trợ giúp, bạn có thể tìm hiểu [tại đây](https://help.figma.com/hc/en-us/articles/360038510873-Use-files-from-the-Community).
 
-#### Cách 2: Tải file
-
-Bạn có thể tải file trực tiếp [tại đây](/docs/design/figma/download). Sau khi tải file, vui lòng kích hoạt Tini Design System trong Figma của bạn. Nếu bạn cần trợ giúp, bạn có thể học cách làm điều đó [tại đây](https://help.figma.com/hc/en-us/articles/360038743434-Enable-libraries-in-drafts-teams-and-files).
 
 
 ---
