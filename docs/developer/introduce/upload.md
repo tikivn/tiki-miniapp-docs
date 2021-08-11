@@ -28,3 +28,4 @@ Lưu ý:
 - Tính năng Upload App yêu cầu bạn phải đăng nhập tài khoản Dev Center trên Studio.
 - Nhớ chọn đúng Developer Account trước khi Upload App hoặc sẽ bị lỗi `invalid permission`.
 - Sau khi tải bản cập nhật lên Dev Center, máy chủ sẽ mất một khoảng thời gian để tiến hành xử lý bản build trước khi trả về trạng thái `Ready`.
+- Mỗi App chỉ được upload tối đa là **5MB**, nếu bạn dùng nhiều tài nguyên có kích thước lớn (hình ảnh, video, audio,...), bạn nên đưa lên CDN của bạn thay vì bỏ vào trong thư mục của app. Ngoài ra, nên hạn chế cài các package node_modules không cần thiết. Các package chỉ hỗ trợ cho quá trình làm app dưới local như eslint, prettier,... bạn nên bỏ vào devDependencies thay vì dependencies
