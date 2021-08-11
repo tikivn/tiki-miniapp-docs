@@ -31,5 +31,6 @@ my.getRunScene({
 
 ### Giá trị trong success callback
 
-| Attributes | Type | Description |
+| Attributes | Type   | Description                    |
+| ---------- | ------ | ------------------------------ |
 | envVersion | string | Version hiện tại của Mini App. |
