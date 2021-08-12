@@ -6,7 +6,7 @@ title: Xây dựng và đăng tải ứng dụng
 
 Sau khi bạn hoàn thành công đoạn ra ứng dụng với **App ID** duy nhất trên Dev Center, bạn chuyển sang tạo một project mới trên Tini Studio. Điền **App ID** vào hộp thoại **Configure your project**.
 
-<img src="/static/img/New_Project_TiniStudio.jpg" width="450px" alt="Developer Registration Form" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/New_Project_TiniStudio.jpg" width="450px" alt="Developer Registration Form" style={{ margin: '0 auto', display: 'flex' }}/>
 
 **App ID** này sẽ được đặt trong tập tin package.json.
 

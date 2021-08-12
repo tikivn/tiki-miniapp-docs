@@ -47,7 +47,7 @@ Nhà phát triển có thể đăng ký phát hành ứng dụng trên nhiều l
 
 Lĩnh vực kinh doanh có thể bổ sung sau tùy tình hình kinh doanh của Nhà phát triển. Khi bổ sung lĩnh vực kinh doanh, Nhà phát triển phải cung cấp đầy đủ hồ sơ pháp lý để được phát hành ứng dụng trên danh mục/nhóm ngành nghề mới.
 
-<img src="/static/img/Developer_Registration_Categories.jpg" width="600px" alt="Developer Registration Form" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Developer_Registration_Categories.jpg" width="600px" alt="Developer Registration Form" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ## 5. Cung cấp danh tính
 
@@ -55,7 +55,7 @@ Lĩnh vực kinh doanh có thể bổ sung sau tùy tình hình kinh doanh của
 - Tải lên ảnh chụp các giấy tờ cần thiết.
 - Nhấn nút **Hoàn tất**.
 
-<img src="/static/img/Developer_Registration_form.jpg" width="600px" alt="Developer Registration Form" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Developer_Registration_form.jpg" width="600px" alt="Developer Registration Form" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ## 6. Xác thực email
 

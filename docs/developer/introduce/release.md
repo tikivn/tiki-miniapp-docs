@@ -14,7 +14,7 @@ Bộ phận phê duyệt của Tiki sẽ kiểm tra source code của build cũn
 
 Cuối cùng bạn **Publish** release đã được phê duyệt.
 
-<img style={{width: "100%"}} src="/static/img/Build_Processing_DevCenter_diagram.png"/>
+<img style={{width: "100%"}} src="/img/Build_Processing_DevCenter_diagram.png"/>
 
 ## Quản lý Release và Build của ứng dụng
 

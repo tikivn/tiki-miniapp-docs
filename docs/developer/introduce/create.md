@@ -8,7 +8,7 @@ Một khi đã chính thức trở thành Nhà phát triển Tini App, bạn đ�
 
 Bấm nút **Tạo ứng dụng mới** tại góc phải trên.
 
-<img style={{ margin: '0 auto', display: 'flex' }} src="/static/img/Create_TiniApp_button.jpg" alt="app management - empty"/>
+<img style={{ margin: '0 auto', display: 'flex' }} src="/img/Create_TiniApp_button.jpg" alt="app management empty"/>
 
 ## 2. Khai báo ứng dụng
 
