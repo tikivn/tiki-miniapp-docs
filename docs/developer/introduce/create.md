@@ -2,29 +2,39 @@
 title: Tạo Tini App của bạn
 ---
 
-Sau khi đăng ký và xác thực tài khoản thành công, Nhà phát triển có thể tiến hành tạo mới một ứng dụng để bắt đầu quá trình phát triển bằng cách truy cập [Dev Center](/apps).
+Một khi đã chính thức trở thành Nhà phát triển Tini App, bạn được quyền tạo mới ứng dụng, bắt đầu quá trình phát triển. Truy cập vào [Dev Center](https://developer.tiki.vn/apps) và tiến hành những bước sau:
 
-## Tạo mới ứng dụng
+## 1. Tạo mới ứng dụng
 
-Bấm nút **"Tạo ứng dụng mới"** tại góc trên bên phải.
+Bấm nút **Tạo ứng dụng mới** tại góc phải trên.
 
-<img style={{ width: "100%" }} src="https://salt.tikicdn.com/ts/social/79/c3/16/543e3c4fb4bb2fe15a0f6f517f9de30c.png" alt="app management - empty"/>
+<img style={{ margin: '0 auto', display: 'flex' }} src="/static/img/Create_TiniApp_button.jpg" alt="app management - empty"/>
 
-## Điền thông tin ứng dụng
+## 2. Khai báo ứng dụng
 
-Nội dung được điền tại đây sẽ hiển thị ở phía người dùng cuối trong phần mô tả ứng dụng:
+**Tên ứng dụng**: tối đa 20 ký tự.
 
-- Tên ứng dụng: tối đa 50 ký tự, người dùng có thể tìm thấy ứng dụng thông qua tên ứng dụng.<br/>
-- App ID: tối đa 255 ký tự, gồm các nhóm ký tự bắt đầu bằng chữ cái, cho phép chữ số và dấu gạch dưới (\_) được ngăn cách bằng dấu chấm (.). VD: com.tiki.app.demo
-- Email hỗ trợ: địa chỉ email dùng cho việc hỗ trợ người dùng.
-- Thể loại ứng dụng: chọn thể loại hoạt động của ứng dụng của bạn.
+**App ID**: định danh duy nhất của ứng dụng. Nó có dạng chuỗi tối đa 255 ký tự, chấp nhận chữ cái thường (a-z), chữ số (0-9) và dấu gạch chân (underscore _ ). Đặc biệt App ID phải chứa ít nhất 2 phân đoạn phân cách nhau bằng dấu chấm (dot .); mỗi phân đoạn phải bắt đầu bằng chữ cái.
 
-Mô tả ứng dụng có thể thay đổi mỗi lần phát hành phiên bản mới trừ App ID.
+Ví dụ:
+
+> tiki.miniapp → Hợp lệ
+>
+> vn.tiki.movingservice  → Hợp lệ
+> 
+> vn.tiki.billing_app01 → Hợp lệ
+> 
+> tikisubprogram → Bất hợp lệ, vì chỉ chứa 1 phận đoạn
+> 
+> vn.tiki.HOTEL-booking → Bất hợp lệ, vì chứa chữ cái hoa lẫn dấu gạch nối
+> 
+> vn.tiki.7travel → Bất hợp lệ, vì chữ số đứng đầu phân đoạn
+
+Khai báo thông tin ứng dụng xong, nhấn nút **Hoàn tất** để kết thúc.
 
 <img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/upload/be/e4/35/cfc7318dbb244188a1cbf9cbac9a37c0.jpg" alt="app management - create" />
 
-## Hoàn tất tạo ứng dụng
+## 3. Cài đặt tài khoản
 
-Bấm **"Hoàn tất"** để xác nhận tạo ứng dụng mới với thông tin vừa điền.
-
-Ứng dụng sau khi tạo thành công sẽ xuất hiện tại [App Management](https://developer.tiki.vn/apps) với trạng thái Nháp (Draft). Bạn có thể xem thêm về trạng thái ứng dụng [tại đây](/docs/developer/introduce/release#trạng-thái-của-ứng-dụng).
+- Cấp quyền cho các thành viên tham gia phát triển ứng dụng (Xem thêm [Quản lý tài khoản](member.md) )
+- Thiết lập phương thức thanh toán và vận chuyển.

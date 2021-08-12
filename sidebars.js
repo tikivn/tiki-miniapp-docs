@@ -7,10 +7,10 @@ module.exports = {
       collapsed: false,
       items: [
         'developer/introduce/register',
+        'developer/introduce/member',
         'developer/introduce/create',
         'developer/introduce/upload',
         'developer/introduce/release',
-        'developer/introduce/member',
         'developer/introduce/dev-assistant',
       ],
     },

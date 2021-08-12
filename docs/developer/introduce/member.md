@@ -2,62 +2,96 @@
 title: Quản lý tài khoản
 ---
 
-## Giới thiệu
+Nền tảng Tini App cho phép một tài khoản Nhà phát triển có nhiều ứng dụng. Mỗi ứng dụng có thể có nhiều người cùng tham gia phát triển ở các vai trò Owner, Admin, Programmer, Tester.
 
-Nền tảng Tini App cho phép mời nhiều thành viên cùng tham gia phát triển một ứng dụng với các vai trò **Owner**, **Admin**, **Programmer**, **Tester**.
-
-Chỉ có Owner, Admin và Programmer có thể truy cập Dev Center và thực hiện các tác vụ liên quan việc phát hành ứng dụng, Tester không thể truy cập vào công cụ này.
-
-## Phân quyền thành viên
-
-Một tài khoản Nhà phát triển có thể có nhiều ứng dụng. Mỗi ứng dụng sẽ quản lý nhóm các thành viên tham gia phát triển của chính nó.
-
-- **Owner**: Người đại diện Công ty đăng ký tài khoản Nhà phát triển (mặc định sẽ là Owner của tất cả các ứng dụng thuộc Công ty). Mỗi tài khoản Nhà phát triển chỉ có duy nhất một Owner.
-- **Admin**: Có tất cả quyền hạn trên ứng dụng mà họ được trao quyền Admin, ngoại trừ điều chỉnh thông tin Thanh toán.
-- **Programmer**: Người lập trình viên tham gia xây dựng ứng dụng.
+- **Owner**: Người đại diện Công ty đăng ký tài khoản Nhà phát triển, mặc định sẽ là Owner của tất cả các ứng dụng thuộc Công ty đó. Mỗi tài khoản Nhà phát triển chỉ có duy nhất một Owner. Owner có quyền cấp, huỷ, thay đổi vai trò Admin, Programmer và Tester cho/của các thành viên thường trực và thành viên trong bất kỳ dự án nào. 
+- **Admin**: Có tất cả quyền hạn trên ứng dụng mà họ được trao quyền Admin, ngoại trừ điều chỉnh thông tin Thanh toán. Admin có quyền cấp, huỷ, thay đổi vai trò Programmer và Tester.
+***Lưu ý***: Admin thường trực có quyền cấp vai trò Admin cho bản thân mình trong bất kỳ ứng dụng nào của công ty. 
+- **Programmer**: Lập trình viên tham gia xây dựng ứng dụng.
 - **Tester**: Người chịu trách nhiệm kiểm thử ứng dụng hoặc được mời trải nghiệm một ứng dụng trước khi phát hành.
 
-## Quản lý nhóm thành viên thường trực
+Owner, Admin và Programmer có quyền truy cập Dev Center cũng như thực hiện các tác vụ liên quan việc phát hành ứng dụng, trong khi Tester không thể truy cập công cụ này.
 
-**Quản lý nhóm thành viên thường trực** là chức năng mở rộng giúp quản lý một hoặc nhiều nhóm phát triển cùng tham gia xây dựng nhiều ứng dụng dưới danh nghĩa một Công ty.
+<div align="center"> ---oOo--- </div>
 
-### Danh sách thành viên thường trực
+Phàm đội ngũ xây dựng các ứng dụng cho công ty quy tụ nhiều thành phần khác nhau. Có người làm việc lâu dài, góp mặt vào nhiều ứng dụng; có người được mướn theo thời vụ chỉ tham gia một dự án; có người là khách hàng của công ty được mời dùng thử sản phẩm; … .Vì lẽ đó, Tini App giới thiệu khái niệm nhóm Thành viên thường trực và nhóm Thành viên phát triển ứng dụng, nhằm giúp công ty cấp quyền truy cập cho các kiểu thành viên khác nhau một cách thuận tiện.
 
-**B1:** Truy cập [Dev Center](https://developer.tiki.vn/apps) > Thiết lập tài khoản > Danh sách thanh viên.
+- Tài khoản Nhà phát triển sẽ có một nhóm Thành viên thường trực (chung).
+- Tương ứng mỗi ứng dụng của Nhà phát triển sẽ một nhóm Thành viên phát triển ứng dụng (riêng).
+
+## Quản lý Thành viên thường trực
+
+### Những ai nên nằm trong danh sách Thành viên thường trực?
+
+Những người là thành viên xuyên suốt, tham gia phát triển/ kiểm thử/ vận hành/…  nhiều hoặc hầu hết các ứng dụng của Công ty.
+
+### Xem danh sách thành viên thường trực
+
+1. Truy cập vào [Dev Center](https://developer.tiki.vn/apps).
+2. Sidebar menu >> **Thiết lập tài khoản** >> **Quản lý thành viên**
 
 <img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/a3/f0/05/30917e3903698af22d9d60c0c6e9e066.png"/>
 
-**B2:** Chọn **Thêm thành viên** tại góc trên bên phải
+### Thêm thành viên thường trực
 
-**B3:** Nhập địa chỉ e-mail dùng để đăng kí tài khoản Tiki của thành viên muốn thêm và chọn vai trò tương ứng.
+1. Truy cập vào [Dev Center](https://developer.tiki.vn/apps).
+2. Sidebar menu >> **Thiết lập tài khoản** >> **Quản lý thành viên**.
+3. Bấm nút **Thêm người dùng** ở góc phải trên.
+4. Trong hộp thoại **Thêm thành viên**, nhập địa chỉ email dùng để đăng ký tài khoản Tiki của người mà bạn đang muốn thêm vào, và chọn vai trò mặc định cho người đó. Kế đó bấm nút **Thêm**
+   <img src="/static/img/New_Permanent_Member_form.jpg" width="250px" style={{ margin: '0 auto', display: 'flex' }}/>
+5. Trong trang "Thêm thành viên", xác định vai trò của thành viên đó trong từng dự án cụ thể. Sau đó, bấm nút **Hoàn tất**.
+   <img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/upload/b5/5e/0c/30104b6bfe4d39bb1136e2035b8e3b4a.jpg"/>
 
-Vai trò của thành viên trong Danh sách thành viên thường trực chỉ có giá trị dùng làm gợi ý mỗi khi một ứng dụng mới được khởi tạo, quyền hạn thực tế trên từng ứng dụng sẽ được quản lý tại mục Ứng dụng > Member Management.
+## Quản lý Thành viên phát triển ứng dụng
 
-<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/5c/61/b1/4975f2d185e1353e253c9dec94acff19.png"/>
+### Những ai nên nằm trong danh sách Thành viên phát triển ứng dụng?
 
-**B4:** Bấm **Thêm**
+Mọi đối tượng tham gia phát triển/ kiểm thử/ vận hành/… ứng dụng đó.
 
-**B5:** Xuất hiện danh sách các ứng dụng mà thành viên mới có quyền truy cập, với vai trò là vai trò mặc định được chọn tại Bước 3. Owner có thể tùy chỉnh lại cho để phù hợp với phạm vi công việc thực tế.
+***Lưu ý:*** 
 
-<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/upload/b5/5e/0c/30104b6bfe4d39bb1136e2035b8e3b4a.jpg"/>
+- Tester/ Programmer/ Admin dẫu hiện diện trong danh sách Thành viên thường trực vẫn cần được thêm vào danh sách Thành viên phát triển ứng dụng thì mới có thể làm việc với ứng dụng ấy.
+- Admin thành viên thường trực có quyền cấp vai trò Admin của ứng dụng cho chính bản thân mình.
+- Owner, Admin và Programmer của ứng dụng có quyền truy cập Dev Center cũng như thực hiện các tác vụ liên quan việc phát hành ứng dụng, trong khi Tester không thể truy cập công cụ này.
 
-**B6:** Bấm **Hoàn tất**
+### Xem danh sách Thành viên phát triển ứng dụng
 
-### Vì sao cần quản lý riêng biệt thành viên thường trực và thành viên phát triển ứng dụng?
+1. Truy cập vào [Dev Center](https://developer.tiki.vn/apps).
+2. Sidebar menu >> **Ứng dụng của bạn**.
+3. Mở ứng dụng mà bạn muốn xem danh sách thành viên.
+4. Sidebar menu >> **Quản lý thành viên**.
 
-- Trong trường hợp Công ty/Tổ chức có nhu cầu phân chia nhóm **thành viên tham gia toàn bộ ứng dụng** và **nhóm thành viên tham gia một ứng dụng cụ thể**, có thể dễ dàng quản lý bằng cách lựa chọn thêm thành viên vào Danh sách thường trực hoặc Thành viên của ứng dụng.
-- Mời một nhóm người ngoài Tổ chức tham gia kiểm thử/dùng thử một ứng dụng bất kì mà không ảnh hưởng đến các ứng dụng khác cùng Công ty.
+### Thêm Thành viên phát triển ứng dụng 
 
-## Câu hỏi thường gặp
+1. Truy cập vào [Dev Center](https://developer.tiki.vn/apps).
+2. Sidebar menu >> **Ứng dụng của bạn**.
+3. Mở ứng dụng mà bạn muốn xem danh sách thành viên.
+4. Sidebar menu >> **Quản lý thành viên**.
+5. Bấm nút **Thêm thành viên** tại góc phải trên.
+6. Trong hộp thoại **Thêm thành viên**, nhập địa chỉ email dùng để đăng ký tài khoản Tiki của người mà bạn đang muốn thêm vào, và chọn vai trò cho người đó trong ứng dụng. Kế đó bấm nút **Thêm**.
 
-| **Câu hỏi**                                                                                | **Kết quả**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Thành viên thường trực** và **Thành viên tham gia ứng dụng** khác gì nhau?               | **Thành viên thường trực** <br/> Quản lý danh sách thành viên tham gia quy trình phát triển app của công ty sở hữu Dev Account. <br/> Người dùng có mặt trong danh sách User Management nghĩa là: <br/> • Có trong danh sách gợi ý trở thành thành viên (App's member) một ứng dụng mới được khởi tạo <br/> • Role được gán trong User Management là giá trị tham khảo dùng mỗi khi khởi tạo ứng dụng mới, role thực sự sẽ tương ứng với từng ứng dụng riêng biệt <br/>**Thành viên tham gia ứng dụng** <br/> Quản lý danh sách thành viên trực tiếp phát triển và vận hành một ứng dụng cụ thể. <br/> Người dùng có mặt trong danh sách có thể: <br/> • Tải app và sử dụng thông app ứng dụng Tiki Consumer <br/> • Tùy theo role được gán trong App Member Management, sẽ có quyền tương ứng để xem, chình sửa, phát hành ứng dụng,...                                                                                                                                |
-| Khi nào cần thêm một người vào danh sách Thành viên thường trực?                           | Khi người đó là: <br/> • Thành viên xuyên suốt, tham gia phát triển và vận hành hầu hết các ứng dụng của Công ty                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Khi nào cần thêm một người vào danh sách Thành viên tham gia ứng dụng?                     | Khi người đó là: <br/> • Người dùng vãng lai được mời dùng thử ứng dụng mới hoặc phiên bản mới trong thời gian ngắn <br/> • Nhân viên thời vụ phụ trách một vài ứng dụng trong thời gian ngắn <br/> • Công ty sở hữu nhiều phòng ban, mỗi phòng ban phụ trách một ứng dụng riêng biệt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Vai trò của một người được gán trong Thành viên thường trực có ý nghĩa gì?                 | Giá trị tham khảo mỗi khi có một ứng dụng mới được khởi tạo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Vai trò của một người được gán trong Thành viên tham gia ứng dụng có ý nghĩa gì?           | Quyền hạn thực sự của một người đối với một ứng dụng.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Một người có thể có người vai trò khác khác nhau hay không? Chuyện gì sẽ xảy ra tương ứng? | Mỗi người có thể có nhiều vai trò (role) khác nhau tương ứng với từng ứng dụng. <br/> **Ví dụ:** <br/> Tài khoản nguyanvana@tiki.vn có role mặc định được gán trong User Management là Programmer của công ty Tiki Corp <br/> • Khi App#1 được tạo ra, hệ thống gợi ý nguyenvana@tiki.vn là Programmer của app #1 => Admin đồng ý <br/> • Khi App#2 được tạo ra, hệ thống gợi ý nguyenvana@tiki.vn là Programmer của app #2 => Admin chỉnh sửa thành Tester <br/> • Khi App#3 được tạo ra, hệ thống gợi ý nguyenvana@tiki.vn là Programmer của app #3 => Admin remove nguyenvana@tiki.vn khoi3 app #3 <br/> **Kết quả:** <br/> • Tài khoản nguyanvana@tiki.vn vẫn mặc định là Programmer của Tiki Corp <br/> • Với App#1, nguyanvana@tiki.vn là Programmer <br/> • Với App#2, nguyanvana@tiki.vn là Tester <br/> • Với App#3, nguyanvana@tiki.vn hoàn toàn không liên đới <br/> • Khi App#4 được khởi tạo, nguyanvana@tiki.vn vẫn được gợi ý là Programmer của ứng dụng |
-| Có thể mời người dùng vãng lai tham gia kiểm thử ứng dụng không?                           | Có thể, bằng cách thêm người dùng vào danh sách Thành viên tham gia ứng dụng.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Khi Xóa một người khỏi Thành viên thường trực, chuyện gì sẽ xảy ra?                        | Hệ thống sẽ cảnh báo người dùng hiện đang thực sự hoạt động trên các danh sách các ứng dụng của Nhà phát triển. <br/> Admin có thể Xóa hoặc không Xóa tài khoản người dùng khỏi từng ứng dụng, sau đó Xóa khỏi Thành viên thường trực. <br/> Nếu một người bị Xóa khỏi Thành viên thường trực nhưng vẫn còn quyền Thành viên tham gia ứng dụng, họ sẽ được xem nhưng một khách vãng lai của ứng dụng (câu hỏi 3) và không được gợi ý khi ứng dụng mới được tạo ra.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Khi Xóa một người khỏi Thành viên tham gia ứng dụng chuyện gì sẽ xảy ra?                   | Người dùng sẽ lập tức mất quyền với ứng dụng tương ứng. <br/> Nếu người dùng có nhiều quyền trong nhiều ứng dụng, họ vẫn có thể truy cập vào các ứng dụng còn lại. <br/> Nếu người dùng có trong danh sách User Management, họ vẫn được gợi ý trở thành thành viên khi ứng dụng mới được tạo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+## Những thắc mắc thường gặp về Thành viên thường trực và Thành viên phát triển ứng dụng
+
+**Hỏi**: Trường hợp nào nên thêm một người vào danh sách Thành viên phát triển ứng dụng nhưng không thêm vào danh sách Thành viên thường trực?
+
+**Đáp**: 
+
+- Công ty sở hữu nhiều phòng ban, mỗi phòng ban phụ trách một ứng dụng riêng biệt.
+- Nhân viên thời vụ hoặc hợp đồng phụ trách một hoặc vài ứng dụng trong thời gian ngắn.
+- Bên thứ 3 được thuê để phát triển hoặc chỉ đơn thuần kiểm thử một ứng dụng cụ thể.
+- Người dùng vãng lai được mời dùng thử và góp ý cho ứng dụng mới hoặc phiên bản mới trong thời gian ngắn.
+
+**Hỏi**: Một người có thể đảm nhiệm vai trò khác nhau cho các ứng dụng khác nhau?
+
+**Đáp**: Chính xác. Một người có thể đóng vai trò Tester cho ứng dụng A, vai trò Programmer cho cả 2 ứng dụng B và C, vai trò Admin cho ứng dụng D.
+
+**Hỏi**: Khi xoá một người khỏi danh sách Thành viên thường trực thì chuyện gì sẽ xảy ra?
+
+**Đáp**: Hệ thống sẽ cảnh báo người ấy hiện đang là thành viên của các ứng dụng nào. Owner/ Admin có thể xoá hoặc giữ lại quyền thành viên đối với từng ứng dụng của người ấy; sau cùng mới xoá quyền Thành viên thường trực.
+
+Trường hợp một người bị xoá khỏi danh sách Thành viên thường trực, nhưng vẫn còn quyền Thành viên phát triển ứng dụng, thì người đó vẫn được quyền làm việc ứng dụng.
+
+**Hỏi**: Khi xoá một người khỏi danh sách Thành viên phát triển ứng dụng thì chuyện gì sẽ xảy ra?
+
+**Đáp**: Người ấy sẽ mất quyền truy cập vào ứng dụng này. Tuy nhiên, người ấy vẫn có thể làm việc bình thường với những ứng dụng khác miễn sao còn là thành viên của các ứng dụng đó.
+

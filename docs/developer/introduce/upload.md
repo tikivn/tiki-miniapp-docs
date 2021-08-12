@@ -1,31 +1,45 @@
 ---
-title: Quy trình đăng tải ứng dụng
+title: Xây dựng và đăng tải ứng dụng
 ---
 
-## Sử dụng App ID
+## 1. Xây dựng ứng dụng
 
-Sau khi [tạo ứng dụng](/docs/developer/introduce/create) với App ID mong muốn, bạn sử dụng thông tin này cho project tạo với [Tini Studio](/docs/studio/overview). Thông qua việc tạo project mới hoặc sửa tập tin package.json:
+Sau khi bạn hoàn thành công đoạn ra ứng dụng với **App ID** duy nhất trên Dev Center, bạn chuyển sang tạo một project mới trên Tini Studio. Điền **App ID** vào hộp thoại **Configure your project**.
 
-<img alt="Tạo project mới" src="https://salt.tikicdn.com/ts/social/a6/73/d8/c2ddf82aa64a89863e9ab9dfaeee9c3e.jpg" width="100%" />
-<img alt="Sửa tập tin package.json" src="https://salt.tikicdn.com/ts/upload/cb/ca/e7/fbbf3160bfbbba86508991a1eb860ab0.jpg" width="100%" />
+<img src="/static/img/New_Project_TiniStudio.jpg" width="450px" alt="Developer Registration Form" style={{ margin: '0 auto', display: 'flex' }}/>
 
-## Đánh số bản cập nhật
+**App ID** này sẽ được đặt trong tập tin package.json.
 
-Trong tập tin package.json, có hai giá trị bạn cần lưu ý là `version` và `buildNumber`:
+## 2. Quy tắc đánh số phiên bản
 
-- `version`: Cho biết phiên bản của bản cập nhật theo định dạng `x.y.z`. Khi tải lên bản cập nhật mới, `version` của bản cập nhật mới phải lớn hơn hoặc bằng `version` hiện tại đang có trên Dev Center.
-- `buildNumber`: Cho biết lượt tải lên đối với bản cập nhật. Khi tải lên bản build mới, `buildNumber` phải lớn hơn `buildNumber` của bản build trước đó.
+Để upload ứng dụng lên Dev Center được suôn sẻ, bạn cần nắm rõ về version và buildNumber của Tini App.
 
-## Tải lên bản cập nhật
+- Nhà phát triển tuỳ ý đánh số version cho ứng dụng của mình, theo định dạng x.y.z (major.minor.patch).
+- Một version có thể gồm nhiều bản build. Các buildNumber của một version được tự động đánh số từ 1 trở đi. Mỗi lần nhà phát triển upload ứng dụng lên Dev Center nhưng không tăng version lên thì buildNumber tự khắc tăng lên 1.
+- Nếu bất kỳ bản build nào của một version được chấp thuận publish trên Tiki App, bạn phải tăng version lên cho lần upload tiếp theo. Nói dễ hiểu, version sau phải lớn hơn version trước.
 
-Khi đã hoàn thiện bản cập nhật và nhập đầy đủ thông tin cho `version` và `buildNumber`, bạn có thể upload app lên Dev Center thông qua công cụ Upload App:
+Ví dụ: bạn upload ứng dụng 5 lần lên Dev Center.
+> Lần 1: Bạn đánh số version = 1.1.2; buildNumber sẽ được gán giá trị bằng 1.
+>  
+> Lần 2: Bạn giữ nguyên version = 1.1.2; buildNumber sẽ tự động tăng thành 2.
+> 
+> Lần 3: Bạn vẫn giữ nguyên version = 1.1.2; buildNumber lúc này sẽ là 3. Ứng dụng được phê duyệt publish. Version 1.1.2 chẳng thể nào dùng cho lần upload tiếp theo.
+> 
+> Lần 4: Bạn tăng version = 2.9.3;  buildNumber sẽ quay trở về 1. Ứng dụng được phê duyệt publish.
+> 
+> Lần 5: Bạn lại phải chọn version mới = 6.5.8; buildNumber tiếp tục là 1.
 
-- Mở Command Palette `Cmd + Shift + P` tìm "Upload App"
-- Hoặc menu Tools > Upload App
+## 3. Tải lên ứng dụng
 
-Lưu ý:
+Khi bạn đã hoàn thành ứng dụng hoặc nâng cấp ứng dụng, bước cần làm tiếp theo là đưa source code của nó lên Dev Center nơi nó sẽ được xét duyệt và phát hành trên Kho tiện ích của Tiki App.  
 
-- Tính năng Upload App yêu cầu bạn phải đăng nhập tài khoản Dev Center trên Studio.
-- Nhớ chọn đúng Developer Account trước khi Upload App hoặc sẽ bị lỗi `invalid permission`.
-- Sau khi tải bản cập nhật lên Dev Center, máy chủ sẽ mất một khoảng thời gian để tiến hành xử lý bản build trước khi trả về trạng thái `Ready`.
-- Mỗi App chỉ được upload tối đa là **5MB**, nếu bạn dùng nhiều tài nguyên có kích thước lớn (hình ảnh, video, audio,...), bạn nên đưa lên CDN của bạn thay vì bỏ vào trong thư mục của app. Ngoài ra, nên hạn chế cài các package node_modules không cần thiết. Các package chỉ hỗ trợ cho quá trình làm app dưới local như eslint, prettier,... bạn nên bỏ vào devDependencies thay vì dependencies
+1. Mở dự án muốn upload trên Tini Studio.
+2. Đăng nhập bằng tài khoản Dev Center từ Tini Studio bằng cách bấm vào nút **Đăng Nhập** ở góc phải trên.
+   ***Lưu ý***: Chỉ những ai có vai trò Owner, Admin hay Programmer trong ứng dụng mới được quyền tải lên ứng dụng
+3. Bấm nút **Upload** bên cạnh nút **Đăng Nhập**; hoặc menu >> **Upload App**.
+4. Nếu đây là lần đầu tiên bạn upload dự án, bạn sẽ được yêu cầu chọn tên ứng dụng tương ứng trên Dev Center.
+5. Trong hộp thoại **Upload a new build**, gõ version mong muốn và bấm nút **Upload**.
+6. Một khi build được tải thành công lên Dev Center, máy chủ sẽ biên dịch build (sẽ ). Nếu mọi việc thuận lợi, build sẽ có trạng thái "Ready".
+
+***Lưu ý***: Kích thước (source code) của build upload bị giới hạn ở mức 5 MB. Nếu như bạn dùng nhiều tài nguyên có kích thước lớn (hình ảnh, video, audio,...), bạn nên đưa lên CDN của mình thay vì bỏ chung vào trong thư mục của build. Ngoài ra, nên hạn chế cài các package node_modules không cần thiết. Các package như thế chỉ hỗ trợ cho quá trình làm ứng dụng dưới local như eslint, prettier,... bạn nên bỏ vào devDependencies thay vì dependencies
+

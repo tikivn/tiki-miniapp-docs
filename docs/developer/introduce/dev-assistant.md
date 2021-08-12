@@ -2,26 +2,29 @@
 title: Dev Assistant
 ---
 
-Trong quá trình phát triển, sẽ có lúc Nhà phát triển cần thực hiện chạy thử ứng dụng trên thiết bị thực để đảm bảo các tính năng hoạt động như mong muốn. Dev Assistant chính là công cụ hỗ trợ cho việc này, nó giúp cho các thành viên của ứng dụng có thể kiểm tra bản cập nhật mà không cần phải publish bản cập nhật.
+Trong quá trình phát triển, có lúc Nhà phát triển muốn chạy thử ứng dụng trên thiết bị thực để đảm bảo các tính năng hoạt động như mong muốn. Dev Assistant chính là công cụ hỗ trợ cho việc này; nó giúp cho các thành viên của ứng dụng có thể kiểm tra một build nào đó mà không cần phải publish build đó trên Kho tiện ích.
 
-<img src="https://salt.tikicdn.com/ts/upload/b4/f9/77/63f3eb13a6a5de40c8e0c2418f811c93.png" width="80px" alt="Dev Assistant" />
+Để có thể sử dụng công cụ Dev Assistant:
 
-## Sử dụng
+- Thiết bị di động mà bạn dùng chạy thử ứng dụng phải được cài sẵn Tiki App.
+- Bạn phải là thành viên của ứng dụng mà bạn muốn chạy thử.
 
-### Truy cập
+<img src="https://salt.tikicdn.com/ts/upload/b4/f9/77/63f3eb13a6a5de40c8e0c2418f811c93.png" width="80px" alt="Dev Assistant" style={{ margin: '0 auto', display: 'flex' }}/>
 
-Scan mã QR code sau để truy cập Dev Assistant hoặc tìm kiếm với từ khoá "Dev Assistant" trong Kho dịch vụ.
+## Truy cập
 
-<img src="https://salt.tikicdn.com/ts/upload/15/d1/48/ad008a92ee0ab07ced9edbf6d2ef594a.png" width="300px" alt="Dev Assistant QR" />
+Scan mã QR code sau để truy cập Dev Assistant hoặc tìm kiếm với từ khoá "Dev Assistant" trong Kho tiện ích.
 
-Lưu ý:
+<img src="https://salt.tikicdn.com/ts/upload/15/d1/48/ad008a92ee0ab07ced9edbf6d2ef594a.png" width="300px" alt="Dev Assistant QR" style={{ margin: '0 auto', display: 'flex' }} />
 
-- Bạn phải có sẵn ứng dụng Tiki trên thiết bị
-- Bạn phải là một thành viên của một tài khoản Nhà phát triển đang có ứng dụng cần test.
+### Chọn build chạy thử
 
-### Chọn ứng dụng và phiên bản cần test
+Trước hết chọn ứng dụng, kế đến phiên bản và cuối cùng là build bạn muốn chạy thử.
 
-Chọn ứng dụng và phiên bản bạn muốn test để mở đúng phiên bản của ứng dụng đó.
+<div style={{ display: "flex", flexWrap: "wrap" }}>
 
-<img src="https://salt.tikicdn.com/ts/upload/2e/e7/08/db8ff94e50eb8545ea97397d28f4c12b.png" width="320px" alt="Dev Assistant UI 1" /> 
+<img src="https://salt.tikicdn.com/ts/upload/2e/e7/08/db8ff94e50eb8545ea97397d28f4c12b.png" width="320px" alt="Dev Assistant UI 1" style={{ margin: '0 auto', display: 'flex', marginRight: 10}} />
+
 <img src="https://salt.tikicdn.com/ts/upload/16/ee/a0/27fcf39e1cec28f29e45fd612a20e682.png" width="320px" alt="Dev Assistant UI 2" />
+
+</div>
