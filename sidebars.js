@@ -1,6 +1,7 @@
 module.exports = {
   developer: [
     'developer/getting-started',
+    'developer/development-process',
     {
       type: 'category',
       label: 'Hướng dẫn nhà phát triển',
