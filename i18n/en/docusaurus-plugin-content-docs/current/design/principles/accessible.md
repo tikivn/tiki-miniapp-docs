@@ -21,7 +21,7 @@ While color can be useful to convey information, color should not be the only wa
 ## 3. Ensure that interactive elements are easy to identify
 
 Provide distinct styles for interactive elements, such as links and buttons, to make them easy to identify. For example, change the appearance of input focus or hover to the button. Ensure that styles and naming for interactive elements are used consistently throughout the app. <br />
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/76/fd/34/2ea7f2bf45f80caee8a30fa19c7d0c6f.png" alt="color" />
+<img className="img-basic" src="/img/wa3.png" alt="color" />
 
 ## 4. Provide clear and consistent navigation options
 
@@ -36,7 +36,7 @@ Ensure that all fields have a descriptive label adjacent to the field. For left-
 ## 6. Provide easily identifiable feedback
 
 Provide feedback for interactions, such as confirming form submission, alerting the user when something goes wrong, or notifying the user of changes on the screen. Instructions should be easy to identify. Important feedback that requires user action should be presented in a prominent style. <br />
-<img className="img-basic" src="https://salt.tikicdn.com/ts/social/9c/d2/ab/35d174ef10ad93f045944acbc9919a95.png" alt="feedback" />
+<img className="img-basic" src="/img/wa6.png" alt="feedback" />
 
 ## 7. Use headings and spacing to group related content
 
