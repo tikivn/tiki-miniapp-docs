@@ -5,7 +5,9 @@ title: Debug
 
 Tên gọi đã nói lên chức năng của nó. Các lỗi xảy liên quan đến syntax và framework sẽ được tìm thấy tại đây.
 
-Để xem compiler log, main menu >> **Tools** >> **Compiler Log**.
+Để xem Compiler Log, main menu >> **Tools** >> **Compiler Log**.
+
+<img src="/img/CompilerLog_TiniStudio.jpg" width="450px" alt="DevTools" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ## DevTools
 
@@ -18,7 +20,9 @@ DevTools trong Tini Studio là bộ công cụ giúp nhà phát triển phát hi
 
 DevTools của Tini Studio có công dụng và phương thức hoạt động không khác gì mấy so với DevTools của Google Chrome. Vì thế bạn có thể tham khảo thêm [Chrome DevTools](https://developer.chrome.com/docs/devtools/) .
 
-### Các công cụ cơ bản 
+<img src="/img/DevTools_TiniStudio.jpg" width="450px" alt="DevTools" style={{ margin: '0 auto', display: 'flex' }}/>
+
+### Các công cụ cơ bản
 
 #### Elements
 
@@ -47,6 +51,8 @@ Những tài nguyên - hình ảnh, video, js, … -  được ứng dụng tả
 2. Menu ngữ cảnh >> **More tools** >> Chọn công cụ bạn muốn hiển thị.
 
 ### Menu Command
+
+<img src="/img/DevTools_Run_Command.jpg" width="450px" alt="DevTools Run Comman" style={{ margin: '0 auto', display: 'flex' }}/>
 
 Tính năng này cho phép bạn truy cập nhanh vào tập lệnh của DevTools, trong đó có cả lệnh hiển thị công cụ bị ẩn.
 

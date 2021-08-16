@@ -25,7 +25,7 @@ module.exports = {
       ],
     },
   ],
-  studio: [
+  /* studio: [
     'studio/overview',
     {
       type: 'category',
@@ -46,6 +46,15 @@ module.exports = {
       items: ['studio/debug'],
     },
   ],
+*/
+  studio: [
+    'studio/overview',
+    'studio/development',
+    'studio/simulator',
+    'studio/debug',
+  ],
+
+
   framework: [
     'framework/overview',
     {
