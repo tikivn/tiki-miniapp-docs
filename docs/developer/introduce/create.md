@@ -14,7 +14,7 @@ Bấm nút **Tạo ứng dụng mới** tại góc phải trên.
 
 **Tên ứng dụng**: tối đa 20 ký tự.
 
-**App ID**: định danh duy nhất của ứng dụng. Nó có dạng chuỗi tối đa 255 ký tự, chấp nhận chữ cái thường (a-z), chữ số (0-9) và dấu gạch chân (underscore _ ). Đặc biệt App ID phải chứa ít nhất 2 phân đoạn phân cách nhau bằng dấu chấm (dot .); mỗi phân đoạn phải bắt đầu bằng chữ cái.
+**App ID**: định danh duy nhất của ứng dụng. Nó có dạng chuỗi tối đa 30 ký tự, chấp nhận chữ cái thường (a-z), chữ số (0-9) và dấu gạch chân (underscore _ ). Đặc biệt App ID phải chứa ít nhất 2 phân đoạn phân cách nhau bằng dấu chấm (dot .); mỗi phân đoạn phải bắt đầu bằng chữ cái.
 
 Ví dụ:
 
