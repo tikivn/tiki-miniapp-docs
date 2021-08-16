@@ -7,7 +7,7 @@ Tên gọi đã nói lên chức năng của nó. Các lỗi xảy liên quan đ
 
 Để xem Compiler Log, main menu >> **Tools** >> **Compiler Log**.
 
-<img src="/img/CompilerLog_TiniStudio.jpg" width="450px" alt="DevTools" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/CompilerLog_TiniStudio.png" width="600px" alt="DevTools" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ## DevTools
 
@@ -20,7 +20,7 @@ DevTools trong Tini Studio là bộ công cụ giúp nhà phát triển phát hi
 
 DevTools của Tini Studio có công dụng và phương thức hoạt động không khác gì mấy so với DevTools của Google Chrome. Vì thế bạn có thể tham khảo thêm [Chrome DevTools](https://developer.chrome.com/docs/devtools/) .
 
-<img src="/img/DevTools_TiniStudio.jpg" width="450px" alt="DevTools" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/DevTools_TiniStudio.png" width="800px" alt="DevTools" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ### Các công cụ cơ bản
 
@@ -30,24 +30,24 @@ Khi bạn click chuột trái vào element bất kỳ trong Trình giả lập, 
 
 #### Console
 
-Liệt kê các lỗi Javascript (nếu có) trong quá trình thực thi ứng dụng. Khi bạn click vào một lỗi cụ thể, tập tin chứa đoạn code bị lỗi sẽ xuất hiện trên tab **Sources**.
+Liệt kê các lỗi JavaScript (nếu có) trong quá trình thực thi ứng dụng. Khi bạn click vào một lỗi cụ thể, tập tin chứa đoạn code bị lỗi sẽ xuất hiện trên tab **Sources**.
 
-Độc đáo hơn, bạn cũng có thể chạy các đoạn code javascript trực tiếp trên tab này để tương tác với ứng dụng đang chạy.
+Độc đáo hơn, bạn cũng có thể chạy các đoạn code JavaScript trực tiếp trên tab này để tương tác với ứng dụng đang chạy.
 
 #### Sources
 
-Bạn có thể mở các tập tin Javascript của dự án ngay trên tab này, thêm các breakpoint/debugger vào đó.
+Bạn có thể mở các tập tin JavaScript của dự án ngay trên tab này, thêm các breakpoint/debugger vào đó.
 
 #### App Log
 
 Cho phép theo dõi hoạt động mạng của ứng dụng. Cụ thể là
-Thông tin về các request mà ứng dụng gửi đến máy chủ, bao gồm URL, trạng thái request, thời gian phản hồi, …
+thông tin về các request mà ứng dụng gửi đến máy chủ, bao gồm URL, trạng thái request, thời gian phản hồi, …
 
 Những tài nguyên - hình ảnh, video, js, … -  được ứng dụng tải về từ máy chủ.
 
 ### Hiển thị thêm công cụ
 
-1. Nhấn vào biểu tượng ba chấm đứng ⋮ nằm ở góc phải trên của DevTools. Menu ngữ cảnh hiện ra.
+1. Nhấn vào biểu tượng ba chấm đứng **⋮** nằm ở góc phải trên của DevTools. Menu ngữ cảnh hiện ra.
 2. Menu ngữ cảnh >> **More tools** >> Chọn công cụ bạn muốn hiển thị.
 
 ### Menu Command
