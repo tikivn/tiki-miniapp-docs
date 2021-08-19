@@ -1,6 +1,6 @@
 # Giới thiệu
 
-Advance component hay [Tini UI](https://github.com/tikivn/tini-ui) là bộ các components được build từ các components được cung cấp từ framework, với thiết kế dựa trên bộ [Design System](/docs/design/overview) của Tini App Team.
+Advanced component hay [Tini UI](https://github.com/tikivn/tini-ui) là bộ các components được build từ các components được cung cấp từ framework, với thiết kế dựa trên bộ [Design System](/docs/design/overview) của Tini App Team.
 
 Trong Tini UI gồm 2 packages chính:
 - tini-ui: cung cấp nhiều components giúp nhà phát triển có thể làm app được nhanh hơn
