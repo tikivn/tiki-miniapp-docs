@@ -32,7 +32,7 @@ Chạy tập tin cài đặt Tini Studio.
    ***Lưu ý***: bình thường bạn không nhất thiết thực hiện bước này. Bởi lẽ, khi xảy ra thay đổi trong code, Tini Studio sẽ tự động biên dịch lại dự án.
 2. Bật trình giả lập bằng một trong hai cách:
    - Cách 1: Menu >> **View** >> **Simulator**.
-   - Cách 2: Bấm vào nút Simulator ngay phía dưới main menu.
+   - Cách 2: Bấm vào nút **Simulator** ngay phía dưới main menu.
 
 <img src="/img/Simulator.jpg" width="300px" alt="Simulation Widget" style={{ margin: '0 auto', display: 'flex' }}/>
 

@@ -191,7 +191,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Advance components',
+      label: 'Advanced components',
       items: [
         {
           type: 'category',
