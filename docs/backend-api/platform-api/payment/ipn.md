@@ -29,12 +29,13 @@ Chúng tôi sẽ sử dụng _**postback url**_ được cài đặt khi đăng 
 
 #### Order
 
-| Attribute   | Type       | Required   | Not null   | Description                               |
-| ----------  | ---------- | ---------- | ---------- | ----------                                |
-| id          | string     | Yes        | Yes        | ID của đơn hàng                           |
-| status      | string     | Yes        | Yes        | [Trang thái đơn hàng](order-status)    |
-| grand_total | int64      | Yes        | Yes        | Tổng số tiền mà người dùng cần thanh toán |
-
+| Attribute       | Type       | Required   | Not null   | Description                               |
+| ----------      | ---------- | ---------- | ---------- | ----------                                |
+| id              | string     | Yes        | Yes        | ID của đơn hàng                           |
+| status          | string     | Yes        | Yes        | [Trang thái đơn hàng](order-status)       |
+| grand_total     | int64      | Yes        | Yes        | Tổng số tiền mà người dùng cần thanh toán |
+| tiki_order_id   | string     | Yes        | Yes        | ID của đơn hàng nằm ở hệ thống Tiki       |
+| tiki_order_code | string     | Yes        | Yes        | Mã đơn hàng nằm ở hệ thống Tiki           |
 
 Vi dụ về IPN message request
 

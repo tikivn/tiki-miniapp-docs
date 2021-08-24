@@ -19,7 +19,7 @@ title: Tạo đơn hàng
 | ----------       | ----------              | ---------- | ----------                                                                                 |
 | customer_id      | string                  | Yes        | ID người dùng Tiki, có thể lấy ở [đây](../exchange-auth-token.md#get-info-from-auth-token) |
 | items            | []**[Item](#item)**     | Yes        | Danh sách sản phẩm                                                                         |
-| shipping_address | **[Address](#address)** | No         | Địa chỉ giao hàng, dùng để hiện thị trên trang thanh toán Tiki (phần thông tin khách hàng)                            |
+| shipping_address | **[Address](#address)** | No         | Địa chỉ giao hàng, dùng để hiện thị trên trang thanh toán Tiki (phần thông tin khách hàng) |
 | billing_address  | **[Address](#address)** | No         | Địa chỉ thanh toán                                                                         |
 | extra            | string                  | No         | Thông tin bổ sung theo định dạng  ***key=value;key=value***                                |
 | reference_id     | string                  | No         | ID đơn hàng của đối tác                                                                    |
@@ -74,11 +74,13 @@ curl --location --request POST 'https://api.tiki.vn/tiniapp-open-api/order' \
 
 ##### Order
 
-| Attribute   | Type       | Required   | Not null   | Description                               |
-| ----------  | ---------- | ---------- | ---------- | ----------                                |
-| id          | string     | Yes        | Yes        | ID của đơn hàng                           |
-| status      | string     | Yes        | Yes        | [Trang thái đơn hàng](order-status)       |
-| grand_total | int64      | Yes        | Yes        | Tổng số tiền mà người dùng cần thanh toán |
+| Attribute       | Type       | Required   | Not null   | Description                               |
+| ----------      | ---------- | ---------- | ---------- | ----------                                |
+| id              | string     | Yes        | Yes        | ID của đơn hàng ở hệ thống Tiniapp        |
+| status          | string     | Yes        | Yes        | [Trang thái đơn hàng](order-status)       |
+| grand_total     | int64      | Yes        | Yes        | Tổng số tiền mà người dùng cần thanh toán |
+| tiki_order_id   | string     | Yes        | Yes        | ID của đơn hàng nằm ở hệ thống Tiki       |
+| tiki_order_code | string     | Yes        | Yes        | Mã đơn hàng nằm ở hệ thống Tiki           |
 
 Ví dụ về dữ liệu trả về
 
