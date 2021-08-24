@@ -6,6 +6,8 @@ Tini Studio, còn có tên khác là Tiki IDE, là bộ phần mềm phát tri�
 
 ## Giao diện chính
 
+<img style={{ margin: '0 auto', display: 'flex' }} src="/img/TiniStudio_UI.jpg" alt="Tini Studio Interface"/>
+
 ## Quản lý dự án
 
 Tini Studio cho phép tạo dự án Tini app, quản lý các tập tin mã nguồn, công cụ Git và quản lý npm package.
