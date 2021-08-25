@@ -100,6 +100,18 @@ export default {
     [
       {
         type: 'color',
+        text: 'background-picker',
+        value: '#FFFFFF',
+      },
+      {
+        type: 'color',
+        text: 'white',
+        value: '#FFFFFF',
+      },
+    ],
+    [
+      {
+        type: 'color',
         text: 'background-divider-thick',
         value: '#F5F5FA',
       },

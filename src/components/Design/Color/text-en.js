@@ -136,6 +136,18 @@ export default {
     [
       {
         "type": "color",
+        "text": "text-paging-inactive",
+        "value": "#515158"
+      },
+      {
+        "type": "color",
+        "text": "gray80",
+        "value": "#515158"
+      }
+    ],
+    [
+      {
+        "type": "color",
         "text": "text-label-default",
         "value": "#27272A"
       },

@@ -52,6 +52,18 @@ export default {
     [
       {
         type: 'color',
+        text: 'icon-loading',
+        value: '#EBEBF0',
+      },
+      {
+        type: 'color',
+        text: 'gray20',
+        value: '#EBEBF0',
+      },
+    ],
+    [
+      {
+        type: 'color',
         text: 'icon-disabled',
         value: '#A6A6B0',
       },
@@ -95,6 +107,30 @@ export default {
         type: 'color',
         text: 'gray60',
         value: '#808089',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'icon-content-tertiary',
+        value: '#808089',
+      },
+      {
+        type: 'color',
+        text: 'gray60',
+        value: '#808089',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'icon-content-secondary',
+        value: '#27272A',
+      },
+      {
+        type: 'color',
+        text: 'gray100',
+        value: '#27272A',
       },
     ],
     [
@@ -149,6 +185,18 @@ export default {
       {
         type: 'color',
         text: 'icon-button-ghost-default',
+        value: '#1A94FF',
+      },
+      {
+        type: 'color',
+        text: 'brand',
+        value: '#1A94FF',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'icon-content-primary',
         value: '#1A94FF',
       },
       {
