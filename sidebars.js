@@ -660,6 +660,7 @@ module.exports = {
       label: 'Platform API',
       items: [
         'backend-api/platform-api/overview',
+        'backend-api/platform-api/sandbox',
         'backend-api/platform-api/calculate-signature',
         'backend-api/platform-api/exchange-auth-token',
         {
