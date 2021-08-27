@@ -12,7 +12,7 @@ Vì đây là trên máy tính, bạn sẽ sử dụng chuột thay cho ngón ta
 | Double tap            | Double click                                                                                                                                      |
 | Touch and hold        | Click và giữ chuột                                                                                                                                |
 | Swipe                 | Click chuột (trái) vào vị trí bắt đầu. Giữ chuột trong quá trình di chuyển chuột theo hướng swipe. Cuối cùng, nhả ngón tay ra khỏi nút chuột.     |
-| Drag                  | Click chuột (trái) vào đối tượng cần di chuyển và giữ. Kéo chuột để dị chuyển đối tượng đến vị trí mới. Sau cùng, nhả ngón tay ra khỏi nút chuột. |
+| Drag                  | Click chuột (trái) vào đối tượng cần di chuyển và giữ. Kéo chuột để di chuyển đối tượng đến vị trí mới. Sau cùng, nhả ngón tay ra khỏi nút chuột. |
 
 ## Giả lập các thao tác phần cứng
 
