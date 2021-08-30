@@ -1,11 +1,11 @@
 ---
-title: Lấy thông tin đơn hàng
+title: Lấy thông tin một đơn hàng
 ---
 
 #### Thông tin HTTP
 
 | Key          | Value                                |
-| ----------   | --------                             |
+| ------------ | ------------------------------------ |
 | Content-Type | application/json                     |
 | Method       | GET                                  |
 | Base URL     | https://api.tiki.vn/tiniapp-open-api |
@@ -13,13 +13,13 @@ title: Lấy thông tin đơn hàng
 
 #### Parameters
 
-| Key        | Description     |
-| ---------- | --------        |
-| order_id   | ID của đơn hàng |
+| Key      | Description     |
+| -------- | --------------- |
+| order_id | ID của đơn hàng |
 
-**Cần tạo [chữ ký điện tử](../calculate-signature.md) khi gửi request**
+Request bạn gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính xác thực. Tham khảo [Cách tạo chữ ký điện tử](../calculate-signature.md)
 
-Vi dụ về yêu cầu lấy thông tin đơn hàng
+Ví dụ về request lấy thông tin một đơn hàng
 
 ```
 curl --location --request GET 'https://api.tiki.vn/tiniapp-open-api/order?order_id=88062110977884170' \
@@ -32,14 +32,14 @@ curl --location --request GET 'https://api.tiki.vn/tiniapp-open-api/order?order_
 
 [**Kết quả lỗi**](error-code)
 
-| Attribute  | Type                | Required   | Description |
-| ---------- | ------------------- | ---------- | ----------  |
-| Data       | []**[Data](#data)** | Yes        |             |
+| Attribute | Type                | Required | Description |
+| --------- | ------------------- | -------- | ----------- |
+| Data      | []**[Data](#data)** | Yes      |             |
 
 ##### Data
-| Attribute  | Type                                 | Required   | Description |
-| ---------- | ------------------------------------ | ---------- | ----------  |
-| order      | **[Order](create-order#order)**    | Yes        |             |
+| Attribute | Type                            | Required | Description |
+| --------- | ------------------------------- | -------- | ----------- |
+| order     | **[Order](create-order#order)** | Yes      |             |
 
 Ví dụ về dữ liệu trả về
 

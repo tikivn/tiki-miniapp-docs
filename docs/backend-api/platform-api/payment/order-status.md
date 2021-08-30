@@ -22,4 +22,4 @@ title: Trạng thái đơn hàng
 
 <img style={{ margin: '0 auto', display: 'flex' }} src="/img/Order_Status_diagram.jpg" alt="Order statuses"/>
 
-<!-- ![Sơ đồ](order-state.svg) -->
+
