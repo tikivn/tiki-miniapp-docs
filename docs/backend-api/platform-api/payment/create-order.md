@@ -74,13 +74,13 @@ curl --location --request POST 'https://api.tiki.vn/tiniapp-open-api/order' \
 
 ##### Order
 
-| Thuộc tính      | Kiểu dữ liệu | Bắt buôc | Not Null | Mô tả                                     |
-| --------------- | ------------ | :------: | :------: | ----------------------------------------- |
-| id              | string       |    ✓     |    ✓     | ID của đơn hàng ở hệ thống Tiniapp        |
-| status          | string       |    ✓     |    ✓     | [Trạng thái đơn hàng](order-status)       |
-| grand_total     | int64        |    ✓     |    ✓     | Tổng số tiền mà người dùng cần thanh toán |
-| tiki_order_id   | string       |    ✓     |    ✓     | ID của đơn hàng nằm ở hệ thống Tiki       |
-| tiki_order_code | string       |    ✓     |    ✓     | Mã đơn hàng nằm ở hệ thống Tiki           |
+| Thuộc tính      | Kiểu dữ liệu | Bắt buộc | Not Null | Mô tả                                                                                                                  |
+| --------------- | ------------ | :------: | :------: | ---------------------------------------------------------------------------------------------------------------------- |
+| id              | string       |    ✓     |    ✓     | ID của đơn hàng ở hệ thống Tini App. Nó đc sinh ra khi khách hàng tạo đơn hàng.                                        |
+| status          | string       |    ✓     |    ✓     | [Trạng thái đơn hàng](order-status)                                                                                    |
+| grand_total     | int64        |    ✓     |    ✓     | Tổng số tiền mà khách hàng dùng cần thanh toán                                                                         |
+| tiki_order_id   | string       |    ✓     |    ✓     | ID của đơn hàng nằm ở hệ thống Tiki                                                                                    |
+| tiki_order_code | string       |    ✓     |    ✓     | Mã đơn hàng nằm ở hệ thống Tiki dùng cho mục đích đối soát. Nó được sinh ra khi khách hàng thanh toán online đơn hàng. |
 
 Ví dụ về dữ liệu trả về
 
@@ -96,4 +96,5 @@ Ví dụ về dữ liệu trả về
 }
 ```
 
-Sau khi tạo được đơn hàng bạn sẽ có một Order ID, bạn có thể gọi JS API [my.makePayment](../../../api/payment/make-payment.md) để mở màn hình thanh toán cho đơn hàng.
+Khi khách hàng thanh toán bắt đầu thanh toán đơn hàng, JS API [my.makePayment](../../../api/open/make-payment.md) sẽ được dùng để mở màn hình thanh toán cho đơn hàng với tham số truyền vào là order ID.
+

@@ -2,7 +2,7 @@
 title: Lấy thông tin một đơn hàng
 ---
 
-#### Thông tin HTTP
+### Thông tin HTTP
 
 | Key          | Value                                |
 | ------------ | ------------------------------------ |
@@ -11,7 +11,7 @@ title: Lấy thông tin một đơn hàng
 | Base URL     | https://api.tiki.vn/tiniapp-open-api |
 | Path         | /order                               |
 
-#### Parameters
+### Parameters
 
 | Key      | Description     |
 | -------- | --------------- |
@@ -28,18 +28,18 @@ curl --location --request GET 'https://api.tiki.vn/tiniapp-open-api/order?order_
 --header 'X-Tiniapp-Timestamp: 1624561365102'
 ```
 
-#### HTTP Response
+### HTTP Response
 
 [**Kết quả lỗi**](error-code)
 
-| Attribute | Type                | Required | Description |
-| --------- | ------------------- | -------- | ----------- |
-| Data      | []**[Data](#data)** | Yes      |             |
+| Thuộc tính | Kiểu dữ liệu        | Bắt buộc | Mô tả |
+| ---------- | ------------------- | :------: | ----- |
+| Data       | []**[Data](#data)** |    ✓     |       |
 
-##### Data
-| Attribute | Type                            | Required | Description |
-| --------- | ------------------------------- | -------- | ----------- |
-| order     | **[Order](create-order#order)** | Yes      |             |
+#### Data
+| Thuộc tính | Kiểu dữ liệu                    | Bắt buộc | Mô tả |
+| ---------- | ------------------------------- | :------: | ----- |
+| order      | **[Order](create-order#order)** |    ✓     |       |
 
 Ví dụ về dữ liệu trả về
 

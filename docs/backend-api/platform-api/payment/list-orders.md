@@ -2,7 +2,7 @@
 title: Lấy thông tin nhiều đơn hàng
 ---
 
-#### Thông tin HTTP
+### Thông tin HTTP
 
 | Key          | Value                                |
 | ------------ | ------------------------------------ |
@@ -11,7 +11,7 @@ title: Lấy thông tin nhiều đơn hàng
 | Base URL     | https://api.tiki.vn/tiniapp-open-api |
 | Path         | /order/list                          |
 
-#### Parameters
+### Parameters
 
 | Key       | Description                                                           |
 | --------- | --------------------------------------------------------------------- |
@@ -30,18 +30,19 @@ curl --location --request GET 'https://api.tiki.vn/tiniapp-open-api/order/list?o
 ```
 `%2C` đại diện cho dấu phẩy (,) trong URL
 
-#### HTTP Response
+### HTTP Response
 
 [**Kết quả lỗi**](error-code)
 
-| Attribute | Type                | Required | Description |
-| --------- | ------------------- | -------- | ----------- |
-| Data      | []**[Data](#data)** | Yes      |             |
+| Thuộc tinh | Kiểu dữ liệu        | Bắt buộc | Mô tả |
+| ---------- | ------------------- | :------: | ----- |
+| Data       | []**[Data](#data)** |    ✓     |       |
 
-##### Data
-| Attribute | Type                              | Required | Description |
-| --------- | --------------------------------- | -------- | ----------- |
-| orders    | []**[Order](create-order#order)** | Yes      |             |
+#### Data
+
+| Thuộc tinh | Kiểu dữ liệu                      | Bắt buộc | Mô tả |
+| ---------- | --------------------------------- | :------: | ----- |
+| orders     | []**[Order](create-order#order)** |    ✓     |       |
 
 Ví dụ về dữ liệu trả về
 
