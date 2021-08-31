@@ -42,8 +42,6 @@ Mọi người vẫn ổn chứ? Tháng 7 này, Sài Gòn bận rộn với vi�
 Tháng tới, team sẽ chào đón một thành viên mới gia nhập. Hãy cùng đón chờ xem người anh ấy sẽ nâng tầm Tini design system như thế nào nhé.
 May the force be with you.
 
-[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
-
 
 
 ---
