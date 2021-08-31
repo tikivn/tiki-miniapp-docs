@@ -3,6 +3,33 @@ order: 51
 category: Design resources
 title: Download here
 ---
+### v1.2
+August 31st, 2021 <br/>
+As I said last month, we have a new member, and he brings lots of awesome components, improvements to our design system <br />
+What’s new?
+- Button: We have one more color type: The neutral button.
+- Uploader: This component is used to upload images, documents, and other files to the app.
+- Rating component
+- Image: More ratio and ability to scale by height or width
+- Dialog, Tab: We improve the way we use those components, try it and tell us what you feel ;).<br />
+And the big thing is we release 2 new theme components: 
+E-commerce components
+- Section
+- Card
+- Product item
+Social components
+- Social post
+- Profile
+- Comment<br />
+“One more thing!”, Based on those Tini components, [the Shopping template for the Tini Apps here](https://www.figma.com/community/file/999527987953700182/Tini---Shopping-Template) and will update this template monthly, included more templates in the future for more business models. Take a look and try it ;)
+Wake me up when September ends!!!
+
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
+
+
 ### v1.1
 
 July 30th, 2021 <br />
@@ -16,8 +43,6 @@ All good, everyone? This July, Covid hits Saigon really hard and ad-hoc projects
 - Toast bar: The position guideline was updated.<br />
 Next month, we will welcome a new member to join our team. Let's see what he brings to upgrade the Tini design system. Can't wait.
 May the force be with you.
-
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 ---

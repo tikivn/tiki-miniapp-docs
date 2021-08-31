@@ -1,6 +1,33 @@
 ---
 title: Tải về
 ---
+### Phiên bản 1.2
+31/08/2021 <br/>
+Như bọn mình nói tháng trước, một thành viên mới đã gia nhập, và anh ấy đã tạo ra những component mới một cách tuyệt vời cũng như cải thiện quy trình và cấu trúc trong hệ thống thiết kế của Tini<br />
+Vậy có gì mới?
+- Button: Bọn mình đã có thêm một hệ màu mới cho button là Neutral button.
+- Uploader: Component này dùng cho các trường hợp tải lên các file hình ảnh, giấy tờ.
+- Rating component
+- Image: Có những tỉ lệ hình mới và được phóng to theo chiều dọc và cao nhưng giữ nguyên được tỉ lệ.
+- Dialog, Tab: Bọn mình đã cải thiện cách dùng những components một cách linh hoạt hơn, hãy dùng thử và chia sẻ cảm nghĩ của bạn nhé ;).<br />
+Và hoành tráng nhất là bọn mình đã cho ra mắt thêm 2 theme mới về component:
+E-commerce components
+- Section
+- Card
+- Product item
+Social components
+- Social post
+- Profile
+- Comment<br />
+“One more thing!”, Dựa vào những component của Tini, bọn mình còn xây dựng một [bộ template dành cho ứng dụng thể loại mua sắm ở đây](https://www.figma.com/community/file/999527987953700182/Tini---Shopping-Template) và sẽ được cập nhật hàng tháng, cũng như là cho ra mắt thêm những template khác dành cho những mô hình kinh doánh khác. Hãy đón chờ nhé ;)
+Wake me up when September ends!!!
+
+[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
+
+
 ### Phiên bản 1.1
 
 30/07/2021<br />
