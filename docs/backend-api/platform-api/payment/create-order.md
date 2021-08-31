@@ -5,47 +5,47 @@ title: Tạo đơn hàng
 #### Thông tin HTTP
 
 | Key          | Value                                |
-| ----------   | --------                             |
+| ------------ | ------------------------------------ |
 | Content-Type | application/json                     |
 | Method       | POST                                 |
 | Base URL     | https://api.tiki.vn/tiniapp-open-api |
 | Path         | /order                               |
 
-**Cần tạo [chữ ký điện tử](../calculate-signature.md) khi gửi request**
+Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính xác thực. Tham khảo [Cách tạo chữ ký điện tử](../calculate-signature.md)
 
 #### HTTP Request
 
-| Attribute        | Type                    | Required   | Description                                                                                |
-| ----------       | ----------              | ---------- | ----------                                                                                 |
-| customer_id      | string                  | Yes        | ID người dùng Tiki, có thể lấy ở [đây](../exchange-auth-token.md#get-info-from-auth-token) |
-| items            | []**[Item](#item)**     | Yes        | Danh sách sản phẩm                                                                         |
-| shipping_address | **[Address](#address)** | No         | Địa chỉ giao hàng, dùng để hiện thị trên trang thanh toán Tiki (phần thông tin khách hàng) |
-| billing_address  | **[Address](#address)** | No         | Địa chỉ thanh toán                                                                         |
-| extra            | string                  | No         | Thông tin bổ sung theo định dạng  ***key=value;key=value***                                |
-| reference_id     | string                  | No         | ID đơn hàng của đối tác                                                                    |
+| Thuộc tính       | Kiểu dữ liệu            | Bắt buộc | Mô tả                                                                                      |
+| ---------------- | ----------------------- | :------: | ------------------------------------------------------------------------------------------ |
+| customer_id      | string                  |    ✓     | ID người dùng Tiki, có thể lấy ở [đây](../exchange-auth-token.md#get-info-from-auth-token) |
+| items            | []**[Item](#item)**     |    ✓     | Danh sách sản phẩm                                                                         |
+| shipping_address | **[Address](#address)** |    ✕     | Địa chỉ giao hàng, dùng để hiện thị trên trang thanh toán Tiki (phần thông tin khách hàng) |
+| billing_address  | **[Address](#address)** |    ✕     | Địa chỉ thanh toán                                                                         |
+| extra            | string                  |    ✕     | Thông tin bổ sung theo định dạng  ***key=value;key=value***                                |
+| reference_id     | string                  |    ✕     | ID đơn hàng của đối tác                                                                    |
 
 #### Item
 
-| Attribute  | Type       | Required   | Description                                                 |
-| ---------- | ---------- | ---------- | ----------                                                  |
-| name       | string     | Yes        | Tên sản phẩm                                                |
-| sku        | string     | Yes        | Mã sản phẩm ở được đăng ký trước ở Seller Center            |
-| quantity   | int64      | Yes        | Số lượng sản phẩm                                           |
-| price      | int64      | Yes        | Giá tiền sản phẩm                                           |
-| extra      | string     | No         | Thông tin bổ sung theo định dạng  ***key=value;key=value*** |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                       |
+| ---------- | ------------ | :------: | ----------------------------------------------------------- |
+| name       | string       |    ✓     | Tên sản phẩm                                                |
+| sku        | string       |    ✓     | Mã sản phẩm ở được đăng ký trước ở Seller Center            |
+| quantity   | int64        |    ✓     | Số lượng sản phẩm                                           |
+| price      | int64        |    ✓     | Giá tiền sản phẩm                                           |
+| extra      | string       |    ✕     | Thông tin bổ sung theo định dạng  ***key=value;key=value*** |
 
-##### Lưu ý
-    1. Trong một đơn hàng, các items khác nhau thì phải có sku khác nhau
-    2. Giá trị đơn hàng tối đa là mười triệu (10000000) đồng, nếu muốn thay đổi thì cần yêu cầu ở [Developer Center](https://developers.tiki.vn/apps)
+***Lưu ý***
+> - Trong một đơn hàng, các item khác nhau thì phải có sku khác nhau.
+> - Giá trị đơn hàng tối đa là mười triệu (10.000.000) đồng. Nếu muốn thay đổi thì cần yêu cầu ở [Dev Center](https://developers.tiki.vn/apps).
 
 #### Address
 
-| Attribute  | Type       | Required   | Not null   | Description   |
-| ---------- | ---------- | ---------- | ---------- | ----------    |
-| name       | string     | No         | Yes        | Tên           |
-| phone      | string     | No         | Yes        | Số điện thoại |
-| email      | string     | No         | Yes        | Địa chỉ email |
-| street     | string     | No         | Yes        | Địa chỉ       |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Not Null | Mô tả                    |
+| ---------- | ------------ | :------: | :------: | ------------------------ |
+| name       | string       |    ✕     |    ✓     | Tên khách hàng           |
+| phone      | string       |    ✕     |    ✓     | Số điện thoại khách hàng |
+| email      | string       |    ✕     |    ✓     | Email khách hàng         |
+| street     | string       |    ✕     |    ✓     | Địa chỉ khách hàng       |
 
 
 Vi dụ về yêu cầu tạo đơn hàng
@@ -63,24 +63,24 @@ curl --location --request POST 'https://api.tiki.vn/tiniapp-open-api/order' \
 
 [**Kết quả lỗi**](error-code)
 
-| Attribute  | Type                | Required   | Description |
-| ---------- | ------------------- | ---------- | ----------  |
-| Data       | []**[Data](#data)** | Yes        |             |
+| Thuộc tính | Kiểu dữ liệu        | Bắt buộc | Mô tả |
+| ---------- | ------------------- | :------: | ----- |
+| Data       | []**[Data](#data)** |    ✓     |       |
 
 ##### Data
-| Attribute  | Type                                 | Required   | Description |
-| ---------- | ------------------------------------ | ---------- | ----------  |
-| order      | **[Order](#order)**                  | Yes        |             |
+| Thuộc tính | Kiểu dữ liệu        | Bắt buộc | Mô tả |
+| ---------- | ------------------- | :------: | ----- |
+| order      | **[Order](#order)** |    ✓     |       |
 
 ##### Order
 
-| Attribute       | Type       | Required   | Not null   | Description                               |
-| ----------      | ---------- | ---------- | ---------- | ----------                                |
-| id              | string     | Yes        | Yes        | ID của đơn hàng ở hệ thống Tiniapp        |
-| status          | string     | Yes        | Yes        | [Trang thái đơn hàng](order-status)       |
-| grand_total     | int64      | Yes        | Yes        | Tổng số tiền mà người dùng cần thanh toán |
-| tiki_order_id   | string     | Yes        | Yes        | ID của đơn hàng nằm ở hệ thống Tiki       |
-| tiki_order_code | string     | Yes        | Yes        | Mã đơn hàng nằm ở hệ thống Tiki           |
+| Thuộc tính      | Kiểu dữ liệu | Bắt buộc | Not Null | Mô tả                                                                                                                  |
+| --------------- | ------------ | :------: | :------: | ---------------------------------------------------------------------------------------------------------------------- |
+| id              | string       |    ✓     |    ✓     | ID của đơn hàng ở hệ thống Tini App. Nó đc sinh ra khi khách hàng tạo đơn hàng.                                        |
+| status          | string       |    ✓     |    ✓     | [Trạng thái đơn hàng](order-status)                                                                                    |
+| grand_total     | int64        |    ✓     |    ✓     | Tổng số tiền mà khách hàng dùng cần thanh toán                                                                         |
+| tiki_order_id   | string       |    ✓     |    ✓     | ID của đơn hàng nằm ở hệ thống Tiki                                                                                    |
+| tiki_order_code | string       |    ✓     |    ✓     | Mã đơn hàng nằm ở hệ thống Tiki dùng cho mục đích đối soát. Nó được sinh ra khi khách hàng thanh toán online đơn hàng. |
 
 Ví dụ về dữ liệu trả về
 
@@ -96,4 +96,5 @@ Ví dụ về dữ liệu trả về
 }
 ```
 
-Sau khi tạo được đơn hàng bạn sẽ có một Order ID, bạn có thể gọi JS API [my.makePayment](../../../api/payment/make-payment.md) để mở màn hình thanh toán cho đơn hàng
+Khi khách hàng thanh toán bắt đầu thanh toán đơn hàng, JS API [my.makePayment](../../../api/open/make-payment.md) sẽ được dùng để mở màn hình thanh toán cho đơn hàng với tham số truyền vào là order ID.
+

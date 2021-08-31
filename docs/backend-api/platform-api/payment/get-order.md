@@ -1,25 +1,25 @@
 ---
-title: Lấy thông tin đơn hàng
+title: Lấy thông tin một đơn hàng
 ---
 
-#### Thông tin HTTP
+### Thông tin HTTP
 
 | Key          | Value                                |
-| ----------   | --------                             |
+| ------------ | ------------------------------------ |
 | Content-Type | application/json                     |
 | Method       | GET                                  |
 | Base URL     | https://api.tiki.vn/tiniapp-open-api |
 | Path         | /order                               |
 
-#### Parameters
+### Parameters
 
-| Key        | Description     |
-| ---------- | --------        |
-| order_id   | ID của đơn hàng |
+| Key      | Description     |
+| -------- | --------------- |
+| order_id | ID của đơn hàng |
 
-**Cần tạo [chữ ký điện tử](../calculate-signature.md) khi gửi request**
+Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính xác thực. Tham khảo [Cách tạo chữ ký điện tử](../calculate-signature.md)
 
-Vi dụ về yêu cầu lấy thông tin đơn hàng
+Ví dụ về request lấy thông tin một đơn hàng
 
 ```
 curl --location --request GET 'https://api.tiki.vn/tiniapp-open-api/order?order_id=88062110977884170' \
@@ -28,18 +28,18 @@ curl --location --request GET 'https://api.tiki.vn/tiniapp-open-api/order?order_
 --header 'X-Tiniapp-Timestamp: 1624561365102'
 ```
 
-#### HTTP Response
+### HTTP Response
 
 [**Kết quả lỗi**](error-code)
 
-| Attribute  | Type                | Required   | Description |
-| ---------- | ------------------- | ---------- | ----------  |
-| Data       | []**[Data](#data)** | Yes        |             |
+| Thuộc tính | Kiểu dữ liệu        | Bắt buộc | Mô tả |
+| ---------- | ------------------- | :------: | ----- |
+| Data       | []**[Data](#data)** |    ✓     |       |
 
-##### Data
-| Attribute  | Type                                 | Required   | Description |
-| ---------- | ------------------------------------ | ---------- | ----------  |
-| order      | **[Order](create-order#order)**    | Yes        |             |
+#### Data
+| Thuộc tính | Kiểu dữ liệu                    | Bắt buộc | Mô tả |
+| ---------- | ------------------------------- | :------: | ----- |
+| order      | **[Order](create-order#order)** |    ✓     |       |
 
 Ví dụ về dữ liệu trả về
 

@@ -5,20 +5,20 @@ title: Hủy đơn hàng
 #### Thông tin HTTP
 
 | Key          | Value                                |
-| ----------   | --------                             |
+| ------------ | ------------------------------------ |
 | Content-Type | application/json                     |
 | Method       | POST                                 |
 | Base URL     | https://api.tiki.vn/tiniapp-open-api |
 | Path         | /order/cancel                        |
 
-**Cần tạo [chữ ký điện tử](../calculate-signature.md) khi gửi request**
+Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính xác thực. Tham khảo [Cách tạo chữ ký điện tử](../calculate-signature.md)
 
 #### HTTP Request
 
-| Attribute  | Type       | Required   | Description        |
-| ---------- | ---------- | ---------- | ----------         |
-| order_id   | string     | Yes        | ID của đơn hàng    |
-| comment    | string     | Yes        | Lý do hủy đơn hàng |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả              |
+| ---------- | ------------ | :------: | ------------------ |
+| order_id   | string       |    ✓     | ID của đơn hàng    |
+| comment    | string       |    ✓     | Lý do hủy đơn hàng |
 
 
 Vi dụ về yêu cầu hoàn thành đơn hàng
@@ -36,14 +36,14 @@ curl --location --request POST 'https://api.tiki.vn/tiniapp-open-api/order/cance
 
 [**Kết quả lỗi**](error-code)
 
-| Attribute  | Type                | Required   | Description |
-| ---------- | ------------------- | ---------- | ----------  |
-| Data       | []**[Data](#data)** | Yes        |             |
+| Thuộc tính | Kiểu dữ liệu        | Bắt buộc | Mô tả |
+| ---------- | ------------------- | :------: | ----- |
+| Data       | []**[Data](#data)** |    ✓     |       |
 
 ##### Data
-| Attribute  | Type                                 | Required   | Description |
-| ---------- | ------------------------------------ | ---------- | ----------  |
-| order      | **[Order](create-order#order)**    | Yes        |             |
+| Thuộc tính | Kiểu dữ liệu                    | Bắt buộc | Mô tả |
+| ---------- | ------------------------------- | :------: | ----- |
+| order      | **[Order](create-order#order)** |    ✓     |       |
 
 Ví dụ về dữ liệu trả về
 

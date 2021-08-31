@@ -210,6 +210,7 @@ module.exports = {
           items: [
             'component/advance/form/stepper',
             'component/advance/form/textfield',
+            'component/advance/form/dropdown',
           ],
         },
         {
@@ -225,7 +226,10 @@ module.exports = {
         {
           type: 'category',
           label: 'Data visualization',
-          items: ['component/advance/data-visualization/list-item'],
+          items: [
+            'component/advance/data-visualization/list-item',
+            'component/advance/data-visualization/address',
+          ],
         },
         {
           type: 'category',
@@ -660,6 +664,7 @@ module.exports = {
       label: 'Platform API',
       items: [
         'backend-api/platform-api/overview',
+        'backend-api/platform-api/sandbox',
         'backend-api/platform-api/calculate-signature',
         'backend-api/platform-api/exchange-auth-token',
         {
