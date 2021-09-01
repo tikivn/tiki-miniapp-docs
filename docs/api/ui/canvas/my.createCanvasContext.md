@@ -19,7 +19,7 @@ Path là cơ sở giúp để hình thành nên các hình trong canvas. Sau đ�
 ```
 // in the .js file
 const  ctx  =  my.createCanvasContext ('canvas')
-ctx.rect ( 20 , 20 , 150 , 50 )
+ctx.rect (20, 20, 150, 50)
 ctx.setFillStyle ('blue')
 ctx.fill ();
 ctx.beginPath ();
@@ -141,7 +141,7 @@ ctx.fillRect ( 60 , 60 , 150 , 100 )
 ctx.Draw ()
 ```
 
-Phương thức `fillText` và `setFontSize`
+Phương thức `fillText()` và `setFontSize()`
 
 ```js
 const  ctx  =  my.createCanvasContext ('canvas')
@@ -151,15 +151,15 @@ ctx.fillText ( 'Tiki' , 200 , 200 )
 ctx.Draw ()
 ```
 
-Phương thức `transform`
+Phương thức `transform()`
 
 ```js
-const  ctx  =  my . createCanvasContext ( 'canvas' )
-ctx . rotate ( 45  *  Math . PI  /  180 )
-ctx . setFillStyle ( 'red' )
-ctx . fillRect ( 70 , 0 , 100 , 30 )
-ctx . transform ( 1 , 1 , 0 , 1 , 0 , 0 )
-ctx . setFillStyle ( '#000' )
-CTX . the fillRect ( 0 , 0 , 100 , 100 )
-ctx . Draw ()
+const  ctx  =  my . createCanvasContext ('canvas')
+ctx.rotate ( 45  *  Math . PI  /  180 )
+ctx.setFillStyle ('red')
+ctx.fillRect (70 ,0 ,100 ,30 )
+ctx.transform (1 ,1 ,0 ,1 ,0 ,0 )
+ctx.setFillStyle ( '#000' )
+ctx.fillRect (0 , 0, 100, 100 )
+ctx.Draw ()
 ```
