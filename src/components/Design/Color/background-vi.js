@@ -136,7 +136,7 @@ export default {
     [
       {
         type: 'color',
-        text: 'background-panel-inactive',
+        text: 'background-panel-gray',
         value: '#F5F5FA',
       },
       {
@@ -226,6 +226,18 @@ export default {
       {
         type: 'color',
         text: 'gray50 10%',
+        value: '#A6A6B0',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-rating-inactive',
+        value: '#A6A6B0',
+      },
+      {
+        type: 'color',
+        text: 'gray50',
         value: '#A6A6B0',
       },
     ],
@@ -501,8 +513,20 @@ export default {
       },
       {
         type: 'color',
-        text: 'red',
+        text: 'red60',
         value: '#FF424F',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-rating-active',
+        value: '#FFC400',
+      },
+      {
+        type: 'color',
+        text: 'yellow50',
+        value: '#FFC400',
       },
     ],
   ],
