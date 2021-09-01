@@ -16,7 +16,7 @@ Path là cơ sở giúp để hình thành nên các hình trong canvas. Sau đ�
 3. Dùng `stroke()` để tạo ra đường viền cho hình hoặc `fill()` để tô màu cho hình nếu cân. Nếu vẽ text, không cần đến `stroke()` hoặc `fill()`.
 4. Cuối cùng sử dụng `draw()` để kết xuất (render) hình vẽ trên canvas.
 
-```
+```js
 // in the .js file
 const  ctx  =  my.createCanvasContext ('canvas')
 ctx.rect (20, 20, 150, 50)

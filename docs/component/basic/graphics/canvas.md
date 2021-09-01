@@ -26,24 +26,95 @@ title: canvas
 
 index.txml
 
-```css
+```xml
 <view class="page">
-  <view class="page-description">Canvas API</view>
-  <view class="page-section">
-    <view class="page-section-title">my.createCanvasContext</view>
-    <view class="page-section-demo">
-      <canvas class="canvas-element" id="canvas" onTap="log" onTouchStart="log"></canvas>
-    </view>
-    <scroll-view class="canvas-buttons" scroll-y="true">
-        <button a:for="{{methods}}" a:for-item="method"
-                class="canvas-button" type="primary" onTap="{{method}}">{{method}}</button>
-    </scroll-view>
-    <scroll-view class="canvas-buttons" scroll-y="true" style="height: 150rpx;">
-      <button class="canvas-button" type="primary" onTap="toTempFilePath">toTempFilePath</button>
-      <button class="canvas-button" type="primary" onTap="getImageData">getImageData</button>
-      <button class="canvas-button" type="primary" onTap="putImageData">putImageData</button>
-      <button class="canvas-button" type="primary" onTap="preloadCanvasImage">preloadCanvasImage</button>
-    </scroll-view>
+  <view class="canvas-view">
+    <canvas 
+      id="canvas"
+      width="610"
+      height="610"
+      class="canvas"
+      onTouchStart="log"
+      onTouchMove="log"
+      onTouchEnd="log"
+    />
   </view>
 </view>
+```
+
+index.js
+
+```js
+Page({
+  onReady() {
+    this.point = {
+      x: Math.random() * 590,
+      y: Math.random() * 590,
+      dx: Math.random() * 10,
+      dy: Math.random() * 10,
+      r: Math.round(Math.random() * 255 | 0),
+      g: Math.round(Math.random() * 255 | 0),
+      b: Math.round(Math.random() * 255 | 0),
+    };
+
+    this.interval = setInterval(this.draw.bind(this), 17);
+    this.ctx = my.createCanvasContext('canvas');
+  },
+
+  draw() {
+    const { ctx } = this;
+    ctx.setFillStyle('#FFF');
+    ctx.fillRect(0, 0, 610, 610);
+
+    ctx.beginPath();
+    ctx.arc(this.point.x, this.point.y, 20, 0, 2 * Math.PI);
+    ctx.setFillStyle('rgb(' + this.point.r + ', ' + this.point.g + ', ' + this.point.b + ')');
+    ctx.fill();
+    ctx.draw();
+
+    this.point.x += this.point.dx;
+    this.point.y += this.point.dy;
+    if (this.point.x <= 10 || this.point.x >= 590) {
+      this.point.dx = -this.point.dx;
+      this.point.r = Math.round(Math.random() * 255 | 0);
+      this.point.g = Math.round(Math.random() * 255 | 0);
+      this.point.b = Math.round(Math.random() * 255 | 0);
+    }
+
+    if (this.point.y <= 10 || this.point.y >= 590) {
+      this.point.dy = -this.point.dy;
+      this.point.r = Math.round(Math.random() * 255 | 0);
+      this.point.g = Math.round(Math.random() * 255 | 0);
+      this.point.b = Math.round(Math.random() * 255 | 0);
+    }
+  },
+  drawBall() {
+
+  },
+  log(e) {
+    if (e.touches && e.touches[0]) {
+      console.log(e.type, e.touches[0].x, e.touches[0].y);
+    } else {
+      console.log(e.type);
+    }
+  },
+  onUnload() {
+    clearInterval(this.interval);
+  },
+});
+```
+
+index.tcss
+
+```css
+.canvas-view {
+  display: flex;
+  justify-content: center;
+}
+
+.canvas {
+  width: 305px;
+  height: 305px;
+  background-color: #fff;
+}
 ```
