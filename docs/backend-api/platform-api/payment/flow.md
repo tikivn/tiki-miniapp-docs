@@ -6,12 +6,12 @@ title: Sơ đồ xử lý
 
 #### Mô hình thanh toán
 
-- **Bước 1**: Khách hàng tạo đơn hàng với Order ID.
-- **Bước 2**: Đối tác tạo đơn hàng bên phía mình dựa trên đơn hàng của khách cũng như tình hình tồn kho của các mặt hàng. 
-- **Bước 3**: Đối tác gọi API đến Tiki để tạo đơn hàng phía Tiki. (Nội dung đơn hàng hoàn toàn do đối tác quyết định)
+- **Bước 1**: Khách hàng tạo đơn hàng đặt hàng đối tác.
+- **Bước 2**: Đối tác tạo đơn hàng bên phía mình dựa trên đơn hàng của khách cũng như tình hình tồn kho của các mặt hàng.
+- **Bước 3**: Đối tác gọi API đến Tiki để tạo đơn hàng phía Tiki. Order ID của đơn hàng được sinh ra; nội dung đơn hàng hoàn toàn do đối tác quyết định.
 - **Bước 4**: Gọi [my.makePayment](../../../api/open/make-payment.md) để phục vụ cho quá trình thanh toán cuả khách hàng.
 - **Bước 5**: Sau khi khách thanh toán xong, Tiki sẽ gởi [thông báo] (ipn) đến đối tác.
 - **Bước 6**: Backend của đối tác xác thực giao dịch và cập nhật dịch vụ cho khách hàng.
-- **Bước 7**: Gọi api hoàn thành đơn hàng hoặc hủy đơn hàng để kết thúc.
-- **Bước 8**: Tiki thanh toán tiền cho đối tác trong trường hợp đơn hàng hoàn thành (giao hàng thành công)
+- **Bước 7**: Gọi Api hoàn thành đơn hàng hoặc hủy đơn hàng để kết thúc.
+- **Bước 8**: Tiki thanh toán tiền cho đối tác trong trường hợp đơn hàng hoàn thành (giao hàng thành công).
 
