@@ -40,10 +40,14 @@ Bạn có thể mở các tập tin JavaScript của dự án ngay trên tab nà
 
 #### App Log
 
-Cho phép theo dõi hoạt động mạng của ứng dụng. Cụ thể là
-thông tin về các request mà ứng dụng gửi đến máy chủ, bao gồm URL, trạng thái request, thời gian phản hồi, …
+Hiển thị JSAPI được gọi kèm theo thời gian thực hiện, dữ liệu gửi đi và kết quả trả về.
 
-Những tài nguyên - hình ảnh, video, js, … -  được ứng dụng tải về từ máy chủ.
+#### Network
+
+Cho phép theo dõi hoạt động mạng của ứng dụng. Cụ thể là:
+
+- Thông tin về các request mà ứng dụng gửi đến máy chủ, bao gồm URL, trạng thái request, thời gian phản hồi, …
+- Những tài nguyên - hình ảnh, video, js, … -  được ứng dụng tải về từ máy chủ.
 
 ### Hiển thị thêm công cụ
 
