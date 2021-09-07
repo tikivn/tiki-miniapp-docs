@@ -3,7 +3,7 @@ title: Bắt đầu
 ---
 Chào mừng đến với Thế giới Tini App!!!
 
-Tini App là mini apps hay mini programs do Tiki phát triển nhằm tạo điều kiện cho các đối tác dễ dàng tạo ra các ứng dụng trên nền tảng Tiki, từ đó cung cấp một kho ứng dụng phong phú và chất lượng hơn cho người dùng.
+Tini App là nền tảng mini apps hay mini programs do Tiki phát triển nhằm tạo điều kiện cho các đối tác dễ dàng tạo ra các ứng dụng trên Tiki, từ đó cung cấp một kho ứng dụng phong phú và chất lượng hơn cho người dùng.
 
 Thế mini apps là gì? Mini apps hiểu nôm na là các ứng dụng con tồn tại và hoạt động bên trong ứng dụng cha (‘super app’) trên thiết bị di động. Nói cách khác super app cung cấp môi trường cho phép mini apps vận hành. Giống như các ứng dụng thông thường, super app tương tác với hệ điều hành.
 
