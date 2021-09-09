@@ -70,7 +70,7 @@ Page({
 
 ### Chi tiết
 
-| Property        | Type                                             | default              | required | Description                                                                                                               |
+| Property        | Type                                             | Default              | Required | Description                                                                                                               |
 | --------------- | ------------------------------------------------ | -------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
 | className       | `string`                                         | ""                   | no       | Custom class cho component                                                                                                |
 | style           | `string`                                         | ""                   | no       | Custom inline style cho component                                                                                         |
