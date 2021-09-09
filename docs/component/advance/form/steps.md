@@ -8,7 +8,7 @@ Component `steps` dùng để tạo các bước trên multi-step form.
 
 ## Sử dụng
 
-<img src="/static/form-steps.svg" alt="form-steps" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/form-steps.svg" alt="form-steps" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ### Sample Code
 
