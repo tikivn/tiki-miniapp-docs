@@ -221,6 +221,7 @@ module.exports = {
             'component/advance/form/stepper',
             'component/advance/form/steps',
             'component/advance/form/textfield',
+            'component/advance/form/search-bar',
             'component/advance/form/dropdown',
           ],
         },
