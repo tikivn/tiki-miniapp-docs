@@ -337,6 +337,12 @@ module.exports = {
             },
           ],
         },
+
+        {
+          type: 'category',
+          label: 'Other',
+          items: ['component/advance/other/tu-icon'],
+        },
       ],
     },
   ],
