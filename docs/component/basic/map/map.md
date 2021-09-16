@@ -24,7 +24,7 @@ title: map
 
 ### Marker
 
-<img src="/img/map_marker.png" width="80px" alt="Marker" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Map_marker.png" width="80px" alt="Marker" style={{ margin: '0 auto', display: 'flex' }}/>
 
 | Thuộc tính | Kiểu dữ liệu    | Bắt buộc | Mô tả                                                                                                                                                    |
 | ---------- | --------------- | :------: | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -40,7 +40,7 @@ title: map
 
 ### Polygon
 
-<img src="/img/map_polygon.png" width="450" alt="Polygon" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Map_polygon.png" width="450px" alt="Polygon" style={{ margin: '0 auto', display: 'flex' }}/>
 
 <br/>
 
@@ -53,7 +53,7 @@ title: map
 
 ### Polyline
 
-<img src="/img/map_polyline.png" width="450" alt="Polygon" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Map_polyline.png" width="450px" alt="Polyline" style={{ margin: '0 auto', display: 'flex' }}/>
 
 <br/>
 
@@ -65,7 +65,7 @@ title: map
 
 ### Circle
 
-<img src="/img/map_circle.png" width="450" alt="Circle" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Map_circle.png" width="450px" alt="Circle" style={{ margin: '0 auto', display: 'flex' }}/>
 
 <br/>
 
