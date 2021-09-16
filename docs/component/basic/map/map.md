@@ -2,14 +2,85 @@
 title: map
 ---
 
-## Giới thiệu
-
 - `map` component sử dụng google maps để phục vụ các tác vụ liên quan tới map
-- Bạn phải sử dụng version từ `1.74.12` trở lên
 
-## Sử dụng
+***Lưu ý:*** Component này có mặt trên Tini Studio từ version 1.74.12 trở lên.
 
-### Sample Code
+## Các thuộc tính
+
+| Thuộc tính     | Kiểu dữ liệu | Giá trị măc định | Bắt buộc | Mô tả                                                                                                                          |
+| -------------- | ------------ | ---------------- | :------: | ------------------------------------------------------------------------------------------------------------------------------ |
+| api-key        | string       |                  |    ✓     | Key của google maps. Tham khảo cách tạo key [tại đây](https://developers.google.com/maps/documentation/javascript/get-api-key) |
+| latitude       | number       |                  |    ✓     | Vĩ độ trung tâm (center latitude) của map                                                                                      |
+| longitude      | number       |                  |    ✓     | Kinh độ trung tâm (center longitude) của map                                                                                   |
+| zoom           | number       | 10               |          | Mức độ phóng to/ thu nhỏ                                                                                                       |
+| markers        | object       |                  |          | Một marker để đánh dấu bản đồ. Tham khảo cấu hình bên dưới.                                                                    |
+| polygon        | object       |                  |          | Một polygon (đa giác) để đánh dấu bản đồ. Xem chi tiết bên dưới.                                                               |
+| polyline       | object       |                  |          | Một polyline (đường đa tuyến) để đánh dấu bản đồ. Xem chi tiết bên dưới                                                        |
+| circles        | object       |                  |          | Một circle (hình tròn) để đánh dấu bản đồ. Xem chi tiết bên dưới.                                                              |
+| onMarkerTap    | event        |                  |          | Sự kiện được kích hoạt khi touch vào marker. Thông tin trả về sẽ là `Marker ID`, `latitude` và `longitude`.                    |
+| onTap          | event        |                  |          | Sự kiện được gọi khi bấm vào map                                                                                               |
+| onRegionChange | event        |                  |          | Sự kiện được gọi khi người dùng kéo/thả làm thay đổi phạm vi của map. Có chứa các thông tin `{ latitude, longitude, zoom }`    |
+
+### Marker
+
+<img src="/img/map_marker.png" width="80px" alt="Marker" style={{ margin: '0 auto', display: 'flex' }}/>
+
+| Thuộc tính | Kiểu dữ liệu    | Bắt buộc | Mô tả                                                                                                                                                    |
+| ---------- | --------------- | :------: | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id         | number          |    ✓     | Định danh duy nhất của marker.                                                                                                                           |
+| latitude   | number          |    ✓     | Vĩ độ trung tâm (center latitude) của marker                                                                                                             |
+| longitude  | number          |    ✓     | Kinh độ trung tâm (center longitude) của marker                                                                                                          |
+| title      | string          |          | Tiêu đề của marker                                                                                                                                       |
+| iconPath   | string          |          | Đường dẫn đến tập tin hình ảnh của icon tuỳ biến đại diện cho marker trường hợp bạn không muốn xài icon mặc định của Google Maps.                        |
+| width      | number          |          | Chiều rộng của marker                                                                                                                                    |
+| height     | number          |          | Chiều cao của marker                                                                                                                                     |
+| label      | string / object |          | Nhãn cho marker. Bạn có thể truyền vào string hoặc một object `{ text: string, className: string, color: string, fontSize: string, fontWeight: string }` |
+| alpha      | number          |          | Độ trong suốt của marker. Nhận giá trị trong khoảng từ  0 đến 1; 0: độ trong suốt tuyệt đối (100% transparency); 1: độ đục tuyệt đối (100% opacity).     |
+
+### Polygon
+
+<img src="/img/Map_polygon.png" width="450px" alt="Polygon" style={{ margin: '0 auto', display: 'flex' }}/>
+
+<br/>
+
+| Thuộc tính  | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                    |
+| ----------- | ---------------- | :------: | -------------------------------------------------------- |
+| points      | Array of objects |    ✓     | Chứa tọa độ (latitude và longitude) các đỉnh của đa giác |
+| fillColor   | string           |          | Màu nền của đa giác                                      |
+| strokeColor | string           |          | Màu viền của đa giác                                     |
+| strokeWidth | string           |          | Độ dày của viền đa giác                                  |
+
+### Polyline
+
+<img src="/img/Map_polyline.png" width="450px" alt="Polyline" style={{ margin: '0 auto', display: 'flex' }}/>
+
+<br/>
+
+| Thuộc tính  | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                      |
+| ----------- | ---------------- | :------: | -------------------------------------------------------------------------- |
+| points      | Array of objects |          | Chứa tọa độ (latitude và longitude) các điểm của polyline (đường đa tuyến) |
+| strokeColor | string           |          | Màu viền của polyline                                                      |
+| strokeWidth | number           |          | Độ dày của viền đa giác                                                    |
+
+### Circle
+
+<img src="/img/Map_circle.png" width="450px" alt="Circle" style={{ margin: '0 auto', display: 'flex' }}/>
+
+<br/>
+
+| Thuộc tính  | Kiểu dữ liệu | Bắt buộc | Mô tả                      |
+| ----------- | ------------ | :------: | -------------------------- |
+| latitude    | number       |    ✓     | Vĩ độ của tâm đường tròn   |
+| longitude   | number       |    ✓     | Kinh độ của tâm đường tròn |
+| radius      | number       |    ✓     | Bán kính đường tròn        |
+| fillColor   | string       |          | Màu nền của đường tròn     |
+| strokeColor | string       |          | Màu viền của đường tròn    |
+| strokeWidth | number       |          | Độ dày viền của đường tròn |
+
+***Lưu ý:*** Trong một số trường hợp map không hiển thị trên device. Bạn cần khai báo giá trị cụ thể width, height cho map mà không phải là %
+
+## Sample Code
 
 Một số component được sử dụng trong source [API Demo](https://github.com/tikivn/miniapp-getting-started/tree/main/api-demo).
 
@@ -191,68 +262,3 @@ Page({
   grid-gap: 4px;
 }
 ```
-
-## Chi tiết
-
-### Các thuộc tính
-
-| Property       | Type           | Default | Require | Description                                                                                                                               |
-| -------------- | -------------- | ------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| api-key        | string         |         | true    | Key của google maps, bạn có thể tham khảo cách tạo key [tại đây](https://developers.google.com/maps/documentation/javascript/get-api-key) |
-| latitude       | number         |         | true    | Center latitude                                                                                                                           |
-| longitude      | number         |         | true    | Center longitude                                                                                                                          |
-| zoom           | number         | 10      |         | Zoom level                                                                                                                                |
-| markers        | array marker   |         |         | Mảng các marker. Bạn có thể xem cấu hình marker bên dưới                                                                                  |
-| polygon        | array polygon  |         |         | Mảng các polygon. Bạn có thể xem cấu hình polygon bên dưới                                                                                |
-| polyline       | array polyline |         |         | Mảng các polyline. Bạn có thể xem cấu hình polyline bên dưới                                                                              |
-| circles        | array circle   |         |         | Mảng các circle. Bạn có thể xem cấu hình circle bên dưới                                                                                  |
-| onMarkerTap    | event          |         |         | Sự kiện được gọi khi bấm vào marker. Có chứa các thông tin: `{ markerId, latitude, longitude }`                                           |
-| onTap          | event          |         |         | Sự kiện được gọi khi bấm vào map                                                                                                          |
-| onRegionChange | event          |         |         | Sự kiện được gọi khi người dùng kéo/thả làm thay đổi phạm vi của map. Có chứa các thông tin `{ latitude, longitude, zoom }`               |
-
-### Marker
-
-| Property  | Type                 | Require | Description                                                                                                                                               |
-| --------- | -------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id        | number               | true    | Id của marker, giúp bạn phân biệt các marker khi `onMarkerTap` được gọi                                                                                   |
-| latitude  | number               | true    | Center latitude                                                                                                                                           |
-| longitude | number               | true    | Center longitude                                                                                                                                          |
-| title     | string               |         | Tiêu đề của marker                                                                                                                                        |
-| iconPath  | string               |         | Đường dẫn tới file image cho icon của marker trong trường hợp bạn muốn custom lại icon cho marker. Mặc định sẽ dùng icon từ google maps                   |
-| width     | number               |         | Width của marker                                                                                                                                          |
-| height    | number               |         | Height của marker                                                                                                                                         |
-| label     | string / MarkerLabel |         | Label cho marker. Bạn có thể truyền vào string hoặc một object `{ text: string, className: string, color: string, fontSize: string, fontWeight: string }` |
-| alpha     | number               |         | Độ trong suốt cho marker                                                                                                                                  |
-
-### Polygon
-
-| Property    | Type                                           | Require | Description                                                          |
-| ----------- | ---------------------------------------------- | ------- | -------------------------------------------------------------------- |
-| points      | Array<{ latitude: number; longitude: number }> | true    | Mảng object chứa `latitude` và `longitude` của các điểm trên polygon |
-| fillColor   | string                                         |         | Màu nền của polygon                                                  |
-| strokeColor | string                                         |         | Màu viền của polygon                                                 |
-| strokeWidth | string                                         |         | Width của viền polygon                                               |
-
-### Polyline
-
-| Property    | Type                                           | Require | Description                                                           |
-| ----------- | ---------------------------------------------- | ------- | --------------------------------------------------------------------- |
-| points      | Array<{ latitude: number; longitude: number }> | true    | Mảng object chứa `latitude` và `longitude` của các điểm trên polyline |
-| strokeColor | string                                         |         | Màu của polyline                                                      |
-| strokeWidth | string                                         |         | Width của polyline                                                    |
-
-### Circle
-
-| Property    | Type   | Require | Description                     |
-| ----------- | ------ | ------- | ------------------------------- |
-| latitude    | number | true    | Center latitude                 |
-| longitude   | number | true    | Center longitude                |
-| radius      | number | true    | Bán kính circle (đơn vị meters) |
-| fillColor   | string |         | Màu nền của circle              |
-| strokeColor | string |         | Màu viền của circle             |
-| strokeWidth | string |         | Width của viền circle           |
-
-## Lưu ý
-
-- Trong một số trường hợp map không hiển thị trên device. Bạn cần khai báo giá trị cụ thể width, height cho map mà không phải là %
-- Bạn cần tự tạo Key cho riêng ứng dụng của bạn. Xem thêm phần tạo key [tại đây](https://developers.google.com/maps/documentation/javascript/get-api-key)
