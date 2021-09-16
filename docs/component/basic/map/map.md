@@ -24,7 +24,7 @@ title: map
 
 ### Marker
 
-<img src="/img/Map_marker.png" width="80px" alt="Marker" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/map_marker.png" width="80px" alt="Marker" style={{ margin: '0 auto', display: 'flex' }}/>
 
 | Thuộc tính | Kiểu dữ liệu    | Bắt buộc | Mô tả                                                                                                                                                    |
 | ---------- | --------------- | :------: | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
