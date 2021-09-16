@@ -4,7 +4,7 @@ title: Search Bar
 
 ## Giới thiệu
 
-- `search-bar` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) với chức năng tương tự như thẻ [input](/docs/component/form/input) nhưng hỗ trợ thêm label, icon và một số tính năng mở rộng về giao diện.
+- `search-bar` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) với chức năng tương tự như thẻ [textfield](/docs/component/form/textfield) nhưng hỗ trợ thêm label, icon và một số tính năng mở rộng về giao diện.
 - Để sử dụng `search-bar`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.1.2` trở lên.
 
 ## Sử dụng
