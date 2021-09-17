@@ -1671,7 +1671,7 @@ const customWebData={
       ]
     },
     {
-      "name": "tle:-address",
+      "name": "address",
       "description": {
         "kind": "markdown",
         "value": "## Giới thiệu\n\n- `address` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui). Cho phép bạn thực hiện các thao tác liên quan tới địa chỉ của tiki, như lấy thông tin thành phố, quận huyện, phường xã,...\n- Để sử dụng `address`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.0.19` trở lên.\n\n"
@@ -1855,7 +1855,7 @@ const customWebData={
       ],
       "references": [
         {
-          "name": "tle:-address - Tiki Developers Reference",
+          "name": "address - Tiki Developers Reference",
           "url": "https://developers.tiki.vn/docs/component/advance/data-visualization/address"
         }
       ]
@@ -2121,7 +2121,7 @@ const customWebData={
       ]
     },
     {
-      "name": "tle:-dropdown",
+      "name": "dropdown",
       "description": {
         "kind": "markdown",
         "value": "## Giới thiệu\n\n- `dropdown` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui). Với giao diện gần giống với `textfield`, nhưng có hỗ trợ bottom sheet khi bấm vào cho phép hiển thị và chọn data\n- Để sử dụng `dropdown`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.0.19` trở lên.\n\n"
@@ -2255,7 +2255,7 @@ const customWebData={
       ],
       "references": [
         {
-          "name": "tle:-dropdown - Tiki Developers Reference",
+          "name": "dropdown - Tiki Developers Reference",
           "url": "https://developers.tiki.vn/docs/component/advance/form/dropdown"
         }
       ]
