@@ -35,7 +35,11 @@ export function DocExtractors(rawContent) {
     const [node] = query({ type: "heading", limit: 1 });
 
     if (node) {
-      return node.children[0].value.slice("title:".length).trim().toLowerCase();
+      return node.children[0].value
+        .slice("title:".length)
+        .trim()
+        .toLowerCase()
+        .replace(/ /g, "-");
     }
     return "";
   };
@@ -126,7 +130,7 @@ export function DocExtractors(rawContent) {
       attributes: getAttributes(),
       references: [
         {
-          name,
+          name: `${name} - Tiki Developers Reference`,
           url: docLink,
         },
       ],
