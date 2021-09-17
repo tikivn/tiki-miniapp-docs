@@ -57,8 +57,9 @@ const customData = {
 
 const writeDocs = (content) => {
   fs.writeFileSync(
-    "./customWebData.ts",
-    `const customWebData=${JSON.stringify(content, null, 2)}`
+    "./webCustomData.ts",
+    `import { HTMLDataV1 } from "../../htmlLanguageTypes";
+export const htmlData:HTMLDataV1=${JSON.stringify(content, null, 2)}`
   );
 };
 writeDocs(customData);

@@ -1,4 +1,5 @@
-const customWebData={
+import { HTMLDataV1 } from "../../htmlLanguageTypes";
+export const htmlData:HTMLDataV1={
   "version": "1.0.0",
   "tags": [
     {
