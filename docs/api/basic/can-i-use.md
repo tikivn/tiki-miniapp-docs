@@ -24,7 +24,7 @@ Input của `canIUse` có định dạng `${API}.${type}.${param}.${option}`, ho
 
 ## Return value
 
-`my.canIUse` sẽ trả về `true` nếu như API hoặc component được hỗ trợ.
+`my.canIUse` sẽ trả về `true` nếu như có hỗ trợ.
 
 ## Sample code
 
