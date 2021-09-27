@@ -2,13 +2,34 @@
 title: my.compressImage
 ---
 
-## Giới thiệu
+**my.compressImage** là API dùng để nén nhiều ảnh (image) cùng một lúc, khiến chúng có dung lượng nhỏ hơn nhưng vẫn giữ nguyên kích thước ban đầu.
 
-**my.compressImage** là API dùng để compress nhiều images 1 lúc để có dung lượng nhỏ hơn nhưng vẫn giữ nguyên kích thước gốc.
+## API Params
 
-## Sử dụng
+| Thuộc tính    | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                          |
+| ------------- | ------------ | :------: | ------------------------------------------------------------------------------ |
+| filePaths     | String Array |    ✓     | Đường dẫn tới các tập tin ảnh cần nén                                          |
+| compressLevel | Number       |          | Mức độ nén ảnh, Nhận giá trị từ 0 tới 3; mặc định là 3. Bảng chi tiết ở dưới.  |
+| success       | Function     |          | Callback function khi nén ảnh thành công                                       |
+| fail          | Function     |          | Callback function khi nén ảnh bất thành                                        |
+| complete      | Function     |          | Callback function khi gọi API hoàn tất bất kể nén ảnh thành công hay thất bại. |
 
-### Sample Code
+### Callback function payload
+
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                               |
+| ---------- | ------------ | --------------------------------------------------- |
+| filePaths  | String Array | Chứa các đường đẫn tạm thời của các ảnh đã được nén |
+
+### Compress level
+
+| Mức độ | Mô tả          |
+| ------ | -------------- |
+| 0      | Low quality    |
+| 1      | Medium quality |
+| 2      | High quality   |
+| 3      | Không compress |
+
+## Sample Code
 
 ```xml
 <view>
@@ -65,31 +86,3 @@ Page({
   },
 });
 ```
-
-### API Params
-
-Các thuộc tính:
-
-| Attributes | Type             | Required | Description                                                                    |
-| ---------- | --------         | -------- | ------------------------------------------------------------------------------ |
-| filePaths  | String Array     | Yes      |  Đường dẫn tới các files image cần compress                                    |
-| compressLevel  | Number    | No      |  Mức độ compress từ 0 tới 3. Mặc định là 3. Tham khảo bảng chi tiết mức độ compress ở dưới.                                    |
-| success    | Function         | No       | Callback function khi compress image được thực hiện thành công                     |
-| fail       | Function         | No       | Callback function khi compress image thất bại                                      |
-| complete   | Function         | No       | Callback function khi việc compress image kết thúc cho dù thành công hay thất bại. |
-
-### Callback function payload
-
-| Attributes | Type   | Description                |
-| ---------- | ------ | -------------------------- |
-| filePaths  | String Array  | List các đường đẫn tạm thời của các images đã được compress xong |
-
-### Compress level
-
-| Level | Description                |
-| ----- | -------------------------- |
-| 0     | Low quality                |
-| 1     | Medium quality             |                                         
-| 2     | High quality               |    
-| 3     | Không compress             |
-

@@ -2,13 +2,18 @@
 title: my.createAudioContext
 ---
 
-## Giới thiệu
+**my.createAudioContext** là API dùng để tạo ra Audio Context Object quản lý [Audio](/docs/component/media/audio) component.
 
-**my.createAudioContext** là API dùng để quản lý [Audio](/docs/component/media/audio) component.
+## Phương thức của Audio Context
 
-## Sử dụng
+| Phương thức | Tham số  | Mô tả                                      |
+| ----------- | -------- | ------------------------------------------ |
+| play        | no       | Phát audio.                                |
+| pause       | no       | Tạm dừng phát nội dung audio               |
+| seek        | position | Nhảy tới một thời gian cụ thể trong audio. |
+| setSrc      | src      | Gán đuờng dẫn cho audio.                   |
 
-### Sample Code
+## Sample Code
 
 ```xml
 <audio id="audio1" src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_5MG.mp3" name="Sample Audio" author="Unknown" />
@@ -22,14 +27,3 @@ Page({
   }
 })
 ```
-### Return value
-
-Trả về Audio Context Object với hỗ trợ thuộc tính và methods theo như bên dưới.
-
-### Audio Context Methods
-| Method | params   | Description                                           |
-| ------ | -------- | ----------------------------------------------------- |
-| play   | no       | Dùng để play nội dung.                                |
-| pause  | no       | Dùng để dừng nội dung đang được phát.                 |
-| seek   | position | Dùng để nhảy tới vị trí theo thời gian trên nội dung. |
-| setSrc | src      | Dùng để cập nhật `src` của audio.                     |

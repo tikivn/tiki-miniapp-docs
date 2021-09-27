@@ -33,12 +33,12 @@ Trả về Lottie Context Object với hỗ trợ thuộc tính và methods theo
 
 ### Video Context Methods
 
-| Method       | params            | Description                                                                                  |
-| ------------ | ----------------- | -------------------------------------------------------------------------------------------- |
-| play         | no                | Dùng để play nội dung.                                                                       |
-| pause        | no                | Dùng để tạm dừng nội dung đang được phát. Khi play lottie sẽ chạy lại từ điểm đang được dừng |
-| stop         | no                | Dùng để dừng hẳn nội dung đang được phát. Khi play lottie sẽ chạy lại từ đầu                 |
-| setSpeed     | { value: number } | Dùng để thay đổi tốc độ của lottie. Mặc định là 1                                            |
-| goToAndStop  | { value: number } | Nhảy tới một thời điểm được chỉ định sau đó dừng hẳn                                         |
-| goToAndPlay  | { value: number } | Nhảy tới một thời điểm được chỉ định sau đó play tiếp                                        |
-| setDirection | { value: number } | Thay đổi direction cho lottie. Mặc định là 1                                                 |
+| Phương thức  | Tham số           | Mô tả                                                                                                                         |
+| ------------ | ----------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| play         | no                | Phát lottie animation.                                                                                                        |
+| pause        | no                | Tạm ngưng phát animation. Nếu phát tiếp, sẽ bắt đầu từ thời điểm bị tam ngưng.                                                |
+| stop         | no                | Dừng hẳn phát animation. Nếu phát tiếp, sẽ bắt đầu lại từ đầu.                                                                |
+| setSpeed     | { speed: number } | Dùng để thay đổi tốc độ phát của. Mặc định là 1 (bình thường). Giá trị từ 0 đến 1: tốc độ chậm lại; giá trị lớn 1: nhanh hơn. |
+| goToAndStop  | { value: number } | Nhảy tới một thời điểm được chỉ định trong animation sau đó dừng hẳn (stop).                                                  |
+| goToAndPlay  | { value: number } | Nhảy tới một thời điểm được chỉ định, sau đó phát tiếp animation                                                              |
+| setDirection | { value: number } | Thay đổi direction cho lottie. Mặc định là 1. 1: theo chiều bình thường; -1: theo chiều ngược lại                             |

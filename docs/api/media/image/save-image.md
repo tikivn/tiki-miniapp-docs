@@ -4,11 +4,23 @@ title: my.saveImage
 
 ## Giới thiệu
 
-**my.saveImage** là API dùng để lưu 1 remote Image vào gallery của device
+**my.saveImage** là API dùng để lưu 1 remote image vào gallery của thiết bị di động.
 
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                     |
+| ---------- | ------------ | :------: | ----------------------------------------------------------------------------------------- |
+| url        | string       |    ✓     | Đường dẫn của remote image.                                                               |  |
+| success    | Function     |          | Callback function khi save hình ảnh thành công                                            |
+| fail       | Function     |          | Callback function khi save image bất thành                                                |
+| complete   | Function     |          | Callback function khi gọi API hoàn tất bất kể việc save hình ảnh thành công hay thất bại. |
+ 
+**Lưu ý**: 
+
+- Image sẽ được lưu vào album `Tiki-Miniapp`
+- Không hỗ trợ đường dẫn base64.
+
+## Sample Code
 
 ```xml
 <view>
@@ -47,17 +59,30 @@ Page({
 });
 ```
 
-### API Params
+:::
+abc
+:::
 
-Các thuộc tính:
 
-| Attributes | Type             | Required | Description                                                                    |
-| ---------- | --------         | -------- | ------------------------------------------------------------------------------ |
-| url  | String      | Yes      |  Đường dẫn của remote image.                                   |                                 |
-| success    | Function         | No       | Callback function khi save image được thực hiện thành công                     |
-| fail       | Function         | No       | Callback function khi save image thất bại                                      |
-| complete   | Function         | No       | Callback function khi việc save image kết thúc cho dù thành công hay thất bại. |
- 
-**Lưu ý**: 
-* Image sẽ được lưu vào album `Tiki-Miniapp`
-* Không support đường dẫn base64
+1. Truy cập vào Seller Center.
+2. Sidebar menu >> Sản phẩm >> Tạo mới / đăng sản phẩm. Trên trang **Tạo mới / đăng sản phẩm**, bấm nút Bắt đầu trong phần **Tạo Mới Sản Phẩm**.
+3. Trên trang **Tạo Sản Phẩm**, điền thông tin sản phẩm vào biểu mẫu.
+    - Phân 1: Thông tin chung
+      - Chọn “Voucher - Dịch vụ / Tini App” từ Danh sách thả xuống **Danh mục**.
+      - Chọn “Not visible individually” từ Danh sách thả xuống **Visibility**.
+      - Bấm vào **Hiển thị các thông tin khác**, và chọn mức thuế VAT từ hộp thoại % VAT (thuế).
+    - Phần 3: Vận hành & các lựa chọn.  
+4. Sau khi điền đầy đủ thông tin, bấm nút **Tạo và bật bán**. Thông tin sản phẩm sẽ được gửi đến Tiki để xét duyệt
+
+
+:::tip
+Phần 1: Thông tin chung
+
+- Chọn “Voucher - Dịch vụ / Tini App” từ Danh sách thả xuống **Danh mục**.
+- Chọn “Not visible individually” từ Danh sách thả xuống **Visibility**.
+- Bấm vào **Hiển thị các thông tin khác**, và chọn mức thuế VAT từ hộp thoại % VAT (thuế).
+
+Phần 3: Vận hành & các lựa chọn.
+
+- Chọn “E-Delivery - Giao hàng điện tử” từ danh sách thả xuống Mô hình vận hành.
+:::

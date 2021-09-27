@@ -2,15 +2,26 @@
 title: lottie
 ---
 
-## Giới thiệu
-
-- Lottie là thư viện cho phép chạy các hoạt ảnh kết xuất từ After Effects và có thể chạy trên ứng dụng mobile và web. Bạn có thể hiểu về lottie [tại đây](https://airbnb.io/lottie)
+- Lottie là thư viện cho phép chạy các hoạt ảnh kết xuất từ After Effects và có thể chạy trên ứng dụng mobile và web. Bạn có thể hiểu thêm về lottie [tại đây](https://airbnb.io/lottie)
 - Bạn có thể sử dụng lottie component cùng với [my.createLottieContext](/docs/api/media/create-lottie-context)
-- Lottie component chỉ hỗ trợ từ phiên bản 17.5.2 trở lên
 
-## Sử dụng
+**Khả dụng**: Lottie component chỉ hỗ trợ từ phiên bản 17.5.2 trở lên
 
-### Sample Code
+## thuộc tính
+
+| Thuộc tính     | Kiểu dữ liệu | Mô tả                                                                                           |
+| -------------- | ------------ | ----------------------------------------------------------------------------------------------- |
+| path           | string       | Đường dẫn tới nội dung của file json. Hỗ trợ các file local hoặc remote                         |
+| autoplay       | boolean      | Tự động phát animation. Mặc định là false.                                                      |
+| speed          | number       | Tốc độ animation. Mặc định là 1. Giá trị từ 0 đến 1: tốc độ chậm lại; giá trị lớn 1: nhanh hơn. |
+| onComplete     | event        | Sự kiện được gọi khi kết thúc animation                                                         |
+| onDataFailed   | event        | Sự kiện được gọi nội dung của lottie tải không thành công                                       |
+| onDataReady    | event        | Sự kiện được gọi khi nội dung của lottie được load xong                                         |
+| onLoopComplete | event        | Sự kiện được gọi khi loop hoàn tất                                                              |
+
+***Lưu ý***: Nếu gặp trường hợp lottie không hiển thị, bạn có thể kiểm tra nội dung của file lottie [tại đây](https://lottiefiles.com/preview)
+
+## Sample Code
 
 Một số component được sử dụng trong source [API Demo](https://github.com/tikivn/miniapp-getting-started/tree/main/api-demo).
 
@@ -98,20 +109,4 @@ Page({
 });
 ```
 
-## Chi tiết
 
-### Các thuộc tính
-
-| Property       | Type    | Description                                                             |
-| -------------- | ------- | ----------------------------------------------------------------------- |
-| path           | string  | Đường dẫn tới nội dung của file json. Hỗ trợ các file local hoặc remote |
-| autoplay       | boolean | Autoplay lottie. Mặc định là false                                      |
-| speed          | number  | Tốc độc animation của lottie. Mặc định là 1                             |
-| onComplete     | event   | Sự kiện được gọi khi kết thúc animation                                 |
-| onDataFailed   | event   | Sự kiện được gọi nội dung của lottie tải không thành công               |
-| onDataReady    | event   | Sự kiện được gọi khi nội dung của lottie được load xong                 |
-| onLoopComplete | event   | Sự kiện được gọi khi loop hoàn tất                                      |
-
-## Lưu ý
-
-- Trong một số trường hợp nếu lottie không hiển thị, bạn có thể kiểm tra nội dung của file lottie [tại đây](https://lottiefiles.com/preview)

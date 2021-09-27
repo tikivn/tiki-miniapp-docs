@@ -8,8 +8,8 @@ module.exports = {
       collapsed: false,
       items: [
         'developer/introduce/register',
-        'developer/introduce/member',
         'developer/introduce/create',
+        'developer/introduce/member',
         'developer/introduce/upload',
         'developer/introduce/release',
         'developer/introduce/dev-assistant',
