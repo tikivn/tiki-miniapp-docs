@@ -2,11 +2,9 @@
 title: my.createLottieContext
 ---
 
-**my.createLottieContext** là API dùng để quản lý [Lottie](/docs/component/media/lottie) component.
+**my.createLottieContext** là API dùng để tạo ra LottieContext - đối tượng cung cấp các thuôc tính và phương thức giúp bạn điều khiển [Lottie](/docs/component/media/lottie) component.
 
-Trả về Lottie Context Object với hỗ trợ thuộc tính và methods theo như bên dưới.
-
-## Video Context Methods
+## Các phương thức LottieContext cung cấp
 
 | Phương thức  | Tham số           | Mô tả                                                                                                                         |
 | ------------ | ----------------- | ----------------------------------------------------------------------------------------------------------------------------- |

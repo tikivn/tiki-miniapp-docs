@@ -2,9 +2,7 @@
 title: video
 ---
 
-## Giới thiệu
-
-`video` là component cho phép người dùng có thể play nội dung hình ảnh trên tini-app. Bạn có thể tham khảo thêm api liên quan [my.createVideoContext](/docs/api/media/create-video-context).
+`video` là component cho phép người dùng phát video trên Tini App. Bạn có thể điều khiển component này thông qua [my.createVideoContext](/docs/api/media/create-video-context) api.
 
 ## Thuộc tính
 
@@ -23,9 +21,7 @@ title: video
 | onTimeUpdate | event        |                  | Sự kiện được kích hoạt khi thời điểm hiện tại của video thay đổi.                                                                                           |
 | onError      | event        |                  | Sự kiện được khích hoạt khi lỗi phát sinh trong lúc phát audio. `event.detail = { errMsg: 'MEDIA_ERR_NETWORK' }`.                                           |
 
-## Sử dụng
-
-### Sample Code
+## Sample Code
 
 **index.txml**
 

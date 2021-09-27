@@ -2,9 +2,7 @@
 title: my.createInnerAudioContext
 --- 
 
-my.createInnerAudioContext là API dùng để tạo ra InnerAudioContext.
-
-InnerAudioContext là một đối tượng với các phương thức và thuộc tính mà bạn có thể sử dụng để phát audio nền (background audio).
+my.createInnerAudioContext là API dùng để tạo ra InnerAudioContext - đối tượng cung cấp cho bạn các phương thức và thuộc tính để phát audio nền (background audio) trên Tini App.
 
 ## Thuộc tính
 
@@ -21,14 +19,14 @@ InnerAudioContext là một đối tượng với các phương thức và thu�
 | paused         | boolean      |                  | Audio bị pause hoặc stop                                                                                    |
 | buffered       | number       |                  | Audio được buffer (lưu trữ tạm thời) đến thời điểm nào.                                                     |
 
-Phương thức
+## Phương thức
 
 | Phương thức                     | Mô tả                                                                                                                                       |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | InnerAudioContext.play          | Phát một tập tin audio.                                                                                                                     |
 | InnerAudioContext.pause         | Tạm ngưng (pause) phát audio. Nếu phát tiếp, sẽ bắt đầu từ thời điểm bị tam ngưng.                                                          |
 | InnerAudioContext.stop          | Dừng (stop) phát audio. Nếu phát tiếp, sẽ bắt đầu lại từ đầu.                                                                               |
-| InnerAudioContext.seek          | Nhảy đến một thời điểm cụ thể của audio.                                                                                                    |
+| InnerAudioContext.seek          | Nhảy đến một thời điểm cụ thể trong audio.                                                                                                  |
 | InnerAudioContext.destroy       | Loại bỏ chính đối tượng đó.                                                                                                                 |
 | InnerAudioContext.onCanplay     | (callback function) Lắng nghe sự kiện tập tin audio sẵn sàng phát.                                                                          |
 | InnerAudioContext.offCanplay    | (callback function) Huỷ bỏ lắng nghe sự kiện tập tin audio sẵn sàng phát.                                                                   |

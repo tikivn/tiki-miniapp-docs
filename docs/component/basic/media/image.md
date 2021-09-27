@@ -2,13 +2,10 @@
 title: image
 ---
 
-## Giới thiệu
+`image` component dùng để hiển thị hình ảnh
 
-image component để hiển thị hình ảnh
 
-## Sử dụng
-
-### Sample Code
+## Sample Code
 
 **index.txml**
 
@@ -57,18 +54,18 @@ Page({
 
 ### Các thuộc tính
 
-| Property       | Type    | Description                                                                                                                                                                                                                                                                                            |
-| -------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| src            | string  | Đường dẫn hoặc data base 64 của hình ảnh.                                                                                                                                                                                                                                                              |
-| class          | string  | Css class                                                                                                                                                                                                                                                                                              |
-| style          | string  | Inline style                                                                                                                                                                                                                                                                                           |
-| lazy-load      | boolean | Hỗ trợ lazy load hình ảnh                                                                                                                                                                                                                                                                              |
-| default-source | string  | Hình ảnh mặc định. Nếu giá trị được thiết lập, hình ảnh trong `default-source` sẽ được hiển thị trước, sau đó sẽ hiển thị hình ảnh trong `src` sau khi đã được tải thành công. Ngoài ra, hình ảnh này còn được dùng khi hình ảnh không load được (Khi đó `onError` sẽ được gọi)                        |
-| mode           | string  | Chế độ hiển thị của hình ảnh. Mặc định là `scaleToFill`. Bạn có thể xem các mode được hỗ trợ bên dưới. Chỉ hỗ trợ version từ 1.76.5 trở lên |
-| onTap          | event   | Sự kiện được gọi khi tap vào image. Chỉ hỗ trợ version >= 1.74.22                                                                                                                                                                                                                                      |
-| catchTap       | event   | Sự kiện được gọi khi tap vào image, tuy nhiên event sẽ không buble lên parent. Chỉ hỗ trợ version >= 1.74.22                                                                                                                                                                                           |
-| onLoad         | event   | Sự kiện được gọi khi hình ảnh được tải về thành công, `event.detail = { width, height }`                                                                                                                                                                                                               |
-| onError        | event   | Sự kiện được gọi khi hình ảnh tải về thất bại, `event.detail = { errMsg: 'Error message' }`                                                                                                                                                                                                            |
+| Thuộc tính     | Kiểu dữ liệu | Mô tả                                                                                                                                                                           |
+| -------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| src            | string       | Đường dẫn hoặc base64 của hình.                                                                                                                                                 |
+| class          | string       | Css class                                                                                                                                                                       |
+| style          | string       | Inline style                                                                                                                                                                    |
+| lazy-load      | boolean      | Cho phép lazy load hình                                                                                                                                                         |
+| default-source | string       | Hình mặc định. Hình này sẽ được hiển thị khi hình trong `src` đang trong quá trình load hoặc không load được. Trường hợp hình trong `src` load thất bại, `onError` sẽ được gọi. |
+| mode           | string       | Chế độ hiển thị của hình ảnh. Mặc định là `scaleToFill`. Bạn có thể xem các mode được hỗ trợ bên dưới. Chỉ hỗ trợ version từ 1.76.5 trở lên                                     |
+| onTap          | event        | Sự kiện được kích hoạt khi người tap vào hình. Chỉ hỗ trợ version >= 1.74.22                                                                                                    |
+| catchTap       | event        | Sự kiện được gọi khi tap vào image, tuy nhiên event sẽ không bubble lên parent. Chỉ hỗ trợ từ version 1.74 trở lên.22                                                           |
+| onLoad         | event        | Sự kiện được gọi khi hình được tải về thành công, `event.detail = { width, height }`                                                                                            |
+| onError        | event        | Sự kiện được gọi khi hình tải về thất bại, `event.detail = { errMsg: 'Error message' }`                                                                                         |
 
 ### Mode
 
