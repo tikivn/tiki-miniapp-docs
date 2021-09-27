@@ -9,15 +9,15 @@ title: lottie
 
 ## thuộc tính
 
-| Thuộc tính     | Kiểu dữ liệu | Mô tả                                                                                           |
-| -------------- | ------------ | ----------------------------------------------------------------------------------------------- |
-| path           | string       | Đường dẫn tới nội dung của file json. Hỗ trợ các file local hoặc remote                         |
-| autoplay       | boolean      | Tự động phát animation. Mặc định là false.                                                      |
-| speed          | number       | Tốc độ animation. Mặc định là 1. Giá trị từ 0 đến 1: tốc độ chậm lại; giá trị lớn 1: nhanh hơn. |
-| onComplete     | event        | Sự kiện được gọi khi kết thúc animation                                                         |
-| onDataFailed   | event        | Sự kiện được gọi nội dung của lottie tải không thành công                                       |
-| onDataReady    | event        | Sự kiện được gọi khi nội dung của lottie được load xong                                         |
-| onLoopComplete | event        | Sự kiện được gọi khi loop hoàn tất                                                              |
+| Thuộc tính     | Kiểu dữ liệu | Mô tả                                                                                                                                                     |
+| -------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| path           | string       | Đường dẫn tới nội dung của file json. Hỗ trợ các file local hoặc remote                                                                                   |
+| autoplay       | boolean      | Tự động phát animation. Mặc định là false.                                                                                                                |
+| speed          | number       | Tốc độ animation. Mặc định là 1. Giá trị từ 0 đến 1: tốc độ chậm lại; giá trị lớn 1: nhanh hơn.                                                           |
+| onComplete     | event        | Sự kiện được gọi khi việc phát animation kết thúc, không tính phần loop.                                                                                  |
+| onDataFailed   | event        | Sự kiện được kích hoạt khi load animation thất bại.                                                                                                       |
+| onDataReady    | event        | Sự kiện được kích hoạt khi animation được load xong.                                                                                                      |
+| onLoopComplete | event        | Animation đuợc phát lần đầu tiên. Nó tiếp tục được phát lại (loop) lần 1, 2, 3 ... Ngay khi loop lần 1 kêt thúc, sự kiện onLoopComplete sẽ đuợc kích hoạt |
 
 ***Lưu ý***: Nếu gặp trường hợp lottie không hiển thị, bạn có thể kiểm tra nội dung của file lottie [tại đây](https://lottiefiles.com/preview)
 
