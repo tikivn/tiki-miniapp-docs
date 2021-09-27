@@ -17,8 +17,8 @@ const groups = [
   {
     title: 'Hỗ trợ',
     items: [
-      {title: 'Câu hỏi thường gặp', url: ''},
-      {title: 'Cộng đồng', url: '/community'},
+      //{title: 'Câu hỏi thường gặp', url: ''},
+      {title: 'Cộng đồng', url: 'https://community.tiki.vn/'},
     ],
   },
   {
@@ -39,7 +39,7 @@ const bottom = [
     title: 'Tuyển dụng',
     url: 'https://tuyendung.tiki.vn/',
   },
-  {
+  /*{
     title: 'Chính sách Nhà phát triển',
     url: '',
   },
@@ -50,7 +50,7 @@ const bottom = [
   {
     title: 'Chính sách riêng tư',
     url: '',
-  },
+  },*/
 ];
 
 function FooterLink({to, href, label, prependBaseUrlToHref, ...props}) {
