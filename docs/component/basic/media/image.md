@@ -63,9 +63,9 @@ Page({
 | default-source | string       | Hình mặc định. Hình này sẽ được hiển thị khi hình trong `src` đang trong quá trình load hoặc không load được. Trường hợp hình trong `src` load thất bại, `onError` sẽ được gọi. |
 | mode           | string       | Chế độ hiển thị của hình ảnh. Mặc định là `scaleToFill`. Bạn có thể xem các mode được hỗ trợ bên dưới. Chỉ hỗ trợ version từ 1.76.5 trở lên                                     |
 | onTap          | event        | Sự kiện được kích hoạt khi người tap vào hình. Chỉ hỗ trợ version >= 1.74.22                                                                                                    |
-| catchTap       | event        | Sự kiện được gọi khi tap vào image, tuy nhiên event sẽ không bubble lên parent. Chỉ hỗ trợ từ version 1.74 trở lên.22                                                           |
-| onLoad         | event        | Sự kiện được gọi khi hình được tải về thành công, `event.detail = { width, height }`                                                                                            |
-| onError        | event        | Sự kiện được gọi khi hình tải về thất bại, `event.detail = { errMsg: 'Error message' }`                                                                                         |
+| catchTap       | event        | Sự kiện được khích hoạt khi tap vào image, tuy nhiên event sẽ không bubble lên parent. Chỉ hỗ trợ từ version 1.74 trở lên.22                                                    |
+| onLoad         | event        | Sự kiện được kích hoạt khi hình được tải về thành công, `event.detail = { width, height }`                                                                                      |
+| onError        | event        | Sự kiện được kích hoạt khi load hình thất bại, `event.detail = { errMsg: 'Error message' }`                                                                                     |
 
 ### Mode
 
