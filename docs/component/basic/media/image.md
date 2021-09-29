@@ -53,8 +53,11 @@ Image component có thể hiển thị hình ảnh ở 14 mode khác nhau, gồm
 ***Lưu ý***
 
 > Bạn cần khai báo `width` và `height` của image component thông qua inline style hoặc trong tcss, mặc định là `width = 300px` và `height = 225px`. Thuộc tính `width` và `height` sẽ không được kế thừa trong image.
+> 
 > Để sử dụng hình với height là auto, bạn có thể dùng mode là `widthFix`.
+> 
 > Nên dùng _absolute path_ cho các đường dẫn của hình.
+> 
 > Không nên dùng thuộc tính `object-fit` trong tcss để canh kích thước cho image mà thay vào đó dùng `mode`.
 
 ## Sample Code
