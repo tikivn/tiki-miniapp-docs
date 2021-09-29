@@ -91,6 +91,7 @@ Cấu hình để framework có thể load được `page/index/index` như sau:
 | transparentTitle     | string   | "none"        | Cấu hình thuộc tính trong suốt của navigation bar. Hỗ trợ 3 giá trị `none` - có màu. `always` - trong suốt. `auto` sẽ tự động chuyển giữa trong suốt và có màu tuỳ theo vị trí scroll trên màn hình. |
 | titleBarColor        | HexColor | "#FFFFFF"     | Quy định màu nền của navigation bar.                                                                                                                                                                 |
 | backgroundColor      | HexColor | "#FFFFFF"     | Quy định màu nền mặc định của page.                                                                                                                                                                  |
+| titleBarBottomColor  | HexColor | "#EBEBF0"     | Quy định màu cho border bottom của NavigationBar.                                                                                                                                                    |
 
 Ví dụ:
 
@@ -109,12 +110,14 @@ Ví dụ:
 
 Nếu ứng dụng có sử dụng Tab Bar, bạn có thể dùng cấu hình này để quy định cách hiển thị cũng như hành vi của Tab Bar.
 
-| Property        | Type     | Default Value | Description                                            |
-| --------------- | -------- | ------------- | ------------------------------------------------------ |
-| textColor       | HexColor | "#000000"     | Quy định màu sắc của text trong tab bar item.          |
-| selectedColor   | HexColor | "#000000"     | Màu sắc của text trong tab bar item khi được lựa chọn. |
-| backgroundColor | HexColor | "#FFFFFF"     | Màu nền của tab bar.                                   |
-| items           | Array    | required      | Cấu hình từng item trong tab bar.                      |
+| Property             | Type     | Default Value | Description                                            |
+| -------------------- | -------- | ------------- | ------------------------------------------------------ |
+| textColor            | HexColor | "#000000"     | Quy định màu sắc của text trong tab bar item.          |
+| selectedColor        | HexColor | "#000000"     | Màu sắc của text trong tab bar item khi được lựa chọn. |
+| backgroundColor      | HexColor | "#FFFFFF"     | Màu nền của tab bar.                                   |
+| borderTopActiveColor | HexColor | "#EBEBF0"     | Màu border top của tab bar đối với tab được chọn.      |
+| borderTopColor       | HexColor | "#EBEBF0"     | Màu border top của tab bar.                            |
+| items                | Array    | required      | Cấu hình từng item trong tab bar.                      |
 
 Với mỗi tab bar item có thể cấu hình với các thuộc tính sau:
 
