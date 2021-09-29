@@ -2,7 +2,7 @@
 title: text
 ---
 
-Thẻ text dùng để hiển thị nội dung văn bản, và phải nằm trong các thẻ component. Thẻ text có những đặc điểm như sau:
+Thẻ text dùng để hiển thị nội dung văn bản, và phải nằm trong các thẻ component khác. Thẻ text có những đặc điểm như sau:
 
 - Có thể đặt lồng vào nhau.
 - Hỗ trợ styling.
@@ -12,7 +12,7 @@ Thẻ text dùng để hiển thị nội dung văn bản, và phải nằm tron
 
 | Thuộc tính      | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                                               |
 | --------------- | ------------ | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| selectable      | boolean      | false            | Cho phép nội dung có thể được chọn hay không, nếu là true thì có thể chọn và sao chép nội dung.                                     |
+| selectable      | boolean      | false            | Có cho phép người dùng select text không.                                                                                           |
 | space           | string       |                  | Kích thước khoảng trắng. Nhận các giá trị = [ nbsp \|\| ensp \|\| emsp ]                                                            |
 | decode          | boolean      | false            | Có decode text hay không.                                                                                                           |
 | number-of-lines | number       |                  | Số dòng tối đa mà text có thể hiển thị. Phần nội dung dư ra sẽ được đại diện bằng dấu ba chấm (…). Nhận giá trị lớn hơn hay bằng 1. |
