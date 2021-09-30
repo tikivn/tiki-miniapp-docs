@@ -304,6 +304,66 @@ export default {
     [
       {
         type: 'color',
+        text: 'background-button-neutral-default-day',
+        value: '#000000',
+      },
+      {
+        type: 'color',
+        text: 'black 8%',
+        value: '#000000',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-button-neutral-hover-day',
+        value: '#000000',
+      },
+      {
+        type: 'color',
+        text: 'black 12%',
+        value: '#000000',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-button-neutral-active-day',
+        value: '#000000',
+      },
+      {
+        type: 'color',
+        text: 'black 16%',
+        value: '#000000',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-button-neutral-ghost-hover-day',
+        value: '#000000',
+      },
+      {
+        type: 'color',
+        text: 'black 8%',
+        value: '#000000',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'background-button-neutral-ghost-active-day',
+        value: '#000000',
+      },
+      {
+        type: 'color',
+        text: 'black 12%',
+        value: '#000000',
+      },
+    ],
+    [
+      {
+        type: 'color',
         text: 'background-button-default',
         value: '#1A94FF',
       },

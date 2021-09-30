@@ -232,6 +232,42 @@ export default {
     [
       {
         "type": "color",
+        "text": "text-button-neutral-solid-default-day",
+        "value": "#27272A"
+      },
+      {
+        "type": "color",
+        "text": "gray100",
+        "value": "#27272A"
+      }
+    ],
+    [
+      {
+        "type": "color",
+        "text": "text-button-neutral-outlined-default-day",
+        "value": "#27272A"
+      },
+      {
+        "type": "color",
+        "text": "gray100",
+        "value": "#27272A"
+      }
+    ],
+    [
+      {
+        "type": "color",
+        "text": "text-button-neutral-ghost-default-day",
+        "value": "#27272A"
+      },
+      {
+        "type": "color",
+        "text": "gray100",
+        "value": "#27272A"
+      }
+    ],
+    [
+      {
+        "type": "color",
         "text": "text-button-outlined-default",
         "value": "#1A94FF"
       },
