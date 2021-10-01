@@ -1,6 +1,19 @@
 ---
 title: Tải về
 ---
+### Phiên bản 1.3
+30/09/2021 <br/>
+Xin chào, tháng 9 của bạn như thế nào? Sài Gòn thì vẫn đang hồi phục và chuẩn bị quay lại để lợi hại hơn xưa. <br/>
+Tháng này, team Tini tập trung vào việc phát triển [template mới dành cho lĩnh vực Ăn uống] (https://www.figma.com/community/file/1025657656395537576/Tini---Food-%26-Beverage-Template), vì vậy về Design system chỉ có một vài nâng vấp về cấp trúc bên trong của các component như Table, Date field, và List view. Một số thay đổi nhỏ ở component Social post, và thay đổi tên token màu của Error, Success thành Negative và Positive để có khả năng sử dụng rộng hơn. </br>
+Đó là mọi cập nhật cho tháng 9 này. Hẹn gặp lại các bạn vào tháng sau nhé !!
+
+
+[Tải vể](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
+
+
 ### Phiên bản 1.2
 31/08/2021 <br/>
 Như bọn mình nói tháng trước, một thành viên mới đã gia nhập, và anh ấy đã tạo ra những component mới một cách tuyệt vời cũng như cải thiện quy trình và cấu trúc trong hệ thống thiết kế của Tini<br />
@@ -21,8 +34,6 @@ Social components
 - Comment<br />
 “One more thing!”, Dựa vào những component của Tini, bọn mình còn xây dựng một [bộ template dành cho ứng dụng thể loại mua sắm ở đây](https://www.figma.com/community/file/999527987953700182/Tini---Shopping-Template) và sẽ được cập nhật hàng tháng, cũng như là cho ra mắt thêm những template khác dành cho những mô hình kinh doánh khác. Hãy đón chờ nhé ;)
 Wake me up when September ends!!!
-
-[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 ---
