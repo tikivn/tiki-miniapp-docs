@@ -222,6 +222,7 @@ module.exports = {
             'component/advance/form/steps',
             'component/advance/form/textfield',
             'component/advance/form/dropdown',
+            'component/advance/form/chip',
           ],
         },
         {
