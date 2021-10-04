@@ -11,6 +11,7 @@ Với mỗi màn hình sẽ tương ứng với một page trên framework. File
 | titleBarColor        | HexColor | "#FFFFFF"     | Quy định màu nền của navigation bar.                                                                                                                                                                 |
 | backgroundColor      | HexColor | "#FFFFFF"     | Quy định màu nền mặc định của page.                                                                                                                                                                  |
 | usingComponents      | Object   | null          | Cấu hình những custom components được sử dụng trong page.                                                                                                                                            |
+| titleBarBottomColor  | HexColor | "#EBEBF0"     | Quy định màu cho border bottom của NavigationBar.                                                                                                                                                    |
 
 Ví dụ:
 

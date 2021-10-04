@@ -2,82 +2,43 @@
 title: text
 ---
 
-## Giới thiệu
+Thẻ text dùng để hiển thị nội dung văn bản, và phải nằm trong các thẻ component khác. Thẻ text có những đặc điểm như sau:
 
-Thẻ text tương đồng với thẻ span trong html, giúp để trình bày một nội dung văn bản. Hai thẻ text mặc định sẽ được trình bày trên cùng một dòng nếu đứng gần nhau. Khi muốn xuống dòng bạn có thể sử dụng \n.
+- Có thể đặt lồng vào nhau.
+- Hỗ trợ styling.
+- Các thẻ text gần nhau được trình bày trên cùng một hàng. Nếu muốn xuống hàng, bạn có thể dùng \n.
 
-## Sử dụng
+## Thuộc tính
 
-### Sample Code
+| Thuộc tính      | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                                               |
+| --------------- | ------------ | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| selectable      | boolean      | false            | Có cho phép người dùng select text không.                                                                                           |
+| space           | string       |                  | Kích thước khoảng trắng. Nhận các giá trị = [ nbsp \|\| ensp \|\| emsp ]                                                            |
+| decode          | boolean      | false            | Có decode text hay không.                                                                                                           |
+| number-of-lines | number       |                  | Số dòng tối đa mà text có thể hiển thị. Phần nội dung dư ra sẽ được đại diện bằng dấu ba chấm (…). Nhận giá trị lớn hơn hay bằng 1. |
 
-**index.txml**
+### Space
+
+| Giá trị | Mô tả                                                                             |
+| ------- | --------------------------------------------------------------------------------- |
+| nbsp    | Khoảng trắng có kích thước theo font quy định.                                    |
+| ensp    | Viết tắt của en space. Khoảng trắng có kích thước bằng phân nửa chiều ngang ký tự |
+| emsp    | Viết tắt của em space. Khoảng trắng có kích thước bằng chiều ngang ký tự.         |
+
+## Sample code
 
 ```xml
-<view class="container">
-  <view class="block">
-    <text>{{ text }}\n</text>
-    <button onTap="add">Add line</button>
-    <button type="secondary" onTap="remove">
-      Remove line
-    </button>
-  </view>
-  <view class="block">
-    <text number-of-lines="{{2}}">{{ longText }}</text>
+<view class="page">
+  <view class="text-view">
+    <text>{{text}}</text>
   </view>
 </view>
 ```
 
-```css
-.container {
-  min-height: 100%;
-  background-color: var(--gray20);
-  padding: 16px;
-}
-
-.block {
-  background-color: white;
-  margin: 8px 0;
-  padding: 16px;
-  border-radius: var(--border-radius-rounded-4px);
-}
-
-button {
-  margin-top: 8px;
-  width: 100%;
-}
-```
-
 ```js
-const text = 'This is first line\nThis is second line';
-const extraLine = [];
-const longText =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-
 Page({
   data: {
-    text,
-    longText
+    text: 'Hello Tini App',
   },
-  add: function () {
-    extraLine.push('Other line');
-    this.setData({
-      text: text + '\n' + extraLine.join('\n')
-    });
-  },
-  remove: function () {
-    if (extraLine.length > 0) {
-      extraLine.pop();
-      this.setData({
-        text: text + '\n' + extraLine.join('\n')
-      });
-    }
-  }
-});
+})
 ```
-
-### Chi tiết
-
-| Property        | Type    | Default Value | Description                                                                                    |
-| --------------- | ------- | ------------- | ---------------------------------------------------------------------------------------------- |
-| selectable      | boolean | false         | Cho phép nội dung có thể được chọn hay không, nếu là true thì có thể chọn và sao chép nội dung |
-| number-of-lines | number  | null          | Số dòng tối đa mà nội dung trong text được hiển thị, nếu quá số dòng sẽ hiển thị ... ở cuối    |

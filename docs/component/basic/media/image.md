@@ -2,13 +2,65 @@
 title: image
 ---
 
-## Giới thiệu
+`image` component dùng để hiển thị hình ảnh.
 
-image component để hiển thị hình ảnh
 
-## Sử dụng
+## Thuộc tính
 
-### Sample Code
+| Thuộc tính     | Kiểu dữ liệu | Mô tả                                                                                                                                                                           |
+| -------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| src            | string       | Đường dẫn hoặc base64 của hình.                                                                                                                                                 |
+| class          | string       | Css class                                                                                                                                                                       |
+| style          | string       | Inline style                                                                                                                                                                    |
+| lazy-load      | boolean      | Cho phép lazy load hình                                                                                                                                                         |
+| default-source | string       | Hình mặc định. Hình này sẽ được hiển thị khi hình trong `src` đang trong quá trình load hoặc không load được. Trường hợp hình trong `src` load thất bại, `onError` sẽ được gọi. |
+| mode           | string       | Chế độ hiển thị của hình ảnh. Mặc định là `scaleToFill`. Bạn có thể xem các mode được hỗ trợ bên dưới. Chỉ hỗ trợ version từ 1.76.5 trở lên.                                    |
+| onTap          | event        | Sự kiện được kích hoạt khi người tap vào hình. Chỉ hỗ trợ từ version 1.74.22 trở lên                                                                                            |
+| catchTap       | event        | Sự kiện được khích hoạt khi tap vào image, tuy nhiên event sẽ không bubble lên parent. Chỉ hỗ trợ từ version 1.74.22 trở lên.                                                   |
+| onLoad         | event        | Sự kiện được kích hoạt khi hình được tải về thành công, `event.detail = { width, height }`                                                                                      |
+| onError        | event        | Sự kiện được kích hoạt khi load hình thất bại, `event.detail = { errMsg: 'Error message' }`                                                                                     |
+
+### Mode
+
+Image component có thể hiển thị hình ảnh ở 14 mode khác nhau, gồm 4 scaling mode và 9 clipping mode.
+
+#### Scaling mode
+
+Ở chế độ này, hình được scale (phóng to/thu nhỏ), tỷ lệ khung hình có thể 
+
+| Mode        | Mô tả                                                                                                                                                                                                                                    |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| scaleToFill | Hình được scale sao cho cả chiều rộng và chiều cao vừa khít image component, không băt buộc duy trì tỷ lệ khung hình (aspect ratio)                                                                                                      |
+| aspectFit   | Hình được scale sao cho cạnh dài hơn của nó vừa khít image component mà vẫn duy trì tỷ lệ khung hình.                                                                                                                                    |
+| aspectFill  | Hình được scale sao cho cạnh ngắn hơn của nó vừa với image component mà vẫn duy trì tỷ lệ khung hình. Giả sử hình có chiều cao ngắn hơn chiều rộng, thì phần bên trái và bên phải của hình không được hiển thị bên trong image component |
+| widthFix    | Width của hình sẽ không thay đổi còn height sẽ được tự động (height auto) điều chỉnh cho phù hợp                                                                                                                                         |
+
+### Clipping mode
+Ở chế độ này, kích thước của hình không đổi, chỉ 1 phần của hình được hiển thị nếu chiều cao/chiều rộng của hình lớn hơn component. 
+
+| Mode         | Mô tả                                                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------------- |
+| top          | Phần trên của hình được hiển thị nếu chiều cao của hình lớn hơn chiều cao của image component.        |
+| bottom       | Phần dưới của hình được hiển thị nếu chiều cao của hình lớn hơn chiều cao của image component.        |
+| center       | Phần chính giữa hình được hiển thị nếu kích thước hình lớn hơn kích thước của image component.        |
+| left         | Phần bên trái của hình được hiển thị nếu chiều rộng của hình lớn hơn chiều rộng của image component.  |
+| right        | Phần bên phải của hình được hiển thị nếu chiều rộng của hình lớn hơn chiều rộng của image component.  |
+| top left     | Phần trên bên trái của hình được hiển thị nếu kích thước hình lớn hơn kích thước của image component. |
+| top right    | Phần trên bên phải của hình được hiển thị nếu kích thước hình lớn hơn kích thước của image component. |
+| bottom left  | Phần dưới bên trái của hình được hiển thị nếu kích thước hình lớn hơn kích thước của image component. |
+| bottom right | Phần dưới bên phải của hình được hiển thị nếu kích thước hình lớn hơn kích thước của image component. |
+
+***Lưu ý***
+
+> Bạn cần khai báo `width` và `height` của image component thông qua inline style hoặc trong tcss, mặc định là `width = 300px` và `height = 225px`. Thuộc tính `width` và `height` sẽ không được kế thừa trong image.
+> 
+> Để sử dụng hình với height là auto, bạn có thể dùng mode là `widthFix`.
+> 
+> Nên dùng _absolute path_ cho các đường dẫn của hình.
+> 
+> Không nên dùng thuộc tính `object-fit` trong tcss để canh kích thước cho image mà thay vào đó dùng `mode`.
+
+## Sample Code
 
 **index.txml**
 
@@ -52,54 +104,3 @@ Page({
   height: 100px;
 }
 ```
-
-## Chi tiết
-
-### Các thuộc tính
-
-| Property       | Type    | Description                                                                                                                                                                                                                                                                                            |
-| -------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| src            | string  | Đường dẫn hoặc data base 64 của hình ảnh.                                                                                                                                                                                                                                                              |
-| class          | string  | Css class                                                                                                                                                                                                                                                                                              |
-| style          | string  | Inline style                                                                                                                                                                                                                                                                                           |
-| lazy-load      | boolean | Hỗ trợ lazy load hình ảnh                                                                                                                                                                                                                                                                              |
-| default-source | string  | Hình ảnh mặc định. Nếu giá trị được thiết lập, hình ảnh trong `default-source` sẽ được hiển thị trước, sau đó sẽ hiển thị hình ảnh trong `src` sau khi đã được tải thành công. Ngoài ra, hình ảnh này còn được dùng khi hình ảnh không load được (Khi đó `onError` sẽ được gọi)                        |
-| mode           | string  | Chế độ hiển thị của hình ảnh. Mặc định là `scaleToFill`. Bạn có thể xem các mode được hỗ trợ bên dưới. Chỉ hỗ trợ version từ 1.76.5 trở lên |
-| onTap          | event   | Sự kiện được gọi khi tap vào image. Chỉ hỗ trợ version >= 1.74.22                                                                                                                                                                                                                                      |
-| catchTap       | event   | Sự kiện được gọi khi tap vào image, tuy nhiên event sẽ không buble lên parent. Chỉ hỗ trợ version >= 1.74.22                                                                                                                                                                                           |
-| onLoad         | event   | Sự kiện được gọi khi hình ảnh được tải về thành công, `event.detail = { width, height }`                                                                                                                                                                                                               |
-| onError        | event   | Sự kiện được gọi khi hình ảnh tải về thất bại, `event.detail = { errMsg: 'Error message' }`                                                                                                                                                                                                            |
-
-### Mode
-
-Có 14 mode trong thẻ image, trong đó có 4 scale mode và 9 clipping mode
-
-#### Scale mode
-
-| Mode        | Description                                                                                                                                                             |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| scaleToFill | Hình sẽ được tự động scale width và height để lấp đầy phần tử chứa mà không thay đổi aspect ratio (tỷ lệ khung ảnh)                                                     |
-| aspectFit   | Hình được hiển thị đầy đủ mà không thay đổi tỷ lệ, trong đó phần dài nhất của hình ảnh sẽ được lấp đầy và đảm bảo là hình ảnh được hiển thị đầy đủ                      |
-| aspectFill  | Hình được scale sao cho vừa với phía cạnh ngắn hơn của hình, nghĩa là phía ngắn hơn sẽ được tự động scale để hiển thị cho vừa, tuy nhiên phía còn lại có thể bị cắt mất |
-| widthFix    | Width của hình sẽ không thay đổi còn height sẽ được tự động (height auto) điều chỉnh cho phù hợp                                                                        |
-
-#### Clipping mode
-
-| Mode         | Description                                                          |
-| ------------ | -------------------------------------------------------------------- |
-| top          | Chỉ phần trên cùng của hình được hiển thị mà không bị scale          |
-| bottom       | Chỉ phần dưới cùng của hình được hiển thị mà không bị scale          |
-| center       | Chỉ phần giữa của hình được hiển thị mà không bị scale               |
-| left         | Chỉ phần bên trái của hình được hiển thị mà không bị scale           |
-| right        | Chỉ phần bên phải của hình được hiển thị mà không bị scale           |
-| top left     | Chỉ phần trên cùng bê trái của hình được hiển thị mà không bị scale  |
-| top right    | Chỉ phần trên cùng bên phải của hình được hiển thị mà không bị scale |
-| bottom left  | Chỉ phần dưới cùng bên trái của hình được hiển thị mà không bị scale |
-| bottom right | Chỉ phần dưới cùng bên phải của hình được hiển thị mà không bị scale |
-
-## Lưu ý
-
-- Bạn cần khai báo width và height của image thông qua inline style hoặc trong tcss, mặc định là width = `300px` và height = `225px`. Thuộc tính width và height sẽ không được kế thừa trong image
-- Để sử dụng image với height là auto, bạn có thể dùng mode là `widthFix`
-- Nên dùng _absolute path_ cho các đường dẫn của image
-- Không nên dùng thuộc tính object-fit trong tcss để canh size của image mà dùng `mode`

@@ -2,13 +2,23 @@
 title: my.saveImage
 ---
 
-## Giới thiệu
+**my.saveImage** là API dùng để lưu 1 remote image vào gallery của thiết bị di động.
 
-**my.saveImage** là API dùng để lưu 1 remote Image vào gallery của device
+## API Params
 
-## Sử dụng
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                     |
+| ---------- | ------------ | :------: | ----------------------------------------------------------------------------------------- |
+| url        | string       |    ✓     | Đường dẫn của remote image.                                                               |  |
+| success    | Function     |          | Callback function khi save hình ảnh thành công                                            |
+| fail       | Function     |          | Callback function khi save image bất thành                                                |
+| complete   | Function     |          | Callback function khi gọi API hoàn tất bất kể việc save hình ảnh thành công hay thất bại. |
+ 
+**Lưu ý**: 
 
-### Sample Code
+- Image sẽ được lưu vào album `Tiki-Miniapp`.
+- Không hỗ trợ đường dẫn base64.
+
+## Sample Code
 
 ```xml
 <view>
@@ -46,18 +56,3 @@ Page({
   },
 });
 ```
-
-### API Params
-
-Các thuộc tính:
-
-| Attributes | Type             | Required | Description                                                                    |
-| ---------- | --------         | -------- | ------------------------------------------------------------------------------ |
-| url  | String      | Yes      |  Đường dẫn của remote image.                                   |                                 |
-| success    | Function         | No       | Callback function khi save image được thực hiện thành công                     |
-| fail       | Function         | No       | Callback function khi save image thất bại                                      |
-| complete   | Function         | No       | Callback function khi việc save image kết thúc cho dù thành công hay thất bại. |
- 
-**Lưu ý**: 
-* Image sẽ được lưu vào album `Tiki-Miniapp`
-* Không support đường dẫn base64

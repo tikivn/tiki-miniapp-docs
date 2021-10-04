@@ -124,6 +124,42 @@ export default {
     [
       {
         type: 'color',
+        text: 'icon-button-neutral-solid-default-day',
+        value: '#808089',
+      },
+      {
+        type: 'color',
+        text: 'gray60',
+        value: '#808089',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'icon-button-neutral-outlined-default-day',
+        value: '#808089',
+      },
+      {
+        type: 'color',
+        text: 'gray60',
+        value: '#808089',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'icon-button-neutral-ghost-default-day',
+        value: '#808089',
+      },
+      {
+        type: 'color',
+        text: 'gray60',
+        value: '#808089',
+      },
+    ],
+    [
+      {
+        type: 'color',
         text: 'icon-content-secondary',
         value: '#27272A',
       },

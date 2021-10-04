@@ -2,13 +2,42 @@
 title: my.getImageInfo
 ---
 
-## Giới thiệu
+**my.getImageInfo** là API dùng để lấy thông tin của 1 ảnh (image). Ảnh có thể từ remote, từ đường dẫn cục bộ hoặc từ resources của app.
 
-**my.getImageInfo** là API dùng để lấy thông tin của 1 image. Image có thể là từ remote, từ đường dẫn local hoặc từ resource của app.
+## API Params
 
-## Sử dụng
+| Thuộc tính | Kiểu dữ liệu | Băt buộc | Mô tả                                                                                         |
+| ---------- | ------------ | -------- | --------------------------------------------------------------------------------------------- |
+| src        | string       | ✓        | Đường dẫn của ảnh. Hỗ trợ remote URL, đường dẫn tương đối, đường dẫn từ resources của app.    |
+| success    | Function     |          | Callback function khi lấy thông tin ảnh thành công                                            |
+| fail       | Function     |          | Callback function khi lấy thông tin ảnh bất thành                                             |
+| complete   | Function     |          | Callback function khi gọi API hoàn tất bất kể việc lấy thông tin ảnh thành công hay thất bại. |
 
-### Sample Code
+### Success function payload
+
+| Thuộc tính  | Kiểu dữ liệu | Mô tả                             |
+| ----------- | ------------ | --------------------------------- |
+| width       | number       | Chiều rộng của ảnh                |
+| height      | number       | Chiều cao của ảnh                 |
+| orientation | string       | Orientation của ảnh               |
+| path        | string       | Đường dẫn cục bộ của ảnh          |
+| type        | string       | Định dạng của ảnh, ví dụ jpg, png |
+
+### Orientation type
+
+| Kiểu           | Mô tả                                 |
+| -------------- | ------------------------------------- |
+| up             | Mặc định                              |
+| down           | Xoay 180°                             |
+| left           | Xoay 90° ngược chiều kim đồng hồ      |
+| right          | Xoay 90° theo chiều kim đồng hồ       |
+| up-mirrored    | Giống up nhưng lật theo chiều ngang   |
+| down-mirrored  | Giống down nhưng lật theo chiều ngang |
+| left-mirrored  | Giống left nhưng lật theo chiều dọc   |
+| right-mirrored | Giống right nhưng lật theo chiều dọc  |
+
+
+## Sample Code
 
 ```xml
 <view>
@@ -71,35 +100,33 @@ Page({
 });
 ```
 
-### API Params
+## API Params
 
-Các thuộc tính:
-
-| Attributes | Type     | Required | Description                                                                                        |
-| ---------- | -------- | -------- | -------------------------------------------------------------------------------------------------- |
-| src        | String   | Yes      | Đường dẫn của image. Support remote url, đường dẫn tương đối, đường dẫn image từ resources của app |
-| success    | Function | No       | Callback function khi lấy thông tin image được thực hiện thành công                                |
-| fail       | Function | No       | Callback function khi lấy thông tin image thất bại                                                 |
-| complete   | Function | No       | Callback function khi việc lấy thông tin image kết thúc cho dù thành công hay thất bại.            |
+| Thuộc tính | Kiểu dữ liệu | Băt buộc | Mô tả                                                                                         |
+| ---------- | ------------ | -------- | --------------------------------------------------------------------------------------------- |
+| src        | string       | ✓        | Đường dẫn của ảnh. Hỗ trợ remote URL, đường dẫn tương đối, đường dẫn từ resources của app.    |
+| success    | Function     |          | Callback function khi lấy thông tin ảnh thành công                                            |
+| fail       | Function     |          | Callback function khi lấy thông tin ảnh bất thành                                             |
+| complete   | Function     |          | Callback function khi gọi API hoàn tất bất kể việc lấy thông tin ảnh thành công hay thất bại. |
 
 ### Success function payload
 
-| Attributes  | Type   | Description                        |
-| ----------- | ------ | ---------------------------------- |
-| width       | Number | Chiều rộng của image               |
-| height      | Number | Chiều cao của image                |
-| orientation | String | Orientation của image              |
-| path        | String | Đường dẫn local của image          |
-| type        | String | Định dạng của image ví dụ jpg, png |
+| Thuộc tính  | Kiểu dữ liệu | Mô tả                             |
+| ----------- | ------------ | --------------------------------- |
+| width       | number       | Chiều rộng của ảnh                |
+| height      | number       | Chiều cao của ảnh                 |
+| orientation | string       | Orientation của ảnh               |
+| path        | string       | Đường dẫn cục bộ của ảnh          |
+| type        | string       | Định dạng của ảnh, ví dụ jpg, png |
 
 ### Orientation type
 
-| Level          | Description                           |
+| Kiểu           | Mô tả                                 |
 | -------------- | ------------------------------------- |
-| up             | default                               |
-| down           | Xoay 180 độ                           |
-| left           | Xoay 90 ngược chiều kim đồng hồ       |
-| right          | xoay 90 độ theo chiều kim đồng hồ     |
+| up             | Mặc định                              |
+| down           | Xoay 180°                             |
+| left           | Xoay 90° ngược chiều kim đồng hồ      |
+| right          | Xoay 90° theo chiều kim đồng hồ       |
 | up-mirrored    | Giống up nhưng lật theo chiều ngang   |
 | down-mirrored  | Giống down nhưng lật theo chiều ngang |
 | left-mirrored  | Giống left nhưng lật theo chiều dọc   |

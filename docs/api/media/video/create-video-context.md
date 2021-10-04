@@ -4,11 +4,9 @@ title: my.createVideoContext
 
 ## Giới thiệu
 
-**my.createVideoContext** là API dùng để quản lý [Video](/docs/component/media/video) component.
+**my.createVideoContext** là API dùng để tạo ra VideoContext - đối tuợng quản lý việc phát video. Cụ thể hơn, nó cung cấp các hàm giúp điều khiển [Video](/docs/component/media/video) component.
 
-## Sử dụng
-
-### Sample Code
+## Sample Code
 
 ```xml
 <video
@@ -40,8 +38,8 @@ Page({
 Trả về Video Context Object với hỗ trợ thuộc tính và methods theo như bên dưới.
 
 ### Video Context Methods
-| Method | params   | Description                                           |
-| ------ | -------- | ----------------------------------------------------- |
-| play   | no       | Dùng để play nội dung.                                |
-| pause  | no       | Dùng để dừng nội dung đang được phát.                 |
-| seek   | position | Dùng để nhảy tới vị trí theo thời gian trên nội dung. |
+| Phương thức | Tham số  | Mô tả                                                                 |
+| ----------- | -------- | --------------------------------------------------------------------- |
+| play        | no       | Phát video.                                                           |
+| pause       | no       | Dừng phát video. Nếu phát tiếp, sẽ bắt đầu từ thời điểm bị tam ngưng. |
+| seek        | position | Nhảy đến một thời điểm cụ thể trong audio.                            |

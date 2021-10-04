@@ -124,6 +124,42 @@ export default {
     [
       {
         type: 'color',
+        text: 'border-button-neutral-default-day',
+        value: '#000000',
+      },
+      {
+        type: 'color',
+        text: 'black 16%',
+        value: '#000000',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'border-button-neutral-hover-day',
+        value: '#000000',
+      },
+      {
+        type: 'color',
+        text: 'black 24%',
+        value: '#000000',
+      },
+    ],
+    [
+      {
+        type: 'color',
+        text: 'border-button-neutral-active-day',
+        value: '#000000',
+      },
+      {
+        type: 'color',
+        text: 'black 32%',
+        value: '#000000',
+      },
+    ],
+    [
+      {
+        type: 'color',
         text: 'border-button-default',
         value: '#1A94FF',
       },

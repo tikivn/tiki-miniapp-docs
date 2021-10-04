@@ -2,13 +2,26 @@
 title: video
 ---
 
-## Giới thiệu
+`video` là component cho phép người dùng phát video trên Tini App. Bạn có thể điều khiển component này thông qua [my.createVideoContext](/docs/api/media/create-video-context) api.
 
-`video` là component cho phép người dùng có thể play nội dung hình ảnh trên tini-app. Bạn có thể tham khảo thêm api liên quan [my.createVideoContext](/docs/api/media/create-video-context).
+## Thuộc tính
 
-## Sử dụng
+| Thuộc tính   | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                                                                       |
+| ------------ | ------------ | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| src          | string       |                  | Đường dẫn tới tập tin video.                                                                                                                                |
+| loop         | boolean      | false            | Tự động phát lại video một khi kết thúc.                                                                                                                    |
+| autoplay     | boolean      | false            | Tự động phát video.                                                                                                                                         |
+| controls     | boolean      | true             | Hiển thị hay ẩn thanh điều khiển video  (nút play/pause, playback progress bar, ...) của video player.                                                      |
+| object-fit   | string       | contain          | Quy định cách thức điều chỉnh kích cỡ video sao cho vừa vặn video container. Nhận các giá trị [fill  \|\| contain  \|\| cover \|\| none \|\| scale down ] . |
+| plays-inline | boolean      | false            | Phát video ở chế độ nội tuyến (inline) hay chế độ toàn màn hình (fullscreen)                                                                                |
+| poster       | string       |                  | Ảnh đại diện cho video trước khi video được phát.                                                                                                           |
+| onPlay       | event        |                  | Sự kiện được kích hoạt khi video bắt đầu được phát hoặc được phát  tiếp sau khi tạm dừng                                                                    |
+| onPause      | event        |                  | Sự kiện được kích hoạt khi video bị tạm dừng.                                                                                                               |
+| onEnded      | event        |                  | Sự kiện được kích hoạt khi video được phát đến hết.                                                                                                         |
+| onTimeUpdate | event        |                  | Sự kiện được kích hoạt khi thời điểm hiện tại của video thay đổi.                                                                                           |
+| onError      | event        |                  | Sự kiện được khích hoạt khi lỗi phát sinh trong lúc phát audio. `event.detail = { errMsg: 'MEDIA_ERR_NETWORK' }`.                                           |
 
-### Sample Code
+## Sample Code
 
 **index.txml**
 
@@ -37,20 +50,3 @@ Page({
 })
 ```
 
-## Chi tiết
-### Các thuộc tính
-
-| Property     | Type    | Description                                                                                                                                                                        |
-| ------------ | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| src          | string  | Đường dẫn tới nội dung hình ảnh.                                                                                                                                                   |
-| loop         | boolean | Khi được chỉ định, video player sẽ tự động phát lại khi phát tới cuối nội dung.                                                                                                    |
-| autoplay     | boolean | Khi được chỉ định, video player sẽ tự động phát.                                                                                                                                   |
-| controls     | boolean | Cho phép tuỳ chỉnh sử dụng hay không sử dụng controls mặc định củas Video Player.                                                                                                  |
-| object-fit   | string  | Cách thể hiện của video khi kích thước của video khác với video container. Các giá trị bao gồm: 'fill', 'contain', 'cover', 'none' và 'scale-down'. Giá trị mặc định là 'contain'. |
-| plays-inline | boolean | Mặc định video sẽ được mở fullscreen khi phát, quy định thuộc tính này cho phép phát video tại chỗ.                                                                                |
-| poster       | string  | Hình đại diện của video trước khi nội dung được load.                                                                                                                              |
-| onPlay       | event   | Sự kiện được gọi khi nội dung bắt được được play.                                                                                                                                  |
-| onPause      | event   | Sự kiện được gọi khi nội dung được tạm dừng.                                                                                                                                       |
-| onEnded      | event   | Sự kiện được gọi khi nội dung kết thúc.                                                                                                                                            |
-| onTimeUpdate | event   | Sự kiện được gọi để cập nhật vị trí hiện tại của nội dung theo thời gian.                                                                                                          |
-| onError      | event   | Sự kiện được gọi khi có lỗi khi play nội dung. `event.detail = { errMsg: 'MEDIA_ERR_NETWORK' }`                                                                                    |

@@ -1,6 +1,7 @@
 ---
 title: carousel
 ---
+<img src="/img/Carousel.png" width="600px" alt="DevTools" style={{ margin: '0 auto', display: 'flex' }}/>
 
 Thử tưởng tượng bạn phải hiển thị hàng tá hình ảnh trong một không gian hạn chế. Nếu chọn cách hiển thị tất cả cùng một lúc thì mỗi hình chỉ còn kích thước bé tí, khó lòng thu hút sự chú ý của người dùng. Thậm chí hình ảnh chi chít có thể khiến người ta rối mắt. 
 
@@ -34,6 +35,8 @@ Thẻ `<carousel-item>` định nghĩa item (phần tử) của carousel đó. `
 <div align="center"> ---oOo--- </div>
 
 ### Indicator dots: 
+
+<img src="/img/Carousel_Dot_Indicator.png" width="300px" alt="DevTools" style={{ margin: '0 auto', display: 'flex' }}/>
 
 Một dãy các chấm tròn mà mỗi chấm đại diện cho một item trên carousel. Nó cho bạn biết có bao nhiêu item hết thảy trên carousel, item nào đang active; cho phép bạn nhảy đến một item bất kỳ mà ko phải trượt qua từng item trung gian.
 

@@ -87,15 +87,17 @@ các thuộc tính title, và buttonTitle
 
 #### Props Reference
 
-| Property       | Type    | Required | Default value  | Description                                      |
-| -------------- | ------- | -------- | -------------- | ------------------------------------------------ |
-| title          | string  | no       | 'Bottom sheet' | header title                                     |
-| buttonTitle    | string  | no       | 'OK'           | title của footer button                          |
-| mark           | boolean | no       | true           | Giống thuộc tính mark của popup                  |
-| animation      | boolean | no       | true           | Giống thuộc tính animation của popup             |
-| show           | boolean | no       | true           | Giống thuộc tính show của popup                  |
-| disableScroll  | boolean | no       | false          | Giống thuộc tính disableScroll của popup         |
-| zIndex         | number  | no       | 2              | Giống thuộc tính zIndex của popup                |
-| disableFromTop | number  | no       | 50             | Khoảng cách từ navigation title tới bottom sheet |
-| onClose        | event   | no       | no             | Xử lý sự kiện close bottom sheet                 |
-| onClick        | event   | no       | no             | Xử lý sự kiện click vào button ở footer          |
+| Property       | Type                                  | Required | Default value  | Description                                                 |
+| -------------- | ------------------------------------- | -------- | -------------- | ----------------------------------------------------------- |
+| title          | string                                | no       | 'Bottom sheet' | header title                                                |
+| buttonTitle    | string                                | no       | 'OK'           | title của footer button                                     |
+| buttonShape    | 'pill', 'rounded', 'circle', 'square' | no       | 'rounded'      | shape của footer button. Hỗ trợ từ version 0.2.1-rc trở lên |
+| buttonCls      | string                                | no       | ''             | class của footer button. Hỗ trợ từ version 0.2.1-rc trở lên |
+| mark           | boolean                               | no       | true           | Giống thuộc tính mark của popup                             |
+| animation      | boolean                               | no       | true           | Giống thuộc tính animation của popup                        |
+| show           | boolean                               | no       | true           | Giống thuộc tính show của popup                             |
+| disableScroll  | boolean                               | no       | false          | Giống thuộc tính disableScroll của popup                    |
+| zIndex         | number                                | no       | 2              | Giống thuộc tính zIndex của popup                           |
+| disableFromTop | number                                | no       | 50             | Khoảng cách từ navigation title tới bottom sheet            |
+| onClose        | event                                 | no       | no             | Xử lý sự kiện close bottom sheet                            |
+| onClick        | event                                 | no       | no             | Xử lý sự kiện click vào button ở footer                     |

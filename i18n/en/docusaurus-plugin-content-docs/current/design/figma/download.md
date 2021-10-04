@@ -3,6 +3,18 @@ order: 51
 category: Design resources
 title: Download here
 ---
+### v1.3
+September 30th, 2021 <br/>
+How's your September? Saigon is recovering, and the city plans to resume activities from October 1st. <br/>
+This month, the Tini team focused on delivering the new [Food & Beverage template](https://www.figma.com/community/file/1025657656395537576/Tini---Food-%26-Beverage-Template), so our design system has some improvements for the inside structure of the Table, Date field, and List view. Some minor changes for Social post components, and rename Error, Success color token to Negative & Positive color token for more usages. <br/>
+That's it for September. See ya next month!!!
+
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
+
+
 ### v1.2
 August 31st, 2021 <br/>
 As I said last month, we have a new member, and he brings lots of awesome components, improvements to our design system <br />
@@ -23,8 +35,6 @@ Social components
 - Comment<br />
 “One more thing!”, Based on those Tini components, [the Shopping template for the Tini Apps here](https://www.figma.com/community/file/999527987953700182/Tini---Shopping-Template) and will update this template monthly, included more templates in the future for more business models. Take a look and try it ;)
 Wake me up when September ends!!!
-
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 ---
