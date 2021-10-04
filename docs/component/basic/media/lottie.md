@@ -2,8 +2,9 @@
 title: lottie
 ---
 
-- Lottie là thư viện cho phép chạy các hoạt ảnh kết xuất từ After Effects và có thể chạy trên ứng dụng mobile và web. Bạn có thể hiểu thêm về lottie [tại đây](https://airbnb.io/lottie)
-- Bạn có thể sử dụng lottie component cùng với [my.createLottieContext](/docs/api/media/create-lottie-context)
+Lottie là thư viện cho phép chạy các hoạt ảnh kết xuất từ After Effects và có thể chạy trên ứng dụng mobile và web. Bạn có thể điều khiển lottie component thông qua [my.createLottieContext](/docs/api/media/create-lottie-context) api.
+
+Để hiểu thêm về lottie, vui lòng tham khảo https://airbnb.io/lottie.
 
 **Khả dụng**: Lottie component chỉ hỗ trợ từ phiên bản 17.5.2 trở lên
 
@@ -17,7 +18,7 @@ title: lottie
 | onComplete     | event        | Sự kiện được gọi khi việc phát animation kết thúc, không tính phần loop.                                                                                  |
 | onDataFailed   | event        | Sự kiện được kích hoạt khi load animation thất bại.                                                                                                       |
 | onDataReady    | event        | Sự kiện được kích hoạt khi animation được load xong.                                                                                                      |
-| onLoopComplete | event        | Animation đuợc phát lần đầu tiên. Nó tiếp tục được phát lại (loop) lần 1, 2, 3 ... Ngay khi loop lần 1 kêt thúc, sự kiện onLoopComplete sẽ đuợc kích hoạt |
+| onLoopComplete | event        | Animation đuợc phát lần đầu tiên. Nó tiếp tục được phát lại (loop) lần 1, 2, 3 ... Ngay khi loop lần 1 kết thúc, sự kiện onLoopComplete sẽ đuợc kích hoạt |
 
 ***Lưu ý***: Nếu gặp trường hợp lottie không hiển thị, bạn có thể kiểm tra nội dung của file lottie [tại đây](https://lottiefiles.com/preview)
 

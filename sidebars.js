@@ -17,6 +17,16 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Tích hợp luồng thanh toán',
+      collapsed: false,
+      items: [
+        'developer/payment-flow/overview',
+        'developer/payment-flow/create-sku',
+        'developer/payment-flow/payment-feature-request',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Ví dụ mẫu',
       collapsed: false,
       items: [

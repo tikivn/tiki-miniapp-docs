@@ -2,13 +2,20 @@
 title: progress
 ---
 
-## Giới thiệu
+Progress bar (thanh tiến trình).
 
-Thanh tiến trình
+## Thuộc tính
 
-## Sử dụng
+| Thuộc tính       | Kiểu dữ liệu | Giá trị mặc định               | Mô tả                                                                    |
+| ---------------- | ------------ | ------------------------------ | ------------------------------------------------------------------------ |
+| percent          | number       | 0                              | Hiển thị đoạn active đạt bao nhiêu phần trăm. Nhận giá trị từ 0 tới 100. |
+| show-info        | boolean      | false                          | Hiển thị con số phần trăm ở bên phải thanh progress bar.                 |
+| stroke-width     | number       | 4                              | Độ dày đuờng viên của progress bar.                                      |
+| active-color     | string       | --brand                        | Màu của đoạn active.                                                     |
+| background-color | string       | --background-progress-inactive | Màu của toàn bộ thanh progress.                                          |
+| active           | boolean      | false                          | Sử dụng animation cho thanh progress.                                    |
 
-### Sample Code
+## Sample Code
 
 **index.txml**
 
@@ -58,13 +65,5 @@ Page({
 });
 ```
 
-### Chi tiết
 
-| Property         | Type    | Default Value                  | Required | Description                                       |
-| ---------------- | ------- | ------------------------------ | -------- | ------------------------------------------------- |
-| percent          | number  | 0                              | Không    | Hiển thị phần trăm progress. Giá trị từ 0 tới 100 |
-| show-info        | boolean | false                          | Không    | Hiển thị phần trăm ở bên phải thanh progress      |
-| stroke-width     | number  | 4                              | Không    | Kích thước thanh progress                         |
-| active-color     | string  | --brand                        | Không    | Màu của thanh phần trăm hiển thị                  |
-| background-color | string  | --background-progress-inactive | Không    | Màu của toàn bộ thanh progress                    |
-| active           | boolean | false                          | Không    | Sử dụng animation cho thanh progress              |
+
