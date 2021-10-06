@@ -1,5 +1,6 @@
 import './index.scss';
 import React from 'react';
+import Head from '@docusaurus/Head';
 
 import Layout from '@theme/Layout';
 import LogoLabel from '@site/static/tini-studio-label.svg';
@@ -11,6 +12,18 @@ import Code from '@site/static/IDE-code.svg';
 import Simulator from '@site/static/IDE-simulation.svg';
 import Manage from '@site/static/IDE-manage.svg';
 
+const DownloadSEO = () => {
+  return (
+    <Head>
+      <title>Download the latest version of Tini Studio</title>
+      <meta
+        property="og:description"
+        content="Tini Studio, còn có tên khác là Tiki IDE, là bộ phần mềm phát triển ứng dụng trên nền tảng Tini App. Nó sở hữu tập hợp các công cụ: quản lý dự án, code editor (trình viết code), debug (gỡ lỗi), trình giả lập và tải mã nguồn của dự án lên Tiki Dev Center."
+      />
+      <meta property="og:title" content="Downloads Tini Studio" />
+    </Head>
+  );
+};
 const Download = () => {
   const [version, setVersion] = React.useState({
     stable: '',
@@ -74,39 +87,42 @@ const Download = () => {
   }, []);
 
   return (
-    <Layout>
-      <div
-        style={{
-          background:
-            'linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 100%)',
-          marginBottom: 40,
-        }}>
-        <div style={{marginTop: 40}}>
-          <Banner version={version.stable} />
+    <>
+      <DownloadSEO />
+      <Layout>
+        <div
+          style={{
+            background:
+              'linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 100%)',
+            marginBottom: 40,
+          }}>
+          <div style={{marginTop: 40}}>
+            <Banner version={version.stable} />
+          </div>
+          <div
+            className="flex fr jc-center"
+            style={{padding: 8, paddingBottom: 40, marginTop: 24}}>
+            <DownloadLinks style={{marginRight: 32}} link={version.win}>
+              <Win style={{marginRight: 16}} />
+              <span className="download-label">Windows</span>
+            </DownloadLinks>
+            <DownloadLinks link={version.mac}>
+              <Apple style={{marginRight: 16}} />
+              <span className="download-label">MacOS</span>
+            </DownloadLinks>
+          </div>
         </div>
         <div
-          className="flex fr jc-center"
-          style={{padding: 8, paddingBottom: 40, marginTop: 24}}>
-          <DownloadLinks style={{marginRight: 32}} link={version.win}>
-            <Win style={{marginRight: 16}} />
-            <span className="download-label">Windows</span>
-          </DownloadLinks>
-          <DownloadLinks link={version.mac}>
-            <Apple style={{marginRight: 16}} />
-            <span className="download-label">MacOS</span>
-          </DownloadLinks>
+          style={{backgroundColor: '#fff', width: '100%'}}
+          className="flex fc ai-center">
+          {features.map((props, idx) => (
+            <div style={{marginBottom: 40}}>
+              <Feature {...props} key={`feature-${idx}`} />
+            </div>
+          ))}
         </div>
-      </div>
-      <div
-        style={{backgroundColor: '#fff', width: '100%'}}
-        className="flex fc ai-center">
-        {features.map((props, idx) => (
-          <div style={{marginBottom: 40}}>
-            <Feature {...props} key={`feature-${idx}`} />
-          </div>
-        ))}
-      </div>
-    </Layout>
+      </Layout>
+    </>
   );
 };
 const Feature = ({description, link, thumbnail, header}) => {
