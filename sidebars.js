@@ -151,6 +151,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Basic components',
+      collapsed: false,
       items: [
         {
           type: 'category',
@@ -217,6 +218,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Advanced components',
+      collapsed: false,
       items: [
         'component/advance/introduce',
         {
@@ -675,6 +677,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Open API',
+      collapsed: false,
       items: [
         'backend-api/open-api/overview',
         'backend-api/open-api/user-profile',
@@ -683,6 +686,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Platform API',
+      collapsed: false,
       items: [
         'backend-api/platform-api/overview',
         'backend-api/platform-api/sandbox',
@@ -724,6 +728,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Backend với GCP',
+      collapsed: false,
       items: [
         'backend-api/gcp-sponsor/intro',
         'backend-api/gcp-sponsor/auth-backend',
