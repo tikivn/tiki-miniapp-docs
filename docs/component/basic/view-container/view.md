@@ -2,13 +2,28 @@
 title: view
 ---
 
-## Giới thiệu
+Thẻ `view` là một container component dùng để chứa các component khác, có chức năng tự với thẻ `div` trong HTML. 
 
-Tương tự như thể div của HTMLElement, thẻ view là thành phần container dùng để chứa các thành phần khác. Thẻ view sẽ không tác động gì trình bày của các thành phần con đến khi nó được style bằng thuộc tính style hoặc tcss.
+## Thuộc tính
 
-## Sử dụng
+| Thuộc tính           | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                   |
+| -------------------- | ------------ | ---------------- | ------------------------------------------------------------------------------------------------------- |
+| hidden               | boolean      | false            | Ẩn đi hay hiển thị thẻ view.                                                                            |
+| class                | string       | null             | custom class cho thẻ view                                                                               |
+| style                | string       | null             | custom style cho thẻ view                                                                               |
+| animation            | object       | {}               | Dùng để điều khiển animation của thẻ view. Xem thêm [my.createAnimation](api/ui/animation/animation.md) |
+| onTap                | Event        |                  | Sự kiện được kích hoạt khi người dùng tap vào vùng hiển thị của thẻ view.                               |
+| onTouchStart         | Event        |                  | Sự kiện được kích hoạt khi người dùng touch vào vùng hiển thị của thẻ view.                             |
+| onTouchMove          | Event        |                  | Sự kiện được kích hoạt khi người dùng di chuyển ngón tay trên màn hình sau hành động touch.             |
+| onTouchEnd           | Event        |                  | Sự kiện được kích hoạt khi người dùng rút ngón tay ra khỏi màn hình.                                    |
+| onTouchCancel        | Event        |                  | Sự kiện được kích hoạt khi touch bị gián đoạn; ví dụ có cuộc gọi hoặc popup hiển thị.                   |
+| onLongTap            | Event        |                  | Sự kiện được kích hoạt khi người tap vào vùng hiển thị của thẻ view và giữ lâu hơn 500ms.               |
+| onTransitionEnd      | Event        |                  | Sự kiện được kích hoạt khi hoàn thành một CSS Transition.                                               |
+| onAnimationStart     | Event        |                  | Sự kiện được kích hoạt khi bắt đầu một CSS Animation.                                                   |
+| onAnimationEnd       | Event        |                  | Sự kiện được kích hoạt khi kết thúc một CSS Animation.                                                  |
+| onAnimationIteration | Event        |                  | Sự kiện được kích hoạt mỗi lần kết thúc một vòng lặp CSS Animation.                                     |
 
-### Sample Code
+## Sample Code
 
 **index.txml**
 
@@ -27,21 +42,3 @@ Tương tự như thể div của HTMLElement, thẻ view là thành phần cont
 }
 ```
 
-### Chi tiết
-
-| Property             | Type        | Default Value | Description                                                                                                    |
-| -------------------- | ----------- | ------------- | -------------------------------------------------------------------------------------------------------------- |
-| hidden               | boolean     | false         | Hiện thị hay không thẻ view.                                                                                   |
-| class                | string      | null          | custom class cho thẻ view                                                                                      |
-| style                | string      | null          | custom style cho thẻ view                                                                                      |
-| animation            | object      | {}            | Dùng để kiểm soát animation của thẻ view - chi tiết xem [my.createAnimation](/docs/api/interactive/animation). |
-| onTap                | EventHandle | undefined     | Khi có sự kiện touch vào vùng hiển thị của thẻ view.                                                           |
-| onTouchStart         | EventHandle | undefined     | Khi có sự kiện touch vào vùng hiển thị của thẻ view.                                                           |
-| onTouchMove          | EventHandle | undefined     | Khi có sự di chuyển sau khi touch.                                                                             |
-| onTouchEnd           | EventHandle | undefined     | Khi có sự kiện kết thúc di chuyển.                                                                             |
-| onTouchCancel        | EventHandle | undefined     | Khi sự kiện touch bị đứt quãng (ví dụ như có điện thoại, có popup hiển thị).                                   |
-| onLongTap            | EventHandle | undefined     | Sự kiện được trigger khi giữ nhấn trên màn hình lâu hơn 500ms.                                                 |
-| onTransitionEnd      | EventHandle | undefined     | Sự kiện được trigger sau khi hoàn thành 1 CSS Transition.                                                      |
-| onAnimationStart     | EventHandle | undefined     | Sự kiện được trigger khi bắt đầu CSS Animation.                                                                |
-| onAnimationEnd       | EventHandle | undefined     | Sự kiện được trigger khi kết thúc CSS Animation.                                                               |
-| onAnimationIteration | EventHandle | undefined     | Sự kiện được trigger khi kết thúc 1 vòng lặp CSS Animation.                                                    |
