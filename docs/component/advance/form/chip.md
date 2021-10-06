@@ -56,9 +56,9 @@ $> yarn add @tiki.vn/tini-ui
     <chip class="mt-medium" content="Default" suffixIcon="close_glyph" />
     <chip class="mt-medium" content="Hover" suffixIcon="close_glyph" />
     <chip class="mt-medium" content="Disabled" suffixIcon="close_glyph" iconRightColor="#A6A6B0" disabled="{{true}}" />
-    <chip class="mt-medium" content="Active" suffixIcon="close_glyph" mode="secondary" />
-    <chip class="mt-medium" content="Active hover" suffixIcon="close_glyph" mode="secondary" />
-    <chip class="mt-medium" content="Active disabled" suffixIcon="close_glyph" mode="secondary" disabled="{{true}}"
+    <chip class="mt-medium" content="Active" suffixIcon="close_glyph" active="{{true}}" />
+    <chip class="mt-medium" content="Active hover" suffixIcon="close_glyph" active="{{true}}" />
+    <chip class="mt-medium" content="Active disabled" suffixIcon="close_glyph" active="{{true}}" disabled="{{true}}"
       iconRightColor="#A6A6B0" />
   </block-variant>
 </template>
@@ -88,17 +88,19 @@ Page({
 
 ### Chi tiết
 
-| Property     | Type                         | Default Value | Description                                                 |
-| ------------ | ---------------------------- | ------------- | ----------------------------------------------------------- |
-| className    | string                       | ''            | Custom class cho chip                                       |
-| style        | string                       | ''            | Style cho chip                                              |
-| content      | string                       | ''            | Text content của chip                                       |
-| mode         | `'primary'` \| `'secondary'` | 'primary'     | Mode của chip                                               |
-| suffixIcon   | string                       | ''            | suffixIcon của chip                                         |
-| suffixImage  | string                       | ''            | suffixImage của chip                                        |
-| prefixIcon   | string                       | ''            | prefixIcon của chip                                         |
-| prefixIcon   | string                       | ''            | suffixIcon của chip                                         |
-| disabled     | boolean                      | false         | Nếu set `true` chip sẽ bị disabled                          |
-| onClick      | event                        | () => void    | Trigger function này khi click vào chip                     |
-| onLeftClick  | event                        | () => void    | Trigger function này khi click image/icon bên trái của chip |
-| onRightClick | event                        | () => void    | Trigger function này khi click image/icon bên phải của chip |
+| Property       | Type    | Default Value | Description                                                 |
+| -------------- | ------- | ------------- | ----------------------------------------------------------- |
+| className      | string  | ''            | Custom class cho chip                                       |
+| style          | string  | ''            | Style cho chip                                              |
+| content        | string  | ''            | Text content của chip                                       |
+| active         | boolean | false         | Nếu set `true` chip sẽ được active                          |
+| suffixIcon     | string  | ''            | suffixIcon của chip                                         |
+| suffixImage    | string  | ''            | suffixImage của chip                                        |
+| prefixIcon     | string  | ''            | prefixIcon của chip                                         |
+| prefixIcon     | string  | ''            | suffixIcon của chip                                         |
+| iconLeftColor  | string  | '#1A94FF'     | suffixIcon của chip                                         |
+| iconRightColor | string  | '#1A94FF'     | suffixIcon của chip                                         |
+| disabled       | boolean | false         | Nếu set `true` chip sẽ bị disabled                          |
+| onClick        | event   | () => void    | Trigger function này khi click vào chip                     |
+| onLeftClick    | event   | () => void    | Trigger function này khi click image/icon bên trái của chip |
+| onRightClick   | event   | () => void    | Trigger function này khi click image/icon bên phải của chip |
