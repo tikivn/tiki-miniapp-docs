@@ -8,7 +8,7 @@ Nói ngắn gọn, đối tác xây dựng ứng dụng; tạo ra sản phẩm t
 
 Về phía người dùng Tiki, họ chỉ cần mở ứng dụng từ Kho tiện ích của Tiki App là họ có thể thoải mái đặt hàng. 
 
-Để có thể mang hàng hoá lên Tini App của mình, điều kiện là đầu tiên là bạn có 2 tài khoản:
+Để có thể mang hàng hoá lên Tini App của mình, điều kiện đầu tiên là bạn có 2 tài khoản:
 
 - Tài khoản Nhà phát triển - nên là loại tài khoản Công ty vì bạn sắp sửa tiến hành khai thác kinh doanh. Tài khoản này cho phép bạn đăng ký tạo ứng dụng, quản lý phiên bản, phát hành ứng dụng trên Kho tiện ích. 
 - Tài khoản Seller - cho phép bạn tạo và quản lý sản phẩm trên Tiki (SKU).

@@ -14,7 +14,7 @@ title: audio
 | loop         | boolean      | false            | Tự động phát lại audio một khi kết thúc.                                                                        |
 | controls     | boolean      | true             | Hiển thị hay ẩn thanh điều khiển audio (nút play/pause, playback progress bar, ...) của audio player            |
 | name         | string       |                  | Tên của audio. Nếu controls đuợc phép hiển thị, `name` sẽ xuất hiện bên dưới controls.                          |
-| author       | string       |                  | Tên tác giả của audio. Nếu controls được phép hiển thị, `control` sẽ xuất hiện bên duới controls.               |
+| author       | string       |                  | Tên tác giả của audio. Nếu controls được phép hiển thị, `author` sẽ xuất hiện bên duới controls.                |
 | onPlay       | event        |                  | Sự kiện được kích hoạt khi audio bắt đầu được phát hoặc được phát tiếp sau khi tạm dừng.                        |
 | onPause      | event        |                  | Sự kiện được kích hoạt khi audio bị tạm dừng.                                                                   |
 | onEnded      | event        |                  | Sự kiện được kích hoạt khi audio được phát đến hết.                                                             |

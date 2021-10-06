@@ -2,9 +2,13 @@
 title: icon
 ---
 
-## Giới thiệu
+## Thuộc tính
 
-icon
+| Thuộc tính | Kiểu dữ liêu | Gia trị mặc định | Bắt buộc | Mô tả                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ---------- | ------------ | ---------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| type       | string       |                  | ✓        | Loại icon hiển thị. Nhận giá trị : [ home \|\| search \|\| calendar \|\| location \|\| setting \|\| contact \|\| chat \|\| info \|\| warning \|\| success \|\| plus \|\| minus \|\| geometry \|\| close \|\| close_circle \|\| more \|\| arrow_right \|\| arrow_left \|\| arrow_down \|\| arrow_up \|\| bookmark \|\| app_home \|\| phone_home \|\| share \|\| warning_glyph \|\| success_glyph \|\| close_glyph ] |
+| size       | number       | 24               |          | Kích thước  icon. Đơn vị tính pixel.                                                                                                                                                                                                                                                                                                                                                                               |
+| color      | string       |                  |          | Màu của icon, sử dụng mã màu như trong css                                                                                                                                                                                                                                                                                                                                                                         |
 
 ## Sử dụng
 
@@ -131,10 +135,3 @@ Page({
 });
 ```
 
-### Chi tiết
-
-| Property | Type   | Default Value | Required | Description                                                                                                                                                                                                                                                                                                       |
-| -------- | ------ | ------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| type     | string |               | Có       | Loại icon hiển thị. Giá trị hợp lệ bao gồm: `home, search, calendar, location, setting, contact, chat, info, warning, success, plus, minus, geometry, close, close_circle, more, arrow_right, arrow_left, arrow_down, arrow_up, bookmark, app_home, phone_home, share, warning_glyph, success_glyph, close_glyph` |
-| size     | number | 24            | Không    | Kích thước của icon                                                                                                                                                                                                                                                                                               |
-| color    | string |               | Không    | Màu của icon, sử dụng mã màu như trong css                                                                                                                                                                                                                                                                        |

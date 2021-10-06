@@ -2,19 +2,24 @@
 title: web-view
 ---
 
-## Giới thiệu
+`web-view` là một container component dùng để hiển thị trang web trong một Tini App. Nó đặc biệt hữu dụng chính vì Tini App không thể nhảy đến một trang web bên ngoài Tiki App. 
 
-`web-view` là một container componet dùng để hiển thị nội dung html trong một miniapp. Vì miniapp không thể nhảy qua một trang web ngoài tiki, thế nên để hiện thị nội dung trang đó
-bạn có thể dùng web-view để hiển thị.
+Mỗi page của Tini App chỉ được phép chứa một `web-view` duy nhất. `web-view` sẽ tự động chiếm toàn màn hình; tất cả các component khác sẽ bị che bởi `web-view` đó.
 
-## Lưu ý khi sử dụng
+Bạn cần phải có Nhà phát triển loại công ty/doanh nghiệp để có thể khai thác đầy đủ tính năng của `web-view`.
 
-- Mỗi page chỉ có thể trình bày 1 web-view. web-view sẽ tự động trình bày toàn màn hình, tất cả các components khác sẽ bị che bởi web-view đó.
-- Để đảm bảo cam kết avaibility của nội dung trong web-view khi khách hàng sử dụng, bạn cần phải có tài khoản công ty hoặc doanh nghiệp.
+## Các API có thể gọi trong web-view
 
-## Sử dụng
+| API                                               | Mô tả                                                                                                                                   |
+| ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| [my.navigateTo](api/ui/route/navigate-to.md)      | Di chuyển từ màn hình hiện tại tới màn hình mong muốn trong ứng dụng.                                                                   |
+| [my.navigateBack](api/ui/route/navigate-back.md)  | Đóng màn hình hiện tại và trở lại màn hình trước đó.                                                                                    |
+| [my.getSystemInfo](api/device/get-system-info.md) | Lấy thông tin của hệ thống.                                                                                                             |
+| [my.getUserInfo](api/open/05-get-user-info.md)    | Lấy các thông tin cơ bản của người dùng (tên, ảnh).                                                                                     |
+| [my.request](api/network/request.md)              | Thực hiện các network request.                                                                                                          |
+| my.postMessage                                    | Gửi message tới `web-view`. Message sẽ được gửi tới listener của `window.onmessage` hay `window.addEventListener('message', listener)`. |
 
-### Sample Code
+## Sample Code
 
 **index.txml**
 
@@ -53,13 +58,3 @@ Page({
 </script>
 ```
 
-### Các API có thể gọi trong web-view
-
-| API              | Description                                                                                                                                                        |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| my.navigateTo    | Dùng để di chuyển từ màn hình hiện tại tới màn hình mong muốn trong ứng dụng. Xem thêm [my.navigateTo](https://developers.tiki.vn/docs/api/navigator/navigate-to). |
-| my.navigateBack  | Dùng để đóng màn hình hiện tại và trở lại màn hình trước đó. Xem thêm [my.navigateBack](https://developers.tiki.vn/docs/api/navigator/navigate-back).              |
-| my.getSystemInfo | Dùng để lấy thông tin của hệ thống. [my.getSystemInfo](https://developers.tiki.vn/docs/api/device/get-system-info).                                                |
-| my.getUserInfo   | Dùng để lấy các thông tin cơ bản của users (tên, ảnh). [my.getUserInfo](https://developers.tiki.vn/docs/api/open/get-user-info).                                   |
-| my.request       | Dùng để thực hiện các network request. [my.request](https://developers.tiki.vn/docs/api/network/request).                                                          |
-| my.postMessage   | Dùng để gửi message tới webview. Message sẽ được gửi tới listener của `window.onmessage` hay `window.addEventListener('message', listener)`.                       |
