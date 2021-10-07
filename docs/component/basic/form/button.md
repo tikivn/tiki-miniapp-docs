@@ -2,13 +2,35 @@
 title: button
 ---
 
-## Giới thiệu
+## Thuộc tính
 
-button
+| Thuộc tính | Kiểu dữ liệu | Giá trị măc định | Mô tả                                                                                                                                                    |
+| ---------- | ------------ | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| size       | string       | large            | Kích thước của button. Nhận các giá trị = [large \|\| medium \|\| small].                                                                                |
+| type       | string       | solid            | Kiểu button. Nhận các giá trị = [solid \|\| outline \|\| ghost].                                                                                         |
+| loading    | boolean      | false            | Hiển thị icon loading bên cạnh caption. Trong lúc hiển thị loading, button bị vô hiệu hoá.                                                               |
+| disabled   | boolean      | false            | Vô hiệu hoá button.                                                                                                                                      |
+| form-type  | string       |                  | Giá trị là `submit` hoặc `reset`, sử dụng với [form](/docs/component/form/form). Khi tap vào button, sẽ gọi sự kiện `onSubmit` hoặc `onReset` của `form` |
+| onTap      | event        |                  | Sự kiện được kích hoạt khi tap vào button.                                                                                                               |
 
-## Sử dụng
+<div align="center"> ---oOo--- </div>
 
-### Sample Code
+### Các kiểu nút
+
+<img src="/img/solid_button.png" alt="solid button" style={{ margin: '0 auto', display: 'flex' }}/>
+
+Các thành phần của button - caption, đường viền và màu nền - được hiển thị đầy đủ.
+
+<img src="/img/outline_button.png" alt="outline button" style={{ margin: '0 auto', display: 'flex' }}/>
+
+Button gồm caption và đuờng viền; màu nền thì transparent.
+
+<img src="/img/ghost_button.png" alt="ghost button" style={{ margin: '0 auto', display: 'flex' }}/>
+
+Button chỉ có caption; màu nền cũng như đường viền thì transparent.
+
+
+## Sample Code
 
 **index.txml**
 
@@ -75,14 +97,3 @@ Page({
   }
 });
 ```
-
-### Chi tiết
-
-| Property  | Type    | Default Value | Description                                                                                                                                             |
-| --------- | ------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| size      | string  | "large"       | Kích thước của button (large/medium/small)                                                                                                              |
-| type      | string  | "solid"       | Loại button (solid/outline/ghost)                                                                                                                       |
-| loading   | boolean | false         | Hiển thị icon loading. Khi hiển thị loading, button không thể tap được                                                                                  |
-| disabled  | boolean | false         | Disabled button, bạn không thể tap khi disabled là true                                                                                                 |
-| form-type | string  |               | Giá trị là `submit` hoặc `reset`. Sử dụng với [form](/docs/component/form/form), khi tap vào button sẽ gọi sự kiện `onSubmit` hoặc `onReset` của `form` |
-| onTap     | event   | null          | Sự kiện khi tap vào button                                                                                                                              |

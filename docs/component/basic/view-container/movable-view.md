@@ -2,13 +2,9 @@
 title: movable-view
 ---
 
-## Giới thiệu
+movable-view là container component cho phép kéo và thả chính nó và các thành phần con trong nó trên page. movable-view bắt buộc phải nằm trong [movable-area](/docs/component/view-container/movable-area). Nếu không, movable-view không thể di chuyển được.
 
-movable-view là thành phần cho phép kéo và thả chính nó và các thành phần con trong nó trên page. movable-view bắt buộc phải nằm trong [movable-area](/docs/component/view-container/movable-area). Nếu không, movable-view không thể di chuyển được.
-
-## Sử dụng
-
-### Sample Code
+## Sample Code
 
 **index.txml**
 
