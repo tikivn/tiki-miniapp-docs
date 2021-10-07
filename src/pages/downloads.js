@@ -12,6 +12,89 @@ import Code from '@site/static/IDE-code.svg';
 import Simulator from '@site/static/IDE-simulation.svg';
 import Manage from '@site/static/IDE-manage.svg';
 
+const getVersion = updateUrl => {
+  return new Promise(resolve => {
+    fetch(updateUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'User-agent': 'Tini Miniapp Docs',
+      },
+      body: JSON.stringify({
+        query: `query get_parameter($name:String!){
+              get_parameter(name:$name){
+                value
+              }
+          }
+          `,
+        variables: {
+          name: 'tini_studio_config',
+        },
+      }),
+    })
+      .then(resp => resp.json())
+      .then(res => {
+        if (res && res.latest) {
+          const latest = res.latest;
+          window.localStorage.setItem('latest', JSON.stringify(latest));
+          return resolve({
+            stable: latest.version,
+            mac: latest.macosx,
+            win: latest.windows,
+          });
+        }
+        throw new Error('Fetch config fail');
+      })
+      .catch(() => {
+        const latest = localStorage.getItem('latest');
+        if (latest) {
+          const {version, macosx, windows} = JSON.parse(latest);
+          resolve({
+            stable: version,
+            mac: macosx,
+            win: windows,
+          });
+        }
+      });
+  });
+};
+const getParameter = () => {
+  return new Promise(resolve => {
+    fetch('https://api.tiki.vn/tiniapp/api/graphql/query', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'User-agent': 'Tini Miniapp Docs',
+      },
+      body: JSON.stringify({
+        query: `query get_parameter($name:String!){
+              get_parameter(name:$name){
+                value
+              }
+          }
+          `,
+        variables: {
+          name: 'tini_studio_config',
+        },
+      }),
+    })
+      .then(resp => resp.json())
+      .then(res => {
+        if (res && res.data) {
+          return resolve(JSON.parse(res.data.get_parameter.value).update_url);
+        }
+        resolve(
+          'https://gist.githubusercontent.com/kiennguyentiki/ac21ae53a151a45a4bbc1f6fe59b74b1/raw',
+        );
+      })
+      .catch(() => {
+        resolve(
+          'https://gist.githubusercontent.com/kiennguyentiki/ac21ae53a151a45a4bbc1f6fe59b74b1/raw',
+        );
+      });
+  });
+};
+
 const DownloadSEO = () => {
   return (
     <Head>
@@ -58,31 +141,12 @@ const Download = () => {
   );
 
   React.useEffect(() => {
-    fetch(
-      'https://gist.githubusercontent.com/kiennguyentiki/ac21ae53a151a45a4bbc1f6fe59b74b1/raw/bf00a8e9d55bfe8e09b5557b0567e52743b641f1/stable.json',
-    )
-      .then(resp => resp.json())
-      .then(res => {
-        if (res && res.latest) {
-          const latest = res.latest;
-          window.localStorage.setItem('latest', JSON.stringify(latest));
-          setVersion({
-            stable: latest.version,
-            mac: latest.macosx,
-            win: latest.windows,
-          });
-        }
+    getParameter()
+      .then(updateUrl => {
+        return getVersion(updateUrl);
       })
-      .catch(() => {
-        const latest = localStorage.getItem('latest');
-        if (latest) {
-          const {version, macosx, windows} = JSON.parse(latest);
-          setVersion({
-            stable: version,
-            mac: macosx,
-            win: windows,
-          });
-        }
+      .then(version => {
+        setVersion(version);
       });
   }, []);
 
