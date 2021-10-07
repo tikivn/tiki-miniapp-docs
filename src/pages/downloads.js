@@ -143,7 +143,6 @@ const Download = () => {
   React.useEffect(() => {
     getParameter()
       .then(updateUrl => {
-        console.log('updateUrl', updateUrl);
         return getVersion(updateUrl);
       })
       .then(version => {
