@@ -2,13 +2,33 @@
 title: input
 ---
 
-## Giới thiệu
+`Input`, tên đầy đủ là input box, cho phép người dùng nhập thông tin dạng text.  
 
-Thẻ input hiển thị một vùng input box cho phép người dùng nhập giá trị
+## Thuộc tính
 
-## Sử dụng
+| Thuộc tính        | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                                                                                                                                                          |
+| ----------------- | ------------ | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| type              | string       |                  | Quy định định dạng dữ liệu (format) được nhập vào input. Hỗ trợ các loại format: text/ email/number/decimal/tel/search/url. <br/> ***Lưu ý***: một số type sẽ không có hiệu lực trên Simulator của Studio mà bạn phải chạy trên thiết bị thật. |
+| password          | boolean      | false            | Chỉ định input dùng để nhập mật khẩu. Mỗi ký tự người dùng nhập vào sẽ được đại diện bằng chấm tròn  (•)                                                                                                                                       |
+| name              | string       |                  | Khai báo `name` khi được sử dụng trong [form](/docs/component/form/form), được sử dụng để lấy `value` cho `form`                                                                                                                               |
+| value             | string       | ''               | Giá trị khởi tạo.                                                                                                                                                                                                                              |
+| placeholder       | string       |                  | Nội dung hiển thị trước khi người dùng nhập giá trị của input                                                                                                                                                                                  |
+| placeholder-class | string       |                  | CSS class cho placeholder                                                                                                                                                                                                                      |
+| placeholder-style | css style    |                  | Inline style cho placeholder                                                                                                                                                                                                                   |
+| disabled          | boolean      | false            | Vô hiệu hoá input                                                                                                                                                                                                                              |
+| maxlength         | number       | 140              | Giới hạn số ký tự được nhập.                                                                                                                                                                                                                   |
+| focus             | boolean      | false            | Tự động focus vào input                                                                                                                                                                                                                        |
+| confirm-type      | string       | done             | Quy định nhãn hiển thị (title) cho phím return (Nhập) trên bàn phím ảo.  Nhận các giá trị = [ enter \|\| done \|\| go \|\| next \|\| previous \|\| search \|\| send ]                                                                          |
+| selection-start   | number       |                  | Vị trí bắt đầu khi select nội dung trong input. Chỉ có hiệu lực trong input đang được focus  true                                                                                                                                              |
+| selection-end     | number       |                  | Vị trí kết thúc khi select con trỏ trong input. Chỉ có hiệu lực khi `focus="true"` và cần được sử dụng chung với `selection-start`                                                                                                             |
+| cursor            | number       |                  | Vị trí bắt đầu của con trỏ khi đang được focus.                                                                                                                                                                                                |
+| controlled        | boolean      | false            | Nếu giá trị là `true`, nội dung value của input sẽ được điều khiển hoàn toàn thông qua hàm `setData` trong file `js`                                                                                                                           |
+| onInput           | event        |                  | Sự kiện sẽ được kích hoạt khi nội dung của input bị thay đổi, `event.detail = { value: value }`                                                                                                                                                |
+| onConfirm         | event        |                  | Sự kiện sẽ được kích hoạt khi nhấn nút submit (return/Nhập) , `event.detail = { value: value }`                                                                                                                                                |
+| onFocus           | event        |                  | Sự kiện sẽ được kích hoạt khi input được focus , `event.detail = { value: value }`                                                                                                                                                             |
+| onBlur            | event        |                  | Sự kiện sẽ được kích hoạt khi input không được focus nữa , `event.detail = { value: value }`                                                                                                                                                   |
 
-### Sample Code
+## Sample Code
 
 **index.txml**
 
@@ -125,27 +145,3 @@ Page({
   margin-left: 16px;
 }
 ```
-
-### Chi tiết
-
-| Property          | Type      | Default Value | Required | Description                                                                                                                                                                     |
-| ----------------- | --------- | ------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| type              | string    |               | Không    | Loại input. Hỗ trợ các giá trị `text/email/number/decimal/tel/search/url`. Lưu ý: một số type sẽ không có hiệu lực trên Simulator của Studio mà bạn phải chạy trên device thật. |
-| password          | boolean   | false         | Không    | Chỉ định loại input là password                                                                                                                                                 |
-| name              | string    |               | Không    | Khai báo `name` khi được sử dụng trong [form](/docs/component/form/form), được sử dụng để lấy `value` cho `form`                                                                |
-| value             | string    | ''            | Không    | Giá trị khởi tạo                                                                                                                                                                |
-| placeholder       | string    |               | Không    | Nội dung hiển thị trước khi người dùng nhập giá trị của input                                                                                                                   |
-| placeholder-class | string    |               | Không    | Class name cho placeholder                                                                                                                                                      |
-| placeholder-style | css style |               | Không    | Inline style cho placeholder                                                                                                                                                    |
-| disabled          | boolean   | false         | Không    | Disable input                                                                                                                                                                   |
-| maxlength         | number    | 140           | Không    | Giới hạn số ký tự được nhập                                                                                                                                                     |
-| focus             | boolean   | false         | Không    | Tự động focus vào input                                                                                                                                                         |
-| confirm-type      | string    | done          | Không    | Nội dung hiển thị cho phím return (Nhập) trên bàn phím (Keyboard). <br />Hỗ trợ các giá trị `enter/done/go/next/previous/search/send`                                           |
-| selection-start   | number    |               | Không    | Vị trí bắt đầu của con trỏ. Chỉ có hiệu lực trong khi focus là true                                                                                                             |
-| selection-end     | number    |               | Không    | Vị trí kết thúc của con trỏ. Chỉ có hiệu lực khi focus là true và cần được sử dụng chung với `selection-start`                                                                  |
-| cursor            | number    |               | Không    | Vị trí bắt đầu của con trỏ khi focus là true                                                                                                                                    |
-| controlled        | boolean   | false         | Không    | Khi giá trị là `true`, nội dung value của input sẽ được điều khiển hoàn toàn thông qua hàm `setData` trong file `js`                                                            |
-| onInput           | event     |               | Không    | Sự kiện sẽ được gọi khi nội dung của input bị thay đổi, `event.detail = { value: value }`                                                                                       |
-| onConfirm         | event     |               | Không    | Sự kiện sẽ được gọi khi nhấn nút submit (return/Nhập) , `event.detail = { value: value }`                                                                                       |
-| onFocus           | event     |               | Không    | Sự kiện sẽ được gọi khi input được focus , `event.detail = { value: value }`                                                                                                    |
-| onBlur            | event     |               | Không    | Sự kiện sẽ được gọi khi input không được focus nữa , `event.detail = { value: value }`                                                                                          |
