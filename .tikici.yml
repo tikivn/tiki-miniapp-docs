@@ -84,6 +84,10 @@ deployment_config:
         timeoutSeconds: 3
     replicaCount: 1
   prod:
+    resources:
+      requests:
+        cpu: 15m
+        memory: 250Mi
     ingress:
       hosts:
         - host: tiki-miniapp-docs.tiki.services
