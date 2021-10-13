@@ -2,13 +2,11 @@
 title: my.offSocketError
 ---
 
-## Giới thiệu
+`my.offSocketError` là API giúp dừng lắng nghe sự kiện error được tạo trước đó.
 
-**my.offSocketError** là API giúp dừng lắng nghe sự kiện error được tạo trước đó.
+***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên Dev Center trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/backend-api/overview#tên-miền).
 
-## Sử dụng
-
-### Sample Code
+## Sample Code
 
 ```js
 Page({
@@ -24,7 +22,7 @@ Page({
 })
 ```
 
-### API Params
+## API Params
 
 - Khi gọi API kèm theo callback thì chỉ callback đó được xoá khỏi danh sách lắng nghe:
 

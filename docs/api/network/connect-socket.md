@@ -2,13 +2,11 @@
 title: my.connectSocket
 ---
 
-## Giới thiệu
+`my.connectSocket` là API được dùng để mở websocket connection tr trên ứng dụng. Một ứng dụng chỉ có thể duy trì một WebSocket connection ở cùng một thời điểm. Nếu api này được gọi khi có connection được mở trước đó, thì connection trước đó sẽ tự động bị đóng và mở connection mới.
 
-**my.connectSocket** được dùng để mở websocket connection tr trên ứng dụng. Một ứng dụng chỉ có thể duy trì một WebSocket connection ở cùng một thời điểm. Nếu api này được gọi khi có connection được mở trước đó, thì connection trước đó sẽ tự động bị đóng và mở connection mới.
+***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên Dev Center trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/backend-api/overview#tên-miền)
 
-## Sử dụng
-
-### Sample Code
+## Sample Code
 
 ```js
 my.connectSocket({
@@ -25,7 +23,7 @@ my.connectSocket({
 });
 ```
 
-### API Params
+## API Params
 
 Để cấu hình mở WebSocket cần truyền các thuộc tính sau:
 

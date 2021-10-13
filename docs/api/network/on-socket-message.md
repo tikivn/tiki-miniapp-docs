@@ -2,13 +2,11 @@
 title: my.onSocketMessage
 ---
 
-## Giới thiệu
+ `my.onSocketMessage` là API giúp lắng nghe sự kiện message nhận được từ WebSocket Server.
 
-**my.onSocketMessage** là API giúp lắng nghe sự kiện message nhận được từ WebSocket Server.
+***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên Dev Center trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/backend-api/overview#tên-miền).
 
-## Sử dụng
-
-### Sample Code
+## Sample Code
 
 ```js
 my.connectSocket({
@@ -20,7 +18,7 @@ my.onSocketMessage(function(res) {
 });
 ```
 
-### Return value
+## Return value
 
 | Attributes | Type   | Description                  |
 | ---------- | ------ | ---------------------------- |

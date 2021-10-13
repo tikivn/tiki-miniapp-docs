@@ -8,6 +8,8 @@ Mỗi page của Tini App chỉ được phép chứa một `web-view` duy nhấ
 
 Bạn cần phải có Nhà phát triển loại công ty/doanh nghiệp để có thể khai thác đầy đủ tính năng của `web-view`.
 
+***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên Dev Center trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/backend-api/overview#tên-miền).
+
 ## Các API có thể gọi trong web-view
 
 | API                                                  | Mô tả                                                                                                                                   |

@@ -2,13 +2,11 @@
 title: my.offSocketMessage
 ---
 
-## Giới thiệu
+`my.offSocketMessage` là API giúp dừng lắng nghe sự kiện message được thiết lập trước đó.
 
-**my.offSocketMessage** là API giúp dừng lắng nghe sự kiện message được thiết lập trước đó.
+***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên Dev Center trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/backend-api/overview#tên-miền).
 
-## Sử dụng
-
-### Sample Code
+## Sample Code
 
 ```js
 Page({

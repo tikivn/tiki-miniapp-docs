@@ -2,13 +2,11 @@
 title: my.offSocketClose
 ---
 
-## Giới thiệu
+`my.offSocketClose` là API giúp dừng lắng nghe sự kiện đóng WebSocket connection trước đó.
 
-**my.offSocketClose** là API giúp dừng lắng nghe sự kiện đóng WebSocket connection trước đó.
+***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên Dev Center trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/backend-api/overview#tên-miền).
 
-## Sử dụng
-
-### Sample Code
+## Sample Code
 
 ```js
 Page({
@@ -24,7 +22,7 @@ Page({
 })
 ```
 
-### API Params
+## API Params
 
 - Khi gọi API kèm theo callback thì chỉ callback đó được xoá khỏi danh sách lắng nghe:
 

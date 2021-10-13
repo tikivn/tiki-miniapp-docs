@@ -2,13 +2,11 @@
 title: my.onSocketOpen
 ---
 
-## Giới thiệu
+`my.onSocketOpen` là API giúp lắng nghe sự kiện mở connection của WebSocket.
 
-**my.onSocketOpen** là API giúp lắng nghe sự kiện mở connection của WebSocket.
+***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên Dev Center trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/backend-api/overview#tên-miền).
 
-## Sử dụng
-
-### Sample Code
+## Sample Code
 
 ```js
 my.connectSocket({
@@ -20,7 +18,7 @@ my.onSocketOpen(function(res) {
 });
 ```
 
-### API Params
+## API Params
 
 | Attributes | Type     | Required | Description                                                  |
 | ---------- | -------- | -------- | ------------------------------------------------------------ |

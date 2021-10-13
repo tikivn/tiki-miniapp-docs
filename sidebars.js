@@ -9,10 +9,13 @@ module.exports = {
       items: [
         'developer/introduce/register',
         'developer/introduce/create',
+        'developer/introduce/delete',
         'developer/introduce/member',
         'developer/introduce/upload',
         'developer/introduce/release',
+        'developer/introduce/hide',
         'developer/introduce/dev-assistant',
+        'developer/introduce/support',
       ],
     },
     {
