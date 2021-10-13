@@ -12,52 +12,6 @@ import Code from '@site/static/IDE-code.svg';
 import Simulator from '@site/static/IDE-simulation.svg';
 import Manage from '@site/static/IDE-manage.svg';
 
-const getVersion = updateUrl => {
-  return new Promise(resolve => {
-    fetch(updateUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'User-agent': 'Tini Miniapp Docs',
-      },
-      body: JSON.stringify({
-        query: `query get_parameter($name:String!){
-              get_parameter(name:$name){
-                value
-              }
-          }
-          `,
-        variables: {
-          name: 'tini_studio_config',
-        },
-      }),
-    })
-      .then(resp => resp.json())
-      .then(res => {
-        if (res && res.latest) {
-          const latest = res.latest;
-          window.localStorage.setItem('latest', JSON.stringify(latest));
-          return resolve({
-            stable: latest.version,
-            mac: latest.macosx,
-            win: latest.windows,
-          });
-        }
-        throw new Error('Fetch config fail');
-      })
-      .catch(() => {
-        const latest = localStorage.getItem('latest');
-        if (latest) {
-          const {version, macosx, windows} = JSON.parse(latest);
-          resolve({
-            stable: version,
-            mac: macosx,
-            win: windows,
-          });
-        }
-      });
-  });
-};
 const getParameter = () => {
   return new Promise(resolve => {
     fetch('https://api.tiki.vn/tiniapp/api/graphql/query', {
@@ -81,16 +35,22 @@ const getParameter = () => {
       .then(resp => resp.json())
       .then(res => {
         if (res && res.data) {
-          return resolve(JSON.parse(res.data.get_parameter.value).update_url);
+          return resolve(
+            JSON.parse(res.data.get_parameter.value).studio_latest_version,
+          );
         }
-        resolve(
-          'https://gist.githubusercontent.com/kiennguyentiki/ac21ae53a151a45a4bbc1f6fe59b74b1/raw',
-        );
+        resolve({
+          version: 'latest',
+          macosx: 'https://bit.ly/tini-studio-latest',
+          windows: 'https://bit.ly/tini-studio-windows-latest',
+        });
       })
       .catch(() => {
-        resolve(
-          'https://gist.githubusercontent.com/kiennguyentiki/ac21ae53a151a45a4bbc1f6fe59b74b1/raw',
-        );
+        resolve({
+          version: 'latest',
+          macosx: 'https://bit.ly/tini-studio-latest',
+          windows: 'https://bit.ly/tini-studio-windows-latest',
+        });
       });
   });
 };
@@ -109,9 +69,9 @@ const DownloadSEO = () => {
 };
 const Download = () => {
   const [version, setVersion] = React.useState({
-    stable: '',
-    mac: '',
-    win: '',
+    version: '',
+    macosx: '',
+    windows: '',
   });
   const features = React.useMemo(
     () => [
@@ -141,13 +101,9 @@ const Download = () => {
   );
 
   React.useEffect(() => {
-    getParameter()
-      .then(updateUrl => {
-        return getVersion(updateUrl);
-      })
-      .then(version => {
-        setVersion(version);
-      });
+    getParameter().then(latestVersion => {
+      setVersion(latestVersion);
+    });
   }, []);
 
   return (
@@ -161,16 +117,23 @@ const Download = () => {
             marginBottom: 40,
           }}>
           <div style={{marginTop: 40}}>
-            <Banner version={version.stable} />
+            <Banner version={version.version} />
           </div>
           <div
             className="flex fr jc-center"
             style={{padding: 8, paddingBottom: 40, marginTop: 24}}>
-            <DownloadLinks style={{marginRight: 32}} link={version.win}>
+            <DownloadLinks
+              style={{marginRight: 32}}
+              link={version.windows}
+              platform="Windows"
+              version={version.version}>
               <Win style={{marginRight: 16}} />
               <span className="download-label">Windows</span>
             </DownloadLinks>
-            <DownloadLinks link={version.mac}>
+            <DownloadLinks
+              link={version.macosx}
+              platform="MacOSX"
+              version={version.version}>
               <Apple style={{marginRight: 16}} />
               <span className="download-label">MacOS</span>
             </DownloadLinks>
@@ -231,11 +194,26 @@ const Banner = ({version}) => {
   );
 };
 
-const DownloadLinks = ({link, children, style = {}}) => {
+const DownloadLinks = ({
+  link,
+  children,
+  style = {},
+  platform = 'MacOSX',
+  version = '',
+}) => {
+  const sendTracking = React.useCallback(() => {
+    if (window.gtag) {
+      gtag('event', 'Download', {
+        event_category: `Download - ${platform}`,
+        event_label: version,
+      });
+    }
+  }, [platform, version]);
+
   return (
     <a
       href={link}
-      target="_blank"
+      onClick={sendTracking}
       className="flex fr fcc download-button"
       style={{
         textDecoration: 'none',

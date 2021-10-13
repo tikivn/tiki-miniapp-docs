@@ -35,7 +35,7 @@ function Hero() {
           </p>
           <div className={styles.flexButtons}>
             <Link
-              to="https://community.tiki.vn/c/studio/studio-releases/13"
+              to="/downloads"
               className={[styles.secondaryButton]}
               id="btnDownload">
               Tải về Tini Studio
