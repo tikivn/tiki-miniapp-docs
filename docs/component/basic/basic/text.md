@@ -8,6 +8,12 @@ Thẻ text dùng để hiển thị nội dung văn bản, và phải nằm tron
 - Hỗ trợ styling.
 - Các thẻ text gần nhau được trình bày trên cùng một hàng. Nếu muốn xuống hàng, bạn có thể dùng \n.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/text/index" />
+
 ## Thuộc tính
 
 | Thuộc tính      | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                                               |
@@ -38,7 +44,7 @@ Thẻ text dùng để hiển thị nội dung văn bản, và phải nằm tron
 ```js
 Page({
   data: {
-    text: 'Hello Tini App',
-  },
-})
+    text: 'Hello Tini App'
+  }
+});
 ```
