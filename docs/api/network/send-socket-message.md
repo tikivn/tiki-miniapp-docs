@@ -20,7 +20,7 @@ let socketOpen = false;
 let socketMsgQueue = [];
 my.connectSocket({
    url: 'wss://www.example.com/socketserver'
-})
+});
 
 my.onSocketOpen(function(res) {
   socketOpen = true;
@@ -28,13 +28,13 @@ my.onSocketOpen(function(res) {
     sendSocketMessage(socketMsgQueue[i]);
   }
   socketMsgQueue = [];
-})
+});
 
 function sendSocketMessage(msg) {
   if (socketOpen) {
     my.sendSocketMessage({
       data: msg
-    })
+    });
   } else {
     socketMsgQueue.push(msg);
   }
