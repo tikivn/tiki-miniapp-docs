@@ -27,6 +27,7 @@ export class QRCode extends React.Component {
     fgColor: '#000000',
     logoOpacity: 1,
     qrStyle: 'dots',
+    openOnClick: true,
     eyeRadius: [
       {
         outer: [12, 12, 0, 12],
@@ -188,12 +189,21 @@ export class QRCode extends React.Component {
     this.update();
   }
 
-  update() {
+  get qrPage() {
     const {
       page,
       firstPage,
       domainUrl,
       appId,
+    } = this.props;
+
+    const _firstPage = firstPage ? `/${firstPage}` : '';
+    const subPage = page ? `?page=${page}` : '';
+    return `${domainUrl}/apps/${appId}${_firstPage}${subPage}`;
+  }
+
+  update() {
+    const {
       ecLevel,
       enableCORS,
       enableLogo,
@@ -211,10 +221,7 @@ export class QRCode extends React.Component {
     } = this.props;
 
     const qrCode = qrGenerator(0, ecLevel);
-    const _firstPage = firstPage ? `/${firstPage}` : '';
-    const subPage = page ? `?page=${page}` : '';
-    const value = `${domainUrl}/apps/${appId}${_firstPage}${subPage}`;
-    qrCode.addData(QRCode.utf16to8(value));
+    qrCode.addData(QRCode.utf16to8(this.qrPage));
     qrCode.make();
 
     const canvas = ReactDOM.findDOMNode(this.canvas.current);
@@ -343,14 +350,23 @@ export class QRCode extends React.Component {
     }
   }
 
+  onClick = () => {
+    if (!this.props.openOnClick) {
+      return;
+    }
+
+    window.open(this.qrPage);
+  }
+
   render() {
     const size = +this.props.size + 2 * +this.props.quietZone;
-    return React.createElement('canvas', {
-      id: 'react-qrcode-tiki',
-      height: size,
-      width: size,
-      style: {height: size + 'px', width: size + 'px', marginBottom: 16},
-      ref: this.canvas,
-    });
+    return <canvas 
+      onClick={this.onClick} 
+      id="react-qrcode-tiki" 
+      height={size} 
+      width={size} 
+      style={{ height: size, width: size, marginBottom: 16, cursor: 'pointer' }} 
+      ref={this.canvas}
+    />
   }
 }
