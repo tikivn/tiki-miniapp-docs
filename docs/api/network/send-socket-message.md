@@ -16,27 +16,27 @@ title: my.sendSocketMessage
 ## Sample Code
 
 ``` js
-let socketOpen = false
-let socketMsgQueue = []
-wx.connectSocket({
+let socketOpen = false;
+let socketMsgQueue = [];
+my.connectSocket({
    url: 'wss://www.example.com/socketserver'
 })
 
-wx.onSocketOpen(function(res) {
-  socketOpen = true
+my.onSocketOpen(function(res) {
+  socketOpen = true;
   for (let i = 0; i < socketMsgQueue.length; i++){
-    sendSocketMessage(socketMsgQueue[i])
+    sendSocketMessage(socketMsgQueue[i]);
   }
-  socketMsgQueue = []
+  socketMsgQueue = [];
 })
 
 function sendSocketMessage(msg) {
   if (socketOpen) {
-    wx.sendSocketMessage({
-      data:msg
+    my.sendSocketMessage({
+      data: msg
     })
   } else {
-    socketMsgQueue.push(msg)
+    socketMsgQueue.push(msg);
   }
 }
 ```
