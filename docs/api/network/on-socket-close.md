@@ -22,6 +22,6 @@ my.onSocketClose(function(res) {
 
 ## API Params
 
-| Attributes | Type     | Required | Description                                                   |
-| ---------- | -------- | -------- | ------------------------------------------------------------- |
-| callback   | Function | No       | Callback function khi sự kiện WebSocket close được kích hoạt. |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                         |
+| ---------- | ------------ | ------------------------------------------------------------- |
+| callback   | Function     | Callback function khi sự kiện WebSocket close được kích hoạt. |

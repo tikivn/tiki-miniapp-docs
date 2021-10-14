@@ -9,6 +9,7 @@ title: my.downloadFile
 ***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên Dev Center trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/backend-api/overview#tên-miền).
 
 ## Sample Code
+
 Example bên dưới nhập vào 1 url để download file
 
 ```xml
@@ -56,12 +57,12 @@ Page({
 Để cấu hình việc gọi network, bạn cần truyền object với các thuộc tính sau:
 
 | Attributes | Type     | Required | Description                                                                       |
-| ---------- | -------- | -------- | --------------------------------------------------------------------------------- |
-| url        | string   | Yes      | Đường dẫn của file muốn download                                                  |
-| headers    | Object   | No       | Cấu hình headers khi thực hiện gọi network.                                       |
-| success    | Function | No       | Callback function khi việc download file thành công.                              |
-| fail       | Function | No       | Callback function khi việc download file thất bại.                                |
-| complete   | Function | No       | Callback function khi việc download file kết thúc cho dù thành công hay thất bại. |
+| ---------- | -------- | :------: | --------------------------------------------------------------------------------- |
+| url        | string   |   Yes    | Đường dẫn của file muốn download                                                  |
+| headers    | Object   |    No    | Cấu hình headers khi thực hiện gọi network.                                       |
+| success    | Function |    No    | Callback function khi việc download file thành công.                              |
+| fail       | Function |    No    | Callback function khi việc download file thất bại.                                |
+| complete   | Function |    No    | Callback function khi việc download file kết thúc cho dù thành công hay thất bại. |
 
 ### Success Callback function payload
 

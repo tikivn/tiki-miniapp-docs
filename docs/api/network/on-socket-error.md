@@ -6,6 +6,12 @@ title: my.onSocketError
 
 ***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên Dev Center trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/backend-api/overview#tên-miền).
 
+## API Params
+
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                        |
+| ---------- | ------------ | ------------------------------------------------------------ |
+| callback   | Function     | Callback function khi sự kiện WebSocket open được kích hoạt. |
+
 ## Sample Code
 
 ```js
@@ -18,8 +24,6 @@ my.onSocketError(function(res) {
 });
 ```
 
-## API Params
 
-| Attributes | Type     | Required | Description                                                  |
-| ---------- | -------- | -------- | ------------------------------------------------------------ |
-| callback   | Function | No       | Callback function khi sự kiện WebSocket open được kích hoạt. |
+
+

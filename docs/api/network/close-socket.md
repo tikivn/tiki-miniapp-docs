@@ -2,9 +2,17 @@
 title: my.closeSocket
 ---
 
-`my.closeSocket`  là API được dùng để đóng một kết nối WebSocket được mở trước đó.
+`my.closeSocket`  là API được dùng để đóng một WebSocket connection được mở trước đó.
 
 ***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên Dev Center trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/backend-api/overview#tên-miền)
+
+## API Params
+
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                            |
+| ---------- | ------------ | -------------------------------------------------------------------------------- |
+| success    | Function     | Callback function khi việc đóng kết nối thành công.                              |
+| fail       | Function     | Callback function khi việc đóng kết nối bất thành.                               |
+| complete   | Function     | Callback function khi việc đóng kết nối hoàn tất bất kể thành công hay thất bại. |
 
 ## Sample Code
 
@@ -18,12 +26,4 @@ my.onSocketClose(function(res) {
 })
 ```
 
-## API Params
 
-Để cấu hình đóng kết nối WebSocket cần truyền các thuộc tính sau:
-
-| Attributes | Type     | Required | Description                                                                      |
-| ---------- | -------- | -------- | -------------------------------------------------------------------------------- |
-| success    | Function | No       | Callback function khi việc đóng kết nối thành công.                              |
-| fail       | Function | No       | Callback function khi việc đóng kết nối thất bại.                                |
-| complete   | Function | No       | Callback function khi việc đóng kết nối kết thúc cho dù thành công hay thất bại. |
