@@ -47,6 +47,7 @@ Page({
 
 | Attributes | Type     | Required | Description                                                           |
 | ---------- | -------- | -------- | --------------------------------------------------------------------- |
+| keys       | Array    | No       | Mảng các thuộc tính cần lấy để nếu không cần lấy hết toàn bộ thông tin. ví dụ `keys: ['windowWidth', 'windowHeight'`]                                                                           |
 | success    | Function | No       | Callback function khi thành công.                                     |
 | fail       | Function | No       | Callback function khi thất bại.                                       |
 | complete   | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
