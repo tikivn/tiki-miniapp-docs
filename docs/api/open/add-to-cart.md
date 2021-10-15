@@ -4,7 +4,7 @@ title: my.addToCart
 
 ## Giới thiệu
 
-**my.addToCart** là API để add 1 product vào giỏ hàng của tiki
+**my.addToCart** là API để add 1 hoặc nhiều product vào giỏ hàng của Tiki.
 ## Sử dụng
 
 ### Sample Code
