@@ -675,6 +675,7 @@ module.exports = {
         },
       ],
     },
+    'api/backend-permission',
   ],
   'Backend API': [
     'backend-api/overview',

@@ -9,6 +9,11 @@ title: 'my.getAuthCode'
 Thông qua việc sử dụng auth code, lập trình viên của Mini App có thể gọi tới các Open API của Tiki để
 sử dụng các tính năng phức tạp hơn.
 
+Lưu ý: để sử dụng được hàm `my.getAuthCode` trên Tini Studio, các bạn cần phải cấu hình trường `appIdentifier` trong
+file `package.json` trùng với một app id được tạo bởi Dev Center
+
+Nếu như trường `appIdentifier` không trùng với app id được tạo bởi Dev Center, API `my.getAuthCode` sẽ không trả về đúng dữ liệu.
+
 ## Sử dụng
 
 ### Sample Code

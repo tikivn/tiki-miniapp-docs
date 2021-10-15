@@ -2,11 +2,39 @@
 title: my.getSystemInfo
 ---
 
-## Giới thiệu
+`my.getSystemInfo` là API dùng để lấy thông tin của hệ thống.
 
-**my.getSystemInfo** là API dùng để lấy thông tin của hệ thống.
+## API Params
 
-## Sử dụng
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                                                                           |
+| ---------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| keys       | Array        | Các thuộc tính cần lấy thông tin; nếu không API sẽ trả về thông tin của tất cả thuộc tính. <br/> Ví dụ: `keys: ['windowWidth', 'windowHeight']` |
+| success    | Function     | Callback function khi lấy thông tin hệ thống thành công.                                                                                        |
+| fail       | Function     | Callback function khi lấy thông tin hệ thống bất thành.                                                                                         |
+| complete   | Function     | Callback function khi việc lấy thông tin hệ thống hoàn tất bất kể thành công hay thất bại.                                                      |
+
+## Giá trị trong success callback
+
+Khi việc gọi API thành công, framework sẽ trả về thông tin về thiết bị như sau:
+
+| Thuộc tính      | Kiểu dữ liệu | Mô tả                                                                                                                        |
+| --------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| app             | string       | Tên của super app hiện tại, nếu chạy trên Tiki App giá trị sẽ là Tiki; hoặc trên seller center app sẽ là Tiki Seller Center. |
+| brand           | string       | Nhãn hiệu của thiết bị đang chạy (iPhone, Samsung,..).                                                                       |
+| currentBattery  | number       | Mức pin hiện tại, có giá trị từ 0 - 1.                                                                                       |
+| model           | string       | Model của thiết bị (iPhone X, Samsung Note 4, ...).                                                                          |
+| platform        | string       | Nền tảng mà thiết bị chạy trên (iOS, Android, Web).                                                                          |
+| system          | string       | Hệ điều hành chạy trên thiết bị (iOS, Android).                                                                              |
+| version         | string       | Phiên bản của hệ điều hành (12.0, 14.0,...).                                                                                 |
+| hostVersion     | string       | Phiên bản của Tiki App.                                                                                                      |
+| runtimeVersion  | string       | Phiên bản Tini App Framework.                                                                                                | . |
+| freeStorage     | number       | Dung lượng bộ nhớ còn trống. Đơn vị tính byte.                                                                               |
+| screenWidth     | number       | Chiều rộng của màn hình thiết bị. Đơn vị tính pixel.                                                                         |
+| screenHeight    | number       | Chiều cao của của màn hình thiết bị. Đơn vị tính pixel.                                                                      |
+| windowWidth     | number       | Chiều rộng của cửa sổ chứa page hiện tại, không bao gồm status bar, navigation bar và bottom bar.                            |
+| windowHeight    | number       | Chiều cao của cửa sổ chứa page hiện tại, không bao gồm status bar, navigation bar và bottom bar).                            |
+| titleBarHeight  | number       | Chiều cao của navigation bar.                                                                                                |
+| statusBarHeight | number       | Chiều cao của status bar.                                                                                                    |
 
 ### Sample Code
 
@@ -42,35 +70,3 @@ Page({
   }
 });
 ```
-
-### API Params
-
-| Attributes | Type     | Required | Description                                                           |
-| ---------- | -------- | -------- | --------------------------------------------------------------------- |
-| keys       | Array    | No       | Mảng các thuộc tính cần lấy để nếu không cần lấy hết toàn bộ thông tin. ví dụ `keys: ['windowWidth', 'windowHeight'`]                                                                           |
-| success    | Function | No       | Callback function khi thành công.                                     |
-| fail       | Function | No       | Callback function khi thất bại.                                       |
-| complete   | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
-
-### Giá trị trong success callback
-
-Khi việc gọi API thành công, framework sẽ trả về thông tin về thiết bị như sau:
-
-| Attributes      | Type   | Description                                                                                                                |
-| --------------- | ------ | -------------------------------------------------------------------------------------------------------------------------- |
-| app             | String | Tên của app host hiện tại, nếu chạy trên App Tiki giá trị sẽ là Tiki hoặc trên seller center app sẽ là Tiki Seller Center. |
-| brand           | String | Nhã hiệu của thiết bị hiện tại đang chạy (iPhone, Samsung,..).                                                             |
-| currentBattery  | Number | Trả về dung lượng hiện tại của pin, có giá trị từ 0 - 1.                                                                   |
-| model           | String | Model của thiết bị (iPhone X, Samsung Note 4, ...).                                                                        |
-| platform        | String | Nền tảng của hệ điều hành (iOS, Android, Web).                                                                             |
-| system          | String | Hệ điều hành chạy trên thiết bị (iOS, Android).                                                                            |
-| version         | String | Verion hiện tại của hệ điều hành (12.0, 14.0,...).                                                                         |
-| hostVersion     | String | Verion hiện tại của app Tiki                                                                                               |
-| runtimeVersion  | String | Verion hiện tại của Mini App Runtime                                                                                       |
-| freeStorage     | Number | Dung lượng bộ nhớ còn trống theo bytes.                                                                                    |
-| screenWidth     | Number | Chiều rộng theo px của màn hình thiết bị.                                                                                  |
-| screenHeight    | Number | Chiều cao theo px của màn hình thiết bị.                                                                                   |
-| windowWidth     | Number | Chiều rộng của cửa sổ chứa page hiện tại (kích thước không bao gồm status bar, nav bar và bottom bar).                     |
-| windowHeight    | Number | Chiều cao của cửa sổ chứa page hiện tại (kích thước không bao gồm status bar, nav bar và bottom bar).                      |
-| titleBarHeight  | Number | Chiều cao của navigation bar.                                                                                              |
-| statusBarHeight | Number | Chiều cao của status bar.                                                                                                  |
