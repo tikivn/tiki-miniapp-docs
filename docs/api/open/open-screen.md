@@ -108,3 +108,4 @@ Các thuộc tính:
 | TK_LISTING | Màn hình categories   | No |
 | TK_SOCIAL_FEED | Màn hình Lướt   | No |
 | TK_PROFILE | Màn hình user profile   | tikiid |
+| TK_CART | Màn hình Cart          |  |

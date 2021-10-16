@@ -1,5 +1,5 @@
 ---
-title: my.getRunScene (chưa ready)
+title: my.getRunScene
 ---
 
 ## Giới thiệu
@@ -33,4 +33,5 @@ my.getRunScene({
 
 | Attributes | Type   | Description                    |
 | ---------- | ------ | ------------------------------ |
-| envVersion | string | Version hiện tại của Mini App. |
+| version    | string | Version hiện tại của Mini App. |
+| envVersion | string | Môi trường hiện tại mà app đang chay: `develop` hoặc `release` |
