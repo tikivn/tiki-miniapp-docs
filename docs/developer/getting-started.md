@@ -19,7 +19,7 @@ Tini App của Tiki đi kèm với một hệ thống framework gọn nhẹ như
 
 Bạn có hứng thú khám phá Tini App ngay bây giờ chưa?
 
-- Hãy tải Tini Studio về máy: [for Windows](https://bit.ly/tini-studio-windows-latest) hoặc [for MacOS](https://bit.ly/tini-studio-latest). 
+- Hãy [tải Tini Studio](https://developers.tiki.vn/downloads) về máy. 
 - Tìm hiểu [cách sử dụng](/docs/studio/overview).
     
 Đương nhiên việc tạo ra ứng dụng không thể thiếu phần của framework, vui lòng tìm hiểu:

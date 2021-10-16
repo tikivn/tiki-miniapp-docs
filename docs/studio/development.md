@@ -4,9 +4,7 @@ title: Phát triển ứng dụng trên Tini Studio
 
 ## 1. Tải về Tini Studio
  
-Truy cập vào liên kết sau để tải Tini Studio về máy của bạn.
-- [Tini Studio for Windows](https://bit.ly/tini-studio-windows-latest):
-- [Tini Studio for MacOS](https://bit.ly/tini-studio-latest): 
+Truy cập vào [liên kết này](https://developers.tiki.vn/downloads) để tải Tini Studio về máy của bạn.
 
 ## 2. Cài đặt Tini Studio
 
