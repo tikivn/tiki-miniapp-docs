@@ -2,14 +2,37 @@
 title: my.addToCart
 ---
 
-## Giới thiệu
+`my.addToCart` là API để thêm 1 hoặc nhiều sản phẩm vào giỏ hàng (cart) của Tiki.
 
-**my.addToCart** là API để add 1 hoặc nhiều product vào giỏ hàng của Tiki.
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                       |
+| ---------- | ---------------- | :------: | --------------------------------------------------------------------------- |
+| products   | Array of Objects |    ✓     | Danh sác các sản phẩm cần thêm vào cart.                                    |
+| success    | Function         |          | Callback function khi add vào cart được thực hiện thành công                |
+| fail       | Function         |          | Callback function khi add vào cart thất bại, argument sẽ là error message   |
+| complete   | Function         |          | Callback function khi add vào cart kết thúc cho dù thành công hay thất bại. |
 
-Example add product vào giỏ hàng, update badge và mở màn hình giỏ hàng của Tiki.
+
+### Thuộc tính của product
+
+| Thuộc tính | Kiểu dữ liệu | Mô tả          |
+| ---------- | ------------ | -------------- |
+| productId  | string       | ID của product |
+| quantity   | number       | Số lượng       |
+
+### Callback function payload
+
+Fail callback payload 
+
+| Thuộc tính   | Kiểu dữ liệu | Mô tả                     |
+| ------------ | ------------ | ------------------------- |
+| error        | string       | Tên lỗi                   |
+| errorMessage | string       | Nội dung chi tiết của lỗi |
+
+## Sample Code
+
+Ví dụ thêm sản phẩm vào giỏ hàng, cập nhật badge và mở màn hình giỏ hàng của Tiki.
 
 ```xml title=index.txml
 <view>
@@ -97,30 +120,3 @@ Page({
 });
 ```
 
-### API Params
-
-Các thuộc tính:
-
-| Attributes | Type     | Required | Description                                                                         |
-| ---------- | -------- | -------- | ----------------------------------------------------------------------------------- |
-| products    | Array  | Yes       | Mảng object các products cần add vào cart. Xem thuộc tính của object product bên dưới                             |
-| success    | Function | No       | Callback function khi add vào cart được thực hiện thành công                             |
-| fail       | Function | No       | Callback function khi add vào cart thất bại, argument sẽ là error message                |
-| complete   | Function | No       | Callback function khi add vào cart kết thúc cho dù thành công hay thất bại.     |
-
-
-### products attributes
-
-| Attributes   | Type     |  Description              |
-| ----------   | -------- | ------------------------- |
-| productId    | string   | ID của product            |
-| quantity     | number   | Số lượng                  |
-
-### Callback function payload
-
-* Fail callback payload 
-
-| Attributes   | Type     |  Description              |
-| ----------   | -------- | ------------------------- |
-| error        | string   | error title               |
-| errorMessage | string   | error message in detail   |

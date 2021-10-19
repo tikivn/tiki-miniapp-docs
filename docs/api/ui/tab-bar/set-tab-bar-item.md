@@ -2,13 +2,21 @@
 title: my.setTabBarItem
 ---
 
-## Giới thiệu
+`my.setTabBarItem` là API để thay đổi các thuộc tính của một Tab bar item, bao gồm: text, icon khi item ở trạng thái bình thường, và icon ở trạng thái được chọn (selected) 
 
-**my.setTabBarItem** là API để set lại text, icon, highlight icon cho 1 tab item
+## API Params
 
-## Sử dụng
+| Thuộc tính       | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                                                                                   |
+| ---------------- | ------------ | :------: | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| index            | Number       |    ✓     | Số thứ tự của item. Các item trên Tab bar được đánh số từ trái sang phải, bắt đầu bằng 0.                                                               |
+| text             | String       |    ✓     | Text của TabBar item.                                                                                                                                   |
+| iconPath         | String       |    ✓     | Đường dẫn của icon khi item bình thường (không được chọn). Nếu đường dẫn là ảnh local, thì cần truyền vào đường dẫn tuyệt đối. Ví dụ: `images/icon.png` |
+| selectedIconPath | String       |    ✓     | Đường dẫn của icon khi item được chọn (selected). Nếu đường dẫn là ảnh local, thì cần truyền vào đường dẫn tuyệt đối                                    |
+| success          | Function     |          | Callback function khi việc thay đổi thành công.                                                                                                         |
+| fail             | Function     |          | Callback function khi việc thay đổi bất thành.                                                                                                          |
+| complete         | Function     |          | Callback function khi gọi API hoàn tất bất kể thành công hay thất bại.                                                                                  |
 
-### Sample Code
+## Sample Code
 
 ```js
 my.setTabBarItem({
@@ -19,14 +27,4 @@ my.setTabBarItem({
 });
 ```
 
-### API Params
 
-| Attributes       | Type     | Required | Description                                                                               |
-| ---------------- | -------- | -------- | ----------------------------------------------------------------------------------------- |
-| index            | Number   | yes      | Index của tab page, tính từ 0, và từ trái qua phải.                                       |
-| text             | String   | yes      | Text của TabBar Item                                                                      |
-| iconPath         | String   | Yes      | Đường dẫn của icon. Nếu đường dẫn là ảnh local, thì cần truyền vào đường dẫn tuyệt đối tới ảnh ví dụ: `images/icon.png` |
-| selectedIconPath | String   | Yes      | Đường dẫn của icon. Nếu đường dẫn là ảnh local, tthì cần truyền vào đường dẫn tuyệt đối tới ảnh ví dụ: `images/icon_hl.png` |
-| success          | Function | No       | Callback function khi thành công.                                                         |
-| fail             | Function | No       | Callback function khi thất bại.                                                           |
-| complete         | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                     |

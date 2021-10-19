@@ -2,13 +2,22 @@
 title: my.setTabBarBadge
 ---
 
-## Giới thiệu
+`my.setTabBarBadge` là API để dùng để thêm badge text vào một Tab bar item.
 
-**my.setTabBarBadge** là API để bỏ đi badge text cho một Tab Bar Item
+Badge là một vòng tròn màu đỏ xuất hiện ở góc phải trên của icon trên thiết bị di động, có chức năng báo cho người dùng biết số lượng tin nhắn chưa đọc, thông báo mới (notification), tin nhắn chat, nhắc báo, … .
 
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                                                     |
+| ---------- | ------------ | :------: | ------------------------------------------------------------------------------------------------------------------------- |
+| index      | number       |    ✓     | Số thứ tự của item mà bạn muốn thêm badge text vào. Các item trên Tab bar được đánh số từ trái sang phải, bắt đầu bằng 0. |
+| text       | string       |    ✓     | Badge text                                                                                                                |
+| success    | Function     |          | Callback function khi thành công.                                                                                         |
+| fail       | Function     |          | Callback function khi thất bại.                                                                                           |
+| complete   | Function     |          | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                                                     |
+
+
+## Sample Code
 
 ```js
 my.setTabBarBadge({
@@ -16,13 +25,3 @@ my.setTabBarBadge({
   text: 10
 });
 ```
-
-### API Params
-
-| Attributes | Type     | Required | Description                                                                         |
-| ---------- | -------- | -------- | ----------------------------------------------------------------------------------- |
-| index      | Number   | yes      | Index của tab page, tính từ 0, và từ trái qua phải.                                 |
-| text       | String   | yes      | Nếu text có độ dài lớn hơn 3 ký tự, text sẽ được hiện thị thành 2 ký tự đầu + '...' |
-| success    | Function | No       | Callback function khi thành công.                                                   |
-| fail       | Function | No       | Callback function khi thất bại.                                                     |
-| complete   | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.               |

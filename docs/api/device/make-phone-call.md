@@ -2,14 +2,29 @@
 title: my.makePhoneCall
 ---
 
-## Giới thiệu
+`my.makePhoneCall` là API dùng để gọi tới 1 số điện thoại cụ thể.
 
-- **my.makePhoneCall** là API dùng để gọi tới 1 số điện thoại.
-- Chỉ hỗ trợ từ version 1.77.1 trở lên
+***Khả dụng***: hỗ trợ từ version 1.77.1 trở lên.
 
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                          |
+| ---------- | ------------ | :------: | -------------------------------------------------------------- |
+| number     | number       |    ✓     | Số điện thoại cần gọi                                          |
+| success    | Function     |          | Callback khi việc gọi điện thành công                          |
+| fail       | Function     |          | Callback khi gọi điện bất thành                                |
+| complete   | Function     |          | Callback khi hoàn tất việc gọi bất kể thành công hoặc thất bại |
+
+### Callback function payload
+
+* Fail callback payload 
+
+| Thuộc tính   | Kiểu dữ liệu | Mô tả        |
+| ------------ | ------------ | ------------ |
+| error        | string       | Tên lỗi      |
+| errorMessage | string       | Chi tiết lỗi |
+
+## Sample Code
 
 ```js title=index.js
 Page({
@@ -48,25 +63,4 @@ Page({
   </view>
 </view>
 ```
-
-### API Params
-
-Các thuộc tính:
-
-| Attributes | Type     | Required |Description                                                                          |
-| ---------- | -------- | -------- | ----------------------------------------------------------------------------------- |
-| number    | Function  |     √    | Số điện thoại cần gọi                                                           |
-| success    | Function |          | Callback khi việc lấy clipboard thành công                                      |
-| fail       | Function |          | Callback khi việc lấy clipboard thất bại                                        |
-| complete   | Function |          | Callback khi việc lấy clipboard thành công hoặc thất bại                        |
-
-### Callback function payload
-
-### Callback function payload
-
-* Fail callback payload 
-
-| Attributes   | Type     |  Description              |
-| ----------   | -------- | ------------------------- |
-| error        | string   | error title               |
-| errorMessage | string   | error message in detail   |
+|

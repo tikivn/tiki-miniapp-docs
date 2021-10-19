@@ -4,7 +4,7 @@ title: my.downloadFile
 
 `my.downloadFile` là API dùng để dowload file về máy. File sẽ được lưu trữ tạm ở device.
 
-**Lưu ý:** Bạn vẫn có thể sử dụng `my.request` để download dữ liệu tuy nhiên api `my.request` chỉ trả về raw data của file. Khác với `my.request`, `downloadFile` sẽ thực hiện download về lưu file. Sau đó trả về đường dẫn tạm thời có thể truy cập lại file bất cứ lúc nào.
+***Lưu ý:*** Bạn vẫn có thể sử dụng `my.request` để download dữ liệu tuy nhiên api `my.request` chỉ trả về raw data của file. Khác với `my.request`, `downloadFile` sẽ thực hiện download về lưu file. Sau đó trả về đường dẫn tạm thời có thể truy cập lại file bất cứ lúc nào.
 
 ***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên Dev Center trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/backend-api/overview#tên-miền).
 

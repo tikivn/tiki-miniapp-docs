@@ -15,7 +15,7 @@ Về phía người dùng Tiki, họ chỉ cần mở ứng dụng từ Kho ti�
 
 Sau đây là các công đoạn cụ thể:
 
-## 1. Tạo ra và đăng ký duyệt các sản phẩm trên Seller Center.
+## 1. Tạo ra và đăng ký duyệt các sản phẩm trên Seller Center
 
 Không phải tất cả các loại sản phẩm bán trên sàn TMĐT đều có thể bán trên Tini App.
 

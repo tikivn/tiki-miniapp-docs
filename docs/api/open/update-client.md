@@ -2,13 +2,30 @@
 title: my.askDownloadNewClient
 ---
 
-## Giới thiệu
+`my.askDownloadNewClient` là API dùng để kiểm tra Tiki App cài trên thiết bị di động có phải là phiên bản mới nhất không. Nếu đó là phiên bản cũ, 1 popup sẽ được hiển thị hỏi xem liệu người dùng có muốn nâng cấp lên phiên bản Tiki App mới nhất không. Người dùng có quyền từ chối bằng cách bấm nút `Huỷ`, hoặc bấm nút `Cập nhật` để truy cập vào Apple Store hay Google Play Store, và cập nhật Tiki App.
 
-**my.askDownloadNewClient** là API để kiểm tra ứng dụng Tiki đang dùng có phải là bản mới nhất không. Khi ứng dụng ở device user đã cũ, app sẽ hiển thị 1 popup yêu cầu người dùng update lên version mới nhất, user có thể cancel hoặc tiếp tục để mở link tới apple store hoặc google play để update Tiki app. 
+<img src="/img/my_askDownloadNewClient_popup.png" width="300px" alt="Tini App version update popup" style={{ margin: '0 auto', display: 'flex' }}/>
 
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                        |
+| ---------- | ------------ | ---------------------------------------------------------------------------- |
+| success    | Function     | Callback function khi việc kiểm tra được thực hiện thành công.               |
+| fail       | Function     | Callback function khi việc kiểm tra thất bại, argument sẽ là error message.  |
+| complete   | Function     | Callback function khi việc kiểm tra hoàn tất bất kể thành công hay thất bại. |
+
+### Callback function payload
+
+- Success callback payload là 1 biến boolean thể hiện việc update thành công hay không. Nếu user cancel, không đồng ý update thì biến này sẽ là false.
+  
+- Fail callback payload. 
+
+| Thuộc tính   | Kiểu dữ liệu | Mô tả        |
+| ------------ | ------------ | ------------ |
+| error        | string       | Tên lỗi      |
+| errorMessage | string       | Chi tiết lỗi |
+
+## Sample Code
 
 ```xml title=index.txml
 <view>
@@ -34,23 +51,3 @@ Page({
 });
 
 ```
-
-### API Params
-
-Các thuộc tính:
-
-| Attributes | Type     | Required | Description                                                                         |
-| ---------- | -------- | -------- | ----------------------------------------------------------------------------------- |
-| success    | Function | No       | Callback function khi việc kiểm tra được thực hiện thành công                             |
-| fail       | Function | No       | Callback function khi việc kiểm tra thất bại, argument sẽ là error message                |
-| complete   | Function | No       | Callback function khi việc kiểm tra kết thúc cho dù thành công hay thất bại.     |
-
-### Callback function payload
-* success callback payload là 1 biến boolean thể hiện việc update thành công hay không. Nếu user cancel, không đồng ý update thì biến này sẽ là false.
-  
-* Fail callback payload 
-
-| Attributes   | Type     |  Description              |
-| ----------   | -------- | ------------------------- |
-| error        | string   | error title               |
-| errorMessage | string   | error message in detail   |

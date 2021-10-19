@@ -2,13 +2,32 @@
 title: my.openNativeAppStore
 ---
 
-## Giới thiệu
+`my.openNativeAppStore` là API dùng để truy cập đến một ứng dụng trên Apple Store hay Google Play Store.
 
-**my.openNativeAppStore** là API dùng để mở apple store hoặc play store của 1 ứng dụng
+## API Params
 
-## Sử dụng
+Các thuộc tính:
 
-### Sample Code
+| Thuộc tính   | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                           |
+| ------------ | ------------ | :------: | ----------------------------------------------------------------------------------------------- |
+| appleStoreId | String       |    ✓     | App Id của ứng dụng iOS trên Apple Store cần truy cập.                                          |
+| googlePlayId | String       |    ✓     | App Id của ứng dụng Android trên Google Play Store cần truy cập.                                |
+| success      | Function     |          | Callback function khi truy cập đến ứng dụng trên store thành công.                              |
+| fail         | Function     |          | Callback function khi truy cập đến ứng dụng trên store bất thành, argument sẽ là error message. |
+| complete     | Function     |          | Callback function khi truy cập đến ứng dụng trên store kết thúc bất kể thành công hay thất bại. |
+
+### Callback function payload
+
+* success callback payload là 1 biến kiểu boolean và luôn mang giá trị true
+
+* Fail callback payload
+
+| Thuộc tính   | Kiểu dữ liệu | Mô tả        |
+| ------------ | ------------ | ------------ |
+| error        | string       | Tên lỗi      |
+| errorMessage | string       | Chi tiết lỗi |
+
+## Sample Code
 
 ```xml title=index.txml
 <view>
@@ -36,23 +55,4 @@ Page({
 });
 ```
 
-### API Params
 
-Các thuộc tính:
-
-| Attributes | Type     | Required | Description                                                                         |
-| ---------- | -------- | -------- | ----------------------------------------------------------------------------------- |
-| appleStoreId        | String   |        | App Id của ứng dụng ios cần mở link tới apple store |
-| googlePlayId | String |   | App Id của ứng dụng android cần mở link tới apple store |
-| success    | Function | No       | Callback function khi mở store được thực hiện thành công                             |
-| fail       | Function | No       | Callback function khi mở store thất bại, argument sẽ là error message                |
-| complete   | Function | No       | Callback function khi việc mở store kết thúc cho dù thành công hay thất bại.     |
-
-### Callback function payload
-* success callback payload là 1 biến boolean và luôn là true 
-* Fail callback payload 
-
-| Attributes   | Type     |  Description              |
-| ----------   | -------- | ------------------------- |
-| error        | string   | error title               |
-| errorMessage | string   | error message in detail   |
