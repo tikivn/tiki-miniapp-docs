@@ -74,7 +74,10 @@ Mỗi lần muốn gửi message từ `web-view` sang Tini App, chúng ta sẽ s
 ```js
 const callbacks = {};
 function sendMessageToTiniApp(params, callback) {
-  const requestId = new Date().getTime();
+  const requestId =
+    new Date().getTime() +
+    '' +
+    Math.floor(Math.random() * 1000000);
   callbacks[requestId] = callback;
   debug('send to Tini App', requestId, JSON.stringify(params));
   my.postMessage({ requestId, params });
