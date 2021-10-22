@@ -8,6 +8,22 @@ title: my.downloadFile
 
 ***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên Dev Center trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/backend-api/overview#tên-miền).
 
+## API Params
+
+Để cấu hình việc gọi network, bạn cần truyền object với các thuộc tính sau:
+
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                             |
+| ---------- | ------------ | :------: | --------------------------------------------------------------------------------- |
+| url        | string       |    ✓     | Đường dẫn của file muốn download                                                  |
+| headers    | Object       |          | Cấu hình headers khi thực hiện gọi network.                                       |
+| success    | Function     |          | Callback function khi việc download file thành công.                              |
+| fail       | Function     |          | Callback function khi việc download file thất bại.                                |
+| complete   | Function     |          | Callback function khi việc download file kết thúc cho dù thành công hay thất bại. |
+
+### Success Callback function payload
+
+payload trong success callback là đường dẫn tạm thời của file đã download. Đường dẫn này có thể sử dụng bất cứ lúc nào.
+
 ## Sample Code
 
 Example bên dưới nhập vào 1 url để download file
@@ -51,20 +67,4 @@ Page({
   },
 });
 ```
-
-## API Params
-
-Để cấu hình việc gọi network, bạn cần truyền object với các thuộc tính sau:
-
-| Attributes | Type     | Required | Description                                                                       |
-| ---------- | -------- | :------: | --------------------------------------------------------------------------------- |
-| url        | string   |   Yes    | Đường dẫn của file muốn download                                                  |
-| headers    | Object   |    No    | Cấu hình headers khi thực hiện gọi network.                                       |
-| success    | Function |    No    | Callback function khi việc download file thành công.                              |
-| fail       | Function |    No    | Callback function khi việc download file thất bại.                                |
-| complete   | Function |    No    | Callback function khi việc download file kết thúc cho dù thành công hay thất bại. |
-
-### Success Callback function payload
-
-payload trong success callback là đường dẫn tạm thời của file đã download. Đường dẫn này có thể sử dụng bất cứ lúc nào                                    
 

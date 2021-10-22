@@ -8,12 +8,12 @@ title: my.makePhoneCall
 
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                   |
-| ---------- | ------------ | :------: | ----------------------------------------------------------------------- |
-| number     | number       |    ✓     | Số điện thoại cần gọi                                                   |
-| success    | Function     |          | Callback function khi việc gọi điện thành công                          |
-| fail       | Function     |          | Callback function khi gọi điện bất thành                                |
-| complete   | Function     |          | Callback function khi hoàn tất việc gọi bất kể thành công hoặc thất bại |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                  |
+| ---------- | ------------ | :------: | ---------------------------------------------------------------------- |
+| number     | number       |    ✓     | Số điện thoại cần gọi                                                  |
+| success    | Function     |          | Callback function khi việc gọi điện thành công                         |
+| fail       | Function     |          | Callback function khi gọi điện bất thành                               |
+| complete   | Function     |          | Callback function khi hoàn tất việc gọi bất kể thành công hay thất bại |
 
 ### Callback function payload
 

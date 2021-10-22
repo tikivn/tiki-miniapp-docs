@@ -49,6 +49,18 @@ Sau đây là các bước chính yếu để tạo ra cũng như đề nghị d
 | Từ chối            | Tiki từ chối phê duyệt sản phẩm. Đối tác có thể bổ sung thêm thông tin, gửi đến Tiki để tái xem xét. |
 | Đã duyệt           | Tiki chấp thuận cho sản phẩm được bán trên nền tảng Tiki.                                            |
 
+## Nhập tồn kho cho sản phẩm
+
+Nhập số lượng tồn kho là bước tiếp theo bạn cần làm sau khi sản phẩm đã được Tiki chấp thuận. Để nhiều khách hàng có thể đặt hàng sản phẩm cùng một lúc, tốt nhất bạn nên số lượng tồn kho tối thiểu là 100.
+
+Cách làm như sau:
+
+1. Trên Seller Center, Sidebar menu >> **Sản phẩm** >> **Tồn kho E-voucher**.
+2. Ở cột cuối cùng của bảng danh sách sản phẩm, nhấp vào **Cập nhật tồn kho**.
+   <img style={{ margin: '0 auto', display: 'flex' }} src="/img/Ton_kho_E-voucher.png" alt="Ton kho E-voucher"/>
+3. Hộp thoại **Cập nhật tồn kho** xuất hiện. Nhập vào một số tối thiểu là 100 trong ô **Tồn Kho Mới**; chọn **Hạn sử dụng** của sản phẩm; cuối cùng bấm nút **Cập Nhật**. 
+   <img style={{ margin: '0 auto', display: 'flex' }} src="/img/Cap_nhat_ton_kho_E-voucher.jpg" alt="Ton kho E-voucher"/>
+
 ## FAQ
 
 **Hỏi**: Tại sao tên SKU và tên sản phẩm khách hàng nhận được trong email là khác nhau?
