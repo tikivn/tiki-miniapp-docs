@@ -19,9 +19,13 @@ Sau đây là các công đoạn cụ thể:
 
 Không phải tất cả các loại sản phẩm bán trên sàn TMĐT đều có thể bán trên Tini App.
 
-## 2. Yêu cầu Tiki mở tính năng thanh toán cho Tini App
+Xem hướng dẫn tạo sản phẩm [tại đây](create-sku).
+
+## 2. Tích hợp thanh toán cho Tini App
 
 Sau khi tính năng thanh toán của ứng dụng được mở, bạn cần thiết lập thông tin thanh toán cho ứng dụng.
+
+Xem hướng dẫn tạo tích hợp thanh toán [tại đây](payment-feature-request). 
 
 ## 3. Tích hợp sản phẩm vào ứng dụng
 
