@@ -6,6 +6,12 @@ title: Tabs
 
 `tabs` được sử dụng khi bạn cần hiển thị nội dung với 2 thành phần là thanh tab bar ở trên đầu và tab content bên dưới
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/navigation/tabs/index" />
+
 ## Sử dụng
 
 ### Sample Code

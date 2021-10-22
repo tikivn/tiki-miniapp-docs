@@ -2,12 +2,18 @@
 title: icon
 ---
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/foundation/icons/index" />
+
 ## Thuộc tính
 
 | Thuộc tính | Kiểu dữ liêu | Gia trị mặc định | Bắt buộc | Mô tả                                                                                                                                                                                                                                                                                                                                                                                                              |
 | ---------- | ------------ | ---------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | type       | string       |                  | ✓        | Loại icon hiển thị. Nhận giá trị : [ home \|\| search \|\| calendar \|\| location \|\| setting \|\| contact \|\| chat \|\| info \|\| warning \|\| success \|\| plus \|\| minus \|\| geometry \|\| close \|\| close_circle \|\| more \|\| arrow_right \|\| arrow_left \|\| arrow_down \|\| arrow_up \|\| bookmark \|\| app_home \|\| phone_home \|\| share \|\| warning_glyph \|\| success_glyph \|\| close_glyph ] |
-| size       | number       | 24               |          | Kích thước  icon. Đơn vị tính pixel.                                                                                                                                                                                                                                                                                                                                                                               |
+| size       | number       | 24               |          | Kích thước icon. Đơn vị tính pixel.                                                                                                                                                                                                                                                                                                                                                                                |
 | color      | string       |                  |          | Màu của icon, sử dụng mã màu như trong css                                                                                                                                                                                                                                                                                                                                                                         |
 
 ## Sử dụng
@@ -134,4 +140,3 @@ Page({
   }
 });
 ```
-

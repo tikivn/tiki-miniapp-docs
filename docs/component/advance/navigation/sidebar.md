@@ -6,6 +6,12 @@ title: Sidebar
 
 `sidebar`
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/navigation/sidebar/index" />
+
 ## Sử dụng
 
 ### Sample Code

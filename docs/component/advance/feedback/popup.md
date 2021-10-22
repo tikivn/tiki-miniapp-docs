@@ -6,6 +6,12 @@ title: Popup
 
 Hiển thị popup menu
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/popup/index" />
+
 ## Sử dụng
 
 ### Sample Code:

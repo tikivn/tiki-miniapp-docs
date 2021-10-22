@@ -6,6 +6,12 @@ title: audio
 
 `audio` là component cho phép người dùng có thể phát âm thanh trên Tini App. Bạn có thể điều khiển audio component thông qua [my.createAudioContext](/docs/api/media/create-audio-context) api.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/audio/index" />
+
 ## Thuộc tính
 
 | Thuộc tính   | Kiểu dữ liệu | Giá tri mặc định | Mô tả                                                                                                           |
@@ -37,6 +43,5 @@ Page({
     const audio = my.createAudioContext('audio1');
     audio.pause();
   }
-})
+});
 ```
-

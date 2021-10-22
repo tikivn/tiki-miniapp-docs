@@ -4,6 +4,11 @@ title: image
 
 `image` component dùng để hiển thị hình ảnh.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/image/index" />
 
 ## Thuộc tính
 
@@ -26,7 +31,7 @@ Image component có thể hiển thị hình ảnh ở 14 mode khác nhau, gồm
 
 #### Scaling mode
 
-Ở chế độ này, hình được scale (phóng to/thu nhỏ), tỷ lệ khung hình có thể 
+Ở chế độ này, hình được scale (phóng to/thu nhỏ), tỷ lệ khung hình có thể
 
 | Mode        | Mô tả                                                                                                                                                                                                                                    |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -36,7 +41,8 @@ Image component có thể hiển thị hình ảnh ở 14 mode khác nhau, gồm
 | widthFix    | Width của hình sẽ không thay đổi còn height sẽ được tự động (height auto) điều chỉnh cho phù hợp                                                                                                                                         |
 
 ### Clipping mode
-Ở chế độ này, kích thước của hình không đổi, chỉ 1 phần của hình được hiển thị nếu chiều cao/chiều rộng của hình lớn hơn component. 
+
+Ở chế độ này, kích thước của hình không đổi, chỉ 1 phần của hình được hiển thị nếu chiều cao/chiều rộng của hình lớn hơn component.
 
 | Mode         | Mô tả                                                                                                 |
 | ------------ | ----------------------------------------------------------------------------------------------------- |
@@ -50,14 +56,14 @@ Image component có thể hiển thị hình ảnh ở 14 mode khác nhau, gồm
 | bottom left  | Phần dưới bên trái của hình được hiển thị nếu kích thước hình lớn hơn kích thước của image component. |
 | bottom right | Phần dưới bên phải của hình được hiển thị nếu kích thước hình lớn hơn kích thước của image component. |
 
-***Lưu ý***
+**_Lưu ý_**
 
 > Bạn cần khai báo `width` và `height` của image component thông qua inline style hoặc trong tcss, mặc định là `width = 300px` và `height = 225px`. Thuộc tính `width` và `height` sẽ không được kế thừa trong image.
-> 
+>
 > Để sử dụng hình với height là auto, bạn có thể dùng mode là `widthFix`.
-> 
+>
 > Nên dùng _absolute path_ cho các đường dẫn của hình.
-> 
+>
 > Không nên dùng thuộc tính `object-fit` trong tcss để canh kích thước cho image mà thay vào đó dùng `mode`.
 
 ## Sample Code

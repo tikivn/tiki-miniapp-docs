@@ -7,6 +7,12 @@ title: Modal
 Khi ứng dụng cần cảnh báo hoặc nhắc nhở hành người dùng, yêu cầu thao tác của người dùng mà không phải chuyển trang, bạn có thể sử dụng modal.
 Người dùng cần thực hiện các thao tác trên modal trước khi đóng.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/modal/index" />
+
 ## Sử dụng
 
 ### Sample Code:

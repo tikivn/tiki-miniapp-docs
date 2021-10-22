@@ -6,6 +6,12 @@ title: label
 
 Để tăng trải nghiệm với các form component, các thành phần bên trong `label` sẽ được focus khi bấm vào phạm vi của `label`. Hỗ trợ các component `radio`, `checkbox`, `input` và `switch`, nếu có nhiều component trong `label`, chỉ component đầu tiên được focus
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/form/radio-button/index" />
+
 ## Giới hạn
 
 - Component cần được đặt bên trong `label`

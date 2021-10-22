@@ -8,6 +8,12 @@ title: Button
 
 <img alt="Tiki Tini Button - Tini UI Design System Community" src="https://i.imgur.com/O4p4xQG.png"/>
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/actions/button/index" />
+
 ## Sử dụng
 
 ### Sample Code

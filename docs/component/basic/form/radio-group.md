@@ -6,6 +6,12 @@ title: radio-group
 
 `radio-group` dùng để nhóm các [radio](/docs/component/form/radio) lại với nhau. Bên trong `radio-group` có thể chứa nhiều `radio`, nhưng tại một thời điểm chỉ có một `radio` có thể được chọn, các `radio` cần khai báo thuộc tính `value`
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/form/radio-button/index" />
+
 ## Sử dụng
 
 ### Sample Code

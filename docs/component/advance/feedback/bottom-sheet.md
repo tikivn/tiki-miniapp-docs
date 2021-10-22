@@ -4,9 +4,15 @@ title: Bottom Sheet
 
 ## Giới thiệu
 
-Bottom là component được sử dụng để hiển thị modal show từ dưới lên.
+Bottom Sheet là component được sử dụng để hiển thị modal show từ dưới lên.
 
 ![image](https://salt.tikicdn.com/ts/miniapp/17/39/96/0a7ed3934129953b1038012a51e6158f.png)
+
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/data-visualization/list/index" />
 
 ## Sử dụng
 

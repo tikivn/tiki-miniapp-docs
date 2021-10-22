@@ -7,6 +7,12 @@ title: checkbox-group
 - `checkbox-group` dùng để nhóm các [checkbox](/docs/component/form/checkbox) lại với nhau, value của `checkbox-group` sẽ là một mảng chứa value của các `checkbox` được chọn
 - Các thẻ `checkbox` bên trong `checkbox-group` cần được khai báo thuộc tính `value`
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/checkbox/index" />
+
 ## Sử dụng
 
 ### Sample Code

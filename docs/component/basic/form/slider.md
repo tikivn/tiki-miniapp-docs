@@ -7,6 +7,12 @@ title: slider
 - `slider` component cho phép bạn chọn giá trị bằng việc kéo thả trong một phạm vi nhất định
 - Để sử dụng `slider` component, bạn cần sử dụng framework version từ `1.73.13` trở lên
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/slider/index" />
+
 ## Sử dụng
 
 ### Sample Code

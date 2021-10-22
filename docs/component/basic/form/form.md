@@ -8,6 +8,12 @@ title: form
 - Các component bên trong form cần khai báo thuộc tính `name`
 - Giá trị của form chỉ có thể được lấy thông qua hàm `onSubmit` và chỉ được gọi thông qua sự kiện tap của [button](/docs/component/form/button) với `form-type="submit"`
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/form/index" />
+
 ## Sử dụng
 
 ### Sample Code

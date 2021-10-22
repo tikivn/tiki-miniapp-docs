@@ -190,12 +190,7 @@ export class QRCode extends React.Component {
   }
 
   get qrPage() {
-    const {
-      page,
-      firstPage,
-      domainUrl,
-      appId,
-    } = this.props;
+    const {page, firstPage, domainUrl, appId} = this.props;
 
     const _firstPage = firstPage ? `/${firstPage}` : '';
     const subPage = page ? `?page=${page}` : '';
@@ -356,17 +351,32 @@ export class QRCode extends React.Component {
     }
 
     window.open(this.qrPage);
-  }
+  };
 
   render() {
     const size = +this.props.size + 2 * +this.props.quietZone;
-    return <canvas 
-      onClick={this.onClick} 
-      id="react-qrcode-tiki" 
-      height={size} 
-      width={size} 
-      style={{ height: size, width: size, marginBottom: 16, cursor: 'pointer' }} 
-      ref={this.canvas}
-    />
+    const url = `${this.props.domainUrl}/apps/${this.props.appId}/${this.props.page}`;
+    return (
+      <>
+        <canvas
+          onClick={this.onClick}
+          id="react-qrcode-tiki"
+          height={size}
+          width={size}
+          style={{
+            height: size,
+            width: size,
+            marginBottom: 16,
+            cursor: 'pointer',
+          }}
+          ref={this.canvas}
+        />
+        <div>
+          Hoặc sử dụng link
+          <br />
+          <a href={url}>{url}</a>
+        </div>
+      </>
+    );
   }
 }
