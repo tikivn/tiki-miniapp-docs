@@ -129,6 +129,11 @@ Page({
 <button onTap="plus">+</button>
 ```
 
+Hàm `deriveDataFromProps` được gọi khi props hoặc data của Component thay đổi.
+
+Chú ý rằng, nếu trong hàm `deriveDataFromProps` bạn tiếp tục sử dụng hàm `this.setData` để
+thay đổi data của Component, thì việc thay đổi data này sẽ không gọi tới `deriveDataFromProps` lần nữa.
+
 ## didMount
 
 `didMount` được gọi sau khi Custom Component được render lần đầu tiên. Chúng ta có thể sử dụng hàm này để trigger việc load data từ server
@@ -199,3 +204,9 @@ Component({
   }
 });
 ```
+
+## Async Life Cycle
+
+Tini App hỗ trợ việc gọi các Component Life Cycle dưới dạng async.
+
+Tuy nhiên, thứ tự gọi các Life Cycle chỉ được đảm bảo khi chạy dưới dạng sync mà thôi.
