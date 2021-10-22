@@ -6,6 +6,12 @@ title: my.navigateToMiniApp
 
 **my.navigateToMiniApp** là API dùng để di chuyển giữa các app.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/navigator/index" />
+
 ## Sử dụng
 
 ### Sample Code

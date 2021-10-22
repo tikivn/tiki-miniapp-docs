@@ -29,6 +29,12 @@ Tuy nhiên hàm `my.startPullDownRefresh` chỉ hoạt động khi thoả mãn 2
 
 Vì vây muốn disable tính năng pull to refresh chỉ cần set `allowsBounceVertical` thành `NO` hoặc `pullRefresh` thành `false`
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/pull-refresh/index" />
+
 ## Sử dụng
 
 ### Sample Code

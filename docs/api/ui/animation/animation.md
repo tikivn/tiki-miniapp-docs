@@ -9,9 +9,16 @@ my.createAnimation là api để tạo ra một animation instance.
 Animation instance sử dụng các hàm của nó để mô tả animation và cuối cùng,
 sử dụng hàm `export` để truyền thuộc tính animation vào các view trên TXML.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/animation/index" />
+
 ## Sử dụng
 
 ### Sample Code
+
 ```css
 .animation-element {
   width: 100px;

@@ -6,6 +6,12 @@ title: my.showToast
 
 `my.showToast` là api để hiển thị toast popup slide từ top và tự hide đi sau 1 khoảng thời gian được set hoặc dùng api `my.hideToast`
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/toast/index" />
+
 ## Sử dụng
 
 ### Sample Code

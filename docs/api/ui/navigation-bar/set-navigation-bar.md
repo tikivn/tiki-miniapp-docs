@@ -6,6 +6,12 @@ title: my.setNavigationBar
 
 **my.setNavigationBar** là API để set style cho Navigation Bar
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/navigation-bar/set-navigation-bar/index" />
+
 ## Sử dụng
 
 ### Sample Code

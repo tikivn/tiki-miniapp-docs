@@ -6,6 +6,11 @@ title: my.addIconsToNavigationBar
 
 <img src="/img/Add_Icon_to_NavigationBar.jpg" width="300px" alt="Simulation Widget" style={{ margin: '0 auto', display: 'flex' }}/>
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/add-to-cart/index" />
 
 ## API Params
 
@@ -38,8 +43,8 @@ Page({
           image: '/images/cart.png',
           width: 25,
           height: 25,
-          badge: `${this.data.quantity}`,
-        },
+          badge: `${this.data.quantity}`
+        }
       ],
       padding: 10,
       success: (res) => {
@@ -47,9 +52,8 @@ Page({
       },
       fail: (res) => {
         console.log(res);
-      },
+      }
     });
-  },
+  }
 });
 ```
-

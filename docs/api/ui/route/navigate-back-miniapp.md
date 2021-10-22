@@ -6,6 +6,12 @@ title: my.navigateBackMiniApp
 
 **my.navigateBackMiniApp** là API dùng để quay lại app trước đó. API chỉ gọi thành công khi app hiện tại được mở từ một app khác trước đó.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/navigator/index" />
+
 ## Sử dụng
 
 ### Sample Code

@@ -6,6 +6,12 @@ title: my.hideLoading
 
 my.hideLoading là api để hide loading.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/loading/index" />
+
 ## Sử dụng
 
 ### Sample Code

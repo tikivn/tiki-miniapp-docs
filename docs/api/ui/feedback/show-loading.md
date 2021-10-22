@@ -6,6 +6,12 @@ title: my.showLoading
 
 `my.showLoading` là api để hiển thị Loading. Có thể manual tắt loading bằng cách dùng api `my.hideLoading`.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/loading/index" />
+
 ## Sử dụng
 
 ### Sample Code
