@@ -2,6 +2,12 @@
 title: button
 ---
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/button/index" />
+
 ## Thuộc tính
 
 | Thuộc tính | Kiểu dữ liệu | Giá trị măc định | Mô tả                                                                                                                                                    |
@@ -28,7 +34,6 @@ Button gồm caption và đuờng viền; màu nền thì transparent.
 <img src="/img/ghost_button.png" alt="ghost button" style={{ margin: '0 auto', display: 'flex' }}/>
 
 Button chỉ có caption; màu nền cũng như đường viền thì transparent.
-
 
 ## Sample Code
 

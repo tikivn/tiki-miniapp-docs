@@ -6,6 +6,12 @@ title: my.getTitleColor
 
 **my.getTitleColor** là API để lấy background color của Navigation Bar
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/navigation-bar/get-title-color/index" />
+
 ## Sử dụng
 
 ### Sample Code

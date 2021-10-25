@@ -6,6 +6,11 @@ title: picker-view
 
 `picker-view` hiển thị một vùng chọn dạng scroll trong page. Các thành phần con bên trong `picker-view` cần được bọc bởi thẻ `picker-view-column`. Giá trị của `picker-view` được thiết lập hoặc lấy từ `index` của các phần tử trong mảng
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/picker-view/index" />
 ## Sử dụng
 
 ### Sample Code

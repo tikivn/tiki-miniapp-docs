@@ -7,6 +7,12 @@ title: Dropdown
 - `dropdown` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui). Với giao diện gần giống với `textfield`, nhưng có hỗ trợ bottom sheet khi bấm vào cho phép hiển thị và chọn data
 - Để sử dụng `dropdown`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.0.19` trở lên.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/form/dropdown/index" />
+
 ## Sử dụng
 
 ### Cài đặt `tini-ui`:

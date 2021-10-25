@@ -6,6 +6,12 @@ title: my.showNavigationBarLoading
 
 **my.showNavigationBarLoading** là API để hiển thị loading animation trên thanh Navigation Bar của page hiện tại
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/navigation-bar/loading/index" />
+
 ## Sử dụng
 
 ### Sample Code

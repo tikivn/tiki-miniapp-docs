@@ -6,6 +6,12 @@ title: my.getStorageInfo
 
 `my.getStorageInfo` là api để đọc ra thông tin storage của app như dung lượng sử dụng hiện tại, giới hạn, các keys đã được lưu
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/storage/index" />
+
 ## Lưu ý:
 
 - Mỗi app chỉ được lưu trữ không quá 6MB.

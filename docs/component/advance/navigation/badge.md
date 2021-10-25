@@ -8,6 +8,12 @@ title: Badge
 
 Red dots, số hoặc kí tự, dùng để nhắc nhở cho user khi có update, hoặc hiển thị thông báo.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/navigation/badge/index" />
+
 ## Sử dụng
 
 Khai báo components:

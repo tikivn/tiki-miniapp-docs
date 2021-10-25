@@ -6,6 +6,12 @@ my.createCanvasContext là API dùng để tạo ra canvas drawing context.
 
 Canvas drawing context là một đối tượng với các thuộc tính và phương thức mà bạn có thể sử dụng để kết xuất hình ảnh trong component Canvas.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/canvas/index" />
+
 ## Khái niệm Path
 
 Path là tập hợp các điểm được nối với nhau bằng các đoạn. Những đoạn này có thể là đường thẳng hoặc đường cong, … , độ dày khác nhau, màu sắc khác nhau.
@@ -18,38 +24,37 @@ Path là cơ sở giúp để hình thành nên các hình trong canvas. Sau đ�
 
 ```js
 // in the .js file
-const  ctx  =  my.createCanvasContext ('canvas')
-ctx.rect (20, 20, 150, 50)
-ctx.setFillStyle ('blue')
-ctx.fill ();
-ctx.beginPath ();
-ctx.rect ( 20 , 50 , 150 , 40 )
-ctx.setFillStyle ('yellow')
-ctx.fillRect ( 20 , 170 , 150 , 40 )
-ctx.rect ( 10 , 100 , 100 , 30 )
-ctx.setFillStyle ( 'red' )
-ctx.fill ()
-ctx.Draw ()
+const ctx = my.createCanvasContext('canvas');
+ctx.rect(20, 20, 150, 50);
+ctx.setFillStyle('blue');
+ctx.fill();
+ctx.beginPath();
+ctx.rect(20, 50, 150, 40);
+ctx.setFillStyle('yellow');
+ctx.fillRect(20, 170, 150, 40);
+ctx.rect(10, 100, 100, 30);
+ctx.setFillStyle('red');
+ctx.fill();
+ctx.Draw();
 ```
 
+## Thuộc tính
 
-## Thuộc tính 
-
-| Thuộc tính               | Kiểu dữ liệu | Mô tả                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ------------------------ | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| fillStyle                | string       | Tô màu. Chức năng tương tự `CanvasContext.setFillStyle()`.                                                                                                                                                                                                                                                                                                                                                 |
-| strokeStyle              | string       | Màu đường viền. Chức năng tương tự `CanvasContext.setStrokeStyle()`.                                                                                                                                                                                                                                                                                                                                       |
-| setStrokeStyle().        | number       | Độ dày đường. Chức năng tương tự `CanvasContext.setLineWidth().`                                                                                                                                                                                                                                                                                                                                           |
-| lineCap                  | string       | Hình dạng của đầu đường thẳng. Nhận các giá trị = [square \|\| butt \|\|  round]. Chức năng tương tự `CanvasContext.setLineCap().`                                                                                                                                                                                                                                                                         |
-| lineJoin                 | string       | Hình dạng điểm cắt nhau giữa hai đường thẳng. Nhận các giá trị = [round \|\| bevel \|\| miter]. Chức năng tương tự `CanvasContext.setLineJoin()`.                                                                                                                                                                                                                                                          |
-| miterLimit               | number       | Khoảng cách tối đa giữa góc trong và góc ngoài khi 2 đường kẻ gặp nhau. Chức năng tương tự `CanvasContext.setMiterLimit().`                                                                                                                                                                                                                                                                                |
-| lineDashOffset           | number       | Vẽ nét đứt. Giá trị khởi tạo = 0 (nét liền mảnh).                                                                                                                                                                                                                                                                                                                                                          |
-| textBaseline             | string       | Dùng để quy định vị trí text so với Baseline. Nhận các giá trị = [top \|\| hanging \|\| middle  \|\| alphabetic \|\| ideographic \|\| bottom]. Giá trị mặc định = Alphabetic. Chức năng tương tự với `CanvasContext.setTextBaseline()`                                                                                                                                                                     |
-| font                     | string       | Giá trị mặc định = "10px Arial".                                                                                                                                                                                                                                                                                                                                                                           |
-| fontSize                 | number       | Kích thước font chữ. Chức năng tương tự `CanvasContext.setFontSize`()                                                                                                                                                                                                                                                                                                                                      |
-| textAlign                | string       | Canh lề theo chiều ngang. Nhận các giá trị = [left                                                                                                                                                                                                                                                         \|\| right \|\| center \|\| start \|\| end]. Chức năng tương tự `CanvasContext.setTextAlign()`. |
-| globalAlpha              | number       | Độ trong suốt của marker. Nhận giá trị trong khoảng từ  0 đến 1; 0: độ trong suốt tuyệt đối (100% transparency); 1: độ đục tuyệt đối (100% opacity). Chức năng tương tự CanvasContext.setGlobalAlpha())                                                                                                                                                                                                    |
-| globalCompositeOperation | String       | Quy định cách thức một source shape (mới) sẽ được vẽ lên trên một destination shape (đã có sẵn) như thế nào. <br/>                                                                                Khi một source shape (mới) sẽ được vẽ lên trên một destination shape (đã có sẵn) như thế nào, thuộc tính.                                                                                                |
+| Thuộc tính               | Kiểu dữ liệu | Mô tả                                                                                                                                                                                                                                 |
+| ------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| fillStyle                | string       | Tô màu. Chức năng tương tự `CanvasContext.setFillStyle()`.                                                                                                                                                                            |
+| strokeStyle              | string       | Màu đường viền. Chức năng tương tự `CanvasContext.setStrokeStyle()`.                                                                                                                                                                  |
+| setStrokeStyle().        | number       | Độ dày đường. Chức năng tương tự `CanvasContext.setLineWidth().`                                                                                                                                                                      |
+| lineCap                  | string       | Hình dạng của đầu đường thẳng. Nhận các giá trị = [square \|\| butt \|\| round]. Chức năng tương tự `CanvasContext.setLineCap().`                                                                                                     |
+| lineJoin                 | string       | Hình dạng điểm cắt nhau giữa hai đường thẳng. Nhận các giá trị = [round \|\| bevel \|\| miter]. Chức năng tương tự `CanvasContext.setLineJoin()`.                                                                                     |
+| miterLimit               | number       | Khoảng cách tối đa giữa góc trong và góc ngoài khi 2 đường kẻ gặp nhau. Chức năng tương tự `CanvasContext.setMiterLimit().`                                                                                                           |
+| lineDashOffset           | number       | Vẽ nét đứt. Giá trị khởi tạo = 0 (nét liền mảnh).                                                                                                                                                                                     |
+| textBaseline             | string       | Dùng để quy định vị trí text so với Baseline. Nhận các giá trị = [top \|\| hanging \|\| middle \|\| alphabetic \|\| ideographic \|\| bottom]. Giá trị mặc định = Alphabetic. Chức năng tương tự với `CanvasContext.setTextBaseline()` |
+| font                     | string       | Giá trị mặc định = "10px Arial".                                                                                                                                                                                                      |
+| fontSize                 | number       | Kích thước font chữ. Chức năng tương tự `CanvasContext.setFontSize`()                                                                                                                                                                 |
+| textAlign                | string       | Canh lề theo chiều ngang. Nhận các giá trị = [left \|\| right \|\| center \|\| start \|\| end]. Chức năng tương tự `CanvasContext.setTextAlign()`.                                                                                    |
+| globalAlpha              | number       | Độ trong suốt của marker. Nhận giá trị trong khoảng từ 0 đến 1; 0: độ trong suốt tuyệt đối (100% transparency); 1: độ đục tuyệt đối (100% opacity). Chức năng tương tự CanvasContext.setGlobalAlpha())                                |
+| globalCompositeOperation | String       | Quy định cách thức một source shape (mới) sẽ được vẽ lên trên một destination shape (đã có sẵn) như thế nào. <br/> Khi một source shape (mới) sẽ được vẽ lên trên một destination shape (đã có sẵn) như thế nào, thuộc tính.          |
 
 <div align="center"> ---oOo--- </div>
 
@@ -57,7 +62,7 @@ Hiểu thêm về một số thuộc tính
 
 ### Line Cap
 
-<img src="/img/Line_Cap.jpg"  alt="Line Cap" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Line_Cap.jpg" alt="Line Cap" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ### Miter length
 
@@ -70,7 +75,6 @@ Hiểu thêm về một số thuộc tính
 Thông thường nhắc đến Baseline, người ta sẽ liên tưởng đến đường (tưởng tượng) mà chân của các chữ cái hoa đều nằm trên nó. Đối với canvas, bạn có thể chọn baseline nằm ở top, hanging, bottom, … .
 
 Nếu ideographic baseline (baseline của ký tự tượng hình) nằm ở vị trí thấp hơn alphabetic baseline (baseline của chữ cái Latin), thì ideographic baseline sẽ được tính là ideographic bottom luôn. Nói cách khác, baseline & bottom của ký tự tượng hình sẽ trùng nhau.
-
 
 ## Phương thức
 
@@ -130,36 +134,36 @@ Phương thức `save()` và `restore()`
 
 ```js
 // .js file
-const  ctx  =  my . createCanvasContext ('brown')
+const ctx = my.createCanvasContext('brown');
 // save the default fill style
-ctx.save ()
-ctx.setFillStyle ('cyan')
-ctx.fillRect ( 20 , 20 , 150 , 100 )
+ctx.save();
+ctx.setFillStyle('cyan');
+ctx.fillRect(20, 20, 150, 100);
 // restore to the previous saved state
-ctx.restore ()
-ctx.fillRect ( 60 , 60 , 150 , 100 )
-ctx.Draw ()
+ctx.restore();
+ctx.fillRect(60, 60, 150, 100);
+ctx.Draw();
 ```
 
 Phương thức `fillText()` và `setFontSize()`
 
 ```js
-const  ctx  =  my.createCanvasContext ('canvas')
-ctx.setFontSize ( 42 )
-ctx.fillText ( 'Hello' , 30 , 30 )
-ctx.fillText ( 'Tiki' , 200 , 200 )
-ctx.Draw ()
+const ctx = my.createCanvasContext('canvas');
+ctx.setFontSize(42);
+ctx.fillText('Hello', 30, 30);
+ctx.fillText('Tiki', 200, 200);
+ctx.Draw();
 ```
 
 Phương thức `transform()`
 
 ```js
-const  ctx  =  my . createCanvasContext ('canvas')
-ctx.rotate ( 45  *  Math . PI  /  180 )
-ctx.setFillStyle ('red')
-ctx.fillRect (70 ,0 ,100 ,30 )
-ctx.transform (1 ,1 ,0 ,1 ,0 ,0 )
-ctx.setFillStyle ( '#000' )
-ctx.fillRect (0 , 0, 100, 100 )
-ctx.Draw ()
+const ctx = my.createCanvasContext('canvas');
+ctx.rotate((45 * Math.PI) / 180);
+ctx.setFillStyle('red');
+ctx.fillRect(70, 0, 100, 30);
+ctx.transform(1, 1, 0, 1, 0, 0);
+ctx.setFillStyle('#000');
+ctx.fillRect(0, 0, 100, 100);
+ctx.Draw();
 ```

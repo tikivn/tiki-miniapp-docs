@@ -4,6 +4,12 @@ title: progress
 
 Progress bar (thanh tiến trình).
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/progress/index" />
+
 ## Thuộc tính
 
 | Thuộc tính       | Kiểu dữ liệu | Giá trị mặc định               | Mô tả                                                                    |
@@ -64,6 +70,3 @@ Page({
   }
 });
 ```
-
-
-

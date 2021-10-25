@@ -6,6 +6,12 @@ title: checkbox
 
 `checkbox` là một component cho phép người dùng chọn một hoặt nhiều phương án
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/checkbox/index" />
+
 ## Sử dụng
 
 ### Sample Code

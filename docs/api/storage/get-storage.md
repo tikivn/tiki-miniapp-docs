@@ -6,6 +6,12 @@ title: my.getStorage
 
 `my.getStorage` là api để dọc ra dữ liệu đã được lưu theo key
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/storage/index" />
+
 ## Lưu ý:
 
 - Mỗi app chỉ được lưu trữ không quá 6MB.

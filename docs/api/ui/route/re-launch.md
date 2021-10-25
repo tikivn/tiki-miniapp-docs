@@ -6,6 +6,12 @@ title: my.reLaunch
 
 **my.reLaunch** là API dùng để đóng tất cả các pages hiện tại và nhảy tới một page nào đó trong ứng dụng.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/navigator/index" />
+
 ## Sử dụng
 
 ### Sample Code

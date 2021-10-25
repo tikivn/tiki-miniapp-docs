@@ -4,7 +4,13 @@ title: map
 
 - `map` component sử dụng google maps để phục vụ các tác vụ liên quan tới map
 
-***Lưu ý:*** Component này có mặt trên Tini Studio từ version 1.74.12 trở lên.
+**_Lưu ý:_** Component này có mặt trên Tini Studio từ version 1.74.12 trở lên.
+
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/map/index" />
 
 ## Các thuộc tính
 
@@ -36,7 +42,7 @@ title: map
 | width      | number          |          | Chiều rộng của marker                                                                                                                                    |
 | height     | number          |          | Chiều cao của marker                                                                                                                                     |
 | label      | string / object |          | Nhãn cho marker. Bạn có thể truyền vào string hoặc một object `{ text: string, className: string, color: string, fontSize: string, fontWeight: string }` |
-| alpha      | number          |          | Độ trong suốt của marker. Nhận giá trị trong khoảng từ  0 đến 1; 0: độ trong suốt tuyệt đối (100% transparency); 1: độ đục tuyệt đối (100% opacity).     |
+| alpha      | number          |          | Độ trong suốt của marker. Nhận giá trị trong khoảng từ 0 đến 1; 0: độ trong suốt tuyệt đối (100% transparency); 1: độ đục tuyệt đối (100% opacity).      |
 
 ### Polygon
 
@@ -78,7 +84,7 @@ title: map
 | strokeColor | string       |          | Màu viền của đường tròn    |
 | strokeWidth | number       |          | Độ dày viền của đường tròn |
 
-***Lưu ý:*** Trong một số trường hợp map không hiển thị trên device. Bạn cần khai báo giá trị cụ thể width, height cho map mà không phải là %
+**_Lưu ý:_** Trong một số trường hợp map không hiển thị trên device. Bạn cần khai báo giá trị cụ thể width, height cho map mà không phải là %
 
 ## Sample Code
 

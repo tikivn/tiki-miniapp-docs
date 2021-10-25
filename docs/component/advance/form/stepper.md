@@ -6,6 +6,12 @@ title: Stepper
 
 `stepper` dùng để tăng hoặc giảm giá trị hiện tại.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/form/stepper/index" />
+
 ## Sử dụng
 
 ### Sample Code

@@ -6,6 +6,12 @@ title: my.confirm
 
 my.confirm là api để hiển thị Confirm popup. Có thể set được title, content, text của button confirm và cancel
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/confirm/index" />
+
 ## Sử dụng
 
 ### Sample Code

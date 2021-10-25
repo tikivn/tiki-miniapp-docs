@@ -6,6 +6,12 @@ title: Avatar
 
 Compnent avatar dùng để hiển thị hình ảnh của user, tên, hoặc text giới thiệu.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/navigation/avatar/index" />
+
 ## Sử dụng
 
 ### Sample Code:

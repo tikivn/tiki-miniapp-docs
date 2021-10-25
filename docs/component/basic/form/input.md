@@ -2,14 +2,20 @@
 title: input
 ---
 
-`input`, tên đầy đủ là input box, cho phép người dùng nhập thông tin dạng text.  
+`input`, tên đầy đủ là input box, cho phép người dùng nhập thông tin dạng text.
+
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/input/index" />
 
 ## Thuộc tính
 
 | Thuộc tính        | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                                                                                                                                                                                   |
 | ----------------- | ------------ | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| type              | string       |                  | Quy định định dạng dữ liệu (format) được nhập vào input. Nhận các giá trị =[text \|\| email \|\| number \|\| decimal \|\| tel \|\| search \|\|url ]. <br/> ***Lưu ý***: một số type sẽ không có hiệu lực trên Simulator của Studio mà bạn phải chạy trên thiết bị thật. |
-| password          | boolean      | false            | Chỉ định input dùng để nhập mật khẩu. Mỗi ký tự người dùng nhập vào sẽ được đại diện bằng chấm tròn  (•)                                                                                                                                                                |
+| type              | string       |                  | Quy định định dạng dữ liệu (format) được nhập vào input. Nhận các giá trị =[text \|\| email \|\| number \|\| decimal \|\| tel \|\| search \|\|url ]. <br/> **_Lưu ý_**: một số type sẽ không có hiệu lực trên Simulator của Studio mà bạn phải chạy trên thiết bị thật. |
+| password          | boolean      | false            | Chỉ định input dùng để nhập mật khẩu. Mỗi ký tự người dùng nhập vào sẽ được đại diện bằng chấm tròn (•)                                                                                                                                                                 |
 | name              | string       |                  | Khai báo `name` khi được sử dụng trong [form](/docs/component/form/form), được sử dụng để lấy `value` cho `form`                                                                                                                                                        |
 | value             | string       | ''               | Giá trị khởi tạo.                                                                                                                                                                                                                                                       |
 | placeholder       | string       |                  | Nội dung hiển thị trước khi người dùng nhập giá trị của input                                                                                                                                                                                                           |
@@ -18,8 +24,8 @@ title: input
 | disabled          | boolean      | false            | Vô hiệu hoá input                                                                                                                                                                                                                                                       |
 | maxlength         | number       | 140              | Giới hạn số ký tự được nhập.                                                                                                                                                                                                                                            |
 | focus             | boolean      | false            | Tự động focus vào input                                                                                                                                                                                                                                                 |
-| confirm-type      | string       | done             | Quy định nhãn hiển thị (title) cho phím return (Nhập) trên bàn phím ảo.  Nhận các giá trị = [ enter \|\| done \|\| go \|\| next \|\| previous \|\| search \|\| send ]                                                                                                   |
-| selection-start   | number       |                  | Vị trí bắt đầu khi select nội dung trong input. Chỉ có hiệu lực trong input đang được focus  true                                                                                                                                                                       |
+| confirm-type      | string       | done             | Quy định nhãn hiển thị (title) cho phím return (Nhập) trên bàn phím ảo. Nhận các giá trị = [ enter \|\| done \|\| go \|\| next \|\| previous \|\| search \|\| send ]                                                                                                    |
+| selection-start   | number       |                  | Vị trí bắt đầu khi select nội dung trong input. Chỉ có hiệu lực trong input đang được focus true                                                                                                                                                                        |
 | selection-end     | number       |                  | Vị trí kết thúc khi select con trỏ trong input. Chỉ có hiệu lực khi `focus="true"` và cần được sử dụng chung với `selection-start`                                                                                                                                      |
 | cursor            | number       |                  | Vị trí bắt đầu của con trỏ khi đang được focus.                                                                                                                                                                                                                         |
 | controlled        | boolean      | false            | Nếu giá trị là `true`, nội dung value của input sẽ được điều khiển hoàn toàn thông qua hàm `setData` trong file `js`                                                                                                                                                    |

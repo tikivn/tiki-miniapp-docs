@@ -6,6 +6,12 @@ title: textarea
 
 Tương tự với thẻ `textarea` trên web, `textarea` component là một dạng text box cho phép bạn có thể nhập nhiều dòng vào.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/textarea/index" />
+
 ## Sử dụng
 
 ### Sample Code

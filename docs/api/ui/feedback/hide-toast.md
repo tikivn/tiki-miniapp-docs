@@ -6,6 +6,12 @@ title: my.hideToast
 
 my.hideToast là api để hide toast thủ công.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/toast/index" />
+
 ## Sử dụng
 
 ### Sample Code

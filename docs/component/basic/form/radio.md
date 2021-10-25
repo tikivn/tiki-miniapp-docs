@@ -6,6 +6,12 @@ title: radio
 
 `radio` dùng để chọn một giá trị. Để nhóm nhiều `radio` lại với nhau, bạn cần sử dụng [radio-group](/docs/component/form/radio-group)
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/form/radio-button/index" />
+
 ## Sử dụng
 
 ### Sample Code

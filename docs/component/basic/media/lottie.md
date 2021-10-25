@@ -20,7 +20,7 @@ Lottie là thư viện cho phép chạy các hoạt ảnh kết xuất từ Afte
 | onDataReady    | event        | Sự kiện được kích hoạt khi animation được load xong.                                                                                                      |
 | onLoopComplete | event        | Animation đuợc phát lần đầu tiên. Nó tiếp tục được phát lại (loop) lần 1, 2, 3 ... Ngay khi loop lần 1 kết thúc, sự kiện onLoopComplete sẽ đuợc kích hoạt |
 
-***Lưu ý***: Nếu gặp trường hợp lottie không hiển thị, bạn có thể kiểm tra nội dung của file lottie [tại đây](https://lottiefiles.com/preview)
+**_Lưu ý_**: Nếu gặp trường hợp lottie không hiển thị, bạn có thể kiểm tra nội dung của file lottie [tại đây](https://lottiefiles.com/preview)
 
 ## Sample Code
 
@@ -109,5 +109,3 @@ Page({
   }
 });
 ```
-
-

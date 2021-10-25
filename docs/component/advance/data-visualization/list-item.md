@@ -6,6 +6,12 @@ title: List item
 
 List item là component được sử dụng để hiển thị một item trong list.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/data-visualization/list/index" />
+
 ## Sử dụng
 
 Để sử dụng list item bạn cần phải cài đặt thư viện tini-ui.

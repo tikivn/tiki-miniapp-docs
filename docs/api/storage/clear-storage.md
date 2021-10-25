@@ -6,6 +6,12 @@ title: my.clearStorage
 
 `my.clearStorage` là api để xoá toàn bộ dữ liệu của app.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/storage/index" />
+
 ## Lưu ý:
 
 - Mỗi app chỉ được lưu trữ không quá 6MB.

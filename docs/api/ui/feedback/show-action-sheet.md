@@ -6,6 +6,12 @@ title: my.showActionSheet
 
 my.showActionSheet là api để hiển thị bottom popup để user có thể chọn option.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/action-sheet/index" />
+
 ## Sử dụng
 
 ### Sample Code

@@ -6,6 +6,12 @@ title: picker
 
 `picker` tương tự với `picker-view`, cho phép người dùng chọn một phần tử trong một mảng dưới dạng scroll, tuy nhiên nó sẽ được hiển thị bên trong popup ở dưới page.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/picker/index" />
+
 ## Sử dụng
 
 ### Sample Code

@@ -7,6 +7,12 @@ title: Textfield
 - `textfield` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) với chức năng tương tự như thẻ [input](/docs/component/form/input) nhưng hỗ trợ thêm label, icon và một số tính năng mở rộng về giao diện.
 - Để sử dụng `textfield`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.0.18` trở lên.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/form/text-field/index" />
+
 ## Sử dụng
 
 ### Cài đặt `tini-ui`:

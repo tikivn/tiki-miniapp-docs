@@ -6,6 +6,12 @@ title: my.prompt
 
 my.prompt là api để hiển thị prompt popup, để user có thể nhập giá tri vào.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/prompt/index" />
+
 ## Sử dụng
 
 ### Sample Code

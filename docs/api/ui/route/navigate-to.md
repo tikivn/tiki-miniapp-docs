@@ -6,6 +6,12 @@ title: my.navigateTo
 
 **my.navigateTo** là API dùng để di chuyển từ màn hình hiện tại tới màn hình mong muốn trong ứng dụng.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/navigator/index" />
+
 ### Lưu ý khi sử dụng
 
 - Bạn có thể dùng `my.navigateBack` để quay về màn hình trước đó.

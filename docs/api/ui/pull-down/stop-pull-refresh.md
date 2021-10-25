@@ -6,6 +6,12 @@ title: my.stopPullDownRefresh
 
 `my.stopPullDownRefresh` là api để stop loading khi đã gọi `my.startPullDownRefresh` hoặc manual pull down. Khi đã có được dữ liệu, phải gọi hàm này để tắt loading.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/pull-refresh/index" />
+
 ## Sử dụng
 
 ### Sample Code

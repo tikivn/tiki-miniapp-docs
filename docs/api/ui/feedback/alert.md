@@ -6,6 +6,12 @@ title: my.alert
 
 my.alert là api để hiển thị Alert. Có thể set được title, content, buttonText...
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/alert/index" />
+
 ## Sử dụng
 
 ### Sample Code

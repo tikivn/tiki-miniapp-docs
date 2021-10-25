@@ -18,7 +18,7 @@ Sau đây là danh sách các quyền mà hiện tại Tini App hỗ trợ
 | shareAppMessageWithCustomUrl | Khi app có quyền này, app có thể goi API `my.shareAppMessageWithCustomUrl`                                                                            |
 | getUserPhoneAndEmail         | Khi app có quyền này, API `my.getUserInfo` sẽ trả về thêm thông tin email và số điện thoại của users.                                                 |
 | choosePhoneContact           | Khi app có quyền này, app có thể gọi `my.choosePhoneContact`                                                                                          |
-| getUserAddress               | Khi app có quyền này, app có thể gọi `my.getAddress`                                                                                                  |
+| getAddress                   | Khi app có quyền này, app có thể gọi `my.getAddress`                                                                                                  |
 | saveAddress                  | Khi app có quyền này, app có thể gọi `my.saveAddress`                                                                                                 |
 
 ## Giả lập các quyền trên Studio

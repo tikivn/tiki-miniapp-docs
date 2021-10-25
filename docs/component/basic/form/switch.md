@@ -6,6 +6,12 @@ title: switch
 
 `switch` dùng để chọn một giá trị
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/switch/index" />
+
 ## Sử dụng
 
 ### Sample Code

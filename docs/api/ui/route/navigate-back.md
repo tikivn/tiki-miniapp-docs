@@ -6,6 +6,12 @@ title: my.navigateBack
 
 **my.navigateTo** là API dùng để đóng màn hình hiện tại và trở lại màn hình trước đó.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/navigator/index" />
+
 ## Sử dụng
 
 ### Sample Code

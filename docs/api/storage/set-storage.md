@@ -6,6 +6,12 @@ title: my.setStorage
 
 `my.setStorage` là api để lưu trữ dữ liệu theo key, dữ liệu mới sẽ override dữ liệu cũ nếu chung key.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/storage/index" />
+
 ## Lưu ý:
 
 - Mỗi app chỉ được lưu trữ không quá 6MB.

@@ -65,6 +65,7 @@ module.exports = {
     'studio/development',
     'studio/simulator',
     'studio/debug',
+    'studio/project-config',
   ],
 
   framework: [
