@@ -12,14 +12,23 @@ Bạn cần phải có Nhà phát triển loại công ty/doanh nghiệp để c
 
 ## Các API có thể gọi trong web-view
 
-| API                                                  | Mô tả                                                                                                                                   |
-| ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| [my.navigateTo](/docs/api/ui/route/navigate-to)      | Di chuyển từ màn hình hiện tại tới màn hình mong muốn trong ứng dụng.                                                                   |
-| [my.navigateBack](/docs/api/ui/route/navigate-back)  | Đóng màn hình hiện tại và trở lại màn hình trước đó.                                                                                    |
-| [my.getSystemInfo](/docs/api/device/get-system-info) | Lấy thông tin của hệ thống.                                                                                                             |
-| [my.getUserInfo](/docs/api/open/05-get-user-info)    | Lấy các thông tin cơ bản của người dùng (tên, ảnh).                                                                                     |
-| [my.request](/docs/api/network/request)              | Thực hiện các network request.                                                                                                          |
-| my.postMessage                                       | Gửi message tới `web-view`. Message sẽ được gửi tới listener của `window.onmessage` hay `window.addEventListener('message', listener)`. |
+| API                                                     | Mô tả                                                                                                                                   |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| [my.navigateTo](/docs/api/ui/route/navigate-to)         | Di chuyển từ màn hình hiện tại tới màn hình mong muốn trong ứng dụng.                                                                   |
+| [my.navigateBack](/docs/api/ui/route/navigate-back)     | Đóng màn hình hiện tại và trở lại màn hình trước đó.                                                                                    |
+| [my.getSystemInfo](/docs/api/device/get-system-info)    | Lấy thông tin của hệ thống.                                                                                                             |
+| [my.getUserInfo](/docs/api/open/05-get-user-info)       | Lấy các thông tin cơ bản của người dùng (tên, ảnh).                                                                                     |
+| [my.request](/docs/api/network/request)                 | Thực hiện các network request.                                                                                                          |
+| my.postMessage                                          | Gửi message tới `web-view`. Message sẽ được gửi tới listener của `window.onmessage` hay `window.addEventListener('message', listener)`. |
+| [my.setStorage](/docs/api/storage/set-storage)          | Lưu trữ dữ liệu theo key.                                                                                                               |
+| [my.getStorage](/docs/api/storage/get-storage)          | Đọc dữ liệu đã được lưu theo key.                                                                                                       |
+| [my.removeStorage](/docs/api/storage/remove-storage)    | Xoá dữ liệu đã được lưu theo key.                                                                                                       |
+| [my.clearStorage](/docs/api/storage/clear-storage)      | Xoá toàn bộ dữ liệu.                                                                                                                    |
+| [my.getStorageInfo](/docs/api/storage/get-storage-info) | Đọc thông tin của ứng dụng.                                                                                                             |
+| [my.chooseImage](/docs/api/media/image/choose-image)    | Chụp ảnh bằng camera hoặc chọn hình từ album cục bộ.                                                                                    |
+| [my.previewImage](/docs/api/media/image/preview-image)  | Mở một cửa sổ lớn để xem hình ảnh.                                                                                                      |
+| [my.getLocation](/docs/api/geo/location/get-location)   | Lấy thông tin vị trí địa lí hiện tại của thiết bị.                                                                                      |
+| [my.showLoading](/docs/api/ui/feedback/show-loading)    | Hiển thị loading.                                                                                                                       |
 
 ## Sample Code
 
