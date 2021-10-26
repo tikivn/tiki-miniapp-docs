@@ -355,7 +355,7 @@ export class QRCode extends React.Component {
 
   render() {
     const size = +this.props.size + 2 * +this.props.quietZone;
-    const url = `${this.props.domainUrl}/apps/${this.props.appId}/${this.props.page}`;
+
     return (
       <>
         <canvas
@@ -374,7 +374,7 @@ export class QRCode extends React.Component {
         <div>
           Hoặc sử dụng link
           <br />
-          <a href={url}>{url}</a>
+          <a href={this.qrPage}>{this.qrPage}</a>
         </div>
       </>
     );
