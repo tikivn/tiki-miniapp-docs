@@ -7,17 +7,17 @@ title: my.previewImage
 - **my.previewImage** là API cho phép mở một cửa sổ lớn để xem hình ảnh
 - Chỉ hỗ trợ từ version 1.81.6 trở lên
 
-<!-- ## Quét mã để trải nghiệm -->
+## Quét mã để trải nghiệm
 
-<!-- import { QRCode } from '@site/src/components/QRCode'; -->
+import { QRCode } from '@site/src/components/QRCode';
 
-<!-- <QRCode page="pages/api/preview-image/index" /> -->
+<QRCode page="pages/api/preview-image/index" />
 
 ## API Params
 
 | Thuộc tính              | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                         |
 | ----------------------- | ------------ | :------: | --------------------------------------------------------------------------------------------- |
-| urls                    | string       |    ✓     | Mảng các link remote image, không hỗ trợ image loclal hoặc base 64.                           |
+| urls                    | string       |    ✓     | Mảng các đường dẫn hình ảnh, chỉ hỗ trợ remote url và các hình có sẵn trong thiết bị.         |
 | current                 | number       |          | Chỉ định hình ảnh đầu tiên muốn hiển thị, mặc định là 0.                                      |
 | enablesavephoto         | boolean      |          | Hiển thị option cho phép user Lưu hình ảnh khi nhấn giữ lâu (long press) vào hình.            |
 | enableShowPhotoDownload | boolean      |          | Hiển thị nut Download ở dưới footer.                                                          |
