@@ -108,11 +108,11 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateTime: true,
-          // editUrl: 'https://github.com/tikivn/tiki-miniapp-docs/blob/master',
+          editUrl: 'https://github.com/tikivn/tiki-miniapp-docs/blob/master',
         },
         blog: {
           showReadingTime: true,
-          // editUrl: 'https://github.com/tikivn/tiki-miniapp-docs/blob/master',
+          editUrl: 'https://github.com/tikivn/tiki-miniapp-docs/blob/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
