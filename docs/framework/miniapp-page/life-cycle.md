@@ -14,7 +14,7 @@ Hình vẽ sau mô tả các thời điểm này
 | onUnload          |                       | được gọi khi page bị destroy                                       |
 | onPullDownRefresh |                       | được gọi khi user pull to refresh hoặc gọi my.startPullDownRefresh |
 | onShareAppMessage |                       | được gọi khi user thực hiện tác vụ "Chia sẻ" trong options menu.   |
-
+| onCustomIconEvent | ({index})             | được gọi khi user click vào custom icons khi sử dụng jsapi addIconToNavigationBar   |
 ## onLoad
 `onLoad` được gọi sau khi Page được khởi tạo. 
 Khi sử dụng `my.navigateTo`, `my.redirectTo`, params sẽ truyền vào trong `query`. Format của query: "parameterName=parameterValue&parameterName=parameterValue...".
@@ -33,6 +33,22 @@ Khi sử dụng `my.navigateTo`, `my.redirectTo`, params sẽ truyền vào tron
 
 ## onPullDownRefresh
 `onPullDownRefresh` được gọi khi user pull to refresh hoặc gọi my.startPullDownRefresh. Sử dụng callback này để refresh lại data.
+
+## onCustomIconEvent 
+
+`onCustomIconEvent` được gọi khi user click vào custom icons khi sử dụng jsapi addIconToNavigationBar. Trong argument sẽ có biến `index` để biết được vị trí của icon được click nếu add nhiều icons.
+
+```js 
+Page({
+  onCustomIconEvent({index}) {
+    if (index === 0) {
+      doSomething()
+    } else {
+      doOtherthing()
+    }
+  }
+})
+```
 
 ## onShareAppMessage
 
@@ -64,6 +80,4 @@ App({
     };
   }
 })
-
 ````
-
