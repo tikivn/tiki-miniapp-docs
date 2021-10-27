@@ -2,12 +2,26 @@
 title: my.getFileInfo
 ---
 
-## Giới thiệu
+**my.getFileInfo** là API dùng để lấy thông tin một tập tin cục bộ. Tập tin có thể ở dạng tạm hoặc được lưu.
 
-**my.getFileInfo** là API dùng để lấy thông tin file (có thể là local temporary file hoặc local cache file)
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính      | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                              |
+| --------------- | ------------ | :------: | ---------------------------------------------------------------------------------- |
+| filePath        | string       |    ✓     | Đường dẫn tới tập tin                                                              |
+| digestAlgorithm | string       |          | Thuât toán digest để lấy file summary, hỗ trợ `md5` và `sha1`, mặc định là `md5`   |
+| success         | Function     |          | Callback function khi lấy thông tin tập tin thành công                             |
+| fail            | Function     |          | Callback function khi lấy thông tin tập tin bất thành                              |
+| complete        | Function     |          | Callback function khi việc lấy thông tin tập tin kết thúc bất kể công hay thất bại |
+
+### Callback success function payload
+
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                     |
+| ---------- | ------------ | ----------------------------------------- |
+| size       | number       | Dung lượng của tập tin. Đơn vị tính: byte |
+| digest     | string       | Summary của tập tin                       |
+
+## Sample Code
 
 ```xml
 <view>
@@ -62,21 +76,3 @@ Page({
 
 ```
 
-### API Params
-
-Các thuộc tính:
-
-| Attributes | Type     | Required | Description                                                                    |
-| ---------- | -------- | -------- | ------------------------------------------------------------------------------ |
-| filePath      | String   | Yes       |  Đường dẫn tới file                   |
-| digestAlgorithm | String    | No       | Thuât toán digest để lấy summary, hỗ trợ `md5` và `sha1`, mặc định là `md5`|
-| success    | Function | No       | Callback function khi lấy thông tin file được thực hiện thành công                     |
-| fail       | Function | No       | Callback function khi lấy thông tin file thất bại                                      |
-| complete   | Function | No       | Callback function khi việc lấy thông tin file kết thúc cho dù thành công hay thất bại. |
-
-### Callback success function payload
-
-| Attributes | Type   | Description                |
-| ---------- | ------ | -------------------------- |
-| size  | Number  | Dung lượng của file |
-| digest  | String  | Summary của file |                                         

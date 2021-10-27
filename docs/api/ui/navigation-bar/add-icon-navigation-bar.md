@@ -4,7 +4,7 @@ title: my.addIconsToNavigationBar
 
 **my.setNavigationBar** là API để thêm icons vào navigation bar bên cạnh nút ba chấm nằm ngang (⋯) mở menu.
 
-<img src="/img/Add_Icon_to_NavigationBar.jpg" width="300px" alt="Simulation Widget" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Add_Icon_to_NavigationBar.jpg" width="400px" alt="Simulation Widget" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ## Quét mã để trải nghiệm
 

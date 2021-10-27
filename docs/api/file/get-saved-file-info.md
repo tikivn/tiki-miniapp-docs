@@ -2,12 +2,28 @@
 title: my.getSavedFileInfo
 ---
 
-## Giới thiệu
+`my.getSavedFileInfo` là API dùng để lấy thông tin tập tin được lưu cục bộ. Để lấy thông tin tập tin tạm, sử dụng `my.getFileInfo()`.
 
-**my.getSavedFileInfo** là API dùng để lấy thông tin file đã đươc cache (local cache file)
-## Sử dụng
+## API Params
 
-### Sample Code
+Các thuộc tính:
+
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                     |
+| ---------- | ------------ | :------: | ----------------------------------------------------------------------------------------- |
+| filePath   | string       |    ✓     | Đường dẫn tới tập tin cục bộ                                                              |
+| success    | Function     |          | Callback function khi lấy thông tin tập tin thành công                                    |
+| fail       | Function     |          | Callback function khi lấy thông tin tập tin bất thành                                     |
+| complete   | Function     |          | Callback function khi việc lấy thông tin tập tin kết thúc bất kể thành công hay thất bại. |
+
+### Callback success function payload
+
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                  |
+| ---------- | ------------ | -------------------------------------- |
+| size       | number       | Dung lượng của file. Đơn vị tính: byte |
+| createTime | string       | Ngày giờ tập tin được tạo ra           |
+
+
+## Sample Code
 
 ```xml
 <view>
@@ -79,21 +95,3 @@ Page({
 });
 
 ```
-
-### API Params
-
-Các thuộc tính:
-
-| Attributes | Type     | Required | Description                                                                    |
-| ---------- | -------- | -------- | ------------------------------------------------------------------------------ |
-| filePath      | String   | Yes       |  Đường dẫn tới local file                   |
-| success    | Function | No       | Callback function khi lấy thông tin file được thực hiện thành công                     |
-| fail       | Function | No       | Callback function khi lấy thông tin file thất bại                                      |
-| complete   | Function | No       | Callback function khi việc lấy thông tin file kết thúc cho dù thành công hay thất bại. |
-
-### Callback success function payload
-
-| Attributes | Type   | Description                |
-| ---------- | ------ | -------------------------- |
-| size  | Number  | Dung lượng của file |
-| createTime  | String  | Timestamp của ngày tạo file |                                         

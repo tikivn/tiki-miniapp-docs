@@ -59,7 +59,9 @@ Cách làm như sau:
 2. Ở cột cuối cùng của bảng danh sách sản phẩm, nhấp vào **Cập nhật tồn kho**.
    <img style={{ margin: '0 auto', display: 'flex' }} src="/img/Ton_kho_E-voucher.png" alt="Ton kho E-voucher"/>
 3. Hộp thoại **Cập nhật tồn kho** xuất hiện. Nhập vào một số tối thiểu là 100 trong ô **Tồn Kho Mới**; chọn **Hạn sử dụng** của sản phẩm; cuối cùng bấm nút **Cập Nhật**. 
-   <img style={{ margin: '0 auto', display: 'flex' }} src="/img/Cap_nhat_ton_kho_E-voucher.jpg" alt="Ton kho E-voucher"/>
+   <img style={{ margin: '0 auto', display: 'flex' }} src="/img/Cap_nhat_ton_kho_E-voucher.jpg" alt="Cap nhat ton kho E-voucher"/>
+
+- - -
 
 ## FAQ
 

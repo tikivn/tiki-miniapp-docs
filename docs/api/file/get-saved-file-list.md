@@ -2,12 +2,32 @@
 title: my.getSavedFileList
 ---
 
-## Giới thiệu
+`my.getSavedFileList` là API dùng để lấy thông tin tất cả các tập tin được lưu cục bộ của Tini App gọi API này.
 
-**my.getSavedFileList** là API dùng để lấy thông tin tất cả các file đã đươc cache (local cache file)
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                       |
+| ---------- | ------------ | -------- | --------------------------------------------------------------------------- |
+| filePath   | String       | ✓        | Đường dẫn tới local file                                                    |
+| success    | Function     |          | Callback function khi lấy thông tin tất cả tập tin thành công               |
+| fail       | Function     |          | Callback function khi lấy thông tin tất cả tập tin thất bại                 |
+| complete   | Function     |          | Callback function khi việc gọi API kết thúc bất kể thành công hay thất bại. |
+
+### Callback success function payload
+
+| Thuộc tính | Kiểu dữ liệu     | Mô tả                                               |
+| ---------- | ---------------- | --------------------------------------------------- |
+| fileList   | Array of Objects | Array chứa thông tin tất cả tập tin được lưu cục bộ |
+
+### fileList payload
+
+| Thuộc tính | Kiểu dữ liệu | Mô tả                        |
+| ---------- | ------------ | ---------------------------- |
+| size       | Number       | Dung lượng của tập tin       |
+| createTime | String       | Ngày giờ tập tin được tạo ra |
+| filePath   | String       | Đường dẫn của tập tin        |
+
+## Sample Code
 
 ```xml
 <view>
@@ -64,27 +84,3 @@ Page({
 
 ```
 
-### API Params
-
-Các thuộc tính:
-
-| Attributes | Type     | Required | Description                                                                    |
-| ---------- | -------- | -------- | ------------------------------------------------------------------------------ |
-| filePath      | String   | Yes       |  Đường dẫn tới local file                   |
-| success    | Function | No       | Callback function khi lấy thông tin file được thực hiện thành công                     |
-| fail       | Function | No       | Callback function khi lấy thông tin file thất bại                                      |
-| complete   | Function | No       | Callback function khi việc lấy thông tin file kết thúc cho dù thành công hay thất bại. |
-
-### Callback success function payload
-
-| Attributes | Type   | Description                |
-| ---------- | ------ | -------------------------- |
-| fileList  | Array  | Array chứa thông tin tất cả local file |                                      
-
-### fileList payload
-
-| Attributes | Type   | Description                |
-| ---------- | ------ | -------------------------- |
-| size  | Number  | Dung lượng của file |      
-| createTime  | String  | Timestamp của thời gian tạo file |
-| filePath  | String  | Đường dẫn của file |
