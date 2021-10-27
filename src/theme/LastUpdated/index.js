@@ -46,7 +46,11 @@ export default function LastUpdated({
   lastUpdatedBy,
 }) {
   return (
-    <div className="text--left">
+    <div
+      className="text--left"
+      style={{
+        marginBottom: 'calc(var(--ifm-leading-desktop) * var(--ifm-leading))',
+      }}>
       <em>
         <small>
           <Translate
