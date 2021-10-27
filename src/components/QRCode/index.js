@@ -368,6 +368,8 @@ export class QRCode extends React.Component {
             width: size,
             marginBottom: 16,
             cursor: 'pointer',
+            display: 'flex',
+            margin: '0 auto 16px',
           }}
           ref={this.canvas}
         />
