@@ -139,7 +139,7 @@ Page({
 });
 ```
 
-khi `web-view` nhận được message, thì dựa vào requestId, chúng ta có thể lấy ra callback cần xử lý là gì
+Khi `web-view` nhận được message, thì dựa vào requestId, chúng ta có thể lấy ra callback cần xử lý là gì
 và gọi callback đó thôi
 
 ```js
@@ -174,7 +174,7 @@ setTimeout(() => {
 }, 0);
 ```
 
-Hàm sendMessageToTiniApp nhận vào 2 tham sô
+Hàm `sendMessageToTiniApp` nhận vào 2 tham số
 
 - tham số đầu tiên là một object có 2 key
   - api: là JSAPI mà bạn muốn gọi ở Tini App
