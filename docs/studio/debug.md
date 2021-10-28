@@ -18,7 +18,7 @@ DevTools trong Tini Studio là bộ công cụ giúp nhà phát triển phát hi
 - Cách 1: Menu >> **View** >> **Developer Tools**.
 - Cách 2: Bấm vào nút **DevTools** ngay phía dưới menu.
 
-DevTools của Tini Studio có công dụng và phương thức hoạt động không khác gì mấy so với DevTools của Google Chrome. Vì thế bạn có thể tham khảo thêm [Chrome DevTools](https://developer.chrome.com/docs/devtools/) .
+DevTools của Tini Studio có công dụng và phương thức hoạt động không khác gì mấy so với DevTools của Google Chrome. Vì thế bạn có thể tham khảo thêm [Chrome DevTools](https://developer.chrome.com/docs/devtools/).
 
 <img src="/img/DevTools_TiniStudio.png" width="800px" alt="DevTools" style={{ margin: '0 auto', display: 'flex' }}/>
 

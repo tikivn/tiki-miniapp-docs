@@ -16,9 +16,9 @@ Chạy tập tin cài đặt Tini Studio.
    - Menu >> **File** >> **New Project**.
    - Trên trang **Getting Started** của Tini Studio, nhấn vào New Project.
 2. Trong hộp thoại **Configure your project**, điền tên dự án, App ID và đường dẫn mà bạn muốn lưu dự án đó **[Save location]**.
-   - AppID: định danh duy nhất của của ứng dụng. Bạn đăng ký nó trong quá trình tạo mới ứng dụng mới trên Dev Center. Xem thêm [Tạo Tini App của bạn](/docs/developer/introduce/create.md). Nếu chưa tạo ứng dụng trên Dev Center, bạn có thể nhập một App ID bất kì theo đúng format để tạo Project trước.
+   - AppID: định danh duy nhất của của ứng dụng. Bạn đăng ký nó trong quá trình tạo mới ứng dụng mới trên Dev Center. Xem thêm [Tạo Tini App của bạn](/docs/developer/introduce/create). Nếu chưa tạo ứng dụng trên Dev Center, bạn có thể nhập một App ID bất kì theo đúng format để tạo Project trước.
 
-<img src="/img/New_Project_TiniStudio.jpg" width="450px" alt="Developer Registration Form" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/New_Project_TiniStudio.jpg" width="450px" alt="Creat a new project" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ## 4. Lập trình cho ứng dụng
 
@@ -26,7 +26,6 @@ Chạy tập tin cài đặt Tini Studio.
 
 Để chạy ứng dụng với trình giả lập của Tini Studio ngay trên máy tính, bạn theo những bước sau:
 1. Biên dịch ứng dụng thông qua menu >> **Tools** >> **Compile**.
-
    ***Lưu ý***: bình thường bạn không nhất thiết thực hiện bước này. Bởi lẽ, khi xảy ra thay đổi trong code, Tini Studio sẽ tự động biên dịch lại dự án.
 2. Bật trình giả lập bằng một trong hai cách:
    - Cách 1: Menu >> **View** >> **Simulator**.
@@ -38,8 +37,8 @@ Chạy tập tin cài đặt Tini Studio.
 
 ## 7. Tải lên ứng dụng
 
-Xem thêm [Xây dựng và tải lên ứng dụng](/docs/developer/introduce/upload.md)
+Xem thêm [Xây dựng và tải lên ứng dụng](/docs/developer/introduce/upload)
 
 ## 8. Chạy ứng dụng với Dev Assistant
 
-Xem thêm [Dev Assistant](/docs/developer/introduce/dev-assistant.md) 
+Xem thêm [Dev Assistant](/docs/developer/introduce/dev-assistant) 

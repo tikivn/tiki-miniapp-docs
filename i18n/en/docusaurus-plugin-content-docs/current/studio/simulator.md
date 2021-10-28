@@ -15,6 +15,8 @@ Since this is a computer, you have little choice but to use the mouse rather tha
 
 ## Simulation of device gestures
 
+<img src="/img/Simulator_Simulation_Widget.jpg" width="300px" alt="Simulation Widget" style={{ margin: '0 auto', display: 'flex' }}/>
+
 Click the Simulation widget icon on the simulator’s toolbar. The list of device gestures will be displayed.
 
 - **Home** = you press the device’s Home button. 
@@ -24,11 +26,15 @@ Click the Simulation widget icon on the simulator’s toolbar. The list of devic
 
 ## Choosing a device to be simulated
 
+<img src="/img/Simulator_Choose_Device.jpg" width="300px" alt="Choose Simulated Device" style={{ margin: '0 auto', display: 'flex' }}/>
+
 Select the device model you want to simulate from the leftmost dropdown list on the simulator’s toolbar.
 
 ## Zooming the simulator in/out
 
+<img src="/img/Simulator_Choose_ZoomRatio.jpg" width="300px" alt="Zoom Ratio" style={{ margin: '0 auto', display: 'flex' }}/>
 
+Select the preferred zoom ratio from the middle dropdown list on the simulator’s toolbar.
 
 ## Recompilation
 
@@ -38,6 +44,6 @@ Nevertheless, in case errors occur to the automation compilation mechanism, whic
 
 There are two ways to compile the project manually:
 
-- Way 1: Select Compile from the Tools menu.
+- Way 1: Select **Compile** from the **Tools** menu.
 - Way 2: Click the Recompile icon on the simulator’s toolbar.
 

@@ -1,5 +1,5 @@
 ---
-title: Tini Studio Overview
+title: Overview of Tini Studio
 ---
 
 ## Introduction
