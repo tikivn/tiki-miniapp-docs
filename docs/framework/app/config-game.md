@@ -1,5 +1,5 @@
 ---
-title: Tổng quan
+title: Cấu trúc Tini Game
 ---
 
 Một dự án Tini Game điển hình sẽ có cấu trúc như sau: 

@@ -75,7 +75,6 @@ function sendMessageToTiniApp(params, callback) {
 Ở Tini App chúng ta sẽ viết hàm xử lý message khi nhận được message này.  Ở đây, chúng ta nhận api muốn gọi từ `game-view`, rồi gọi API này ở tầng Tini App. Khi trả về result cho game-view, chúng ta sẽ trả về kèm theo requestId đã nhận được.
 
 ```js  title=src/pages/webview-postmessage/index.js
-// file src/pages/webview-postmessage/index.js
 Page({
   onMessage(e) {
     console.log('receive message from webview', e.detail);
@@ -117,8 +116,7 @@ Page({
 ```
 Khi `game-view` nhận được message, thì dựa vào requestId, chúng ta có thể lấy ra callback cần xử lý là gì và gọi callback đó thôi.
 
-```js title=src/public/webview/index.html
-// src/public/webview/index.html
+```js titel=title=src/public/webview/index.html
 
 window.addEventListener('message', (e) => {
   const { requestId, result } = e.data;
@@ -152,5 +150,3 @@ setTimeout(() => {
   - api: là JSAPI mà bạn muốn gọi ở Tini App
   - params: là các tham số bạn muốn JSAPI gọi
 - callback là function bạn muốn gọi khi nhận được result (success / failure) từ Tini App
-
-
