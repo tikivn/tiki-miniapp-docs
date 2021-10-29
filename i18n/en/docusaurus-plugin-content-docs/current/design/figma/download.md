@@ -3,13 +3,37 @@ order: 51
 category: Design resources
 title: Download here
 ---
+### v1.4
+October 29th, 2021 <br/>
+
+Saigon resumed in-person dining at restaurants and eateries from yesterday. Just a quick update for my city, and now we have some more updates about the Tini design system:<br/>
+Improved:<br/>
+1. Chip:<br/>
+- Improve padding for Icon suffix, prefix.
+- Reduce the size of Chip's prefix icon from 24px to 20px.
+2. Dropdown:
+- Fix icon and change token.
+
+New:<br/>
+1. Image: new ratio with 4:3 and 3:4.<br/>
+2. Bottom sheet: separated Overlay from Bottom sheet component to the new one.<br/>
+3. Avatar: a new type of Avatar - Initials Avatar.<br/>
+4. Combo Field.
+
+That's it for this month.<br/>
+Hint: next month, we will release version 2.0 with the new structure of color tokens.
+
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
+
+
 ### v1.3
 September 30th, 2021 <br/>
 How's your September? Saigon is recovering, and the city plans to resume activities from October 1st. <br/>
 This month, the Tini team focused on delivering the new [Food & Beverage template](https://www.figma.com/community/file/1025657656395537576/Tini---Food-%26-Beverage-Template), so our design system has some improvements for the inside structure of the Table, Date field, and List view. Some minor changes for Social post components, and rename Error, Success color token to Negative & Positive color token for more usages. <br/>
 That's it for September. See ya next month!!!
-
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 ---

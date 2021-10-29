@@ -1,6 +1,31 @@
 ---
 title: Tải về
 ---
+### v1.4
+October 29th, 2021 <br/>
+
+Sài Gòn đã nhộn nhịp và mọi người có thể được ăn uống bên ngoài lại rồi mọi người ơiiiii. Cập nhật tình hình nơi tụi mình sống là vậy còn về phần Tini design system của bọn mình thì:<br/>
+Cải thiện:<br/>
+1. Chip:<br/>
+- Cải thiện khoảng cách của Icon suffix, prefix.
+- Giảm kích thước icon prefix của Chip từ 24px còn 20px.
+2. Dropdown:
+- Sửa lại icon và đổi token màu.
+
+Những cái mới:<br/>
+1. Image: Đã có ratio mới là 4:3 và 3:4.<br/>
+2. Bottom sheet: Tách Overlay ra khỏi component Bottom sheet component để trở thành một component riêng.<br/>
+3. Avatar: Có một loại Avatar mới là Initials Avatar.<br/>
+4. Combo Field.
+
+Tháng này vỏn vẹn chỉ có vậy.<br/>
+Tháng sau, bọn mình sẽ ra mắt phiên bản 2.0 với cấu trúc mới của color token nhé.
+
+[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
+
 
 ### Phiên bản 1.3
 
@@ -9,7 +34,6 @@ Xin chào, tháng 9 của bạn như thế nào? Sài Gòn thì vẫn đang hồ
 Tháng này, team Tini tập trung vào việc phát triển [template mới dành cho lĩnh vực Ăn uống](https://www.figma.com/community/file/1025657656395537576/Tini---Food-%26-Beverage-Template), vì vậy về Design system chỉ có một vài nâng vấp về cấp trúc bên trong của các component như Table, Date field, và List view. Một số thay đổi nhỏ ở component Social post, và thay đổi tên token màu của Error, Success thành Negative và Positive để có khả năng sử dụng rộng hơn. <br />
 Đó là mọi cập nhật cho tháng 9 này. Hẹn gặp lại các bạn vào tháng sau nhé!!!
 
-[Tải vể](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 ---
 
