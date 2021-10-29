@@ -23,7 +23,7 @@ Sau đây là danh sách các quyền mà hiện tại Tini App hỗ trợ
 
 ## Giả lập các quyền trên Studio
 
-Để giả lập các quyền này trên Tini Studio, bạn có thể sửa file `package.json` và thêm các permission cần thiết vào mục `permissions` trong mục `metadata`.
+Để giả lập các quyền này trên Tini Studio, bạn có thể sửa file `package.json` và thêm các permission cần thiết vào mục `permissions` trong mục `tiki.metadata`.
 
 Chú ý là việc thêm các permissions vào file package.json chỉ nhằm mục đích giả lập trên Studio mà thôi, ứng dụng muốn có các quyền này sẽ phải request ở trên Dev Center.
 
@@ -32,8 +32,12 @@ Ví dụ, nếu muốn thêm các quyền `getAuthCode`, `openDeeplink`, chúng 
 ```diff
 {
    "name": "my applicaton",
-+  "metadata": {
-+    "permissions": ["getAuthCode", "openDeeplink"]
-+  }
+   "tiki": {
+      "appIdentifier": "my.app.id",
+      "buildNumber": 1,
++     "metadata": {
++       "permissions": ["getAuthCode", "openDeeplink"]
++     }
+   }
 }
 ```
