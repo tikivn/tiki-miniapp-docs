@@ -18,7 +18,7 @@ Tini Studio enables creating projects and managing files in the project, Git too
 
 The editor is designed to boost coding productivity:
 
-- Syntax highlighting: supports for Tini App framework’s TXML/TCSS languages and JS API.  It improves the readability and comprehensibility of code.
+- Syntax highlighting: supports Tini App framework’s TXML/TCSS languages and JS API.  It improves the readability and comprehensibility of code.
 - Autocomplete: the editor predicts the rest of a word and suggests the code syntax as the programmer is typing. It speeds up the process of coding.
 - Linting: automatically scan code to detect syntax errors. 
 
@@ -28,8 +28,8 @@ The editor is designed to boost coding productivity:
 Tini Studio provides tools to improve developer's coding experience:
 
 - Code editor: Supports syntax highlight for TXML, TCSS and JS APIs.
-- Autocomplete: Auto suggesting syntax and functions from TXML, TCSS and JS APIs.
-- Linting: Quickly detect syntax and other errors while coding.
+- Autocomplete: Automatically suggests syntax and functions from TXML, TCSS and JS APIs.
+- Linting: Quickly detects syntax and other errors while coding.
 
 ### Simulator
 
@@ -43,7 +43,4 @@ With the simulator, programmers can run their applications on the computer inste
 
 Compiler Log and DevTools are two useful and comprehensive debugging tools.
 
-- Simulator: Errors happen at runtime will be displayed right in the simulator.
-- DevTools: Errors related to network, storage... can be checked with DevTools.
-- Remote debugging: Run the app on a real device.
 
