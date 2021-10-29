@@ -4,15 +4,24 @@ title: Overview of Tini Studio
 
 ## Introduction
 
-Tini Studio (or Tiki IDE) is a tool created by Tiki for developes on Tini App Platform. It provides functionalities for mini app development such as project management, development, simulator, debugging and app uploader.
+Tini Studio, also known as Tiki IDE, is an integrated development environment for building mini programs on the Tini App platform. It consists of a project management tool, code editor, debugging tool, simulator and upload tool that allows uploading applications to the Dev Center.
+
+## Main interface
 
 ![Tini Studio](https://salt.tikicdn.com/ts/upload/5d/fd/41/6f556e1d67a0d3f1d7da1dce7f230c52.jpg)
 
-## Features
+## Project management
 
-### Project management
+Tini Studio enables creating projects and managing files in the project, Git tools and npm packages.
 
-Similar to IDEs like Visual Studio Code, Atom..., Tini Studio supports creating mini app projects, file explorer, git tool, and npm package management.
+## Code Editor
+
+The editor is designed to boost coding productivity:
+
+- Syntax highlighting: supports for Tini App framework’s TXML/TCSS languages and JS API.  It improves the readability and comprehensibility of code.
+- Autocomplete: the editor predicts the rest of a word and suggests the code syntax as the programmer is typing. It speeds up the process of coding.
+- Linting: automatically scan code to detect syntax errors. 
+
 
 ### Development
 
@@ -24,20 +33,17 @@ Tini Studio provides tools to improve developer's coding experience:
 
 ### Simulator
 
-The simulator is used to simulate how your mini app works in the Tiki app. You can run the compiled codes of mini apps directly in the simulator.
+With the simulator, programmers can run their applications on the computer instead of on the mobile device. The simulator is characterized by:
 
-- Live preview: Show real-time changes of the development.
-- Preset devices: Developer can check the behaviors of the mini app in some popular preset devices.
-- Hardware simulation: Simulates mobile device functions such as location, camera, recorder...
+- Live preview: Reflects real-time changes in code.
+- Preset devices: Programmers can check the behaviors of their apps in common preset devices.
+- Hardware simulation: Simulates the mobile device's functions such as location, camera and shaking 
 
 ### Debugging
 
-To help with debugging, Tini Studio provides some tools for developers:
+Compiler Log and DevTools are two useful and comprehensive debugging tools.
 
 - Simulator: Errors happen at runtime will be displayed right in the simulator.
 - DevTools: Errors related to network, storage... can be checked with DevTools.
 - Remote debugging: Run the app on a real device.
 
-### App upload
-
-Developer can upload the app via the Panel to Tiki Developer Center.

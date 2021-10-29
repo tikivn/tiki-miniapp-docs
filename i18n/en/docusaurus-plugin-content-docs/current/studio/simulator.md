@@ -47,3 +47,4 @@ There are two ways to compile the project manually:
 - Way 1: Select **Compile** from the **Tools** menu.
 - Way 2: Click the Recompile icon on the simulator’s toolbar.
 
+<img src="/img/Simulator_Recompile.jpg" width="300px" alt="Recompile" style={{ margin: '0 auto', display: 'flex' }}/>

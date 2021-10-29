@@ -8,6 +8,8 @@ The name speaks for itself. The syntax and framework errors are found here.
 
 To see the Compiler Log, select **Compiler Log** from the **Tools** menu.
 
+<img src="/img/CompilerLog_TiniStudio.png" width="600px" alt="DevTools" style={{ margin: '0 auto', display: 'flex' }}/>
+
 ## DevTools
 
 Tini Studio DevTools is a set of tools assisting programmers to identify the issues that the application is facing.
@@ -19,6 +21,8 @@ To open DevTools, do either of the following:
 
 The working and functionality of Tini Studio DevTools are similar to those of Google Chrome DevTools. So you can further to [Chrome DevTools](https://developer.chrome.com/docs/devtools/).
 
+<img src="/img/DevTools_TiniStudio.png" width="800px" alt="DevTools" style={{ margin: '0 auto', display: 'flex' }}/>
+
 ### Common tools
 
 #### Elements
@@ -27,7 +31,7 @@ When you click an element in the simulator, the TXML and TCSS source code of the
 
 #### Console
 
-This tool lists out JavaScript errors occurring during the app execution. When you click a particular error, the file containing the errors will be opened on the Sources tab.  
+This tool lists out JavaScript errors occurring during the app execution. When you click a particular error, the file containing the errors will be opened on the **Sources** tab.  
 
 More interestingly, you are able to execute a JavaScript code block so as to interact with the running app.
 
@@ -58,6 +62,8 @@ There are two ways to open the contextual menu:
 
 - Way 1: Click the vertical three dots (⋮) at the top right corner of the DevTools panel. 
 - Way 2: Press the three combination keys **Ctrl + Shift + P**.
+
+<img src="/img/DevTools_Run_Command.jpg" width="450px" alt="DevTools Run Command" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ## Remote Debugging
 
