@@ -7,7 +7,11 @@ title: Chip
 - `chip` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) là thành phẩn nhỏ gọn diễn tả cho input, attribute, hoặc action.
 - Để sử dụng `chip`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.2.1` trở lên.
 
-![image](https://user-images.githubusercontent.com/86942776/135766036-6314f68d-8171-4c48-9cfd-9ff1d81a0d10.png)
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/form/chip/index" />
 
 ## Sử dụng
 

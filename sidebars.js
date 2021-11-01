@@ -276,6 +276,7 @@ module.exports = {
             'component/advance/feedback/popup',
             'component/advance/feedback/modal',
             'component/advance/feedback/bottom-sheet',
+            'component/advance/feedback/tooltip',
           ],
         },
         {
