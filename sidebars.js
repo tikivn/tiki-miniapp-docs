@@ -249,6 +249,7 @@ module.exports = {
             'component/advance/form/textfield',
             'component/advance/form/dropdown',
             'component/advance/form/chip',
+            'component/advance/form/calendar',
           ],
         },
         {
