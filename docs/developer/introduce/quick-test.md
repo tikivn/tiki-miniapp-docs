@@ -20,7 +20,7 @@ Sau đây là thủ tục chạy thử một build của Tini App:
 6. Ở cột **Thao tác** trong bảng danh sách build, click vào **Tạo liên kết xem trước** tương ứng với build mong muốn.
    <img src="/img/Build_list.png" width="700px" alt="Build list" style={{ margin: '0 auto', display: 'flex' }}/>
 7. Hộp thoại chứa mã QR và liên kết của build hiện ra. Dùng camera thiết bị di động quét mã QR của build, hoặc sao chép liên kết của build tại **Liên kết xem trước**.
-   <img src="/img/QRcode_build.png" width="300px" alt="QR code and link of a build" style={{ margin: '0 auto', display: 'flex' }}/>
+   <img src="/img/QRcode_Build.png" width="300px" alt="QR code and link of a build" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ***Lưu ý***: Liên kết chỉ có hiệu lực trong vòng 24 giờ. Trường hợp bạn muốn tiếp tục xài chạy thử build, bạn cần quét mã QR mới.
 
