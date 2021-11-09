@@ -28,7 +28,7 @@ Kết hợp với [Fake Store API](https://fakestoreapi.com/) để làm Shoppin
 
 ## Chuẩn bị
 
-### Tạo một app mới trên Dev Center
+### Tạo một app mới trên Tini Console
 
 Xem hướng dẫn tại trang [Tạo Tini App của bạn](/docs/developer/introduce/create).
 

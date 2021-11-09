@@ -8,7 +8,7 @@ Nhà phát triển có thể ẩn đi ứng dụng của mình như một biện
 
 Thủ tục ẩn một ứng dụng như sau:
 
-1. Truy cập vào [Dev Center](https://developer.tiki.vn/apps).
+1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Ứng dụng của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Sidebar menu >> **Cài đặt** >> **Quản lý chung**.

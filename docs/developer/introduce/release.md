@@ -2,13 +2,13 @@
 title: Phê duyệt và phát hành ứng dụng
 ---
 
-## Khái quát quy trình xử lý build trên Dev Center 
+## Khái quát quy trình xử lý build trên Tini Console 
 
-Mỗi lần bạn tải source code của dự án lên Dev Center được tính là một build.
+Mỗi lần bạn tải source code của dự án lên [Tini Console](https://developer.tiki.vn/apps) được tính là một build.
 
-Tại Dev Center, source code sẽ được tự động compile. Nếu compile thành công, build sẽ mang trạng thái “Ready”. Tiếp đó, bạn **Submit build [number] for review**. 
+Tại [Tini Console](https://developer.tiki.vn/apps), source code sẽ được tự động compile. Nếu compile thành công, build sẽ mang trạng thái “Ready”. Tiếp đó, bạn **Submit build [number] for review**. 
 
-***Lưu ý***: Không nhất thiết bạn phải **Submit build for review** mọi build bạn đưa lên Dev Center. Khi bạn sử dụng tính năng **Submit build for review** thì build mới nhất của release sẽ được chọn gởi đi. 
+***Lưu ý***: Không nhất thiết bạn phải **Submit build for review** mọi build bạn đưa lên Tini Console. Khi bạn sử dụng tính năng **Submit build for review** thì build mới nhất của release sẽ được chọn gởi đi. 
 
 Bộ phận phê duyệt của Tiki sẽ kiểm tra source code của build cũng như chạy thử ứng dụng theo cách thủ công tại Dev Assistant. Nếu build đáp ứng quy định và hoạt động tốt, nó sẽ được phê chuẩn. Build này chính thức được dùng làm release và trạng thái của release sẽ chuyển sang  "Approved".
 
@@ -18,7 +18,7 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 
 ## Quản lý Release và Build của ứng dụng
 
-1. Truy cập vào [Dev Center](https://developer.tiki.vn/apps).
+1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Ứng dụng của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện.
@@ -28,7 +28,7 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 
 ## Submit build for review
 
-1. Truy cập vào [Dev Center](https://developer.tiki.vn/apps).
+1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Ứng dụng của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện
@@ -37,7 +37,7 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 
 ## Publish release trên Kho tiện ích
 
-1. Truy cập vào [Dev Center](https://developer.tiki.vn/apps).
+1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Ứng dụng của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện
@@ -61,16 +61,16 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 
 Mỗi release tương đương một version. Ở một thời điểm, một ứng dụng chỉ được phép có một release duy nhất trên Kho tiện ích.
 
-| **Trạng thái**     | **Mô tả**                                                                                                                                                                                                           |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Draft              | Release vừa đuợc tạo thành công                                                                                                                                                                                     |
-| Waiting for Review | Release có một build đã được Submit build for review, song ban xét duyệt Tiki chưa xem xét đến.                                                                                                                     |
-| In Review          | Release có một build đang trong quá trình trình được xem xét bởi ban xét duyệt Tiki.                                                                                                                                |
-| Update Rejected    | Build của release bị ban xét duyệt Tiki từ chối (có kèm lý do) <br/> Nhà phát triển có thể chỉnh sửa source code trên Tini Studio, upload build mới, thêm thông tin trên Dev Center và **Submit build for review**. |
-| Approved           | Build của release đã được chấp thuận. Nhà phát triển có thể publish release đó trên Kho tiện ích.                                                                                                                   |
-| Avaiable           | Release đang hiện diện trong Kho tiện ích. Người dùng có thể sử dụng phiên bản.                                                                                                                                     |
-| Previous           | Những release từng được phát hành trên Kho tiện ích trước đây.                                                                                                                                                      |
-| Ineligible         | Những release có version thấp hơn release đang có mặt trên Kho tiện ích, nhưng chưa từng được phát hành trên Kho tiện ích trước đây.                                                                                |
+| **Trạng thái**     | **Mô tả**                                                                                                                                                                                                             |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Draft              | Release vừa đuợc tạo thành công                                                                                                                                                                                       |
+| Waiting for Review | Release có một build đã được Submit build for review, song ban xét duyệt Tiki chưa xem xét đến.                                                                                                                       |
+| In Review          | Release có một build đang trong quá trình trình được xem xét bởi ban xét duyệt Tiki.                                                                                                                                  |
+| Update Rejected    | Build của release bị ban xét duyệt Tiki từ chối (có kèm lý do) <br/> Nhà phát triển có thể chỉnh sửa source code trên Tini Studio, upload build mới, thêm thông tin trên Tini Console và **Submit build for review**. |
+| Approved           | Build của release đã được chấp thuận. Nhà phát triển có thể publish release đó trên Kho tiện ích.                                                                                                                     |
+| Available          | Release đang hiện diện trong Kho tiện ích. Người dùng có thể sử dụng phiên bản này.                                                                                                                                   |
+| Previous           | Những release từng được phát hành trên Kho tiện ích trước đây.                                                                                                                                                        |
+| Ineligible         | Những release có version thấp hơn release đang có mặt trên Kho tiện ích, nhưng chưa từng được phát hành trên Kho tiện ích trước đây.                                                                                  |
 
 **Previous** vs **Ineligible**: giả dụ một ứng dụng có 5 release: 1.0.0, 2.0.0, 3.0.0, 4.0.0 và 5.0.0. Release 2.0.0, 3.0.0 và 5.0.0 lần lượt được publish trên Kho tiện ích. Hiện release 5.0.0 đang ở trên Kho tiện ích, thì trạng thái của 5 release sẽ như sau.
 

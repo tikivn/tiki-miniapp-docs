@@ -11,13 +11,13 @@ title: Tạo đơn hàng
 | Base URL     | https://api.tiki.vn/tiniapp-open-api |
 | Path         | /order                               |
 
-Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính xác thực. Tham khảo [Cách tạo chữ ký điện tử](../calculate-signature.md)
+Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính xác thực. Tham khảo [Cách tạo chữ ký điện tử](../calculate-signature)
 
 #### HTTP Request
 
 | Thuộc tính       | Kiểu dữ liệu            | Bắt buộc | Mô tả                                                                                      |
 | ---------------- | ----------------------- | :------: | ------------------------------------------------------------------------------------------ |
-| customer_id      | string                  |    ✓     | ID người dùng Tiki, có thể lấy ở [đây](../exchange-auth-token.md#get-info-from-auth-token) |
+| customer_id      | string                  |    ✓     | ID người dùng Tiki, có thể lấy ở [đây](../exchange-auth-token#get-info-from-auth-token)    |
 | items            | []**[Item](#item)**     |    ✓     | Danh sách sản phẩm                                                                         |
 | shipping_address | **[Address](#address)** |    ✕     | Địa chỉ giao hàng, dùng để hiện thị trên trang thanh toán Tiki (phần thông tin khách hàng) |
 | billing_address  | **[Address](#address)** |    ✕     | Địa chỉ thanh toán                                                                         |
@@ -36,7 +36,7 @@ Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính x
 
 ***Lưu ý***
 > - Trong một đơn hàng, các item khác nhau thì phải có sku khác nhau.
-> - Giá trị đơn hàng tối đa là mười triệu (10.000.000) đồng. Nếu muốn thay đổi thì cần yêu cầu ở [Dev Center](https://developers.tiki.vn/apps).
+> - Giá trị đơn hàng tối đa là mười triệu (10.000.000) đồng. Nếu muốn thay đổi thì cần yêu cầu ở [Tini Console](https://developers.tiki.vn/apps).
 
 #### Address
 

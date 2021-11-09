@@ -4,7 +4,7 @@ title: my.connectSocket
 
 `my.connectSocket` là API được dùng để mở websocket connection trên ứng dụng. Một ứng dụng chỉ có thể duy trì một WebSocket connection ở một thời điểm. Nếu api này được gọi khi có connection đang được mở, thì connection có sẵn đó sẽ tự động đóng lại và connection mới được mở ra.
 
-***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên Dev Center trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/backend-api/overview#tên-miền)
+***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên [Tini Console](https://developer.tiki.vn/apps) trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/backend-api/overview#tên-miền)
 
 ## API Params
 

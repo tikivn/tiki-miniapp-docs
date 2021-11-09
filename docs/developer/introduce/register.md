@@ -25,9 +25,9 @@ Sự khác biệt giữa 2 loại tài khoản:
 
 Thực hiện các bước sau để đăng ký trở thành nhà phát triển:
 
-## 1. Truy cập vào Dev Center
+## 1. Truy cập vào Tini Console
 
-Đăng nhập vào [Dev Center](https://developer.tiki.vn/apps) bằng tài khoản Tiki. Nếu bạn chưa sẵn có tài khoản Tiki, bạn có thể tạo nó tại tiki.vn.
+Đăng nhập vào [Tini Console](https://developer.tiki.vn/apps) bằng tài khoản Tiki. Nếu bạn chưa sẵn có tài khoản Tiki, bạn có thể tạo nó tại tiki.vn.
 
 ## 2. Chọn loại Tài khoản nhà phát triển
 
@@ -52,6 +52,7 @@ Lĩnh vực kinh doanh có thể bổ sung sau tùy tình hình kinh doanh của
 ## 5. Cung cấp danh tính
 
 - Điền đầy đủ và chính xác thông tin được yêu cầu.
+  - **Địa chỉ email chính** sẽ được dùng để nhận email xác thực của Tiki cũng như dùng làm một kênh liên lạc chính thức của Nhà phát triển với Tiki. 
 - Tải lên ảnh chụp các giấy tờ cần thiết.
 - Nhấn nút **Hoàn tất**.
 
@@ -59,8 +60,14 @@ Lĩnh vực kinh doanh có thể bổ sung sau tùy tình hình kinh doanh của
 
 ## 6. Xác thực email
 
+Mở tài khoản email (**Địa chỉ email chính**). Email xác thực của Tiki nếu không nằm trong Inbox có khả năng nằm trong thư mục Spam hoặc Junk.
+
 ## 7. Phê duyệt
 
-- Đối với **Tài khoản Cá nhân**: việc đăng ký  coi như hoàn tất sau khi xác thực email, mà không cần đội ngũ quản lý của Tiki xét duyệt. Nhà phát triển có thể bắt tay vào tạo ứng dụng trên Dev Center và phát triển nó.
+- Đối với **Tài khoản Cá nhân**: việc đăng ký  coi như hoàn tất sau khi xác thực email, mà không cần đội ngũ quản lý của Tiki xét duyệt. Nhà phát triển có thể bắt tay vào tạo ứng dụng trên Tini Console và phát triển nó.
 - Đối với **Tài khoản Công ty**: thông tin đăng ký sẽ được chuyển đến cho đội ngũ quản lý của Tiki xét duyệt. Kết quả sẽ được phản hồi đến địa chỉ email do chủ tài khoản cung cấp.
+
+<div align="center"> ---oOo--- </div>
+
+Nhà phát triển có thể liên lạc với Tiki thông qua địa chỉ email tikiapp@tiki.vn nếu có bất kỳ thắc mắc gì.
 

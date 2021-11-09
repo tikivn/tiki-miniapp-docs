@@ -7,7 +7,7 @@ Sau khi khách hàng thanh toán trên Tiki, chúng tôi thực hiện hàm call
 
 ## IPN - Instant Payment Notification
 
-Chúng tôi sẽ sử dụng Postback Url mà đối tác cung cấp lúc đăng ký chức năng thanh toán với Tiki ở [Dev Center](https://developers.tiki.vn/apps) để gửi một HTTP request với thông tin như sau:
+Chúng tôi sẽ sử dụng Postback Url mà đối tác cung cấp lúc đăng ký chức năng thanh toán với Tiki ở [Tini Console](https://developers.tiki.vn/apps) để gửi một HTTP request với thông tin như sau:
 
 ### Thông tin HTTP
 
