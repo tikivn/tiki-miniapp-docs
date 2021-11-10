@@ -99,6 +99,17 @@ module.exports = {
         hashed: true,
       },
     ],
+    [
+      /** @type {import('@docusaurus/plugin-content-blog').Options} */
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'second-blog',
+        routeBasePath: 'release',
+        path: './release',
+        blogSidebarTitle: 'Danh sách các phiên bản',
+        blogSidebarCount: 'ALL',
+      },
+    ],
     path.resolve(__dirname, './plugins/docusaurus-plugin-facebook-pixel'),
   ],
   presets: [
@@ -112,6 +123,8 @@ module.exports = {
         },
         blog: {
           showReadingTime: true,
+          blogSidebarTitle: 'Bài viết gần đây',
+          blogSidebarCount: 'ALL',
           // editUrl: 'https://github.com/tikivn/tiki-miniapp-docs/blob/master',
         },
         theme: {

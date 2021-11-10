@@ -24,7 +24,9 @@ const groups = [
   {
     title: 'Tin tức',
     items: [
-      {title: 'Blog', url: 'https://engineering.tiki.vn/'},
+      {title: 'Tiki Blog', url: 'https://engineering.tiki.vn/'},
+      {title: 'Tini App Blog', url: '/blog'},
+      {title: 'Release', url: '/release'},
       {title: 'Hackathon', url: 'https://hackathon.tiki.vn/'},
     ],
   },
