@@ -18,6 +18,10 @@ title: scroll-view
 
 ### Sample Code
 
+import Import from '@site/src/components/Import';
+
+<Import page="pages/component/basic/scroll-view" />
+
 **index.txml**
 
 ```xml
