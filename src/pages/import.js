@@ -26,6 +26,9 @@ export default function Import() {
             tại đây.
           </a>
         </p>
+        <i>
+          Lưu ý, nếu chưa thấy code mẫu, mở sẵn Tini Studio và tải lại trang.
+        </i>
       </main>
     </Layout>
   );
