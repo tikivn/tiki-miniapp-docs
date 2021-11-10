@@ -28,7 +28,6 @@ const Import = ({
     <a
       href={link}
       target="_blank"
-      className="flex fr fcc download-button"
       style={{
         display: 'flex',
         fontWeight: 'bold',
