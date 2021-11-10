@@ -16,7 +16,7 @@ export default function Import() {
     <Layout title="Tini App" description="Tini App">
       <main
         className={styles.allCenter}
-        style={{height: 'calc(100vh - var(--ifm-navbar-height) - 260px)'}}>
+        style={{minHeight: 'calc(100vh - var(--ifm-navbar-height) - 260px)'}}>
         <Logo />
         <LogoLabel />
         <p style={{marginTop: 16}}>
