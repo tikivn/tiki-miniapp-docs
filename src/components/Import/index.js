@@ -20,7 +20,9 @@ const Import = ({
       githubFolder,
     }).filter(([_, v]) => !!v),
   );
-  const link = `/import?${new URLSearchParams(params).toString()}`;
+  const link =
+    typeof window !== 'undefined' &&
+    `/import?${new window.URLSearchParams(params).toString()}`;
 
   return (
     <a
