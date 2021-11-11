@@ -1,5 +1,5 @@
 ---
-title: Phê duyệt và phát hành ứng dụng
+title: Phát hành ứng dụng
 ---
 
 ## Khái quát quy trình xử lý build trên Tini Console 
