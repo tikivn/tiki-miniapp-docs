@@ -38,6 +38,10 @@ Xem hướng dẫn tại [đây](/docs/studio/start-page).
 
 ## Coding
 
+import Import from '@site/src/components/Import';
+
+<Import template="shop" />
+
 ### 1. Coding trang Sản phẩm
 
 **1.1. Hiển thị danh sách sản phẩm với [carousel](https://developers.tiki.vn/docs/component/view-container/carousel-en).**

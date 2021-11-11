@@ -8,6 +8,10 @@ Bài viết này sẽ hướng dẫn các bạn làm một header cho page với
 
 <img style={{maxWidth: 300}} src="/img/header-animation.gif" alt="Header animation" />
 
+import Import from '@site/src/components/Import';
+
+<Import github="https://github.com/tikivn/tiniapp-example" githubFolder="custom-header" />
+
 ## 1. Giới thiệu các cấu hình `transparentTitle`
 
 `transparentTitle` là thuộc tính dùng để cấu hình độ transparent (trong suốt) của thanh navigation bar (thanh điều hướng), được khai báo trong file config `app.json` hoặc trong file config `.json` của các page. Khi bạn thiết lập cấu hình này trong app thì nó sẽ được sử dụng cho tất cả các page, nếu bạn để trong page thì chỉ page đó có hiệu lực. Ngoài ra trong app.json thì bạn phải bỏ vào trong `window`, còn với page thì bạn phải để bên ngoài.
