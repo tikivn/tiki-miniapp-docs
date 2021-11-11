@@ -2,12 +2,12 @@ import React from 'react';
 
 const Import = ({
   style,
-  content = 'Xem code mẫu trên Tini Studio',
-  appId = '',
-  appName = '',
+  content,
+  appId,
+  appName,
   template = 'api-demo',
-  github = '',
-  page = '',
+  github,
+  page,
   githubFolder = '',
 }) => {
   const params = Object.fromEntries(
@@ -33,11 +33,11 @@ const Import = ({
         fontWeight: 'bold',
         fontSize: 16,
         textDecoration: 'none',
-        marginTop: 8,
+        marginTop: 16,
         marginBottom: 16,
         ...style,
       }}>
-      {content}
+      {content || 'Xem code mẫu trên Tini Studio'}
     </a>
   );
 };
