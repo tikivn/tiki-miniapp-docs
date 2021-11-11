@@ -30,7 +30,7 @@ Những người là thành viên xuyên suốt, tham gia phát triển/ kiểm 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Thiết lập tài khoản** >> **Quản lý thành viên**
 
-<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/a3/f0/05/30917e3903698af22d9d60c0c6e9e066.png"/>
+<img src="/img/Permanent_Member_list.png" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ### Thêm thành viên thường trực
 
@@ -40,7 +40,7 @@ Những người là thành viên xuyên suốt, tham gia phát triển/ kiểm 
 4. Trong hộp thoại **Thêm thành viên**, nhập địa chỉ email dùng để đăng ký tài khoản Tiki của người mà bạn đang muốn thêm vào, và chọn vai trò mặc định cho người đó. Kế đó bấm nút **Thêm**
    <img src="/img/New_Permanent_Member_form.jpg" width="250px" style={{ margin: '0 auto', display: 'flex' }}/>
 5. Trong trang "Thêm thành viên", xác định vai trò của thành viên đó trong từng dự án cụ thể. Sau đó, bấm nút **Hoàn tất**.
-   <img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/upload/b5/5e/0c/30104b6bfe4d39bb1136e2035b8e3b4a.jpg"/>
+   <img src="/img/Assign_Role_to_Member.jpg" width="800px" alt="Assign roles" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ## Quản lý Thành viên phát triển ứng dụng
 

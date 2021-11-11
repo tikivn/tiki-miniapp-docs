@@ -12,7 +12,7 @@ Cách thức lấy mã QR hay liên kết của một Tini App như sau:
 2. Sidebar menu >> **Ứng dụng của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Bấm nút **Lưu ảnh** về để tải về mã QR trường hợp bạn muốn chia sẻ thông qua mã QR, hoặc bấm nút **Sao chép** bên cạnh **Link ứng dụng** trường hợp bạn muốn chia sẻ thông qua liên kết.
-   <img src="/img/QRcode_App.png" width="800px" alt="QR code of Buid" style={{ margin: '0 auto', display: 'flex' }}/>
+   <img src="/img/QRcode_App.png" width="800px" alt="QR code & link of Tini App " style={{ margin: '0 auto', display: 'flex' }}/>
 5. Gửi mã QR hay liên kết đến những người mà bạn muốn chia sẻ.
 
 - - -

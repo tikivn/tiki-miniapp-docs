@@ -22,9 +22,8 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 2. Sidebar menu >> **Ứng dụng của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện.
-   <img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/upload/19/d6/c2/0a4b6f53dd4fe8bed130daa316ebd19c.png"/>
+   <img src="/img/Release_list.png" width="900px" alt="Release list" style={{ margin: '0 auto', display: 'flex' }}/>
 5. Để xem danh sách build của một release, click vào **Xem** tương ứng với release mong muốn.
-   
 
 ## Submit build for review
 
@@ -32,8 +31,11 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 2. Sidebar menu >> **Ứng dụng của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện
-5. Click vào **Xem** tương ứng với release mong muốn.
-6. Nhấn nút **Submit build [number] for review** ở cuối trang. Mặc nhiên build mới nhất có trạng thái "Ready" của release sẽ được chọn gửi đi.
+5. Click vào **Xem** tương ứng với release mong muốn. 
+6. Điền vào mục **Thông tin ứng dụng**.
+   <img src="/img/Submit_Build_for_Review.png" width="700px" alt="Submit Build for Review" style={{ margin: '0 auto', display: 'flex' }}/>
+7. Đánh dấu chọn vào ô **Xuất bản ứng dụng ngay sau khi thông qua kiểm duyệt** nếu như bạn muốn build (release) này tự động publish lên Kho tiện ích ngay sau khi Bộ phận phê duyệt của Tiki chấp thuận.
+8. Nhấn nút **Submit build [number] for review** ở cuối trang. Mặc nhiên build mới nhất có trạng thái "Ready" của release sẽ được chọn gửi đi.
 
 ## Publish release trên Kho tiện ích
 
@@ -43,9 +45,6 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện
 5. Click vào **Xem** tương ứng với release mong muốn.
 6. Nhấn nút **Publish** ở cuối trang. 
-   
-<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/upload/73/64/1c/a65373c67e8a1ae6465234e562b01089.png"/>
-
 
 ## Trạng thái ứng dụng
 
