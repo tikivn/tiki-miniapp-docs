@@ -247,6 +247,7 @@ module.exports = {
             'component/advance/form/stepper',
             'component/advance/form/steps',
             'component/advance/form/textfield',
+            'component/advance/form/pin',
             'component/advance/form/dropdown',
             'component/advance/form/chip',
             'component/advance/form/calendar',
