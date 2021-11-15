@@ -19,15 +19,15 @@ Sau đây là các công đoạn cụ thể
 
 Không phải tất cả các loại sản phẩm bán trên sàn TMĐT đều có thể bán trên Tini App. 
 
-Nhiều Tini App của cùng một Seller có thể dùng chung một SKU
+Nhiều Tini App của cùng một Seller có thể dùng chung một SKU.
 
-Xem hướng dẫn tạo sản phẩm tại đây.
+Xem hướng dẫn tạo sản phẩm tại [đây](create-sku).
 
 ## 2. Tích hợp thanh toán cho Tini App
 
 Sau khi tính năng thanh toán của ứng dụng được mở, bạn cần thiết lập thông tin thanh toán cho ứng dụng.
 
-Xem hướng dẫn tạo tích hợp thanh toán tại đây.
+Xem hướng dẫn tạo tích hợp thanh toán tại [đây](payment-integration)
 
 ## 3. Tích hợp sản phẩm vào ứng dụng
 
@@ -35,14 +35,22 @@ Xem hướng dẫn tạo tích hợp thanh toán tại đây.
 
 ***Thận trọng:*** Hãy đảm bảo rằng bạn sử dụng đúng bộ Base URL, Key/ Secret của Sandbox khi bạn kiểm thử trên môi trường Sandbox; tránh trường hợp Key/ Secret của Sandbox nhưng lại dùng Base URL của môi trường Production hoặc ngược lại.
 
+Xem hướng dẫn kiểm thử trên môi trường Sandbox tại [đây](/docs/backend-api/platform-api/sandbox). 
+
 ## 5. Kiểm thử trên môi trường Production
 
-Để kiểm thử việc thanh toán trên môi trường Production, bạn cần phải sử dụng Dev Assistant hoặc quét mã QR của ứng dụng. Việc thanh toán thật sẽ diễn ra. 
+Để kiểm thử việc thanh toán trên môi trường Production, bạn cần phải sử dụng Dev Assistant hoặc quét mã QR của ứng dụng. Việc thanh toán thật sẽ diễn ra.
 
-## 6. Sao kê và đối soát
+Xem hướng dẫn kiểm thử trên môi trường Production tại [đây](/docs/backend-api/platform-api/production)
+
+## 6. Xử lý đơn hàng
+
+Xem [Sơ đồ xử đơn hàng](flow)  
+
+## 7. Sao kê và đối soát
 
 Liên hệ với [Seller Center](https://sellercenter.tiki.vn/new#) để có thông tin chi tiết. Tham khảo: https://hocvien.tiki.vn/faq/huong-dan-kiem-tra-sao-ke-va-doi-soat-giao-dich/ 
 
-## 7. Tiki thanh toán
+## 8. Tiki thanh toán
 
 Liên hệ với [Seller Center](https://sellercenter.tiki.vn/new#) để có thông tin chi tiết. Tham khảo: https://hocvien.tiki.vn/faq/huong-dan-kiem-tra-sao-ke-va-doi-soat-giao-dich/ 

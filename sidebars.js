@@ -22,6 +22,15 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Hướng dẫn sử dụng tài liệu',
+      collapsed: false,
+      items: [
+        'developer/how-to-use-docs/experience-sample-code',
+      ],
+    },
+
+    /*{
+      type: 'category',
       label: 'Tích hợp luồng thanh toán',
       collapsed: false,
       items: [
@@ -29,7 +38,7 @@ module.exports = {
         'developer/payment-flow/create-sku',
         'developer/payment-flow/payment-feature-request',
       ],
-    },
+    }, */
     {
       type: 'category',
       label: 'Ví dụ mẫu',
@@ -720,6 +729,7 @@ module.exports = {
       items: [
         'backend-api/platform-api/overview',
         'backend-api/platform-api/sandbox',
+        'backend-api/platform-api/production',
         'backend-api/platform-api/calculate-signature',
         'backend-api/platform-api/exchange-auth-token',
         {
@@ -727,6 +737,8 @@ module.exports = {
           label: 'Thanh toán với Tiki',
           items: [
             'backend-api/platform-api/payment/overview',
+            'backend-api/platform-api/payment/create-sku',
+            'backend-api/platform-api/payment/payment-integration',
             'backend-api/platform-api/payment/flow',
             'backend-api/platform-api/payment/create-order',
             'backend-api/platform-api/payment/ipn',
