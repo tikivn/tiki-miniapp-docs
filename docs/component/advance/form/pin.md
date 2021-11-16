@@ -4,7 +4,7 @@ title: PIN
 
 ## Giới thiệu
 
-- Để sử dụng `chip`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.2.1` trở lên.
+- Để sử dụng `PIN`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.4.1` trở lên.
 
 ## Quét mã để trải nghiệm
 
