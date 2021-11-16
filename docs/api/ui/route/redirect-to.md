@@ -8,6 +8,10 @@ title: my.navigateTo
 
 Khác với **my.navigateTo**, **my.redirectTo** sẽ thay thế màn hình hiện tại bằng màn hình mới.
 
+## Chú ý:
+
+**my.redirectTo** được hỗ trợ từ framework 1.84 trở đi
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
