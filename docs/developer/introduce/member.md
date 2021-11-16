@@ -10,7 +10,7 @@ Nền tảng Tini App cho phép một tài khoản Nhà phát triển có nhiề
 - **Programmer**: Lập trình viên tham gia xây dựng ứng dụng.
 - **Tester**: Người chịu trách nhiệm kiểm thử ứng dụng hoặc được mời trải nghiệm một ứng dụng trước khi phát hành.
 
-Owner, Admin và Programmer có quyền truy cập Dev Center cũng như thực hiện các tác vụ liên quan việc phát hành ứng dụng, trong khi Tester không thể truy cập công cụ này.
+Owner, Admin và Programmer có quyền truy cập Tini Console cũng như thực hiện các tác vụ liên quan việc phát hành ứng dụng, trong khi Tester không thể truy cập công cụ này.
 
 <div align="center"> ---oOo--- </div>
 
@@ -27,20 +27,20 @@ Những người là thành viên xuyên suốt, tham gia phát triển/ kiểm 
 
 ### Xem danh sách thành viên thường trực
 
-1. Truy cập vào [Dev Center](https://developer.tiki.vn/apps).
+1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Thiết lập tài khoản** >> **Quản lý thành viên**
 
-<img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/social/a3/f0/05/30917e3903698af22d9d60c0c6e9e066.png"/>
+<img src="/img/Permanent_Member_list.png" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ### Thêm thành viên thường trực
 
-1. Truy cập vào [Dev Center](https://developer.tiki.vn/apps).
+1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Thiết lập tài khoản** >> **Quản lý thành viên**.
 3. Bấm nút **Thêm người dùng** ở góc phải trên.
 4. Trong hộp thoại **Thêm thành viên**, nhập địa chỉ email dùng để đăng ký tài khoản Tiki của người mà bạn đang muốn thêm vào, và chọn vai trò mặc định cho người đó. Kế đó bấm nút **Thêm**
    <img src="/img/New_Permanent_Member_form.jpg" width="250px" style={{ margin: '0 auto', display: 'flex' }}/>
 5. Trong trang "Thêm thành viên", xác định vai trò của thành viên đó trong từng dự án cụ thể. Sau đó, bấm nút **Hoàn tất**.
-   <img style={{width: "100%"}} src="https://salt.tikicdn.com/ts/upload/b5/5e/0c/30104b6bfe4d39bb1136e2035b8e3b4a.jpg"/>
+   <img src="/img/Assign_Role_to_Member.jpg" width="800px" alt="Assign roles" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ## Quản lý Thành viên phát triển ứng dụng
 
@@ -52,18 +52,18 @@ Mọi đối tượng tham gia phát triển/ kiểm thử/ vận hành/… ứn
 
 - Tester/ Programmer/ Admin dẫu hiện diện trong danh sách Thành viên thường trực vẫn cần được thêm vào danh sách Thành viên phát triển ứng dụng thì mới có thể làm việc với ứng dụng ấy.
 - Admin thành viên thường trực có quyền cấp vai trò Admin của ứng dụng cho chính bản thân mình.
-- Owner, Admin và Programmer của ứng dụng có quyền truy cập Dev Center cũng như thực hiện các tác vụ liên quan việc phát hành ứng dụng, trong khi Tester không thể truy cập công cụ này.
+- Owner, Admin và Programmer của ứng dụng có quyền truy cập Tini Console cũng như thực hiện các tác vụ liên quan việc phát hành ứng dụng, trong khi Tester không thể truy cập công cụ này.
 
 ### Xem danh sách Thành viên phát triển ứng dụng
 
-1. Truy cập vào [Dev Center](https://developer.tiki.vn/apps).
+1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Ứng dụng của bạn**.
 3. Mở ứng dụng mà bạn muốn xem danh sách thành viên.
 4. Sidebar menu >> **Quản lý thành viên**.
 
 ### Thêm Thành viên phát triển ứng dụng 
 
-1. Truy cập vào [Dev Center](https://developer.tiki.vn/apps).
+1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Ứng dụng của bạn**.
 3. Mở ứng dụng mà bạn muốn xem danh sách thành viên.
 4. Sidebar menu >> **Quản lý thành viên**.

@@ -24,7 +24,7 @@ title: Quy trình phát triển Tini App
 
 ## 4. Quản lý phiên bản và phân phối
 
-Tải các build của ứng dụng từ Tini Studio lên Dev Center để Bộ phận phê duyệt của Tiki xem xét. Nếu bản build được chấp thuận, nó sẽ được phép publish trên Kho tiện ích và người dùng Tiki app có thể tải về sử dụng.
+Tải các build của ứng dụng từ Tini Studio lên Tiki Console để Bộ phận phê duyệt của Tiki xem xét. Nếu bản build được chấp thuận, nó sẽ được phép publish trên Kho tiện ích và người dùng Tiki app có thể tải về sử dụng.
 
 ## 5. Vận hành
 

@@ -2,7 +2,7 @@
 title: Quyền sử dụng API
 ---
 
-Tini App cung cấp một số API mà khi muốn sử dụng sẽ cần phải xin quyền ở Dev Center.
+Tini App cung cấp một số API mà khi muốn sử dụng sẽ cần phải xin quyền ở [Tini Console](https://developer.tiki.vn/apps).
 
 Tài liệu này mô tả danh sách các quyền cũng như ý nghĩa của các quyền này
 
@@ -25,7 +25,7 @@ Sau đây là danh sách các quyền mà hiện tại Tini App hỗ trợ
 
 Để giả lập các quyền này trên Tini Studio, bạn có thể sửa file `package.json` và thêm các permission cần thiết vào mục `permissions` trong mục `tiki.metadata`.
 
-Chú ý là việc thêm các permissions vào file package.json chỉ nhằm mục đích giả lập trên Studio mà thôi, ứng dụng muốn có các quyền này sẽ phải request ở trên Dev Center.
+Chú ý là việc thêm các permissions vào file package.json chỉ nhằm mục đích giả lập trên Studio mà thôi, ứng dụng muốn có các quyền này sẽ phải request ở trên Tini Console.
 
 Ví dụ, nếu muốn thêm các quyền `getAuthCode`, `openDeeplink`, chúng ta có thể sửa file `package.json` với nội dung như sau
 

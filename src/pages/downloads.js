@@ -61,7 +61,7 @@ const DownloadSEO = () => {
       <title>Download the latest version of Tini Studio</title>
       <meta
         property="og:description"
-        content="Tini Studio, còn có tên khác là Tiki IDE, là bộ phần mềm phát triển ứng dụng trên nền tảng Tini App. Nó sở hữu tập hợp các công cụ: quản lý dự án, code editor (trình viết code), debug (gỡ lỗi), trình giả lập và tải mã nguồn của dự án lên Tiki Dev Center."
+        content="Tini Studio, còn có tên khác là Tiki IDE, là bộ phần mềm phát triển ứng dụng trên nền tảng Tini App. Nó sở hữu tập hợp các công cụ: quản lý dự án, code editor (trình viết code), debug (gỡ lỗi), trình giả lập và tải mã nguồn của dự án lên Tini Console."
       />
       <meta property="og:title" content="Downloads Tini Studio" />
     </Head>
@@ -85,7 +85,7 @@ const Download = () => {
       {
         thumbnail: <Simulator />,
         description:
-          'Tích hợp bộ xử lý ngôn ngữ để highlight cú pháp và hỗ trợ các ngôn ngữ và API của Tini Framework như TXML, SJS, JS API. Đồng thời, tính năng autocomplete giúp việc tiếp cận với Tini Framework trở nên dễ dàng hơn.',
+          'Xem ngay mô phỏng của ứng dụng ngay trong quá trình phát triển giúp để bạn có thể viết code và sửa lỗi nhanh hơn.',
         header: 'Trình giả lập',
         link: 'https://developers.tiki.vn/docs/studio/simulator',
       },

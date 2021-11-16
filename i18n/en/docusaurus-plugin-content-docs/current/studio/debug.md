@@ -67,5 +67,5 @@ There are two ways to open the contextual menu:
 
 ## Remote Debugging
 
-It enables developers to test an app on mobile devices without uploading the app to the Dev Center.
+It enables developers to test an app on mobile devices without uploading the app to the [Tini Console](https://developer.tiki.vn/apps).
 

@@ -16,7 +16,7 @@ Run the Tini Studio installer and follow the installation wizard.
    - Way 1: Select **New Project** from the **File** menu.
    - Way 2: On the **Getting Started** page of Tini Studio, click **New Project**.
 2. In the **Configure your project** dialogue, type the project name, App ID and the location where you want to store the project [in the **Save Location** box].
-   - **App ID**: the unique identification of a Tini App. You register it while creating a new Tini App on the Dev Center. Refer to [Create your Tini App](/docs/developer/introduce/create). So long as you are yet to create the app on the Dev Center, you can type any string that conforms to the format of the App ID in order to create the project first.
+   - **App ID**: the unique identification of a Tini App. You register it while creating a new Tini App on the [Tini Console](https://developer.tiki.vn/apps). Refer to [Create your Tini App](/docs/developer/introduce/create). So long as you are yet to create the app on the Tini Console, you can type any string that conforms to the format of the App ID in order to create the project first.
 
 ## 4. Coding the app
 
@@ -32,7 +32,7 @@ To run a Tini App in Tini Studio’s simulator on your computer, do as follows:
 
 ## 6. Debbuging
 
-## 7. Uploading the app to the Dev Center
+## 7. Uploading the app to the Tini Console
 
 Refer to [App Development and Upload](/docs/developer/introduce/upload).
 

@@ -4,7 +4,7 @@ title: Overview of Tini Studio
 
 ## Introduction
 
-Tini Studio, also known as Tiki IDE, is an integrated development environment for building mini programs on the Tini App platform. It consists of a project management tool, code editor, debugging tool, simulator and upload tool that allows uploading applications to the Dev Center.
+Tini Studio, also known as Tiki IDE, is an integrated development environment for building mini programs on the Tini App platform. It consists of a project management tool, code editor, debugging tool, simulator and upload tool that allows uploading applications to the [Tini Console](https://developer.tiki.vn/apps).
 
 ## Main interface
 

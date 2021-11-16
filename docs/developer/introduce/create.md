@@ -2,7 +2,7 @@
 title: Tạo Tini App của bạn
 ---
 
-Một khi đã chính thức trở thành Nhà phát triển Tini App, bạn được quyền tạo mới ứng dụng, bắt đầu quá trình phát triển. Truy cập vào [Dev Center](https://developer.tiki.vn/apps) và tiến hành những bước sau:
+Một khi đã chính thức trở thành Nhà phát triển Tini App, bạn được quyền tạo mới ứng dụng, bắt đầu quá trình phát triển. Truy cập vào [Tini Console](https://developer.tiki.vn/apps) và tiến hành những bước sau:
 
 ## 1. Tạo mới ứng dụng
 

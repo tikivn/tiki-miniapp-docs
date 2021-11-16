@@ -1,7 +1,10 @@
-import isEqual from 'lodash/isEqual';
-import qrGenerator from 'qrcode-generator';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+
+import isEqual from 'lodash/isEqual';
+import qrGenerator from 'qrcode-generator';
+
+import Import from '../Import';
 
 export class QRCode extends React.Component {
   canvas;
@@ -42,6 +45,16 @@ export class QRCode extends React.Component {
         inner: [50, 50, 50, 50],
       },
     ],
+    // Import component
+    showImport: true,
+    importStyle: '',
+    importContent: null,
+    importAppId: null,
+    importAppName: null,
+    importTemplate: 'api-demo',
+    importGithub: null,
+    importPage: null,
+    importGithubFolder: null,
   };
 
   static utf16to8(str) {
@@ -353,8 +366,27 @@ export class QRCode extends React.Component {
     window.open(this.qrPage);
   };
 
+  get importPage() {
+    const {importTemplate, importGithub, importPage, page} = this.props;
+    if (!importTemplate || importGithub) {
+      return '';
+    }
+    return importPage || page;
+  }
+
   render() {
+    const {
+      showImport,
+      importStyle,
+      importContent,
+      importAppId,
+      importAppName,
+      importTemplate,
+      importGithub,
+      importGithubFolder,
+    } = this.props;
     const size = +this.props.size + 2 * +this.props.quietZone;
+    console.log('showImport :>> ', showImport);
 
     return (
       <>
@@ -376,8 +408,22 @@ export class QRCode extends React.Component {
         <div>
           Hoặc sử dụng link
           <br />
-          <a href={this.qrPage}>{this.qrPage}</a>
+          <a target="_blank" href={this.qrPage}>
+            {this.qrPage}
+          </a>
         </div>
+        {!!showImport && (
+          <Import
+            style={importStyle}
+            content={importContent}
+            appId={importAppId}
+            appName={importAppName}
+            template={importTemplate}
+            github={importGithub}
+            page={this.importPage}
+            githubFolder={importGithubFolder}
+          />
+        )}
       </>
     );
   }

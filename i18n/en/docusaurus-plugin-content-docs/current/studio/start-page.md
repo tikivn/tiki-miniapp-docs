@@ -13,7 +13,7 @@ You can create a new project via menu _File > New Project_ or from _Getting Star
 The following info is required when you create a project:
 
 - **App Name**: Your App Name. This can be changed later.
-- **App Id**: Your App Id which was registered on Dev Center. This can be changed later.
+- **App Id**: Your App Id which was registered on [Tini Console](https://developer.tiki.vn/apps). This can be changed later.
 - **Save location**: Path to an **empty** folder which you want to save the source code.
 
 If you successfully create a project, you will see the source code structure similar as in the [Framework Overview](/docs/framework/overview).

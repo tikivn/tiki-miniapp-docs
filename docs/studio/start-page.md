@@ -13,7 +13,7 @@ Bạn có thể tạo project mới thông qua menu _File > New Project_ hoặc 
 Khi tạo project mới bạn cần cung cấp những thông tin sau:
 
 - **App Name**: Tên ứng dụng
-- **App Id**: Id ứng dụng, đây là Id bạn đăng ký cho ứng dụng trên Dev Center. Bạn có thể nhập bất kì và sửa lại sau.
+- **App Id**: Id ứng dụng, đây là Id bạn đăng ký cho ứng dụng trên Tini Console. Bạn có thể nhập bất kì và sửa lại sau.
 - **Save location**: Đường dẫn đến thư mục chứa các tập tin mã nguồn. Hiện tại chỉ hỗ trợ đường dẫn đến một thư mục **rỗng**.
 
 Khi tạo project thành công, Studio sẽ tạo sẵn một cấu trúc các tập tin và thư mục như trong phần [Tổng quan về Framework](/docs/framework/overview)
