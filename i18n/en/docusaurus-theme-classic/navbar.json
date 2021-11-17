@@ -15,8 +15,8 @@
     "message": "Components",
     "description": "Navbar item with label Components"
   },
-  "item.label.APIs": {
-    "message": "APIs",
+  "item.label.JS APIs": {
+    "message": "JS APIs",
     "description": "Navbar item with label API"
   },
   "item.lable.Server APIs": {
@@ -26,5 +26,9 @@
   "item.label.Design": {
     "message": "Design",
     "description": "Navbar item with label Design"
+  },
+  "item.label.Cộng đồng": {
+    "message": "Community",
+    "description": "Navbar item with label Cộng đồng"
   }
 }
