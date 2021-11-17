@@ -8,7 +8,7 @@ API này huỷ một đơn vận chuyển hàng.
 
 ## Sử dụng
 
-**API này yêu cầu có [chữ ký điện tử](../calculate-signature.md) khi gửi API request**
+***Quan trọng***: API này yêu cầu có [chữ ký điện tử](../platform-api/calculate-signature) khi gửi API request.
 
 ### API Address
 

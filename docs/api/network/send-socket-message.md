@@ -4,6 +4,8 @@ title: my.sendSocketMessage
 
 `my.sendSocketMessage` là một API dùng để gửi dữ liệu thông qua một WebSocket connection. Để sử dụng `my.sendSocketMessage`, bạn trước hết cần thiết lập WebSocket connection bằng `my.connectSocket`, tiếp đến là gọi `my.onSocketOpen` callback.
 
+***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên [Tini Console](https://developer.tiki.vn/apps) trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/development/tini-console/whitelist-domains).
+
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu        | Bắt buộc | Mô tả                                                                                   |

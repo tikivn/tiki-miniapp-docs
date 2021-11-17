@@ -4,7 +4,7 @@ title: Switch shipment's status
 
 ## Giới thiệu
 
-**API này yêu cầu có [chữ ký điện tử](../calculate-signature.md) khi gửi API request**
+***Quan trọng***: API này yêu cầu có [chữ ký điện tử](../platform-api/calculate-signature) khi gửi API request.
 
 API này chỉ phục vụ cho môi trường **Sandbox**, nhằm giúp developer chủ động trong việc thay đổi các trạng thái của đơn hàng vận chuyển.
 

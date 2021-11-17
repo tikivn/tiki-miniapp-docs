@@ -16,7 +16,7 @@ Chạy tập tin cài đặt Tini Studio.
    - Menu >> **File** >> **New Project**.
    - Trên trang **Getting Started** của Tini Studio, nhấn vào New Project.
 2. Trong hộp thoại **Configure your project**, điền tên dự án, App ID và đường dẫn mà bạn muốn lưu dự án đó **[Save location]**.
-   - AppID: định danh duy nhất của của ứng dụng. Bạn đăng ký nó trong quá trình tạo mới ứng dụng mới trên [Tini Console](https://developer.tiki.vn/apps). Xem thêm [Tạo Tini App của bạn](/docs/developer/introduce/create). Nếu chưa tạo ứng dụng trên [Tini Console](https://developer.tiki.vn/apps), bạn có thể nhập một App ID bất kì theo đúng format để tạo Project trước.
+   - AppID: định danh duy nhất của của ứng dụng. Bạn đăng ký nó trong quá trình tạo mới ứng dụng mới trên [Tini Console](https://developer.tiki.vn/apps). Xem thêm [Tạo Tini App của bạn](/docs/introduce/create). Nếu chưa tạo ứng dụng trên [Tini Console](https://developer.tiki.vn/apps), bạn có thể nhập một App ID bất kì theo đúng format để tạo Project trước.
 
 <img src="/img/New_Project_TiniStudio.jpg" width="450px" alt="Creat a new project" style={{ margin: '0 auto', display: 'flex' }}/>
 
@@ -37,8 +37,8 @@ Chạy tập tin cài đặt Tini Studio.
 
 ## 7. Tải lên ứng dụng
 
-Xem thêm [Xây dựng và tải lên ứng dụng](/docs/developer/introduce/upload)
+Xem thêm [Xây dựng và tải lên ứng dụng](/docs/introduce/upload)
 
 ## 8. Chạy ứng dụng với Dev Assistant
 
-Xem thêm [Dev Assistant](/docs/developer/introduce/dev-assistant) 
+Xem thêm [Dev Assistant](/docs/development/testing/dev-assistant) 

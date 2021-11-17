@@ -4,7 +4,7 @@ title: my.createVideoContext
 
 ## Giới thiệu
 
-**my.createVideoContext** là API dùng để tạo ra VideoContext - đối tuợng quản lý việc phát video. Cụ thể hơn, nó cung cấp các hàm giúp điều khiển [Video](/docs/component/media/video) component.
+**my.createVideoContext** là API dùng để tạo ra VideoContext - đối tuợng quản lý việc phát video. Cụ thể hơn, nó cung cấp các hàm giúp điều khiển [video](/docs/component/basic/media/video) component.
 
 ## Sample Code
 

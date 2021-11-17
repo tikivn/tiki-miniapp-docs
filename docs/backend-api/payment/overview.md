@@ -10,7 +10,7 @@ Về phía người dùng Tiki, họ chỉ cần mở ứng dụng từ Kho ti�
 
 Để có thể mang hàng hoá lên Tini App của mình, điều kiện đầu tiên là bạn có 2 tài khoản:
 
-- Tài khoản Nhà phát triển - nên là loại tài khoản Công ty vì bạn sắp sửa tiến hành khai thác kinh doanh. Tài khoản này cho phép bạn đăng ký tạo ứng dụng, quản lý phiên bản, phát hành ứng dụng trên Kho tiện ích. Tham khảo: [Đăng ký Nhà phát triển](/docs/developer/introduce/register)
+- Tài khoản Nhà phát triển - nên là loại tài khoản Công ty vì bạn sắp sửa tiến hành khai thác kinh doanh. Tài khoản này cho phép bạn đăng ký tạo ứng dụng, quản lý phiên bản, phát hành ứng dụng trên Kho tiện ích. Tham khảo: [Đăng ký Nhà phát triển](/docs/introduce/register)
 - Tài khoản Seller - cho phép bạn tạo và quản lý sản phẩm trên Tiki (SKU). Tham khảo: [Hướng dẫn đăng ký tài khoản bán hàng tại Tiki](https://hocvien.tiki.vn/faq/huong-dan-dang-ky-ban-hang-va-ky-hop-dong/)
 
 Sau đây là các công đoạn cụ thể
@@ -35,13 +35,13 @@ Xem hướng dẫn tạo tích hợp thanh toán tại [đây](payment-integrati
 
 ***Thận trọng:*** Hãy đảm bảo rằng bạn sử dụng đúng bộ Base URL, Key/ Secret của Sandbox khi bạn kiểm thử trên môi trường Sandbox; tránh trường hợp Key/ Secret của Sandbox nhưng lại dùng Base URL của môi trường Production hoặc ngược lại.
 
-Xem hướng dẫn kiểm thử trên môi trường Sandbox tại [đây](/docs/backend-api/platform-api/sandbox). 
+Xem hướng dẫn kiểm thử trên môi trường Sandbox tại [đây](../platform-api/sandbox).
 
 ## 5. Kiểm thử trên môi trường Production
 
 Để kiểm thử việc thanh toán trên môi trường Production, bạn cần phải sử dụng Dev Assistant hoặc quét mã QR của ứng dụng. Việc thanh toán thật sẽ diễn ra.
 
-Xem hướng dẫn kiểm thử trên môi trường Production tại [đây](/docs/backend-api/platform-api/production)
+Xem hướng dẫn kiểm thử trên môi trường Production tại [đây](../platform-api/production)
 
 ## 6. Xử lý đơn hàng
 

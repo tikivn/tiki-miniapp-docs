@@ -34,5 +34,5 @@ Khi bạn muốn Tini App của mình có giao diện hài hoà, bắt mắt tro
 
 Để mang ứng dụng của bạn lên 'kệ' trên Kho tiện ích Tiki,
 
-- [Đăng ký trở thành nhà phát triển](/docs/developer/introduce/register). 
+- [Đăng ký trở thành nhà phát triển](/docs/introduce/register). 
 

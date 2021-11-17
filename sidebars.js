@@ -1,82 +1,67 @@
 module.exports = {
-  developer: [
-    'developer/getting-started',
-    'developer/development-process',
-    {
-      type: 'category',
-      label: 'Hướng dẫn nhà phát triển',
-      collapsed: false,
-      items: [
-        'developer/introduce/register',
-        'developer/introduce/create',
-        'developer/introduce/delete',
-        'developer/introduce/member',
-        'developer/introduce/upload',
-        'developer/introduce/release',
-        'developer/introduce/hide',
-        'developer/introduce/share-app',
-        'developer/introduce/dev-assistant',
-        'developer/introduce/quick-test',
-        'developer/introduce/support',
-      ],
-    },
+
+
+
+  introduce: [
+    'introduce/getting-started',
+    'introduce/development-process',
+    'introduce/register',
+    'introduce/create',
+    'introduce/member',
+    'introduce/upload',
+    'introduce/release',
     {
       type: 'category',
       label: 'Hướng dẫn sử dụng tài liệu',
-      collapsed: false,
+      collapsed: true,
       items: [
-        'developer/how-to-use-docs/experience-sample-code',
+        'introduce/how-to-use-docs/experience-sample-code',
       ],
     },
-
-    /*{
-      type: 'category',
-      label: 'Tích hợp luồng thanh toán',
-      collapsed: false,
-      items: [
-        'developer/payment-flow/overview',
-        'developer/payment-flow/create-sku',
-        'developer/payment-flow/payment-feature-request',
-      ],
-    }, */
     {
       type: 'category',
       label: 'Ví dụ mẫu',
-      collapsed: false,
+      collapsed: true,
       items: [
-        'developer/quick-example/shopping',
-        'developer/quick-example/custom-header',
+        'introduce/quick-example/shopping',
+        'introduce/quick-example/custom-header',
       ],
     },
   ],
-  /* studio: [
-    'studio/overview',
+  development: [
     {
       type: 'category',
-      label: 'Giao diện',
-      collapsed: false,
-      items: ['studio/start-page', 'studio/main', 'studio/simulator'],
+      label: 'Tini Studio',
+      collapsed: true,
+      items: [
+        'development/studio/overview',
+        'development/studio/development',
+        'development/studio/simulator',
+        'development/studio/debug',
+        'development/studio/project-config',
+      ],
     },
     {
       type: 'category',
-      label: 'Phát triển',
-      collapsed: false,
-      items: ['studio/development'],
+      label: 'Tini Console',
+      collapsed: true,
+      items: [
+        'development/tini-console/delete',
+        'development/tini-console/hide',
+        'development/tini-console/share-app',
+        'development/tini-console/support',
+        'development/tini-console/whitelist-domains',
+      ],
     },
     {
       type: 'category',
-      label: 'Debug',
-      collapsed: false,
-      items: ['studio/debug'],
+      label: 'Kiểm thử',
+      collapsed: true,
+      items: [
+        'development/testing/dev-assistant',
+        'development/testing/quick-test',
+      ],
     },
-  ],
-*/
-  studio: [
-    'studio/overview',
-    'studio/development',
-    'studio/simulator',
-    'studio/debug',
-    'studio/project-config',
   ],
 
   framework: [
@@ -749,41 +734,42 @@ module.exports = {
         'backend-api/platform-api/production',
         'backend-api/platform-api/calculate-signature',
         'backend-api/platform-api/exchange-auth-token',
-        {
-          type: 'category',
-          label: 'Thanh toán với Tiki',
-          items: [
-            'backend-api/platform-api/payment/overview',
-            'backend-api/platform-api/payment/create-sku',
-            'backend-api/platform-api/payment/payment-integration',
-            'backend-api/platform-api/payment/flow',
-            'backend-api/platform-api/payment/create-order',
-            'backend-api/platform-api/payment/ipn',
-            'backend-api/platform-api/payment/get-order',
-            'backend-api/platform-api/payment/list-orders',
-            'backend-api/platform-api/payment/complete-order',
-            'backend-api/platform-api/payment/cancel-order',
-            'backend-api/platform-api/payment/order-status',
-            'backend-api/platform-api/payment/error-code',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Shipping API',
-          items: [
-            'backend-api/platform-api/shipping/overview',
-            'backend-api/platform-api/shipping/list_quotes',
-            'backend-api/platform-api/shipping/create_shipment',
-            'backend-api/platform-api/shipping/get_shipment',
-            'backend-api/platform-api/shipping/cancel_shipment',
-            'backend-api/platform-api/shipping/get_ward_code',
-            'backend-api/platform-api/shipping/switch_shipment_status',
-            'backend-api/platform-api/shipping/webhook',
-            'backend-api/platform-api/shipping/status_flow',
-          ],
-        },
       ],
     },
+    {
+      type: 'category',
+      label: 'Thanh toán với Tiki',
+      items: [
+        'backend-api/payment/overview',
+        'backend-api/payment/create-sku',
+        'backend-api/payment/payment-integration',
+        'backend-api/payment/flow',
+        'backend-api/payment/create-order',
+        'backend-api/payment/ipn',
+        'backend-api/payment/get-order',
+        'backend-api/payment/list-orders',
+        'backend-api/payment/complete-order',
+        'backend-api/payment/cancel-order',
+        'backend-api/payment/order-status',
+        'backend-api/payment/error-code',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Shipping API',
+      items: [
+        'backend-api/shipping/overview',
+        'backend-api/shipping/list_quotes',
+        'backend-api/shipping/create_shipment',
+        'backend-api/shipping/get_shipment',
+        'backend-api/shipping/cancel_shipment',
+        'backend-api/shipping/get_ward_code',
+        'backend-api/shipping/switch_shipment_status',
+        'backend-api/shipping/webhook',
+        'backend-api/shipping/status_flow',
+      ],
+    },
+
     {
       type: 'category',
       label: 'Backend với GCP',

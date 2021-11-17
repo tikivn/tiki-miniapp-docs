@@ -24,11 +24,11 @@ GET /v1/countries/VN/regions
 
 #### API Response
 
-| Attributes | Type   | Description  |
-| ---------- | ------ | ------------ |
-| id         | int    | id của vùng  |
-| name       | string | tên của vùng |
-| tiki_code  | string | mã tiki code |
+| Thuộc tính | Kiểu dữ liệu | Mô tả        |
+| ---------- | ------------ | ------------ |
+| id         | int          | id của vùng  |
+| name       | string       | tên của vùng |
+| tiki_code  | string       | mã tiki code |
 
 ### API List Districts
 
@@ -38,11 +38,11 @@ GET /v1/countries/VN/regions/{region id}/districts
 
 #### API Response
 
-| Attributes | Type   | Description  |
-| ---------- | ------ | ------------ |
-| id         | int    | id của quận  |
-| name       | string | tên của quận |
-| tiki_code  | string | mã tiki code |
+| Thuộc tính | Kiểu dữ liệu | Mô tả        |
+| ---------- | ------------ | ------------ |
+| id         | int          | id của quận  |
+| name       | string       | tên của quận |
+| tiki_code  | string       | mã tiki code |
 
 ### API List Wards
 
@@ -52,11 +52,11 @@ GET /v1/countries/VN/regions/{region id}/districts/{district id}
 
 #### API Response
 
-| Attributes | Type   | Description       |
-| ---------- | ------ | ----------------- |
-| id         | int    | id của phường/xã  |
-| name       | string | tên của phường/xã |
-| tiki_code  | string | mã tiki code      |
+| Thuộc tính | Kiểu dữ liệu | Mô tả             |
+| ---------- | ------------ | ----------------- |
+| id         | int          | id của phường/xã  |
+| name       | string       | tên của phường/xã |
+| tiki_code  | string       | mã tiki code      |
 
 ### Request Example
 

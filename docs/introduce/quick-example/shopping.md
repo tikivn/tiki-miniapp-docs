@@ -15,13 +15,13 @@ Kết hợp với [Fake Store API](https://fakestoreapi.com/) để làm Shoppin
 
 **Các kỹ thuật sẽ sử dụng:**
 
-- Dùng các component [view](https://developers.tiki.vn/docs/component/view-container/view), [carousel](https://developers.tiki.vn/docs/component/view-container/carousel), [button](https://developers.tiki.vn/docs/component/basic/button), [image](https://developers.tiki.vn/docs/component/media/image), [text](https://developers.tiki.vn/docs/component/basic/text)
-- Sử dụng các JS API [navigateTo](https://developers.tiki.vn/docs/api/navigator/navigate-to), [request](https://developers.tiki.vn/docs/api/network/request), [getSystemInfo](https://developers.tiki.vn/docs/api/device/get-system-info)
-- Dùng [Custom component](https://developers.tiki.vn/docs/framework/component/custom-component-introduction)
+- Dùng các component [view](/docs/component/basic/view-container/view), [carousel](/docs/component/basic/view-container/carousel), [button](/docs/component/basic/form/button), [image](/docs/component/basic/media/image), [text](/docs/component/basic/basic/text).
+- Sử dụng các JS API [navigateTo](/docs/api/ui/route/navigate-to), [request](/docs/api/network/request), [getSystemInfo](/docs/api/device/get-system-info)
+- Dùng [Custom component](/docs/component/advance/introduce)
 - Lưu trữ `global data` trong `app`
 - Sử dụng các [life cycle](https://developers.tiki.vn/docs/framework/overview#Qu%E1%BA%A3n-l%C3%BD-Page) như `onShow`, `onLoad` để xử lý dữ liệu
-- Sử dụng các cú pháp [tiki:for](https://developers.tiki.vn/docs/framework/txml/list-rendering) để render list và [tiki:if](https://developers.tiki.vn/docs/framework/txml/conditional-rendering) để xử lý logic
-- Cài đặt và sử dụng [tiki-mini-ui](https://developers.tiki.vn/docs/component/advance/badge)
+- Sử dụng các cú pháp [tiki:for](/docs/framework/txml/list-rendering) để render list và [tiki:if](/docs/framework/txml/conditional-rendering) để xử lý logic
+- Cài đặt và sử dụng [tiki-mini-ui](/docs/component/advance/navigation/badge)
 - Cài đặt và sử dụng `npm packages`
 
 **Bạn có thể xem đầy đủ source code [tại đây](https://github.com/tikivn/miniapp-getting-started/tree/main/shopping)**
@@ -30,11 +30,11 @@ Kết hợp với [Fake Store API](https://fakestoreapi.com/) để làm Shoppin
 
 ### Tạo một app mới trên Tini Console
 
-Xem hướng dẫn tại trang [Tạo Tini App của bạn](/docs/developer/introduce/create).
+Xem hướng dẫn tại trang [Tạo Tini App của bạn](/docs/introduce/create).
 
 ### Tạo một project mới trên Tini Studio
 
-Xem hướng dẫn tại [đây](/docs/studio/start-page).
+Xem hướng dẫn tại [đây](/docs/development/studio/development#3-tạo-dự-án-mới).
 
 ## Coding
 
@@ -44,9 +44,9 @@ import Import from '@site/src/components/Import';
 
 ### 1. Coding trang Sản phẩm
 
-**1.1. Hiển thị danh sách sản phẩm với [carousel](https://developers.tiki.vn/docs/component/view-container/carousel-en).**
+**1.1. Hiển thị danh sách sản phẩm với [carousel](/docs/component/basic/view-container/carousel).**
 
-Dùng API [my.request](https://developers.tiki.vn/docs/api/network/request-en) để lấy danh sách sản phẩm từ API Get all products của [Fake Store API](https://fakestoreapi.com/docs) trong hàm `onLoad`. Việc gọi API trong `onLoad` tương tự như việc bạn gọi trong `componentDidMount` của `React`
+Dùng API [my.request](/docs/api/network/request) để lấy danh sách sản phẩm từ API Get all products của [Fake Store API](https://fakestoreapi.com/docs) trong hàm `onLoad`. Việc gọi API trong `onLoad` tương tự như việc bạn gọi trong `componentDidMount` của `React`
 
 _pages/index/index.js_
 
@@ -84,7 +84,7 @@ _pages/index/index.js_
 
 Trong `data` chúng ta khởi tạo 2 biến `loading = false` để đánh dấu trạng thái đang tải api của page và biến `banners = []` để chứa thông tin của các `products` từ API. Giá trị của 2 biến này sẽ được set lại sau khi gọi request `sucess`
 
-Trong `onLoad` còn gọi thêm API [getSystemInfo](https://developers.tiki.vn/docs/api/device/get-system-info-en) để lấy thông tin về width của device, do component [carousel](https://developers.tiki.vn/docs/component/view-container/carousel-en) cần truyền `width` và `slide-width` khi có `cell-spacing`. Ngoài ra chúng ta còn khởi tạo giá trị `imageWidth` cho [image](https://developers.tiki.vn/docs/component/media/image) sẽ được sử dụng trong `product-item` component được nói tới ở phần tiếp theo
+Trong `onLoad` còn gọi thêm API [getSystemInfo](/docs/api/device/get-system-info) để lấy thông tin về width của device, do component [carousel](/docs/component/basic/view-container/carousel) cần truyền `width` và `slide-width` khi có `cell-spacing`. Ngoài ra chúng ta còn khởi tạo giá trị `imageWidth` cho [image](/docs/component/basic/media/image) sẽ được sử dụng trong `product-item` component được nói tới ở phần tiếp theo
 
 _pages/index/index.txml_
 
@@ -111,9 +111,9 @@ _pages/index/index.txml_
 </view>
 ```
 
-Trong `txml` sử dụng [Conditional rendering](https://developers.tiki.vn/docs/framework/txml/conditional-rendering-en) với `tiki:if` và `tiki:else` để hiển thị và ẩn 2 thẻ [view](https://developers.tiki.vn/docs/component/view-container/view) chứa loading image với phần content. File `spinner.gif` được bỏ vào trong thư mục `images` cùng cấp với thư mục `pages`.
+Trong `txml` sử dụng [Conditional rendering](/docs/framework/txml/conditional-rendering) với `tiki:if` và `tiki:else` để hiển thị và ẩn 2 thẻ [view](/docs/component/basic/view-container/view) chứa loading image với phần content. File `spinner.gif` được bỏ vào trong thư mục `images` cùng cấp với thư mục `pages`.
 
-Hình ảnh trong `carousel` được render trong thẻ `block` với [tiki:for](https://developers.tiki.vn/docs/framework/txml/list-rendering-en). Trong thẻ `image` ta khai báo thêm `width` với giá trị là `bannerWidth` được thiết lập trong file `js`
+Hình ảnh trong `carousel` được render trong thẻ `block` với [tiki:for](/docs/framework/txml/list-rendering). Trong thẻ `image` ta khai báo thêm `width` với giá trị là `bannerWidth` được thiết lập trong file `js`
 
 Styling cho `carousel` và `loading` được khai báo trong _pages/index/index.tcss_. Lưu ý là cần khai báo `flex: 1` cho `view` container chứa tabs (được khai báo trong class `.container`)
 
@@ -240,7 +240,7 @@ _pages/index/index.txml_
   </tabs>
 ```
 
-Chúng ta tiếp tục dùng `tiki:for` để hiển thị danh sách các product của từng category. Mỗi khi bấm vào tab nào đó hàm `onTabChange` sẽ được gọi. Mặc định loading sẽ được hiển thị cho tới khi product của category đó được load xong. Trong đoạn code trên bạn sẽ thấy chúng ta sử dụng [Custom component](https://developers.tiki.vn/docs/framework/component/custom-component-introduction) là `product-item`.
+Chúng ta tiếp tục dùng `tiki:for` để hiển thị danh sách các product của từng category. Mỗi khi bấm vào tab nào đó hàm `onTabChange` sẽ được gọi. Mặc định loading sẽ được hiển thị cho tới khi product của category đó được load xong. Trong đoạn code trên bạn sẽ thấy chúng ta sử dụng [Custom component](/docs/component/advance/introduce) là `product-item`.
 Để sử dụng một `custom-component`, bạn tạo 1 folder `components` cùng cấp với folder `pages`, sau đó tạo các file `.txml`, `.js`, `.json` và `.js` tương tự như cấu trúc của một page. Nội dung của các file đó như sau:
 _components/product-item/index.json_
 
@@ -313,7 +313,7 @@ Quay trở lại `product-item` component, chúng ta tiếp tục ở file _comp
 </view>
 ```
 
-Trong file `txml` này chúng ta sử dụng các `props` là `imageWidth`, `product` được truyền vào từ `page`, với thẻ [button](https://developers.tiki.vn/docs/component/basic/button) gọi hàm `onAddCart` được khai báo trong file `.js` và thẻ [icon](https://developers.tiki.vn/docs/component/basic/icon) với `type` là `plus`.
+Trong file `txml` này chúng ta sử dụng các `props` là `imageWidth`, `product` được truyền vào từ `page`, với thẻ [button](/docs/component/basic/form/button) gọi hàm `onAddCart` được khai báo trong file `.js` và thẻ [icon](/docs/component/basic/basic/icon) với `type` là `plus`.
 
 _components/product-item/index.js_
 
@@ -333,7 +333,7 @@ Component({
 ```
 
 Đối với `custom component` chúng ta sẽ handle các sự kiện bên trong `methods`.
-Hàm `onGoToProductPage` được gọi khi user bấm vào `title` của product, nó sử dụng API [navigateTo](https://developers.tiki.vn/docs/api/navigator/navigate-to) để chuyển đến trang `product detail`, chi tiết về page này sẽ được nói ở phần tiếp theo (Lưu ý là khi navigate đến một page chưa được khai báo trong app.json thì miniapp sẽ báo lỗi).
+Hàm `onGoToProductPage` được gọi khi user bấm vào `title` của product, nó sử dụng API [navigateTo](/docs/api/ui/route/navigate-to) để chuyển đến trang `product detail`, chi tiết về page này sẽ được nói ở phần tiếp theo (Lưu ý là khi navigate đến một page chưa được khai báo trong app.json thì miniapp sẽ báo lỗi).
 Hàm `onAddCart` sẽ gọi tới `props onAddCart` đã được khai báo bên trong `txml` của page.
 Như vậy luồng gọi hàm `addCart` sẽ có được xử lý xuyên suốt từ `custom component` tới `page` rồi tới `app`
 
@@ -448,7 +448,7 @@ Kết quả của trang `product`
 
 ### 3. Coding trang cart
 
-Page `cart` sẽ được hiển thị dưới dạng [tabBar](https://developers.tiki.vn/docs/framework/config/app#tabBar). Mình sẽ thêm config `tabBar` vào file `app.json`:
+Page `cart` sẽ được hiển thị dưới dạng [tabBar](/docs/framework/app/config#tabbar). Mình sẽ thêm config `tabBar` vào file `app.json`:
 
 ```json
   "pages": [

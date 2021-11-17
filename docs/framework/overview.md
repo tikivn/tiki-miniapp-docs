@@ -24,22 +24,22 @@ Cấu trúc thư mục của một Tini App đơn giản sẽ bao gồm:
 Đại diện của `app` bao gồm 3 files và phải được đặt ở thư
 mục gốc của dự án:
 
-| File     | Required | Description                  |
-| -------- | -------- | ---------------------------- |
-| app.js   | yes      | Logic của ứng dụng           |
-| app.json | yes      | Cấu hình cho ứng dụng        |
-| app.tcss | no       | StyleSheet cho toàn ứng dụng |
+| Tập tin  | Bắt buộc | Mô tả                        |
+| -------- | :------: | ---------------------------- |
+| app.js   |    ✓     | Logic của ứng dụng           |
+| app.json |    ✓     | Cấu hình cho ứng dụng        |
+| app.tcss |    ✕     | StyleSheet cho toàn ứng dụng |
 
 Mỗi `page` trong app bao gồm các files sau và được đặt trong thư mục bất kỳ từ thư mục gốc của dự án:
 
-| File       | Required | Description                              |
-| ---------- | -------- | ---------------------------------------- |
-| index.js   | yes      | Logic của page                           |
-| index.txml | yes      | Thể hiện UI của page sử dụng txml syntax |
-| index.tcss | no       | StyleSheet áp dụng cho page              |
-| index.json | no       | Cấu hình của page                        |
+| Tập tin    | Bắt buộc | Mô tả                                    |
+| ---------- | :------: | ---------------------------------------- |
+| index.js   |    ✓     | Logic của page                           |
+| index.txml |    ✓     | Thể hiện UI của page sử dụng txml syntax |
+| index.tcss |    ✕     | StyleSheet áp dụng cho page              |
+| index.json |    ✕     | Cấu hình của page                        |
 
-**Note:** Tên file có thể là bất kỳ và tất cả các loại file cần có cùng tên và phải cùng đặt chung thư mục.
+***Note:*** Tên file có thể là bất kỳ và tất cả các loại file cần có cùng tên và phải cùng đặt chung thư mục.
 
 ## Reactive Data Binding
 

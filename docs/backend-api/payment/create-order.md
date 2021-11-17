@@ -11,7 +11,7 @@ title: Tạo đơn hàng
 | Base URL     | https://api.tiki.vn/tiniapp-open-api |
 | Path         | /order                               |
 
-Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính xác thực. Tham khảo [Cách tạo chữ ký điện tử](../calculate-signature)
+Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính xác thực. Tham khảo [Cách tạo chữ ký điện tử](../platform-api/calculate-signature).
 
 #### HTTP Request
 

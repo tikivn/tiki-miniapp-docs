@@ -2,7 +2,7 @@
 title: lottie
 ---
 
-Lottie là thư viện cho phép chạy các hoạt ảnh kết xuất từ After Effects và có thể chạy trên ứng dụng mobile và web. Bạn có thể điều khiển lottie component thông qua [my.createLottieContext](/docs/api/media/create-lottie-context) api.
+Lottie là thư viện cho phép chạy các hoạt ảnh kết xuất từ After Effects và có thể chạy trên ứng dụng mobile và web. Bạn có thể điều khiển lottie component thông qua [my.createLottieContext](/docs/api/media/lottie/create-lottie-context) api.
 
 Để hiểu thêm về lottie, vui lòng tham khảo https://airbnb.io/lottie.
 
