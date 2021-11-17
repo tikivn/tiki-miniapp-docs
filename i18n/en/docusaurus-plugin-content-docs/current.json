@@ -3,10 +3,6 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  /* "sidebar.developer.category.Hướng dẫn nhà phát triển": {
-    "message": "MiniApp Development Guide",
-    "description": "The label for category Hướng dẫn nhà phát triển in sidebar developer"
-  }, */
   "sidebar.introduce.category.Hướng dẫn sử dụng tài liệu": {
     "message": "How to use documentation",
     "description": "The label for category Hướng dẫn sử dụng tài liệu in sidebar developer"
@@ -27,19 +23,6 @@
     "message": "Testing",
     "description": "The label for category Kiểm thử in sidebar developer"
   },
-  /*  "sidebar.studio.category.Giao diện": {
-    "message": "Interface",
-    "description": "The label for category Giao diện in sidebar ide"
-  },
-  "sidebar.studio.category.Phát triển": {
-    "message": "Development",
-    "description": "The label for category Phát triển in sidebar ide"
-  },
-  "sidebar.studio.category.Debug": {
-    "message": "Debug",
-    "description": "The label for category Debug in sidebar ide"
-  },
-*/
   "sidebar.framework.category.Cấu hình chung": {
     "message": "Configuring Tini App",
     "description": "The label for category Cấu hình chung in sidebar framework"
