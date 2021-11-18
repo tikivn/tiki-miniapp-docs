@@ -1,5 +1,5 @@
 ---
-title: Bắt đầu
+title: Giới thiệu Tini App
 ---
 Chào mừng đến với Thế giới Tini App!!!
 
@@ -11,7 +11,7 @@ Thế mini apps là gì? Mini apps hiểu nôm na là các ứng dụng con tồ
 
 Với mini apps, nhà phát triển ít cần quan tâm đến một số tính năng, chẳng hạn “đăng nhập”, “xác thực”, “cổng thanh toán”, “dịch vụ chat” (instant message), vì đã có super app làm thay. Hơn thế nữa, việc cư ngụ trong hệ sinh thái super app, mini apps dễ dàng tiếp cận lượng người dùng khổng lồ của super app. 
 
-Đối với Tini App thì Tiki App đóng vai trò super app. Kế thừa những tính năng ưu việt vốn có của mini apps, Tini App giảm thiểu đáng kể thời gian và công sức trong việc phát triển ứng dụng, dẫn đến tiết kiệm chi phí. Điều này cũng đồng nghĩa rằng các doanh nghiệp có thể tập trung vào dịch vụ cốt lõi của mình, mang tới sản phẩm hay dịch vụ tốt nhất cho khách hàng, trong khi vẫn thừa hưởng được tất cả lợi ích của việc chuyển đổi số.
+Đối với Tini App thì Tiki app đóng vai trò super app. Kế thừa những tính năng ưu việt vốn có của mini apps, Tini App giảm thiểu đáng kể thời gian và công sức trong việc phát triển ứng dụng, dẫn đến tiết kiệm chi phí. Điều này cũng đồng nghĩa rằng các doanh nghiệp có thể tập trung vào dịch vụ cốt lõi của mình, mang tới sản phẩm hay dịch vụ tốt nhất cho khách hàng, trong khi vẫn thừa hưởng được tất cả lợi ích của việc chuyển đổi số.
 
 <img src="\img\TiniApp_Development_to_End users_diagram.png"/>
 
@@ -20,7 +20,7 @@ Tini App của Tiki đi kèm với một hệ thống framework gọn nhẹ như
 Bạn có hứng thú khám phá Tini App ngay bây giờ chưa?
 
 - Hãy [tải Tini Studio](https://developers.tiki.vn/downloads) về máy. 
-- Tìm hiểu [cách sử dụng](/docs/studio/overview).
+- Tìm hiểu [cách sử dụng](/docs/development/studio/overview).
     
 Đương nhiên việc tạo ra ứng dụng không thể thiếu phần của framework, vui lòng tìm hiểu:
 
@@ -34,5 +34,6 @@ Khi bạn muốn Tini App của mình có giao diện hài hoà, bắt mắt tro
 
 Để mang ứng dụng của bạn lên 'kệ' trên Kho tiện ích Tiki,
 
-- [Đăng ký trở thành nhà phát triển](/docs/introduce/register). 
+- [Đăng ký trở thành nhà phát triển](/docs/introduce/register).
 
+Bạn chưa có nhiều kinh nghiệm trong việc xây dựng mini app, gặp các vấn đề hay đơn giản là có thắc mắc liên quan tới Tini App. Hãy tìm đến trang [Cộng đồng](https://community.tiki.vn/) của chúng tôi nơi mọi câu hỏi của bạn sẽ được giải đáp. Trang Cộng đồng còn là nơi thảo luận và chia sẻ kinh nghiệm phát triển Tini App. Xa hơn, bạn có thể đưa ra ý tưởng, đề xuất giúp Tini App ngày một hoàn thiện.

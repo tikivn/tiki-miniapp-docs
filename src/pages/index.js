@@ -14,7 +14,7 @@ import IdeSVG from '@site/static/img/ide.svg';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.scss';
 
-function RowItem({text, url}) {
+function RowItem({ text, url }) {
   return (
     <Link className={styles.rowItem} to={url}>
       <span>{text}</span>
@@ -41,7 +41,7 @@ function Hero() {
               Tải về Tini Studio
             </Link>
             <Link
-              to="docs/developer/introduce/register"
+              to="docs/introduce/register"
               className={[styles.primaryButton]}>
               Đăng ký nhà phát triển
             </Link>
@@ -101,7 +101,7 @@ function BecomeDeveloper() {
         </p>
         <Link
           className={styles.linkBrand}
-          to="/docs/developer/introduce/register">
+          to="/docs/introduce/register">
           Tìm hiểu thêm
         </Link>
       </div>
@@ -177,9 +177,9 @@ function Studio() {
       {[
         [
           'Tìm hiểu công cụ cho nhà phát triển',
-          '/docs/developer/getting-started',
+          '/docs/introduce/getting-started',
         ],
-        ['Tini Studio', '/docs/studio/overview'],
+        ['Tini Studio', '/docs/development/studio/overview'],
       ].map((item, index) => (
         <RowItem key={index} text={item[0]} url={item[1]} />
       ))}
