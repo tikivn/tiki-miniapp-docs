@@ -52,6 +52,6 @@ Page({
 
 Success callback
 
-| Thuộc tính | Kiểu dữ liệu  | Mô tả                           |
-| ---------- | ------------- | ------------------------------- |
-| data       | Object/String | Giá trị của dữ liệu được lấy ra |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                             |
+| ---------- | ------------ | --------------------------------------------------------------------------------- |
+| data       | Object       | Giá trị của dữ liệu được lấy ra. Giá trị của data có thể là string hoặc là object |
