@@ -52,7 +52,7 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/quotes
 
 | Attributes    | Type   | Required | Description                    |
 | ------------- | ------ | -------- | ------------------------------ |
-| coordinates   | object | yes      | thông số toạ độ                |
+| coordinates   | object | no       | thông số toạ độ                |
 | street        | string | yes      | địa chỉ đường, ví dụ: 285 CMT8 |
 | ward_name     | string | yes      | địa chỉ phường                 |
 | district_name | string | yes      | địa chỉ quận                   |
@@ -65,7 +65,7 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/quotes
 
 | Attributes    | Type   | Required | Description                    |
 | ------------- | ------ | -------- | ------------------------------ |
-| coordinates   | object | yes      | thông số toạ độ                |
+| coordinates   | object | no       | thông số toạ độ                |
 | street        | string | yes      | địa chỉ đường, ví dụ: 285 CMT8 |
 | ward_name     | string | yes      | địa chỉ phường                 |
 | district_name | string | yes      | địa chỉ quận                   |
@@ -76,8 +76,8 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/quotes
 
 | Attributes | Type  | Required | Description |
 | ---------- | ----- | -------- | ----------- |
-| latitude   | float | yes      | latitude    |
-| longitude  | float | yes      | longitude   |
+| latitude   | float | no       | latitude    |
+| longitude  | float | no       | longitude   |
 
 ### API Response
 
