@@ -23,7 +23,7 @@ module.exports = {
       label: 'Ví dụ mẫu',
       collapsed: true,
       items: [
-        'introduce/quick-example/shopping',
+        /*'introduce/quick-example/shopping', */
         'introduce/quick-example/custom-header',
       ],
     },
