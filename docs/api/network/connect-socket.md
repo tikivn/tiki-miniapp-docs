@@ -19,7 +19,11 @@ title: my.connectSocket
 | fail       | Function     |          | Callback function khi việc kết nối thất bại.                                                         |
 | complete   | Function     |          | Callback function khi việc kết nối kết thúc cho dù thành công hay thất bại.                          |
 
-***Lưu ý***: `my.connectSocket` sẽ phát sinh lỗi nếu giá trị truyền vào thuộc tính `url` không phải kiểu string, bị NULL, hoặc không đúng dịnh dạng `ws://` hay `wss://`.
+***Lưu ý***:
+
+> `my.connectSocket` sẽ phát sinh lỗi nếu giá trị truyền vào thuộc tính `url` không phải kiểu string, bị NULL, hoặc không đúng dịnh dạng `ws://` hay `wss://`.
+>
+> Tuy nhiên, trường hợp sai token hoặc sai url thì vẫn được tính là success callback.
 
 ## Sample Code
 
