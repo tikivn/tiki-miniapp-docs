@@ -1,5 +1,5 @@
 ---
-title: my.navigateTo
+title: my.redirectTo
 ---
 
 ## Giới thiệu
