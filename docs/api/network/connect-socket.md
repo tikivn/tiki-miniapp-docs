@@ -37,7 +37,7 @@ my.connectSocket({
   success: (res) => {
      console.log(JSON.stringify(res));
   },
-  fail: () => {
+  fail: () => { 
   }
 });
 ```
