@@ -110,11 +110,10 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/quotes
 
 **service** object
 
-| Attributes | Type    | Description                              |
-| ---------- | ------- | ---------------------------------------- |
-| id         | integer |                                          |
-| name       | string  | ex: TNSL-Grab Express, TNSL-NJV Standard |
-| code       | string  | ex: TG_INSTANT, TG_EXPRESS, TG_STANDARD  |
+| Attributes | Type   | Description                              |
+| ---------- | ------ | ---------------------------------------- |
+| name       | string | ex: TNSL-Grab Express, TNSL-NJV Standard |
+| code       | string | ex: TG_INSTANT, TG_EXPRESS, TG_STANDARD  |
 
 ### Request Example
 
@@ -168,7 +167,6 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/quotes
         },
         "partner_code": "GRAB",
         "service": {
-            "id": 0,
             "name": "GrabExpress",
             "code": "INSTANT"
         }
@@ -184,7 +182,6 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/quotes
         },
         "partner_code": "GRAB",
         "service": {
-            "id": 0,
             "name": "GrabExpress",
             "code": "SAME_DAY"
         }
@@ -200,7 +197,6 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/quotes
         },
         "partner_code": "GRAB",
         "service": {
-            "id": 0,
             "name": "GrabExpress",
             "code": "BULK"
         }
