@@ -21,6 +21,7 @@ Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính x
 | items            | []**[Item](#item)**     |    ✓     | Danh sách sản phẩm                                                                         |
 | shipping_address | **[Address](#address)** |    ✕     | Địa chỉ giao hàng, dùng để hiện thị trên trang thanh toán Tiki (phần thông tin khách hàng) |
 | billing_address  | **[Address](#address)** |    ✕     | Địa chỉ thanh toán                                                                         |
+| shipping_fee     | int64                   |    ✕     | Phí giao hàng                                                                         |
 | extra            | string                  |    ✕     | Thông tin bổ sung theo định dạng  ***key=value;key=value***                                |
 | reference_id     | string                  |    ✕     | ID đơn hàng của đối tác                                                                    |
 
