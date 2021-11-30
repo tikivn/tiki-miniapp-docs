@@ -36,9 +36,15 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'developer/getting-started',
+          docId: 'introduce/getting-started',
           position: 'right',
           label: 'Bắt đầu',
+        },
+        {
+          type: 'doc',
+          docId: 'development/studio/overview',
+          position: 'right',
+          label: 'Phát triển',
         },
         {
           type: 'doc',
@@ -56,20 +62,15 @@ module.exports = {
           type: 'doc',
           docId: 'api/overview',
           position: 'right',
-          label: 'API',
+          label: 'JS APIs',
         },
         {
           type: 'doc',
           docId: 'backend-api/overview',
           position: 'right',
-          label: 'Server Side',
+          label: 'Server APIs',
         },
-        {
-          type: 'doc',
-          docId: 'studio/overview',
-          position: 'right',
-          label: 'Studio',
-        },
+
         {
           type: 'doc',
           docId: 'design/overview',
@@ -81,7 +82,7 @@ module.exports = {
           href: 'https://community.tiki.vn',
           position: 'right',
         },
-        {type: 'localeDropdown', position: 'right'},
+        { type: 'localeDropdown', position: 'right' },
       ],
     },
     gtag: {

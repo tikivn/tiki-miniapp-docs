@@ -3,25 +3,25 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.developer.category.Hướng dẫn nhà phát triển": {
-    "message": "MiniApp Development Guide",
-    "description": "The label for category Hướng dẫn nhà phát triển in sidebar developer"
+  "sidebar.introduce.category.Hướng dẫn sử dụng tài liệu": {
+    "message": "How to use documentation",
+    "description": "The label for category Hướng dẫn sử dụng tài liệu in sidebar introduce"
   },
-  "sidebar.developer.category.Ví dụ mẫu": {
-    "message": "Quick Example",
-    "description": "The label for category Ví dụ mẫu in sidebar developer"
+  "sidebar.introduce.category.Ví dụ mẫu": {
+    "message": "Quick Examples",
+    "description": "The label for category Ví dụ mẫu in sidebar introduce"
   },
-  "sidebar.studio.category.Giao diện": {
-    "message": "Interface",
-    "description": "The label for category Giao diện in sidebar ide"
+  "sidebar.development.category.Tini Studio": {
+    "message": "Tini Studio",
+    "description": "The label for category Tini Studio in sidebar development"
   },
-  "sidebar.studio.category.Phát triển": {
-    "message": "Development",
-    "description": "The label for category Phát triển in sidebar ide"
+  "sidebar.development.category.Tini Console": {
+    "message": "Tini Console",
+    "description": "The label for category Tini Console in sidebar development"
   },
-  "sidebar.studio.category.Debug": {
-    "message": "Debug",
-    "description": "The label for category Debug in sidebar ide"
+  "sidebar.development.category.Kiểm thử": {
+    "message": "Testing",
+    "description": "The label for category Kiểm thử in sidebar development"
   },
   "sidebar.framework.category.Cấu hình chung": {
     "message": "Configuring Tini App",

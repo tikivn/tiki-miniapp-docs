@@ -3,6 +3,10 @@
     "message": "Getting Started",
     "description": "Navbar item with label Bắt đầu"
   },
+  "item.label.Phát triển": {
+    "message": "Development",
+    "description": "Navbar item with label Studio"
+  },
   "item.label.Framework": {
     "message": "Framework",
     "description": "Navbar item with label Framework"
@@ -11,16 +15,20 @@
     "message": "Components",
     "description": "Navbar item with label Components"
   },
-  "item.label.API": {
-    "message": "API",
+  "item.label.JS APIs": {
+    "message": "JS APIs",
     "description": "Navbar item with label API"
   },
-  "item.label.Studio": {
-    "message": "Studio",
-    "description": "Navbar item with label Studio"
+  "item.lable.Server APIs": {
+    "message": "Server APIs",
+    "description": "Navbar item with label Server API"
   },
   "item.label.Design": {
     "message": "Design",
     "description": "Navbar item with label Design"
+  },
+  "item.label.Cộng đồng": {
+    "message": "Community",
+    "description": "Navbar item with label Cộng đồng"
   }
 }

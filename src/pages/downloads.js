@@ -61,7 +61,7 @@ const DownloadSEO = () => {
       <title>Download the latest version of Tini Studio</title>
       <meta
         property="og:description"
-        content="Tini Studio, còn có tên khác là Tiki IDE, là bộ phần mềm phát triển ứng dụng trên nền tảng Tini App. Nó sở hữu tập hợp các công cụ: quản lý dự án, code editor (trình viết code), debug (gỡ lỗi), trình giả lập và tải mã nguồn của dự án lên Tiki Dev Center."
+        content="Tini Studio, còn có tên khác là Tiki IDE, là bộ phần mềm phát triển ứng dụng trên nền tảng Tini App. Nó sở hữu tập hợp các công cụ: quản lý dự án, code editor (trình viết code), debug (gỡ lỗi), trình giả lập và tải mã nguồn của dự án lên Tini Console."
       />
       <meta property="og:title" content="Downloads Tini Studio" />
     </Head>
@@ -80,21 +80,21 @@ const Download = () => {
         description:
           'Tích hợp bộ xử lý ngôn ngữ để highlight cú pháp và hỗ trợ các ngôn ngữ và API của Tini Framework như TXML, SJS, JS API. Đồng thời, tính năng autocomplete giúp việc tiếp cận với Tini Framework trở nên dễ dàng hơn.',
         header: 'Trình soạn thảo',
-        link: 'https://developers.tiki.vn/docs/studio/overview',
+        link: 'https://developers.tiki.vn/docs/development/studio/overview',
       },
       {
         thumbnail: <Simulator />,
         description:
-          'Tích hợp bộ xử lý ngôn ngữ để highlight cú pháp và hỗ trợ các ngôn ngữ và API của Tini Framework như TXML, SJS, JS API. Đồng thời, tính năng autocomplete giúp việc tiếp cận với Tini Framework trở nên dễ dàng hơn.',
+          'Xem ngay mô phỏng của ứng dụng ngay trong quá trình phát triển giúp để bạn có thể viết code và sửa lỗi nhanh hơn.',
         header: 'Trình giả lập',
-        link: 'https://developers.tiki.vn/docs/studio/simulator',
+        link: 'https://developers.tiki.vn/docs/development/studio/simulator',
       },
       {
         thumbnail: <Manage />,
         description:
           'Bản thân Tini Studio đã tích hợp sẵn với các công cụ khác như NPM và Git giúp bạn quản lý các thư viện và code tốt hơn.',
         header: 'Quản lý dự án',
-        link: 'https://developers.tiki.vn/docs/studio/development',
+        link: 'https://developers.tiki.vn/docs/development/studio/development',
       },
     ],
     [],
@@ -116,34 +116,34 @@ const Download = () => {
               'linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 100%)',
             marginBottom: 40,
           }}>
-          <div style={{marginTop: 40}}>
+          <div style={{ marginTop: 40 }}>
             <Banner version={version.version} />
           </div>
           <div
             className="flex fr jc-center"
-            style={{padding: 8, paddingBottom: 40, marginTop: 24}}>
+            style={{ padding: 8, paddingBottom: 40, marginTop: 24 }}>
             <DownloadLinks
-              style={{marginRight: 32}}
+              style={{ marginRight: 32 }}
               link={version.windows}
               platform="Windows"
               version={version.version}>
-              <Win style={{marginRight: 16}} />
+              <Win style={{ marginRight: 16 }} />
               <span className="download-label">Windows</span>
             </DownloadLinks>
             <DownloadLinks
               link={version.macosx}
               platform="MacOSX"
               version={version.version}>
-              <Apple style={{marginRight: 16}} />
+              <Apple style={{ marginRight: 16 }} />
               <span className="download-label">MacOS</span>
             </DownloadLinks>
           </div>
         </div>
         <div
-          style={{backgroundColor: '#fff', width: '100%'}}
+          style={{ backgroundColor: '#fff', width: '100%' }}
           className="flex fc ai-center">
           {features.map((props, idx) => (
-            <div style={{marginBottom: 40}}>
+            <div style={{ marginBottom: 40 }}>
               <Feature {...props} key={`feature-${idx}`} />
             </div>
           ))}
@@ -152,15 +152,15 @@ const Download = () => {
     </>
   );
 };
-const Feature = ({description, link, thumbnail, header}) => {
+const Feature = ({ description, link, thumbnail, header }) => {
   return (
     <div className="flex fr feature-layout">
       <div
         className="feature-thumbail"
-        style={{maxWidth: 328, marginRight: 32}}>
-        {React.cloneElement(thumbnail, {width: 328})}
+        style={{ maxWidth: 328, marginRight: 32 }}>
+        {React.cloneElement(thumbnail, { width: 328 })}
       </div>
-      <div className="flex fc" style={{maxWidth: 328}}>
+      <div className="flex fc" style={{ maxWidth: 328 }}>
         <h3>{header}</h3>
         <p>{description}</p>
         <a
@@ -182,12 +182,12 @@ const Feature = ({description, link, thumbnail, header}) => {
   );
 };
 
-const Banner = ({version}) => {
+const Banner = ({ version }) => {
   return (
     <div className="flex fc fcc">
       <Logo />
       <LogoLabel />
-      <span style={{fontSize: '14px', color: '#808089'}}>
+      <span style={{ fontSize: '14px', color: '#808089' }}>
         version {version}
       </span>
     </div>
