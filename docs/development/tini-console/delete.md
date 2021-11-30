@@ -5,7 +5,7 @@ title: Xoá ứng dụng
 ***Cảnh báo***: Một bạn xóa đi một ứng dụng, nó sẽ biến mất vĩnh viễn khỏi [Tini Console](https://developer.tiki.vn/apps) cũng như Kho tiện ích của Tiki App.
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
-2. Sidebar >> **Ứng dụng của bạn**.
+2. Sidebar menu >> **Ứng dụng của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Sidebar menu >> **Cài đặt** >> **Quản lý chung**.
 5. Ở phần **Vùng nguy hiểm** nằm cuối trang, bấm nút **Xóa ứng dụng**.

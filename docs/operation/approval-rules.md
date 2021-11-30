@@ -80,5 +80,4 @@ Bảo vệ người dùng luôn là ưu tiên hàng đầu của Tiki. Ứng d�
 - Ứng dụng không được phép yêu cầu những quyền truy cập mà không dùng đến. Nói cách khác, các quyền yêu cầu đều được sử dụng đúng chức năng của chúng.
 - Thông tin đơn hàng (giá trị giao dịch, mã đơn hàng …)  trên hệ thống của nhà phát triển và trên Seller Center của Tiki khớp nhau. Quan trọng hơn, trạng thái đơn hàng giữa hai luôn đồng bộ.
 - Trạng thái đơn hàng phải nằm ở những vị trí mà người dùng dễ dàng nhìn thấy trong ứng dụng.
-- Cung cấp đầy đủ [thông tin hỗ trợ](/docs/development/tini-console/support) trong phần Cài đặt của ứng dụng trên Tini Console để đảm bảo người dùng có thể liên hệ khi cần thiết.
-
+- Cung cấp đầy đủ [thông tin hỗ trợ](/docs/development/tini-console/support) trong phần **Cài đặt** của ứng dụng trên Tini Console để đảm bảo người dùng có thể liên hệ khi cần thiết.

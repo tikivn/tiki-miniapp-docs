@@ -25,6 +25,8 @@ title: my.request
 | fail          | Function     |          | Callback function khi việc gọi network thất bại.                                                                         |
 | complete      | Function     |          | Callback function khi việc gọi network kết thúc cho dù thành công hay thất bại.                                          |
 
+Lưu ý: định dạng arraybuffer được hỗ trợ từ runtime version 1.85 trở đi.
+
 ### Callback success function payload
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                                                |
