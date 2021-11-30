@@ -3,6 +3,21 @@ order: 51
 category: Design resources
 title: Download here
 ---
+### v2.0
+November 30th, 2021 <br/>
+
+The design tokens are the shared language between designers & developers; they not only make it easier to collaborate, maintain and scale the design system but also help ensure consistency across platforms and products. We experiment with the Tini design system's design tokens from the beginning, and today we are happy to release the Tini v2.0 with the official design tokens library. We will write some articles about this, and please be patient ;) <br/>
+
+We also have some improvements for the components library <br/>
+- New button type: the Over background button
+- Change the color value/size/naming convention of some components to make them more accessible as the Neutral button, the disabled state of all components...etc
+
+That's it for November. See you next month!!! Stay healthy.<br/>
+
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
 ### v1.4
 October 29th, 2021 <br/>
 
@@ -22,8 +37,6 @@ New:<br/>
 
 That's it for this month.<br/>
 Hint: next month, we will release version 2.0 with the new structure of color tokens.
-
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 ---
