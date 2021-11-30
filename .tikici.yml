@@ -84,6 +84,8 @@ deployment_config:
         timeoutSeconds: 3
     replicaCount: 1
   prod:
+    istio:
+      enabled: true
     resources:
       requests:
         cpu: 15m
