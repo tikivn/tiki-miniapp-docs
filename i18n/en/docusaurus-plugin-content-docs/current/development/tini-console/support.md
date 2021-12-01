@@ -10,7 +10,7 @@ Here are the steps for a Developer to provide his contact info.
 2. On the Sidebar menu, select **My Apps** [Ứng dụng của bạn].
 3. Open your desired app.
 4. On the Sidebar menu, select **Settings** [Cài đặt] and then select **General** [Quản lý chung].
-5. In the **Support Info** section [Thông tin hỗ trợ], type your email address, phone number and website address at which users can reach you in the event they have questions or need support with your app. Finally, click the **Update** button [Cập nhật].
+5. In the **Support Info** [Thông tin hỗ trợ] section , type your email address, phone number and website address at which users can reach you in the event they have questions or need support with your app. Finally, click the **Update** [Cập nhật] button.
 
 <img src="/img/TiniApp_Support_Contact_Info.jpg" width="500px" alt="Support contact info of dev" style={{ margin: '0 auto', display: 'flex' }}/>
 

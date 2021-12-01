@@ -12,10 +12,10 @@ Carry out the following procedure to hide an app:
 2. On the Sidebar menu, select **My Apps** [Ứng dụng của bạn].
 3. Open your desired app.
 4. On the Sidebar menu, select **Settings** [Cài đặt] and then select **General** [Quản lý chung].
-5. In the **Danger zone** section at the end of the page, click the **Hide app** [Ẩn ứng dụng] button.
+5. In the **Danger zone** section [Vùng nguy hiểm] at the end of the page, click the **Hide app** [Ẩn ứng dụng] button.
    <img src="/img/TiniApp_delete.jpg" width="500px" alt="Hide Tini App" style={{ margin: '0 auto', display: 'flex' }}/>
 
-You are able to unhide a hidden app using a similar procedure. In the last step, click the **Unhide app** [Hiện ứng dụng] button in the **Danger zone** section.
+You are able to unhide a hidden app using a similar procedure. In the last step, click the **Unhide app**  button [Hiện ứng dụng] in the **Danger zone** section.
 
 - - -
 

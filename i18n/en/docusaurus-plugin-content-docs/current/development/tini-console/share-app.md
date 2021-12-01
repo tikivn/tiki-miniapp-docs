@@ -11,7 +11,7 @@ To get the link or QR code of an Tini App, do as follows:
 1. Go to [Tini Console](https://developer.tiki.vn/apps).
 2. On the Sidebar menu, select **My Apps** [Ứng dụng của bạn].
 3. Open your preferred app.
-4. Click the **Save image** [Lưu ảnh] button provided that you want to share the app via the QR code; or click the **Copy** [Sao chép] provided that you want to share via the link.
+4. Click the **Save image** [Lưu ảnh] button provided that you want to share the app via the QR code; or click the **Copy** [Sao chép] button provided that you want to share via the link.
    <img src="/img/QRcode_App.png" width="800px" alt="QR code & link of Tini App " style={{ margin: '0 auto', display: 'flex' }}/>
 5. Send either the QR code or the link to the appropriate people.
 
