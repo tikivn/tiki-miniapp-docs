@@ -4,7 +4,7 @@ title: my.getBatteryInfo
 
 `my.getBatteryInfo` là API dùng để lấy thông tin pin của thiết bị.
 
-**_Khả dụng_**: Hỗ trợ từ version 1.84.8 trở lên.
+**_Khả dụng_**: Hỗ trợ từ version 1.84.11 trở lên. Không hỗ trợ máy ảo.
 
 ## API Params
 
@@ -18,10 +18,10 @@ title: my.getBatteryInfo
 
 Khi việc gọi API thành công, framework sẽ trả về thông tin về pin như sau:
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                   |
-| ---------- | ------------ | --------------------------------------- |
-| level      | number       | Mức pin hiện tại, có giá trị từ 0 - 1.  |
-| isCharging | boolean      | Trạng thái sạc pin (đang sạc bằng true) |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                      |
+| ---------- | ------------ | -------------------------------------------------------------------------- |
+| level      | number       | Mức pin hiện tại, có giá trị từ 0 - 100.<br/>Giá trị -1 trên iOS Simulator |
+| isCharging | boolean      | Trạng thái sạc pin                                                         |
 
 ### Sample Code
 
@@ -36,20 +36,19 @@ Khi việc gọi API thành công, framework sẽ trả về thông tin về pin
 
 ```js
 Page({
-  alert(message) {
-    my.alert({
-      title: 'response',
-      content: JSON.stringify(message),
-      buttonText: 'OK'
-    });
-  },
   getBattery() {
     my.getBatteryInfo({
       success: (success) => {
-        this.alert(success);
+        my.alert({
+          title: 'Success',
+          content: JSON.stringify(success)
+        });
       },
       fail: (fail) => {
-        this.alert(fail);
+        my.alert({
+          title: 'Fail',
+          content: JSON.stringify(fail)
+        });
       }
     });
   }
