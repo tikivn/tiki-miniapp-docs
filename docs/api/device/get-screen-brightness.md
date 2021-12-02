@@ -4,6 +4,10 @@ title: my.getScreenBrightness
 
 `my.getScreenBrightness` là API dùng để lấy thông tin độ sáng màn hình.
 
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/check-notification/index" />
+
 **_Khả dụng_**: Hỗ trợ từ version 1.84.19 trở lên.
 
 ## API Params
