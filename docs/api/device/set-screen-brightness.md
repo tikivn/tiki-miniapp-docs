@@ -4,6 +4,8 @@ title: my.setScreenBrightness
 
 `my.setScreenBrightness` là API dùng để điều chỉnh độ sáng màn hình.
 
+## Quét mã để trải nghiệm
+
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/check-notification/index" />

@@ -4,6 +4,8 @@ title: my.getBatteryInfo
 
 `my.getBatteryInfo` là API dùng để lấy thông tin pin của thiết bị.
 
+## Quét mã để trải nghiệm
+
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/check-notification/index" />
