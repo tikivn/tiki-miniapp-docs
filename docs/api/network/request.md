@@ -18,12 +18,14 @@ title: my.request
 | headers       | object       |          | Cấu hình headers khi thực hiện gọi network.                                                                              |
 | method        | string       |          | Phương thức gọi network. Mặc định sẽ là GET.                                                                             |
 | data          | object       |          | Data kèm theo trong request.                                                                                             |
-| timeout       | number       |          | Request sẽ bị cancel sau khoảng thời gian timeout. Đơn vị là ms và mặc định là 30,000 (30s)                              |
+| timeout       | number       |          | Request sẽ bị cancel sau khoảng thời gian timeout. Đơn vị là mili giây (ms); mặc định là 30,000 (30s)                    |
 | dataType      | string       |          | Quy định định dạng dữ liệu (data format) trả về sau request. Hỗ trợ JSON, text, base64 và arraybuffer; mặc định là JSON. |
 | includeHeader | boolean      |          | Quy định dữ liệu trả về trường hợp thành công có bao gồm headers hay không.                                              |
 | success       | Function     |          | Callback function khi việc gọi network thành công.                                                                       |
 | fail          | Function     |          | Callback function khi việc gọi network thất bại.                                                                         |
 | complete      | Function     |          | Callback function khi việc gọi network kết thúc cho dù thành công hay thất bại.                                          |
+
+***Lưu ý***: Định dạng arraybuffer được hỗ trợ từ runtime version 1.85 trở đi.
 
 ### Callback success function payload
 

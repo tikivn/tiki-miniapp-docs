@@ -8,4 +8,4 @@ File này có thể có cấu hình
 
 | Thuộc tính      | Kiểu   | Ý Nghĩa                                    |
 | --------------- | ------ | ------------------------------------------ |
-| miniprogramRoot | String | Đường dẫn tới thư mục chứa file `app.json` |
+| miniprogramRoot | string | Đường dẫn tới thư mục chứa file `app.json` |

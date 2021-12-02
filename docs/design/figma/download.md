@@ -1,8 +1,25 @@
 ---
 title: Tải về
 ---
-### v1.4
-October 29th, 2021 <br/>
+### Phiên bản 2.0
+30/11/2021 <br/>
+
+Design tokens là ngôn ngữ chung giữa designer và developer; chúng không chỉ giúp việc hợp tác giữa 2 bên dễ dàng hơn cũng như quản lý và phát triển, mà còn đảm bảo tính nhất quán giữa các nền tảng và các sản phẩm. Bọn mình đã thử nghiệm sử dụng design token vào Tini design system từ lúc bắt đầu, và đến hôm nay bọn mình rất phấn khởi khi ra mắt phiên bản Tini 2.0 với bộ design tokens chính thức. Bọn mình sẽ viết một vài bài viết về design tokens, mọi người kiên nhẫn chờ đợi nhé ;) <br/>
+
+Bên cạnh đó bọn mình cũng có một vài cải tiến cho thư viện component <br/>
+- Thể loại button mới: the Over background button
+- Thay đổi giá trị màu/ kích thước/ cách đặt tên của một vài component để tăng tính dễ nhận dạng và sử dụng hơn như là Neutral button, trạng thái disabled của các components...v.v
+
+Đó là những thay đổi của tháng mười một này. Hẹn gặp lại các bạn vào tháng sau!!! Giữ gìn sức khỏe nhé.<br/>
+
+[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
+
+
+### Phiên bản 1.4
+29/10/2021 <br/>
 
 Sài Gòn đã nhộn nhịp và mọi người có thể được ăn uống bên ngoài lại rồi mọi người ơiiiii. Cập nhật tình hình nơi tụi mình sống là vậy còn về phần Tini design system của bọn mình thì:<br/>
 Cải thiện:<br/>
@@ -20,8 +37,6 @@ Những cái mới:<br/>
 
 Tháng này vỏn vẹn chỉ có vậy.<br/>
 Tháng sau, bọn mình sẽ ra mắt phiên bản 2.0 với cấu trúc mới của color token nhé.
-
-[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 ---

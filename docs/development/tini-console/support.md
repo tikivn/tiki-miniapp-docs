@@ -23,4 +23,4 @@ Về phía người dùng, họ có thể tiếp cận thông tin liên hệ c�
 3. Chọn **Hỗ trợ** từ app menu.
    <img src="/img/app_menu.jpg" width="400px" alt="app menu" style={{ margin: '0 auto', display: 'flex' }}/>
 4. Hộp thoại **Support** xuất hiện. Người dùng có thể liên lạc với Nhà phát triển thông qua điện thoại, email, hoặc truy cập vào website hỗ trợ.
-<img src="/img/TiniApp_Support_dialog.jpg" width="400px" alt="Developer Registration Form" style={{ margin: '0 auto', display: 'flex' }}/>
+   <img src="/img/TiniApp_Support_dialog.jpg" width="400px" alt="Developer Registration Form" style={{ margin: '0 auto', display: 'flex' }}/>
