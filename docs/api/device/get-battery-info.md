@@ -8,7 +8,7 @@ title: my.getBatteryInfo
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/api/check-notification/index" />
+<QRCode page="pages/api/battery/index" />
 
 **_Khả dụng_**: Hỗ trợ từ version 1.84.11 trở lên. Không hỗ trợ máy ảo.
 
