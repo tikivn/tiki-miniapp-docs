@@ -8,7 +8,7 @@ title: my.getScreenBrightness
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/api/check-notification/index" />
+<QRCode page="pages/api/brightness/index" />
 
 **_Khả dụng_**: Hỗ trợ từ version 1.84.19 trở lên.
 
