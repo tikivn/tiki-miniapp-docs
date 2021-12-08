@@ -2,7 +2,7 @@
 title: my.checkNotification
 ---
 
-`my.checkNotification` là API dùng để kiểm tra user đã bật notification cho ứng dụng Tiki hay chưa.
+`my.checkNotification` là API dùng để kiểm tra người dùng đã bật notification cho Tiki app hay chưa.
 
 
 ## Quét mã để trải nghiệm
@@ -16,24 +16,24 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                        |
-| ---------- | ------------ | -------------------------------------------------------------------------------------------- |
-| success    | Function     | Callback function khi lấy dữ liệu từ clipboard thành công.                                   |
-| fail       | Function     | Callback function khi lấy dữ liệu từ clipboard bất thành.                                    |
-| complete   | Function     | Callback function khi việc lấy dữ liệu từ clipboard hoàn tất bất kể thành công hay thất bại. |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                        |
+| ---------- | ------------ | ---------------------------------------------------------------------------- |
+| success    | Function     | Callback function khi việc kiểm tra thành công.                              |
+| fail       | Function     | Callback function khi việc kiểm tra bất thành.                               |
+| complete   | Function     | Callback function khi việc kiểm tra hoàn tất bất kể thành công hay thất bại. |
 
 ## Callback function payload
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                   |
-| ---------- | ------------ | ----------------------- |
-| permission_status       | string       | Trạng thái hiện tại của quyền bật notification |
+| Thuộc tính        | Kiểu dữ liệu | Mô tả                                         |
+| ----------------- | ------------ | --------------------------------------------- |
+| permission_status | string       | Trạng thái hiện tại của việc bật notification |
 
 ## Permission Status
 
-| Giá trị | Mô tả                   |
-| ---------- | ----------------------- |
-| granted    | Ứng dụng tiki đã được bật notification |
-| denied    | Ứng dụng Tiki bị từ chối bật notification |
+| Giá trị | Mô tả                                         |
+| ------- | --------------------------------------------- |
+| granted | Notification của Tiki app đã đuuợc bật lên.   |
+| denied  | Notification của Tiki app không được bật lên. |
 
 
 ## Sample Code
