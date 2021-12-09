@@ -4,7 +4,7 @@ title: my.choosePhoneContact
 
 ## Giới thiệu
 
-- **my.choosePhoneContact** là API dùng để chọn một liên hệ từ Danh bạ trong điện thoại của người dùng
+- `my.choosePhoneContact` là API dùng để chọn một liên hệ từ Danh bạ trong điện thoại của người dùng
 - Chỉ hỗ trợ từ version 1.77.14 trở lên
 
 ## Sử dụng

@@ -2,7 +2,7 @@
 title: my.setKeepScreenOn
 ---
 
-`my.setKeepScreenOn` my.setKeepScreenOn là một API đùng để giữ màn hình luôn sáng hay không.
+`my.setKeepScreenOn` my.setKeepScreenOn là một API dùng để giữ màn hình luôn sáng.
 
 ## Quét mã để trải nghiệm
 
@@ -14,12 +14,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ## API Params
 
-| Thuộc tính   | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                                              |
-| ------------ | ------------ | :------: | ------------------------------------------------------------------------------------------------------------------ |
-| keepScreenOn | boolean      |    ✓     | Có giữ cho màn hình luôn sáng không.<br/>true - Giữ màn hình luôn sáng<br/>false - Tắt chức năng giữ sáng màn hình |
-| success      | Function     |          | Callback function khi bật/tắt giữ màn hình thành công.                                                             |
-| fail         | Function     |          | Callback function khi bật/tắt giữ màn hình bất thành.                                                              |
-| complete     | Function     |          | Callback function khi bật/tắt giữ màn hình bất kể thành công hay thất bại.                                         |
+| Thuộc tính   | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                              |
+| ------------ | ------------ | :------: | -------------------------------------------------------------------------------------------------- |
+| keepScreenOn | boolean      |    ✓     | Nếu mang giá trị `true`, màn hình sẽ luôn bật sáng. Còn `false` là tắt chức năng giữ sáng màn hình |
+| success      | Function     |          | Callback function khi bật/tắt giữ màn hình thành công.                                             |
+| fail         | Function     |          | Callback function khi bật/tắt giữ màn hình bất thành.                                              |
+| complete     | Function     |          | Callback function khi bật/tắt giữ màn hình bất kể thành công hay thất bại.                         |
 
 ### Sample Code
 

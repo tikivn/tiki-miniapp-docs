@@ -16,7 +16,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 | Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                             |
 | ---------- | ------------ | :------: | --------------------------------------------------------------------------------- |
-| brightness | number       |    ✓     | Dữ liệu cần đưa vào bắt buộc phải nằm trong khoảng từ 0 - 1.                      |
+| brightness | number       |    ✓     | Độ sáng màn hình. Nhận giá trị trong khoảng từ 0 - 1.                             |
 | success    | Function     |          | Callback function khi điều chỉnh độ sáng thành công.                              |
 | fail       | Function     |          | Callback function khi điều chỉnh độ sáng bất thành.                               |
 | complete   | Function     |          | Callback function khi điều chỉnh độ sáng hoàn tất bất kể thành công hay thất bại. |
