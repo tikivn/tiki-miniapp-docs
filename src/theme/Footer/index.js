@@ -50,8 +50,8 @@ const bottom = [
     url: 'https://tuyendung.tiki.vn/',
   },
   {
-    title: 'Chính sách vận hành',
-    url: '/docs/introduce/development-process',
+    title: 'Nguyên tắc kiểm duyệt',
+    url: '/docs/operation/approval-rules',
   },
 ];
 
