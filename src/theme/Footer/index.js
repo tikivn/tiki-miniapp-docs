@@ -8,24 +8,34 @@ const groups = [
   {
     title: 'Tài liệu',
     items: [
-      {title: 'Studio', url: '/docs/studio/overview'},
+      {title: 'Bắt đầu', url: '/docs/introduce/getting-started'},
+      {title: 'Phát triển', url: '/docs/development/studio/overview'},
       {title: 'Framework', url: '/docs/framework/overview'},
       {title: 'Component', url: '/docs/component/overview'},
-      {title: 'API', url: '/docs/api/overview'},
-    ],
-  },
-  {
-    title: 'Hỗ trợ',
-    items: [
-      //{title: 'Câu hỏi thường gặp', url: ''},
-      {title: 'Cộng đồng', url: 'https://community.tiki.vn/'},
+      {title: 'JS API', url: '/docs/api/overview'},
+      {title: 'Server API', url: '/docs/backend-api/overview'},
+      {title: 'Tiki Open API', url: '/docs/backend-api/open-api/overview'},
+      {title: 'Design', url: '/docs/design/overview'},
     ],
   },
   {
     title: 'Tin tức',
     items: [
-      {title: 'Blog', url: 'https://engineering.tiki.vn/'},
+      {title: 'Tini Blog', url: '/blog'},
+      {title: 'Tiki Engineering Blog', url: 'https://engineering.tiki.vn/'},
       {title: 'Hackathon', url: 'https://hackathon.tiki.vn/'},
+    ],
+  },
+  {
+    title: 'Liên kết',
+    items: [
+      {title: 'Cộng đồng', url: 'https://community.tiki.vn/'},
+      {title: 'Facebook', url: 'https://www.facebook.com/tikicareers/'},
+      {
+        title: 'Youtube',
+        url: 'https://www.youtube.com/channel/UCM1pfRas6M31zRWvCOGvedQ',
+      },
+      {title: 'Slack', url: 'https://tini-apps.slack.com/'},
     ],
   },
 ];
@@ -39,18 +49,10 @@ const bottom = [
     title: 'Tuyển dụng',
     url: 'https://tuyendung.tiki.vn/',
   },
-  /*{
-    title: 'Chính sách Nhà phát triển',
-    url: '',
-  },
   {
-    title: 'Điều khoản sử dụng',
-    url: '',
+    title: 'Chính sách vận hành',
+    url: '/docs/introduce/development-process',
   },
-  {
-    title: 'Chính sách riêng tư',
-    url: '',
-  },*/
 ];
 
 function FooterLink({to, href, label, prependBaseUrlToHref, ...props}) {
