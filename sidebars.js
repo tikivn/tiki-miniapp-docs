@@ -810,8 +810,9 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Thiết kế chung',
+      label: 'Nền tảng thiết kế',
       items: [
+        'design/styles/design-tokens',
         'design/styles/color',
         'design/styles/font',
         'design/styles/icon',
