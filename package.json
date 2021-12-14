@@ -43,6 +43,7 @@
     "mdast-util-from-markdown": "^1.0.0",
     "mdast-util-gfm": "^1.0.0",
     "micromark-extension-gfm": "^1.0.0",
+    "parse-git-url": "^1.0.1",
     "qrcode-generator": "^1.4.4",
     "react": "^17.0.1",
     "react-copy-to-clipboard": "^5.0.3",

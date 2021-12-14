@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown'
-import GitUrlParse from 'git-url-parse';
+import GitUrlParse from 'parse-git-url';
 import Layout from '@theme/Layout';
 import NotFound from '@theme/NotFound';
 import GithubIcon from '@site/src/components/svgIcons/GithubIcon';
@@ -146,8 +146,8 @@ function Showcase(): JSX.Element {
     if (details) {
       const { source } = details;
       const gitInfo = GitUrlParse(source);
-      const { full_name, filepath } = gitInfo;
-      const gitBaseAPI = `https://api.github.com/repos/${full_name}/contents${filepath.length ? `/${filepath}` : ''}`;
+      const { name, owner, subdir } = gitInfo;
+      const gitBaseAPI = `https://api.github.com/repos/${owner}/${name}/contents${subdir.length ? `/${subdir}` : ''}`;
       const gitBaseRaw = localStorage.getItem(gitBaseAPI);
       // git api has limit, so we prefer raw content
       if (gitBaseRaw) {
