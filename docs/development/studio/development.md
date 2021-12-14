@@ -25,6 +25,7 @@ Chạy tập tin cài đặt Tini Studio.
 ## 5. Chạy ứng dụng cục bộ
 
 Để chạy ứng dụng với trình giả lập của Tini Studio ngay trên máy tính, bạn theo những bước sau:
+
 1. Biên dịch ứng dụng thông qua menu >> **Tools** >> **Compile**.
    ***Lưu ý***: bình thường bạn không nhất thiết thực hiện bước này. Bởi lẽ, khi xảy ra thay đổi trong code, Tini Studio sẽ tự động biên dịch lại dự án.
 2. Bật trình giả lập bằng một trong hai cách:

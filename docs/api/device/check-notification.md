@@ -4,7 +4,6 @@ title: my.checkNotification
 
 `my.checkNotification` là API dùng để kiểm tra người dùng đã bật notification cho Tiki app hay chưa.
 
-
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
