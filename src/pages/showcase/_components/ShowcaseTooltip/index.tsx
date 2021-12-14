@@ -117,7 +117,7 @@ export default function Tooltip({
 
   return (
     <>
-      {React.cloneElement(children, {
+      {children && React.cloneElement(children, {
         ref: setReferenceElement,
         'aria-describedby': open ? tooltipId : undefined,
       })}
