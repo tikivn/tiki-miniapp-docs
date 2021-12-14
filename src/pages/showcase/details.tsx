@@ -95,15 +95,15 @@ function ShowcaseDetails({ readme, gitBaseUrl, details }) {
             <a href={details.source} target="_blank" rel="noopener noreferrer">{details.source}</a>
           </div>
           {details.app && (
-            <div class={styles.baseBtns}>
-              <a class="button button--primary" href={details.app} target="_blank">Mở ứng dụng</a>
+            <div className={styles.baseBtns}>
+              <a className="button button--primary" href={details.app} target="_blank">Mở ứng dụng</a>
               <div><span>(Hoặc scan mã QR)</span></div>
             </div>
           )}
         </div>
         <div className={`margin-top--md ${styles.contentContainer}`}>
           <div className={`row ${styles.markdownBody}`} id="markdownBody">
-            <div class="col col--9">
+            <div className="col col--9">
               <ReactMarkdown children={readme} components={{
                   img: ({ node, ...props }) => {
                     const { src, alt } = props;
