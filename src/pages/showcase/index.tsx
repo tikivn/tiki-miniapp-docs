@@ -6,10 +6,8 @@
  */
 
 import React, {useState, useMemo, useEffect} from 'react';
-
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
-
 import FavoriteIcon from '@site/src/components/svgIcons/FavoriteIcon';
 import ShowcaseTagSelect, {
   readSearchTags,
@@ -20,17 +18,16 @@ import ShowcaseFilterToggle, {
 } from './_components/ShowcaseFilterToggle';
 import ShowcaseCard from './_components/ShowcaseCard';
 import {sortedUsers, Tags, TagList, User, TagType} from '@site/src/data/users';
-import ShowcaseTooltip from './_components/ShowcaseTooltip';
-
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import {useLocation} from '@docusaurus/router';
 
+import ShowcaseTooltip from './_components/ShowcaseTooltip';
 import styles from './styles.module.css';
 
-const TITLE = 'Docusaurus Site Showcase';
-const DESCRIPTION = 'List of websites people are building with Docusaurus';
+const TITLE = 'Code Market';
+const DESCRIPTION = 'List of open source apps and components people are building with TiniApp';
 const EDIT_URL =
-  'https://github.com/facebook/docusaurus/edit/main/website/src/data/users.tsx';
+  'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/users.tsx';
 
 type UserState = {
   scrollTopPosition: number;
@@ -118,7 +115,7 @@ function ShowcaseHeader() {
         href={EDIT_URL}
         target="_blank"
         rel="noreferrer">
-        🙏 Please add your site
+        🙏 Please add yours
       </a>
     </section>
   );
@@ -197,12 +194,13 @@ function ShowcaseCards() {
       </section>
     );
   }
+  console.log('>>>>>>>>', sortedUsers);
 
   return (
     <section className="margin-top--lg margin-bottom--xl">
       {selectedTags.length === 0 ? (
         <>
-          <div className={styles.showcaseFavorite}>
+          {/* <div className={styles.showcaseFavorite}>
             <div className="container">
               <div
                 className={clsx(
@@ -218,12 +216,16 @@ function ShowcaseCards() {
                 ))}
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className="container margin-top--lg">
-            <h2 className={styles.showcaseHeader}>All sites</h2>
+            <h2 className={styles.showcaseHeader}>All</h2>
             <ul className={styles.showcaseList}>
               {otherUsers.map((user) => (
-                <ShowcaseCard key={user.title} user={user} />
+                <ShowcaseCard
+                  key={user.title}
+                  user={user}
+                  id={sortedUsers.findIndex((item) => JSON.stringify(item) === JSON.stringify(user) )}
+                />
               ))}
             </ul>
           </div>
@@ -232,7 +234,11 @@ function ShowcaseCards() {
         <div className="container">
           <ul className={styles.showcaseList}>
             {filteredUsers.map((user) => (
-              <ShowcaseCard key={user.title} user={user} />
+              <ShowcaseCard
+                key={user.title}
+                user={user}
+                id={sortedUsers.findIndex((item) => JSON.stringify(item) === JSON.stringify(user) )}
+              />
             ))}
           </ul>
         </div>
