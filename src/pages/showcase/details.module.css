@@ -1,0 +1,111 @@
+.baseContainer {
+  background-color: #fff !important;
+  box-shadow: 0 2px 8px #f0f1f2;
+  padding: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.baseTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.baseDesc {
+  color: #666;
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.baseStatus {
+  margin-bottom: 15px;
+}
+
+.baseStatus span {
+  margin-right: 20px;
+  color: #3f536e;
+  line-height: 1.5;
+}
+
+.baseBtns {
+  text-align: center;
+  position: absolute;
+  top: 26px;
+  right: 24px;
+}
+
+.baseBtns span {
+  color: #666;
+  font-size: 14px;
+}
+@media only screen and (max-width: 768px) {
+  .baseBtns {
+    margin-top: 15px;
+    position: unset;
+  }
+}
+
+.baseLink {
+  font-size: 14px;
+}
+
+.baseLink svg {
+  margin-right: 5px;
+  vertical-align: text-top;
+}
+
+.contentContainer {
+  display: flex;
+  margin-bottom: 20px;
+  /* margin-top: 20px; */
+  position: relative;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px #f0f1f2;
+}
+
+.markdownBody {
+  padding-top: 0;
+  /* flex: 1 1; */
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.cover {
+  /* flex: 0 0 375px; */
+  margin-left: 20px;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.cover img {
+  display: block;
+  width: 100%;
+}
+
+.tag {
+  font-size: 0.675rem;
+  border: 1px solid var(--ifm-color-secondary-darkest);
+  cursor: default;
+  margin-right: 6px;
+  margin-bottom: 6px !important;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tag .textLabel {
+  margin-left: 8px;
+}
+
+.tag .colorLabel {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-left: 6px;
+  margin-right: 6px;
+}
