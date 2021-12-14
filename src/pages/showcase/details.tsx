@@ -57,14 +57,14 @@ function ShowcaseDetails({ readme, gitBaseUrl, details }) {
     <section className="margin-top--lg margin-bottom--xl">
       <div className="container">
         <nav aria-label="breadcrumbs--sm">
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="/showcase">
+          <ul className="breadcrumbs">
+            <li className="breadcrumbs__item">
+              <a className="breadcrumbs__link" href="/showcase">
                 Showcases
               </a>
             </li>
-            <li class="breadcrumbs__item breadcrumbs__item--active">
-              <a class="breadcrumbs__link" href="#">
+            <li className="breadcrumbs__item breadcrumbs__item--active">
+              <a className="breadcrumbs__link" href="#">
                 Details
               </a>
             </li>
