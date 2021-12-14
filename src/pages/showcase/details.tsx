@@ -14,7 +14,7 @@ import rehypeRaw from 'rehype-raw'
 const TITLE = 'Code Market';
 const DESCRIPTION = 'List of open source apps and components people are building with TiniApp';
 
-const id = location.hash.slice(1);
+const id = window.location.hash.slice(1);
 const details = sortedUsers[id];
 
 const TagComp = React.forwardRef<HTMLLIElement, Tag>(

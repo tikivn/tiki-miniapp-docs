@@ -47,6 +47,11 @@ module.exports = {
           label: 'Phát triển',
         },
         {
+          to: 'showcase',
+          label: 'Showcase',
+          position: 'right',
+        },
+        {
           type: 'doc',
           docId: 'framework/overview',
           position: 'right',
@@ -82,7 +87,7 @@ module.exports = {
           href: 'https://community.tiki.vn',
           position: 'right',
         },
-        { type: 'localeDropdown', position: 'right' },
+        {type: 'localeDropdown', position: 'right'},
       ],
     },
     gtag: {
