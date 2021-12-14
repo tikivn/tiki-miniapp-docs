@@ -194,7 +194,6 @@ function ShowcaseCards() {
       </section>
     );
   }
-  console.log('>>>>>>>>', sortedUsers);
 
   return (
     <section className="margin-top--lg margin-bottom--xl">

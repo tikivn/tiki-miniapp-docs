@@ -29,9 +29,21 @@
 }
 
 .baseBtns {
+  text-align: center;
   position: absolute;
   top: 26px;
   right: 24px;
+}
+
+.baseBtns span {
+  color: #666;
+  font-size: 14px;
+}
+@media only screen and (max-width: 768px) {
+  .baseBtns {
+    margin-top: 15px;
+    position: unset;
+  }
 }
 
 .baseLink {
@@ -48,14 +60,14 @@
   margin-bottom: 20px;
   /* margin-top: 20px; */
   position: relative;
-  padding: 20px;
+  padding: 10px;
   background-color: #fff;
   box-shadow: 0 2px 8px #f0f1f2;
 }
 
 .markdownBody {
   padding-top: 0;
-  flex: 1 1;
+  /* flex: 1 1; */
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
@@ -63,7 +75,7 @@
 }
 
 .cover {
-  flex: 0 0 375px;
+  /* flex: 0 0 375px; */
   margin-left: 20px;
   border-radius: 5px;
   text-align: center;

@@ -55,7 +55,6 @@ function ShowcaseCardTag({ tags }: { tags: TagType[] }) {
 }
 
 function ShowcaseDetails({ readme, gitBaseUrl }) {
-
   return (
     <section className="margin-top--lg margin-bottom--xl">
       <div className="container">
@@ -63,7 +62,7 @@ function ShowcaseDetails({ readme, gitBaseUrl }) {
           <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="/showcase">
-                Examples
+                Showcases
               </a>
             </li>
             <li class="breadcrumbs__item breadcrumbs__item--active">
@@ -97,28 +96,39 @@ function ShowcaseDetails({ readme, gitBaseUrl }) {
             <GithubIcon />
             <a href={details.source} target="_blank" rel="noopener noreferrer">{details.source}</a>
           </div>
+          {details.app && (
+            <div class={styles.baseBtns}>
+              <a class="button button--primary" href={details.app} target="_blank">Mở ứng dụng</a>
+              <div><span>(Hoặc scan mã QR)</span></div>
+            </div>
+          )}
         </div>
         <div className={`margin-top--md ${styles.contentContainer}`}>
-          <div className={styles.markdownBody} id="markdownBody">
-            <ReactMarkdown children={readme} components={{
-                img: ({ node, ...props }) => {
-                  const { src, alt } = props;
-                  if (src === details.preview) {
-                    return null;
-                  }
+          <div className={`row ${styles.markdownBody}`} id="markdownBody">
+            <div class="col col--9">
+              <ReactMarkdown children={readme} components={{
+                  img: ({ node, ...props }) => {
+                    const { src, alt } = props;
+                    if (src === details.preview) {
+                      return null;
+                    }
 
-                  if (src.startsWith('http')) {
-                    return <img src={src} alt={alt} />
+                    if (src.startsWith('http')) {
+                      return <img src={src} alt={alt} />
+                    }
+                    return <img src={`${gitBaseUrl}/${src}`} alt={alt} />
+                  },
+                  a: ({ node, ...props }) => {
+                    const { href, children } = props;
+                    return <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>
                   }
-                  return <img src={`${gitBaseUrl}/${src}`} alt={alt} />
-                }
-              }}
-              rehypePlugins={[rehypeRaw]}
-            />
-
-          </div>
-          <div className={styles.cover}>
-            <img src={details.preview} alt="cover picture" />
+                }}
+                rehypePlugins={[rehypeRaw]}
+              />
+            </div>
+            <div className={`col col--3 ${styles.cover}`}>
+              <img src={details.preview} alt="cover picture" />
+            </div>
           </div>
         </div>
       </div>
