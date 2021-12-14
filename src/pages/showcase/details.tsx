@@ -10,12 +10,10 @@ import {sortedUsers, Tags, TagList, TagType, Tag} from '@site/src/data/users';
 import { sortBy } from "@site/src/utils/jsUtils";
 import styles from './details.module.css';
 import rehypeRaw from 'rehype-raw'
+import {useLocation} from '@docusaurus/router';
 
 const TITLE = 'Code Market';
 const DESCRIPTION = 'List of open source apps and components people are building with TiniApp';
-
-const id = window.location.hash.slice(1);
-const details = sortedUsers[id];
 
 const TagComp = React.forwardRef<HTMLLIElement, Tag>(
   ({ label, color, description }, ref) => (
@@ -54,7 +52,7 @@ function ShowcaseCardTag({ tags }: { tags: TagType[] }) {
   );
 }
 
-function ShowcaseDetails({ readme, gitBaseUrl }) {
+function ShowcaseDetails({ readme, gitBaseUrl, details }) {
   return (
     <section className="margin-top--lg margin-bottom--xl">
       <div className="container">
@@ -137,6 +135,10 @@ function ShowcaseDetails({ readme, gitBaseUrl }) {
 }
 
 function Showcase(): JSX.Element {
+  const location = useLocation();
+  const id = location.hash.slice(1);
+  const details = sortedUsers[id];
+
   const [readme, setReadme] = React.useState(null);
   const [gitBaseUrl, setGitBaseUrl] = React.useState('');
 
@@ -178,7 +180,7 @@ function Showcase(): JSX.Element {
   return (
     <Layout title={TITLE} description={DESCRIPTION}>
       <main className="margin-vert--lg">
-        <ShowcaseDetails readme={readme} gitBaseUrl={gitBaseUrl} />
+        <ShowcaseDetails readme={readme} gitBaseUrl={gitBaseUrl} details={details} />
       </main>
     </Layout>
   );
