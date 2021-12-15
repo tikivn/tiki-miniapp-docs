@@ -131,14 +131,7 @@ function ShowcaseDetails({ readme, gitBaseUrl, details }) {
   );
 }
 
-function Showcase(): JSX.Element {
-  // const location = useLocation();
-  // const { search } = location;
-  // const idMatches = search.match(/id=([^&]+)/);
-  // const id = parseInt(idMatches && idMatches[1]);
-  // const details = sortedUsers[id];
-  const {details} = usePluginData('docusaurus-plugin-showcase-generator');
-
+function Showcase({details}): JSX.Element {
   const [readme, setReadme] = React.useState(null);
   const [gitBaseUrl, setGitBaseUrl] = React.useState('');
 
