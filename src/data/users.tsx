@@ -105,6 +105,15 @@ const Users: User[] = [
     tags: ['opensource', 'app', 'component'],
   },
   {
+    title: 'Tini UI',
+    description: 'TiniUI là bộ design system phục vụ cho viết ứng dụng nhanh chóng trên TiniApp.',
+    preview: 'https://salt.tikicdn.com/ts/upload/0d/19/53/aeeb9d1418c8348aa027d0335e29eb3f.png',
+    app: 'https://tiki.vn/apps/vn.tiki.miniapp.demo',
+    npm: 'https://www.npmjs.com/package/@tiki.vn/tini-ui',
+    source: 'https://github.com/tikivn/tini-ui',
+    tags: ['opensource', 'app', 'component'],
+  },
+  {
     title: 'Shopping Template',
     description: 'Template hỗ trợ store của Tiki có thể tạo được một ứng dụng shopping đơn giản bằng nền tảng Tini App',
     preview: 'https://user-images.githubusercontent.com/1713660/146023043-f50040dd-c60e-4dd4-96eb-5c3a4c5ae80e.png',
@@ -131,7 +140,7 @@ const Users: User[] = [
   },
   /*
   Pro Tip: add your site in alphabetical order.
-  Appending your site here (at the end) is more likely to produce Git conflicts.
+  Appending your app here (at the end) is more likely to produce Git conflicts.
    */
 ];
 
