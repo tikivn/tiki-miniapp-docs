@@ -105,13 +105,13 @@ const Users: User[] = [
     tags: ['opensource', 'app', 'component'],
   },
   {
-    title: 'Tini UI',
+    title: 'Tini UI Design System',
     description: 'TiniUI là bộ design system phục vụ cho viết ứng dụng nhanh chóng trên TiniApp.',
     preview: 'https://salt.tikicdn.com/ts/upload/0d/19/53/aeeb9d1418c8348aa027d0335e29eb3f.png',
     app: 'https://tiki.vn/apps/vn.tiki.miniapp.demo',
     npm: 'https://www.npmjs.com/package/@tiki.vn/tini-ui',
     source: 'https://github.com/tikivn/tini-ui',
-    tags: ['opensource', 'app', 'component'],
+    tags: ['opensource', 'component'],
   },
   {
     title: 'Shopping Template',
