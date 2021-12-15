@@ -31,6 +31,17 @@
 // Add your site to this list
 module.exports = [
   {
+    title: 'Hồi Ức Mọt Sách',
+    description:
+      'Hồi Ức Mọt Sách là ứng dụng xem lại 10 năm hành trình của người dùng đối với ngành hàng sách của Tiki.',
+    preview:
+      'https://salt.tikicdn.com/ts/miniapp/0c/ac/65/3233676439ec0f90f8720d448583876f.jpg',
+    app: 'https://tiki.vn/apps/vn.tiki.miniapp.lookback',
+    source:
+      'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/vn.tiki.miniapp.lookback/',
+    tags: ['app'],
+  },
+  {
     title: 'Tiki API Demo',
     description:
       'API Demo là ứng dụng dùng để trải nghiệm các API/Components được cung cấp trên nền tảng TiniApp.',
