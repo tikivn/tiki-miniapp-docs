@@ -12,8 +12,8 @@ import styles from './details.module.css';
 import rehypeRaw from 'rehype-raw'
 import {useLocation} from '@docusaurus/router';
 
-const TITLE = 'Code Market';
-const DESCRIPTION = 'List of open source apps and components people are building with TiniApp';
+// const TITLE = 'Code Market';
+// const DESCRIPTION = 'List of open source apps and components people are building with TiniApp';
 
 const TagComp = React.forwardRef<HTMLLIElement, Tag>(
   ({ label, color, description }, ref) => (
@@ -136,7 +136,9 @@ function ShowcaseDetails({ readme, gitBaseUrl, details }) {
 
 function Showcase(): JSX.Element {
   const location = useLocation();
-  const id = location.hash.slice(1);
+  const { search } = location;
+  const idMatches = search.match(/id=([^&]+)/);
+  const id = parseInt(idMatches && idMatches[1]);
   const details = sortedUsers[id];
 
   const [readme, setReadme] = React.useState(null);
@@ -178,7 +180,7 @@ function Showcase(): JSX.Element {
   }
 
   return (
-    <Layout title={TITLE} description={DESCRIPTION}>
+    <Layout title={details.title} description={details.description}>
       <main className="margin-vert--lg">
         <ShowcaseDetails readme={readme} gitBaseUrl={gitBaseUrl} details={details} />
       </main>
