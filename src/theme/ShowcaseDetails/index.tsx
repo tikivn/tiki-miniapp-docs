@@ -5,12 +5,10 @@ import Layout from '@theme/Layout';
 import NotFound from '@theme/NotFound';
 import GithubIcon from '@site/src/components/svgIcons/GithubIcon';
 import NpmIcon from '@site/src/components/svgIcons/NpmIcon';
-// import Tooltip from "./_components/ShowcaseTooltip";
 import {Tags, TagList, TagType, Tag} from '@site/src/data/users';
 import { sortBy } from "@site/src/utils/jsUtils";
 import styles from './index.module.css';
 import rehypeRaw from 'rehype-raw'
-import {usePluginData} from '@docusaurus/useGlobalData';
 
 const TagComp = React.forwardRef<HTMLLIElement, Tag>(
   ({ label, color, description }, ref) => (
