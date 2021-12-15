@@ -98,6 +98,7 @@ module.exports = {
     },
   },
   plugins: [
+    path.resolve(__dirname, './plugins/docusaurus-plugin-showcase-generator'),
     'docusaurus-plugin-sass',
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),

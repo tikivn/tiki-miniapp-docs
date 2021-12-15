@@ -5,15 +5,12 @@ import Layout from '@theme/Layout';
 import NotFound from '@theme/NotFound';
 import GithubIcon from '@site/src/components/svgIcons/GithubIcon';
 import NpmIcon from '@site/src/components/svgIcons/NpmIcon';
-import Tooltip from "./_components/ShowcaseTooltip";
-import {sortedUsers, Tags, TagList, TagType, Tag} from '@site/src/data/users';
+// import Tooltip from "./_components/ShowcaseTooltip";
+import {Tags, TagList, TagType, Tag} from '@site/src/data/users';
 import { sortBy } from "@site/src/utils/jsUtils";
-import styles from './details.module.css';
+import styles from './index.module.css';
 import rehypeRaw from 'rehype-raw'
-import {useLocation} from '@docusaurus/router';
-
-// const TITLE = 'Code Market';
-// const DESCRIPTION = 'List of open source apps and components people are building with TiniApp';
+import {usePluginData} from '@docusaurus/useGlobalData';
 
 const TagComp = React.forwardRef<HTMLLIElement, Tag>(
   ({ label, color, description }, ref) => (
@@ -38,14 +35,14 @@ function ShowcaseCardTag({ tags }: { tags: TagType[] }) {
         const id = `showcase_card_tag_${tagObject.tag}`;
 
         return (
-          <Tooltip
-            key={index}
-            text={tagObject.description}
-            anchorEl="#__docusaurus"
-            id={id}
-          >
-            <TagComp key={index} {...tagObject} />
-          </Tooltip>
+          // <Tooltip
+          //   key={index}
+          //   text={tagObject.description}
+          //   anchorEl="#__docusaurus"
+          //   id={id}
+          // >
+          <TagComp key={index} {...tagObject} />
+          // </Tooltip>
         );
       })}
     </>
@@ -135,11 +132,12 @@ function ShowcaseDetails({ readme, gitBaseUrl, details }) {
 }
 
 function Showcase(): JSX.Element {
-  const location = useLocation();
-  const { search } = location;
-  const idMatches = search.match(/id=([^&]+)/);
-  const id = parseInt(idMatches && idMatches[1]);
-  const details = sortedUsers[id];
+  // const location = useLocation();
+  // const { search } = location;
+  // const idMatches = search.match(/id=([^&]+)/);
+  // const id = parseInt(idMatches && idMatches[1]);
+  // const details = sortedUsers[id];
+  const {details} = usePluginData('docusaurus-plugin-showcase-generator');
 
   const [readme, setReadme] = React.useState(null);
   const [gitBaseUrl, setGitBaseUrl] = React.useState('');

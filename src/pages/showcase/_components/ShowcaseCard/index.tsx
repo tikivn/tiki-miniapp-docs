@@ -15,6 +15,13 @@ import Tooltip from "../ShowcaseTooltip";
 import { Tags, TagList, TagType, User, Tag } from "@site/src/data/users";
 import { sortBy } from "@site/src/utils/jsUtils";
 
+function convertToSlug(Text = '') {
+  return Text.toLowerCase()
+    .replace(/[^\w ]+/g, '')
+    .replace(/ +/g, '-');
+}
+
+
 const TagComp = React.forwardRef<HTMLLIElement, Tag>(
   ({ label, color, description }, ref) => (
     <li ref={ref} className={styles.tag} title={description}>
@@ -55,14 +62,14 @@ function ShowcaseCardTag({ tags }: { tags: TagType[] }) {
 const ShowcaseCard = memo(({ user = { tags: [] }, id }: { user: User }) => (
   <li key={user.title} className={`card shadow--md ${styles.cardShowCase}`}>
     <div className={clsx("card__image", styles.showcaseCardImage)}>
-      <Link href={`/showcase/details?id=${id}`}>
+      <Link href={`/showcase/${convertToSlug(user.title)}`}>
         <img src={user.preview} alt={user.title} />
       </Link>
     </div>
     <div className="card__body">
       <div className={clsx(styles.showcaseCardHeader)}>
         <h4 className={styles.showcaseCardTitle}>
-          <Link href={`/showcase/details?id=${id}`} className={styles.showcaseCardLink}>
+          <Link href={`/showcase/${convertToSlug(user.title)}`} className={styles.showcaseCardLink}>
             {user.title}
           </Link>
         </h4>
@@ -70,7 +77,7 @@ const ShowcaseCard = memo(({ user = { tags: [] }, id }: { user: User }) => (
           <FavoriteIcon svgClass={styles.svgIconFavorite} size="small" />
         )}
         <Link
-          href={`/showcase/details?id=${id}`}
+          href={`/showcase/${convertToSlug(user.title)}`}
           className={clsx(
             "button button--secondary button--sm",
             styles.showcaseCardSrcBtn
