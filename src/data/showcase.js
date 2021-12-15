@@ -39,7 +39,7 @@ module.exports = [
     app: 'https://tiki.vn/apps/vn.tiki.miniapp.lookback',
     source:
       'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/vn.tiki.miniapp.lookback/',
-    tags: ['app'],
+    tags: ['game'],
   },
   {
     title: 'Tiki API Demo',

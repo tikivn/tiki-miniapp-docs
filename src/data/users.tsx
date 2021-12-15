@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 
 import { sortBy } from "@site/src/utils/jsUtils";
-const Users = require('./showcase');
+const Users = require("./showcase");
 
 export type Tag = {
   label: string;
@@ -12,6 +12,7 @@ export type Tag = {
 export type TagType =
   | "favorite"
   | "opensource"
+  | "game"
   | "app"
   | "component"
   | "lib";
@@ -40,26 +41,33 @@ export const Tags: Record<TagType, Tag> = {
 
   // For open-source sites, a link to the source code is required
   opensource: {
-    label: "Open-Source",
-    description: "Open-Source Docusaurus sites can be useful for inspiration!",
+    label: "Open Source",
+    description: "Các ứng dụng/trò chơi được công khai mã nguồn.",
     color: "#39ca30",
   },
 
   app: {
     label: "App",
-    description: "Tiniapp associated to a commercial app!",
+    description: "Các ứng dụng trên Tini.",
     color: "#dfd545",
+  },
+
+  game: {
+    label: "Game",
+    description: "Các trò chơi phát triển trên Tini.",
+    color: "#4329A3",
   },
 
   component: {
     label: "Component",
-    description: "TiniApp components / examples which help you can build better tiniapp",
+    description:
+      "Các component hoặc ví dụ mẫu của Tini App giúp bạn xây dựng ứng dụng của mình dễ dàng hơn.",
     color: "#a44fb7",
   },
 
   lib: {
     label: "Library",
-    description: "TiniApp library which help you can build better tiniapp",
+    description: "Các thư viện hỗ trợ trong quá trình phát triển Tini App.",
     color: "#a44fb7",
   },
 };

@@ -5,29 +5,36 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, {useState, useMemo, useEffect} from 'react';
-import Layout from '@theme/Layout';
-import clsx from 'clsx';
-import FavoriteIcon from '@site/src/components/svgIcons/FavoriteIcon';
+import React, { useState, useMemo, useEffect } from "react";
+import Layout from "@theme/Layout";
+import clsx from "clsx";
+import FavoriteIcon from "@site/src/components/svgIcons/FavoriteIcon";
 import ShowcaseTagSelect, {
   readSearchTags,
-} from './_components/ShowcaseTagSelect';
+} from "./_components/ShowcaseTagSelect";
 import ShowcaseFilterToggle, {
   Operator,
   readOperator,
-} from './_components/ShowcaseFilterToggle';
-import ShowcaseCard from './_components/ShowcaseCard';
-import {sortedUsers, Tags, TagList, User, TagType} from '@site/src/data/users';
-import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
-import {useLocation} from '@docusaurus/router';
+} from "./_components/ShowcaseFilterToggle";
+import ShowcaseCard from "./_components/ShowcaseCard";
+import {
+  sortedUsers,
+  Tags,
+  TagList,
+  User,
+  TagType,
+} from "@site/src/data/users";
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
+import { useLocation } from "@docusaurus/router";
 
-import ShowcaseTooltip from './_components/ShowcaseTooltip';
-import styles from './styles.module.css';
+import ShowcaseTooltip from "./_components/ShowcaseTooltip";
+import styles from "./styles.module.css";
 
-const TITLE = 'Code Market';
-const DESCRIPTION = 'List of open source apps and components people are building with TiniApp';
+const TITLE = "Tini Showcase";
+const DESCRIPTION =
+  "List of apps, components and libraries people are building with Tini App";
 const EDIT_URL =
-  'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/showcase.js';
+  "https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/showcase.js";
 
 type UserState = {
   scrollTopPosition: number;
@@ -35,13 +42,13 @@ type UserState = {
 };
 
 function restoreUserState(userState: UserState | null) {
-  const {scrollTopPosition, focusedElementId} = userState ?? {
+  const { scrollTopPosition, focusedElementId } = userState ?? {
     scrollTopPosition: 0,
     focusedElementId: undefined,
   };
   // @ts-expect-error: if focusedElementId is undefined it returns null
   document.getElementById(focusedElementId)?.focus();
-  window.scrollTo({top: scrollTopPosition});
+  window.scrollTo({ top: scrollTopPosition });
 }
 
 export function prepareUserState(): UserState | undefined {
@@ -58,7 +65,7 @@ export function prepareUserState(): UserState | undefined {
 function filterUsers(
   users: User[],
   selectedTags: TagType[],
-  operator: Operator,
+  operator: Operator
 ) {
   if (selectedTags.length === 0) {
     return users;
@@ -67,7 +74,7 @@ function filterUsers(
     if (user.tags.length === 0) {
       return false;
     }
-    if (operator === 'AND') {
+    if (operator === "AND") {
       return selectedTags.every((tag) => user.tags.includes(tag));
     } else {
       return selectedTags.some((tag) => user.tags.includes(tag));
@@ -78,15 +85,15 @@ function filterUsers(
 function useFilteredUsers() {
   const selectedTags = useSelectedTags();
   const location = useLocation<UserState>();
-  const [operator, setOperator] = useState<Operator>('OR');
+  const [operator, setOperator] = useState<Operator>("OR");
   useEffect(() => {
     setOperator(readOperator(location.search));
     restoreUserState(location.state);
   }, [location]);
-  return useMemo(
-    () => filterUsers(sortedUsers, selectedTags, operator),
-    [selectedTags, operator],
-  );
+  return useMemo(() => filterUsers(sortedUsers, selectedTags, operator), [
+    selectedTags,
+    operator,
+  ]);
 }
 
 function useSelectedTags() {
@@ -114,7 +121,8 @@ function ShowcaseHeader() {
         className="button button--primary"
         href={EDIT_URL}
         target="_blank"
-        rel="noreferrer">
+        rel="noreferrer"
+      >
         🙏 Please add yours
       </a>
     </section>
@@ -125,18 +133,18 @@ function ShowcaseFilters() {
   const filteredUsers = useFilteredUsers();
   return (
     <section className="container margin-top--l margin-bottom--lg">
-      <div className={clsx('margin-bottom--sm', styles.filterCheckbox)}>
+      <div className={clsx("margin-bottom--sm", styles.filterCheckbox)}>
         <div>
           <h2>Filters</h2>
           <span>{`(${filteredUsers.length} site${
-            filteredUsers.length > 1 ? 's' : ''
+            filteredUsers.length > 1 ? "s" : ""
           })`}</span>
         </div>
         <ShowcaseFilterToggle />
       </div>
       <ul className={styles.checkboxList}>
         {TagList.map((tag, i) => {
-          const {label, description, color} = Tags[tag];
+          const { label, description, color } = Tags[tag];
           const id = `showcase_checkbox_id_${tag}`;
 
           return (
@@ -144,13 +152,14 @@ function ShowcaseFilters() {
               <ShowcaseTooltip
                 id={id}
                 text={description}
-                anchorEl="#__docusaurus">
+                anchorEl="#__docusaurus"
+              >
                 <ShowcaseTagSelect
                   tag={tag}
                   id={id}
                   label={label}
                   icon={
-                    tag === 'favorite' ? (
+                    tag === "favorite" ? (
                       <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
                     ) : (
                       <span
@@ -158,7 +167,7 @@ function ShowcaseFilters() {
                           backgroundColor: color,
                           width: 10,
                           height: 10,
-                          borderRadius: '50%',
+                          borderRadius: "50%",
                           marginLeft: 8,
                         }}
                       />
@@ -175,10 +184,10 @@ function ShowcaseFilters() {
 }
 
 const favoriteUsers = sortedUsers.filter((user) =>
-  user.tags.includes('favorite'),
+  user.tags.includes("favorite")
 );
 const otherUsers = sortedUsers.filter(
-  (user) => !user.tags.includes('favorite'),
+  (user) => !user.tags.includes("favorite")
 );
 
 function ShowcaseCards() {
@@ -223,7 +232,9 @@ function ShowcaseCards() {
                 <ShowcaseCard
                   key={user.title}
                   user={user}
-                  id={sortedUsers.findIndex((item) => JSON.stringify(item) === JSON.stringify(user) )}
+                  id={sortedUsers.findIndex(
+                    (item) => JSON.stringify(item) === JSON.stringify(user)
+                  )}
                 />
               ))}
             </ul>
@@ -236,7 +247,9 @@ function ShowcaseCards() {
               <ShowcaseCard
                 key={user.title}
                 user={user}
-                id={sortedUsers.findIndex((item) => JSON.stringify(item) === JSON.stringify(user) )}
+                id={sortedUsers.findIndex(
+                  (item) => JSON.stringify(item) === JSON.stringify(user)
+                )}
               />
             ))}
           </ul>
