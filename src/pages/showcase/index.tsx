@@ -27,7 +27,7 @@ import styles from './styles.module.css';
 const TITLE = 'Code Market';
 const DESCRIPTION = 'List of open source apps and components people are building with TiniApp';
 const EDIT_URL =
-  'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/users.tsx';
+  'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/showcase.js';
 
 type UserState = {
   scrollTopPosition: number;
