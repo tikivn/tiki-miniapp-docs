@@ -4,5 +4,5 @@
   <p>
     10 năm với sách, bạn, và TIKI
   </p>
-  <img src="https://salt.tikicdn.com/ts/upload/24/41/de/533b37b1ab690d0fe4d08221812b2d43.png" height="500" />
+  <img src="https://user-images.githubusercontent.com/76194256/146296543-711b6bf6-c5ac-4ff3-829b-d41b0aae50ec.png" height="500" />
 </div>
