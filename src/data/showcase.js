@@ -42,6 +42,17 @@ module.exports = [
     tags: ['game'],
   },
   {
+    title: 'Hexa: Reach the Start',
+    description: 'Trò chơi ghép hình',
+    preview: 'https://user-images.githubusercontent.com/87349335/146311639-2ac445a4-c249-48f3-9fc7-7fd290c0e152.jpg',
+    app: 'https://tiki.vn/apps/abi.hexa',
+    source:
+      'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/abi.hexa',
+    tags: ['game'],
+  },
+
+
+  {
     title: 'Tiki API Demo',
     description:
       'API Demo là ứng dụng dùng để trải nghiệm các API/Components được cung cấp trên nền tảng TiniApp.',
