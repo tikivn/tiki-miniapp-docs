@@ -10,7 +10,7 @@ Mini app hay còn được biết đến với cái tên mini program đang th�
 
 Như đa số mọi người đều biết, mini app là ứng dụng tồn tại và hoạt động bên trong một super app - một ứng dụng di động chạy trên hệ điều hành iOS hoặc Android. Nhờ đặc điểm này mà mini app mang đến không biết bao nhiêu lợi ích cho tất cả các bên - nhà xây dựng super app, nhà phát triển mini app và người dùng đầu cuối.
 
-Đối với nhà phát triển mini app, họ nghiễm nhiên sở hữu một ngôn ngữ đa nền mà chỉ cần xây dựng một codebase là đủ. Vì mini app "đồng hành" cùng với super app chứ không phải hệ điều hành; tức là super app mang theo các mini app của mình đến tất cả hệ điều hành mà super app hiện diện.
+Đối với nhà phát triển mini app, họ nghiễm nhiên sở hữu một ngôn ngữ đa nền mà chỉ cần xây dựng một codebase là đủ. Vì mini app "đồng hành" cùng với super app chứ không phải hệ điều hành; tức là super app đem theo các mini app của mình đến tất cả hệ điều hành mà super app hiện diện.
 
 Việc phát triển mini app thường nhẹ nhàng hơn so với native app. Bởi lẽ mini app có thể tận dụng những tính năng có sẵn trên super app như xác thực, thanh toán, … . Thêm vào đó, framework dành cho mini app luôn tối ưu hoá. Chúng giúp giảm đáng kể thời gian và công sức phải bỏ ra để hoàn thiện một ứng dụng. Nhờ đó nhà phát triển ứng dụng thể tập trung vào việc sáng tạo, nâng cấp sản phẩm thường xuyên hơn.
 
