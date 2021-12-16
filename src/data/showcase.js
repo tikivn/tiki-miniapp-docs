@@ -31,6 +31,15 @@
 // Add your site to this list
 module.exports = [
   {
+    title: 'Hexa: Reach the Start',
+    description: 'Trò chơi ghép hình',
+    preview: 'https://user-images.githubusercontent.com/87349335/146311639-2ac445a4-c249-48f3-9fc7-7fd290c0e152.jpg',
+    app: 'https://tiki.vn/apps/abi.hexa',
+    source:
+      'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/abi.hexa',
+    tags: ['game'],
+  },
+  {
     title: 'Hồi Ức Mọt Sách',
     description:
       'Hồi Ức Mọt Sách là ứng dụng xem lại 10 năm hành trình của người dùng đối với ngành hàng sách của Tiki.',
@@ -42,15 +51,14 @@ module.exports = [
     tags: ['game'],
   },
   {
-    title: 'Hexa: Reach the Start',
-    description: 'Trò chơi ghép hình',
-    preview: 'https://user-images.githubusercontent.com/87349335/146311639-2ac445a4-c249-48f3-9fc7-7fd290c0e152.jpg',
-    app: 'https://tiki.vn/apps/abi.hexa',
+    title: 'Merge Planets',
+    description: 'Hợp nhất các hành tinh',
+    preview: 'https://user-images.githubusercontent.com/87349335/146346144-e9967980-edd6-4f86-a672-e858dfea5572.png',
+    app: 'https://tiki.vn/apps/abi.mergePlanets2048',
     source:
-      'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/abi.hexa',
+      'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/abi.mergePlanets2048',
     tags: ['game'],
   },
-
 
   {
     title: 'Tiki API Demo',
