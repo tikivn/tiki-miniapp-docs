@@ -386,7 +386,6 @@ export class QRCode extends React.Component {
       importGithubFolder,
     } = this.props;
     const size = +this.props.size + 2 * +this.props.quietZone;
-    console.log('showImport :>> ', showImport);
 
     return (
       <>

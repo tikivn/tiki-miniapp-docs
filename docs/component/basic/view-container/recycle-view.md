@@ -4,7 +4,8 @@ title: recycle-view
 
 ## Giới thiệu
 
-`recycle-view` dùng để hiển thị một danh sách dữ liệu lớn, giúp tối ưu performance khi chỉ render một số lượng các item cần thiết trong phạm vi nhìn thấy của người dùng.
+- `recycle-view` dùng để hiển thị một danh sách dữ liệu lớn, giúp tối ưu performance khi chỉ render một số lượng các item cần thiết trong phạm vi nhìn thấy của người dùng.
+- `recycle-view` vẫn còn đang trong giai đoạn phát triển, chưa phải là bản chính thức nên có thể sẽ có lỗi phát sinh trong quá trình sử dụng.
 
 ## Quét mã để trải nghiệm
 
