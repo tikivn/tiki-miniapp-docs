@@ -95,16 +95,18 @@ Page({
 
 ## API Params
 
-| Thuộc tính       | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                             |
-| ---------------- | ---------------- | :------: | ----------------------------------------------------------------- |
-| title            | String           |          | Title của Option Selector                                         |
-| optionsOne       | Array of objects |    ✓     | Danh sách tùy chọn.                                               |
-| optionsTwo       | Array of objects |          | Danh sách tùy chọn thứ 2.                                         |
-| selectedOneIndex | number           |          | Tùy chọn thứ nhất được chọn theo mặc định. Giá trị mặc định là 0. |
-| selectedTwoIndex | number           |          | Tùy chọn thứ 2 được chọn theo mặc định. Giá trị mặc định là 0.    |
-| positiveString   | String           |          | Text của button bên phải. Mặc định là Xác nhận.                   |
-| negativeString   | String           |          | Text của button bên trái. Mặc định là Hủy.                        |
-| success          | Function         |          | Callback function khi chọn thành công.                            |
+| Thuộc tính       | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                  |
+| ---------------- | ---------------- | :------: | ---------------------------------------------------------------------- |
+| title            | String           |          | Title của Option Selector                                              |
+| optionsOne       | Array of objects |    ✓     | Danh sách tùy chọn.                                                    |
+| optionsTwo       | Array of objects |          | Danh sách tùy chọn thứ 2.                                              |
+| selectedOneIndex | number           |          | Tùy chọn thứ nhất được chọn theo mặc định. Giá trị mặc định là 0.      |
+| selectedTwoIndex | number           |          | Tùy chọn thứ 2 được chọn theo mặc định. Giá trị mặc định là 0.         |
+| positiveString   | String           |          | Text của button bên phải. Mặc định là Xác nhận.                        |
+| negativeString   | String           |          | Text của button bên trái. Mặc định là Hủy.                             |
+| success          | Function         |          | Callback function khi chọn thành công.                                 |
+| fail             | Function         |          | Callback function khi việc thay đổi bất thành.                         |
+| complete         | Function         |          | Callback function khi gọi API hoàn tất bất kể thành công hay thất bại. |
 
 ### Giá trị trong success callback
 
