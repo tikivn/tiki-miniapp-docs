@@ -59,7 +59,24 @@ module.exports = [
       'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/abi.mergePlanets2048',
     tags: ['game'],
   },
-
+  {
+    title: 'Rescue the Lover',
+    description: 'Hành trình của chàng trai cứu cô bạn gái khỏi băng nhóm bắt cóc tống tiền',
+    preview: 'https://user-images.githubusercontent.com/87349335/146406073-16d203c2-63b9-40b9-b3e2-574aa212e77c.png',
+    app: 'https://tiki.vn/apps/abi.rescure',
+    source:
+      'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/abi.rescure',
+    tags: ['game'],
+  },
+  {
+    title: 'Stack Art 3D',
+    description: 'Trò chơi ghép hình puzzle',
+    preview: 'https://user-images.githubusercontent.com/87349335/146391406-38e79e38-931a-4603-a590-9f3f3dfe6cf3.png',
+    app: 'https://tiki.vn/apps/abi.stackart3d',
+    source:
+      'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/abi.stackart3d',
+    tags: ['game'],
+  },
   {
     title: 'Tiki API Demo',
     description:
@@ -82,6 +99,26 @@ module.exports = [
     source: 'https://github.com/tikivn/tini-ui',
     tags: ['opensource', 'component'],
   },
+  {
+    title: 'Troll Master',
+    description: 'Động não và thử thách khả năng sáng tạo',
+    preview: 'https://user-images.githubusercontent.com/87349335/146404505-8d3210bc-8ee5-47b2-9123-ed1e7f389ce5.png',
+    app: 'https://tiki.vn/apps/abi.trollmaster',
+    source:
+      'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/abi.trollmaster',
+    tags: ['game'],
+  },
+  {
+    title: 'Troll Master 2',
+    description: 'Trò chơi vui nhộn kích thích sự sáng tạo',
+    preview: 'https://user-images.githubusercontent.com/87349335/146392978-c7c20c29-15a2-44e5-8316-61422ca8f87e.png',
+    app: 'https://tiki.vn/apps/abi.trollmaster2',
+    source:
+      'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/abi.trollmaster2',
+    tags: ['game'],
+  },
+
+
   {
     title: 'Shopping Template',
     description:
