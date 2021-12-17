@@ -6,6 +6,8 @@ keywords: [mini app, super app, nhà phát triển, phần mềm di động]
 tags: [mini program, tiểu ứng dụng, siêu ứng dụng]
 ---
 
+<img src="/img/Blog_Miniapp01.png" style={{ margin: '0 auto', display: 'flex' }} width="600"/>
+
 Mini app hay còn được biết đến với cái tên mini program đang thổi luồng sinh khí mới vào ngành di động. Người dùng đang dần quen với việc sử dụng các tiện ích (do bên thứ 3 cung cấp) trong các ứng dụng di động; các tiện ích như thế không đâu xa lạ chính là mini app. Nhiều ông lớn trong ngành công nghệ không muốn bị tụt hậu trong cuộc chơi, đã hay đang chuẩn bị bắt tay vào xây dựng hệ sinh thái mini app cho riêng mình. Các doanh nghiệp nhỏ vừa phát hành ứng dụng dưới dạng mini app bên cạnh native app; thậm chí có doanh nghiệp chỉ làm mini app mà thôi.
 
 Như đa số mọi người đều biết, mini app là ứng dụng tồn tại và hoạt động bên trong một super app - một ứng dụng di động chạy trên hệ điều hành iOS hoặc Android. Nhờ đặc điểm này mà mini app mang đến không biết bao nhiêu lợi ích cho tất cả các bên - nhà xây dựng super app, nhà phát triển mini app và người dùng đầu cuối.
