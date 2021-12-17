@@ -30,6 +30,16 @@ Bạn cần phải có Nhà phát triển loại công ty/doanh nghiệp để c
 | [my.getLocation](/docs/api/geo/location/get-location)   | Lấy thông tin vị trí địa lí hiện tại của thiết bị.                                                                                      |
 | [my.showLoading](/docs/api/ui/feedback/show-loading)    | Hiển thị loading.                                                                                                                       |
 
+### Các thuộc tính
+
+| Property       | Type     | Default Value | Description                                 |
+| -------------- | -------- | ------------- | ------------------------------------------- |
+| src            | string   |               | Đường dẫn đến trang web của bạn             |
+| progress       | boolean  | true          | Hiển thị progress hay không                 |
+| progressHeight | number   | 3             | Chiều cao của progress                      |
+| progressColor  | string   | #1a94ff       | Mã màu của progress                         |
+| onMessage      | function |               | Được gọi khi có sự kiện được gửi từ webview |
+
 ## Sample Code
 
 **index.txml**
