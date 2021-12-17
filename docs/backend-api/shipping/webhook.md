@@ -20,21 +20,21 @@ Tini App dùng webhook để notify tới ứng dụng backend của developer k
 | reason_code     | string       | mã code lý do giao hàng thất bại                      |
 | driver          | object       | thông tin tài xế giao hàng                            |
 
-***Lưu ý:***
+**_Lưu ý:_**
 
 > Ở một vài trạng thái sẽ không có thông tin tài xế ví dụ allocating, canceled. Xem thêm mô tả trạng thái [tại đây](./status_flow).
-> 
+>
 > Mô tả các mã code lý do giao hàng thất bại:
 
-  | Code              | Description                  |
-  | ----------------- | ---------------------------- |
-  | no_longer_needed  | Khách hàng không còn nhu cầu |
-  | virtual_customer  | Khách hàng ảo                |
-  | canceled_by_3pl   | Huỷ bởi đối tác              |
-  | driver_not_found  | Không tìm thấy tài xế        |
-  | package_in_return | Đang trả kiện hàng           |
-  | package_returned  | Đã trả kiện hàng             |
-  | undefined         | Lý do không xác định         |
+| Code              | Description                  |
+| ----------------- | ---------------------------- |
+| no_longer_needed  | Khách hàng không còn nhu cầu |
+| virtual_customer  | Khách hàng ảo                |
+| canceled_by_3pl   | Huỷ bởi đối tác              |
+| driver_not_found  | Không tìm thấy tài xế        |
+| package_in_return | Đang trả kiện hàng           |
+| package_returned  | Đã trả kiện hàng             |
+| undefined         | Lý do không xác định         |
 
 ## Response Example
 
@@ -60,3 +60,15 @@ Tini App dùng webhook để notify tới ứng dụng backend của developer k
     }
 }
 ```
+
+## Webhook Signature
+
+Với mỗi webhook event, Tini App chèn thông tin signature thông qua các header sau:
+
+| Header              | Description                                   |
+| ------------------- | --------------------------------------------- |
+| X-Tiniapp-Timestamp | Thời gian gọi request, tính bằng milliseconds |
+| X-Tiniapp-Client-Id | Client id được cấp khi tạo app                |
+| X-Tiniapp-Signature | Signature được tính dựa trên request body     |
+
+Việc này cho phép đối tác xác thực được webhook event được gửi từ Tini App. Xem thêm việc tính toán và xác thực signature [tại đây](../platform-api/calculate-signature)
