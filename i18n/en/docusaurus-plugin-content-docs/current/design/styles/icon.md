@@ -63,5 +63,10 @@ The line icon set is our main icon set. Line icons are used as:
 
 Icons have been designed to work in four sizes: 16px, 20px, 24px, and 32px.
 
-- Icons should be scaled according to the text size.
-- Do center-align icons when they’re next to the text.
+Exceptional sizes: depends on the design, some icons can be bigger than 32px but shouldn't smaller than 16px
+
+## Usage guidelines
+### Be consistent
+Stroke should be consistent
+
+<img src="../../../img/foundation/7-icon-1.png" width="720"/>

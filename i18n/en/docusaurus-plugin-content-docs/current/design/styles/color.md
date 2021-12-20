@@ -2,65 +2,78 @@
 title: Colors
 ---
 
-We use color to visually communicate information, functions in our experiences.
+We use colors as a tool to communicate information and functions.
 
-## The Tini color theme
+## Contrast
+We aim to meet WCAG AA standards for color contrast ratio.
 
-The color theme includes default colors for:
+| Element                                          | Contrast ratio  |
+|:-------------------------------------------------|:----------------|
+| Large text (above 18px or 24px with Light style) | 3:1             |
+| Standard text                                    | 4.5:1           |
 
-- Primary color (your brand color) for button, navigation bar.
-- Additional UI colors, such as colors for backgrounds, surfaces, errors, typography, and iconography.
+Tools to check contrast ratio:
 
-All of these colors can be customized for your app.
+- Web: [Webaim](https://webaim.org/resources/contrastchecker/)
+- Figma: [Able - Friction free accessibility](https://www.figma.com/community/plugin/734693888346260052/Able-%E2%80%93-Friction-free-accessibility)
 
-import {Color} from '@site/src/components/Design';
-import vi from '@site/src/components/Design/Color/global-vi';
-import en from '@site/src/components/Design/Color/global-en';
-import ReactTooltip from "react-tooltip";
+## Color system
+We use design tokens for our color system. Read more about design tokens [here](https://developers.tiki.vn/en/docs/design/styles/design-tokens)
 
-<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />
-<ReactTooltip />
+### Theme
+Theme is a collection of colors that's used to create a color scheme which defines the overall look and feel of a product or a platform.
 
-## Accessibility
+Tini design system has a Light theme and a Dark theme.
 
-Using various forms of contrast is the most important consideration when making user-friendly color and interface choices. Awareness of standards and best practices is the key to accessible color selection.
+| Theme       | Link                                                                                             |
+|:------------|:-------------------------------------------------------------------------------------------------|
+| Light       | [Figma community](https://www.figma.com/community/file/958198956095698455/Tini-design-system)    |
+| Dark        | *WIP*                                                                                |
 
-The color families in each palette contain ten values from 10 to 100. White and Black sit outside those values.
+### Global colors
+Theme is a collection of colors that's used to create a color scheme which defines the overall look and feel of a product or a platform.
 
-Meet WCAG AA accessibility requirements for minimum contrast.
+Tini design system has a Light theme and a Dark theme.
 
-- Black text is WCAG AA accessible in colors ranging from 10 to 50. White text is accessible in colors from 60 to 100.
-- Small text is any size below 24px and requires a 4.5:1 contrast ratio.
-- Large text is anything above 24px and requires a 3:1 contrast ratio.
+Example: Neutral color palette of Light theme
 
-## Color tokens
+<img src="../../../img/foundation/2-color-1.png" width="360"/>
 
-Our color tokens are a foundational part of our design system.
+### Alias colors
+Alias colors are dynamic colors with contexts (purposes, when and where to use).
 
-### Text
+Dynamic colors mean you can change the values of the alias colors depending on your context(s). For example, you can switch color-alias-brand from color-global-blue60 to color-global-red60
 
-import textVi from '@site/src/components/Design/Color/text-vi';
-import textEn from '@site/src/components/Design/Color/text-en';
+<img src="../../../img/foundation/1-token-6.png" width="480px"/>
 
-<Color color={{ name: 'gray', count: 13 }} en={textEn} vi={textVi} direction="horizontal" />
+#### Alias colors' contexts
 
-### Icon
+| Token | Context |
+|:---|:---|
+| color-alias-brand | Your product brand color |
+| color-alias-on-brand | Any content (text, icon, border, etc.) that sits on top of color-alias-brand  |
+| color-alias-positive | Provide positive meaning (successful, affirmative) |
+| color-alias-on-positive | Any content (text, icon, border, etc.) that sits on top of color-alias-positive |
+| color-alias-negative | Provide negative meaning (error) |
+| color-alias-on-negative | Any content (text, icon, border, etc.) that sits on top of color-alias-negative |
+| color-alias-theme | The base color of the theme, usually used for backgrounds, borders |
+| color-alias-theme-variant | A variant of the base color of the theme, usually a little bit darker than color-alias-theme |
+| color-alias-primary-on-theme | Primary content that sits on top of color-alias-theme |
+| color-alias-secondary-on-theme | Secondary content that sits on top of color-alias-theme |
+| color-alias-reverse-theme | The reverse of the base color of the theme, we don't use dark or light because it may confuse with dark theme and light theme |
+| color-alias-primary-on-reverse-theme | Primary content that sits on top of color-alias-reverse-theme |
+| color-alias-secondary-on-reverse-theme | Secondary content that sits on top of color-alias-reverse-theme |
+| color-alias-disabled | Hence the name, used for a disabled state (usually texts, icons) |
+| color-alias-disabled-variant | Lighter variant of color-alias-disabled (usually used for backgrounds, borders) |
+| color-alias-skeleton | Skeleton loading |
+| color-alias-outline | Used for borders, lines, dividers |
+| color-alias-outline-variant | Lighter variant of color-alias-outline |
+| color-alias-outline-overlay | Transparent variant of color-alias-outline |
 
-import iconVi from '@site/src/components/Design/Color/icon-vi';
-import iconEn from '@site/src/components/Design/Color/icon-en';
+### Component specific colors
+Component specific colors are the colors of elements that comprise a component. Component specific colors are inherited from Alias colors whenever possible, but not a must, if there's no suitable Alias color, they can inherit Global colors.
 
-<Color color={{ name: 'gray', count: 13 }} en={iconEn} vi={iconVi} direction="horizontal" />
+Example:
 
-### Border
+<img src="../../../img/foundation/2-color-2.png" width="860"/>
 
-import borderVi from '@site/src/components/Design/Color/border-vi';
-import borderEn from '@site/src/components/Design/Color/border-en';
-
-<Color color={{ name: 'gray', count: 13 }} en={borderEn} vi={borderVi} direction="horizontal" />
-
-### Background
-
-import backgroundVi from '@site/src/components/Design/Color/background-vi';
-import backgroundEn from '@site/src/components/Design/Color/background-en';
-
-<Color color={{ name: 'gray', count: 13 }} en={backgroundEn} vi={backgroundVi} direction="horizontal" />

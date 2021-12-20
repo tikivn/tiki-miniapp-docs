@@ -38,7 +38,7 @@ Bộ icon dạng nét là bộ icon sử dụng chính trong Tini. Icon nét đ�
 #### Kỹ thuật
 
 - Độ dày nét 2px.
-- Bo góc 2px khi có thể.
+- Bo góc 2px khi có thể, bo góc có thể lớn hơn tùy từng icon 
 - Bo tròn nét cuối.
 
 ### Dạng mảng
@@ -53,7 +53,7 @@ Bộ icon dạng nét là bộ icon sử dụng chính trong Tini. Icon nét đ�
 #### Kỹ thuật
 
 - Hình dạng phải rõ ràng, theo các khối hình học đơn giản.
-- Bo góc 2px khi có thể.
+- Bo góc 2px khi có thể, bo góc có thể lớn hơn tùy từng icon 
 
 ---
 
@@ -61,5 +61,9 @@ Bộ icon dạng nét là bộ icon sử dụng chính trong Tini. Icon nét đ�
 
 Các icon đã được thiết kế để hoạt động ở bốn kích thước sau: 16px, 20px, 24px và 32px.
 
-- Các icon nên được chia tỷ lệ theo kích thước văn bản.
-- Canh giữa về chiều cao giữa các icon và văn bản khi chúng ở bên cạnh nhau.
+Icon có thể lớn hơn 32px nhưng hạn chế nhỏ hơn 16px
+
+## Cách dùng
+### Nét của icon nên đồng nhất
+
+<img src="/img/foundation/7-icon-1.png" width="720"/>
