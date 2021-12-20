@@ -106,7 +106,7 @@ Page({
 | list       | Array of objects |    ✓     | Danh sách các mục tùy chọn. Vui lòng tham khảo bảng đối tượng danh sách bên dưới. |
 | suggest    | String           |          | Text gợi ý lựa chọn, Mặc định là "Vui lòng chọn".                                 |
 | success    | Function         |          | Callback function khi chọn thành công.                                            |
-| fail       | Function         |          | Callback function khi việc thay đổi bất thành.                                    |
+| fail       | Function         |          | Callback function khi thất bại.                                                   |
 | complete   | Function         |          | Callback function khi gọi API hoàn tất bất kể thành công hay thất bại.            |
 
 ### Giá trị trong list
