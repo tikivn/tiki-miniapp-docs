@@ -4,63 +4,71 @@ title: Màu sắc
 
 Chúng tôi sử dụng màu sắc để truyền đạt thông tin một cách trực quan, các chức năng trong trải nghiệm của chúng tôi.
 
-## Hệ thống màu của Tini
+## Độ tương phản
+Chúng tôi tuân theo tiêu chuẩn AA của WCAG cho độ tương phản.
 
-Hệ thống màu bao gồm những thành phần màu như sau
+| Yếu tố                                           | Độ tương phản   |
+|:-------------------------------------------------|:----------------|
+| Chữ lớn (trên 18px hoặc 24px với Light style)    | 3:1             |
+| Chữ thường                                       | 4.5:1           |
 
-- Màu chính (màu thương hiệu của ứng dụng) thường dành cho những yếu tố cần bắt mắt như hệ thống nút, thanh điều hướng.
-- Màu phụ, như là màu sắc cho nền, chữ, icon và các trạng thái trong thiết kế
+Công cụ dùng để kiểm tra độ tương phản:
 
-Các màu sắc đều có thể tùy chỉnh dựa theo ý đồ thiết kế của bạn.
+- Web: [Webaim](https://webaim.org/resources/contrastchecker/)
+- Figma: [Able - Friction free accessibility](https://www.figma.com/community/plugin/734693888346260052/Able-%E2%80%93-Friction-free-accessibility)
 
-import {Color} from '@site/src/components/Design';
-import vi from '@site/src/components/Design/Color/global-vi';
-import en from '@site/src/components/Design/Color/global-en';
-import ReactTooltip from "react-tooltip";
+## Hệ thống màu sắc
+Chúng tôi sử dụng Token cho hệ thống màu. Xem thêm về token tại [đây](https://developers.tiki.vn/docs/design/styles/design-tokens)
 
-<Color color={{ name: 'gray', count: 13 }} en={en} vi={vi} direction="horizontal" />
-<ReactTooltip />
+### Theme
+Theme là hệ thống những màu được dùng để tạo ra tông màu chủ đạo của sản phẩm.
+Tini có Light theme (theme màu sáng) và Dark theme (theme màu tối - đang phát triển)
 
-## Khả năng sử dụng
+| Theme       | Link                                                                                             |
+|:------------|:-------------------------------------------------------------------------------------------------|
+| Light       | [Figma community](https://www.figma.com/community/file/958198956095698455/Tini-design-system)    |
+| Dark        | *Đang phát triển*                                                                                |
 
-Sử dụng các dạng tương phản khác nhau là điều quan trọng nhất cần cân nhắc khi đưa ra lựa chọn màu sắc và giao diện thân thiện với người dùng. Nhận thức về các tiêu chuẩn và thực hành tốt nhất là chìa khóa để lựa chọn màu sắc dễ tiếp cận.
+### Màu Global
+Màu Global là những palette màu được tạo sẵn trong Tini design system. Tùy thuộc vào theme mà một token màu Global có thể có giá trị (mã Hex, rgb) khác nhau. Giá trị màu Global không được thay đổi
 
-Các màu trong mỗi bảng màu chứa mười giá trị được đánh số từ 10 đến 100. Trắng và Đen nằm ngoài các giá trị đó.
+Ví dụ: Palette màu trung tính của Light theme
 
-Đáp ứng các yêu cầu của WCAG AA để có độ tương phản tối thiểu.
+<img src="/img/foundation/2-color-1.png" width="360"/>
 
-- Văn bản màu xám đen theo quy chuẩn của WCAG AA nằm trong vùng màu từ 10 đến 50. Văn bản màu trắng nằm trên mảng có vùng màu từ 60 đến 100.
-- Văn bản nhỏ dưới 24px phải có tỷ lệ tương phản là 4.5:1.
-- Văn bản lớn trên 24px phải có tỷ lệ tương phản là 3:1.
+### Màu Alias
+Màu Alias là những màu có mục đích, hoàn cảnh sử dụng, màu Alias có giá trị thừa hưởng từ màu Global. Giá trị màu Alias có thể thay đổi tùy thuộc vào yêu cầu của sản phẩm.
 
-## Color tokens
+<img src="/img/foundation/1-token-6.png" width="480px"/>
 
-Các color tokens là một phần nền tảng trong hệ thống thiết kế của Tini.
+#### Mục đích, hoàn cảnh sử dụng của màu Alias
 
-### Màu của văn bản
+| Token | Hoàn cảnh, mục đích sử dụng |
+|:---|:---|
+| color-alias-brand | Màu brand của sản phẩm |
+| color-alias-on-brand | Màu cho các nội dung (chữ, icon, v.v.) được sử dụng trên nền có màu brand  |
+| color-alias-positive | Màu mang tính tích cực |
+| color-alias-on-positive | Màu cho các nội dung (chữ, icon, v.v.) được sử dụng trên nền có màu tích cực |
+| color-alias-negative | Màu mang tính tiêu cực |
+| color-alias-on-negative | Màu cho các nội dung (chữ, icon, v.v.) được sử dụng trên nền có màu tiêu cực |
+| color-alias-theme | Màu theme chính của sản phẩm (vd Light theme thì màu trắng là màu theme chính), chủ yếu dùng cho nền (background) |
+| color-alias-theme-variant | Màu theme phụ đậm hơn màu theme chính |
+| color-alias-primary-on-theme | Màu chính cho các nội dung (chữ, icon, v.v.) được sử dụng trên nền có màu theme |
+| color-alias-secondary-on-theme | Màu phụ cho các nội dung (chữ, icon, v.v.) được sử dụng trên nền có màu theme, nhạt hơn màu chính |
+| color-alias-reverse-theme | Màu theme tương phản với màu theme chính, được sử dụng trong một số trường hợp đặc biệt. Chúng tôi không dùng Light, Dark trong tên token để tránh nhầm với Light theme, Dark theme |
+| color-alias-primary-on-reverse-theme | Màu chính cho các nội dung (chữ, icon, v.v.) được sử dụng trên nền có màu theme tương phản |
+| color-alias-secondary-on-reverse-theme | Màu phụ cho các nội dung (chữ, icon, v.v.) được sử dụng trên nền có màu theme tương phản |
+| color-alias-disabled | Màu disabled, thường dùng cho chữ, icon |
+| color-alias-disabled-variant | Màu disabled nhạt hơn, thường dùng cho nền, viền |
+| color-alias-skeleton | Màu skeleton loading |
+| color-alias-outline | Màu dùng cho viền |
+| color-alias-outline-variant | Màu dùng cho viền |
+| color-alias-outline-overlay | Màu dùng cho viền, có độ trong suốt để tệp với nền |
 
-import textVi from '@site/src/components/Design/Color/text-vi';
-import textEn from '@site/src/components/Design/Color/text-en';
+### Màu Component specific
+Màu Component specific là màu của các thành phần cấu tạo nên một component. Giá trị của màu component specific thừa hưởng từ màu Alias nếu có thể, nếu ko có màu Alias thích hợp thì có thể thừa hưởng từ màu Global
 
-<Color color={{ name: 'gray', count: 13 }} en={textEn} vi={textVi} direction="horizontal" />
+Ví dụ về màu Component specific của một dạng button
 
-### Màu của icon
+<img src="/img/foundation/2-color-2.png" width="860"/>
 
-import iconVi from '@site/src/components/Design/Color/icon-vi';
-import iconEn from '@site/src/components/Design/Color/icon-en';
-
-<Color color={{ name: 'gray', count: 13 }} en={iconEn} vi={iconVi} direction="horizontal" />
-
-### Màu của viền
-
-import borderVi from '@site/src/components/Design/Color/border-vi';
-import borderEn from '@site/src/components/Design/Color/border-en';
-
-<Color color={{ name: 'gray', count: 13 }} en={borderEn} vi={borderVi} direction="horizontal" />
-
-### Màu của nền
-
-import backgroundVi from '@site/src/components/Design/Color/background-vi';
-import backgroundEn from '@site/src/components/Design/Color/background-en';
-
-<Color color={{ name: 'gray', count: 13 }} en={backgroundEn} vi={backgroundVi} direction="horizontal" />
