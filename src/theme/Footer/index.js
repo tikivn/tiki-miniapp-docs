@@ -35,7 +35,11 @@ const groups = [
         title: 'Youtube',
         url: 'https://www.youtube.com/channel/UCM1pfRas6M31zRWvCOGvedQ',
       },
-      {title: 'Slack', url: 'https://tini-apps.slack.com/'},
+      {
+        title: 'Slack',
+        url:
+          'https://join.slack.com/t/tini-apps/shared_invite/zt-z7ikk3ox-rCirvNmeOrSvUo_tW67D4Q',
+      },
     ],
   },
 ];

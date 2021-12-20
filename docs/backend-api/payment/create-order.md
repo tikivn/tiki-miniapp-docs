@@ -21,7 +21,7 @@ Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính x
 | items            | []**[Item](#item)**     |    ✓     | Danh sách sản phẩm                                                                         |
 | shipping_address | **[Address](#address)** |    ✕     | Địa chỉ giao hàng, dùng để hiện thị trên trang thanh toán Tiki (phần thông tin khách hàng) |
 | billing_address  | **[Address](#address)** |    ✕     | Địa chỉ thanh toán                                                                         |
-| shipping_fee     | int64                   |    ✕     | Phí giao hàng                                                                         |
+| shipping_fee     | int64                   |    ✕     | Phí giao hàng                                                                              |
 | extra            | string                  |    ✕     | Thông tin bổ sung theo định dạng  ***key=value;key=value***                                |
 | reference_id     | string                  |    ✕     | ID đơn hàng của đối tác                                                                    |
 
@@ -38,6 +38,7 @@ Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính x
 ***Lưu ý***
 > - Trong một đơn hàng, các item khác nhau thì phải có sku khác nhau.
 > - Giá trị đơn hàng tối đa là mười triệu (10.000.000) đồng. Nếu muốn thay đổi thì cần yêu cầu ở [Tini Console](https://developers.tiki.vn/apps).
+> - Khi đối tác tạo đơn hàng phía Tiki, không nhất thiết nó phải bao gồm toàn bộ SKU mà đối tác nhận đặt từ khách hàng; chỉ cần gồm 1 hay vài SKU để dại diện thanh toán. Điểm mấu chốt là giá trị đơn hàng phải chính xác.
 
 #### Address
 

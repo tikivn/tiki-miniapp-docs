@@ -8,7 +8,7 @@ API này sẽ tạo một đơn vận chuyển hàng.
 
 ## Sử dụng
 
-***Quan trọng***: API này yêu cầu có [chữ ký điện tử](../platform-api/calculate-signature) khi gửi API request.
+**_Quan trọng_**: API này yêu cầu có [chữ ký điện tử](../platform-api/calculate-signature) khi gửi API request.
 
 ### API Address
 
@@ -201,7 +201,6 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/shipments
       },
       "partner_code": "GRAB",
       "service": {
-        "id": 0,
         "name": "GrabExpress",
         "code": "INSTANT"
       }

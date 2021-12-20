@@ -24,10 +24,10 @@ import { QRCode } from '@site/src/components/QRCode';
 
 Khi việc gọi API thành công, framework sẽ trả về thông tin như sau:
 
-| Thuộc tính            | Kiểu dữ liệu | Mô tả                                                                      |
-| --------------------- | -------------| -------------------------------------------------------------------------- |
-| networkAvailable      | boolean      | Thiết bị có kết nối mạng hay không                                      |
-| networkType           | string       | Loại kết nối mạng, là một trong các giá trị UNKNOWN / NOTREACHABLE / WIFI / 3G / 2G / 4G / 5G.  |
+| Thuộc tính            | Kiểu dữ liệu | Mô tả                                                                                            |
+| --------------------- | -------------| ------------------------------------------------------------------------------------------------ |
+| networkAvailable      | boolean      | Thiết bị có kết nối mạng hay không                                                               |
+| networkType           | string       | Loại kết nối mạng, là một trong các giá trị UNKNOWN / NOTREACHABLE / WIFI / 3G / 2G / 4G / 5G.   |
 
 ### Sample Code
 
@@ -52,7 +52,6 @@ Page({
         my.alert({ title: 'Success', content: JSON.stringify(res) });
       },
       fail: (e) => {
-        console.log(e);
         my.alert({ title: 'Fail', content: JSON.stringify(e) });
       },
     });
