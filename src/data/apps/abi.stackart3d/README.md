@@ -3,6 +3,6 @@
    <h1>Stack Art 3D</h1>
    <p>Trò chơi ghép hình puzzle thử thách mắt và não của bạn  
 </p>
-   <img src="https://user-images.githubusercontent.com/87349335/146375868-120cb2c8-824c-4af6-a27d-e617c3ef9a35.png" />
+   <img src="https://user-images.githubusercontent.com/87349335/146775370-3825b32a-1ef6-4f49-840a-cd70f77532cb.png" height="500"/>
 </div>
 
