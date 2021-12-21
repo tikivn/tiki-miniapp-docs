@@ -98,14 +98,14 @@ module.exports = [
     tags: ['opensource', 'app', 'component'],
   },
   {
-    title: 'Tiki API Exchange',
+    title: 'Tiki Exchange',
     description:
       'Sàn giao dịch Tiki Xu và Astra',
     preview:
       'https://user-images.githubusercontent.com/87349335/146875295-ffbcc0bb-d2bd-437b-8ed0-45e8454c8448.png',
     app: 'https://tiki.vn/apps/vn.tiki.miniapp.exchange',
     source:
-      'https://github.com/tikivn/miniapp-getting-started/tree/main/vn.tiki.miniapp.exchange',
+      'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/vn.tiki.miniapp.exchange',
     tags: ['app'],
   },
   {
