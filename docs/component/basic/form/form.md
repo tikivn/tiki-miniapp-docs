@@ -4,9 +4,9 @@ title: form
 
 ## Giới thiệu
 
-- Form dùng để lưu trữ giá trị của các components [input](/docs/component/form/input), [switch](/docs/component/form/switch), [checkbox](/docs/component/form/checkbox), [radio](/docs/component/form/radio), [picker](/docs/component/form/picker).
+- Form dùng để lưu trữ giá trị của các components [input](input), [switch](switch), [checkbox](checkbox), [radio](radio), [picker](picker).
 - Các component bên trong form cần khai báo thuộc tính `name`
-- Giá trị của form chỉ có thể được lấy thông qua hàm `onSubmit` và chỉ được gọi thông qua sự kiện tap của [button](/docs/component/form/button) với `form-type="submit"`
+- Giá trị của form chỉ có thể được lấy thông qua hàm `onSubmit` và chỉ được gọi thông qua sự kiện tap của [button](button) với `form-type="submit"`
 
 ## Quét mã để trải nghiệm
 
@@ -14,9 +14,14 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/form/index" />
 
-## Sử dụng
+## Thuộc tính
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                                                                                                                          |
+| ---------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| onSubmit   | event        | Sự kiện được gọi khi `button` bên trong form với `form-type="submit"` được tap vào, `event.detail = { value }`, trong đó value là một object chứa các giá trị của các component bên trong form |
+| onReset    | event        | Sự kiện được gọi khi `button` bên trong form với `form-type="reset"` được tap vào, khi đó giá trị của các component trong form sẽ bị đưa về giá trị ban đầu                                    |
+
+## Sample Code
 
 **index.txml**
 
@@ -137,9 +142,3 @@ Page({
 });
 ```
 
-### Chi tiết
-
-| Property | Type  | Description                                                                                                                                                                                    |
-| -------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| onSubmit | event | Sự kiện được gọi khi `button` bên trong form với `form-type="submit"` được tap vào, `event.detail = { value }`, trong đó value là một object chứa các giá trị của các component bên trong form |
-| onReset  | event | Sự kiện được gọi khi `button` bên trong form với `form-type="reset"` được tap vào, khi đó giá trị của các component trong form sẽ bị đưa về giá trị ban đầu                                    |

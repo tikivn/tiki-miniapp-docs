@@ -1,12 +1,16 @@
 ---
 title: Phát hành ứng dụng
+
+slug: release
+keywords: [Tini App, kho tiện ích, build, release, phát hành]
+tags: [tiểu ứng dụng, mini app, mini program, launch, kiểm duyệt]
 ---
 
 ## Khái quát quy trình xử lý build trên Tini Console 
 
 Mỗi lần bạn tải source code của dự án lên [Tini Console](https://developer.tiki.vn/apps) được tính là một build.
 
-Tại [Tini Console](https://developer.tiki.vn/apps), source code sẽ được tự động compile. Nếu compile thành công, build sẽ mang trạng thái “Ready”. Tiếp đó, bạn **Submit build [number] for review**. 
+Tại [Tini Console](https://developer.tiki.vn/apps), source code sẽ được tự động compile. Nếu compile thành công, build sẽ mang trạng thái "Ready". Tiếp đó, bạn **Submit build [number] for review**. 
 
 ***Lưu ý***: Không nhất thiết bạn phải **Submit build for review** mọi build bạn đưa lên Tini Console. Khi bạn sử dụng tính năng **Submit build for review** thì build mới nhất của release sẽ được chọn gởi đi. 
 

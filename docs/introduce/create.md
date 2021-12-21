@@ -1,5 +1,7 @@
 ---
 title: Tạo Tini App của bạn
+
+description: Cách một Tiki mini app trên Tini Console và quy đặt app ID
 ---
 
 Một khi đã chính thức trở thành Nhà phát triển Tini App, bạn được quyền tạo mới ứng dụng, bắt đầu quá trình phát triển. Truy cập vào [Tini Console](https://developer.tiki.vn/apps) và tiến hành những bước sau:

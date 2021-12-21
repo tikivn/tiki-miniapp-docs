@@ -1,5 +1,9 @@
 ---
 title: Đăng ký Nhà phát triển
+
+slug: register
+keywords: [Tini App, nhà phát triển, tài khoản, Tiki, Tini Console]
+tags: [tiểu ứng dụng, mini app, mini program, developer]
 ---
 
 ## Giới thiệu

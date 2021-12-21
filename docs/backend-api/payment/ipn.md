@@ -72,7 +72,7 @@ Dữ liệu có thể bị thay đổi trên đường truyền giữa hai hệ 
 
 **Giải pháp**
 
-+ Để đảm bảo thông tin giao dịch chính xác và đầy đủ, đối tác cần KIỂM TRA [chữ ký điện tử](../calculate-signature.md) mỗi lần nhận IPN message từ Tiki.
++ Để đảm bảo thông tin giao dịch chính xác và đầy đủ, đối tác cần KIỂM TRA [chữ ký điện tử](../platform-api/calculate-signature) mỗi lần nhận IPN message từ Tiki.
 + Sử dụng request [lấy thông tin một đơn hàng](get-order), hoặc [lấy thông tin nhiều đơn hàng](list-orders) để kiểm tra trạng thái giao dịch trước khi cập nhật.
 + Luôn sử dụng IPN message để xử lý kết quả giao dịch. Khắc phục trường hợp khi thanh toán app Tiki bị đóng bất ngờ.
 + Vì phụ thuộc vào đường truyền mạng và hệ thống, có khả năng IPN message bị gửi chậm hoặc một message bị gửi nhiều lần. Do đó, đối tác cần dựa vào 2 trường `message_id` và `message_created_at` nhằm tránh 1 message được xử lý nhiều lần hay xử lý sai thứ tự.

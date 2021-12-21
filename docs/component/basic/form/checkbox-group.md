@@ -4,7 +4,7 @@ title: checkbox-group
 
 ## Giới thiệu
 
-- `checkbox-group` dùng để nhóm các [checkbox](/docs/component/form/checkbox) lại với nhau, value của `checkbox-group` sẽ là một mảng chứa value của các `checkbox` được chọn
+- `checkbox-group` dùng để nhóm các [checkbox](checkbox) lại với nhau, value của `checkbox-group` sẽ là một mảng chứa value của các `checkbox` được chọn
 - Các thẻ `checkbox` bên trong `checkbox-group` cần được khai báo thuộc tính `value`
 
 ## Quét mã để trải nghiệm

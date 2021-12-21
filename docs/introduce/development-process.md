@@ -1,5 +1,7 @@
 ---
 title: Quy trình phát triển Tini App
+
+description: các bước xây dựng một Tiki mini app trên nền tảng Tini App
 ---
 
 <img src="/img/TiniApp_Development_Process.jpg" alt="Tini App Development Process" style={{ margin: '0 auto', display: 'flex' }}/>

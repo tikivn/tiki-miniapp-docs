@@ -1,5 +1,9 @@
 ---
 title: Xây dựng và đăng tải ứng dụng
+
+slug: upload
+keywords: [Tini App, Tini Console, Tini Studio, version, buildNumber, build, phiên bản, tải lên]
+tags: [mini app, mini program]
 ---
 
 ## 1. Xây dựng ứng dụng

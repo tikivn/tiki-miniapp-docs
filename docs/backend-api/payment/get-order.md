@@ -17,7 +17,7 @@ title: Lấy thông tin một đơn hàng
 | -------- | --------------- |
 | order_id | ID của đơn hàng |
 
-Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính xác thực. Tham khảo [Cách tạo chữ ký điện tử](../calculate-signature.md)
+Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính xác thực. Tham khảo [Cách tạo chữ ký điện tử](../platform-api/calculate-signature)
 
 Ví dụ về request lấy thông tin một đơn hàng
 

@@ -52,7 +52,7 @@ module.exports = [
   },
   {
     title: 'Merge Planets',
-    description: 'Hợp nhất các hành tinh',
+    description: 'Hợp nhất các hành tinh và hợp nhất vũ trụ ',
     preview: 'https://user-images.githubusercontent.com/87349335/146346144-e9967980-edd6-4f86-a672-e858dfea5572.png',
     app: 'https://tiki.vn/apps/abi.mergePlanets2048',
     source:

@@ -4,7 +4,7 @@ title: Textfield
 
 ## Giới thiệu
 
-- `textfield` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) với chức năng tương tự như thẻ [input](/docs/component/form/input) nhưng hỗ trợ thêm label, icon và một số tính năng mở rộng về giao diện.
+- `textfield` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) với chức năng tương tự như thẻ [input](/docs/component/basic/form/input) nhưng hỗ trợ thêm label, icon và một số tính năng mở rộng về giao diện.
 - Để sử dụng `textfield`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.0.18` trở lên.
 
 ## Quét mã để trải nghiệm
@@ -13,15 +13,49 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/form/text-field/index" />
 
-## Sử dụng
-
-### Cài đặt `tini-ui`:
+## Cài đặt `tini-ui`:
 
 ```bash
 $> yarn add @tiki.vn/tini-ui
 ```
 
-### Sample Code
+## Thuộc tính
+
+| Thuộc tính       | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                                  |
+| ---------------- | ------------ | ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| labelCls         | string       |                  | Custom class cho thẻ label                                                                                             |
+| labelShowBadge   | boolean      |                  | Hiển thị badge trên label                                                                                              |
+| labelIcon        | string       |                  | Icon type hiển thị trên label, bạn có thể tim thêm các icon type tại [đây](/docs/component/basic/basic/icon)           |
+| labelIconColor   | string       | #808089          | Mã màu cho icon trên label                                                                                             |
+| labelHelperText  | string       |                  | Helper text hiển thị bên dưới `labelText`                                                                              |
+| labelText        | string       |                  | Nội dung của label                                                                                                     |
+| iconRight        | string       |                  | Type của icon hiển thị bên phải input                                                                                  |
+| iconLeft         | string       |                  | Type của icon hiển thị bên trái input                                                                                  |
+| iconColor        | string       | #808089          | Mã màu cho icon trên input                                                                                             |
+| shape            | string       | rounded          | Kiểu border radius của input. Hỗ trợ `rounded` hoặc `pill`. Mặc định là `rounded`                                      |
+| loading          | boolean      | false            | Hiển thị loading skeleton cho textfield                                                                                |
+| hasError         | boolean      | false            | Khi giá trị là true, input sẽ có viền màu đỏ (mã #ff424f), và xuất hiện icon thông báo lỗi                             |
+| errorMsg         | string       |                  | Hiển thị thông báo lỗi bên dưới input, cần khai báo thêm `hasError=true`                                               |
+| errorIconColor   | string       | #ff424f          | Màu của icon lỗi                                                                                                       |
+| inputCls         | string       |                  | Custom class cho input                                                                                                 |
+| className        | string       |                  | Custom class cho textfield                                                                                             |
+| type             | string       |                  | Loại input. Hỗ trợ các giá trị tương tự thẻ [input](/docs/component/basic/form/input)                                  |
+| password         | boolean      | false            | Chỉ định loại input là password                                                                                        |
+| name             | string       |                  | Khai báo `name` khi được sử dụng trong [form](/docs/component/basic/form/form), được sử dụng để lấy `value` cho `form` |
+| value            | string       | ''               | Giá trị khởi tạo                                                                                                       |
+| placeholder      | string       |                  | Nội dung hiển thị trước khi người dùng nhập giá trị của input                                                          |
+| placeholderClass | string       |                  | Class name cho placeholder                                                                                             |
+| placeholderStyle | css style    |                  | Inline style cho placeholder                                                                                           |
+| disabled         | boolean      | false            | Disable input                                                                                                          |
+| maxlength        | number       | 140              | Giới hạn số ký tự được nhập                                                                                            |
+| focus            | boolean      | false            | Tự động focus vào input                                                                                                |
+| controlled       | boolean      | false            | Khi giá trị là `true`, nội dung value của input sẽ được điều khiển hoàn toàn thông qua hàm `setData` trong file `js`   |
+| onInput          | event        |                  | Sự kiện sẽ được gọi khi nội dung của input bị thay đổi, `event.detail = { value: value }`                              |
+| onConfirm        | event        |                  | Sự kiện sẽ được gọi khi nhấn nút submit (return/Nhập) , `event.detail = { value: value }`                              |
+| onFocus          | event        |                  | Sự kiện sẽ được gọi khi input được focus , `event.detail = { value: value }`                                           |
+| onBlur           | event        |                  | Sự kiện sẽ được gọi khi input không được focus nữa , `event.detail = { value: value }`                                 |
+
+## Sample Code
 
 **index.json**
 
@@ -163,38 +197,3 @@ Page({
 }
 ```
 
-### Chi tiết
-
-| Property         | Type      | Default Value | Description                                                                                                          |
-| ---------------- | --------- | ------------- | -------------------------------------------------------------------------------------------------------------------- |
-| labelCls         | string    |               | Custom class cho thẻ label                                                                                           |
-| labelShowBadge   | boolean   |               | Hiển thị badge trên label                                                                                            |
-| labelIcon        | string    |               | Icon type hiển thị trên label, bạn có thể tim thêm các icon type tại [đây](/docs/component/basic/icon)               |
-| labelIconColor   | string    | #808089       | Mã màu cho icon trên label                                                                                           |
-| labelHelperText  | string    |               | Helper text hiển thị bên dưới `labelText`                                                                            |
-| labelText        | string    |               | Nội dung của label                                                                                                   |
-| iconRight        | string    |               | Type của icon hiển thị bên phải input                                                                                |
-| iconLeft         | string    |               | Type của icon hiển thị bên trái input                                                                                |
-| iconColor        | string    | #808089       | Mã màu cho icon trên input                                                                                           |
-| shape            | string    | rounded       | Kiểu border radius của input. Hỗ trợ `rounded` hoặc `pill`. Mặc định là `rounded`                                    |
-| loading          | boolean   | false         | Hiển thị loading skeleton cho textfield                                                                              |
-| hasError         | boolean   | false         | Khi giá trị là true, input sẽ có viền màu đỏ (mã #ff424f), và xuất hiện icon thông báo lỗi                           |
-| errorMsg         | string    |               | Hiển thị thông báo lỗi bên dưới input, cần khai báo thêm `hasError=true`                                             |
-| errorIconColor   | string    | #ff424f       | Màu của icon lỗi                                                                                                     |
-| inputCls         | string    |               | Custom class cho input                                                                                               |
-| className        | string    |               | Custom class cho textfield                                                                                           |
-| type             | string    |               | Loại input. Hỗ trợ các giá trị tương tự thẻ [input](/docs/components/form/input)                                     |
-| password         | boolean   | false         | Chỉ định loại input là password                                                                                      |
-| name             | string    |               | Khai báo `name` khi được sử dụng trong [form](/docs/component/form/form), được sử dụng để lấy `value` cho `form`     |
-| value            | string    | ''            | Giá trị khởi tạo                                                                                                     |
-| placeholder      | string    |               | Nội dung hiển thị trước khi người dùng nhập giá trị của input                                                        |
-| placeholderClass | string    |               | Class name cho placeholder                                                                                           |
-| placeholderStyle | css style |               | Inline style cho placeholder                                                                                         |
-| disabled         | boolean   | false         | Disable input                                                                                                        |
-| maxlength        | number    | 140           | Giới hạn số ký tự được nhập                                                                                          |
-| focus            | boolean   | false         | Tự động focus vào input                                                                                              |
-| controlled       | boolean   | false         | Khi giá trị là `true`, nội dung value của input sẽ được điều khiển hoàn toàn thông qua hàm `setData` trong file `js` |
-| onInput          | event     |               | Sự kiện sẽ được gọi khi nội dung của input bị thay đổi, `event.detail = { value: value }`                            |
-| onConfirm        | event     |               | Sự kiện sẽ được gọi khi nhấn nút submit (return/Nhập) , `event.detail = { value: value }`                            |
-| onFocus          | event     |               | Sự kiện sẽ được gọi khi input được focus , `event.detail = { value: value }`                                         |
-| onBlur           | event     |               | Sự kiện sẽ được gọi khi input không được focus nữa , `event.detail = { value: value }`                               |

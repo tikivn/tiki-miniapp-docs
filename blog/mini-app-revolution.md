@@ -2,6 +2,7 @@
 title: Mini app - cuộc cách mạng trong làng phần mềm di động
 
 slug: mini-app-revolution
+description: mini app thổi luồng sinh khí mới vào ngành di động
 keywords: [mini app, super app, nhà phát triển, phần mềm di động]
 tags: [mini program, tiểu ứng dụng, siêu ứng dụng]
 ---

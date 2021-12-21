@@ -11,11 +11,12 @@ Ví dụ: một đơn vận chuyển hàng từ "2 Hải Triều, Bến Nghé, Q
 1. Loại hình vận chuyển TNSL-Grab Express, phí vận chuyển 100.000 VND, dự kiến lấy hàng 2021-05-17T10:59:59+07:00, dự kiến giao hàng 2021-05-17T21:59:59+07:00
 2. Loại hình vận chuyển TNSL-NJV Standard, phí vận chuyển 50.000 VND, dự kiến lấy hàng 2021-05-17T11:59:59+07:00, dự kiến giao hàng 2021-05-17T18:59:59+07:00
 
-Lưu ý: trong response trả về, giá trị của quotes[].service.code và quotes[].partner_code sẽ được dùng khi tạo shipment.
+***Lưu ý:*** 
+
+> - Trong response trả về, giá trị của quotes[].service.code và quotes[].partner_code sẽ được dùng khi tạo shipment.
+> - API này yêu cầu có [chữ ký điện tử](../platform-api/calculate-signature) khi gửi API request.
 
 ## Sử dụng
-
-**API này yêu cầu có [chữ ký điện tử](../calculate-signature.md) khi gửi API request**
 
 ### API Address
 

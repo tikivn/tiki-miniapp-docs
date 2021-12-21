@@ -17,7 +17,7 @@ title: Lấy thông tin nhiều đơn hàng
 | --------- | --------------------------------------------------------------------- |
 | order_ids | ID của các đơn hàng, tối đa 100, ngăn cách nhau bằng dấu phẩy (**,**) |
 
-Giống như việc lấy thông tin một đơn hàng, việc lấy thông tin nhiều đơn hàng cũng đòi hỏi chữ ký điện tử phải xuất hiện trong URL. Tham khảo [Cách tạo chữ ký điện tử](../calculate-signature.md)
+Giống như việc lấy thông tin một đơn hàng, việc lấy thông tin nhiều đơn hàng cũng đòi hỏi chữ ký điện tử phải xuất hiện trong URL. Tham khảo [Cách tạo chữ ký điện tử](../platform-api/calculate-signature)
 
 Vi dụ về request lấy thông tin nhiều đơn hàng cùng lúc
 
