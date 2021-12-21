@@ -60,6 +60,15 @@ module.exports = [
     tags: ['game'],
   },
   {
+    title: 'Miki',
+    description: 'Miễn phí đọc sách',
+    preview: 'hhttps://user-images.githubusercontent.com/87349335/146866252-26cb4241-9657-495e-a9c9-4667fc7d8213.png',
+    app: 'https://tiki.vn/apps/vn.tiki.miki',
+    source:
+      'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/vn.tiki.miki',
+    tags: ['app'],
+  },
+  {
     title: 'Rescue the Lover',
     description: 'Hành trình của chàng trai cứu cô bạn gái khỏi băng nhóm bắt cóc tống tiền',
     preview: 'https://user-images.githubusercontent.com/87349335/146406073-16d203c2-63b9-40b9-b3e2-574aa212e77c.png',
