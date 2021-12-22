@@ -15,15 +15,15 @@ Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính x
 
 #### HTTP Request
 
-| Thuộc tính       | Kiểu dữ liệu            | Bắt buộc | Mô tả                                                                                      |
-| ---------------- | ----------------------- | :------: | ------------------------------------------------------------------------------------------ |
-| customer_id      | string                  |    ✓     | ID người dùng Tiki, có thể lấy ở [đây](../exchange-auth-token#get-info-from-auth-token)    |
-| items            | []**[Item](#item)**     |    ✓     | Danh sách sản phẩm                                                                         |
-| shipping_address | **[Address](#address)** |    ✕     | Địa chỉ giao hàng, dùng để hiện thị trên trang thanh toán Tiki (phần thông tin khách hàng) |
-| billing_address  | **[Address](#address)** |    ✕     | Địa chỉ thanh toán                                                                         |
-| shipping_fee     | int64                   |    ✕     | Phí giao hàng                                                                              |
-| extra            | string                  |    ✕     | Thông tin bổ sung theo định dạng  ***key=value;key=value***                                |
-| reference_id     | string                  |    ✕     | ID đơn hàng của đối tác                                                                    |
+| Thuộc tính       | Kiểu dữ liệu            | Bắt buộc | Mô tả                                                                                                |
+| ---------------- | ----------------------- | :------: | ---------------------------------------------------------------------------------------------------- |
+| customer_id      | string                  |    ✓     | ID người dùng Tiki, có thể lấy ở [đây](../platform-api/exchange-auth-token#get-info-from-auth-token) |
+| items            | []**[Item](#item)**     |    ✓     | Danh sách sản phẩm                                                                                   |
+| shipping_address | **[Address](#address)** |    ✕     | Địa chỉ giao hàng, dùng để hiện thị trên trang thanh toán Tiki (phần thông tin khách hàng)           |
+| billing_address  | **[Address](#address)** |    ✕     | Địa chỉ thanh toán                                                                                   |
+| shipping_fee     | int64                   |    ✕     | Phí giao hàng                                                                                        |
+| extra            | string                  |    ✕     | Thông tin bổ sung theo định dạng  ***key=value;key=value***                                          |
+| reference_id     | string                  |    ✕     | ID đơn hàng của đối tác                                                                              |
 
 #### Item
 
@@ -98,5 +98,5 @@ Ví dụ về dữ liệu trả về
 }
 ```
 
-Khi khách hàng thanh toán bắt đầu thanh toán đơn hàng, JS API [my.makePayment](../../../api/open/make-payment.md) sẽ được dùng để mở màn hình thanh toán cho đơn hàng với tham số truyền vào là order ID.
+Khi khách hàng thanh toán bắt đầu thanh toán đơn hàng, JS API [my.makePayment](/docs/api/open/make-payment) sẽ được dùng để mở màn hình thanh toán cho đơn hàng với tham số truyền vào là order ID.
 

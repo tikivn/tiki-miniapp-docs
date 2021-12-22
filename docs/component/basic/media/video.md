@@ -2,7 +2,7 @@
 title: video
 ---
 
-`video` là component cho phép người dùng phát video trên Tini App. Bạn có thể điều khiển component này thông qua [my.createVideoContext](/docs/api/media/create-video-context) api.
+`video` là component cho phép người dùng phát video trên Tini App. Bạn có thể điều khiển component này thông qua [my.createVideoContext](/docs/api/media/video/create-video-context) api.
 
 ## Quét mã để trải nghiệm
 

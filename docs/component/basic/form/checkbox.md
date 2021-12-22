@@ -2,7 +2,7 @@
 title: checkbox
 ---
 
-`checkbox` là một component cho phép người dùng chọn một hoặt nhiều phương án
+`checkbox` là một component cho phép người dùng chọn một hoặc nhiều phương án.
 
 ## Quét mã để trải nghiệm
 
@@ -15,13 +15,13 @@ import { QRCode } from '@site/src/components/QRCode';
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                                                                                                  |
 | ---------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name       | string       | Khai báo `name` khi được sử dụng trong [form](form), được sử dụng để lấy `value` cho `form`                                                                            |
+| name       | string       | Tên của checkbox khi được sử dụng trong [form](form), được sử dụng để lấy `value` cho `form`                                                                           |
 | value      | string       | Giá trị của checkbox. Cần được khai báo khi sử dụng bên trong [checkbox-group](checkbox-group)                                                                         |
-| checked    | boolean      | Chỉ định checkbox có được chọn hay không                                                                                                                               |
-| disabled   | boolean      | Disable checkbox, khi giá trị là true bạn sẽ không thay đổi giá trị của checkbox khi tap được                                                                          |
-| color      | string       | Màu của component, sử dụng mã màu như trong css                                                                                                                        |
-| icon       | string       | Loại icon hiển thị khi checkbox được chọn. Chỉ hỗ trợ 2 loại icon là `success` và `minus` ([Xem thêm](/docs/component/basic/basic/icon). Giá trị mặc định là `success` |
-| onChange   | event        | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { value: value }`. Giá trị của `value` là true/false tùy vào `checkbox` được chọn hay không                  |
+| checked    | boolean      | Quy định checkbox có được mặc định chọn hay không                                                                                                                      |
+| disabled   | boolean      | Disable checkbox, Nếu giá trị là true, người dùng sẽ không thay đổi giá trị của checkbox bằng cách tap vào nó                                                          |
+| color      | string       | Màu của component checkbox, sử dụng mã màu như trong css                                                                                                               |
+| icon       | string       | Loại icon hiển thị khi checkbox được chọn. Chỉ hỗ trợ 2 loại icon là `success` và `minus`, [Xem thêm](/docs/component/basic/basic/icon). Giá trị mặc định là `success` |
+| onChange   | event        | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { value: value }`. Giá trị của `value` là `true`/`false` tùy vào `checkbox` được chọn hay không              |
 
 ## Sample Code 
 

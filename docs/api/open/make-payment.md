@@ -6,7 +6,7 @@ title: my.makePayment
 
 **my.makePayment** là API dùng để tạo payment. Luồng payment như sau:
 
-- Developer dùng api của Tiki để tạo order từ đơn hàng. Tham khảo [Luồng tạo order ở đây](./backend-api/platform-api/payment/overview.md)
+- Developer dùng api của Tiki để tạo order từ đơn hàng. Tham khảo [Quy trình tạo và xử lý đơn hàng](/docs/backend-api/payment/overview)
 - Gọi jsapi my.makePayment để tạo khởi tạo payment. Sau đó miniapp sẽ được redirect tới page quick payment của tiki. Sau khi thanh toán thành công sẽ trả về callback success hoặc fail
 
 ## Lưu ý

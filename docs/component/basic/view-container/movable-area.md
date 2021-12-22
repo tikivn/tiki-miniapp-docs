@@ -4,7 +4,7 @@ title: movable-area
 
 ## Giới thiệu
 
-movable-area là thành phần quy định phạm di chuyển của các [movable-view](/docs/component/view-container/movable-view) nằm trong nó.
+movable-area là thành phần quy định phạm di chuyển của các [movable-view](movable-view) nằm trong nó.
 
 ## Sử dụng
 

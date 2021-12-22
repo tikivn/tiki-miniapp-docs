@@ -4,7 +4,7 @@ title: radio
 
 ## Giới thiệu
 
-`radio` dùng để chọn một giá trị. Để nhóm nhiều `radio` lại với nhau, bạn cần sử dụng [radio-group](/radio-group)
+`radio` dùng để chọn một giá trị. Để nhóm nhiều `radio` lại với nhau, bạn cần sử dụng [radio-group](radio-group)
 
 ## Quét mã để trải nghiệm
 
