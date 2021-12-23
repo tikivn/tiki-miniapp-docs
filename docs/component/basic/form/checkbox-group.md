@@ -2,8 +2,6 @@
 title: checkbox-group
 ---
 
-## Giới thiệu
-
 - `checkbox-group` dùng để nhóm các [checkbox](checkbox) lại với nhau, value của `checkbox-group` sẽ là một mảng chứa value của các `checkbox` được chọn
 - Các thẻ `checkbox` bên trong `checkbox-group` cần được khai báo thuộc tính `value`
 
@@ -13,13 +11,16 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/checkbox/index" />
 
-## Sử dụng
+## Thuộc tính
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                                                                                                            |
+| ---------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name       | string       | Khai báo `name` khi được sử dụng trong [form](form), được sử dụng để lấy `value` cho `form`                                                                                      |
+| onChange   | function     | Sự kiện được gọi khi giá trị của các checkbox bên trong bị thay đổi, `event.detail = { value: value }`, giá trị của `value` là một mảng các `value` của các `checkbox` được chọn |
 
-**index.txml**
+## Sample Code
 
-```xml
+```xml title=index.txml
 <view>
   <block-header title="Usage" description="Checkboxes are used to let a user choose one or more options from a limited number of options." />
 
@@ -43,9 +44,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onGroupChange(e) {
     console.log('onGroupChange', e);
@@ -56,18 +55,11 @@ Page({
 });
 ```
 
-**index.tcss**
-
-```css
+```css title=index.tcss
 .component-item {
   flex-direction: row;
   align-items: center;
 }
 ```
 
-### Chi tiết
 
-| Property | Type     | Description                                                                                                                                                                      |
-| -------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name     | string   | Khai báo `name` khi được sử dụng trong [form](/docs/component/form/form), được sử dụng để lấy `value` cho `form`                                                                 |
-| onChange | function | Sự kiện được gọi khi giá trị của các checkbox bên trong bị thay đổi, `event.detail = { value: value }`, giá trị của `value` là một mảng các `value` của các `checkbox` được chọn |

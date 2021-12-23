@@ -16,7 +16,7 @@ import { QRCode } from '@site/src/components/QRCode';
 | ----------------- | ------------ | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | type              | string       |                  | Quy định định dạng dữ liệu (format) được nhập vào input. Nhận các giá trị =[text \|\| email \|\| number \|\| decimal \|\| tel \|\| search \|\|url ]. <br/> **_Lưu ý_**: một số type sẽ không có hiệu lực trên Simulator của Studio mà bạn phải chạy trên thiết bị thật. |
 | password          | boolean      | false            | Chỉ định input dùng để nhập mật khẩu. Mỗi ký tự người dùng nhập vào sẽ được đại diện bằng chấm tròn (•)                                                                                                                                                                 |
-| name              | string       |                  | Khai báo `name` khi được sử dụng trong [form](/docs/component/form/form), được sử dụng để lấy `value` cho `form`                                                                                                                                                        |
+| name              | string       |                  | Khai báo `name` khi được sử dụng trong [form](form), được sử dụng để lấy `value` cho `form`                                                                                                                                                                             |
 | value             | string       | ''               | Giá trị khởi tạo.                                                                                                                                                                                                                                                       |
 | placeholder       | string       |                  | Nội dung hiển thị trước khi người dùng nhập giá trị của input                                                                                                                                                                                                           |
 | placeholder-class | string       |                  | CSS class cho placeholder                                                                                                                                                                                                                                               |
@@ -36,9 +36,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ## Sample Code
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view class="container">
   <view class="block">
     <text class="header">Events</text>
@@ -83,9 +81,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   data: {
     inputTypes: [
@@ -123,9 +119,7 @@ Page({
 });
 ```
 
-**index.tcss**
-
-```css
+```css title=index.tcss
 .container {
   min-height: 100%;
   background-color: var(--gray20);

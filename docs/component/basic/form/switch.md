@@ -2,8 +2,6 @@
 title: switch
 ---
 
-## Giới thiệu
-
 `switch` dùng để chọn một giá trị
 
 ## Quét mã để trải nghiệm
@@ -12,13 +10,21 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/switch/index" />
 
-## Sử dụng
+## Chi tiết
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                                          |
+| ---------- | ------------ | -------------------------------------------------------------------------------------------------------------- |
+| name       | string       | Khai báo `name` khi được sử dụng trong [form](form), được sử dụng để lấy `value` cho `form`                    |
+| controlled | boolean      | Khi giá trị là `true`, giá trị của switch sẽ được điều khiển hoàn toàn thông qua hàm `setData` trong file `js` |
+| checked    | boolean      | Chỉ định giá trị của switch có được chọn hay không                                                             |
+| disabled   | boolean      | Disable switch component                                                                                       |
+| color      | string       | Màu của component, sử dụng mã màu như trong css                                                                |
+| onChange   | event        | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { checked: checked }`                                |
+| controlled | boolean      | Nếu giá trị là true, giá trị của component chỉ thay đổi thông qua `setData`                                    |
 
-**index.txml**
+## Sample Code
 
-```xml
+```xml title=index.txml
 <view>
   <block-header title="Usage" description="Switches give user control over a feature or option that can be turned on or off." />
 
@@ -47,9 +53,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onChange(e) {
     console.log('onChange', e);
@@ -57,23 +61,9 @@ Page({
 });
 ```
 
-**index.tcss**
-
-```css
+```css title=index.tcss
 .component-item {
   flex-direction: row;
   justify-content: space-between;
 }
 ```
-
-### Chi tiết
-
-| Property   | Type    | Description                                                                                                      |
-| ---------- | ------- | ---------------------------------------------------------------------------------------------------------------- |
-| name       | string  | Khai báo `name` khi được sử dụng trong [form](/docs/component/form/form), được sử dụng để lấy `value` cho `form` |
-| controlled | boolean | Khi giá trị là `true`, giá trị của switch sẽ được điều khiển hoàn toàn thông qua hàm `setData` trong file `js`   |
-| checked    | boolean | Chỉ định giá trị của switch có được chọn hay không                                                               |
-| disabled   | boolean | Disable switch component                                                                                         |
-| color      | string  | Màu của component, sử dụng mã màu như trong css                                                                  |
-| onChange   | event   | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { checked: checked }`                                  |
-| controlled | boolean | Nếu giá trị là true, giá trị của component chỉ thay đổi thông qua `setData`                                      |

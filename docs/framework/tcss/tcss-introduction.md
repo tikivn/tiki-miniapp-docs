@@ -10,7 +10,7 @@ Mỗi một màn hình bất kỳ sẽ có độ rộng được tính bằng 75
 
 Bằng cách sử dụng rpx, lập trình viên có thể đảm bảo rằng thiết kế của họ chạy tốt với các màn hình khác nhau.
 
-## Các thuộc tính của TCSS
+<!---  ## Các thuộc tính của TCSS
 
 TCSS hỗ trợ hầu hết các thuộc tính phổ biến của CSS.
 
@@ -124,9 +124,11 @@ Sau đây là danh sách các thuộc tính CSS mà Tiki Mini App hỗ trợ
 - [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 - [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
 
+--->
+
 ## Import
 
-Tiki Mini App cho phép bạn có thể import các file TCSS từ các nguồn khác nhau bằng cách sử dụng cú pháp `@import`
+Tiki Mini App cho phép bạn có thể import các file TCSS từ các nguồn khác nhau bằng cách sử dụng cú pháp `@import` 
 
 ```css
 /** common.tcss  */

@@ -23,9 +23,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ## Sample Code
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view class="container">
   <form onSubmit="onSubmit" onReset="onReset">
     <view class="block">
@@ -68,9 +66,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.tcss**
-
-```css
+```css title=index.tcss
 .header {
   display: flex;
 }
@@ -126,9 +122,7 @@ button {
 }
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onSubmit(e) {
     console.log('onSubmit', e);

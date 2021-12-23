@@ -25,9 +25,8 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ## Sample Code 
 
-**index.txml**
 
-```xml
+```xml title=index.txml
 <view>
   <block-header title="Usage" description="Checkboxes are used to let a user choose one or more options from a limited number of options." />
 
@@ -56,9 +55,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onChange(e) {
     console.log('onChange', e);
@@ -66,9 +63,7 @@ Page({
 });
 ```
 
-**index.tcss**
-
-```css
+```css title=index.tcss
 .component-item {
   flex-direction: row;
   align-items: center;

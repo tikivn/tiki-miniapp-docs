@@ -2,9 +2,7 @@
 title: radio-group
 ---
 
-## Giới thiệu
-
-`radio-group` dùng để nhóm các [radio](/docs/component/form/radio) lại với nhau. Bên trong `radio-group` có thể chứa nhiều `radio`, nhưng tại một thời điểm chỉ có một `radio` có thể được chọn, các `radio` cần khai báo thuộc tính `value`
+`radio-group` dùng để nhóm các [radio](radio) lại với nhau. Bên trong `radio-group` có thể chứa nhiều `radio`, nhưng tại một thời điểm chỉ có một `radio` có thể được chọn, các `radio` cần khai báo thuộc tính `value`
 
 ## Quét mã để trải nghiệm
 
@@ -12,13 +10,17 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/form/radio-button/index" />
 
-## Sử dụng
 
-### Sample Code
+## Thuộc tính
 
-**index.txml**
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                                                                        |
+| ---------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| onChange   | function     | Sự kiện được gọi khi giá trị của các radio bị thay đổi, `event.detail = { value: value }`, value chính là giá trị của `radio` đang được chọn |
+| name       | string       | Khai báo `name` khi được sử dụng trong [form](form), được sử dụng để lấy `value` cho `form`                                                  |
 
-```xml
+## Sample Code
+
+```xml title=index.txml
 <view class="container">
   <view class="block">
     <radio-group class="radio-group" onChange="onChange">
@@ -31,9 +33,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   data: {
     items: [
@@ -51,9 +51,7 @@ Page({
 });
 ```
 
-**index.tcss**
-
-```css
+```css title=index.tcss
 .container {
   min-height: 100%;
   background-color: var(--gray20);
@@ -83,10 +81,3 @@ Page({
   margin-left: 12px;
 }
 ```
-
-### Chi tiết
-
-| Property | Type     | Description                                                                                                                                  |
-| -------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| onChange | function | Sự kiện được gọi khi giá trị của các radio bị thay đổi, `event.detail = { value: value }`, value chính là giá trị của `radio` đang được chọn |
-| name     | string   | Khai báo `name` khi được sử dụng trong [form](/docs/component/form/form), được sử dụng để lấy `value` cho `form`                             |

@@ -10,14 +10,14 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ## Thuộc tính
 
-| Thuộc tính | Kiểu dữ liệu | Giá trị măc định | Mô tả                                                                                                                                                    |
-| ---------- | ------------ | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| size       | string       | large            | Kích thước của button. Nhận các giá trị = [large \|\| medium \|\| small].                                                                                |
-| type       | string       | solid            | Kiểu button. Nhận các giá trị = [solid \|\| outline \|\| ghost].                                                                                         |
-| loading    | boolean      | false            | Hiển thị icon loading bên cạnh caption. Trong lúc hiển thị loading, button bị vô hiệu hoá.                                                               |
-| disabled   | boolean      | false            | Vô hiệu hoá button.                                                                                                                                      |
-| form-type  | string       |                  | Giá trị là `submit` hoặc `reset`, sử dụng với [form](/docs/component/form/form). Khi tap vào button, sẽ gọi sự kiện `onSubmit` hoặc `onReset` của `form` |
-| onTap      | event        |                  | Sự kiện được kích hoạt khi tap vào button.                                                                                                               |
+| Thuộc tính | Kiểu dữ liệu | Giá trị măc định | Mô tả                                                                                                                               |
+| ---------- | ------------ | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| size       | string       | large            | Kích thước của button. Nhận các giá trị = [large \|\| medium \|\| small].                                                           |
+| type       | string       | solid            | Kiểu button. Nhận các giá trị = [solid \|\| outline \|\| ghost].                                                                    |
+| loading    | boolean      | false            | Hiển thị icon loading bên cạnh caption. Trong lúc hiển thị loading, button bị vô hiệu hoá.                                          |
+| disabled   | boolean      | false            | Vô hiệu hoá button.                                                                                                                 |
+| form-type  | string       |                  | Giá trị là `submit` hoặc `reset`, sử dụng với [form](form). Khi tap vào button, sẽ gọi sự kiện `onSubmit` hoặc `onReset` của `form` |
+| onTap      | event        |                  | Sự kiện được kích hoạt khi tap vào button.                                                                                          |
 
 <div align="center"> ---oOo--- </div>
 
@@ -37,9 +37,7 @@ Button chỉ có caption; màu nền cũng như đường viền thì transparen
 
 ## Sample Code
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 
 <view class="container">
   <view class="block">
@@ -71,9 +69,7 @@ Button chỉ có caption; màu nền cũng như đường viền thì transparen
 </view>
 ```
 
-**index.tcss**
-
-```css
+```css title=index.tcss
 .container {
   min-height: 100%;
   background-color: var(--gray20);
@@ -93,9 +89,7 @@ button {
 }
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onTap() {
     console.log('Button onTap');

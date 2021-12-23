@@ -2,9 +2,16 @@
 title: radio
 ---
 
-## Giới thiệu
-
 `radio` dùng để chọn một giá trị. Để nhóm nhiều `radio` lại với nhau, bạn cần sử dụng [radio-group](radio-group)
+
+# Thuộc tính
+
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                    |
+| ---------- | ------------ | -------------------------------------------------------- |
+| value      | string       | Giá trị của radio                                        |
+| checked    | boolean      | Chỉ định radio có được chọn hay không. Mặc định là false |
+| disabled   | boolean      | Disable radio component                                  |
+| color      | string       | Màu của component, sử dụng mã màu như trong css          |
 
 ## Quét mã để trải nghiệm
 
@@ -12,13 +19,9 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/form/radio-button/index" />
 
-## Sử dụng
+## Sample Code
 
-### Sample Code
-
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view class="container">
   <view class="block">
     <radio-group class="radio-group" onChange="onChange">
@@ -31,9 +34,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   data: {
     items: [
@@ -48,9 +49,7 @@ Page({
 });
 ```
 
-**index.tcss**
-
-```css
+```css title=index.tcss
 .container {
   min-height: 100%;
   background-color: var(--gray20);
@@ -80,12 +79,3 @@ Page({
   margin-left: 12px;
 }
 ```
-
-### Chi tiết
-
-| Property | Type    | Description                                              |
-| -------- | ------- | -------------------------------------------------------- |
-| value    | string  | Giá trị của radio                                        |
-| checked  | boolean | Chỉ định radio có được chọn hay không. Mặc định là false |
-| disabled | boolean | Disable radio component                                  |
-| color    | string  | Màu của component, sử dụng mã màu như trong css          |

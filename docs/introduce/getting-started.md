@@ -17,7 +17,7 @@ Với mini apps, nhà phát triển ít cần quan tâm đến một số tính 
 
 Đối với Tini App thì Tiki app đóng vai trò super app. Kế thừa những tính năng ưu việt vốn có của mini apps, Tini App giảm thiểu đáng kể thời gian và công sức trong việc phát triển ứng dụng, dẫn đến tiết kiệm chi phí. Điều này cũng đồng nghĩa rằng các doanh nghiệp có thể tập trung vào dịch vụ cốt lõi của mình, mang tới sản phẩm hay dịch vụ tốt nhất cho khách hàng, trong khi vẫn thừa hưởng được tất cả lợi ích của việc chuyển đổi số.
 
-<img src="\img\TiniApp_Development_to_End users_diagram.png"/>
+<img src="\img\TiniApp_Development_to_End_users_diagram.png"/>
 
 Tini App của Tiki đi kèm với một hệ thống framework gọn nhẹ nhưng mạnh mẽ với các component (thành phần giao diện) đa dạng cũng như API cần thiết cho việc phát triển các ứng dụng cùng trải nghiệm native trên nền tảng Tiki. Những điểm cộng khác mà ta không thể bỏ qua là Tini App sở hữu riêng công cụ phát triển với giao diện thân thiện bên cạnh hệ thống tài liệu hướng dẫn đầy đủ dễ hiểu và chứa vô số code mẫu.
 
