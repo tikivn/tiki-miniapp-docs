@@ -17,9 +17,17 @@ import { QRCode } from '@site/src/components/QRCode';
 | ---------- | ------------ | :------: | ------------------------------------------------------------------------------------ |
 | minDuration     | number       |    ✓     |  Thời gian ít nhất của video |
 | maxDuration | Bumber        |      ✓   | Thời gian lớn nhất của video                                                   |
+| range       | Object        |         | Nếu muốn trim video trong 1 khoảng range cho trước, nếu range được set thì video sẽ trim theo range này mà không bật UI                                               |
 | success    | Function     |          | Callback function khi cắt video thành công.                                          |
 | fail       | Function     |          | Callback function khi cắt video bất thành.                                           |
 | complete   | Function     |          | Callback function khi gọi API hoàn tất bất kể có cắt được video hay không.           |
+
+### range object
+
+| Thuộc tính | Kiểu dữ liệu     | Mô tả                                                                                   |
+| ---------- | ---------------- | --------------------------------------------------------------------------------------- |
+| start  | number            | Thời điểm bắt đầu  |
+| end  | number | Thời điểm kết thúc |
 
 ### Callback function payload
 
