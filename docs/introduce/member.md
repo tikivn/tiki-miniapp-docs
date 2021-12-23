@@ -1,9 +1,7 @@
 ---
 title: Quản lý tài khoản
 
-slug: member
-keywords: [Tini App, nhà phát triển, Tiki, thành viên, admin, owner, programmer, tester]
-tags: [tiểu ứng dụng, mini app, mini program, role, cấp quyền]
+description: cấp quyền cho các thành viên tham gia phát triển dự án Tiki mini app
 ---
 
 Nền tảng Tini App cho phép một tài khoản Nhà phát triển có nhiều ứng dụng. Mỗi ứng dụng có thể có nhiều người cùng tham gia phát triển ở các vai trò Owner, Admin, Programmer, Tester.

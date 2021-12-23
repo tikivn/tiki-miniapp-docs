@@ -1,9 +1,7 @@
 ---
 title: Phát hành ứng dụng
 
-slug: release
-keywords: [Tini App, kho tiện ích, build, release, phát hành]
-tags: [tiểu ứng dụng, mini app, mini program, launch, kiểm duyệt]
+description: các bước nhà phát triển cần làm để phát hành mini app trên kho tiện ích của Tiki
 ---
 
 ## Khái quát quy trình xử lý build trên Tini Console 

@@ -1,9 +1,7 @@
 ---
 title: Giới thiệu Tini App
 
-slug: getting-started
-keywords: [mini app, mini programs, super app, Tiki app, cross platform, kho tiện ích, hệ sinh thái Tiki]
-tags: [tiểu ứng dụng, siêu ứng dụng]
+description: sơ lược về hệ sinh thái mini app của Tiki
 ---
 Chào mừng đến với Thế giới Tini App!!!
 

@@ -1,9 +1,7 @@
 ---
 title: Xây dựng và đăng tải ứng dụng
 
-slug: upload
-keywords: [Tini App, Tini Console, Tini Studio, version, buildNumber, build, phiên bản, tải lên]
-tags: [mini app, mini program]
+description: quy ước đánh số version và build cho Tiki mini app.
 ---
 
 ## 1. Xây dựng ứng dụng
