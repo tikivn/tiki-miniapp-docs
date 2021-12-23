@@ -32,13 +32,13 @@ Bạn cần phải có Nhà phát triển loại công ty/doanh nghiệp để c
 
 ### Các thuộc tính
 
-| Property       | Type     | Default Value | Description                                 |
-| -------------- | -------- | ------------- | ------------------------------------------- |
-| src            | string   |               | Đường dẫn đến trang web của bạn             |
-| progress       | boolean  | true          | Hiển thị progress hay không                 |
-| progressHeight | number   | 3             | Chiều cao của progress                      |
-| progressColor  | string   | #1a94ff       | Mã màu của progress                         |
-| onMessage      | function |               | Được gọi khi có sự kiện được gửi từ webview |
+| Thuộc tính     | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                       |
+| -------------- | ------------ | ---------------- | ------------------------------------------- |
+| src            | string       |                  | Đường dẫn đến trang web của bạn             |
+| progress       | boolean      | true             | Hiển thị progress hay không                 |
+| progressHeight | number       | 3                | Chiều cao của progress                      |
+| progressColor  | string       | #1a94ff          | Mã màu của progress                         |
+| onMessage      | function     |                  | Được gọi khi có sự kiện được gửi từ webview |
 
 ## Sample Code
 
@@ -60,9 +60,7 @@ Page({
 });
 ```
 
-**h5.html**
-
-```html
+```html title=h5.html
 <script
   type="text/javascript"
   src="https://tiki/tf-miniapp.webview.js"
@@ -107,8 +105,7 @@ Khi nhận được message này, ở Tini App chúng ta sẽ viết hàm xử l
 Trong case này, chúng ta nhận api muốn gọi từ `web-view`, rồi gọi API này ở tầng Tini App.
 Khi trả về result cho WebView, chúng ta sẽ trả về kèm theo requestId đã nhận được.
 
-```js
-// file src/pages/webview-postmessage/index.js
+```js title=src/pages/webview-postmessage/index.js
 Page({
   onMessage(e) {
     console.log('receive message from webview', e.detail);

@@ -36,7 +36,7 @@ Danh sách các API có thể gọi trong game-view
 | [my.navigateTo](/docs/api/ui/route/navigate-to)         | Di chuyển từ màn hình hiện tại tới màn hình mong muốn trong ứng dụng. |
 | [my.navigateBack](/docs/api/ui/route/navigate-back)     | Đóng màn hình hiện tại và trở lại màn hình trước đó.                  |
 | [my.getSystemInfo](/docs/api/device/get-system-info)    | Lấy thông tin của hệ thống.                                           |
-| [my.getUserInfo](/docs/api/open/05-get-user-info)       | Lấy các thông tin cơ bản của người dùng (tên, ảnh).                   |
+| [my.getUserInfo](/docs/api/open/get-user-info)          | Lấy các thông tin cơ bản của người dùng (tên, ảnh).                   |
 | [my.request](/docs/api/network/request)                 | Thực hiện các network request.                                        |
 | [my.setStorage](/docs/api/storage/set-storage)          | Lưu trữ dữ liệu theo key.                                             |
 | [my.getStorage](/docs/api/storage/get-storage)          | Đọc dữ liệu đã được lưu theo key.                                     |

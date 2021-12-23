@@ -6,25 +6,46 @@ title: scroll-view
 
 `scroll-view` là một container component có thể scroll được. Thanh scroll ngoài cùng không ảnh hưởng gì đến thanh scroll của `scroll-view`.
 
-## Lưu ý
+***Lưu ý***:
 
-- Bạn cần thiết lập thuộc tính height cho `scroll-view` thông qua [inline-style](https://developers.tiki.vn/docs/framework/tcss/tcss-introduction#Inline-style) hoặc [tcss](https://developers.tiki.vn/docs/framework/tcss/tcss-introduction) nếu `scroll-x` là true
-- `scroll-view` không hỗ trợ cả `scroll-x` và `scroll-y` cùng lúc, khi cả 2 thuộc tính này là `false`, thanh scroll sẽ không hoạt động
-- `scroll-view` chỉ hỗ trợ bạn scroll content được hay không, không có tùy chỉnh cho việc pull-down refresh
-- Để dùng thuộc tính `scroll-into-view` bạn cần để các component vào bên trong thẻ [view](https://developers.tiki.vn/docs/component/view-container/view) và khai báo id cho nó
-- Không nên dùng dùng `onScroll` để thiết lập giá trị của `scroll-top` hoặc `scroll-left` qua biến trong data, có thể dẫn đến trường hợp thanh scroll bị giật
+> - Bạn cần thiết lập thuộc tính height cho `scroll-view` thông qua [inline-style](/docs/framework/tcss/tcss-introduction#Inline-style) hoặc [tcss](/docs/framework/tcss/tcss-introduction) nếu `scroll-x` là true
+> - `scroll-view` không hỗ trợ cả `scroll-x` và `scroll-y` cùng lúc, khi cả 2 thuộc tính này là `false`, thanh scroll sẽ không hoạt động
+> - `scroll-view` chỉ hỗ trợ bạn scroll content được hay không, không có tùy chỉnh cho việc pull-down refresh
+> - Để dùng thuộc tính `scroll-into-view` bạn cần để các component vào bên trong thẻ [view](/docs/component/basic/view-container/view) và khai báo id cho nó
+>- Không nên dùng dùng `onScroll` để thiết lập giá trị của `scroll-top` hoặc `scroll-left` qua biến trong data, có thể dẫn đến trường hợp thanh scroll bị giật
 
-## Sử dụng
 
-### Sample Code
+## Thuộc tính
+
+| Thuộc tính            | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                                                                                                                 |
+| --------------------- | ------------ | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| class                 | string       |                  | Tên của class                                                                                                                                                                                         |
+| style                 | string       |                  | Inline style                                                                                                                                                                                          |
+| scroll-x              | boolean      | false            | Cho phép scroll theo chiều ngang                                                                                                                                                                      |
+| scroll-y              | boolean      | false            | Cho phép scroll theo chiều dọc                                                                                                                                                                        |
+| scroll-top            | number       | 0                | Giá trị khởi tạo vị trí của thanh scroll dọc                                                                                                                                                          |
+| scroll-left           | number       | 0                | Giá trị khởi tạo vị trí của thanh scroll ngang                                                                                                                                                        |
+| scroll-into-view      | string       |                  | Scroll tới phần tử con với `id` bằng với giá trị của `scroll-into-view`. Giá trị của `scroll-into-view` được ưu tiên hơn `scroll-top` và `scroll-left`. `scroll-into-view` chỉ áp dụng cho thẻ `view` |
+| scroll-with-animation | boolean      | false            | Sử dụng animation khi scroll                                                                                                                                                                          |
+| trap-scroll           | boolean      | false            | Khi thanh scroll đang ở trên cùng hoặc ở dưới cùng, thì hàm `onScroll` sẽ không được gọi. Thiết lập giá trị `trap-scroll` là `true` nếu bạn vẫn muốn `onScroll` được gọi                              |
+| upper-threshold       | number       | 50               | Khoảng cách từ top/left của scroll-view để kích hoạt hàm onScroll                                                                                                                                     |
+| lower-threshold       | number       | 50               | Khoảng cách từ bottom/right của scroll-view để kích hoạt hàm onScroll                                                                                                                                 |
+| trap-scroll           | boolean      | false            | Khi thanh scroll đang ở trên cùng hoặc ở dưới cùng, thì hàm `onScroll` sẽ không được gọi. Thiết lập giá trị `trap-scroll` là `true` nếu bạn vẫn muốn `onScroll` được gọi                              |
+| onScrollToUpper       | event        |                  | Sự kiện được gọi khi thanh scroll tới vị trí trên đầu hoặc ngoài cùng bên trái của `scroll-view`                                                                                                      |
+| onScrollToLower       | event        |                  | Sự kiện được gọi khi thanh scroll tới vị trí dưới cùng hoặc ngoài cùng bên phải của `scroll-view`                                                                                                     |
+| onScroll              | event        |                  | Sự kiện được gọi khi đang scroll, `event.detail = { scrollLeft, scrollTop, scrollHeight, scrollWidth }`                                                                                               |
+| onTouchStart          | event        |                  | Sự kiện được gọi khi bắt đầu chạm vào `scroll-view`. [Xem thêm](/docs/framework/event/event-object#TouchEvent-touch-event-object)                                                                     |
+| onTouchmove           | event        |                  | Sự kiện được gọi khi bạn di chuyển trong lúc chạm vào `scroll-view`. [Xem thêm](/docs/framework/event/event-object#TouchEvent-touch-event-object)                                                     |
+| onTouchEnd            | event        |                  | Sự kiện được gọi khi dừng chạm vào `scroll-view`. [Xem thêm](/docs/framework/event/event-object#TouchEvent-touch-event-object)                                                                        |
+
+
+## Sample Code
 
 import Import from '@site/src/components/Import';
 
 <Import page="pages/component/basic/scroll-view" />
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view>
   <block-header title="Usage" description="Scroll view component" />
 
@@ -52,9 +73,7 @@ import Import from '@site/src/components/Import';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 const order = ['blue', 'red', 'green', 'yellow'];
 
 Page({
@@ -100,9 +119,7 @@ Page({
 });
 ```
 
-**index.tcss**
-
-```css
+```css title=index.tcss
 .page-section-title {
   padding: 16rpx 32rpx;
 }
@@ -141,26 +158,3 @@ Page({
   flex-direction: row;
 }
 ```
-
-### Chi tiết
-
-| Property              | Type    | Default Value | Description                                                                                                                                                                                           |
-| --------------------- | ------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| class                 | string  |               | Tên của class                                                                                                                                                                                         |
-| style                 | string  |               | Inline style                                                                                                                                                                                          |
-| scroll-x              | boolean | false         | Cho phép scroll theo chiều ngang                                                                                                                                                                      |
-| scroll-y              | boolean | false         | Cho phép scroll theo chiều dọc                                                                                                                                                                        |
-| scroll-top            | number  | 0             | Giá trị khởi tạo vị trí của thanh scroll dọc                                                                                                                                                          |
-| scroll-left           | number  | 0             | Giá trị khởi tạo vị trí của thanh scroll ngang                                                                                                                                                        |
-| scroll-into-view      | string  |               | Scroll tới phần tử con với `id` bằng với giá trị của `scroll-into-view`. Giá trị của `scroll-into-view` được ưu tiên hơn `scroll-top` và `scroll-left`. `scroll-into-view` chỉ áp dụng cho thẻ `view` |
-| scroll-with-animation | boolean | false         | Sử dụng animation khi scroll                                                                                                                                                                          |
-| trap-scroll           | boolean | false         | Khi thanh scroll đang ở trên cùng hoặc ở dưới cùng, thì hàm `onScroll` sẽ không được gọi. Thiết lập giá trị `trap-scroll` là `true` nếu bạn vẫn muốn `onScroll` được gọi                              |
-| upper-threshold       | number  | 50            | Khoảng cách từ top/left của scroll-view để kích hoạt hàm onScroll                                                                                                                                     |
-| lower-threshold       | number  | 50            | Khoảng cách từ bottom/right của scroll-view để kích hoạt hàm onScroll                                                                                                                                 |
-| trap-scroll           | boolean | false         | Khi thanh scroll đang ở trên cùng hoặc ở dưới cùng, thì hàm `onScroll` sẽ không được gọi. Thiết lập giá trị `trap-scroll` là `true` nếu bạn vẫn muốn `onScroll` được gọi                              |
-| onScrollToUpper       | event   |               | Sự kiện được gọi khi thanh scroll tới vị trí trên đầu hoặc ngoài cùng bên trái của `scroll-view`                                                                                                      |
-| onScrollToLower       | event   |               | Sự kiện được gọi khi thanh scroll tới vị trí dưới cùng hoặc ngoài cùng bên phải của `scroll-view`                                                                                                     |
-| onScroll              | event   |               | Sự kiện được gọi khi đang scroll, `event.detail = { scrollLeft, scrollTop, scrollHeight, scrollWidth }`                                                                                               |
-| onTouchStart          | event   |               | Sự kiện được gọi khi bắt đầu chạm vào `scroll-view`. [Xem thêm](https://developers.tiki.vn/docs/framework/event/event-object#TouchEvent-touch-event-object)                                           |
-| onTouchmove           | event   |               | Sự kiện được gọi khi bạn di chuyển trong lúc chạm vào `scroll-view`. [Xem thêm](https://developers.tiki.vn/docs/framework/event/event-object#TouchEvent-touch-event-object)                           |
-| onTouchEnd            | event   |               | Sự kiện được gọi khi dừng chạm vào `scroll-view`. [Xem thêm](https://developers.tiki.vn/docs/framework/event/event-object#TouchEvent-touch-event-object)                                              |

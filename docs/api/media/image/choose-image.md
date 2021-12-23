@@ -67,5 +67,6 @@ Page({
 });
 ```
 
-
+<!--- 
 <img style={{maxWidth: 414}} alt="choose-image" src="/img/choose-image.gif"/>  
+--->

@@ -25,9 +25,7 @@ Thẻ `view` là một container component dùng để chứa các component kh�
 
 ## Sample Code
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view class="container">
   <view><button>A button</button></view>
   <view><text>A text</text></view>

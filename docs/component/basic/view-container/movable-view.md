@@ -3,6 +3,7 @@ title: movable-view
 ---
 
 movable-view là container component cho phép kéo và thả chính nó và các thành phần con trong nó trên page. movable-view bắt buộc phải nằm trong [movable-area](movable-area). Nếu không, movable-view không thể di chuyển được.
+
 ## Thuộc tính
 
 | Thuộc tính    | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                                   |
@@ -37,9 +38,7 @@ Sự kiện onChange và onScale có thể được kích hoạt do người dù
 
 ## Sample Code
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view>
   <block-header title="Usage" description="A movable view container. It can be dragged to move on a page. " />
   <view class="block-content">

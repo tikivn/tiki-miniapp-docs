@@ -78,8 +78,6 @@ Cấu trúc của list view:
 </recycle-view>
 ```
 
-**index.js**
-
 ```js title=src/pages/component/basic/recycle-view/list/index.js
 Page({
   data: {

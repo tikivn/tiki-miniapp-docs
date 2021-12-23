@@ -38,4 +38,4 @@ Refer to [App Development and Upload](/docs/introduce/upload).
 
 ## 8. Running the app with Dev Assistant
 
-Refer to [Dev Assistant](/docs/introduce/dev-assistant). 
+Refer to [Dev Assistant](/docs/development/testing/dev-assistant). 
