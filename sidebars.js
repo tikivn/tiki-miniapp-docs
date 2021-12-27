@@ -785,6 +785,16 @@ module.exports = {
         'backend-api/shipping/status_flow',
       ],
     },
+    {
+      type: 'category',
+      label: 'Lead Gen API',
+      items: [
+        'backend-api/lead-gen/create_application',
+        'backend-api/lead-gen/update_application',
+        'backend-api/lead-gen/input_templates',
+        'backend-api/lead-gen/status',
+      ],
+    },
 
     {
       type: 'category',
