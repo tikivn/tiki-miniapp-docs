@@ -94,7 +94,7 @@ module.exports = {
       trackingID: 'UA-15036050-25',
     },
     facebook: {
-      pixelId: '530213838024899',
+      pixelId: '445439733868914',
     },
   },
   plugins: [
