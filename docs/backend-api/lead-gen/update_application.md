@@ -12,11 +12,11 @@ API này dùng để cập nhật hồ sơ của khách hàng.
 
 ### API Address
 
-PUT https://api.tiki.vn/tiniapp-open-api/lead/applications
+PUT https://api.tiki.vn/tiniapp-open-api/lead/applications/{application_id}
 
 ### Sandbox API Address
 
-PUT https://api.tiki.vn/tiniapp-sandbox-open-api/lead/applications
+PUT https://api.tiki.vn/tiniapp-sandbox-open-api/lead/applications/{application_id}
 
 ### API Params
 
@@ -33,6 +33,8 @@ HTTP/1.1 204 No Content
 ### Request Example
 
 ```
+PUT https://api.tiki.vn/tiniapp-sandbox-open-api/lead/applications/141952217564315671
+
 {
   "status":"disbursed"
 }
