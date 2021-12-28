@@ -20,6 +20,13 @@ module.exports = function (context) {
       return {
         headTags: [
           {
+            tagName: 'meta',
+            attributes: {
+              name: 'facebook-domain-verification',
+              content: 'u0o45s2fcro07zfo4qdxcyp7wmv1e2',
+            },
+          },
+          {
             tagName: 'script',
             attributes: {
               async: true,
