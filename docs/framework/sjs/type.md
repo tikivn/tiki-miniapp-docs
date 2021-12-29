@@ -13,7 +13,7 @@ SJS hỗ trợ các kiểu dữ liệu sau:
 - function
 - array
 - date
-- regexp
+- regex
 
 ## Xác định kiểu dữ liệu
 
@@ -36,8 +36,8 @@ const array = [];
 console.log(array.constructor); // "Array"
 const date = getDate();
 console.log(date.constructor); // "Date"
-const regexp = getRegExp();
-console.log(regexp.constructor); // "RegExp"
+const regex = getRegExp();
+console.log(regex.constructor); // "RegExp"
 ```
 
 ### typeof
@@ -49,14 +49,14 @@ const obj = {};
 const func = function(){};
 const array = [];
 const date = getDate();
-const regexp = getRegExp();
+const regex = getRegExp();
 console.log(typeof num); // 'number'
 console.log(typeof bool); // 'boolean'
 console.log(typeof obj); // 'object'
 console.log(typeof func); // 'function'
 console.log(typeof array); // 'object'
 console.log(typeof date); // 'object'
-console.log(typeof regexp); // 'object'
+console.log(typeof regex); // 'object'
 console.log(typeof undefined); // 'undefined'
 console.log(typeof null); // 'object'
 ```
@@ -138,8 +138,6 @@ const a = true;
 - [toString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean/toString)
 - [valueOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean/valueOf)
 
-Lưu ý: Vui lòng tham khảo tiêu chuẩn ES5 để biết cách sử dụng cụ thể.
-
 ## `object`
 
 ### Cú pháp
@@ -183,7 +181,7 @@ const f = {...others};
 
 ### Phương thức
 
-- toString
+- [toString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)
 
 
 ## `function`
@@ -376,12 +374,10 @@ getRegExp(pattern[, flags])
 
 ### Phương thức
 
-- exec
-- test
-- toString
+- [exec](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec)
+- [test](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)
+- [toString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/toString)
   
-***Lưu ý***: Vui lòng tham khảo tiêu chuẩn ES5 để biết cách sử dụng cụ thể.
-
 ### Ví dụ
 
 ```js
