@@ -1,4 +1,9 @@
-# Chú thích
+---
+title: Custom header
+
+description: cách chú thích trong ngôn ngữ SJS
+---
+
 Giống với Javascript, có thể chú thích bằng cách format `/* */` hoặc `//`
 
 ```js

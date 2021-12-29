@@ -1,5 +1,7 @@
 ---
 title: Hỗ trợ người dùng
+
+description: Thông tin hỗ trợ người dùng của một Tiki mini app
 ---
 
 Tiki khuyến nghị Nhà phát triển cung cấp thông tin liên hệ hỗ trợ cho người dùng phòng trường hợp họ có thắc mắc hoặc gặp vấn đề với ứng dụng của Nhà phát triển.

@@ -1,4 +1,6 @@
-# Render list
+---
+title: Render list
+---
 
 ## tiki:for
 

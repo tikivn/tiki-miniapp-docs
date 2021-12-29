@@ -1,5 +1,7 @@
 ---
 title: Trình giả lập
+
+description: trình giả lập của Tini Studio để chạy Tiki mini app trên máy tính
 ---
 
 ## Giả lập thao tác trên màn hình cảm ứng
@@ -49,5 +51,3 @@ Có 2 cách thực hiện compile bằng tay:
 - Cách 2: Trên thanh công cụ của Trình giả lập, bấm vào icon Recompile.
   
 <img src="/img/Simulator_Recompile.jpg" width="300px" alt="Recompile" style={{ margin: '0 auto', display: 'flex' }}/>
-
- 

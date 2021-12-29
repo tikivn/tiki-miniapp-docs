@@ -1,4 +1,8 @@
-# Template
+---
+title: Template
+
+description: Xây dựng template cho Tiki mini app với TXML
+---
 
 TXML hỗ trợ bạn để có thể định nghĩa và sử dụng template.
 

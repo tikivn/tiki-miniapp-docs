@@ -1,5 +1,7 @@
 ---
 title: Đăng ký tên miền
+
+description: whitelist tên miền gọi API trong Tiki mini app
 ---
 
 Bạn cần đăng ký với Tiki các tên miền mà ứng dụng của bạn sử dụng để gọi Networking API và Webview vì lý do bảo mật. Tiki sẽ tiến hành xác thực để đảm bảo bạn chính là chủ sở hữu của tên miền.

@@ -1,10 +1,16 @@
-# Statement
+---
+title: Statement
+---
 
 ## if
+
 Bạn có thể sử dụng mệnh đề if theo các format:
-* if (expression) statement: khi expression là đúng, thực thi statement.
-* if (expression) statement1 else statement2: When expression là đúng, thực thi statement1. Nếu không, thực thi statement2.
-* if ... else if ... else statementN  Với format này, bạn có thể chọn một trong các câu lệnh 1 ~ statementN để thực thi
+
+- if (expression) statement: khi expression là đúng, thực thi statement.
+
+- if (expression) statement1 else statement2: When expression là đúng, thực thi statement1. Nếu không, thực thi statement2.
+
+- if ... else if ... else statementN  Với format này, bạn có thể chọn một trong các câu lệnh 1 ~ statementN để thực thi
 
 ```js
 // if ...

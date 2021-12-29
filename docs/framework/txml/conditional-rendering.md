@@ -1,4 +1,6 @@
-# Render có điều kiện
+---
+title: Render có điều kiện
+---
 
 ## tiki:if
 

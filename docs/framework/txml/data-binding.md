@@ -1,4 +1,6 @@
-# Gán dữ liệu vào TXML
+---
+title: Gán dữ liệu vào TXML
+---
 
 Dữ liệu được gán vào TXML từ trường `data` của `Page` hoặc `Component` tương ứng.
 
@@ -66,7 +68,7 @@ Các từ khoá cũng cần phải bao trong dấu ngoặc kép `"`.
 <checkbox checked="{{false}}"></checkbox>
 ```
 
-**Chú ý**: Không nên sử dụng giá trị `false` trực tiếp `<checked="false">`, bởi vì `"false"` sẽ được hiểu là chuỗi `"false"`, và nó sẽ nhận giá trị là `true`.
+***Lưu ý***: Không nên sử dụng giá trị `false` trực tiếp `<checked="false">`, bởi vì `"false"` sẽ được hiểu là chuỗi `"false"`, và nó sẽ nhận giá trị là `true`.
 
 ## Tính toán
 

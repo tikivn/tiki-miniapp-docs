@@ -1,4 +1,8 @@
-# Giới thiệu về Page
+---
+title: Giới thiệu về Page
+
+description: khái niệm và cách tổ chức page trong Tini App Framework
+---
 
 Page là 1 instance đại diện cho các pages của app. Mỗi page được chia thành 1 folder và có 4 thành phần `txml`, `tcss`, `js` và `json`.
 

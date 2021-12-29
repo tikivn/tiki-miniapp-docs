@@ -1,4 +1,6 @@
-# Referencing
+---
+title: Referencing
+---
 
 TXML cung cấp 2 cách để tham chiếu tới code khác: `import` và `include`.
 

@@ -1,5 +1,7 @@
 ---
 title: Ẩn ứng dụng
+
+description: ẩn Tiki mini app trên Kho tiện ích
 ---
 
 Nhà phát triển có thể ẩn đi ứng dụng của mình như một biện pháp tạm thời rút nó ra khỏi Kho tiện ích của Tiki App.

@@ -1,4 +1,6 @@
-# Tổng quan về framework
+---
+title: Tổng quan về framework
+---
 
 Tini App Framework được thiết kế để cho phép các nhà phát triển xây dựng ứng dụng của mình với trải nghiệm native app trên nền tảng Tiki một cách dễ dàng và đa dạng tính năng nhất có thể.
 

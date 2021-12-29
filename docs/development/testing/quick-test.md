@@ -1,5 +1,7 @@
 ---
 title: Kiểm thử nhanh ứng dụng
+
+description: kiểm thử nhanh Tiki mini app trên thiết bị di động
 ---
 
 Kiểm thử nhanh ứng dụng là một lựa chọn thay thế cụ công Dev Assistant trong việc chạy thử Tini App trên thiết bị động. Bạn chỉ cần quét mã QR hoặc lấy liên kết của build là có thể chạy nó.

@@ -1,5 +1,7 @@
 ---
 title: Nguyên tắc kiểm duyệt
+
+description: các tiểu chuẩn để Tiki mini app có thể được đưa lên Kho tiện ích 
 ---
 
 Việc xét duyệt để một Tini App được đưa lên Kho tiện ích của Tiki sẽ dựa vào các tiêu chí: tên và mô tả phù hợp với chức năng; ứng dụng không mạo danh thuộc nhà phát triển khác; bán các sản phẩm/dịch vụ đạo nhái hoặc vi phạm bản quyền; giao diện trực quan dễ sử dụng; bảo mật thông tin của khách hàng; vận hành ổn định; tuân thủ pháp luật và thuần phong mỹ tục của Việt Nam.

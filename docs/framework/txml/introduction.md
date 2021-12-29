@@ -1,6 +1,10 @@
-# Giới thiệu về TXML
+---
+title: Giới thiệu về TXML
 
-TXML là một ngôn ngữ được thiết kế để xây dựng UI cho một ứng dụng của Tiki Mini App.
+description: ngôn ngữ TXML để xây dựng UI cho Tiki mini app
+---
+
+TXML là một ngôn ngữ được thiết kế để xây dựng UI cho một Mini App.
 Cú pháp của TXML có thể chia thành 5 phần:
 
 - [Gán dữ liệu vào UI elements](/docs/framework/txml/data-binding)

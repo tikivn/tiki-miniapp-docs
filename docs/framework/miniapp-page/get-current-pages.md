@@ -1,4 +1,6 @@
-# Method getCurrentPages
+---
+title: Phương thức getCurrentPages
+---
 
 **getCurrentPages()** là global method được sử dụng để lấy stack của page hiện tại. Kết quả trả về là array các pages với phần tử đầu tiên là home, phần từ cuối cùng là page hiện tại.
 

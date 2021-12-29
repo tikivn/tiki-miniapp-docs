@@ -1,5 +1,7 @@
 ---
 title: Dev Assistant
+
+description: kiểm thử Tiki mini app trên thiết bị di động với Dev Assistant
 ---
 
 Trong quá trình phát triển, có lúc Nhà phát triển muốn chạy thử ứng dụng trên thiết bị thực để đảm bảo các tính năng hoạt động như mong muốn. Dev Assistant chính là công cụ hỗ trợ cho việc này; nó giúp cho các thành viên của ứng dụng có thể kiểm tra một build nào đó mà không cần phải publish build đó trên Kho tiện ích.

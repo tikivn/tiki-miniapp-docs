@@ -1,5 +1,7 @@
 ---
 title: Tổng quan về Tini Studio
+
+description: giới thiệu về công cụ lập trình Tiki mini app  
 ---
 
 Tini Studio, còn có tên khác là Tiki IDE, là bộ phần mềm phát triển ứng dụng trên nền tảng Tini App. Nó sở hữu tập hợp các công cụ: quản lý dự án, code editor (trình viết code), debug (gỡ lỗi), trình giả lập và tải mã nguồn của dự án lên Tiki [Tini Console](https://developer.tiki.vn/apps).

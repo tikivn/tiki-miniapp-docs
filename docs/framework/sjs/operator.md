@@ -1,6 +1,11 @@
-# Toán tử
+---
+title: Toán tử
+
+description: các toán tử trong ngôn ngữ SJS
+---
 
 ## Số học
+
 ```js
 var a = 10, b = 20;
 console.log(30 === a + b);   //true
@@ -11,12 +16,14 @@ console.log(10 === a % b);   //true
 ```
 
 Có thể dùng toán tử `+` để nối chuỗi
+
 ```js
 var a = 'hello', b = ' world';
 console.log('hello world' === a + b);    //true
 ```
 
 ## So sánh
+
 ```js
 var a = 10, b = 20;
 console.log(true === (a < b));    //true 
@@ -30,6 +37,7 @@ console.log(true === (a !== b));   //true
 ```
 
 ## Toán tử logic
+
 ```js
 var a = 10, b = 20;
 console.log(20 === (a && b));  //true
@@ -38,6 +46,7 @@ console.log(false === !a);    //true
 ```
 
 ## Toán tử Bit
+
 ```js
 var a = 10, b = 20;
 console.log(80 === (a << 3));   //true
@@ -49,6 +58,7 @@ console.log(11 === (a | 3));   //true
 ```
 
 ## Gán giá trị
+
 ```js
 var a = 10;
 a = 10; a *= 10;
@@ -76,6 +86,7 @@ console.log(11 === a);   //true
 ```
 
 ## Phép toán 1 ngôi
+
 ```js
 var a = 10, b = 20;
 console.log(10 === a++);   //true
@@ -99,6 +110,7 @@ console.log(20 === (a >= 10 ? a + 10 : b + 10));   //true
 ```
 
 ## Toán tử dấu phẩy
+
 ```js
 var a = 10, b = 20;
 console.log(20 === (a, b));   //true

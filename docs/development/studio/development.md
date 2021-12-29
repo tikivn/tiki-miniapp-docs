@@ -1,5 +1,7 @@
 ---
 title: Phát triển ứng dụng trên Tini Studio
+
+description: các bước xây dựng một dự án Tiki mini app
 ---
 
 ## 1. Tải về Tini Studio
@@ -10,7 +12,7 @@ Truy cập vào [liên kết này](https://developers.tiki.vn/downloads) để t
 
 Chạy tập tin cài đặt Tini Studio.
 
-## 3. Tạo dự án mới
+## 3. Tạo dự án Tini App mới
 
 1. Thực hiện một trong hai cách sau:
    - Menu >> **File** >> **New Project**.

@@ -1,5 +1,7 @@
 ---
 title: Debug
+
+description: các công cụ gỡ lỗi Tiki mini app
 ---
 ## Compiler Log
 
@@ -68,5 +70,5 @@ Có 2 cách gọi menu Command:
 
 ## Remote Debugging
 
-Tạo điều kiện cho nhà phát triển chạy ứng dụng trên thiết bị di động thực thụ mà không cần phải tải ứng dụng lên DevCenter.
+Tạo điều kiện cho nhà phát triển chạy ứng dụng trên thiết bị di động thực thụ mà không cần phải tải ứng dụng lên Tini Console.
 

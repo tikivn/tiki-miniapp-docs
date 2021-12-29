@@ -1,4 +1,6 @@
-# Giới thiệu về event
+---
+title: Giới thiệu về event
+---
 
 - Events là phương thức giao tiếp giữa View Layer và Logic layer
 - Events sẽ gửi các thao tác của user sang Logic layer để thực thi.
@@ -6,8 +8,10 @@
 - Event objects có thể mang thêm thông tin bổ sung, chẳng hạn như id, dataset, touches.
 
 ## Cách sử dụng:
+
 Giả sử chúng ta cần handle sự kiện tap ở 1 view bất kỳ.
 Ở file .txml 
+
 ```xml
 <view id="tapTest" data-name="Test view" onTap="tapName">
     Click me! 
@@ -15,6 +19,7 @@ Giả sử chúng ta cần handle sự kiện tap ở 1 view bất kỳ.
 ```
 
 Ở Page tương ứng, ta thêm hàm `tapName` để bind event onTap từ view sang lớp logic
+
 ```js
 Page({
   tapName(event) {
@@ -41,11 +46,14 @@ Quan sát console log, chúng ta sẽ thấy:
 Khi sử dụng các component (basic component, extend component và custom component), event nào có sẵn trong thành phần phụ thuộc vào việc bản thân thành phần đó có hỗ trợ hay không. Các event được hỗ trợ sẽ được liệt kê rõ ràng trong tài liệu của component.
 
 ## Event type
+
 Events được chia làm 2 loại:
+
 - Bubbling event: sẽ có chứa prefix là `on` ví dụ `onTap`. Khi node con trigger event, nó sẽ trigger thêm event của node cha. 
 - Non-bubbling event: sẽ có chứa prefix là `catch` ví dụ `catchTap`. Khi node con trigger event, nó sẽ không trigger event của node cha. 
 
 Các binding event cũng tương tự như cách set thuộc tính của component gồm key và value
+
 - `key`: có prefix là `on` hoặc `catch`, sau đó là type của event ví dụ `onTap`, `catchTap`.
 - `value`: là string. Giá trị này sẽ là tên của method của event trong Page. Nếu page ko define method này, khi event được trigger sẽ throw error.
 
@@ -60,20 +68,21 @@ Các binding event cũng tương tự như cách set thuộc tính của compone
   </view>
 </view>
 ```
+
 Trong ví dụ trên, nhấp vào view3 sẽ kích hoạt handleTap3 và handleTap2 liên tiếp (vì sự kiện chạm sẽ bubble đối với view2 và view2 ngăn sự kiện bubble và không còn chuyển đến nút cha), nhấp vào view2 sẽ kích hoạt handleTap2, và nhấp vào view1 sẽ kích hoạt handleTap1.
 
 Tất cả bubbling events:
 
-| Loại event           | Điều kiện kích hoạt                                                |
-| -------------------- | ------------------------------------------------------------------ |
-| touchStart           | Khi bắt đầu touch                                                  |
-| touchMove            | Touch move                                                         |
-| touchEnd             | Kết thúc touch                                                     |
-| touchCancel          | Khi touch action bị huỷ bỏ do có call reminder hoặc 1 popup        |
-| tap                  | user tap                                                           |
-| longTap              | Nhấn giữ lâu hơn 500ms                                             |
-| onAnimationStart     | Sự kiện này được kích hoạt khi CSS transition hoàn tất.            |
-| onAnimationIteration | Sự kiện này được kích hoạt khi CSS Animation kết thúc 1 iteration. |
-| onAnimationEnd       | Sự kiện này được kích hoạt khi CSS Animation kết thúc.             |
-| onTransitionEnd      | Sự kiện này được kích hoạt khi CSS transition hoàn tất.            |
+| Loại event           | Điều kiện kích hoạt                                                                                                      |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| touchStart           | Người dùng chạm ngón tay vào element trên màn hình cảm ứng                                                               |
+| touchMove            | Người dùng kéo rê ngón tay trên màn hình cảm ứng sau khi đã chạm vào element                                             |
+| touchEnd             | Người dùng buông ngón tay ra khỏi element trên màn hình cảm ứng sau sau đã chạm hoặc kéo rê ngón tay                     |
+| touchCancel          | touch action bị huỷ bỏ do có call reminder hoặc 1 popup                                                                  |
+| tap                  | Người dùng chạm ngón tay vào element trên màn hình cảm ứng. Nó chính là sự kiện ngắn xảy ra giữa touchStart và touchEnd. |
+| longTap              | Người dùng chạm ngón tay vào element trên màn hình cảm ứng giữ lâu hơn 500ms.                                            |
+| onAnimationStart     | CSS transition hoàn tất.                                                                                                 |
+| onAnimationIteration | Sự kiện này được kích hoạt khi CSS Animation kết thúc 1 iteration.                                                       |
+| onAnimationEnd       | CSS Animation kết thúc.                                                                                                  |
+| onTransitionEnd      | CSS transition hoàn tất.                                                                                                 |
 

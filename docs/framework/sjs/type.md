@@ -1,19 +1,26 @@
-# Kiểu dữ liệu
-SJS hỗ trợ các kiểu dữ liệu sau:
-* string
-* boolean
-* number
-* object
-* function
-* array
-* date
-* regexp
+---
+title: Kiểu dữ liệu
 
+description: các kiểu dữ liệu trong SJS
+---
+
+SJS hỗ trợ các kiểu dữ liệu sau:
+
+- string
+- boolean
+- number
+- object
+- function
+- array
+- date
+- regexp
 
 ## Xác định kiểu dữ liệu
+
 SJS cung cấp hai cách để xác định kiểu dữ liệu: constructor và typeof.
 
 ### Contructor
+
 ```js
 const number = 10;
 console.log(number.constructor); // "Number"
@@ -34,6 +41,7 @@ console.log(regexp.constructor); // "RegExp"
 ```
 
 ### typeof
+
 ```js
 const num = 100;
 const bool = false;
@@ -53,78 +61,89 @@ console.log(typeof undefined); // 'undefined'
 console.log(typeof null); // 'object'
 ```
 
-## string
-### Syntax
+## `string`
+
+### Cú pháp
+
 ```js
 const a = 'hello';
 const str = `${a} world`;
 ```
 
 ### Thuộc tính
-* constructor：giá trị là "String"。
-* length
+
+- constructor：giá trị là "String"。
+- length
+
 ### Phương thức
-* toString
-* valueOf
-* charAt
-* charCodeAt
-* concat
-* indexOf
-* lastIndexOf
-* localeCompare
-* match
-* replace
-* search
-* slice
-* split
-* substring
-* toLowerCase
-* toLocaleLowerCase
-* toUpperCase
-* toLocaleUpperCase
-* trim
 
-Lưu ý: Vui lòng tham khảo tiêu chuẩn ES5 để biết cách sử dụng cụ thể.
+- [charAt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt)
+- [charCodeAt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)
+- [concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat)
+- [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
+- [lastIndexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf)
+- [localeCompare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare)
+- [match](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
+- [replace](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
+- [search](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)
+- [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+- [split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+- [substring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring)
+- [toLocaleLowerCase](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLocaleLowerCase)
+- [toLocaleUpperCase](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLocaleUpperCase)
+- [toLowerCase](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
+- [toString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toString)
+- [toUpperCase](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
+- [trim](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
+- [valueOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/valueOf)
 
-## number
-### Syntax
-```
+## `number`
+
+### Cú pháp
+
+```js
 const num = 10;
 const PI = 3.141592653589793;
 ```
 
 ### Thuộc tính
-* constructor: Giá trị là `Number`
+
+- constructor: Giá trị là `Number`
 
 ### Phương thức
-* toString
-* toLocaleString
-* valueOf
-* toFixed
-* toExponential
-* toPrecision
 
-Lưu ý: Vui lòng tham khảo tiêu chuẩn ES5 để biết cách sử dụng cụ thể.
+- [toExponential](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toExponential)
+- [toFixed](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
+- [toLocaleString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString)
+- [toPrecision](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toPrecision)
+- [toString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString)
+- [valueOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/valueOf)
 
-## boolean
-### Systax
+## `boolean`
+
+### Cú pháp
+
 Chỉ có 2 giá trị true hoặc false
-```
+
+```js
 const a = true;
 ```
 
 ### Thuộc tính
-* constructor: Giá trị là `Boolean`
+
+- constructor: Giá trị là `Boolean`
 
 ### Phương thức
-* toString
-* valueOf
+
+- [toString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean/toString)
+- [valueOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean/valueOf)
 
 Lưu ý: Vui lòng tham khảo tiêu chuẩn ES5 để biết cách sử dụng cụ thể.
 
-## object
+## `object`
 
-### Syntax
+### Cú pháp
+
 ```js
 var o = {}; tạo ra 1 object rỗng
 // Gán giá trị cho object
@@ -144,7 +163,9 @@ o.constVar += 10;
 console.log(12 === o['string']);
 console.log(13 === o.constVar);
 ```
+
 ES6 syntax
+
 ```js
 let a = 2;
 o = { 
@@ -155,16 +176,20 @@ const { a, b, c: d, e = 'default'} = {a: 1, b: 2, c: 3};
 const {a, ...other} = {a: 1, b: 2, c: 3}; 
 const f = {...others}; 
 ```
+
 ### Thuộc tính
-* constructor: Giá trị là `Object`
+
+- constructor: Giá trị là `Object`
 
 ### Phương thức
-* toString
+
+- toString
 
 
-## function
+## `function`
 
-### Syntax
+### Cú pháp
+
 ```js
 // Cách 1: khai báo function
 function a (x) {
@@ -188,6 +213,7 @@ console.log(25 === d());
 ```
 
 Từ khoá `arguments` có thể sử dụng trong function
+
 ```js
 var a = function(){
     console.log(2 === arguments.length);
@@ -196,22 +222,26 @@ var a = function(){
 };
 a(1,2);
 ```
+
 Output
 ```
 true
 true
 true
 ```
+
 ### Thuộc tính
-* constructor: Giá trị là `Function`.
-* length: Trả về số lượng tham số chính thức của hàm.
+
+- constructor: Giá trị là `Function`.
+- length: Trả về số lượng tham số chính thức của hàm.
 
 ### Phương thức
 * toString: giá trị là `[function Function]`
 
-## array
+## `array`
 
-### Syntax
+### Cú pháp
+
 ```js
 var a = [];      // tạo mảng rỗng
 a = [5,"5",{},function(){}];  // Các phần tử mảng có nhiều kiểu dữ liệu khác nhau
@@ -221,37 +251,39 @@ const f = [...other]; // Destructure  mảng
 ```
 
 ### Thuộc tính
-* constructor: Giá trị là `Array`
-* length: Số phần tử trong mảng.
+
+- constructor: Giá trị là `Array`
+- length: Số phần tử trong mảng.
 
 ### Phương thức
-* toString
-* concat
-* join
-* pop
-* push
-* reverse
-* shift
-* slice
-* sort
-* splice
-* unshift
-* indexOf
-* lastIndexOf
-* every
-* some
-* forEach
-* map
-* filter
-* reduce
-* reduceRight
 
-Lưu ý: Vui lòng tham khảo tiêu chuẩn ES5 để biết cách sử dụng cụ thể.
+- [concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
+- [every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+- [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+- [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+- [join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+- [lastIndexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf)
+- [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [pop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+- [push](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+- [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+- [reduceRight](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight)
+- [reverse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
+- [shift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
+- [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+- [some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+- [sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+- [splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+- [toString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString)
+- [unshift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
 
-## date
+## `date`
 
-### Syntax
+### Cú pháp
+
 Để tạo ra 1 date object, bạn phải sử dụng hàm getDate(). Tham số giống như hàm `new Date()`
+
 ```js
 getDate()
 getDate(milliseconds)
@@ -260,56 +292,62 @@ getDate(year, month[, date[, hours[, minutes[, seconds[, milliseconds]]]]])
 ```
 
 ### Thuộc tính
-* constructor: giá trị là `Date`
+
+- constructor: giá trị là `Date`
 
 ### Phương thức
-* toString
-* toDateString
-* toTimeString
-* toLocaleString
-* toLocaleDateString
-* toLocaleTimeString
-* valueOf
-* getTime
-* getFullYear
-* getUTCFullYear
-* getMonth
-* getUTCMonth
-* getDate
-* getUTCDate
-* getDay
-* getUTCDay
-* getHours
-* getUTCHours
-* getMinutes
-* getUTCMinutes
-* getSeconds
-* getUTCSeconds
-* getMilliseconds
-* getUTCMilliseconds
-* getTimezoneOffset
-* setTime
-* setMilliseconds
-* setUTCMilliseconds
-* setSeconds
-* setUTCSeconds
-* setMinutes
-* setUTCMinutes
-* setHours
-* setUTCHours
-* setDate
-* setUTCDate
-* setMonth
-* setUTCMonth
-* setFullYear
-* setUTCFullYear
-* toUTCString
-* toISOString
-* toJSON
-  
-Lưu ý: Vui lòng tham khảo tiêu chuẩn ES5 để biết cách sử dụng cụ thể.
+
+- [toString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toString)
+- [toDateString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString)
+- [toTimeString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toTimeString)
+- [toLocaleString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString)
+- [toLocaleDateString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString)
+- [toLocaleTimeString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString)
+- [toUTCString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString)
+- [toISOString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString)
+- [toJSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toJSON)
+- [valueOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/valueOf)
+
+
+- [getTime](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)
+- [getMilliseconds](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMilliseconds)
+- [getUTCMilliseconds](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMilliseconds)
+- [getSeconds](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds)
+- [getUTCSeconds](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCSeconds)
+- [getMinutes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes)
+- [getUTCMinutes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMinutes)
+- [getHours](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours)
+- [getUTCHours](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCHours)
+- [getDate](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate)
+- [getUTCDate](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCDate)  
+- [getDay](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay)
+- [getUTCDay](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCDay)
+- [getMonth](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth)
+- [getUTCMonth](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMonth)
+- [getFullYear](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear)
+- [getUTCFullYear](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCFullYear)
+- [getTimezoneOffset](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTimezoneOffset)
+
+
+- [setTime](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime)
+- [setMilliseconds](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMilliseconds)
+- [setUTCMilliseconds](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMilliseconds)
+- [setSeconds](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setSeconds)
+- [setUTCSeconds](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCSeconds)
+- [setMinutes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMinutes)
+- [setUTCMinutes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMinutes)
+- [setHours](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setHours)
+- [setUTCHours](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCHours)
+- [setDate](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate)
+- [setUTCDate](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCDate)
+- [setMonth](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth)
+- [setUTCMonth](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMonth)
+- [setFullYear](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear)
+- [setUTCFullYear](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCFullYear)
+
 
 ### Ví dụ
+
 ```js
 let date = getDate(); 
 date = getDate(1500000000000);
@@ -317,30 +355,35 @@ date = getDate('2016-6-29');)
 date = getDate(2017, 6, 14, 10, 40, 0, 0);
 ```
 
-## regex
+## `regex`
 
-### Syntax
+### Cú pháp
+
 Để tạo ra 1 regex object, bạn phải sử dụng hàm getRegExp(). Tham số giống như hàm `new Date()`
+
 ```js
 getRegExp(pattern[, flags])
 ```
 
 ### Thuộc tính
-* constructor: giá trị là `Date`
-* global
-* ignoreCase
-* lastIndex
-* multiline
-* source
+
+- constructor: giá trị là `Date`
+- global
+- ignoreCase
+- lastIndex
+- multiline
+- source
 
 ### Phương thức
-* exec
-* test
-* toString
+
+- exec
+- test
+- toString
   
-Lưu ý: Vui lòng tham khảo tiêu chuẩn ES5 để biết cách sử dụng cụ thể.
+***Lưu ý***: Vui lòng tham khảo tiêu chuẩn ES5 để biết cách sử dụng cụ thể.
 
 ### Ví dụ
+
 ```js
 var reg = getRegExp("name", "img");
 console.log("name" === reg.source);

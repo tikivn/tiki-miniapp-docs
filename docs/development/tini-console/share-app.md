@@ -1,5 +1,7 @@
 ---
 title: Chia sẻ ứng dụng
+
+description: chia sẻ Tiki mini app thông qua QR code hoặc đường link
 ---
 
 Bạn được phép mời ai đó dùng ứng dụng đang có mặt trên Kho tiện ích bằng cách gửi mã QR hoặc liên kết của nó cho họ. 

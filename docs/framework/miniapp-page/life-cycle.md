@@ -1,20 +1,22 @@
-# Life cycle
+---
+title: Life cycle
+---
 
 Các hàm life cycle của Page được gọi bởi Framework tại những thời điểm nhất định.
 Hình vẽ sau mô tả các thời điểm này
 
 <img style={{width: '100%'}} alt="page-lifecycle" src='/img/page-lifecycle.png'/>;
 
-| hàm               | tham số               | mô tả                                                              |
-| ----------------- | --------------------- | ------------------------------------------------------------------ |
-| onLoad            | query                 | được gọi khi Page được load                                        |
-| onShow            |                       | được gọi khi Page được show hoặc mở lại từ background              |
-| onHide            | (prevProps, prevData) | được gọi sau Page bị hide hoặc enter background                    |
-| onReady           |                       | được gọi sau khi page finish render lần đầu tiên                   |
-| onUnload          |                       | được gọi khi page bị destroy                                       |
-| onPullDownRefresh |                       | được gọi khi user pull to refresh hoặc gọi my.startPullDownRefresh |
-| onShareAppMessage |                       | được gọi khi user thực hiện tác vụ "Chia sẻ" trong options menu.   |
-| onCustomIconEvent | ({index})             | được gọi khi user click vào custom icons khi sử dụng jsapi addIconToNavigationBar   |
+| Hàm               | Tham số               | Mô tả                                                                             |
+| ----------------- | --------------------- | --------------------------------------------------------------------------------- |
+| onLoad            | query                 | Được gọi khi Page được load                                                       |
+| onShow            |                       | Được gọi khi Page được show hoặc mở lại từ background                             |
+| onHide            | (prevProps, prevData) | Được gọi sau Page bị hide hoặc enter background                                   |
+| onReady           |                       | Được gọi sau khi page finish render lần đầu tiên                                  |
+| onUnload          |                       | Được gọi khi page bị destroy                                                      |
+| onPullDownRefresh |                       | Được gọi khi user pull to refresh hoặc gọi my.startPullDownRefresh                |
+| onShareAppMessage |                       | Được gọi khi user thực hiện tác vụ "Chia sẻ" trong options menu.                  |
+| onCustomIconEvent | ({index})             | Được gọi khi user click vào custom icons khi sử dụng jsapi addIconToNavigationBar |
 ## onLoad
 `onLoad` được gọi sau khi Page được khởi tạo. 
 Khi sử dụng `my.navigateTo`, `my.redirectTo`, params sẽ truyền vào trong `query`. Format của query: "parameterName=parameterValue&parameterName=parameterValue...".
