@@ -2,7 +2,7 @@
 title: my.onCompassChange
 ---
 
-`my.onCompassChange` là API dùng để mở compass.
+`my.onCompassChange` là một API để theo dõi các sự kiện thay đổi dữ liệu compass. Sau khi giao diện được gọi, quá trình giám sát sẽ tự động bắt đầu và khoảng thời gian gọi lại là 200ms. Bạn có thể sử dụng my.offCompassChange() để dừng việc giám sát.
 
 ## Quét mã để trải nghiệm
 
@@ -10,38 +10,17 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/compass/index" />
 
-## API Params
-
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                       |
-| ---------- | ------------ | ------------------------------------------- |
-| success    | Function     | Callback function khi thực hiện thành công. |
-| fail       | Function     | Callback function khi thực hiện thất bại.   |
-| complete   | Function     | Callback function khi thực hiện hoàn tất.   |
-
 ### Sample Code
 
-```xml
-<view>
-<block-header
-      title="Usage"
-      description="on compass" />
-  <view class="block-content">
-    <button class="button-full" onTap="onCompass">On Compass</button>
-  </view>
-</view>
-
-```
-
 ```js
-Page({
-  onCompass() {
-    if (my.canIUse('onCompassChange')) {
-      my.onCompassChange({
-        fail: (e) => {
-          my.alert({ title: 'Fail', content: JSON.stringify(e) });
-        }
-      });
-    }
-  }
+my.onCompassChange(function (res) {
+  console.log(res.direction);
 });
 ```
+
+## Callback value
+
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                             |
+| ---------- | ------------ | ------------------------------------------------- |
+| direction  | Number       | Độ của hướng đối diện với hướng bắc thực [0,360). |
+| timestamp  | Number       | Timestamp.                                        |
