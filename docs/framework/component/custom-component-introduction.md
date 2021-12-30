@@ -1,5 +1,7 @@
 ---
 title: Giới thiệu về Custom Component
+
+description: tự tạo và sử dụng custom component dùng cho Tiki mini app
 ---
 
 Tini App Framework hỗ trợ tính năng tạo các Custom Component trong code base của bạn.

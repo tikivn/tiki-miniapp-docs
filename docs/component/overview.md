@@ -1,4 +1,8 @@
-# Tổng quan về Component
+---
+title: Tổng quan về Component
+
+description: Giới thiệu & phân loại component trong Tini App Framework
+---
 
 Component là tập hợp các thành phần bao gồm giao diện, các thuộc tính và các hàm nhằm hỗ trợ các nhà phát triển xây dựng giao diện của ứng dụng.
 

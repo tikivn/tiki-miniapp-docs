@@ -1,7 +1,7 @@
 ---
 title: Sử dụng Custom Component
 
-description: sử dụng custom component của Tini App Framework
+description: Dùng custom component cho Tiki mini app framework như thế nào
 ---
 
 Các Custom Component được sử dụng như những Component thông thường
@@ -32,20 +32,19 @@ Các Custom Component có thể được tham chiếu bằng các đường dẫ
 
 2. Sử dụng Custom Component trong TXML giống như sử dụng Basic Component
 
-```xml
-<!-- /pages/index/index.txml -->
+```xml title=/pages/index/index.txml
 <view>
   <my-component name="tom" age="{{23}}"/>
 </view
 ```
 
-**Chú ý**
+***Lưu ý***:
 
 - Các Custom Component chỉ được sử dụng trong file TXML của các Page và các Custom Component, bạn không thể `import` hoặc `include` các file này.
 
 Ví dụ sau đây là cách dùng sai
 
-```xml
+```xml title=
 <!-- /pages/index/index.txml -->
 <include src="./template.txml" />
 
@@ -57,7 +56,6 @@ Ví dụ sau đây là cách dùng sai
 
 Cách dùng đúng là
 
-```xml
-<!-- /pages/index/index.txml -->
+```xml title=/pages/index/index.txml
 <my-component /
 ```

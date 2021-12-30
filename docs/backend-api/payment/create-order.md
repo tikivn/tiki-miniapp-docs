@@ -1,7 +1,7 @@
 ---
 title: Tạo đơn hàng
 
-description: Tiki mini app tạo đơn hàng
+description: Tiki mini app tạo đơn hàng; tích hợp thanh toán với Tiki
 ---
 
 #### Thông tin HTTP

@@ -1,7 +1,7 @@
 ---
 title: Hủy đơn hàng
 
-description: Tiki mini app huỷ đơn hàng
+description: Tiki mini app thông báo cho Tiki huỷ đơn hàng; tích hợp thanh toán với Tiki
 ---
 
 #### Thông tin HTTP

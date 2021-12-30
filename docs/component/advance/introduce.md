@@ -1,8 +1,13 @@
-# Giới thiệu
+---
+title: Giới thiệu
+
+description: Tổng quan về advanced component dành cho Tini mini app
+---
 
 Advanced component hay [Tini UI](https://github.com/tikivn/tini-ui) là bộ các components được build từ các components được cung cấp từ framework, với thiết kế dựa trên bộ [Design System](/docs/design/overview) của Tini App Team.
 
 Trong Tini UI gồm 2 packages chính:
+
 - tini-ui: cung cấp nhiều components giúp nhà phát triển có thể làm app được nhanh hơn
 - tini-style: sử dụng các Design Token từ Tini UI Design System để xây dựng nên các class giúp bạn sử dụng tcss một các nhanh chóng và thuận tiện
 

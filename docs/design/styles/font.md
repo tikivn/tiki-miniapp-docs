@@ -1,5 +1,7 @@
 ---
 title: Font chữ
+
+description: Quy định font chữ trong thiết kế giao diện Tiki mini app
 ---
 
 ## Typeface
