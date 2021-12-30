@@ -16,57 +16,57 @@ GET https://api.tiki.vn/tiniapp-open-api/shipping/shipments
 
 ### API Params
 
-| Attributes  | Type   | Required | Description              |
-| ----------- | ------ | -------- | ------------------------ |
-| tracking_id | string | yes      | tracking ID của shipment |
+| Thuộc tính  | Kiểu dữ liệu | Bắt buộc | Mô tả                    |
+| ----------- | ------------ | :------: | ------------------------ |
+| tracking_id | string       |    ✓     | tracking ID của shipment |
 
 ### API Response
 
-| Attributes  | Type   | Description                |
-| ----------- | ------ | -------------------------- |
-| tracking_id | string | unique code của shipment   |
-| status      | string | trạng thái của đơn hàng    |
-| quote       | object | thông tin quote            |
-| driver      | object | thông tin tài xế giao hàng |
+| Attributes  | Kiểu dữ liệu | Mô tả                      |
+| ----------- | ------------ | -------------------------- |
+| tracking_id | string       | unique code của shipment   |
+| status      | string       | trạng thái của đơn hàng    |
+| quote       | object       | thông tin quote            |
+| driver      | object       | thông tin tài xế giao hàng |
 
 **quote** object
 
-| Attributes         | Type   | Description                                |
-| ------------------ | ------ | ------------------------------------------ |
-| estimated_timeline | object | timeline ước chừng về việc vận chuyển hàng |
-| fee                | object | thông tin về phí vận chuyển                |
-| service            | object | loại hình vận chuyển                       |
+| Thuộc tính         | Kiểu dữ liệu | Mô tả                                       |
+| ------------------ | ------------ | ------------------------------------------- |
+| estimated_timeline | object       | Thời gian ước chừng về việc vận chuyển hàng |
+| fee                | object       | Thông tin về phí vận chuyển                 |
+| service            | object       | Loại hình vận chuyển                        |
 
 **estimated_timeline** object
 
-| Attributes | Type   | Description                      |
-| ---------- | ------ | -------------------------------- |
-| dropoff    | string | ví dụ: 2021-05-17T21:59:59+07:00 |
-| pickup     | string | ví dụ: 2021-05-17T21:59:59+07:00 |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                     |
+| ---------- | ------------ | --------------------------------------------------------- |
+| dropoff    | string       | Thời gian giao hàng. Ví dụ: 2021-05-17T21:59:59+07:00     |
+| pickup     | string       | Thời giao giao lấy hàng. Ví dụ: 2021-05-17T21:59:59+07:00 |
 
 **fee** object
 
-| Attributes | Type   | Description     |
-| ---------- | ------ | --------------- |
-| amount     | float  | số tiền         |
-| unit_code  | string | đơn vị, ex: VND |
+| Thuộc tính | Kiểu dữ liệu | Mô tả           |
+| ---------- | ------------ | --------------- |
+| amount     | float        | số tiền         |
+| unit_code  | string       | đơn vị, ex: VND |
 
 **service** object
 
-| Attributes | Type    | Description                              |
-| ---------- | ------- | ---------------------------------------- |
-| id         | integer |                                          |
-| name       | string  | ex: TNSL-Grab Express, TNSL-NJV Standard |
-| type       | string  | ex: TG_INSTANT, TG_EXPRESS, TG_STANDARD  |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                    |
+| ---------- | ------------ | ---------------------------------------- |
+| id         | integer      |                                          |
+| name       | string       | ex: TNSL-Grab Express, TNSL-NJV Standard |
+| type       | string       | ex: TG_INSTANT, TG_EXPRESS, TG_STANDARD  |
 
 **driver** object
 
-| Attributes    | Type   | Description              |
-| ------------- | ------ | ------------------------ |
-| name          | string | tên tài xế               |
-| phone         | string | số điện thoại của tài xế |
-| license_plate | string | biển số xe               |
-| photo_url     | string | avatar URL               |
+| Thuộc tính    | Kiểu dữ liệu | Mô tả                    |
+| ------------- | ------------ | ------------------------ |
+| name          | string       | Tên tài xế               |
+| phone         | string       | Số điện thoại của tài xế |
+| license_plate | string       | Biển số xe giao hàng     |
+| photo_url     | string       | avatar URL               |
 
 ### Request Example
 

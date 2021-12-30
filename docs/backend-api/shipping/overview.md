@@ -1,14 +1,16 @@
 ---
 title: Tổng quan
+
+description: Tiki mini app sử dụng dịch vụ giao hàng của Tiki.
 ---
 
 ## Giới Thiệu
 
-Khi bạn là một Tini App chạy trên nền tảng của Tiki. Tiki Users sẽ sử dụng dịch vụ giao hàng của Tiki để vận chuyển cho sản phẩm/dịch vụ của bạn.
+Khi khách hàng đặt hàng trên Mini App, thì nhà bán có thể lựa chọn dịch vụ giao hàng của Tiki để vận chuyển hàng hoá đến cho khách hàng.
 
 ## Tích Hợp Shipping Như Thế Nào?
 
-Để sử dụng được tính năng giao hàng thì bạn phải đăng ký trở thành nhà bán trên Tiki để có thể tiếp cận khách hàng. Cụ thể các bước như sau
+Để sử dụng được tính năng giao hàng thì bạn phải đăng ký trở thành nhà bán trên Tiki để có thể tiếp cận khách hàng. Cụ thể các bước như sau:
 
 ### Tạo Tài Khoản
 
@@ -20,7 +22,7 @@ Khi bạn là một Tini App chạy trên nền tảng của Tiki. Tiki Users s�
 
 ### Đăng Ký Sản Phẩm
 
-Sản phẩm trên sản TMDT của Tiki và sản phẩm do đối tác cung cấp qua Tini App là hai dòng sản phẩm độc lập. Do đó, bạn cần phải đăng ký sản phẩm của bạn với platform Tini App. Bạn có 2 cách để đăng ký sản phẩm cho Tini App
+Sản phẩm trên sản TMĐT của Tiki và sản phẩm do đối tác cung cấp qua Tini App là hai dòng sản phẩm độc lập. Do đó, bạn cần phải đăng ký sản phẩm của bạn với platform Tini App. Bạn có 2 cách để đăng ký sản phẩm cho Tini App
 
 - Đăng ký sản phẩm sử dụng [Developer Center](https://developers.tiki.vn/apps)
 - Dùng SKU bạn đăng ký ở bước trên và gọi API `product_create` [platform API](../open-api/overview) để tạo sản phẩm

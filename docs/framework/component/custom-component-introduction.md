@@ -1,4 +1,6 @@
-# Giới thiệu về Custom Component
+---
+title: Giới thiệu về Custom Component
+---
 
 Tini App Framework hỗ trợ tính năng tạo các Custom Component trong code base của bạn.
 Giống như `Page`, một Custom Component cũng sẽ bao gồm 4 thành phần `txml`, `tcss`, `js` và `json`.
@@ -7,7 +9,7 @@ Giống như `Page`, một Custom Component cũng sẽ bao gồm 4 thành phần
 
 ## Tạo mới một thư mục để chứa code của Custom Component
 
-Một thư mục chứa Custom Component sẽ chứa 4 files sau
+Một thư mục chứa Custom Component sẽ chứa 4 files sau:
 
 - index.js: chứa code logic của Custom Component
 - index.txml: chứa code về layout của Custom Component
@@ -18,8 +20,7 @@ Một thư mục chứa Custom Component sẽ chứa 4 files sau
 
 Trong file `index.json`, cần thêm đoạn code sau
 
-```json
-// /components/index/index.json
+```json title=/components/index/index.json
 {
   "component": true
 }
@@ -63,8 +64,7 @@ Sau khi Custom Component đã được định nghĩa, bạn có thể sử dụ
 
 Trước hết, bạn cần phải chỉ định rằng bạn muốn sử dụng một Custom Component bằng cách sửa file `index.json` của Page hiện tại
 
-```json
-// /pages/index/index.json
+```json title=/pages/index/index.json
 {
   "usingComponents": {
     "my-component": "/components/index/index"
@@ -74,8 +74,7 @@ Trước hết, bạn cần phải chỉ định rằng bạn muốn sử dụng
 
 Sau đó, trong file `txml` bạn có thể tham chiếu tới Custom Component như sau
 
-```xml
-<!--  /pages/index/index.txml -->
+```xml title=/pages/index/index.txml
 <view>
   this is a blank page
 </view>

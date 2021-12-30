@@ -1,5 +1,7 @@
 ---
 title: Tổng quan
+
+description: quy định thiết kế giao diện Tiki mini app
 ---
 
 ## Giới thiệu

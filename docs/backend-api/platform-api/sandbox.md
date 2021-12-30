@@ -1,5 +1,7 @@
 ---
 title: Môi trường Sandbox
+
+description: môi trường sandbox của Tiki mini app
 ---
 
 ### Giới thiệu
@@ -29,7 +31,7 @@ Mỗi Tini App sẽ đuợc cấp một cặp Key/Secret cho môi trường Sand
 
 <img style={{maxWidth: 800}} alt="popup" src="/img/sandbox.png"/>
 
-Chú ý: Key/Secret là chìa khoá tiếp cận việc thanh toán, vận chuyển, xác thực; thành thử bạn nên cân nhắc kỹ mỗi khi chia sẻ Key/Secret với người khác.
+***Chú ý***: Key/Secret là chìa khoá tiếp cận việc thanh toán, vận chuyển, xác thực; thành thử bạn nên cân nhắc kỹ mỗi khi chia sẻ Key/Secret với người khác.
 
 Khi Tini App của bạn gọi vào API của Tiki sử dụng base URL của Sandbox và cặp Key/Secret của Sandbox thì backend của Tiki sẽ tự động nhận biết là bạn đang muốn sử dụng môi trường Sandbox và sẽ cho phép bạn có thể điều chỉnh kết quả trả về mong muốn trực tiếp trên Tini Console.
 

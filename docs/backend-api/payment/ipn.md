@@ -1,5 +1,7 @@
 ---
 title: Xử lý kết quả thanh toán
+
+
 ---
 
 Sau khi khách hàng thanh toán trên Tiki, chúng tôi thực hiện hàm callback mà đối tác đăng ký khi gọi [my.makePayment](/docs/api/open/make-payment).

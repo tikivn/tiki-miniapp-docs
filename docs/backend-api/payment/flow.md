@@ -1,5 +1,7 @@
 ---
 title: Sơ đồ xử lý
+
+description: sơ đồ xử lý đơn hàng đặt trên Tiki mini app 
 ---
 
 ![Sơ đồ xử lý](payment_flow.svg)

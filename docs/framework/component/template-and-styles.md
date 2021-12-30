@@ -1,4 +1,8 @@
-# Template và styles
+---
+title: Template và styles
+
+description: xây dựng template và styles cho custom component trong Tini App Framework
+---
 
 Giống như Page, một Custom Component cũng có các file template và style riêng của nó, lần lượt nằm ở file `index.txml` và `index.tcss` tương ứng.
 
@@ -6,13 +10,11 @@ Giống như Page, một Custom Component cũng có các file template và style
 
 Một Custom Component bắt buộc phải định nghĩa file txml
 
-```xml
-<!-- /components/index/index.txml -->
+```xml title=/components/index/index.txml
 <view onTap="onMyClick" id="c-{{$id}}"/>
 ```
 
-```js
-// /components/index/index.js
+```js title=/components/index/index.js
 Component({
   methods: {
     onMyClick(e) {
@@ -22,11 +24,9 @@ Component({
 });
 ```
 
-**Chú ý**:
+***Chú ý***: Không giống như `Page`, các hàm xử lý event được định nghĩa bởi users sẽ cần đặt trong `methods`.
 
-Không giống như `Page`, các hàm xử lý event được định nghĩa bởi users sẽ cần đặt trong `methods`.
-
-### slot
+### Slot
 
 Bằng việc hỗ trợ `props`, các Custom Component có thể tương tác / nhận dữ liệu, và thậm chí là gọi tới các hàm từ các external callers để báo cho external callers về những thay đổi trong Custom Component
 
@@ -36,8 +36,7 @@ External callers có thể truyền các txml mới vào Custom Component, sau �
 
 #### Slot mặc định
 
-```xml
-<!-- /components/index/index.txml -->
+```xml title=/components/index/index.txml
 <view>
   <slot>
     <view>default slot & default value</view>
@@ -48,8 +47,7 @@ External callers có thể truyền các txml mới vào Custom Component, sau �
 
 Caller có thể không truyền vào txml mới, ví dụ
 
-```json
-// /pages/index/index.json
+```json title=pages/index/index.json
 {
   "usingComponents": {
     "my-component": "/components/index/index"
@@ -57,8 +55,7 @@ Caller có thể không truyền vào txml mới, ví dụ
 }
 ```
 
-```xml
-<!-- /pages/index/index.txml -->
+```xml title=/pages/index/index.txml
 <my-component />
 ```
 
@@ -71,8 +68,7 @@ other
 
 Caller cũng có thể truyền vào txml như sau
 
-```xml
-<!-- /pages/index/index.txml -->
+```xml title=/pages/index/index.txml
 <my-component>
   <view>header</view>
   <view>footer</view>
@@ -95,8 +91,7 @@ Bằng việc sử dụng named slot, external caller có thể xác định ph�
 
 Ví dụ
 
-```xml
-<!-- /components/index/index.txml -->
+```xml title=/components/index/index.txml
 <view>
   <slot>
     <view>default slot /& default value</view>
@@ -115,8 +110,7 @@ Component ở trên định nghĩa 3 slots:
 
 Khi sử dụng, Page có thể xác định muốn thay đổi slot nào
 
-```xml
-<!-- /pages/index/index.txml -->
+```xml title=/pages/index/index.txml
 <my-component>
   <view slot="header">header</view>
   <view slot="footer">footer</view>
@@ -139,8 +133,7 @@ footer
 
 Chúng ta cũng có thể truyền vào default slot và named slot cùng lúc
 
-```xml
-<!-- /pages/index/index.txml -->
+```xml title=/pages/index/index.txml
 <my-component>
   <view>this is to default slot</view>
   <view slot="header">header</view>
@@ -165,8 +158,8 @@ Nếu muốn truy cập vào các data trong Component, bạn sử dụng trư�
 
 Ví dụ:
 
-```js
-// /components/index/index.js
+```js title=/components/index/index.js
+// 
 Component({
   data: {
     x: 1
@@ -177,21 +170,18 @@ Component({
 });
 ```
 
-```xml
-<!-- /components/index/index.txml -->
+```xml title=/components/index/index.txml
 <view>component data: {{x}}</view>
 <view>page data: {{y}}</view>
 ```
 
-```js
-// /pages/index/index.js
+```js title=/pages/index/index.js
 Page({
   data: { y: 2 }
 });
 ```
 
-```xml
-<!-- /pages/index/index.txml -->
+```xml title=/pages/index/index.txml
 <my-component y="{{y}}" />
 ```
 
@@ -206,8 +196,7 @@ Khi một Custom Component sử dụng txml của một external caller thông q
 
 Ví dụ
 
-```xml
-<!-- /components/index/index.txml -->
+```xml title=/components/index/index.txml
 <view>
   <slot>
     <view>default slot & default value</view>
@@ -216,15 +205,13 @@ Ví dụ
 </view>
 ```
 
-```js
-// /pages/index/index.js
+```js title=/pages/index/index.js
 Page({
   data: { y: 2 }
 });
 ```
 
-```xml
-<!-- /pages/index/index.txml -->
+```xml title=/pages/index/index.txml
 <my-component>
   <view>page data: {{y}}</view>
 </my-component>
@@ -239,8 +226,8 @@ body
 
 Slot scope cho phép nội dung của slot được access vào data bên trong component. Ví dụ
 
-```js
-// /components/index/index.js
+```js title=/components/index/index.js
+// 
 Component({
   data: {
     x: 1
@@ -248,8 +235,7 @@ Component({
 });
 ```
 
-```xml
-<!-- /components/index/index.txml -->
+```xml title=/components/index/index.txml
 <view>
   <slot x="{{x}}">
     <view>default slot & default value</view>
@@ -263,15 +249,14 @@ Chúng ta định nghĩa một Custom Component với prop `x` nhận giá trị
 Khi một Page sử dụng Component này, để truy cập vào prop của component, Page cần định nghĩa một `slot-scope` gắn với slot.
 Trong đoạn code dưới đây, chúng ta gắn `slot-scope` bằng `props`.
 
-```js
-// /pages/index/index.js
+```js title=/pages/index/index.js
+// 
 Page({
   data: { y: 2 }
 });
 ```
 
-```xml
-<!-- /pages/index/index.txml -->
+```xml title=/pages/index/index.txml
 <my-component>
   <view slot-scope="props">
     <view>component data: {{props.x}}</view>

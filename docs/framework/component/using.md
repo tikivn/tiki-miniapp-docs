@@ -1,4 +1,8 @@
-# Sử dụng Custom Component
+---
+title: Sử dụng Custom Component
+
+description: sử dụng custom component của Tini App Framework
+---
 
 Các Custom Component được sử dụng như những Component thông thường
 

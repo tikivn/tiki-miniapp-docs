@@ -1,5 +1,7 @@
 ---
 title: Cấu trúc Tini Game
+
+description: Cấu trúc dự án Tiki mini-app game
 ---
 
 Một dự án Tini Game điển hình sẽ có cấu trúc như sau: 

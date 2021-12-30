@@ -1,5 +1,7 @@
 ---
 title: Tổng quan
+
+description: bán hàng trên Tiki mini app
 ---
 
 Nhắc đến Tini App là nhắc đến Tiki - một sàn thương mại điện tử có tầm cỡ. Cho nên chả có gì đáng ngạc nhiên khi nền tảng mini program này hỗ trợ tối đa các đối tác trong việc bán hàng trên ứng dụng của mình.

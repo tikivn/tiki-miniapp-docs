@@ -1,7 +1,7 @@
 ---
 title: Xoá ứng dụng
 
-description: xoá Tiki mini app trên Tini Console
+description: xoá Tiki mini app khỏi Tini Console và Kho tiện ích
 ---
 
 ***Cảnh báo***: Một bạn xóa đi một ứng dụng, nó sẽ biến mất vĩnh viễn khỏi [Tini Console](https://developer.tiki.vn/apps) cũng như Kho tiện ích của Tiki App.

@@ -1,5 +1,7 @@
 ---
 title: Hệ thống icon
+
+description: quy định về icon trong thiết kế giao diện Tiki mini app
 ---
 
 Tini sử dụng [thư viện icon của Nucleo](https://nucleoapp.com/) để làm bộ icon hệ thống. Bởi các icon này có các thuộc tính mà chúng tôi mong muốn là gọn gàng, quen thuộc và đơn giản ẩn dụ và thiết kế chỉnh chu. Các icon của Tini đóng vai trò hỗ trợ trực quan để giúp mọi người trải nghiệm hiệu quả hơn.

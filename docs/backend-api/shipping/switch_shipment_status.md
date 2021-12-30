@@ -17,16 +17,16 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/shipment_status
 
 ### API Params
 
-| Attributes  | Type   | Required | Description              |
-| ----------- | ------ | -------- | ------------------------ |
-| tracking_id | string | yes      | tracking ID của shipment |
-| status      | string | yes      | status mong muốn         |
+| Thuộc tính  | Kiểu dữ liệu | Bắt buộc | Mô tả                    |
+| ----------- | ------------ | :------: | ------------------------ |
+| tracking_id | string       |    ✓     | tracking ID của shipment |
+| status      | string       |    ✓     | Trạng thái mong muốn     |
 
 ### API Response
 
-| Attributes | Type | Description                                    |
-| ---------- | ---- | ---------------------------------------------- |
-| status     | bool | trạng thái thành công hay thất bại của request |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                          |
+| ---------- | ------------ | ---------------------------------------------- |
+| status     | bool         | trạng thái thành công hay thất bại của request |
 
 ### Request Example
 

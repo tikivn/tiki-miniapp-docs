@@ -1,7 +1,11 @@
-# Variable
+---
+title: Biến
+---
+
 Các biến trong SJS đều là tham chiếu đến các giá trị.
 
-## Grammar rules
+## Cú pháp
+
 * Có thể sử dụng var, let, const giống như Javascript.
 * Nếu chỉ define mà không assign value thì giá trị value default sẽ là `undefined`
 
@@ -13,14 +17,17 @@ const n = 2;
 let s = 'string';
 ```
 
-## Naming rules
- Tên của variables phải tuân theo những rule sau: 
+## Quy tắc đặt tên biến
 
-* Kí tự đầu tiên phải là: letter (az, AZ), underscore (_)
-* Các kí tự còn lại có thể là: letters (az, AZ), underscores (_), numbers (0-9)
+Tên của biến phải tuân theo những quy tắc sau:
+
+- Kí tự đầu tiên phải là: chữ cái (az, AZ), gạch dưới (_).
+- Các kí tự còn lại có thể là: chữ cái (az, AZ), gạch dưới (_), số (0-9).
   
 ## Reserved identifier
+
 Giống như Javascript, không được đặt tên trùng với tập các tên sau:
+
 ```
 arguments
 break

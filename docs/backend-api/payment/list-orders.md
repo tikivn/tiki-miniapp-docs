@@ -1,5 +1,7 @@
 ---
 title: Lấy thông tin nhiều đơn hàng
+
+description: lấy thông tin nhiều đơn hàng đã đặt trên Tiki mini app
 ---
 
 ### Thông tin HTTP

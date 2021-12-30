@@ -1,5 +1,6 @@
 ---
 title: Tích hợp thanh toán cho Tini App
+
 ---
 
 ## Yêu cầu Tiki mở tính năng thanh toán cho Tini App của bạn

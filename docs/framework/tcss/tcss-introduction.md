@@ -1,4 +1,10 @@
-# Giới thiệu về TCSS
+---
+title: Giới thiệu về TCSS
+
+description: TCSS ngôn ngữ định dạng các phần tử trong Tiki mini app
+---
+
+
 
 TCSS là một tập ngôn ngữ được sử dụng để mô tả style của các component từ TXML. TCSS sẽ quyết định việc các TXML component được hiển thị ra sao.
 

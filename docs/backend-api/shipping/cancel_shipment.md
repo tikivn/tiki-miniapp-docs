@@ -1,5 +1,7 @@
 ---
 title: Cancel shipment
+
+description: Tiki mini app huỷ đơn vận chuyển hàng với phía Tiki
 ---
 
 ## Giới thiệu
@@ -16,15 +18,15 @@ DELETE https://api.tiki.vn/tiniapp-open-api/shipping/shipments
 
 ### API Params
 
-| Attributes  | Type   | Required | Description              |
-| ----------- | ------ | -------- | ------------------------ |
-| tracking_id | string | yes      | tracking ID của shipment |
+| Thuộc tính  | Kiểu dữ liệu | Bắt buộc | Mô tả                    |
+| ----------- | ------------ | -------- | ------------------------ |
+| tracking_id | string       | yes      | tracking ID của shipment |
 
 ### API Response
 
-| Attributes | Type   | Description             |
-| ---------- | ------ | ----------------------- |
-| status     | string | trạng thái của đơn hàng |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                   |
+| ---------- | ------------ | ----------------------- |
+| status     | string       | trạng thái của đơn hàng |
 
 ### Request Example
 

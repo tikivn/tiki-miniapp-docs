@@ -1,7 +1,7 @@
 ---
-sidebar_label: Component
-sidebar_position: 3
 title: Life cycle
+
+sidebar_position: 3
 ---
 
 Các hàm life cycle của Custom Component được gọi bởi Framework tại những thời điểm nhất định.
@@ -9,7 +9,7 @@ Hình vẽ sau mô tả các thời điểm này
 
 ![component life cycle](https://salt.tikicdn.com/ts/upload/ca/9a/64/bb457e44059821f804b5ef3853ae2c41.png)
 
-| hàm                 | tham số               | mô tả                                                                           |
+| Hàm                 | Tham số               | Mô tả                                                                           |
 | ------------------- | --------------------- | ------------------------------------------------------------------------------- |
 | onInit              |                       | được gọi khi Component được khởi tạo                                            |
 | deriveDataFromProps | nextProps             | được gọi sau khi Component được khởi tạo, hoặc khi Component nhận các props mới |
@@ -29,8 +29,7 @@ Hình vẽ sau mô tả các thời điểm này
 
 Ví dụ 1
 
-```js
-// /components/index/index.js
+```js title:/components/index/index.js
 Component({
   data: {
     counter: 0
@@ -44,8 +43,7 @@ Component({
 });
 ```
 
-```xml
-<!-- /components/index/index.txml -->
+```xml title=/components/index/index.txml
 <view>{{counter}}</view>
 <view>{{is}}</view>
 ```
@@ -59,8 +57,8 @@ Khi component được render, chúng ta sẽ nhận được output
 
 Ví dụ 2
 
-```js
-// /components/index/index.js
+```js title=/components/index/index.js
+// 
 Component({
   onInit() {
     this.xxx = 2;
@@ -69,8 +67,7 @@ Component({
 });
 ```
 
-```xml
-<!-- /components/index/index.txml -->
+```xml title=/components/index/index.txml
 <view>{{counter}}</view>
 ```
 
@@ -90,8 +87,7 @@ Hàm này được gọi sau khi Component nhận các `data` và `props` mới.
 - Gọi các hàm `this.setData` và `this.$spliceData` để thay đổi data
 - Sử dụng `nextProps` để lấy ra các thuộc tính mới sẽ được update
 
-```js
-// /components/index/index.js
+```js title=/components/index/index.js
 Component({
   data: {
     counter: 5
@@ -106,13 +102,11 @@ Component({
 });
 ```
 
-```xml
-<!-- /components/index/index.txml -->
+```xml title=/components/index/index.txml
 <view>{{counter}}</view>
 ```
 
-```js
-// /pages/index/index.js
+```js title=/pages/index/index.js
 Page({
   data: {
     counter: 1
@@ -123,8 +117,7 @@ Page({
 });
 ```
 
-```xml
-<!-- /pages/index/index.txml -->
+```xml title=/pages/index/index.txml
 <my-component pCounter="{{counter}}" />
 <button onTap="plus">+</button>
 ```
@@ -167,10 +160,10 @@ Component({
 });
 ```
 
-**Chú ý**
+***Lưu ý***:
 
-- Khi gọi `didUpdate`, sẽ trigger gọi `this.setData`
-- External callers call `this.setData` sẽ trigger `didUpdate`
+> - Khi gọi `didUpdate`, sẽ trigger gọi `this.setData`
+> - External callers call `this.setData` sẽ trigger `didUpdate`
 
 ## didUnmount
 

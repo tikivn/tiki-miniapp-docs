@@ -1,4 +1,8 @@
-# Cấu hình Custom Component
+---
+title: Cấu hình Custom Component
+
+description: cấu hình custom component của Tini App Framework
+---
 
 Khi tạo mới một Custom Component, chúng ta có thể cấu hình Custom Component bằng file `index.json` trong thư mục chứa code Custom Component.
 

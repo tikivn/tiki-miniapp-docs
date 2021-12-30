@@ -24,97 +24,99 @@ POST https://api.tiki.vn/tiniapp-open-api/shipping/quotes
 
 ### API Params
 
-| Attributes  | Type         | Required | Description                                |
-| ----------- | ------------ | -------- | ------------------------------------------ |
-| items       | array object | yes      | thông tin các món hàng cần được vận chuyển |
-| origin      | object       | yes      | thông tin về điểm lấy hàng                 |
-| destination | object       | yes      | thông tin về điểm nhận hàng                |
+| Thuộc tính  | Kiểu dữ liệu | Bắt buộc | Mô ta                                      |
+| ----------- | ------------ | :------: | ------------------------------------------ |
+| items       | array object |    ✓     | Thông tin các món hàng cần được vận chuyển |
+| origin      | object       |    ✓     | Địa chỉ điểm lấy hàng                      |
+| destination | object       |    ✓     | Địa chỉ điểm giao hàng                     |
 
 **item** object
 
-| Attributes  | Type    | Required | Description                     |
-| ----------- | ------- | -------- | ------------------------------- |
-| name        | string  | yes      | tên món hàng                    |
-| description | string  | yes      | mô tả món hàng                  |
-| quantity    | integer | yes      | số lượng món hàng               |
-| price       | float   | yes      | giá trị món hàng, đơn vị là VND |
-| weight      | float   | yes      | cân nặng món hàng, đơn vị là gm |
-| dimension   | object  | yes      | thông tin về kích cỡ món hàng   |
+| Thuộc tính  | Kiểu dữ liệu | Bắt buộc | Mô tả                           |
+| ----------- | ------------ | :------: | ------------------------------- |
+| name        | string       |    ✓     | Tên món hàng                    |
+| description | string       |    ✓     | Mô tả món hàng                  |
+| quantity    | integer      |    ✓     | Số lượng món hàng               |
+| price       | float        |    ✓     | Giá trị món hàng, đơn vị là VND |
+| weight      | float        |    ✓     | Cân nặng món hàng, đơn vị là gm |
+| dimension   | object       |    ✓     | Thông tin về kích cỡ món hàng   |
 
 **dimension** object
 
-| Attributes | Type  | Required | Description                       |
-| ---------- | ----- | -------- | --------------------------------- |
-| height     | float | yes      | chiều dài món hàng, đơn vị là cm  |
-| width      | float | yes      | chiều rộng món hàng, đơn vị là cm |
-| depth      | float | yes      | chiều sâu món hàng, đơn vị là cm  |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                             |
+| ---------- | ------------ | :------: | --------------------------------- |
+| height     | float        |    ✓     | Chiều dài món hàng, đơn vị là cm  |
+| width      | float        |    ✓     | Chiều rộng món hàng, đơn vị là cm |
+| depth      | float        |    ✓     | Chiều sâu món hàng, đơn vị là cm  |
 
 **origin** object
+Địa chỉ điểm lấy hàng
 
-| Attributes    | Type   | Required | Description                    |
-| ------------- | ------ | -------- | ------------------------------ |
-| coordinates   | object | no       | thông số toạ độ                |
-| street        | string | yes      | địa chỉ đường, ví dụ: 285 CMT8 |
-| ward_name     | string | yes      | địa chỉ phường                 |
-| district_name | string | yes      | địa chỉ quận                   |
-| province_name | string | yes      | địa chỉ tỉnh                   |
-| ward_code     | string | yes      | code của quận                  |
+| Thuộc tính    | Kiểu dữ liệu | Bắt buộc | Mô tả                          |
+| ------------- | ------------ | :------: | ------------------------------ |
+| coordinates   | object       |    ✕     | Toạ độ điểm lấy hàng           |
+| street        | string       |    ✓     | Địa chỉ đường, ví dụ: 285 CMT8 |
+| ward_name     | string       |    ✓     | Tên phường                     |
+| district_name | string       |    ✓     | Tên quận                       |
+| province_name | string       |    ✓     | Tên tỉnh/thành                 |
+| ward_code     | string       |    ✓     | Mã phường                      |
 
 **Xem thêm cách lấy ward_code [tại đây](./get_ward_code.md)**
 
 **destination** object
+Địa chỉ điểm giao hàng
 
-| Attributes    | Type   | Required | Description                    |
-| ------------- | ------ | -------- | ------------------------------ |
-| coordinates   | object | no       | thông số toạ độ                |
-| street        | string | yes      | địa chỉ đường, ví dụ: 285 CMT8 |
-| ward_name     | string | yes      | địa chỉ phường                 |
-| district_name | string | yes      | địa chỉ quận                   |
-| province_name | string | yes      | địa chỉ tỉnh                   |
-| ward_code     | string | yes      | code của quận                  |
+| Thuộc tính    | Kiểu dữ liệu | Bắt buộc | Mô tả                                  |
+| ------------- | ------------ | :------: | -------------------------------------- |
+| coordinates   | object       |    ✕     | thông số toạ độ                        |
+| street        | string       |    ✓     | số nhà cùng với đường, ví dụ: 285 CMT8 |
+| ward_name     | string       |    ✓     | địa chỉ phường                         |
+| district_name | string       |    ✓     | địa chỉ quận                           |
+| province_name | string       |    ✓     | địa chỉ tỉnh                           |
+| ward_code     | string       |    ✓     | Mã phường                              |
 
 **coordinates** object
 
-| Attributes | Type  | Required | Description |
-| ---------- | ----- | -------- | ----------- |
-| latitude   | float | no       | latitude    |
-| longitude  | float | no       | longitude   |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả   |
+| ---------- | ------------ | -------- | ------- |
+| latitude   | float        | ✕        | Vĩ độ   |
+| longitude  | float        | ✕        | Kinh độ |
 
 ### API Response
 
-| Attributes | Type         | Description         |
+| Thuộc tính | Kiểu dữ liệu | Mô tả               |
 | ---------- | ------------ | ------------------- |
 | quotes     | array object | danh sách các quote |
 
 **quote** object
 
-| Attributes         | Type   | Description                                |
-| ------------------ | ------ | ------------------------------------------ |
-| estimated_timeline | object | timeline ước chừng về việc vận chuyển hàng |
-| fee                | object | thông tin về phí vận chuyển                |
-| partner_code       | string | mã code của đối tác vận chuyển             |
-| service            | object | loại hình vận chuyển                       |
+| Thuộc tính         | Kiểu dữ liệu | Mô tả                                      |
+| ------------------ | ------------ | ------------------------------------------ |
+| estimated_timeline | object       | timeline ước chừng về việc vận chuyển hàng |
+| fee                | object       | thông tin về phí vận chuyển                |
+| partner_code       | string       | mã code của đối tác vận chuyển             |
+| service            | object       | loại hình vận chuyển                       |
 
 **estimated_timeline** object
 
-| Attributes | Type   | Description                      |
-| ---------- | ------ | -------------------------------- |
-| dropoff    | string | ví dụ: 2021-05-17T21:59:59+07:00 |
-| pickup     | string | ví dụ: 2021-05-17T21:59:59+07:00 |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                 |
+| ---------- | ------------ | ----------------------------------------------------- |
+| dropoff    | string       | Thời gian lấy hàng. Ví dụ: 2021-05-17T21:59:59+07:00  |
+| pickup     | string       | Thời gian giao hàng. Ví dụ: 2021-05-17T21:59:59+07:00 |
 
 **fee** object
 
-| Attributes | Type   | Description     |
-| ---------- | ------ | --------------- |
-| amount     | float  | số tiền         |
-| unit_code  | string | đơn vị, ex: VND |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                      |
+| ---------- | ------------ | -------------------------- |
+| amount     | float        | Số tiền                    |
+| unit_code  | string       | Đơn vị tiền tệ. Ví dụ: VND |
 
 **service** object
 
-| Attributes | Type   | Description                              |
-| ---------- | ------ | ---------------------------------------- |
-| name       | string | ex: TNSL-Grab Express, TNSL-NJV Standard |
-| code       | string | ex: TG_INSTANT, TG_EXPRESS, TG_STANDARD  |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                              |
+| ---------- | ------------ | ------------------------------------------------------------------ |
+| name       | string       | Tên dịch vụ vận chuyển.Ví dụ: TNSL-Grab Express, TNSL-NJV Standard |
+| code       | string       | Mã dịch vụ vận chuyển. Ví dụ: TG_INSTANT, TG_EXPRESS, TG_STANDARD  |
 
 ### Request Example
 

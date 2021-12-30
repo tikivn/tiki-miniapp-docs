@@ -1,5 +1,7 @@
 ---
 title: Cách Tính Signature
+
+description: tạo chữ ký điện tử trong Tiki mini app
 ---
 
 ## Request header
@@ -7,7 +9,7 @@ title: Cách Tính Signature
 Với mỗi request để được xác thực cần gửi những thông tin sau trong request header
 
 | Header              | Description                                   |
-| ----------          | ----------                                    |
+| ------------------- | --------------------------------------------- |
 | X-Tiniapp-Timestamp | Thời gian gọi request, tính bằng milliseconds |
 | X-Tiniapp-Client-Id | Client id được cấp khi tạo app                |
 | X-Tiniapp-Signature | Signature được tính dựa trên request body     |

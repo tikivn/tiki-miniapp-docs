@@ -1,9 +1,10 @@
-# Mixins
+---
+title: Mixins
+---
 
 Khi implement nhiều Custom Component, và các Custom Component này có nhiều logic sử dụng chung, bạn có thể dùng mixins để sử dụng lại các code logic.
 
-```js
-// /mixins/lifecycle.js
+```js title=/mixins/lifecycle.js
 export default {
   onInit() {
     console.log('init');
@@ -15,8 +16,7 @@ export default {
 };
 ```
 
-```js
-// /components/index/index.js
+```js title=/components/index/index.js
 import lifecycle from '/mixins/lifecycle';
 
 const initialState = {
@@ -45,7 +45,6 @@ Component({
 });
 ```
 
-```xml
-<!-- /components/index/index.txml -->
+```xml title=/components/index/index.txml
 <view>{{name}}: {{age}}</view>
 ```

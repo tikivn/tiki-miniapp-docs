@@ -1,8 +1,8 @@
-# Component Object
+---
+title: Component Object
+---
 
-**Chú ý**
-
-Các hàm xử lý sự kiện của một component (ví dụ như `onTap`) không được hỗ trợ mặc định, các Custom Component phải cài đặt các hàm này.
+***Quan trọng***: Các hàm xử lý sự kiện của một component (ví dụ như `onTap`) không được hỗ trợ mặc định, các Custom Component phải cài đặt các hàm này.
 
 ## Component Constructor
 
@@ -26,32 +26,30 @@ Component({
 });
 ```
 
-| tên                 | kiểu     | bắt buộc | mô tả                                                               |
-| ------------------- | -------- | -------- | ------------------------------------------------------------------- |
-| data                | Object   | không    | Các trạng thái nội tại của Component                                |
-| props               | Object   | không    | Các giá trị mặc định cho external data                              |
-| onInit              | Function | không    | Hàm này được gọi khi component được khởi tạo                        |
-| deriveDataFromProps | Function | không    | Hàm được gọi khi comment được khởi tạo, và trước khi nó được update |
-| didMount            | Function | khoông   | Hàm được gọi sau khi Component được mount                           |
-| didUpdate           | Function | khoông   | Hàm được gọi sau khi Component được update                          |
-| didUnmount          | Function | không    | Hàm được gọi sau khi Component được unmount                         |
-| mixins              | Array    | không    | Cơ chế để sử dụng lại code giữa các Component                       |
-| methods             | Object   | không    | Các hàm xử lý sự kiện hoặc bất kỳ method nào được thêm mới          |
-| ref                 | Function | không    | Xác định giá trị được trả về khi Component được tham chiếu bởi ref  |
+| Thuộc tính          | Kiểu dữ liệu | Mô tả                                                               |
+| ------------------- | ------------ | ------------------------------------------------------------------- |
+| data                | Object       | Các trạng thái nội tại của Component                                |
+| props               | Object       | Các giá trị mặc định cho external data                              |
+| onInit              | Function     | Hàm này được gọi khi component được khởi tạo                        |
+| deriveDataFromProps | Function     | Hàm được gọi khi comment được khởi tạo, và trước khi nó được update |
+| didMount            | Function     | Hàm được gọi sau khi Component được mount                           |
+| didUpdate           | Function     | Hàm được gọi sau khi Component được update                          |
+| didUnmount          | Function     | Hàm được gọi sau khi Component được unmount                         |
+| mixins              | Array        | Cơ chế để sử dụng lại code giữa các Component                       |
+| methods             | Object       | Các hàm xử lý sự kiện hoặc bất kỳ method nào được thêm mới          |
+| ref                 | Function     | Xác định giá trị được trả về khi Component được tham chiếu bởi ref  |
 
-## methods
+## Phương thức
 
 Custom Component không chỉ render các data tĩnh, nó cũng hỗ trợ việc xử lý các sự kiện như user click.
 Khác với `Page`, các hàm xử lý sự kiện của Custom Component cần đặt trong biến `methods`.
 
-```xml
-<!-- /components/index/index.txml -->
+```xml title=/components/index/index.txml
 <view>{{counter}}</view>
 <button onTap="plusOne">+1</button>
 ```
 
-```js
-// /components/index/index.js
+```js title=/components/index/index.js
 Component({
   data: { counter: 0 },
   methods: {
@@ -70,22 +68,20 @@ Component ở trên sẽ render một button, số đếm trên component sẽ �
 Custom Component có thể nhận data từ bên ngoài, và sau khi xử lý xong, nó có thể thông báo lại cho bên ngoài sau khi xử lý xong.
 Tiki Mini App Framework hỗ trợ điều đó bằng cách sử dụng `props` của Component
 
-**Chú ý**
+***Chú ý***:
 
-- Props là các thuộc tính được truyền từ bên ngoài, những thuộc tính này có thể được xác định giá trị mặc định bởi trường `props` của Component
-- Component có thể truy cập vào trường `props` để thông qua biến `props`.
-- Component không thể thay đổi các giá trị của trường `props`
-- Để thông báo với external callers sau khi xử lý xong, Component có thể định nghĩa các callback để gọi sau khi thực hiện xong việc xử lý. External callers có thể override lại các callback này
+> - Props là các thuộc tính được truyền từ bên ngoài, những thuộc tính này có thể được xác định giá trị mặc định bởi trường `props` của Component
+> - Component có thể truy cập vào trường `props` để thông qua biến `props`.
+> - Component không thể thay đổi các giá trị của trường `props`
+> - Để thông báo với external callers sau khi xử lý xong, Component có thể định nghĩa các callback để gọi sau khi thực hiện xong việc xử lý. External callers có thể override lại các callback này
 
-```xml
-<!-- /components/index/index.txml -->
+```xml title=/components/index/index.txml
 <view>{{counter}}</view>
 <view>extra: {{extra}}</view>
 <button onTap="plusOne">+1</button>
 ```
 
-```js
-// /components/index/index.js
+```js title=/components/index/index.js
 Component({
   data: { counter: 0 },
   props: {
@@ -108,13 +104,11 @@ Component sẽ gọi tới hàm `onCounterPlusOneFinish`.
 
 Chúng ta có thể sử dụng Component như sau
 
-```xml
-<!-- /pages/index/index.txml -->
+```xml title=/pages/index/index.txml
 <my-component extra="external extra" onCounterPlusOne="onCounterPlusOne" />
 ```
 
-```js
-// /pages/index/index.js
+```js title=/pages/index/index.js
 Page({
   onCounterPlusOne(data) {
     console.log(data);
@@ -132,16 +126,15 @@ extra: external extra
 
 ## Component instance properties
 
-| tên   | kiểu   | mô tả                                                 |
-| ----- | ------ | ----------------------------------------------------- |
-| data  | Object | Component internal data                               |
-| props | Object | Properites được truyền vào Component                  |
-| is    | String | Đường dẫn tuyệt đối của Component                     |
-| $page | Object | Instance của page mà trong đó Component được sử dụng  |
-| $id   | Number | Component id được dùng để render Component trong TXML |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                 |
+| ---------- | ------------ | ----------------------------------------------------- |
+| data       | Object       | Component internal data                               |
+| props      | Object       | Properites được truyền vào Component                  |
+| is         | String       | Đường dẫn tuyệt đối của Component                     |
+| $page      | Object       | Instance của page mà trong đó Component được sử dụng  |
+| $id        | Number       | Component ID được dùng để render Component trong TXML |
 
-```js
-// /components/index/index.js
+```js title=/components/index/index.js
 Component({
   didMount() {
     this.$page.xxCom = this;
@@ -152,13 +145,11 @@ Component({
 });
 ```
 
-```xml
-<!-- /components/index/index.txml -->
+```xml title=/components/index/index.txml
 <view>{{$id}}</view>
 ```
 
-```js
-// /pages/index/index.js
+```js title=/pages/index/index.js
 Page({
   onReady() {
     console.log(this.xxCom);
@@ -176,6 +167,6 @@ Sau khi component được render, chúng ta sẽ nhận được kết quả sa
 
 ## Component instance method
 
-| hàm     | parameter types | mô tả                         |
+| Hàm     | Parameter types | Mô tả                         |
 | ------- | --------------- | ----------------------------- |
 | setData | Object          | Set data để trigger rendering |
