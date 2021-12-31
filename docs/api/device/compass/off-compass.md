@@ -2,22 +2,33 @@
 title: my.offCompassChange
 ---
 
-`my.offCompassChange` là API dùng để đóng compass.
+`my.offCompassChange` là API giúp dừng việc theo dõi dữ liệu compass.
 
-## Quét mã để trải nghiệm
+## API Params
 
-import { QRCode } from '@site/src/components/QRCode';
+- Khi gọi API kèm theo callback thì chỉ event callback đó được xoá:
 
-<QRCode page="pages/api/compass/index" />
+```js
+my.offCompassChange(this.callback);
+```
 
-### Sample Code
+- Khi callback không được truyền vào, tất cả các event callback được xoá:
 
 ```js
 my.offCompassChange();
 ```
 
-**Hoặc**
+## Sample Code
 
 ```js
-my.offCompassChange(this.callback);
+Page({
+  onLoad() {
+    this.callback = this.callback.bind(this);
+    my.offCompassChange(this.callback);
+  },
+  onUnload() {
+    my.offCompassChange(this.callback);
+  },
+  callback(res) {}
+});
 ```
