@@ -4,7 +4,7 @@ title: 'my.getUserInfo'
 
 **my.getUserInfo** là API để lấy các thông tin cơ bản của users (tên, ảnh, số điện thoại, email và tiki user id)
 
-Để sử dụng **my.getUserInfo** bạn cần có quyền _getAuthCode_, để lấy được email và phone, bạn cần thêm quyền _getUserPhoneAndEmail_. Chi tiết có thể xem [tại đây](/docs/api/backend-permission)
+Để lấy được email và phone, bạn cần thêm quyền _getUserPhoneAndEmail_. Chi tiết có thể xem [tại đây](/docs/api/backend-permission)
 
 ## API Params
 
