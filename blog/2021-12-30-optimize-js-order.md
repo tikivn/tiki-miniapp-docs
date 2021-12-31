@@ -91,7 +91,7 @@ Vì vậy, khi script trên được chạy, script có thể cho chúng ta bi�
   <div>hello</div>
   <script src="http://localhost:3000/index.js?timeout=2"></script>
   <script src="http://localhost:3000/index.js?timeout=1"></script>
-</body
+</body>
 ```
 
 Trong thẻ `head`, chúng ta chạy một đoạn script để khởi tạo biến `START_TIME`.
