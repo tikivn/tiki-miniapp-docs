@@ -1,8 +1,8 @@
 ---
-title: my.vibrateLong
+title: my.vibrateShort
 ---
 
-`my.vibrateLong` là API dùng để làm rung thiết bị, với thời gian rung 40ms.
+`my.vibrateShort` là API dùng để làm rung thiết bị, với thời gian rung 40ms.
 
 ## Quét mã để trải nghiệm
 
