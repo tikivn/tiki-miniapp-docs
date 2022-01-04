@@ -13,7 +13,10 @@ Quy trình tạo ra và đề nghị duyệt một SKU (sản phẩm) bán trên
 
 Sau đây là các bước chính yếu để tạo ra cũng như đề nghị duyệt đối với một SKU bán trên Tini App.
 
-***Lưu ý:***  Bạn có thể tìm thấy hướng dẫn đầy đủ về cách tạo một SKU thông thường bằng cách truy cập https://hocvien.tiki.vn/tai-lieu-tham-khao/ và chọn **Đăng tải sản phẩm**.
+***Lưu ý:*** 
+
+> - Bạn có thể tìm thấy hướng dẫn đầy đủ về cách tạo một SKU thông thường bằng cách truy cập https://hocvien.tiki.vn/tai-lieu-tham-khao/ và chọn **Đăng tải sản phẩm**.
+> - Bạn không nhất thiết phải tạo thủ công các SKU trên Seller Center nếu như bạn chỉ bán chúng trên Tini App mà không bán trên sàn Tiki. Vì sau khi tính năng thanh toán cho Tini App (Production) được bật lên, các SKU bán trên Tini App của bạn sẽ được hệ thống Tiki tự động tạo ra trên Seller Center.
 
 ## Tạo ra sản phẩm
 
