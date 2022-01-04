@@ -10,7 +10,7 @@ Sau đây là các bước thực hiện:
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Thông tin tài khoản**.
-3. Dưới Tài khoản Seller Center, bấm nút Liên kết tài khoản.
+3. Dưới **Tài khoản Seller Center**, bấm nút **Liên kết tài khoản**.
    <img src="/img/Link_Accounts_Tini_Console.png" width="600px" alt="Link Developer account with Seller account" style={{ margin: '0 auto', display: 'flex' }}/>
 4. Cửa sổ popup đăng nhập Seller Center hiện ra. Thực hiện đăng nhập bằng tài Seller mà bạn muốn liên kết.
    <img src="/img/Link_Accounts_login_Seller_Center.png" width="600px" alt="Log in to Seller Center" style={{ margin: '0 auto', display: 'flex' }}/> 
