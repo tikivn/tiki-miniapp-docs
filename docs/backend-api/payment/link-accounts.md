@@ -1,5 +1,7 @@
 ---
 title: Liên kết tài khoản
+
+description: liên kết tài khoản giữa Nhà phát triển và tài khoản Seller; thanh toán với Tiki.
 ---
 
 Ý nghĩa của việc liên kết tài khoản Nhà phát triển với tài khoản Seller là giúp đồng bộ hoá sản phẩm được bán trên Tini App với Seller Center.
