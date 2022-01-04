@@ -26,7 +26,7 @@ Khai báo components:
 {
   "defaultTitle": "Tini Button",
   "usingComponents": {
-    "button": "@tikivn/mini-ui/lib/button/index"
+    "button": "@tiki.vn/tini-ui/es/button/index"
   }
 }
 ```

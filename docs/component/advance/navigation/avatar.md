@@ -22,7 +22,7 @@ Khai báo components:
 {
   "defaultTitle": "Avatar",
   "usingComponents": {
-    "avatar": "@tikivn/mini-ui/lib/avatar/index"
+    "avatar": "@tiki.vn/tini-ui/es/avatar/index"
   }
 }
 ```

@@ -22,7 +22,7 @@ Khai báo components:
 {
   "defaultTitle": "Popup",
   "usingComponents": {
-    "popup": "@tikivn/mini-ui/lib/popup/index"
+    "popup": "@tiki.vn/tini-ui/es/popup/index"
   }
 }
 ```
