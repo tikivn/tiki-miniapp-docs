@@ -334,11 +334,11 @@ Page({
 
 Mỗi content bên trong item cần được bao bởi `sidebar-content`
 
-| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả |
-| ---------- | ------------ | -------- | ----- |
-| anchor     | string       |          | true  | Được dùng như là id của item, các `anchor` không được trùng nhau |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                            |
+| ---------- | ------------ | -------- | ---------------------------------------------------------------- |
+| anchor     | string       | true     | Được dùng như là id của item, các `anchor` không được trùng nhau |
 
-***Lưu ý:***
+**_Lưu ý:_**
 
 > - Các `icon` trong `tabs` bạn có thể tìm thấy ở [đây](/docs/component/basic/basic/icon)
 > - Số lượng các phần tử trong biến `sidebar` và số component trong thẻ `<sidebar>` nên bằng nhau
