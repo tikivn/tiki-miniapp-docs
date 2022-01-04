@@ -734,7 +734,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Open API',
-      collapsed: false,
+      collapsed: true,
       items: [
         'backend-api/open-api/overview',
         'backend-api/open-api/user-profile',
@@ -743,7 +743,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Platform API',
-      collapsed: false,
+      collapsed: true,
       items: [
         'backend-api/platform-api/overview',
         'backend-api/platform-api/sandbox',
@@ -757,6 +757,7 @@ module.exports = {
       label: 'Thanh toán với Tiki',
       items: [
         'backend-api/payment/overview',
+        'backend-api/payment/link-accounts',
         'backend-api/payment/create-sku',
         'backend-api/payment/payment-integration',
         'backend-api/payment/flow',
@@ -799,7 +800,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Backend với GCP',
-      collapsed: false,
+      collapsed: true,
       items: [
         'backend-api/gcp-sponsor/intro',
         'backend-api/gcp-sponsor/auth-backend',
