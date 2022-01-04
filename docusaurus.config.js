@@ -121,6 +121,7 @@ module.exports = {
     [
       '@docusaurus/plugin-sitemap',
       {
+        id: 'tiniapp-sitemap',
         changefreq: 'daily',
         priority: 0.5,
         trailingSlash: false,
