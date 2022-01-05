@@ -5,7 +5,7 @@ slug: choose-platform
 description: các tiêu chí chọn một nền tảng mini app cho ứng dụng của bạn
 ---
 
-Bạn thử tưởng tượng dồn hết tâm huyết xây dựng một ứng dụng cực chất, song lại phát hành trên nền tảng ứng dụng ít phổ biến. Thế có cơ may nào để ứng dụng này thành công không? Phải nói rằng nền tảng là điều kiện cần để một ứng dụng thành công. 
+Bạn thử tưởng tượng dồn hết tâm huyết xây dựng một ứng dụng cực chất, song lại phát hành trên nền tảng ứng dụng ít phổ biến. Thế cơ may nào để ứng dụng này thành công không? Phải nói rằng nền tảng là điều kiện cần để một ứng dụng thành công. 
 
 Thị trường mini app tại Việt Nam đang bước vào giai đoạn bùng nổ với khá nhiều nền tảng mini app. Tuy vậy, hầu như chưa có những bài đánh giá hay nhận xét chi tiết về các nền tảng mini app Việt. Đứng trước nhiều lựa chọn nhưng thiếu thông tin, các nhà phát triển ắt sẽ bối rối không biết phải xây dựng ứng dụng của mình trên nền tảng mini app.
 
