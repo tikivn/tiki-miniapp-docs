@@ -118,14 +118,6 @@ module.exports = {
       },
     ],
     path.resolve(__dirname, './plugins/docusaurus-plugin-facebook-pixel'),
-    [
-      '@docusaurus/plugin-sitemap',
-      {
-        changefreq: 'daily',
-        priority: 0.5,
-        trailingSlash: false,
-      },
-    ],
   ],
   presets: [
     [
@@ -144,6 +136,9 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
+        },
+        sitemap: {
+          changefreq: 'daily',
         },
       },
     ],
