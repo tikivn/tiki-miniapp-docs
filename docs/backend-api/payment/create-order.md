@@ -24,20 +24,20 @@ Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính x
 | shipping_address | **[Address](#address)** |    ✕     | Địa chỉ giao hàng, dùng để hiện thị trên trang thanh toán Tiki (phần thông tin khách hàng)           |
 | billing_address  | **[Address](#address)** |    ✕     | Địa chỉ thanh toán                                                                                   |
 | shipping_fee     | int64                   |    ✕     | Phí giao hàng                                                                                        |
-| extra            | string                  |    ✕     | Thông tin bổ sung theo định dạng  ***key=value;key=value***                                          |
+| extra            | string                  |    ✕     | Thông tin bổ sung theo định dạng **_key=value;key=value_**                                           |
 | reference_id     | string                  |    ✕     | ID đơn hàng của đối tác                                                                              |
 
 #### Item
 
-| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                       |
-| ---------- | ------------ | :------: | ----------------------------------------------------------- |
-| name       | string       |    ✓     | Tên sản phẩm                                                |
-| sku        | string       |    ✓     | Mã sản phẩm ở được đăng ký trước ở Seller Center            |
-| quantity   | int64        |    ✓     | Số lượng sản phẩm                                           |
-| price      | int64        |    ✓     | Giá tiền sản phẩm                                           |
-| extra      | string       |    ✕     | Thông tin bổ sung theo định dạng  ***key=value;key=value*** |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                      |
+| ---------- | ------------ | :------: | ---------------------------------------------------------- |
+| name       | string       |    ✓     | Tên sản phẩm                                               |
+| sku        | string       |    ✓     | Mã sản phẩm ở được đăng ký trước ở Seller Center           |
+| quantity   | int64        |    ✓     | Số lượng sản phẩm                                          |
+| price      | int64        |    ✓     | Giá tiền sản phẩm                                          |
+| extra      | string       |    ✕     | Thông tin bổ sung theo định dạng **_key=value;key=value_** |
 
-***Lưu ý***:
+**_Lưu ý_**:
 
 > - Trong một đơn hàng, các item khác nhau thì phải có sku khác nhau.
 > - Giá trị đơn hàng tối đa là mười triệu (10.000.000) đồng. Nếu muốn thay đổi thì cần yêu cầu ở [Tini Console](https://developers.tiki.vn/apps).
@@ -51,7 +51,6 @@ Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính x
 | phone      | string       |    ✕     |    ✓     | Số điện thoại khách hàng |
 | email      | string       |    ✕     |    ✓     | Email khách hàng         |
 | street     | string       |    ✕     |    ✓     | Địa chỉ khách hàng       |
-
 
 Vi dụ về yêu cầu tạo đơn hàng
 
@@ -73,6 +72,7 @@ curl --location --request POST 'https://api.tiki.vn/tiniapp-open-api/order' \
 | Data       | []**[Data](#data)** |    ✓     |       |
 
 ##### Data
+
 | Thuộc tính | Kiểu dữ liệu        | Bắt buộc | Mô tả |
 | ---------- | ------------------- | :------: | ----- |
 | order      | **[Order](#order)** |    ✓     |       |
@@ -86,6 +86,8 @@ curl --location --request POST 'https://api.tiki.vn/tiniapp-open-api/order' \
 | grand_total     | int64        |    ✓     |    ✓     | Tổng số tiền mà khách hàng dùng cần thanh toán                                                                         |
 | tiki_order_id   | string       |    ✓     |    ✓     | ID của đơn hàng nằm ở hệ thống Tiki                                                                                    |
 | tiki_order_code | string       |    ✓     |    ✓     | Mã đơn hàng nằm ở hệ thống Tiki dùng cho mục đích đối soát. Nó được sinh ra khi khách hàng thanh toán online đơn hàng. |
+| extra           | string       |    ✓     |    ✓     | Thông tin bổ sung theo định dạng **_key=value;key=value_**                                                             |
+| reference_id    | string       |    ✓     |    ✓     | ID đơn hàng của đối tác                                                                                                |
 
 Ví dụ về dữ liệu trả về
 
@@ -93,13 +95,16 @@ Ví dụ về dữ liệu trả về
 {
   "data": {
     "order": {
-      "id": "83429979421016087",
-      "status": "draft",
-      "grand_total": 25600
+      "id": "141857488587784201",
+      "extra": "",
+      "status": "canceled",
+      "grand_total": 35000,
+      "reference_id": "0",
+      "tiki_order_id": "1001059779",
+      "tiki_order_code": "308714458"
     }
   }
 }
 ```
 
 Khi khách hàng thanh toán bắt đầu thanh toán đơn hàng, JS API [my.makePayment](/docs/api/open/make-payment) sẽ được dùng để mở màn hình thanh toán cho đơn hàng với tham số truyền vào là order ID.
-

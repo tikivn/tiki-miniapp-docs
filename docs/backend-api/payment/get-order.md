@@ -47,9 +47,13 @@ Ví dụ về dữ liệu trả về
 {
   "data": {
     "order": {
-      "id": "77062110977884170",
+      "id": "141857488587784201",
+      "extra": "",
       "status": "canceled",
-      "grand_total": 1000
+      "grand_total": 35000,
+      "reference_id": "0",
+      "tiki_order_id": "1001059779",
+      "tiki_order_code": "308714458"
     }
   }
 }
