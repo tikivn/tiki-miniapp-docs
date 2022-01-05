@@ -2,6 +2,7 @@
 title: Mini app - cuộc cách mạng trong làng phần mềm di động
 
 slug: mini-app-revolution
+date: 2021-12-14
 description: mini app thổi luồng sinh khí mới vào ngành di động
 ---
 
@@ -21,4 +22,5 @@ Về phía người dùng, họ có all in one. Thay vì phải lên kho ứng d
 
 Mô hình mini app và super app tiêu biểu cho hình thức cộng sinh tuyệt vời.
 
-*Hãy cũng nhau tìm hiểu về [Tiki mini app](/docs/introduce/getting-started)*. 
+
+_Hãy cũng nhau tìm hiểu về [Tiki mini app](/docs/introduce/getting-started)_.
