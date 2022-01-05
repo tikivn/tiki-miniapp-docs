@@ -10,7 +10,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/get-setting/index" />
 
-**_Khả dụng_**: Hỗ trợ từ version 1.85.8 trở lên.
+**_Khả dụng_**: Hỗ trợ từ version v1.86.3 trở lên.
 
 ## API Params
 
