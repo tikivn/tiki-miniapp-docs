@@ -1,6 +1,31 @@
 ---
 title: Tải về
 ---
+### Phiên bản 2.1
+31/12/2021 </br>
+
+Năm 2021 của bạn như thế nào? Đối với team bọn mình là một năm khá "điên rồ" khi vừa tạo ra, publish lên cộng đồng cũng như là trùng tu và phát triển tiếp bộ Tini design system này, mệt thì có mệt nhưng mà rất hài lòng với thành quả như ngày hôm nay.</br>
+Tháng này bọn mình tập trung vào việc sử dụng library này để thiết kế những tiện ích chuẩn bị có mặt trên app Tiki, nên chỉ có vài bổ sung nho nhỏ.</br>
+
+Có gì mới?</br>
+- Image component: Bọn mình mới ra mắt thêm một tỉ lệ hình mới là 5:1, chủ yếu dành để sử dụng cho banner quảng cáo
+- Button: Chào mừng Neutral Reverse button vào với đại gia đình button của Tini design
+- Color tokens: Bọn mình có thêm hai tokens mới cho trạng thái disabled.
+
+Những cải thiện </br>
+- Bọn mình có điểu chỉnh sắc độ opacity của vài token màu của Neutral Outline button để tăng tính dễ tiếp cận hơn.
+
+Đó là những gì của tháng này bọn mình đã cập nhật cho Tini, hẹn gặp lại bạn năm sau với những cái tiến xịn hơn đến từ Tini design system của bọn mình nhé. </br>
+
+May the force be with you!!!</br>
+
+[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+
+---
+
+
 ### Phiên bản 2.0
 30/11/2021 <br/>
 
@@ -11,8 +36,6 @@ Bên cạnh đó bọn mình cũng có một vài cải tiến cho thư viện c
 - Thay đổi giá trị màu/ kích thước/ cách đặt tên của một vài component để tăng tính dễ nhận dạng và sử dụng hơn như là Neutral button, trạng thái disabled của các components...v.v
 
 Đó là những thay đổi của tháng mười một này. Hẹn gặp lại các bạn vào tháng sau!!! Giữ gìn sức khỏe nhé.<br/>
-
-[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 ---

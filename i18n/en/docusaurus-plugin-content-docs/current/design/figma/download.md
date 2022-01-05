@@ -3,6 +3,29 @@ order: 51
 category: Design resources
 title: Download here
 ---
+### v2.1
+December 31st, 2021 </br>
+
+How is your 2021? Our design team has had a crazy year to build, launch, and maintain the Tini design system, but we are happy about it. </br>
+This month, we focus on using the library to build apps in Tiki, so we have some minor updates.</br>
+
+What new?</br>
+- Image component: Now we have the 5:1 ratio to use for ads banner
+- Button: the Neutral Reverse button is the new member of our button components
+- Color tokens: We have two more tokens for disabled state
+
+Improvement </br>
+- We adjust the opacity of the Neutral Outline button's color tokens.
+
+See you next year with more improvement from our Tini design system. </br>
+
+May the force be with you!!!</br>
+
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
+
 ### v2.0
 November 30th, 2021 <br/>
 
@@ -14,10 +37,10 @@ We also have some improvements for the components library <br/>
 
 That's it for November. See you next month!!! Stay healthy.<br/>
 
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
-
 
 ---
+
+
 ### v1.4
 October 29th, 2021 <br/>
 
