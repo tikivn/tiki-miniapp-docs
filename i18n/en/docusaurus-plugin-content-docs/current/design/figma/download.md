@@ -4,22 +4,22 @@ category: Design resources
 title: Download here
 ---
 ### v2.1
-December 31st, 2021 </br>
+December 31st, 2021 <br/>
 
-How is your 2021? Our design team has had a crazy year to build, launch, and maintain the Tini design system, but we are happy about it. </br>
-This month, we focus on using the library to build apps in Tiki, so we have some minor updates.</br>
+How is your 2021? Our design team has had a crazy year to build, launch, and maintain the Tini design system, but we are happy about it. <br/>
+This month, we focus on using the library to build apps in Tiki, so we have some minor updates.<br/>
 
-What new?</br>
+What new?<br/>
 - Image component: Now we have the 5:1 ratio to use for ads banner
 - Button: the Neutral Reverse button is the new member of our button components
 - Color tokens: We have two more tokens for disabled state
 
-Improvement </br>
+Improvement <br/>
 - We adjust the opacity of the Neutral Outline button's color tokens.
 
-See you next year with more improvement from our Tini design system. </br>
+See you next year with more improvement from our Tini design system. <br/>
 
-May the force be with you!!!</br>
+May the force be with you!!!<br/>
 
 [Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
@@ -77,7 +77,7 @@ That's it for September. See ya next month!!!
 
 ### v1.2
 August 31st, 2021 <br/>
-As I said last month, we have a new member, and he brings lots of awesome components, improvements to our design system <br />
+As I said last month, we have a new member, and he brings lots of awesome components, improvements to our design system <br/>
 What’s new?
 - Button: We have one more color type: The neutral button.
 - Uploader: This component is used to upload images, documents, and other files to the app.
