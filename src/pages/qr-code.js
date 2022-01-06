@@ -119,7 +119,7 @@ export default function QRCodePage() {
   };
 
   return (
-    <Layout title="Tini App" description="Tini App">
+    <Layout title="QR Code Generator" description="Tini App QR Code Generator">
       <main className={styles.allCenter}>
         <h1>Tini App QR Code Generator</h1>
         <InputGroup
