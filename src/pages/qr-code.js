@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Layout from '@theme/Layout';
 
 import {QRCode} from '../components/QRCode';
@@ -33,10 +33,8 @@ const InputGroup = ({readOnly, label, value, index, onChange}) => {
 };
 
 export default function QRCodePage() {
-  const [appId, setAppId] = useState(localStorage.getItem(APP_ID_KEY) ?? '');
-  const [appImage, setImage] = useState(
-    localStorage.getItem(APP_IMAGE_KEY) ?? '',
-  );
+  const [appId, setAppId] = useState('');
+  const [appImage, setImage] = useState('');
   const [inputs, setInputs] = useState([
     {
       label: 'utm_source',
@@ -52,6 +50,18 @@ export default function QRCodePage() {
     },
   ]);
   const [params, setParams] = useState(null);
+
+  useEffect(() => {
+    const id = localStorage.getItem(APP_ID_KEY);
+    if (id) {
+      setAppId(id);
+    }
+
+    const image = localStorage.getItem(APP_IMAGE_KEY);
+    if (image) {
+      setImage(image);
+    }
+  }, []);
 
   const onChangeInput = ({label, value, index}) => {
     const newInputs = inputs.map((item, i) =>
