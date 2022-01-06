@@ -1,41 +1,64 @@
 ---
 title: Tải về
 ---
+### Phiên bản 2.1
+31/12/2021 <br />
+
+Năm 2021 của bạn như thế nào? Đối với team bọn mình là một năm khá "điên rồ" khi vừa tạo ra, publish lên cộng đồng cũng như là trùng tu và phát triển tiếp bộ Tini design system này, mệt thì có mệt nhưng mà rất hài lòng với thành quả như ngày hôm nay.<br />
+Tháng này bọn mình tập trung vào việc sử dụng library này để thiết kế những tiện ích chuẩn bị có mặt trên app Tiki, nên chỉ có vài bổ sung nho nhỏ.<br />
+
+Có gì mới?<br />
+- Image component: Bọn mình mới ra mắt thêm một tỉ lệ hình mới là 5:1, chủ yếu dành để sử dụng cho banner quảng cáo
+- Button: Chào mừng Neutral Reverse button vào với đại gia đình button của Tini design
+- Color tokens: Bọn mình có thêm hai tokens mới cho trạng thái disabled.
+
+Những cải thiện <br />
+- Bọn mình có điểu chỉnh sắc độ opacity của vài token màu của Neutral Outline button để tăng tính dễ tiếp cận hơn.
+
+Đó là những gì của tháng này bọn mình đã cập nhật cho Tini, hẹn gặp lại bạn năm sau với những cái tiến xịn hơn đến từ Tini design system của bọn mình nhé. <br />
+
+May the force be with you!!!<br />
+
+[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+
+---
+
+
 ### Phiên bản 2.0
-30/11/2021 <br/>
+30/11/2021 <br />
 
-Design tokens là ngôn ngữ chung giữa designer và developer; chúng không chỉ giúp việc hợp tác giữa 2 bên dễ dàng hơn cũng như quản lý và phát triển, mà còn đảm bảo tính nhất quán giữa các nền tảng và các sản phẩm. Bọn mình đã thử nghiệm sử dụng design token vào Tini design system từ lúc bắt đầu, và đến hôm nay bọn mình rất phấn khởi khi ra mắt phiên bản Tini 2.0 với bộ design tokens chính thức. Bọn mình sẽ viết một vài bài viết về design tokens, mọi người kiên nhẫn chờ đợi nhé ;) <br/>
+Design tokens là ngôn ngữ chung giữa designer và developer; chúng không chỉ giúp việc hợp tác giữa 2 bên dễ dàng hơn cũng như quản lý và phát triển, mà còn đảm bảo tính nhất quán giữa các nền tảng và các sản phẩm. Bọn mình đã thử nghiệm sử dụng design token vào Tini design system từ lúc bắt đầu, và đến hôm nay bọn mình rất phấn khởi khi ra mắt phiên bản Tini 2.0 với bộ design tokens chính thức. Bọn mình sẽ viết một vài bài viết về design tokens, mọi người kiên nhẫn chờ đợi nhé ;) <br />
 
-Bên cạnh đó bọn mình cũng có một vài cải tiến cho thư viện component <br/>
+Bên cạnh đó bọn mình cũng có một vài cải tiến cho thư viện component <br />
 - Thể loại button mới: the Over background button
 - Thay đổi giá trị màu/ kích thước/ cách đặt tên của một vài component để tăng tính dễ nhận dạng và sử dụng hơn như là Neutral button, trạng thái disabled của các components...v.v
 
-Đó là những thay đổi của tháng mười một này. Hẹn gặp lại các bạn vào tháng sau!!! Giữ gìn sức khỏe nhé.<br/>
-
-[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+Đó là những thay đổi của tháng mười một này. Hẹn gặp lại các bạn vào tháng sau!!! Giữ gìn sức khỏe nhé.<br />
 
 
 ---
 
 
 ### Phiên bản 1.4
-29/10/2021 <br/>
+29/10/2021 <br />
 
-Sài Gòn đã nhộn nhịp và mọi người có thể được ăn uống bên ngoài lại rồi mọi người ơiiiii. Cập nhật tình hình nơi tụi mình sống là vậy còn về phần Tini design system của bọn mình thì:<br/>
-Cải thiện:<br/>
-1. Chip:<br/>
+Sài Gòn đã nhộn nhịp và mọi người có thể được ăn uống bên ngoài lại rồi mọi người ơiiiii. Cập nhật tình hình nơi tụi mình sống là vậy còn về phần Tini design system của bọn mình thì:<br />
+Cải thiện:<br />
+1. Chip:<br />
 - Cải thiện khoảng cách của Icon suffix, prefix.
 - Giảm kích thước icon prefix của Chip từ 24px còn 20px.
 2. Dropdown:
 - Sửa lại icon và đổi token màu.
 
-Những cái mới:<br/>
-1. Image: Đã có ratio mới là 4:3 và 3:4.<br/>
-2. Bottom sheet: Tách Overlay ra khỏi component Bottom sheet component để trở thành một component riêng.<br/>
-3. Avatar: Có một loại Avatar mới là Initials Avatar.<br/>
+Những cái mới:<br />
+1. Image: Đã có ratio mới là 4:3 và 3:4.<br />
+2. Bottom sheet: Tách Overlay ra khỏi component Bottom sheet component để trở thành một component riêng.<br />
+3. Avatar: Có một loại Avatar mới là Initials Avatar.<br />
 4. Combo Field.
 
-Tháng này vỏn vẹn chỉ có vậy.<br/>
+Tháng này vỏn vẹn chỉ có vậy.<br />
 Tháng sau, bọn mình sẽ ra mắt phiên bản 2.0 với cấu trúc mới của color token nhé.
 
 

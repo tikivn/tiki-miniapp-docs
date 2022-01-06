@@ -53,14 +53,22 @@ Ví dụ về dữ liệu trả về
   "data": {
     "orders": [
       {
-        "id": "84112926079713300",
-        "status": "completed",
-        "grand_total": 220000
+        "id": "141857488587784201",
+        "extra": "",
+        "status": "canceled",
+        "grand_total": 35000,
+        "reference_id": "0",
+        "tiki_order_id": "1001059779",
+        "tiki_order_code": "308714458"
       },
       {
-        "id": "88238130968199168",
-        "status": "completed",
-        "grand_total": 1000
+        "id": "141857488587784202",
+        "extra": "",
+        "status": "canceled",
+        "grand_total": 35000,
+        "reference_id": "1",
+        "tiki_order_id": "1001059721",
+        "tiki_order_code": "308714451"
       }
     ]
   }

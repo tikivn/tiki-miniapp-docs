@@ -55,6 +55,8 @@ export class QRCode extends React.Component {
     importGithub: null,
     importPage: null,
     importGithubFolder: null,
+    params: null, // Object
+    qrId: 'react-qrcode-tiki',
   };
 
   static utf16to8(str) {
@@ -203,11 +205,14 @@ export class QRCode extends React.Component {
   }
 
   get qrPage() {
-    const {page, firstPage, domainUrl, appId} = this.props;
+    const {page, firstPage, domainUrl, appId, params} = this.props;
 
     const _firstPage = firstPage ? `/${firstPage}` : '';
     const subPage = page ? `?page=${page}` : '';
-    return `${domainUrl}/apps/${appId}${_firstPage}${subPage}`;
+    const p = params
+      ? `${subPage ? '&' : '?'}${new URLSearchParams(params)}`
+      : '';
+    return `${domainUrl}/apps/${appId}${_firstPage}${subPage}${p}`;
   }
 
   update() {
@@ -384,6 +389,7 @@ export class QRCode extends React.Component {
       importTemplate,
       importGithub,
       importGithubFolder,
+      qrId,
     } = this.props;
     const size = +this.props.size + 2 * +this.props.quietZone;
 
@@ -391,7 +397,7 @@ export class QRCode extends React.Component {
       <>
         <canvas
           onClick={this.onClick}
-          id="react-qrcode-tiki"
+          id={qrId}
           height={size}
           width={size}
           style={{

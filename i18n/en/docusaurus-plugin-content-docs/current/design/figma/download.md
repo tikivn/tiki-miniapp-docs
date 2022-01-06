@@ -3,39 +3,62 @@ order: 51
 category: Design resources
 title: Download here
 ---
-### v2.0
-November 30th, 2021 <br/>
+### v2.1
+December 31st, 2021 <br />
 
-The design tokens are the shared language between designers & developers; they not only make it easier to collaborate, maintain and scale the design system but also help ensure consistency across platforms and products. We experiment with the Tini design system's design tokens from the beginning, and today we are happy to release the Tini v2.0 with the official design tokens library. We will write some articles about this, and please be patient ;) <br/>
+How is your 2021? Our design team has had a crazy year to build, launch, and maintain the Tini design system, but we are happy about it. <br />
+This month, we focus on using the library to build apps in Tiki, so we have some minor updates.<br />
 
-We also have some improvements for the components library <br/>
-- New button type: the Over background button
-- Change the color value/size/naming convention of some components to make them more accessible as the Neutral button, the disabled state of all components...etc
+What new?<br />
+- Image component: Now we have the 5:1 ratio to use for ads banner
+- Button: the Neutral Reverse button is the new member of our button components
+- Color tokens: We have two more tokens for disabled state
 
-That's it for November. See you next month!!! Stay healthy.<br/>
+Improvement <br />
+- We adjust the opacity of the Neutral Outline button's color tokens.
+
+See you next year with more improvement from our Tini design system. <br />
+
+May the force be with you!!!<br />
 
 [Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 ---
-### v1.4
-October 29th, 2021 <br/>
 
-Saigon resumed in-person dining at restaurants and eateries from yesterday. Just a quick update for my city, and now we have some more updates about the Tini design system:<br/>
-Improved:<br/>
-1. Chip:<br/>
+### v2.0
+November 30th, 2021 <br />
+
+The design tokens are the shared language between designers & developers; they not only make it easier to collaborate, maintain and scale the design system but also help ensure consistency across platforms and products. We experiment with the Tini design system's design tokens from the beginning, and today we are happy to release the Tini v2.0 with the official design tokens library. We will write some articles about this, and please be patient ;) <br />
+
+We also have some improvements for the components library <br />
+- New button type: the Over background button
+- Change the color value/size/naming convention of some components to make them more accessible as the Neutral button, the disabled state of all components...etc
+
+That's it for November. See you next month!!! Stay healthy.<br />
+
+
+---
+
+
+### v1.4
+October 29th, 2021 <br />
+
+Saigon resumed in-person dining at restaurants and eateries from yesterday. Just a quick update for my city, and now we have some more updates about the Tini design system:<br />
+Improved:<br />
+1. Chip:<br />
 - Improve padding for Icon suffix, prefix.
 - Reduce the size of Chip's prefix icon from 24px to 20px.
 2. Dropdown:
 - Fix icon and change token.
 
-New:<br/>
-1. Image: new ratio with 4:3 and 3:4.<br/>
-2. Bottom sheet: separated Overlay from Bottom sheet component to the new one.<br/>
-3. Avatar: a new type of Avatar - Initials Avatar.<br/>
+New:<br />
+1. Image: new ratio with 4:3 and 3:4.<br />
+2. Bottom sheet: separated Overlay from Bottom sheet component to the new one.<br />
+3. Avatar: a new type of Avatar - Initials Avatar.<br />
 4. Combo Field.
 
-That's it for this month.<br/>
+That's it for this month.<br />
 Hint: next month, we will release version 2.0 with the new structure of color tokens.
 
 
@@ -43,9 +66,9 @@ Hint: next month, we will release version 2.0 with the new structure of color to
 
 
 ### v1.3
-September 30th, 2021 <br/>
-How's your September? Saigon is recovering, and the city plans to resume activities from October 1st. <br/>
-This month, the Tini team focused on delivering the new [Food & Beverage template](https://www.figma.com/community/file/1025657656395537576/Tini---Food-%26-Beverage-Template), so our design system has some improvements for the inside structure of the Table, Date field, and List view. Some minor changes for Social post components, and rename Error, Success color token to Negative & Positive color token for more usages. <br/>
+September 30th, 2021 <br />
+How's your September? Saigon is recovering, and the city plans to resume activities from October 1st. <br />
+This month, the Tini team focused on delivering the new [Food & Beverage template](https://www.figma.com/community/file/1025657656395537576/Tini---Food-%26-Beverage-Template), so our design system has some improvements for the inside structure of the Table, Date field, and List view. Some minor changes for Social post components, and rename Error, Success color token to Negative & Positive color token for more usages. <br />
 That's it for September. See ya next month!!!
 
 
@@ -53,8 +76,8 @@ That's it for September. See ya next month!!!
 
 
 ### v1.2
-August 31st, 2021 <br/>
-As I said last month, we have a new member, and he brings lots of awesome components, improvements to our design system <br />
+August 31st, 2021 <br />
+As I said last month, we have a new member, and he brings lots of awesome components, improvements to our design system <br/>
 What’s new?
 - Button: We have one more color type: The neutral button.
 - Uploader: This component is used to upload images, documents, and other files to the app.
