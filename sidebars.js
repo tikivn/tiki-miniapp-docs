@@ -790,6 +790,7 @@ module.exports = {
       type: 'category',
       label: 'Lead Gen API',
       items: [
+        'backend-api/lead-gen/overview',
         'backend-api/lead-gen/create_application',
         'backend-api/lead-gen/update_application',
         'backend-api/lead-gen/input_templates',

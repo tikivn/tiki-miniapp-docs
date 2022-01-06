@@ -26,7 +26,7 @@ Tini App dùng webhook để notify tới ứng dụng backend của developer k
 >
 > Mô tả các mã code lý do giao hàng thất bại:
 
-| Code              | Description                  |
+| Code              | Mô tả                        |
 | ----------------- | ---------------------------- |
 | no_longer_needed  | Khách hàng không còn nhu cầu |
 | virtual_customer  | Khách hàng ảo                |
@@ -65,7 +65,7 @@ Tini App dùng webhook để notify tới ứng dụng backend của developer k
 
 Với mỗi webhook event, Tini App chèn thông tin signature thông qua các header sau:
 
-| Header              | Description                                   |
+| Header              | Mô tả                                         |
 | ------------------- | --------------------------------------------- |
 | X-Tiniapp-Timestamp | Thời gian gọi request, tính bằng milliseconds |
 | X-Tiniapp-Client-Id | Client id được cấp khi tạo app                |

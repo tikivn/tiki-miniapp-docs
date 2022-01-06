@@ -22,7 +22,7 @@ GET https://api.tiki.vn/tiniapp-open-api/shipping/shipments
 
 ### API Response
 
-| Attributes  | Kiểu dữ liệu | Mô tả                      |
+| Thuộc tính  | Kiểu dữ liệu | Mô tả                      |
 | ----------- | ------------ | -------------------------- |
 | tracking_id | string       | unique code của shipment   |
 | status      | string       | trạng thái của đơn hàng    |
@@ -39,10 +39,10 @@ GET https://api.tiki.vn/tiniapp-open-api/shipping/shipments
 
 **estimated_timeline** object
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                                     |
-| ---------- | ------------ | --------------------------------------------------------- |
-| dropoff    | string       | Thời gian giao hàng. Ví dụ: 2021-05-17T21:59:59+07:00     |
-| pickup     | string       | Thời giao giao lấy hàng. Ví dụ: 2021-05-17T21:59:59+07:00 |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                 |
+| ---------- | ------------ | ----------------------------------------------------- |
+| dropoff    | string       | Thời gian giao hàng. Ví dụ: 2021-05-17T21:59:59+07:00 |
+| pickup     | string       | Thời giao lấy hàng. Ví dụ: 2021-05-17T21:59:59+07:00  |
 
 **fee** object
 
