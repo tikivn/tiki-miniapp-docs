@@ -16,6 +16,7 @@ const groups = [
       {title: 'Server API', url: '/docs/backend-api/overview'},
       {title: 'Tiki Open API', url: '/docs/backend-api/open-api/overview'},
       {title: 'Design', url: '/docs/design/overview'},
+      {title: 'QR Code', url: '/qr-code'},
     ],
   },
   {
