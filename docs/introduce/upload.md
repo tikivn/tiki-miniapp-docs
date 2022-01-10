@@ -6,7 +6,7 @@ description: quy ước đánh số version và build cho Tiki mini app.
 
 ## 1. Xây dựng ứng dụng
 
-Sau khi bạn hoàn thành công đoạn ra ứng dụng với **App ID** duy nhất trên [Tini Console](https://developer.tiki.vn/apps), bạn chuyển sang tạo một project mới trên Tini Studio. Điền **App ID** vào hộp thoại **Configure your project**.
+Sau khi bạn hoàn thành công đoạn tạo ra ứng dụng với **App ID** duy nhất trên [Tini Console](https://developer.tiki.vn/apps), bạn chuyển sang tạo một project mới trên Tini Studio. Điền **App ID** vào hộp thoại **Configure your project**.
 
 <img src="/img/New_Project_TiniStudio.jpg" width="450px" alt="Developer Registration Form" style={{ margin: '0 auto', display: 'flex' }}/>
 

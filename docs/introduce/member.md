@@ -19,7 +19,7 @@ Owner, Admin và Programmer có quyền truy cập Tini Console cũng như thự
 Phàm đội ngũ xây dựng các ứng dụng cho công ty quy tụ nhiều thành phần khác nhau. Có người làm việc lâu dài, góp mặt vào nhiều ứng dụng; có người được mướn theo thời vụ chỉ tham gia một dự án; có người là khách hàng của công ty được mời dùng thử sản phẩm; … .Vì lẽ đó, Tini App giới thiệu khái niệm nhóm Thành viên thường trực và nhóm Thành viên phát triển ứng dụng, nhằm giúp công ty cấp quyền truy cập cho các kiểu thành viên khác nhau một cách thuận tiện.
 
 - Tài khoản Nhà phát triển sẽ có một nhóm Thành viên thường trực (chung).
-- Tương ứng mỗi ứng dụng của Nhà phát triển sẽ một nhóm Thành viên phát triển ứng dụng (riêng).
+- Tương ứng mỗi ứng dụng của Nhà phát triển sẽ có một nhóm Thành viên phát triển ứng dụng (riêng).
 
 ## Quản lý Thành viên thường trực
 

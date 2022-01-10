@@ -18,11 +18,11 @@ Khi khách hàng đặt hàng trên Mini App, thì nhà bán có thể lựa ch�
 
 1. Sau khi có account trên Seller Center. Bạn cần tạo SKUs để cho các Tini App sử dụng (SKU này có thể sử dụng chung giữa các Tini App hoặc bạn cũng có thể tạo một SKU cho mỗi Tini App của bạn)
 
-1. Đăng nhập vào [Developer Center](https://developers.tiki.vn/apps) và thực hiện các bước theo hướng dẫn để link account Seller Center của bạn vào Developer Center
+1. Đăng nhập vào [Tini Console](https://developers.tiki.vn/apps) và thực hiện các bước theo hướng dẫn để link tài khoản Seller với của bạn vào Nhà phát triển.
 
 ### Đăng Ký Sản Phẩm
 
 Sản phẩm trên sản TMĐT của Tiki và sản phẩm do đối tác cung cấp qua Tini App là hai dòng sản phẩm độc lập. Do đó, bạn cần phải đăng ký sản phẩm của bạn với platform Tini App. Bạn có 2 cách để đăng ký sản phẩm cho Tini App
 
-- Đăng ký sản phẩm sử dụng [Developer Center](https://developers.tiki.vn/apps)
+- Đăng ký sản phẩm sử dụng [Tini Console](https://developers.tiki.vn/apps)
 - Dùng SKU bạn đăng ký ở bước trên và gọi API `product_create` [platform API](../open-api/overview) để tạo sản phẩm
