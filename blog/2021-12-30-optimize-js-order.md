@@ -1,5 +1,6 @@
 ---
 title: Tối ưu việc load Javascript trên Main Thread và Web Worker
+date: 2021-12-30
 ---
 
 ## 1. Bài toán của Tini App
