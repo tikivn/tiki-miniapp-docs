@@ -12,11 +12,11 @@ _Lưu ý: hiện tại chỉ có một template duy nhất_
 
 ### Template 1
 
-| Attributes | Type   | Required | Description                  |
-| ---------- | ------ | -------- | ---------------------------- |
-| name       | string | yes      | tên của khách hàng           |
-| phone      | string | yes      | số điện thoại của khách hàng |
-| address    | string | yes      | địa chỉ của khách hàng       |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                        |
+| ---------- | ------------ | :------: | ---------------------------- |
+| name       | string       |    ✓     | Tên của khách hàng           |
+| phone      | string       |    ✓     | Số điện thoại của khách hàng |
+| address    | string       |    ✓     | Địa chỉ của khách hàng       |
 
 ## Ví dụ
 

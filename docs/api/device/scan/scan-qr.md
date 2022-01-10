@@ -2,14 +2,11 @@
 title: my.scan
 ---
 
-## Giới thiệu
+`my.scan` là API dùng để quét mã QR hoặc mã vạch (barcode)
 
-- **my.scan** là API dùng để scan QR hoặc barcode
-- Chỉ hỗ trợ từ version 1.78.1 trở lên
+***Khả dụng:*** Chỉ hỗ trợ từ version 1.78.1 trở lên
 
-## Sử dụng
-
-### Sample Code
+## Sample Code
 
 ```js title=index.js
 Page({
@@ -36,17 +33,17 @@ Page({
 </view>
 ```
 
-### API Params
+## API Params
 
 Các thuộc tính:
 
-| Attributes | Type     | Required | Description                                                                                                              |
-| ---------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------ |
-| hideAlbum  | Function | No       | Option để hide button chọn hình từ album. Chỉ cho phép scan hoàn toàn bằng camera   |
-| success    | Function | No       | Callback khi việc scan thành công                                                   |
-| fail       | Function | No       | Callback khi việc scan thất bại                                                     |
-| complete   | Function | No       | Callback khi việc scan thành công hoặc thất bại                                     |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                           |
+| ---------- | ------------ | ------------------------------------------------------------------------------- |
+| hideAlbum  | Function     | Tuỳ chọn, có ẩn nút chọn hình từ album. Chỉ cho phép scan hoàn toàn bằng camera |
+| success    | Function     | Callback khi việc scan thành công                                               |
+| fail       | Function     | Callback khi việc scan thất bại                                                 |
+| complete   | Function     | Callback khi việc scan thành công hoặc thất bại                                 |
 
 ### Callback function payload
 
-Response trong success callback là string của code scan được
+Response trong success callback là string của code scan được.

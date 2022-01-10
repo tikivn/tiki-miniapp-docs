@@ -20,9 +20,9 @@ PUT https://api.tiki.vn/tiniapp-sandbox-open-api/lead/applications/{application_
 
 ### API Params
 
-| Attributes | Type   | Required | Description          |
-| ---------- | ------ | -------- | -------------------- |
-| status     | string | yes      | trạng thái của hồ sơ |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                |
+| ---------- | ------------ | :------: | -------------------- |
+| status     | string       |    ✓     | Trạng thái của hồ sơ |
 
 **Xem thêm về các trạng thái của hồ sơ [tại đây](./status.md)**
 

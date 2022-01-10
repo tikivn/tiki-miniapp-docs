@@ -20,25 +20,25 @@ POST https://api.tiki.vn/tiniapp-sandbox-open-api/lead/applications
 
 ### API Params
 
-| Attributes  | Type   | Required | Description                                                                                 |
-| ----------- | ------ | -------- | ------------------------------------------------------------------------------------------- |
-| customer_id | string | yes      | id của Tiki User                                                                            |
-| inputs      | string | yes      | JSON string chứa các inputs tùy thuộc vào template mà Tini App yêu cầu đối với mỗi ứng dụng |
+| Thuộc tính  | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                       |
+| ----------- | ------------ | :------: | ------------------------------------------------------------------------------------------- |
+| customer_id | string       |    ✓     | id của Tiki User                                                                            |
+| inputs      | string       |    ✓     | JSON string chứa các inputs tùy thuộc vào template mà Tini App yêu cầu đối với mỗi ứng dụng |
 
 **Xem thêm danh sách các input template [tại đây](./input_templates.md)**
 
 ### API Response
 
-| Attributes     | Type   | Description                                                                                 |
-| -------------- | ------ | ------------------------------------------------------------------------------------------- |
-| id             | string | id của hồ sơ                                                                                |
-| app_identifier | string | định danh ứng dụng tạo ra hồ sơ                                                             |
-| customer_id    | string | id của Tiki User                                                                            |
-| inputs         | string | JSON string chứa các inputs tùy thuộc vào template mà Tini App yêu cầu đối với mỗi ứng dụng |
-| is_sandbox     | bool   | true nếu hồ sơ được tạo ra ở môi trường sandbox, false thì là môi trường production         |
-| status         | string | trạng thái của hồ sơ                                                                        |
-| created_at     | string | thời gian tạo hồ sơ                                                                         |
-| updated_at     | string | thời gian cập nhật hồ sơ                                                                    |
+| Thuộc tính     | Kiểu dữ liệu | Mô tả                                                                                                    |
+| -------------- | ------------ | -------------------------------------------------------------------------------------------------------- |
+| id             | string       | Id của hồ sơ                                                                                             |
+| app_identifier | string       | **App ID** của ứng dụng tạo ra hồ sơ.                                                                    |
+| customer_id    | string       | Id của Người dùng Tiki                                                                                   |
+| inputs         | string       | JSON string chứa các inputs tùy thuộc vào template mà Tini App yêu cầu đối với mỗi ứng dụng              |
+| is_sandbox     | boolean      | `true` nếu hồ sơ được tạo ra ở môi trường sandbox, `false` nếu hồ sơ được tạo ra ở môi trường production |
+| status         | string       | Trạng thái của hồ sơ                                                                                     |
+| created_at     | string       | Thời gian tạo hồ sơ                                                                                      |
+| updated_at     | string       | Thời gian cập nhật hồ sơ                                                                                 |
 
 ### Request Example
 
