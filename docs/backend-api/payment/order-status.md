@@ -17,4 +17,4 @@ title: Trạng thái đơn hàng
 
 #### Sơ đồ
 
-<img style={{ margin: '0 auto', display: 'flex' }} src="order-state.svg" alt="Order statuses"/>
+<img style={{ margin: '0 auto', display: 'flex' }} src="/img/order-state-diagram.svg" alt="Order statuses"/>
