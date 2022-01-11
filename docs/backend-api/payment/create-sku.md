@@ -4,6 +4,8 @@ title: Tạo SKU
 description: tạo sản phẩm trên Tiki Seller Center để bán trên Tiki mini app
 ---
 
+***Quan trọng:*** Bạn không nhất thiết phải tạo thủ công các SKU trên Seller Center nếu như bạn chỉ bán chúng trên Tini App mà không bán trên sàn Tiki. Vì sau khi tính năng thanh toán cho Tini App (Production) được bật lên, các SKU bán trên Tini App của bạn sẽ được hệ thống Tiki tự động tạo ra trên Seller Center. Xem thêm [Liên kết tài khoản](link-accounts)
+
 Quy trình tạo ra và đề nghị duyệt một SKU (sản phẩm) bán trên Tini App giống y như quy trình của một SKU thông thường bán trên sàn TMĐT Tiki. Tuy nhiên, có vài điểm đối tác cần nắm nắm trong lúc nhập thông tin sản phẩm:
 
 - **Danh mục** =  Voucher - Dịch vụ / Tini App.
@@ -11,13 +13,8 @@ Quy trình tạo ra và đề nghị duyệt một SKU (sản phẩm) bán trên
 - **Mô hình vận hành** = E-Delivery - Giao hàng điện tử.
 - Ngoài ra, đừng quên chọn mức thuế VAT cho sản phẩm.
 
-Sau đây là các bước chính yếu để tạo ra cũng như đề nghị duyệt đối với một SKU bán trên Tini App.
-
-***Lưu ý:*** 
-
-> - Bạn có thể tìm thấy hướng dẫn đầy đủ về cách tạo một SKU thông thường bằng cách truy cập https://hocvien.tiki.vn/tai-lieu-tham-khao/ và chọn **Đăng tải sản phẩm**.
-> - Bạn không nhất thiết phải tạo thủ công các SKU trên Seller Center nếu như bạn chỉ bán chúng trên Tini App mà không bán trên sàn Tiki. Vì sau khi tính năng thanh toán cho Tini App (Production) được bật lên, các SKU bán trên Tini App của bạn sẽ được hệ thống Tiki tự động tạo ra trên Seller Center.
-
+Bạn có thể tìm thấy hướng dẫn đầy đủ về cách tạo một SKU thông thường bằng cách truy cập https://hocvien.tiki.vn/tai-lieu-tham-khao/ và chọn **Đăng tải sản phẩm**. Sau đây là các bước chính yếu để tạo ra cũng như đề nghị duyệt đối với một SKU bán trên Tini App. 
+ 
 ## Tạo ra sản phẩm
 
 1. Truy cập vào [Seller Center](https://sellercenter.tiki.vn/).
