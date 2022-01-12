@@ -4,6 +4,8 @@ title: Phát hành ứng dụng
 description: các bước nhà phát triển cần làm để phát hành mini app trên kho tiện ích của Tiki
 ---
 
+Vui lòng đọc kỹ [Nguyên tắc kiểm duyệt](/docs/operation/approval-rules) trước khi submit build for review. 
+
 ## Khái quát quy trình xử lý build trên Tini Console 
 
 Mỗi lần bạn tải source code của dự án lên [Tini Console](https://developer.tiki.vn/apps) được tính là một build.
@@ -12,7 +14,7 @@ Tại [Tini Console](https://developer.tiki.vn/apps), source code sẽ được 
 
 ***Lưu ý***: Không nhất thiết bạn phải **Submit build for review** mọi build bạn đưa lên Tini Console. Khi bạn sử dụng tính năng **Submit build for review** thì build mới nhất của release sẽ được chọn gởi đi. 
 
-Bộ phận phê duyệt của Tiki sẽ kiểm tra source code của build cũng như chạy thử ứng dụng theo cách thủ công tại Dev Assistant. Nếu build đáp ứng quy định và hoạt động tốt, nó sẽ được phê chuẩn. Build này chính thức được dùng làm release và trạng thái của release sẽ chuyển sang  "Approved".
+Bộ phận phê duyệt của Tiki sẽ chạy thử ứng dụng, đi qua các luồng cơ bản. Nếu build đáp ứng quy định và hoạt động tốt, nó sẽ được phê chuẩn. Build này chính thức được dùng làm release và trạng thái của release sẽ chuyển sang "Approved".
 
 Cuối cùng bạn **Publish** release đã được phê duyệt.
 
@@ -29,8 +31,6 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 
 ## Submit build for review
 
-Vui lòng đọc kỹ [Nguyên tắc kiểm duyệt](/docs/operation/approval-rules) trước khi submit build for review. 
-
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Ứng dụng của bạn**.
 3. Mở ứng dụng mong muốn.
@@ -44,7 +44,7 @@ Vui lòng đọc kỹ [Nguyên tắc kiểm duyệt](/docs/operation/approval-ru
 ***Ghi nhớ:***
 > Nhằm tạo điều kiện bộ phận kiểm duyệt của Tiki đánh giá ứng dụng một cách nhanh chóng và toàn diện, bạn cần cung cấp những thông tin sau:
 > 
-> - Trong ô ****Ghi chú cho người duyệt (Không bắt buộc)**, hướng dẫn chi tiết quy trình kiểm tra các luồng chính của ứng dụng cũng như luồng thanh toán. Ví dụ cách tìm để kiểm thử sản phẩm, thông tin lúc thanh toán, ... . Trường hợp bạn không cung cấp được thông tin thanh toán, thì có thể record lại video và để link vào đây.
+> - Trong ô **Ghi chú cho người duyệt (Không bắt buộc)**, hướng dẫn chi tiết quy trình kiểm tra các luồng chính của ứng dụng cũng như luồng thanh toán. Ví dụ cách tìm để kiểm thử sản phẩm, thông tin lúc thanh toán, ... . Trường hợp bạn không cung cấp được thông tin thanh toán, thì có thể record lại video và để link vào đây.
 > - Trong ô **Release Note** liệt kê các tính năng chính của ứng dung nếu là lần đầu submit build. Ghi rõ những những tính năng mới và những tính năng được thay đổi/cập nhật trong những lần submit build sau.
 
 
@@ -63,7 +63,7 @@ Vui lòng đọc kỹ [Nguyên tắc kiểm duyệt](/docs/operation/approval-ru
 
 ### Tạo QR code cho ứng dụng
 
-Bạn có thể dùng công cụ [Mini App QR Code Generator](/qr-code) để tạo ra mã QR cho ứng ứng của mình phục vụ cho mục đích marketing.
+Bạn có thể dùng công cụ [Mini App QR Code Generator](/qr-code) để tạo ra mã QR cho ứng dụng của mình phục vụ cho mục đích marketing.
 
 
 ## Trạng thái ứng dụng
