@@ -45,7 +45,7 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 > Nhằm tạo điều kiện bộ phận kiểm duyệt của Tiki đánh giá ứng dụng một cách nhanh chóng và toàn diện, bạn cần cung cấp những thông tin sau:
 > 
 > - Trong ô **Ghi chú cho người duyệt (Không bắt buộc)**, hướng dẫn chi tiết quy trình kiểm tra các luồng chính của ứng dụng cũng như luồng thanh toán. Ví dụ cách tìm để kiểm thử sản phẩm, thông tin lúc thanh toán, ... . Trường hợp bạn không cung cấp được thông tin thanh toán, thì có thể record lại video và để link vào đây.
-> - Trong ô **Release Note** liệt kê các tính năng chính của ứng dung nếu là lần đầu submit build. Ghi rõ những những tính năng mới và những tính năng được thay đổi/cập nhật trong những lần submit build sau.
+> - Trong ô **Release Note** liệt kê các tính năng chính của ứng dung nếu là lần đầu submit build. Ghi rõ những những tính năng mới và những thay đổi/cập nhật trong những lần submit build sau.
 
 
 ## Publish release trên Kho tiện ích
