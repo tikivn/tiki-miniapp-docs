@@ -16,7 +16,6 @@ const groups = [
       {title: 'Server API', url: '/docs/backend-api/overview'},
       {title: 'Tiki Open API', url: '/docs/backend-api/open-api/overview'},
       {title: 'Design', url: '/docs/design/overview'},
-      {title: 'QR Code', url: '/qr-code'},
     ],
   },
   {
@@ -41,6 +40,7 @@ const groups = [
         url:
           'https://join.slack.com/t/tini-apps/shared_invite/zt-z7ikk3ox-rCirvNmeOrSvUo_tW67D4Q',
       },
+      {title: 'QR Code', url: '/qr-code'},
     ],
   },
 ];
