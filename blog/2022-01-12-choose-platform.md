@@ -1,8 +1,9 @@
 ---
 title: Chọn nền tảng nào cho mini app của bạn?
 
-slug: choose-platform
-date: 2022-01-04
+image: https://developers.tiki.vn/img/Choose_Platform.png
+slug: 2022-01-12-choose-platform
+date: 2022-01-12
 description: các tiêu chí chọn một nền tảng mini app cho ứng dụng của bạn
 ---
 

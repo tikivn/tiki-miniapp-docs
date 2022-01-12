@@ -48,6 +48,11 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 5. Click vào **Xem** tương ứng với release mong muốn.
 6. Nhấn nút **Publish** ở cuối trang. 
 
+### Tạo QR code cho ứng dụng
+
+Bạn có thể dùng công cụ [Mini App QR Code Generator](/qr-code) để tạo ra mã QR cho ứng ứng của mình phục vụ cho mục đích marketing.
+
+
 ## Trạng thái ứng dụng
 
 | **Trạng thái** | **Mô tả**                                                                                                                                                                                                                                                        |
