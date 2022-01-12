@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import Layout from '@theme/Layout';
 
 import {QRCode} from '../components/QRCode';
@@ -50,17 +50,22 @@ export default function QRCodePage() {
     },
   ]);
   const [params, setParams] = useState(null);
+  const timeout = useRef(null);
 
   useEffect(() => {
     const id = localStorage.getItem(APP_ID_KEY);
-    if (id) {
+    const image = localStorage.getItem(APP_IMAGE_KEY);
+    if (id && image) {
       setAppId(id);
+      setImage(image);
+      getAppinfo(id);
     }
 
-    const image = localStorage.getItem(APP_IMAGE_KEY);
-    if (image) {
-      setImage(image);
-    }
+    return () => {
+      if (timeout.current) {
+        clearTimeout(timeout.current);
+      }
+    };
   }, []);
 
   const onChangeInput = ({label, value, index}) => {
@@ -81,13 +86,12 @@ export default function QRCodePage() {
   const onAddInput = () => {
     setInputs([...inputs, {label: '', value: ''}]);
   };
-  const changeAppId = async value => {
-    if (hasValue(value)) {
-      setAppId(value);
-      try {
-        const query = `  
+
+  const getAppinfo = async id => {
+    try {
+      const query = `  
           query {
-            get_app(app_identifier: "${value}")  {
+            get_app(app_identifier: "${id}")  {
               id
               name
               identifier
@@ -95,26 +99,40 @@ export default function QRCodePage() {
             }
           }
       `;
-        const response = await fetch(
-          'https://api.tiki.vn/tiniapp/api/graphql/query',
-          {
-            body: JSON.stringify({query}),
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
+      const response = await fetch(
+        'https://api.tiki.vn/tiniapp/api/graphql/query',
+        {
+          body: JSON.stringify({query}),
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
           },
-        );
-        const appInfo = await response.json();
-        const image = appInfo.data.get_app.image_url;
-        if (image) {
-          setImage(image);
-          localStorage.setItem(APP_IMAGE_KEY, image);
-          localStorage.setItem(APP_ID_KEY, value);
-        }
-      } catch {
-        alert('App Id không hợp lệ');
+        },
+      );
+      const appInfo = await response.json();
+      const image = appInfo.data.get_app.image_url;
+      if (image) {
+        setImage(image);
+        localStorage.setItem(APP_IMAGE_KEY, image);
+        localStorage.setItem(APP_ID_KEY, id);
       }
+    } catch {
+      setImage(null);
+    }
+  };
+
+  const changeAppId = async value => {
+    if (hasValue(value)) {
+      setAppId(value);
+      if (timeout.current) {
+        clearTimeout(timeout.current);
+        timeout.current = null;
+      }
+      timeout.current = setTimeout(() => {
+        getAppinfo(value);
+      }, 300);
+    } else if (appImage) {
+      setImage(null);
     }
   };
 
