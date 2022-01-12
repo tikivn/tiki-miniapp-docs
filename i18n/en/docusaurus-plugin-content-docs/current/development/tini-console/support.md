@@ -22,6 +22,6 @@ Users can reach the Developer's support info in the following way:
 2. Tap the three dot (⋯) button in the top right corner of the display to activate the app menu.
    <img src="/img/3dot_button.jpg" width="400px" alt="Open app menu" style={{ margin: '0 auto', display: 'flex' }}/>
 3. Tap **Support** [Hỗ trợ] on the app menu.
-   <img src="/img/app_menu.jpg" width="400px" alt="app menu" style={{ margin: '0 auto', display: 'flex' }}/>
+   <img src="/img/app_menu.png" width="400px" alt="app menu" style={{ margin: '0 auto', display: 'flex' }}/>
 4. The **Support** dialog with the support contact info is shown.
    <img src="/img/TiniApp_Support_dialog.jpg" width="400px" alt="Support dialog" style={{ margin: '0 auto', display: 'flex' }}/>
