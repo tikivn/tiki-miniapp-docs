@@ -58,7 +58,7 @@ Lĩnh vực kinh doanh có thể bổ sung sau tùy tình hình kinh doanh của
 - Tải lên ảnh chụp các giấy tờ cần thiết.
 - Nhấn nút **Hoàn tất**.
 
-<img src="/img/Developer_Registration_form.jpg" width="600px" alt="Developer Registration Form" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Developer_Registration_form.png" width="600px" alt="Developer Registration Form" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ## 6. Xác thực email
 

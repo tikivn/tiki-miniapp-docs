@@ -23,7 +23,7 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 ## Quản lý Release và Build của ứng dụng
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
-2. Sidebar menu >> **Ứng dụng của bạn**.
+2. Sidebar menu >> **Tiện ích của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện.
    <img src="/img/Release_list.png" width="900px" alt="Release list" style={{ margin: '0 auto', display: 'flex' }}/>
@@ -32,7 +32,7 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 ## Submit build for review
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
-2. Sidebar menu >> **Ứng dụng của bạn**.
+2. Sidebar menu >> **Tiện ích của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện
 5. Click vào **Xem** tương ứng với release mong muốn. 
@@ -51,7 +51,7 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 ## Publish release trên Kho tiện ích
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
-2. Sidebar menu >> **Ứng dụng của bạn**.
+2. Sidebar menu >> **Tiện ích của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện
 5. Click vào **Xem** tương ứng với release mong muốn.
@@ -102,6 +102,7 @@ Mỗi release tương đương một version. Ở một thời điểm, một �
 | 5.0.0   | Available  |
 
 ## Trạng thái build
+
 | Trạng thái  | Mô tả                                                      |
 | ----------- | ---------------------------------------------------------- |
 | Queued      | Đã upload thành công và chờ compile.                       |

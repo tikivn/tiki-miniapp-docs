@@ -6,7 +6,7 @@ title: Tích hợp thanh toán cho Tini App
 ## Yêu cầu Tiki mở tính năng thanh toán cho Tini App của bạn
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
-2. Sidebar menu >>  **Ứng dụng của bạn**.
+2. Sidebar menu >>  **Tiện ích của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Sidebar menu >> **Cài đặt** >> **Thanh toán**.
 5. Bấm nút **Gửi yêu cầu mở tính năng** trong phần Production để yêu cầu Tiki bật tính năng thanh toán cho ứng dụng của bạn.

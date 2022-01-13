@@ -9,9 +9,9 @@ Tiki khuyến nghị Nhà phát triển cung cấp thông tin liên hệ hỗ tr
 Để cung cấp thông tin liên hệ, Nhà phát triển tiến hành như sau.
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
-2. Sidebar >> **Ứng dụng của bạn**.
+2. Sidebar >> **Tiệc ích của bạn**.
 3. Mở ứng dụng mong muốn.
-4. Sidebar menu >> **Cài đặt** >> **Quản lý chung**.
+4. Sidebar menu >> **Cài đặt** >> **Tổng quát**.
 5. Trong phần **Thông tin hỗ trợ**, điền Email, Số điện thoại và/hay Website mà người dùng có thể liên hệ với Nhà phát triển tìm kiếm sự hỗ trợ.  
 Bấm nút **Cập nhật**.
 

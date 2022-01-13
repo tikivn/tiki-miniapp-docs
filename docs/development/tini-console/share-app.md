@@ -11,7 +11,7 @@ Lẽ dĩ nhiên để chạy được ứng dụng, thiết bị di động củ
 Cách thức lấy mã QR hay liên kết của một Tini App như sau:
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
-2. Sidebar menu >> **Ứng dụng của bạn**.
+2. Sidebar menu >> **Tiện ích của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Bấm nút **Lưu ảnh** về để tải về mã QR trường hợp bạn muốn chia sẻ thông qua mã QR, hoặc bấm nút **Sao chép** bên cạnh **Link ứng dụng** trường hợp bạn muốn chia sẻ thông qua liên kết.
    <img src="/img/QRcode_App.png" width="800px" alt="QR code & link of Tini App " style={{ margin: '0 auto', display: 'flex' }}/>

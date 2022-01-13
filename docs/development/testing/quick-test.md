@@ -15,7 +15,7 @@ Sau đây là thủ tục chạy thử một build của Tini App:
 ## Chạy thử một build của Tini App
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
-2. Sidebar menu >> **Ứng dụng của bạn**.
+2. Sidebar menu >> **Tiện ích của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Sidebar menu >> **Release**.
 5. Ở cột **Thao tác** trong bảng danh sách release, click vào **Xem** tương ứng release chứa build mà bạn muốn chạy thử.

@@ -38,7 +38,7 @@ Những người là thành viên xuyên suốt, tham gia phát triển/ kiểm 
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Thiết lập tài khoản** >> **Quản lý thành viên**.
-3. Bấm nút **Thêm người dùng** ở góc phải trên.
+3. Bấm nút **Thêm thành viên** ở góc phải trên.
 4. Trong hộp thoại **Thêm thành viên**, nhập địa chỉ email dùng để đăng ký tài khoản Tiki của người mà bạn đang muốn thêm vào, và chọn vai trò mặc định cho người đó. Kế đó bấm nút **Thêm**
    <img src="/img/New_Permanent_Member_form.jpg" width="250px" style={{ margin: '0 auto', display: 'flex' }}/>
 5. Trong trang "Thêm thành viên", xác định vai trò của thành viên đó trong từng dự án cụ thể. Sau đó, bấm nút **Hoàn tất**.
@@ -59,14 +59,14 @@ Mọi đối tượng tham gia phát triển/ kiểm thử/ vận hành/… ứn
 ### Xem danh sách Thành viên phát triển ứng dụng
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
-2. Sidebar menu >> **Ứng dụng của bạn**.
+2. Sidebar menu >> **Tiện ích của bạn**.
 3. Mở ứng dụng mà bạn muốn xem danh sách thành viên.
 4. Sidebar menu >> **Quản lý thành viên**.
 
 ### Thêm Thành viên phát triển ứng dụng 
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
-2. Sidebar menu >> **Ứng dụng của bạn**.
+2. Sidebar menu >> **Tiện ích của bạn**.
 3. Mở ứng dụng mà bạn muốn xem danh sách thành viên.
 4. Sidebar menu >> **Quản lý thành viên**.
 5. Bấm nút **Thêm thành viên** tại góc phải trên.

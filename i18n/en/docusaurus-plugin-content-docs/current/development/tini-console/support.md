@@ -7,7 +7,7 @@ Tiki strongly advises that Developers provide their support contact info to user
 Here are the steps for a Developer to provide his contact info.
 
 1. Go to [Tini Console](https://developer.tiki.vn/apps).
-2. On the Sidebar menu, select **My Apps** [Ứng dụng của bạn].
+2. On the Sidebar menu, select **My Apps** [Tiện ích của bạn].
 3. Open your desired app.
 4. On the Sidebar menu, select **Settings** [Cài đặt] and then select **General** [Quản lý chung].
 5. In the **Support Info** [Thông tin hỗ trợ] section , type your email address, phone number and website address at which users can reach you in the event they have questions or need support with your app. Finally, click the **Update** [Cập nhật] button.

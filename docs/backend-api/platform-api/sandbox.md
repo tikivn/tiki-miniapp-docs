@@ -25,7 +25,7 @@ Môi trường Sandbox cho phép bạn:
 Mỗi Tini App sẽ đuợc cấp một cặp Key/Secret cho môi trường Sandbox cũng như một cặp môi trường Production. Bạn có thể tìm thấy Base URL của Sandbox , Key và Secret của một Tini App bằng những bước sau:
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
-2. Sidebar menu >> **Ứng dụng của bạn**.
+2. Sidebar menu >> **Tiện ích của bạn**.
 3. Mở ứng dụng mà mong muốn.
 4. Sidebar menu >> **Cài đặt chung** >> **Quản lý chung**.
 

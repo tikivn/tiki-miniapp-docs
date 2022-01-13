@@ -8,9 +8,9 @@ Một khi đã chính thức trở thành Nhà phát triển Tini App, bạn đ�
 
 ## 1. Tạo mới ứng dụng
 
-Bấm nút **Tạo ứng dụng mới** tại góc phải trên.
+Bấm nút **Tạo tiện ích mới** tại góc phải trên.
 
-<img style={{ margin: '0 auto', display: 'flex' }} src="/img/Create_TiniApp_button.jpg" alt="app management empty"/>
+<img  src="/img/Create_TiniApp_button.jpg" style={{ margin: '0 auto', display: 'flex' }} alt="app management empty"/>
 
 ## 2. Khai báo ứng dụng
 
@@ -38,5 +38,5 @@ Khai báo thông tin ứng dụng xong, nhấn nút **Hoàn tất** để kết 
 
 ## 3. Cài đặt tài khoản
 
-- Cấp quyền cho các thành viên tham gia phát triển ứng dụng (Xem thêm [Quản lý tài khoản](member) )
+- Cấp quyền cho các thành viên tham gia phát triển ứng dụng (Xem thêm [Quản lý thành viên](member) )
 - Thiết lập phương thức thanh toán và vận chuyển.

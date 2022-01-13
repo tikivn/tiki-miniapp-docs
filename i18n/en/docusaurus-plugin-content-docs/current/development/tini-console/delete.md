@@ -5,7 +5,7 @@ title: Removing App
 ***Warning***: once you have deleted an app, it will disappear permanently from Tini Console and Tiki’s App Hub.
 
 1. Go to [Tini Console](https://developer.tiki.vn/apps).
-2. On the Sidebar menu, select **My Apps** [Ứng dụng của bạn].
+2. On the Sidebar menu, select **My Apps** [Tiện ích của bạn].
 3. Open your desired app.
 4. On the Sidebar menu, select **Settings** [Cài đặt] and then select **General** [Quản lý chung].
 5. In the **Danger zone** [Vùng nguy hiểm] section at the end of the page, click the **Remove app** [Xoá ứng dụng] button.
