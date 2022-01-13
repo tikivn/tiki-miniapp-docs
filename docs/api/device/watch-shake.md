@@ -1,8 +1,8 @@
 ---
-title: my.vibrate
+title: my.watchShake
 ---
 
-`my.vibrate` là API dùng để nhận sự kiện lắc thiết bị. Success callback chỉ được gọi một lần khi thiết bị được lắc sau khi API đã được gọi. Cần gọi lại API này nếu muốn nhận sự kiện thiết bị lắc ở lần sau.
+`my.watchShake` là API dùng để nhận sự kiện lắc thiết bị. Success callback chỉ được gọi một lần khi thiết bị được lắc sau khi API đã được gọi. Cần gọi lại API này nếu muốn nhận sự kiện thiết bị lắc ở lần sau.
 
 ## Quét mã để trải nghiệm
 
