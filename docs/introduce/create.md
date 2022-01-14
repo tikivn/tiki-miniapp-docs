@@ -10,7 +10,7 @@ Một khi đã chính thức trở thành Nhà phát triển Tini App, bạn đ�
 
 Bấm nút **Tạo tiện ích mới** tại góc phải trên.
 
-<img  src="/img/Create_TiniApp_button.jpg" style={{ margin: '0 auto', display: 'flex' }} alt="app management empty"/>
+<img  src="/img/Create_TiniApp_button.png" style={{ margin: '0 auto', display: 'flex' }} alt="app management empty"/>
 
 ## 2. Khai báo ứng dụng
 
