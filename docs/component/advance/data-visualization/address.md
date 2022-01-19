@@ -99,14 +99,14 @@ Page({
 | phoneErrorMsg        | string           |                           | Error message cho phone                                            |
 | showName             | boolean          | true                      | Hiển thị trường name hay không                                     |
 | showPhone            | boolean          | true                      | Hiển thị trường phone hay không                                    |
-| onChangeStreet       | event            |                           | Sự kiện được gọi khi street thay đổi                               |
-| onChangeName         | event            |                           | Sự kiện được gọi khi name thay đổi                                 |
-| onChangePhone        | event            |                           | Sự kiện được gọi khi phone thay đổi                                |
-| onChangeCity         | event            |                           | Sự kiện được gọi khi city thay đổi                                 |
-| onChangeDistrict     | event            |                           | Sự kiện được gọi khi district thay đổi                             |
-| onChangeWard         | event            |                           | Sự kiện được gọi khi ward thay đổi                                 |
-| onChangeAddress      | event            |                           | Sự kiện được gọi khi address thay đổi                              |
-| onFullAddress        | event            |                           | Sự kiện được gọi khi các thông tin address được điền đầy đủ        |
+| onChangeStreet       | event            |                           | Sự kiện được kích hoạt khi street thay đổi                         |
+| onChangeName         | event            |                           | Sự kiện được kích hoạt khi name thay đổi                           |
+| onChangePhone        | event            |                           | Sự kiện được kích hoạt khi phone thay đổi                          |
+| onChangeCity         | event            |                           | Sự kiện được kích hoạt city thay đổi                               |
+| onChangeDistrict     | event            |                           | Sự kiện được kích hoạt khi district thay đổi                       |
+| onChangeWard         | event            |                           | Sự kiện được kích hoạt khi ward thay đổi                           |
+| onChangeAddress      | event            |                           | Sự kiện được kích hoạti khi address thay đổi                       |
+| onFullAddress        | event            |                           | Sự kiện được kích hoạt khi các thông tin address được điền đầy đủ  |
 
 ### Address object
 

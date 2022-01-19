@@ -45,6 +45,7 @@ module.exports = {
         'development/tini-console/hide',
         'development/tini-console/share-app',
         'development/tini-console/support',
+        'development/tini-console/chat',
         'development/tini-console/whitelist-domains',
       ],
     },

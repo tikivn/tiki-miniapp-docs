@@ -17,6 +17,8 @@ Bấm nút **Cập nhật**.
 
 <img src="/img/TiniApp_Support_Contact_Info.jpg" width="500px" alt="Support contact info of dev" style={{ margin: '0 auto', display: 'flex' }}/>
 
+<div align="center"> ---oOo--- </div>
+
 Về phía người dùng, họ có thể tiếp cận thông tin liên hệ của Nhà phát triển bằng cách:
 
 1. Mở Tini App mà người dùng cần hỗ trợ.
