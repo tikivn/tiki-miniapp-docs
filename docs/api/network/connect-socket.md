@@ -14,10 +14,9 @@ title: my.connectSocket
 | ---------- | ------------ | :------: | ---------------------------------------------------------------------------------------------------- |
 | url        | string       |    ✓     | Đường dẫn tới WebSocket server. Đường dẫn hỗ trợ cả ws:// lẫn wss://                                 |
 | data       | Object       |          | Data kèm theo khi kết nối tới server. Data này sẽ được truyền kèm như query string trên url kết nối. |
-| header     | Object       |          | Header kèm theo khi kết nối.                                                                         |
 | success    | Function     |          | Callback function khi việc kết nối thành công.                                                       |
 | fail       | Function     |          | Callback function khi việc kết nối thất bại.                                                         |
-| complete   | Function     |          | Callback function khi việc kết nối kết thúc cho dù thành công hay thất bại.                          |
+| complete   | Function     |          | Callback function khi việc kết nối kết thúc bất kể thành công hay thất bại.                          |
 
 ***Lưu ý***:
 
@@ -31,9 +30,6 @@ title: my.connectSocket
 my.connectSocket({
   url: this.data.websocketServer,
   data: {},
-  header:{
-    'content-type': 'application/json'
-  },
   success: (res) => {
      console.log(JSON.stringify(res));
   },

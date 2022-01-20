@@ -1,5 +1,5 @@
 import { HTMLDataV1 } from "../../htmlLanguageTypes";
-export const htmlData:HTMLDataV1={
+export const htmlData: HTMLDataV1 = {
   "version": "1.0.0",
   "tags": [
     {
@@ -226,7 +226,7 @@ export const htmlData:HTMLDataV1={
       "name": "form",
       "description": {
         "kind": "markdown",
-        "value": "## Giới thiệu\n\n- Form dùng để lưu trữ giá trị của các components [input](/docs/component/form/input), [switch](/docs/component/form/switch), [checkbox](/docs/component/form/checkbox), [radio](/docs/component/form/radio), [picker](/docs/component/form/picker).\n- Các component bên trong form cần khai báo thuộc tính `name`\n- Giá trị của form chỉ có thể được lấy thông qua hàm `onSubmit` và chỉ được gọi thông qua sự kiện tap của [button](/docs/component/form/button) với `form-type=\"submit\"`\n\n"
+        "value": "## Giới thiệu\n\n- Form dùng để lưu trữ giá trị của các components [input](/docs/component/basic/form/input), [switch](/docs/component/form/basic/switch), [checkbox](/docs/component/basic/form/checkbox), [radio](/docs/component/basic/form/radio), [picker](/docs/component/basic/form/picker).\n- Các component bên trong form cần khai báo thuộc tính `name`\n- Giá trị của form chỉ có thể được lấy thông qua hàm `onSubmit` và chỉ được gọi thông qua sự kiện tap của [button](/docs/component/basic/form/button) với `form-type=\"submit\"`\n\n"
       },
       "attributes": [
         {
@@ -475,7 +475,7 @@ export const htmlData:HTMLDataV1={
       "name": "radio-group",
       "description": {
         "kind": "markdown",
-        "value": "## Giới thiệu\n\n`radio-group` dùng để nhóm các [radio](/docs/component/form/radio) lại với nhau. Bên trong `radio-group` có thể chứa nhiều `radio`, nhưng tại một thời điểm chỉ có một `radio` có thể được chọn, các `radio` cần khai báo thuộc tính `value`\n\n"
+        "value": "## Giới thiệu\n\n`radio-group` dùng để nhóm các [radio](/docs/component/basic/form/radio) lại với nhau. Bên trong `radio-group` có thể chứa nhiều `radio`, nhưng tại một thời điểm chỉ có một `radio` có thể được chọn, các `radio` cần khai báo thuộc tính `value`\n\n"
       },
       "attributes": [
         {
@@ -500,7 +500,7 @@ export const htmlData:HTMLDataV1={
       "name": "radio",
       "description": {
         "kind": "markdown",
-        "value": "## Giới thiệu\n\n`radio` dùng để chọn một giá trị. Để nhóm nhiều `radio` lại với nhau, bạn cần sử dụng [radio-group](/docs/component/form/radio-group)\n\n"
+        "value": "## Giới thiệu\n\n`radio` dùng để chọn một giá trị. Để nhóm nhiều `radio` lại với nhau, bạn cần sử dụng [radio-group](/docs/component/basic/form/radio-group)\n\n"
       },
       "attributes": [
         {
