@@ -11,28 +11,55 @@ title: my.openScreen
 ### Sample Code
 index.txml
 ```xml
-<view class="block-content">
+<view>
+  <block-header title="Usage" description="Open a screen" />
+  <view class="block-content">
     <input class="form-value" placeholder="Product ID" name="productId" onInput="productIdChange"></input>
     <button class="button-full" onTap="onOpenProductDetail">Open Product detail</button>
+  </view>
+  <view class="block-content">
+    <button class="button-full" onTap="onOpenHome">Open Home</button>
   </view>
   <view class="block-content">
     <button class="button-full" onTap="onOpenFeed">Open Feed</button>
   </view>
   <view class="block-content">
-    <button class="button-full" onTap="onOpenListing">Open Listing</button>
+    <input class="form-value" placeholder="Category ID" name="categoryId" onInput="categoryIdChange"></input>
+    <button class="button-full" onTap="onOpenListing">Open Product Listing</button>
+  </view>
+  <view class="block-content">
+    <button class="button-full" onTap="onOpenCart">Open Cart</button>
   </view>
   <view class="block-content">
     <input class="form-value" placeholder="Tiki ID" name="tikiId" onInput="tikiIDChange"></input>
     <button class="button-full" onTap="onOpenProfile">Open Profile</button>
   </view>
+  <view class="block-content">
+    <input class="form-value" placeholder="Slug" name="slug" onInput="slugChange"></input>
+    <button class="button-full" onTap="onOpenSellerStore">Open Seller Store</button>
+  </view>
+</view>
 ```
 
 index.js
 ```js
-onOpenProductDetail() {
+Page({
+  ...
+  onOpenProductDetail() {
     my.openScreen({
       screenCode: "TK_PRODUCT_DETAIL",
       params: { productId: this.data.productId },
+      success: (res) => {
+        console.log(res);
+      },
+      fail: (e) => {
+        console.log(e);
+      },
+    });
+  },
+  onOpenHome() {
+    my.openScreen({
+      screenCode: "TK_HOME",
       success: (res) => {
         console.log(res);
       },
@@ -55,6 +82,7 @@ onOpenProductDetail() {
   onOpenListing() {
     my.openScreen({
       screenCode: "TK_LISTING",
+      params: { categoryId: this.data.categoryId },
       success: (res) => {
         console.log(res);
       },
@@ -75,6 +103,30 @@ onOpenProductDetail() {
       },
     });
   },
+  onOpenSellerStore() {
+    my.openScreen({
+      screenCode: "TK_SELLER_STORE",
+      params: { slug: this.data.slug },
+      success: (res) => {
+        console.log(res);
+      },
+      fail: (e) => {
+        console.log(e);
+      },
+    });
+  },
+  onOpenCart() {
+    my.openScreen({
+      screenCode: "TK_CART",
+      success: (res) => {
+        console.log(res);
+      },
+      fail: (e) => {
+        console.log(e);
+      },
+    });
+  },
+}
 ```
 
 ### API Params
@@ -105,7 +157,7 @@ Các thuộc tính:
 | ----------   | -------- | ------------------------- |
 | TK_PRODUCT_DETAIL  | Màn hình Product detail   |     productId          |
 | TK_HOME | Màn hình home   | No |
-| TK_LISTING | Màn hình categories   | No |
+| TK_LISTING | Màn hình categories   | categoryId (web) |
 | TK_SOCIAL_FEED | Màn hình Lướt   | No |
 | TK_PROFILE | Màn hình user profile   | tikiid |
 | TK_CART | Màn hình Cart          |  |
