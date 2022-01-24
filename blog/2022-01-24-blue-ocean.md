@@ -3,7 +3,7 @@ title: Mini app - đại dương xanh dành cho bạn
 
 image: https://developers.tiki.vn/img/Blue_Ocean_Red_Ocean.png
 slug: 2022-01-24-blue-ocean
-date: 2022-01-12
+date: 2022-01-24
 description: nắm bắt cơ hội khai phá thị trường mini app 
 ---
 
