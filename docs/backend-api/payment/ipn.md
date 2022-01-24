@@ -2,8 +2,10 @@
 title: Xử lý kết quả thanh toán
 ---
 
-Sau khi khách hàng thanh toán trên Tiki, chúng tôi thực hiện hàm callback mà đối tác đăng ký khi gọi [my.makePayment](/docs/api/open/make-payment).
+Sau khi khách hàng thanh toán trực tuyến trên Tiki, chúng tôi thực hiện hàm callback mà đối tác đăng ký khi gọi [my.makePayment](/docs/api/open/make-payment).
 Đồng thời, chúng tôi còn gửi một IPN message đến backend của phía đối tác.
+
+***Quan trọng***: Nếu khách hàng chọn phương thức COD (Thanh toán tiền mặt khi nhận hàng), thì Tiki sẽ không gởi IPN message đến backend của đối tác.
 
 ## IPN - Instant Payment Notification
 
