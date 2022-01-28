@@ -67,11 +67,9 @@ Sử dụng trong txml
       <tu-button onTap="onShowBottomSheetText">Bottom sheet with text</tu-button>
       <tu-button onTap="onShowBottomSheetPicker">Bottom sheet with picker</tu-button>
     </view>
-    <block tiki:if="{{show}}">
-      <bottom-sheet title="List" buttonTitle="OK" distanceFromTop="{{100}}" onClose="onClose" onClick="onClick">
-        <template is="bottom-sheet-{{template}}" />
-      </bottom-sheet>
-    </block>
+    <bottom-sheet show="{{show}}" title="List" buttonTitle="OK" distanceFromTop="{{100}}" onClose="onClose" onClick="onClick">
+      <template is="bottom-sheet-{{template}}" />
+    </bottom-sheet>
   </block-variant>
 </view>
 ```
