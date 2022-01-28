@@ -46,6 +46,7 @@ Một số component được sử dụng trong source [API Demo](https://github
   <view class="block-content">
     <view class="video-contain">
       <player
+        controls
         url="https://www.youtube.com/watch?v=-HiYWgBB30g"
         onPlayerReady="onPlayerReady"
         onStart="onStart"
