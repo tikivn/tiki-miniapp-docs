@@ -47,6 +47,7 @@ module.exports = {
         'development/tini-console/support',
         'development/tini-console/chat',
         'development/tini-console/whitelist-domains',
+        'development/tini-console/app-key',
       ],
     },
     {

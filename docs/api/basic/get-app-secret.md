@@ -2,7 +2,7 @@
 title: my.getAppSecret
 ---
 
-`my.getAppSecret` là API dùng để lấy thông tin secret của Mini App hiện tại. Thông tin này có thể được thiết lập ở trang web Tini Console của Mini App này.
+`my.getAppSecret` là API dùng để lấy thông tin secret của Tini App hiện tại. Thông tin này được thiết lập ở trên [Tini Console](https://developer.tiki.vn/apps). Xem thêm [App Key / Value](/docs/development/tini-console/app-key)
 
 ## Quét mã để trải nghiệm
 
@@ -14,11 +14,11 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                      |
-| ---------- | ------------ | ------------------------------------------ |
-| success    | Function     | Callback function khi thực hiện thành công.|
-| fail       | Function     | Callback function khi thực hiện thất bại.  |
-| complete   | Function     | Callback function khi thực hiện hoàn tất.  |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                       |
+| ---------- | ------------ | ------------------------------------------- |
+| success    | Function     | Callback function khi thực hiện thành công. |
+| fail       | Function     | Callback function khi thực hiện thất bại.   |
+| complete   | Function     | Callback function khi thực hiện hoàn tất.   |
 
 ### Sample Code
 
