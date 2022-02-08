@@ -18,7 +18,7 @@ import { QRCode } from '@site/src/components/QRCode';
 | ---------- | ------------ | ------------------------------------------- |
 | success    | Function     | Callback function khi thực hiện thành công. |
 | fail       | Function     | Callback function khi thực hiện thất bại.   |
-| complete   | Function     | Callback function khi thực hiện hoàn tất.   |
+| complete   | Function     | Callback function khi thực hiện hoàn tất bất kể thành công hay thất bại.   |
 
 ### Sample Code
 

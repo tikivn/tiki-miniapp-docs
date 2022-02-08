@@ -8,18 +8,18 @@ Trong một số trường hợp, ứng dụng của bạn sẽ cần lưu trữ
 
 ## Tạo mới key / value cho ứng dụng
 
-1. Truy cập vào Tini Console.
+1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Tiện ích của bạn**.
 3. Mở ứng dụng mà bạn muốn tạo key / value cho nó.
 4. Sidebar menu >> **Cài đặt** >> **Tổng quát**.
 5. Ở phần **Key / Value** thuộc **Cấu hình tiện ích**, bấm vào nút **Tạo mới**.
-   <img src="/img/Key-Value.png" width="700px" alt="key value" style={{ margin: '0 auto', display: 'flex' }}/>
+   <img src="/img/Key-Value.png" width="800px" alt="key value" style={{ margin: '0 auto', display: 'flex' }}/>
 6. Trong popup **Tạo Key / Value** nằm bên phải, bạn gõ key và value vào các ô tương ứng. Sau đó, bấm nút tạo mới.
    <img src="/img/Key-Value_Create_popup.png" width="300px" alt="key value popup" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ## Xoá key / value của ứng dụng
 
-1. Truy cập vào Tini Console
+1. Truy cập vào Tini Console.
 2. Sidebar menu >> **Tiện ích của bạn**.
 3. Mở ứng dụng mà bạn muốn xoá key / value.
 4. Sidebar menu >> **Cài đặt** >> **Tổng quát**.
