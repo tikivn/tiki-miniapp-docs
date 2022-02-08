@@ -1,5 +1,5 @@
 ---
-title: Liên kết tài khoản
+title: Liên kết tài khoản Nhà bán
 
 description: liên kết tài khoản giữa Nhà phát triển và tài khoản Seller; thanh toán với Tiki.
 ---
