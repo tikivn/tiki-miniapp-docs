@@ -2,7 +2,7 @@
 title: Component Object
 ---
 
-***Quan trọng***: Các hàm xử lý sự kiện của một component (ví dụ như `onTap`) không được hỗ trợ mặc định, các Custom Component phải cài đặt các hàm này.
+**_Quan trọng_**: Các hàm xử lý sự kiện của một component (ví dụ như `onTap`) không được hỗ trợ mặc định, các Custom Component phải cài đặt các hàm này.
 
 ## Component Constructor
 
@@ -16,7 +16,7 @@ Component({
   didMount() {},
   didUpdate(prevProps, prevData) {},
   didUnmount() {},
-  deriveDataFromPropssupported() {},
+  deriveDataFromProps() {},
   methods: {
     onMyClick(ev) {
       my.alert({});
@@ -68,7 +68,7 @@ Component ở trên sẽ render một button, số đếm trên component sẽ �
 Custom Component có thể nhận data từ bên ngoài, và sau khi xử lý xong, nó có thể thông báo lại cho bên ngoài sau khi xử lý xong.
 Tiki Mini App Framework hỗ trợ điều đó bằng cách sử dụng `props` của Component
 
-***Chú ý***:
+**_Chú ý_**:
 
 > - Props là các thuộc tính được truyền từ bên ngoài, những thuộc tính này có thể được xác định giá trị mặc định bởi trường `props` của Component
 > - Component có thể truy cập vào trường `props` để thông qua biến `props`.
