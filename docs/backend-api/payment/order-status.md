@@ -12,11 +12,12 @@ title: Trạng thái đơn hàng
 | on_delivery              | Đơn hàng đang được vận chuyển. Nó áp dụng cho tất cả trạng thái của đối tác vận chuyển như lấy hàng, lưu kho, luân chuyển, giao hàng |
 | canceled                 | Đơn hàng đã bị hủy bời người đùng hoặc đối tác.                                                                                      |
 | completed                | Đơn hàng đã được giao hàng thành công.                                                                                               |
+| refunded                 | Đơn hàng đã được hoàn tiền cho khách hàng                                                                                            |
 
-**_Lưu ý_**
+**_Quan trọng_**:
 
-> Một điểm quan trọng bạn cần ghi nhớ là chỉ những đơn hàng có trạng thái "completed" Tiki mới giải ngân tiền thanh toán của khách hàng cho đối tác.
-
-#### Sơ đồ
+> - Tất cả đơn hàng đều phải kết thúc ở trạng 'completed', 'canceled' hoặc 'refunded' sau một SLA cụ thể.
+> - Chỉ những đơn hàng có trạng thái 'completed' Tiki mới giải ngân tiền thanh toán của khách hàng cho đối tác.
+> - Trong trường hợp khách hàng thanh toán trực tuyến, một khi nhận được API cancel từ đối tác thì Tiki sẽ xử lý việc hoàn tiền cho khách hàng. Và đối tác không cần làm thêm gì nữa.  
 
 <img style={{ margin: '0 auto', display: 'flex' }} src="/img/order-state-diagram.png" alt="Order statuses"/>

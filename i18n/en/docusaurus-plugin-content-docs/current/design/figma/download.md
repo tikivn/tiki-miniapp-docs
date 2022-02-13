@@ -3,6 +3,21 @@ order: 51
 category: Design resources
 title: Download here
 ---
+### v2.2
+January 28th, 2022 <br />
+
+Hi guys, today is the last working day of the Ox year. Wish you all the best for the year of the Tiger. This month, we just have some slight improvements for the Tini design library. <br />
+- Navigation bar: Add Neutral button and Neutral reverse button to Transparent variant. <br />
+- Snowflake components: We move all Social & E-commerce components to the different library. Hope to share it with you guys soon. <br />
+
+That's it! See you next year. <br />
+Year of the Tiger, best luck to the Fighter! <br />
+
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
+
 ### v2.1
 December 31st, 2021 <br />
 
@@ -20,8 +35,6 @@ Improvement <br />
 See you next year with more improvement from our Tini design system. <br />
 
 May the force be with you!!!<br />
-
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 ---

@@ -1,6 +1,22 @@
 ---
 title: Tải về
 ---
+### Phiên bản 2.2
+28/01/2022 <br />
+
+Chào mọi người, hôm nay là ngày làm việc cuối cùng trong năm "con Trâu" rồi. Chúc mọi người sức khỏe và nhiều sự may mắn trong năm "con Cọp" nhé. Tháng này, team bọn mình chỉ có một chút cải tiến cho Tini design library. <br />
+- Navigation bar: Ở Transparent variant đã có các button của Neutral button và Neutral reverse button. <br />
+- Snowflake components: Bọn mình di chuyển các component thuộc dạng Social & E-commerce vào một bộ library khác. Hy vọng sẽ chia sẻ được với mọi người sớm. <br />
+
+Đó là những gì của tháng vừa rồi! Hẹn mọi người vào năm sau nhé. <br />
+Year of the Tiger, best luck to the Fighter! <br />
+
+[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
+
+
 ### Phiên bản 2.1
 31/12/2021 <br />
 
@@ -18,9 +34,6 @@ Những cải thiện <br />
 Đó là những gì của tháng này bọn mình đã cập nhật cho Tini, hẹn gặp lại bạn năm sau với những cái tiến xịn hơn đến từ Tini design system của bọn mình nhé. <br />
 
 May the force be with you!!!<br />
-
-[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
-
 
 
 ---
