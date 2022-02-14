@@ -11,7 +11,7 @@ The Tini App logo will be displayed on the Tini App Store screen. In order to st
 <img className="img-basic" src="https://salt.tikicdn.com/ts/social/32/70/61/80b0b8a963d34dfc33e2e6b70d79b12b.png" alt="logo" width="500px"/> <br />
 
 Minimum size: 600 x 600px <br />
-Corner radius: 0px (Square corner)
+Corner radius: 0px (Square corner) <br />
 Forrmat: png, jpg
 
 ---
