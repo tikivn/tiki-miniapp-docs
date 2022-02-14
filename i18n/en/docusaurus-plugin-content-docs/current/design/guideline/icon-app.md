@@ -12,7 +12,7 @@ The Tini App logo will be displayed on the Tini App Store screen. In order to st
 
 Minimum size: 600 x 600px <br />
 Corner radius: 0px (Square corner) <br />
-Forrmat: png, jpg
+Format: png, jpg
 
 ---
 
