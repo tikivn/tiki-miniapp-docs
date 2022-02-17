@@ -82,6 +82,6 @@ Page({
 API trả về network request task. Bạn có thể thực hiện huỷ việc gọi network thông qua network request task.
 
 ```js
-const task = my.reuqest({ url: 'https://tiki.vn/api' });
+const task = my.request({ url: 'https://tiki.vn/api' });
 task.abort();
 ```
