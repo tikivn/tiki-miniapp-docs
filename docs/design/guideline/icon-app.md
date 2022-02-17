@@ -29,6 +29,7 @@ Kích thước hiển thị phổ biến nhất của biểu trưng là 40 x 40p
 Vùng an toàn của hình ảnh phải là 32 x 32px.
 
 
+
 ---
 
 
