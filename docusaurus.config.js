@@ -22,7 +22,28 @@ module.exports = {
     },
   },
   projectName: 'tiniapp',
+  themes: ['docusaurus-theme-search-typesense'],
   themeConfig: {
+    typesense: {
+      typesenseCollectionName: 'tiniapp-docs', // Replace with your own doc site's name. Should match the collection name in the scraper settings.
+      
+      typesenseServerConfig: {
+        nodes: [
+          {
+            host: 'localhost',
+            port: 8108,
+            protocol: 'http',
+          },
+        ],
+        apiKey: '__w3r0ck__',
+      },
+
+      // Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/documents.md#search-parameters
+      typesenseSearchParameters: {},
+
+      // Optional
+      contextualSearch: true,
+    },
     colorMode: {
       defaultMode: 'light',
       disableSwitch: true,
@@ -95,9 +116,9 @@ module.exports = {
         {type: 'localeDropdown', position: 'right'},
       ],
     },
-    gtag: {
-      trackingID: 'UA-15036050-25',
-    },
+    // gtag: {
+    //   trackingID: 'UA-15036050-25',
+    // },
     facebook: {
       pixelId: '445439733868914',
     },
@@ -105,12 +126,12 @@ module.exports = {
   plugins: [
     path.resolve(__dirname, './plugins/docusaurus-plugin-showcase-generator'),
     'docusaurus-plugin-sass',
-    [
-      require.resolve('@easyops-cn/docusaurus-search-local'),
-      {
-        hashed: true,
-      },
-    ],
+    // [
+    //   require.resolve('@easyops-cn/docusaurus-search-local'),
+    //   {
+    //     hashed: true,
+    //   },
+    // ],
     [
       /** @type {import('@docusaurus/plugin-content-blog').Options} */
       '@docusaurus/plugin-content-blog',
@@ -145,6 +166,12 @@ module.exports = {
         sitemap: {
           changefreq: 'daily',
         },
+        gtag: {
+          trackingID: 'UA-15036050-25',
+        },
+        // facebook: {
+        //   pixelId: '445439733868914',
+        // },
       },
     ],
   ],
