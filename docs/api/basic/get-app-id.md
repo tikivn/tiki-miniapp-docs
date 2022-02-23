@@ -1,10 +1,10 @@
 ---
-title: my.getAppId
+title: my.getAppIdSync
 ---
 
 ## Giới thiệu
 
-**my.getAppId** là API dùng để lấy ID của Mini App hiện tại
+**my.getAppIdSync** là API dùng để lấy ID của Mini App hiện tại
 
 ## Sử dụng
 
@@ -13,7 +13,7 @@ title: my.getAppId
 ```js
 Page({
   onGetAppId() {
-    const res = my.getAppId();
+    const res = my.getAppIdSync();
     my.alert({ title: 'AppID', content: res });
   }
 });
