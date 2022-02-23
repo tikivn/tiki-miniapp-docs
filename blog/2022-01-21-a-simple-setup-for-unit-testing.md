@@ -1,7 +1,7 @@
 ---
 title: A simple setup for Unit Testing in the Tiki Tini App
 
-image: https://developers.tiki.vn/img/Blue_Ocean_Red_Ocean.png
+image: https://raw.githubusercontent.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests/main/passed-tests.png
 slug: 2022-01-21-a-simple-setup-for-unit-testing
 date: 2022-01-21
 description: Một ví dụ đơn giản về việc viết unit test cho [Tiki Tini App](developer.tiki.vn).
@@ -10,7 +10,7 @@ description: Một ví dụ đơn giản về việc viết unit test cho [Tiki 
 
 # A simple setup for Unit Testing in the Tiki Tini App
 
-[![Show off status badge -.-](https://camo.githubusercontent.com/c7836469d64d0cfb5952438321c47847ef635d2880291d795c3d52747b762a81/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7374617274253230776974682d7768792533462d627269676874677265656e2e7376673f7374796c653d666c6174)]()
+[![Show off status badge -.-](https://camo.githubusercontent.com/c7836469d64d0cfb5952438321c47847ef635d2880291d795c3d52747b762a81/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7374617274253230776974682d7768792533462d627269676874677265656e2e7376673f7374796c653d666c6174)](developer.tiki.vn)
 
 ## Introduction
 
