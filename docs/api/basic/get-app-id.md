@@ -1,35 +1,25 @@
 ---
-title: my.getAppId (chưa ready)
+title: my.getAppIdSync
 ---
 
 ## Giới thiệu
 
-**my.getAppId** là API dùng để lấy ID của Mini App hiện tại
+**my.getAppIdSync** là API dùng để lấy ID của Mini App hiện tại
 
 ## Sử dụng
 
 ### Sample code
 
 ```js
-my.getAppId({
-  success: (res) => {
-    my.alert({
-      title: 'Alert',
-      content: `App id is ${res}`
-    });
+Page({
+  onGetAppId() {
+    const res = my.getAppIdSync();
+    my.alert({ title: 'AppID', content: res });
   }
 });
 ```
 
 ### Return value
-
-| Attributes | Type     | Required | Description                                                           |
-| ---------- | -------- | -------- | --------------------------------------------------------------------- |
-| success    | Function | No       | Callback function khi thành công.                                     |
-| fail       | Function | No       | Callback function khi thất bại.                                       |
-| complete   | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
-
-### Giá trị trong success callback
 
 | Attributes | Type   | Description              |
 | ---------- | ------ | ------------------------ |
