@@ -9,18 +9,19 @@ Biểu trưng của Tini App sẽ được hiển thị trên màn hình Tini Ap
 <img className="img-basic" src="https://salt.tikicdn.com/ts/social/32/70/61/80b0b8a963d34dfc33e2e6b70d79b12b.png" alt="logo" width="500px"/> <br />
 
 Kích thước tối thiểu: 600 x 600 px <br />
+Bo góc của hình: 0px (Góc vuông) <br />
 Định dạng: png, jpg
 
 
 ---
 
 
-## Thông số kỹ thuật
+## Vùng an toàn
 
 ### 1. Biểu trưng Tini App là một logo
 
 <img className="img-basic" src="https://salt.tikicdn.com/ts/social/4d/5e/33/27febfc0ccdae67ea217341c6ed1fc61.png" alt="logo" /> <br />
-Kích thước hiển thị phổ biến nhất của biểu trưng là 40 x 40px, bán kính bo góc là 14px và vùng an toàn của logo bạn phải là 24 x 24px.
+Kích thước hiển thị phổ biến nhất của biểu trưng là 40 x 40px, bán kính bo góc là 14px thế nên vùng an toàn của logo bạn phải là 24 x 24px.
 
 ### 2. Biểu trưng Tini App là một hình ảnh
 

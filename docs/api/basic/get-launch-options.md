@@ -1,37 +1,32 @@
 ---
-title: my.getLaunchOptions (chưa ready)
+title: my.getLaunchOptionsSync
 ---
 
 ## Giới thiệu
 
-**my.getLaunchOptions** là API dùng để lấy parameters để launch Mini App hiện tại.
+**my.getLaunchOptionsSync** là API dùng để lấy parameters để launch Tini App hiện tại.
 
-## Sử dụng
+## Quét mã để trải nghiệm
 
-### Sample code
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/get-launch-options/index" />
+
+***Khả dụng***: hỗ trợ từ version 1.89.5 trở lên.
+
+## Sử dụng 
 
 ```js
-my.getLaunchOptions({
-  success: (res) => {
-    my.alert({
-      title: 'Alert',
-      content: `Query is: ${res.query}, path is: ${res.path}`
-    });
-  }
-});
+const options = my.getLaunchOptionsSync();
+my.alert({ content: JSON.stringify(options) });
 ```
 
-### Return value
+## Kết quả trả về
 
-| Attributes | Type     | Required | Description                                                           |
-| ---------- | -------- | -------- | --------------------------------------------------------------------- |
-| success    | Function | No       | Callback function khi thành công.                                     |
-| fail       | Function | No       | Callback function khi thất bại.                                       |
-| complete   | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
+Kết quả trả về của jsapi my.getLaunchOptionsSync sẽ giống với options của App.onLoad(options)
 
-### Giá trị trong success callback
-
-| Attributes | Type   | Description                                                                                                         |
-| ---------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
-| query      | Object | Query được truyền vào Mini App. Nếu app được khởi động mà không có query parametter, thì query sẽ không được trả về |
-| path       | string | Địa chỉ của page được start                                                                                         |
+| Thuộc tính | Kiểu dữ liêuk    | Mô tả                                                             |
+| ---------- | ---------------- | ----------------------------------------------------------------- |
+| pagePath   | String           | Đường dẫn của page sẽ được mở của miniapp tới. |
+| query      | String           | Query string ví dụ name=A&age=18               |
+| referrerInfo | Object         | Thông tin chứa extra data được truyền khi mở miniapp từ my.navigateToMiniapp hoặc từ deeplink  ví dụ <br/> `referrerInfo : { extraData: { test: 'param' } }` |
