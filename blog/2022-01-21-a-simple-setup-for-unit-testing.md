@@ -1,3 +1,4 @@
+
 ---
 title: A simple setup for Unit Testing in the Tiki Tini App
 
@@ -5,18 +6,82 @@ image: https://raw.githubusercontent.com/cute-me-on-repos/tiki-tiniapp-with-unit
 slug: 2022-01-21-a-simple-setup-for-unit-testing
 date: 2022-01-21
 description: Một ví dụ đơn giản về việc viết unit test cho Tiki Tini App
----
+--- 
 
 
 # A simple setup for Unit Testing in the Tiki Tini App
 
-[![Show off status badge -.-](https://camo.githubusercontent.com/c7836469d64d0cfb5952438321c47847ef635d2880291d795c3d52747b762a81/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7374617274253230776974682d7768792533462d627269676874677265656e2e7376673f7374796c653d666c6174)](developer.tiki.vn)
+[![Show off status badge -.-](https://camo.githubusercontent.com/c7836469d64d0cfb5952438321c47847ef635d2880291d795c3d52747b762a81/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7374617274253230776974682d7768792533462d627269676874677265656e2e7376673f7374796c653d666c6174)](https://developer.tiki.vn)
 
 ## Introduction
 
-Mục đích của bài viết này là đưa ra một ví dụ đơn giản mà tôi đã sử dụng để viết unit test cho [Tiki Tini App](developer.tiki.vn). Hi vọng bài viết giúp các bạn phần nào trong việc tìm tài liệu tham khảo, chọn lựa một đáp án phù hợp với quá trình kiểm thử và phát triển ứng dụng của các bạn.
+Mục đích của bài viết này là đưa ra một ví dụ đơn giản mà tôi đã sử dụng để viết unit test cho [Tiki Tini App](https://developer.tiki.vn). Hi vọng bài viết giúp các bạn phần nào trong việc tìm tài liệu tham khảo, chọn lựa một đáp án phù hợp với quá trình kiểm thử và phát triển ứng dụng của các bạn.
 
-> _Bài viết mang tính chia sẻ, hi vọng các bạn có thể đóng góp ý kiến của mình phía dưới phần bình luận._
+> _Bài viết mang tính chia sẻ, hi vọng các bạn có thể đóng góp ý kiến của mình ở [github issues](https://github.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests/issues)._
+
+Dưới đây là phần code của custom component mà chúng ta sẽ cùng test:
+
+```js
+// tiki-tiniapp-with-unit-tests/app/src/components/the-button/index.js
+
+import QRCode from "qrcode";
+import Utils from "qrcode/lib/renderer/utils";
+
+const createComponent = async () => {
+    const componentConfig = ({
+        data: {
+          link:"https://developers.tiki.vn",
+          size: 0,
+        },
+        onInit() {
+            this.generateQR = this.generateQR.bind(this)
+        },
+        methods: {
+            async tapButton() {
+                return await this.generateQR(this.data.link)
+            },
+            generateQR(url) {
+                return new Promise((resolve,reject) => {
+                    try {
+                        const canvas = my.createCanvasContext("qr-code");
+                        const opts = Utils.getOptions({});
+                        const qrData = QRCode.create(url);
+                        const size = Utils.getImageWidth(qrData.modules.size, opts);
+                        this.setData({ size, qrData });
+                        canvas.getImageData({
+                            width: size,
+                            height: size,
+                            success:(image)=> {
+                             try {
+                                Utils.qrToImageData(image.data, qrData, opts);
+                                canvas.putImageData(image,0,0);
+                                this.setData({ size, image: image.data }); 
+                                resolve()
+                             } catch (error) {
+                                 reject(error)
+                             }
+                            },
+                            
+                            
+                        });
+                    } catch (error) {
+                        console.error("generateQR", error)
+                        //   I dont want to handle error here, just want to show the log
+                        throw error;
+                    }
+                })
+            }
+        }
+    });
+      Component(componentConfig);
+    return componentConfig
+} 
+if (!my.TEST  ) {
+    createComponent();
+}
+export default createComponent;
+
+```
 
 ---
 ## Table of contents
@@ -29,7 +94,7 @@ Mục đích của bài viết này là đưa ra một ví dụ đơn giản mà
 	- [Setup test dependencies](#setup-test-dependencies)
 - [Example tests](#example-tests)
 	- [Mocking](#mocking)
-	- [Test](#test) 
+	- [Tests](#tests) 
 - [Source code](#source-code)
 - [Conclusion](#conclusion)
 ---
@@ -37,7 +102,7 @@ Mục đích của bài viết này là đưa ra một ví dụ đơn giản mà
 
 [Unit testing](https://en.wikipedia.org/wiki/Unit_testing#:~:text=In%20computer%20programming%2C%20unit%20testing,they%20are%20fit%20for%20use.) là phương pháp kiểm thử trên từng đơn vị của source code (class, function,..) và được coi là phương pháp cơ bản nhất mà một developer cần biết. Vì vậy sự có mặt của unit test trong dự án phần mềm của bạn thường là một điều hiển nhiên và khá quan trọng.
 
-Đối với các Tini App, tại phía Tiki chưa cung cấp cụ thể một lựa chọn nào để tích hợp Unit testing vào quá trình phát triển Tini app. Bạn cần tự setup phương án sử dụng unit test phù hợp với ứng dụng của bạn.
+Đối với các Tini App, hiện tại phía Tiki chưa cung cấp cụ thể một lựa chọn nào để tích hợp Unit testing vào quá trình phát triển Tini app. Bạn cần tự setup phương án sử dụng unit test phù hợp với ứng dụng của bạn.
 
 ---
 ## Environment setup
@@ -116,11 +181,11 @@ Trong bài chia sẻ này tôi sẽ dùng jest và babel. Các bạn có thể t
 ---
 ## Example tests
 ### Mocking
-Ý tưởng ở đây là khi mocking, chúng ta sẽ intercept global function `Component` hay `Page` để lấy các config, init data, methods và lifecycle methods sau đó map lại binding và trigger các unit mà ta cần test. Thông qua việc này ta có thể lấy được out put cần test.
+Ý tưởng ở đây là khi mock các entities, chúng ta sẽ intercept global function `Component` hay `Page` để lấy các config, init data, methods và lifecycle methods sau đó map lại references(binding for the `this` context of methods) và trigger các unit mà ta cần test. Thông qua việc này ta có thể lấy được outputs cần test.
 
-Các JSAPI global đơn giản là api của Tini App cung cấp nên chúng ta không cần test lại chúng, haỹ giả định out put của chúng luôn đúng và chỉ tập trung phần code của bạn. 
+Các global JSAPI đơn giản là api của Tini App cung cấp nên chúng ta không cần test lại chúng, hãy giả định outputs của chúng luôn đúng và chỉ tập trung phần code của bạn. 
 
-Với use case của tôi ở example này, tôi cần mock các api liên quan đến canvas nên tôi sẽ sử dụng canvas từ dom, hỗ trợ bởi package `jest-canvas-mock` để thực hiện nghiệm vụ này. Phần code dưới đây khá đơn giản nên tôi không muốn diễn giải lại. 
+Với usecase của tôi ở ví dụ này, tôi cần mock các api liên quan đến canvas nên tôi sẽ sử dụng canvas từ dom hỗ trợ bởi package `jest-canvas-mock` để thực hiện nghiệm vụ này. Phần code dưới đây khá đơn giản nên tôi không muốn diễn giải lại. 
 Và _good code documents itself_:
 
 [![Good code documents itself](https://i.pinimg.com/736x/b7/53/cd/b753cdb7c2a89a462aff61f8b514abb5.jpg)](https://github.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests)
@@ -156,7 +221,7 @@ const componentTargetMocker = {
       cb(Instance.data)
       if (ConfigObj.didUpdate) ConfigObj.didUpdate();
     });
-    // mocking life cycle and do binding
+    // mocking lifecycles and doing reference binding
     Instance.onInit = ConfigObj.onInit.bind(Instance);
     if (ConfigObj.didMount) Instance.didMount = ConfigObj.didMount.bind(Instance);
     if (ConfigObj.didUpdate) Instance.didUpdate = ConfigObj.didUpdate.bind(Instance);
@@ -191,7 +256,6 @@ globalThis.Component = mockComponentCreator;
 ```
 ### Tests
 Dựa vào phần mocking ở phía trên, chúng ta đã có thể thêm và pass các bài test cơ bản hay gặp mà không gặp quá nhiều khó khăn:
-ht
 
 [![passed tests](https://raw.githubusercontent.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests/main/passed-tests.png)](https://github.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests)
 
@@ -229,7 +293,7 @@ describe("Myapp: common stupid test cases:", () => {
 ## Source code
 
 
-Các bạn có thể xem source code từ bài viết này tại [github.com/cute-me-on-repo/tiki-tiniapp-with-unit-tests](https://github.com/cute-me-on-repo/tiki-tiniapp-with-unit-tests)
+Các bạn có thể xem source code từ bài viết này tại [github.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests](https://github.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests)
 
 ---
 ## Conclusion
