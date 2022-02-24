@@ -4,7 +4,7 @@ title: A simple setup for Unit Testing in the Tiki Tini App
 image: https://raw.githubusercontent.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests/main/passed-tests.png
 slug: 2022-01-21-a-simple-setup-for-unit-testing
 date: 2022-01-21
-description: Một ví dụ đơn giản về việc viết unit test cho [Tiki Tini App](developer.tiki.vn).
+description: Một ví dụ đơn giản về việc viết unit test cho Tiki Tini App
 ---
 
 
@@ -21,17 +21,17 @@ Mục đích của bài viết này là đưa ra một ví dụ đơn giản mà
 ---
 ## Table of contents
 
-- [Introduction](#Introduction)
-- [Table of contents](#Table%20of%20contents)
-- [About unit test in Tiki Tini App](#About%20unit%20test%20in%20Tiki%20Tini%20App)
-- [Environment setup](#Environment%20setup)
-	- Source code structure
-	- Setup test dependencies 
-- [Example tests](#Example%20tests])
-	- Mocking
-	- Tests 
-- [Source code](github.com/cute-me-on-repo/tiki-tiniapp-with-unit-tests)
-- [Conclusion](#Conclusion)
+- [Introduction](#introduction)
+- [Table of contents](#table-of-contents)
+- [About unit test in Tiki Tini App](#about-unit-test-in-tiki-tini-app)
+- [Environment setup](#environment-setup)
+	- [Source code structure](#source-code-structure])
+	- [Setup test dependencies](#setup-test-dependencies])
+- [Example tests](#example-tests])
+	- [Mocking](#mocking])
+	- [Test](#test]) 
+- [Source code](#source-code)
+- [Conclusion](#conclusion)
 ---
 ## About unit test in Tiki Tini App
 
@@ -42,7 +42,7 @@ Mục đích của bài viết này là đưa ra một ví dụ đơn giản mà
 ---
 ## Environment setup
 
-```JS
+```ts
 // jest.config.js file
 module.exports = () => {
 	return {
@@ -97,7 +97,7 @@ Cấu trúc dự án được sắp đặt đơn giản như sau:
 
 Trong bài chia sẻ này tôi sẽ dùng jest và babel. Các bạn có thể tham khảo dev dependencies dưới đây mà tôi sử dụng:
 
-```JSON
+```json
 // dev dependencies in ./packages.json
 {
 	"@babel/core": "^7.15.8",
@@ -229,7 +229,7 @@ describe("Myapp: common stupid test cases:", () => {
 ## Source code
 
 
-Các bạn có thể xem source code từ bài viết này tại [github.com/cute-me-on-repo/tiki-tiniapp-with-unit-tests](github.com/cute-me-on-repo/tiki-tiniapp-with-unit-tests)
+Các bạn có thể xem source code từ bài viết này tại [github.com/cute-me-on-repo/tiki-tiniapp-with-unit-tests](https://github.com/cute-me-on-repo/tiki-tiniapp-with-unit-tests)
 
 ---
 ## Conclusion
