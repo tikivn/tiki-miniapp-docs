@@ -54,7 +54,8 @@ Lĩnh vực kinh doanh có thể bổ sung sau tùy tình hình kinh doanh của
 ## 5. Cung cấp danh tính
 
 - Điền đầy đủ và chính xác thông tin được yêu cầu.
-  - **Địa chỉ email chính** sẽ được dùng để nhận email xác thực của Tiki cũng như dùng làm một kênh liên lạc chính thức của Nhà phát triển với Tiki. 
+  - **Địa chỉ email chính**: sẽ được dùng để nhận email xác thực của Tiki cũng như dùng làm một kênh liên lạc chính thức của Nhà phát triển với Tiki.
+  - **Tên công ty**: sẽ xuất hiện cùng với tên ứng dụng ở một số phần trong ứng dụng trên thiết bị di động, đơn cử là app menu, popup Xin quyền truy cập vào Thông tin cá nhân của bạn, trang Giới thiệu về ứng dụng. Bạn sẽ không thể tự mình chỉnh sửa tên công ty sau này.
 - Tải lên ảnh chụp các giấy tờ cần thiết.
 - Nhấn nút **Hoàn tất**.
 
