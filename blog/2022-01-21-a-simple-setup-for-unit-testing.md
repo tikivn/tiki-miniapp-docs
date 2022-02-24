@@ -1,7 +1,5 @@
-
 ---
 title: A simple setup for Unit Testing in the Tiki Tini App
-
 image: https://raw.githubusercontent.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests/main/passed-tests.png
 slug: 2022-01-21-a-simple-setup-for-unit-testing
 date: 2022-01-21
@@ -17,7 +15,7 @@ description: Một ví dụ đơn giản về việc viết unit test cho Tiki T
 
 Mục đích của bài viết này là đưa ra một ví dụ đơn giản mà tôi đã sử dụng để viết unit test cho [Tiki Tini App](https://developer.tiki.vn). Hi vọng bài viết giúp các bạn phần nào trong việc tìm tài liệu tham khảo, chọn lựa một đáp án phù hợp với quá trình kiểm thử và phát triển ứng dụng của các bạn.
 
-> _Bài viết mang tính chia sẻ, hi vọng các bạn có thể đóng góp ý kiến của mình ở [github issues](https://github.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests/issues)._
+> _Bài viết mang tính chia sẻ, hi vọng các bạn có thể đóng góp ý kiến của mình ở [github repo issues](https://github.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests/issues)._
 
 Dưới đây là phần code của custom component mà chúng ta sẽ cùng test:
 
