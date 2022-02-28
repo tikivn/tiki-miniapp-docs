@@ -1,6 +1,22 @@
 ---
 title: Tải về
 ---
+### Phiên bản 2.3
+28/02/2022 <br />
+
+Chào mọi người, tháng hai của mọi người thế nào? Với bọn mình tuy là tháng ngắn nhất năm nhưng lại có nhiều dự án thú vị cần tập trung ưu tiên để phát triển (hy vọng sẽ sớm chia sẻ những dự án này đến với mọi người), cho nên với Tini Design System bọn mình chỉ có một số cải tiến nho nhỏ. <br />
+
+Tooltips: Đã có những phiên bản mũi tên ở các hướng khác nhau cho component này. <br />
+Button: Có điều chỉnh một vài sắc độ xám ở button Neutral và Neutral Reverse nhằm tăng độ tương phản của những component này tốt hơn. <br />
+
+Hẹn gặp lại mọi người vào tháng sau nhé. <br />
+Make art, not war. <br />
+
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
+
 ### Phiên bản 2.2
 28/01/2022 <br />
 
@@ -10,9 +26,6 @@ Chào mọi người, hôm nay là ngày làm việc cuối cùng trong năm "co
 
 Đó là những gì của tháng vừa rồi! Hẹn mọi người vào năm sau nhé. <br />
 Year of the Tiger, best luck to the Fighter! <br />
-
-[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
-
 
 ---
 

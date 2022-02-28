@@ -3,6 +3,22 @@ order: 51
 category: Design resources
 title: Download here
 ---
+### v2.3
+February 28th, 2022 <br />
+
+Hello everyone, how's your month? For the shortest month of the year, we focus on some exciting projects (hope to share with you soon), so we have some minor improvements for the Tini design library. <br />
+
+Tooltips: We have multiple arrow directions for the tooltip component. <br />
+Button: Some minor changes about the shade of grey of the Neutral & Neutral Reverse button components to increase their contrast. <br />
+
+That's it! See you next month. <br />
+Make art, not war. <br />
+
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
+
 ### v2.2
 January 28th, 2022 <br />
 
@@ -13,7 +29,6 @@ Hi guys, today is the last working day of the Ox year. Wish you all the best for
 That's it! See you next year. <br />
 Year of the Tiger, best luck to the Fighter! <br />
 
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 ---
