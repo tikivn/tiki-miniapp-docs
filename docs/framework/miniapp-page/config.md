@@ -14,6 +14,7 @@ Với mỗi màn hình sẽ tương ứng với một page trên framework. File
 | backgroundColor      | HexColor     | "#FFFFFF"        | Quy định màu nền mặc định của page.                                                                                                                                                                  |
 | usingComponents      | Object       | null             | Cấu hình những custom components được sử dụng trong page.                                                                                                                                            |
 | titleBarBottomColor  | HexColor     | "#EBEBF0"        | Quy định màu cho border bottom của NavigationBar.                                                                                                                                                    |
+| disableHardwareBack | string | "YES" | Xác định cho phép vuốt để quay lại trang trước đó hay không? |
 
 Ví dụ:
 
@@ -22,6 +23,7 @@ Ví dụ:
   "defaultTitle": "This is a page",
   "transparentTitle": "auto",
   "titleBarColor": "#1B6BFF",
-  "titleColor": "#fff"
+  "titleColor": "#fff",
+  "disableHardwareBack": "NO"
 }
 ```
