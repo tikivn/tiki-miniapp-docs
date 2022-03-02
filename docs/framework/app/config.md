@@ -96,6 +96,7 @@ Cấu hình để framework có thể load được `page/index/index` như sau:
 | titleBarColor        | HexColor     | "#FFFFFF"        | Quy định màu nền của navigation bar.                                                                                                                                                                 |
 | backgroundColor      | HexColor     | "#FFFFFF"        | Quy định màu nền mặc định của page.                                                                                                                                                                  |
 | titleBarBottomColor  | HexColor     | "#EBEBF0"        | Quy định màu cho border bottom của NavigationBar.                                                                                                                                                    |
+| disableHardwareBack | string       | "YES"            | Xác định cho phép vuốt để quay lại trang trước đó hay không?  |           
 
 Ví dụ:
 
@@ -105,7 +106,8 @@ Ví dụ:
     "defaultTitle": "My App",
     "titleBarColor": "#fff",
     "backgroundColor": "#F5F7FC",
-    "allowsBounceVertical": "NO"
+    "allowsBounceVertical": "NO",
+    "disableHardwareBack": "NO",
   }
 }
 ```
