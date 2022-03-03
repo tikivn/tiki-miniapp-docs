@@ -51,11 +51,12 @@ Những người là thành viên xuyên suốt, tham gia phát triển/ kiểm 
 
 Mọi đối tượng tham gia phát triển/ kiểm thử/ vận hành/… ứng dụng đó.
 
-***Lưu ý:*** 
-
+:::note Lưu ý
+ 
 - Tester/ Programmer/ Admin dẫu hiện diện trong danh sách Thành viên thường trực vẫn cần được thêm vào danh sách Thành viên phát triển ứng dụng thì mới có thể làm việc với ứng dụng ấy.
 - Admin thành viên thường trực có quyền cấp vai trò Admin của ứng dụng cho chính bản thân mình.
 - Owner, Admin và Programmer của ứng dụng có quyền truy cập Tini Console cũng như thực hiện các tác vụ liên quan việc phát hành ứng dụng, trong khi Tester không thể truy cập công cụ này.
+:::
 
 ### Xem danh sách Thành viên phát triển ứng dụng
 
