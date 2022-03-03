@@ -10,7 +10,7 @@ The Tini App logo will be displayed on the Tini App Store screen. In order to st
 
 <img className="img-basic" src="https://salt.tikicdn.com/ts/social/32/70/61/80b0b8a963d34dfc33e2e6b70d79b12b.png" alt="logo" width="500px"/> <br />
 
-Minimum size: 600 x 600px <br />
+Size: 1024 x 1024px <br />
 Corner radius: 0px (Square corner) <br />
 Format: png, jpg
 
@@ -27,6 +27,7 @@ The most common visible size of the logo is 40 x 40px, the border radius is 14px
 
 <img className="img-basic" src="https://salt.tikicdn.com/ts/social/f6/a8/d1/3d7433dea1523710cdd8ba021414df44.png" alt="logo" /> <br />
 The safezone of your picture must be 32 x 32px.
+
 
 ---
 
