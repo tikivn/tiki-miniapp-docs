@@ -48,12 +48,14 @@ Bạn chỉ có thể submit build for review với điều kiện release mới
 7. Đánh dấu chọn vào ô **Xuất bản ứng dụng ngay sau khi thông qua kiểm duyệt** nếu như bạn muốn build (release) này tự động publish lên Kho tiện ích ngay sau khi Bộ phận phê duyệt của Tiki chấp thuận.
 8. Nhấn nút **Submit build [number] for review** ở cuối trang. Mặc nhiên build mới nhất có trạng thái "Ready" của release sẽ được chọn gửi đi.
 
-***Ghi nhớ:***
-> Nhằm tạo điều kiện bộ phận kiểm duyệt của Tiki đánh giá ứng dụng một cách nhanh chóng và toàn diện, bạn cần cung cấp những thông tin sau:
-> 
-> - Trong ô **Ghi chú cho người duyệt (Không bắt buộc)**, hướng dẫn chi tiết quy trình kiểm tra các luồng chính của ứng dụng cũng như luồng thanh toán. Ví dụ cách tìm để kiểm thử sản phẩm, thông tin lúc thanh toán, ... . Trường hợp bạn không cung cấp được thông tin thanh toán, thì có thể record lại video và để link vào đây.
-> - Trong ô **Release Note** liệt kê các tính năng chính của ứng dung nếu là lần đầu submit build. Ghi rõ những những tính năng mới và những thay đổi/cập nhật trong những lần submit build sau.
+:::note Ghi nhớ
 
+Nhằm tạo điều kiện bộ phận kiểm duyệt của Tiki đánh giá ứng dụng một cách nhanh chóng và toàn diện, bạn cần cung cấp những thông tin sau:
+
+- Trong ô **Ghi chú cho người duyệt (Không bắt buộc)**, hướng dẫn chi tiết quy trình kiểm tra các luồng chính của ứng dụng cũng như luồng thanh toán. Ví dụ cách tìm để kiểm thử sản phẩm, thông tin lúc thanh toán, ... . Trường hợp bạn không cung cấp được thông tin thanh toán, thì có thể record lại video và để link vào đây.
+- Trong ô **Release Note** liệt kê các tính năng chính của ứng dung nếu là lần đầu submit build. Ghi rõ những những tính năng mới và những thay đổi/cập nhật trong những lần submit build sau.
+
+:::
 
 ## Publish release trên Kho tiện ích
 

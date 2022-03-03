@@ -95,9 +95,9 @@ Bạn chỉ có thể cấp quyền thành viên phát triển ứng dụng cho 
 
 **Đáp**: Chính xác. Một người có thể đóng vai trò Tester cho ứng dụng A, vai trò Programmer cho cả 2 ứng dụng B và C, vai trò Admin cho ứng dụng D.
 
-**Hỏi**: Khi xoá một người khỏi danh sách Thành viên thường trực thì chuyện gì sẽ xảy ra?
+<!-- **Hỏi**: Khi xoá một người khỏi danh sách Thành viên thường trực thì chuyện gì sẽ xảy ra?
 
-**Đáp**: Hệ thống sẽ cảnh báo người ấy hiện đang là thành viên của các ứng dụng nào. Owner/ Admin có thể xoá hoặc giữ lại quyền thành viên đối với từng ứng dụng của người ấy; sau cùng mới xoá quyền Thành viên thường trực.
+**Đáp**: Hệ thống sẽ cảnh báo người ấy hiện đang là thành viên của các ứng dụng nào. Owner/ Admin có thể xoá hoặc giữ lại quyền thành viên đối với từng ứng dụng của người ấy; sau cùng mới xoá quyền Thành viên thường trực. -->
 
 Trường hợp một người bị xoá khỏi danh sách Thành viên thường trực, nhưng vẫn còn quyền Thành viên phát triển ứng dụng, thì người đó vẫn được quyền làm việc ứng dụng.
 
