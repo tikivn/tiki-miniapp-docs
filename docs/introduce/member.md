@@ -16,16 +16,17 @@ Owner, Admin và Programmer có quyền truy cập Tini Console cũng như thự
 
 <div align="center"> ---oOo--- </div>
 
-Phàm đội ngũ xây dựng các ứng dụng cho công ty quy tụ nhiều thành phần khác nhau. Có người làm việc lâu dài, góp mặt vào nhiều ứng dụng; có người được mướn theo thời vụ chỉ tham gia một dự án; có người là khách hàng của công ty được mời dùng thử sản phẩm; … .Vì lẽ đó, Tini App giới thiệu khái niệm nhóm Thành viên thường trực và nhóm Thành viên phát triển ứng dụng, nhằm giúp công ty cấp quyền truy cập cho các kiểu thành viên khác nhau một cách thuận tiện.
+<!-- Phàm đội ngũ xây dựng các ứng dụng cho công ty quy tụ nhiều thành phần khác nhau. Có người làm việc lâu dài, góp mặt vào nhiều ứng dụng; có người được mướn theo thời vụ chỉ tham gia một dự án; có người là khách hàng của công ty được mời dùng thử sản phẩm; … .Vì lẽ đó, Tini App giới thiệu khái niệm nhóm Thành viên thường trực và nhóm Thành viên phát triển ứng dụng, nhằm giúp công ty cấp quyền truy cập cho các kiểu thành viên khác nhau một cách thuận tiện. -->
+
 
 - Tài khoản Nhà phát triển sẽ có một nhóm Thành viên thường trực (chung).
 - Tương ứng mỗi ứng dụng của Nhà phát triển sẽ có một nhóm Thành viên phát triển ứng dụng (riêng).
 
 ## Quản lý Thành viên thường trực
 
-### Những ai nên nằm trong danh sách Thành viên thường trực?
+<!-- ### Những ai nên nằm trong danh sách Thành viên thường trực?
 
-Những người là thành viên xuyên suốt, tham gia phát triển/ kiểm thử/ vận hành/…  nhiều hoặc hầu hết các ứng dụng của Công ty.
+Những người là thành viên xuyên suốt, tham gia phát triển/ kiểm thử/ vận hành/…  nhiều hoặc hầu hết các ứng dụng của Công ty. -->
 
 ### Xem danh sách thành viên thường trực
 
@@ -63,7 +64,11 @@ Mọi đối tượng tham gia phát triển/ kiểm thử/ vận hành/… ứn
 3. Mở ứng dụng mà bạn muốn xem danh sách thành viên.
 4. Sidebar menu >> **Quản lý thành viên**.
 
-### Thêm Thành viên phát triển ứng dụng 
+### Thêm Thành viên phát triển ứng dụng
+
+:::note Quan trọng
+Bạn chỉ có thể cấp quyền thành viên phát triển ứng dụng cho những người đã là thành viên thường trực.
+:::
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Tiện ích của bạn**.
@@ -72,9 +77,11 @@ Mọi đối tượng tham gia phát triển/ kiểm thử/ vận hành/… ứn
 5. Bấm nút **Thêm thành viên** tại góc phải trên.
 6. Trong hộp thoại **Thêm thành viên**, nhập địa chỉ email dùng để đăng ký tài khoản Tiki của người mà bạn đang muốn thêm vào, và chọn vai trò cho người đó trong ứng dụng. Kế đó bấm nút **Thêm**.
 
+---
+
 ## Những thắc mắc thường gặp về Thành viên thường trực và Thành viên phát triển ứng dụng
 
-**Hỏi**: Trường hợp nào nên thêm một người vào danh sách Thành viên phát triển ứng dụng nhưng không thêm vào danh sách Thành viên thường trực?
+<!-- **Hỏi**: Trường hợp nào nên thêm một người vào danh sách Thành viên phát triển ứng dụng nhưng không thêm vào danh sách Thành viên thường trực?
 
 **Đáp**: 
 
@@ -82,6 +89,7 @@ Mọi đối tượng tham gia phát triển/ kiểm thử/ vận hành/… ứn
 - Nhân viên thời vụ hoặc hợp đồng phụ trách một hoặc vài ứng dụng trong thời gian ngắn.
 - Bên thứ 3 được thuê để phát triển hoặc chỉ đơn thuần kiểm thử một ứng dụng cụ thể.
 - Người dùng vãng lai được mời dùng thử và góp ý cho ứng dụng mới hoặc phiên bản mới trong thời gian ngắn.
+-->
 
 **Hỏi**: Một người có thể đảm nhiệm vai trò khác nhau cho các ứng dụng khác nhau?
 

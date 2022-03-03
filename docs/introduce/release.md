@@ -12,7 +12,12 @@ Mỗi lần bạn tải source code của dự án lên [Tini Console](https://d
 
 Tại [Tini Console](https://developer.tiki.vn/apps), source code sẽ được tự động compile. Nếu compile thành công, build sẽ mang trạng thái "Ready". Tiếp đó, bạn **Submit build [number] for review**. 
 
-***Lưu ý***: Không nhất thiết bạn phải **Submit build for review** mọi build bạn đưa lên Tini Console. Khi bạn sử dụng tính năng **Submit build for review** thì build mới nhất của release sẽ được chọn gởi đi. 
+:::note Lưu ý
+
+- Không nhất thiết bạn phải **Submit build for review** mọi build bạn đưa lên Tini Console.
+- Khi bạn sử dụng tính năng **Submit build for review** thì build mới nhất (của release mới nhất) sẽ được chọn gởi đi. 
+
+:::
 
 Bộ phận phê duyệt của Tiki sẽ chạy thử ứng dụng, đi qua các luồng cơ bản. Nếu build đáp ứng quy định và hoạt động tốt, nó sẽ được phê chuẩn. Build này chính thức được dùng làm release và trạng thái của release sẽ chuyển sang "Approved".
 
@@ -31,11 +36,13 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 
 ## Submit build for review
 
+Bạn chỉ có thể submit build for review với điều kiện release mới nhất có trạng thái Draft.
+
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Tiện ích của bạn**.
 3. Mở ứng dụng mong muốn.
-4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện
-5. Click vào **Xem** tương ứng với release mong muốn. 
+4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện.
+5. Click vào **Xem** tương ứng với release mới nhất. 
 6. Điền vào mục **Thông tin ứng dụng**. Xem **Ghi nhớ** ngay bên dưới.
    <img src="/img/Submit_Build_for_Review.png" width="700px" alt="Submit Build for Review" style={{ margin: '0 auto', display: 'flex' }}/>
 7. Đánh dấu chọn vào ô **Xuất bản ứng dụng ngay sau khi thông qua kiểm duyệt** nếu như bạn muốn build (release) này tự động publish lên Kho tiện ích ngay sau khi Bộ phận phê duyệt của Tiki chấp thuận.
@@ -53,7 +60,7 @@ Cuối cùng bạn **Publish** release đã được phê duyệt.
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Tiện ích của bạn**.
 3. Mở ứng dụng mong muốn.
-4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện
+4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện.
 5. Click vào **Xem** tương ứng với release mong muốn.
 6. Nhấn nút **Publish** ở cuối trang.
 7. Nửa tiếng sau khi publish ứng dụng, bạn vào Kho tiện ích của Tiki App:

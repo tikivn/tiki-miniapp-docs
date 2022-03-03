@@ -12,35 +12,37 @@ description: Một ví dụ đơn giản về việc viết unit test cho [Tiki 
 
 [![Show off status badge -.-](https://camo.githubusercontent.com/c7836469d64d0cfb5952438321c47847ef635d2880291d795c3d52747b762a81/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7374617274253230776974682d7768792533462d627269676874677265656e2e7376673f7374796c653d666c6174)](developer.tiki.vn)
 
-## Introduction
+## Giới thiệu
 
 Mục đích của bài viết này là đưa ra một ví dụ đơn giản mà tôi đã sử dụng để viết unit test cho [Tiki Tini App](developer.tiki.vn). Hi vọng bài viết giúp các bạn phần nào trong việc tìm tài liệu tham khảo, chọn lựa một đáp án phù hợp với quá trình kiểm thử và phát triển ứng dụng của các bạn.
 
 > _Bài viết mang tính chia sẻ, hi vọng các bạn có thể đóng góp ý kiến của mình phía dưới phần bình luận._
 
 ---
-## Table of contents
+## Mục lục
 
-- [Introduction](#Introduction)
-- [Table of contents](#Table%20of%20contents)
-- [About unit test in Tiki Tini App](#About%20unit%20test%20in%20Tiki%20Tini%20App)
-- [Environment setup](#Environment%20setup)
-	- Source code structure
-	- Setup test dependencies 
-- [Example tests](#Example%20tests])
-	- Mocking
-	- Tests 
-- [Source code](github.com/cute-me-on-repo/tiki-tiniapp-with-unit-tests)
-- [Conclusion](#Conclusion)
+- [A simple setup for Unit Testing in the Tiki Tini App](#a-simple-setup-for-unit-testing-in-the-tiki-tini-app)
+  - [Giới thiệu](#giới-thiệu)
+  - [Mục lục](#mục-lục)
+  - [- Kết luận](#--kết-luận)
+  - [Về unit test in Tiki Tini App](#về-unit-test-in-tiki-tini-app)
+  - [Thiết lập môi trường](#thiết-lập-môi-trường)
+    - [Cấu trúc Source code](#cấu-trúc-source-code)
+    - [Thiết lập test dependencies](#thiết-lập-test-dependencies)
+  - [Ví dụ](#ví-dụ)
+    - [Mocking](#mocking)
+    - [Tests](#tests)
+  - [Source code](#source-code)
+  - [Kết luận](#kết-luận)
 ---
-## About unit test in Tiki Tini App
+## Về unit test in Tiki Tini App
 
-[Unit testing](https://en.wikipedia.org/wiki/Unit_testing#:~:text=In%20computer%20programming%2C%20unit%20testing,they%20are%20fit%20for%20use.) là phương pháp kiểm thử trên từng đơn vị của source code (class, function,..) và được coi là phương pháp cơ bản nhất mà một developer cần biết. Vì vậy sự có mặt của unit test trong dự án phần mềm của bạn thường là một điều hiển nhiên và khá quan trọng.
+[Unit test](https://en.wikipedia.org/wiki/Unit_testing#:~:text=In%20computer%20programming%2C%20unit%20testing,they%20are%20fit%20for%20use.) là phương pháp kiểm thử trên từng đơn vị của source code (class, function,..) và được coi là phương pháp cơ bản nhất mà một lập trình viên cần nắm. Vì vậy sự có mặt của unit test trong dự án phần mềm của bạn thường là một điều hiển nhiên và khá quan trọng.
 
-Đối với các Tini App, tại phía Tiki chưa cung cấp cụ thể một lựa chọn nào để tích hợp Unit testing vào quá trình phát triển Tini app. Bạn cần tự setup phương án sử dụng unit test phù hợp với ứng dụng của bạn.
+Đối với các Tini App, Tiki chưa cung cấp cụ thể một lựa chọn nào để tích hợp Unit test vào quá trình phát triển Tini app. Bạn cần tự thiết lập phương án sử dụng unit test phù hợp với ứng dụng của bạn.
 
 ---
-## Environment setup
+## Thiết lập môi trường
 
 ```JS
 // jest.config.js file
@@ -56,7 +58,7 @@ module.exports = () => {
 };
 ```
 
-### Source code structure
+### Cấu trúc Source code 
 
 Cấu trúc dự án được sắp đặt đơn giản như sau:
 
@@ -93,7 +95,7 @@ Cấu trúc dự án được sắp đặt đơn giản như sau:
 
 ```
 	
-### Setup test dependencies
+### Thiết lập test dependencies
 
 Trong bài chia sẻ này tôi sẽ dùng jest và babel. Các bạn có thể tham khảo dev dependencies dưới đây mà tôi sử dụng:
 
@@ -114,7 +116,7 @@ Trong bài chia sẻ này tôi sẽ dùng jest và babel. Các bạn có thể t
 ```
 
 ---
-## Example tests
+## Ví dụ
 ### Mocking
 Ý tưởng ở đây là khi mocking, chúng ta sẽ intercept global function `Component` hay `Page` để lấy các config, init data, methods và lifecycle methods sau đó map lại binding và trigger các unit mà ta cần test. Thông qua việc này ta có thể lấy được out put cần test.
 
@@ -189,7 +191,9 @@ globalThis.Component = mockComponentCreator;
 
 
 ```
+
 ### Tests
+
 Dựa vào phần mocking ở phía trên, chúng ta đã có thể thêm và pass các bài test cơ bản hay gặp mà không gặp quá nhiều khó khăn:
 ht
 
@@ -232,9 +236,9 @@ describe("Myapp: common stupid test cases:", () => {
 Các bạn có thể xem source code từ bài viết này tại [github.com/cute-me-on-repo/tiki-tiniapp-with-unit-tests](github.com/cute-me-on-repo/tiki-tiniapp-with-unit-tests)
 
 ---
-## Conclusion
+## Kết luận
 
-Tuân thủ nguyên tắc của unit test là test theo đơn vị, các phần còn thiếu thì chúng ta có thể sử dụng mocks. Cá nhân tôi thấy nhiều bạn thường muốn test quá nhiều thứ trong unit test và đôi khi nhầm lẫn với [integration testing](https://en.wikipedia.org/wiki/Integration_testing). Việc có nên tách biệt hai khái niệm này hay không không quá quan trọng, và việc quyết định mức độ test coverage bao nhiêu là đến từ developer với những use cases được chính developer đó định đoạt chứ không phải hoàn toàn dựa vào những thứ như `jest --coverage`. Phía reactjs cũng có đọan ghi chú sau vào ngay trang chủ của họ về tài liệu kiểm thử:
+Tuân thủ nguyên tắc của unit test là test theo đơn vị, các phần còn thiếu thì chúng ta có thể sử dụng mocks. Cá nhân tôi thấy nhiều bạn thường muốn test quá nhiều thứ trong unit test và đôi khi nhầm lẫn với [integration test](https://en.wikipedia.org/wiki/Integration_testing). Việc có nên tách biệt hai khái niệm này hay không chẳng quá quan trọng, và việc quyết định mức độ test coverage bao nhiêu là đến từ lập trình viên với những use cases được chính lập trình viên đó định đoạt, chứ không phải hoàn toàn dựa vào những thứ như `jest --coverage`. Phía reactjs cũng có đọan ghi chú sau vào ngay trang chủ của họ về tài liệu kiểm thử:
 
 > _With components, the distinction between a “unit” and “integration” test can be blurry_. If you’re testing a form, should its test also test the buttons inside of it? Or should a button component have its own test suite? Should refactoring a button ever break the form test?
 > [( * ⓘ - reactjs/docs/testing)](https://reactjs.org/docs/testing.html#tradeoffs#:~:text=With%20components,%20the%20distinction%20between%20a%20%E2%80%9Cunit%E2%80%9D%20and%20%E2%80%9Cintegration%E2%80%9D%20test%20can%20be%20blurry)
