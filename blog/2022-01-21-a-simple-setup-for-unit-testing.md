@@ -11,7 +11,7 @@ description: Một ví dụ đơn giản về việc viết unit test cho Tiki T
 
 [![Show off status badge -.-](https://camo.githubusercontent.com/c7836469d64d0cfb5952438321c47847ef635d2880291d795c3d52747b762a81/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7374617274253230776974682d7768792533462d627269676874677265656e2e7376673f7374796c653d666c6174)](https://developer.tiki.vn)
 
-## Giới thiệu
+## Introduction
 
 Mục đích của bài viết này là đưa ra một ví dụ đơn giản mà tôi đã sử dụng để viết unit test cho [Tiki Tini App](https://developer.tiki.vn). Hi vọng bài viết giúp các bạn phần nào trong việc tìm tài liệu tham khảo, chọn lựa một đáp án phù hợp với quá trình kiểm thử và phát triển ứng dụng của các bạn.
 
@@ -82,30 +82,28 @@ export default createComponent;
 ```
 
 ---
-## Mục lục
+## Table of contents
 
-- [A simple setup for Unit Testing in the Tiki Tini App](#a-simple-setup-for-unit-testing-in-the-tiki-tini-app)
-  - [Giới thiệu](#giới-thiệu)
-  - [Mục lục](#mục-lục)
-  - [- Conclusion](#--conclusion)
-  - [Về unit test in Tiki Tini App](#về-unit-test-in-tiki-tini-app)
-  - [Thiết lập môi trường](#thiết-lập-môi-trường)
-    - [Cấu trúc Source code](#cấu-trúc-source-code)
-    - [Thiết lập test dependencies](#thiết-lập-test-dependencies)
-  - [Ví dụ](#ví-dụ)
-    - [Mocking](#mocking)
-    - [Tests](#tests)
-  - [Source code](#source-code)
-  - [Kết luận](#kết-luận)
+- [Introduction](#introduction)
+- [Table of contents](#table-of-contents)
+- [About unit test in Tiki Tini App](#about-unit-test-in-tiki-tini-app)
+- [Environment setup](#environment-setup)
+	- [Source code structure](#source-code-structure)
+	- [Setup test dependencies](#setup-test-dependencies)
+- [Example tests](#example-tests)
+	- [Mocking](#mocking)
+	- [Tests](#tests) 
+- [Source code](#source-code)
+- [Conclusion](#conclusion)
 ---
-## Về unit test in Tiki Tini App
+## About unit test in Tiki Tini App
 
-[Unit test](https://en.wikipedia.org/wiki/Unit_testing#:~:text=In%20computer%20programming%2C%20unit%20testing,they%20are%20fit%20for%20use.) là phương pháp kiểm thử trên từng đơn vị của source code (class, function,..) và được coi là phương pháp cơ bản nhất mà một lập trình viên cần nắm. Vì vậy sự có mặt của unit test trong dự án phần mềm của bạn thường là một điều hiển nhiên và khá quan trọng.
+[Unit testing](https://en.wikipedia.org/wiki/Unit_testing#:~:text=In%20computer%20programming%2C%20unit%20testing,they%20are%20fit%20for%20use.) là phương pháp kiểm thử trên từng đơn vị của source code (class, function,..) và được coi là phương pháp cơ bản nhất mà một developer cần biết. Vì vậy sự có mặt của unit test trong dự án phần mềm của bạn thường là một điều hiển nhiên và khá quan trọng.
 
 Đối với các Tini App, hiện tại phía Tiki chưa cung cấp cụ thể một lựa chọn nào để tích hợp Unit testing vào quá trình phát triển Tini app. Bạn cần tự setup phương án sử dụng unit test phù hợp với ứng dụng của bạn.
 
 ---
-## Thiết lập môi trường
+## Environment setup
 
 ```ts
 // jest.config.js file
@@ -121,7 +119,7 @@ module.exports = () => {
 };
 ```
 
-### Cấu trúc Source code 
+### Source code structure
 
 Cấu trúc dự án được sắp đặt đơn giản như sau:
 
@@ -158,7 +156,7 @@ Cấu trúc dự án được sắp đặt đơn giản như sau:
 
 ```
 	
-### Thiết lập test dependencies
+### Setup test dependencies
 
 Trong bài chia sẻ này tôi sẽ dùng jest và babel. Các bạn có thể tham khảo dev dependencies dưới đây mà tôi sử dụng:
 
@@ -179,7 +177,7 @@ Trong bài chia sẻ này tôi sẽ dùng jest và babel. Các bạn có thể t
 ```
 
 ---
-## Ví dụ
+## Example tests
 ### Mocking
 Ý tưởng ở đây là khi mock các entities, chúng ta sẽ intercept global function `Component` hay `Page` để lấy các config, init data, methods và lifecycle methods sau đó map lại references(binding for the `this` context of methods) và trigger các unit mà ta cần test. Thông qua việc này ta có thể lấy được outputs cần test.
 
@@ -254,9 +252,7 @@ globalThis.Component = mockComponentCreator;
 
 
 ```
-
 ### Tests
-
 Dựa vào phần mocking ở phía trên, chúng ta đã có thể thêm và pass các bài test cơ bản hay gặp mà không gặp quá nhiều khó khăn:
 
 [![passed tests](https://raw.githubusercontent.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests/main/passed-tests.png)](https://github.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests)
@@ -298,7 +294,7 @@ describe("Myapp: common stupid test cases:", () => {
 Các bạn có thể xem source code từ bài viết này tại [github.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests](https://github.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests)
 
 ---
-## Kết luận
+## Conclusion
 
 Tuân thủ nguyên tắc của unit test là test theo đơn vị, các phần còn thiếu thì chúng ta có thể sử dụng mocks. Cá nhân tôi thấy nhiều bạn thường muốn test quá nhiều thứ trong unit test và đôi khi nhầm lẫn với [integration testing](https://en.wikipedia.org/wiki/Integration_testing). Việc có nên tách biệt hai khái niệm này hay không không quá quan trọng, và việc quyết định mức độ test coverage bao nhiêu là đến từ developer với những test cases được chính developer đó định đoạt chứ không phải hoàn toàn dựa vào những thứ như `jest --coverage`. Phía reactjs cũng có đọan ghi chú sau vào ngay trang chủ của họ về tài liệu kiểm thử:
 
@@ -312,4 +308,3 @@ Hi vọng bài viết giúp bạn có thêm tài liệu tham khảo khi áp dụ
 ---
  
  *[thien.ly](https://community.tiki.vn/u/thien.ly/summary) from the [cute me on repo](https://github.com/cute-me-on-repos) team*
-
