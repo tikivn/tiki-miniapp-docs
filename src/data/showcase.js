@@ -48,8 +48,20 @@ module.exports = [
     app: 'https://tiki.vn/apps/vn.tiki.miniapp.lookback',
     source:
       'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/vn.tiki.miniapp.lookback/',
-    tags: ['game'],
+    tags: ['app'],
   },
+  {
+    title: 'Lì xì',
+    description:
+      'Lì Xì đầu năm dành riêng cho các bạn Tikie.',
+    preview:
+      'https://user-images.githubusercontent.com/87349335/157080616-71952e27-7a19-4dba-b29f-6b1b2243c26a.png',
+    app: 'https://tiki.vn/apps/vn.tiki.tini.lixi',
+    source:
+      'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/vn.tiki.tini.lixi/',
+    tags: ['app'],
+  },
+
   {
     title: 'Merge Planets',
     description: 'Hợp nhất các hành tinh và hợp nhất vũ trụ ',
