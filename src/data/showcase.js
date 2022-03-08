@@ -31,6 +31,16 @@
 // Add your site to this list
 module.exports = [
   {
+    title: 'DoriDori',
+    description: 'Nền tảng Recommerce đầu tiên tại Việt Nam',
+    preview: 'https://user-images.githubusercontent.com/87349335/157161213-81de4025-c584-44b9-81ca-6ec4ac85f01e.png',
+    app: 'https://tiki.vn/apps/vn.tiki.doridori',
+    source:
+      'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/vn.tiki.doridori',
+    tags: ['app'],
+  },
+
+  {
     title: 'Hexa: Reach the Start',
     description: 'Trò chơi ghép hình',
     preview: 'https://user-images.githubusercontent.com/87349335/146311639-2ac445a4-c249-48f3-9fc7-7fd290c0e152.jpg',
@@ -53,13 +63,13 @@ module.exports = [
   {
     title: 'Lì xì',
     description:
-      'Lì Xì đầu năm dành riêng cho các bạn Tikie.',
+      'Lì Xì đầu năm',
     preview:
       'https://user-images.githubusercontent.com/87349335/157080616-71952e27-7a19-4dba-b29f-6b1b2243c26a.png',
     app: 'https://tiki.vn/apps/vn.tiki.tini.lixi',
     source:
       'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/vn.tiki.tini.lixi/',
-    tags: ['app'],
+    tags: ['game'],
   },
 
   {
@@ -97,6 +107,15 @@ module.exports = [
     source:
       'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/abi.stackart3d',
     tags: ['game'],
+  },
+  {
+    title: 'Tefal',
+    description: 'Chia sẻ công thức và video nấu ăn cho mọi gia đình ',
+    preview: 'https://user-images.githubusercontent.com/87349335/157161417-f951d2db-f44c-489e-95f9-d18595de4b16.png',
+    app: 'https://tiki.vn/apps/vn.tiki.tini.tefal',
+    source:
+      'https://github.com/tikivn/tiki-miniapp-docs/tree/master/src/data/apps/vn.tiki.tini.tefal',
+    tags: ['app'],
   },
   {
     title: 'Tiki API Demo',
