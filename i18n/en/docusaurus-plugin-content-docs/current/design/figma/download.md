@@ -121,7 +121,7 @@ Social components
 - Social post
 - Profile
 - Comment<br />
-“One more thing!”, Based on those Tini components, [the Shopping template for the Tini Apps here](https://www.figma.com/community/file/999527987953700182/Tini---Shopping-Template) and will update this template monthly, included more templates in the future for more business models. Take a look and try it ;)
+“One more thing!”, Based on those Tini components, [the Shop template for the Tini Apps here](https://www.figma.com/community/file/999527987953700182/Tini---Shop-Template) and will update this template monthly, included more templates in the future for more business models. Take a look and try it ;)
 Wake me up when September ends!!!
 
 

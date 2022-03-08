@@ -121,7 +121,7 @@ Vậy có gì mới?
 - Social post
 - Profile
 - Comment<br />
-  “One more thing!”, Dựa vào những component của Tini, bọn mình còn xây dựng một [bộ template dành cho ứng dụng thể loại mua sắm ở đây](https://www.figma.com/community/file/999527987953700182/Tini---Shopping-Template) và sẽ được cập nhật hàng tháng, cũng như là cho ra mắt thêm những template khác dành cho những mô hình kinh doánh khác. Hãy đón chờ nhé ;)
+  “One more thing!”, Dựa vào những component của Tini, bọn mình còn xây dựng một [bộ template dành cho ứng dụng thể loại mua sắm ở đây](https://www.figma.com/community/file/999527987953700182/Tini---Shop-Template) và sẽ được cập nhật hàng tháng, cũng như là cho ra mắt thêm những template khác dành cho những mô hình kinh doánh khác. Hãy đón chờ nhé ;)
   Wake me up when September ends!!!
 
 ---

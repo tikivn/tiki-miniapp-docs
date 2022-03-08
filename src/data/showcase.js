@@ -171,11 +171,11 @@ module.exports = [
 
 
   {
-    title: 'Shopping Template',
+    title: 'Shop Template',
     description:
       'Template hỗ trợ store của Tiki có thể tạo được một ứng dụng shopping đơn giản bằng nền tảng Tini App',
     preview:
-      'https://user-images.githubusercontent.com/1713660/146023043-f50040dd-c60e-4dd4-96eb-5c3a4c5ae80e.png',
+      'https://salt.tikicdn.com/ts/miniapp/f2/74/44/0f3df3bdece99c3c3de3e69ab1739a86.png',
     app: 'https://tiki.vn/apps/vn.tiki.shop',
     source: 'https://github.com/tikivn/miniapp-getting-started/tree/main/shop',
     tags: ['opensource', 'app', 'component'],
@@ -185,7 +185,7 @@ module.exports = [
     description:
       'Template hỗ trợ store của Tiki có thể tạo được một ứng dụng shopping đơn giản dựa trên sản phẩm có trên sàn Tiki.',
     preview:
-      'https://salt.tikicdn.com/ts/miniapp/c3/8f/7c/73520800f96ac05c7a1d649b5e89c986.png',
+      'https://salt.tikicdn.com/ts/miniapp/61/76/00/b10f77e2c882a3a7d267eb5e15f6e39f.png',
     app: 'https://tiki.vn/apps/vn.tiki.tini.merchant',
     source:
       'https://github.com/tikivn/miniapp-getting-started/tree/main/merchant',
