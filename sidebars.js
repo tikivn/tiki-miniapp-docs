@@ -821,7 +821,7 @@ module.exports = {
       items: [
         'backend-api/payment/overview',
         'backend-api/payment/link-accounts',
-        'backend-api/payment/create-sku',
+        /*'backend-api/payment/create-sku', */
         'backend-api/payment/payment-integration',
         'backend-api/payment/flow',
         'backend-api/payment/create-order',
