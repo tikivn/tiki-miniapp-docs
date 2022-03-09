@@ -17,7 +17,7 @@ Về phía người dùng Tiki, họ chỉ cần mở ứng dụng từ Kho ti�
 
 Sau đây là các công đoạn cụ thể:
 
-## 1. Liên kết tài khoản
+## 1. Liên kết tài khoản Nhà bán
 
 Xem hướng dẫn cách liên kết tài khoản tại [đây](link-accounts)
 

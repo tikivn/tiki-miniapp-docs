@@ -17,10 +17,20 @@ Chạy tập tin cài đặt Tini Studio.
 1. Thực hiện một trong hai cách sau:
    - Menu >> **File** >> **New Project**.
    - Trên trang **Getting Started** của Tini Studio, nhấn vào New Project.
-2. Trong hộp thoại **Configure your project**, điền tên dự án, App ID và đường dẫn mà bạn muốn lưu dự án đó **[Save location]**.
-   - AppID: định danh duy nhất của của ứng dụng. Bạn đăng ký nó trong quá trình tạo mới ứng dụng mới trên [Tini Console](https://developer.tiki.vn/apps). Xem thêm [Tạo Tini App của bạn](/docs/introduce/create). Nếu chưa tạo ứng dụng trên [Tini Console](https://developer.tiki.vn/apps), bạn có thể nhập một App ID bất kì theo đúng format để tạo Project trước.
+2. Trong hộp thoại **Choose a template**, chọn template phù hợp với dự án của bạn. Bấm nút **Next**.
+   <img src="/img/Choose_Template_for_Project_TiniStudio.png" width="450px" alt="Choose a template for project" style={{ margin: '0 auto', display: 'flex' }}/> 
+3. Trong hộp thoại **Create a new project**, điền tên dự án, App ID và đường dẫn mà bạn muốn lưu dự án đó **[Save location]**. Kế đến, bấm nút **Create** để hoàn tất quá trình tạo dự án.
+   <img src="/img/New_Project_TiniStudio.png" width="450px" alt="Create a new project" style={{ margin: '0 auto', display: 'flex' }}/>
 
-<img src="/img/New_Project_TiniStudio.jpg" width="450px" alt="Creat a new project" style={{ margin: '0 auto', display: 'flex' }}/>
+#### Ý nghĩa một số trường trong hộp thoại Create a new project
+
+**AppID**: định danh duy nhất của của ứng dụng. Bạn đăng ký nó trong quá trình tạo mới ứng dụng mới trên [Tini Console](https://developer.tiki.vn/apps). Xem thêm [Tạo Tini App của bạn](/docs/introduce/create). Nếu chưa tạo ứng dụng trên [Tini Console](https://developer.tiki.vn/apps), bạn có thể nhập một App ID bất kì theo đúng format để tạo Project trước.
+
+**Create a new folder**: tạo ra thực mục mới chứa các tập tin và thư mục của dự án, nằm trong đường dẫn được chỉ định trong trường **Location**. Thư mục được tao ra sẽ có tên là tên của dự án. 
+
+- Nếu **Create a new folder** không được chọn (unchecked), các tập tin và thư mục của dự án sẽ nằm trong đường dẫn được chỉ định trong trường **Location**.
+
+**Create a git repository**: tự động init một git -local project.
 
 ## 4. Lập trình cho ứng dụng
 
