@@ -8,7 +8,7 @@ title: Xây dựng Shopping Template cùng Tini App (Phần 3)
 
 ## :checkered_flag: Recap
 
-Ở 2 phần trước, chúng ta đã cùng nhau tìm hiểu về Shopping Template và "thực chiến" với 2 pages: `Home` và `Search`.
+Ở [phần 1](https://developers.tiki.vn/blog/2022/03/07/shopping-template-p1) và [phần 2](https://developers.tiki.vn/blog/2022/03/08/shopping-template-p2), chúng ta đã cùng nhau tìm hiểu về Shopping Template và "thực chiến" với 2 pages: `Home` và `Search`.
 Ở phần này, mình sẽ cùng các bạn tiếp tục xây dựng giỏ hàng và thực hiện mock payment.
 
 # Mục lục
@@ -90,7 +90,7 @@ Hãy cùng đi từng action nào
 
 ###### pages/detail/index.js
 
-```
+```js
 navigateToCart () {
   my.navigateTo({ url: `pages/cart/index` });
 };
@@ -102,7 +102,7 @@ Tuy nhiên, để gắn sự kiện cho icon ở navigation bar, chúng ta phả
 
 ###### pages/detail/index.js
 
-```
+```js
 onCustomIconEvent(e) {
   navigateToCart();
 },
@@ -125,7 +125,7 @@ Khi tap vào button `Add to cart`, chúng ta sẽ gọi `addProduct()` từ app 
 
 ###### pages/detail/index.js
 
-```
+```js
 addToCart() {
   getApp().addProduct(this.data.product);
 },
@@ -140,7 +140,7 @@ Ta sẽ implement `addProduct()` ở app như sau:
 
 ###### app.js
 
-```
+```js
 addProduct(product) {
   const position = this.cart.orderedProducts.findIndex(
     (item) => item.id === product.id,
@@ -152,7 +152,7 @@ addProduct(product) {
 },
 ```
 
-```
+```js
 calculatePrices() {
   const { shippingFee, coupon, orderedProducts } = this.cart;
   const price = orderedProducts.reduce((acc, curr) => {
@@ -173,7 +173,7 @@ calculatePrices() {
 
 ###### pages/cart/index.js
 
-```
+```js
 async onLoad() {
   this.disposableCollection.push(
     app.cartEvent.on(EMITTERS.CART_UPDATE, (cart) =>
@@ -197,7 +197,7 @@ Khi tap button `+` hoặc `-` hoặc nhập trực tiếp số vào component `s
 
 ###### pages/detail/index.js
 
-```
+```js
 onChangeQuantityProduct(product, quantity) {
   getApp().changeQuantityProduct(product, quantity);
 },
@@ -211,7 +211,7 @@ Ta sẽ implement `changeQuantityProduct()` ở app như sau:
 
 ###### app.js
 
-```
+```js
 changeQuantityProduct(product, quantity) {
   const position = this.cart.orderedProducts.findIndex(
     (item) => item.id === product.id,
@@ -236,7 +236,7 @@ Khi tap vào icon close, chúng ta sẽ lưu sản phẩm được chọn lại 
 
 ###### components/order-list/index.js
 
-```
+```js
 confirmRemoveOrder(product) {
   this.selectedProduct = product;
   this.setData({
@@ -253,7 +253,7 @@ confirmRemoveOrder(product) {
 
 Khi tap vào `Yes`, `removeProduct()` ở app sẽ được gọi và nhận vào product được chọn mà ta đã lưu lại ở trên.
 
-```
+```js
 onRemoveProduct(product) {
   app.removeProduct(product);
 },
@@ -267,7 +267,7 @@ Ta sẽ implement `removeProduct()` ở app như sau:
 
 ###### app.js
 
-```
+```js
 removeProduct(product) {
   const position = this.cart.orderedProducts.findIndex(
     (item) => item.id === product.id,
@@ -286,7 +286,7 @@ Tương tự như trên, ta cũng implement `selectCoupon()` và `removeCoupon()
 
 <img src="https://i.imgur.com/fdSzJB7.png" alt="coupon" width="600"/>
 
-```
+```js
 async selectCoupon(code) {
   try {
     const coupon = await getCouponFromCodeAPI(code);
