@@ -87,6 +87,11 @@ module.exports = {
           href: 'https://community.tiki.vn',
           position: 'right',
         },
+        {
+          label: 'Blog',
+          href: '/blog',
+          position: 'right',
+        },
         {type: 'localeDropdown', position: 'right'},
       ],
     },
