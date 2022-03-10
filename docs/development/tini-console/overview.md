@@ -6,6 +6,8 @@ description: Giới thiệu trung tâm quản lý Tiki mini app.
 
 Tini Console là một công cụ nền web cho phép các nhà phát triển quản lý và phát hành ứng dụng chạy trên nền tảng Tini App của Tiki.
 
+<img style={{ margin: '0 auto', display: 'flex' }} src="/img/TiniConsole_UI.png" width="800px" alt="Tini Console Interface"/>
+
 Những nhóm tính năng chính của Tini Console bao gồm:
 
 ## Quản lý ứng dụng
@@ -14,7 +16,7 @@ Những nhóm tính năng chính của Tini Console bao gồm:
 - Xoá ứng dụng
 - Quản lý phiên bản cũng như build của ứng dụng
 - Quản lý thành viên tham gia phát triển ứng dụng
-- Cung cấp thống kê lượng người truy cập ứng dụng khi nó nó mặt trên Kho tiện ích.
+- Cung cấp thống kê lượng người truy cập ứng dụng khi nó có mặt trên Kho tiện ích.
 - Chia sẻ ứng dụng.
 
 ## Cấu hình ứng dụng
