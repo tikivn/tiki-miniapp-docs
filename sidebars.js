@@ -42,6 +42,7 @@ module.exports = {
       label: 'Tini Console',
       collapsed: true,
       items: [
+        'development/tini-console/overview',
         'development/tini-console/delete',
         'development/tini-console/hide',
         'development/tini-console/share-app',
