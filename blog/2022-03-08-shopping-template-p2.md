@@ -8,7 +8,7 @@ title: Xây dựng Shopping Template cùng Tini App (Phần 2)
 
 ## :checkered_flag: Recap
 
-Ở phần 1, chúng ta đã tìm hiểu được:
+Ở [phần 1](https://developers.tiki.vn/blog/2022/03/07/shopping-template-p1), chúng ta đã tìm hiểu được:
 
 - Shopping Template là gì
 - Chức năng và cấu trúc dự án
@@ -57,7 +57,7 @@ Hai components `product-section` và `category-section` được đã được s
 
 ###### pages/search/index.txml
 
-```
+```xml
 <category-section
   className="search-category-list"
   categories="{{categories}}"
@@ -67,7 +67,7 @@ Hai components `product-section` và `category-section` được đã được s
 
 ###### pages/search/index.tcss
 
-```
+```css
 .search-category-list .category-grid-layout {
   display: flex;
   overflow-x: auto;
@@ -91,7 +91,7 @@ Hai components `product-section` và `category-section` được đã được s
 
 ###### components/search-bar/index.json
 
-```
+```json
 {
   "component": true,
   "usingComponents": {
@@ -102,7 +102,7 @@ Hai components `product-section` và `category-section` được đã được s
 
 ###### components/search-bar/index.js
 
-```
+```js
 Component({
   props: {
     className: '',
@@ -110,7 +110,7 @@ Component({
     value: '',
     onInput: () => {},
     onSearch: () => {},
-    onConfirm: () => {},
+    onConfirm: () => {}
   },
 
   methods: {
@@ -127,7 +127,7 @@ Component({
     },
     _onConfirm(event) {
       this.props.onConfirm(event.detail.value);
-    },
+    }
   },
 
   // Life cycle
@@ -138,13 +138,13 @@ Component({
     this.isTyping = setTimeout(() => {
       this._onSearch();
     }, 400);
-  },
+  }
 });
 ```
 
-###### components/search-bar/index.js
+###### components/search-bar/index.txml
 
-```
+```xml
 <search-bar
   value="{{value}}"
   placeholder="{{placeholder}}"
@@ -170,24 +170,20 @@ Component({
 
 > :pushpin: Xem thêm [Event type](https://developers.tiki.vn/docs/framework/event/event-introduction#event-type)
 
-###### components/recent-search/index.js
+###### components/recent-search/index.txml
 
-```
+```js
 <view
   class="{{className}} flex justify-between items-center py-x-small {{index !== recentKeys.length - 1 ? 'border-bottom-gray' : ''}}"
   tiki:for="{{recentKeys}}"
   data-item="{{item}}"
-  onTap="_onClickItem"
->
-  <view>
-    {{item}}
-  </view>
+  onTap="_onClickItem">
+  <view>{{ item }}</view>
   <view
     class="flex items-center"
     data-item="{{item}}"
-    catchTap="_onRemoveItem"
-  >
-    <icon type="close" color="#808089"/>
+    catchTap="_onRemoveItem">
+    <icon type="close" color="#808089" />
   </view>
 </view>
 ```
@@ -196,7 +192,7 @@ Component({
 
 ###### pages/search/index.js
 
-```
+```js
 onConfirm(searchTerm) {
   this.onSearch(searchTerm);
   this.addNewRecentKey(searchTerm);
@@ -208,7 +204,7 @@ onConfirm(searchTerm) {
 
 > :pushpin: Xem thêm [Storage](https://developers.tiki.vn/docs/api/storage/introduce#gi%E1%BB%9Bi-thi%E1%BB%87u)
 
-```
+```js
 async addNewRecentKey(searchTerm) {
   if (!searchTerm || searchTerm.length === 0) return;
 
@@ -227,7 +223,7 @@ async addNewRecentKey(searchTerm) {
 
 - Và khi remove, hãy nhớ remove ở `Storage` luôn nhé
 
-```
+```js
 async removeSearchKey(key) {
   const recentKeys = await getStorage('recent-search');
   const removedKeys = recentKeys.filter((k) => k !== key);
@@ -256,7 +252,7 @@ Ta sẽ sử dụng component `chip` của `tini-ui`.
 
 ###### components/filtered-button/index.txml
 
-```
+```xml
 <chip
   active="{{totalFilters}}"
   content="Filter {{totalFilters ? `(${totalFilters})` : ''}}"
@@ -281,7 +277,7 @@ Với UI trên, ta sẽ sử dụng component `bottom-sheet` và `chip` của `t
 
 ###### components/filter/index.txml
 
-```
+```xml
   <block tiki:if="{{isShow}}">
     <bottom-sheet
       title="Filter"
@@ -343,7 +339,7 @@ Tương tự `filtered-button`, ta sẽ sử dụng component `chip` của `tini
 
 ###### components/sort/index.txml
 
-```
+```xml
 <chip
   active
   content="{{selectedSort.label ? selectedSort.label : 'Sort'}}"
@@ -365,7 +361,7 @@ Tương tự filter bottom-sheet, ta sẽ sử dụng component `bottom-sheet` v
 
 ###### components/filter/index.txml
 
-```
+```xml
 <block tiki:if="{{isShow}}">
   <bottom-sheet
     title="Sort"
@@ -405,7 +401,7 @@ Tương tự filter bottom-sheet, ta sẽ sử dụng component `bottom-sheet` v
 
 ###### components/filter-list/index.txml
 
-```
+```xml
 <view
   tiki:if="{{formattedSelectedFilters.length}}"
   class="category-detail-selected flex bg-gray10 py-small px-medium hide-scroll-bar">
@@ -437,7 +433,7 @@ Tương tự filter bottom-sheet, ta sẽ sử dụng component `bottom-sheet` v
 
 ###### components/empty/index.txml
 
-```
+```xml
 <view class="flex flex-col items-center {{className}}">
   <image
     class="empty-image mb-large"

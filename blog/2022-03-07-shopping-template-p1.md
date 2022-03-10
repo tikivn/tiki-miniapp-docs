@@ -108,7 +108,7 @@ src
 
 ###### package.json
 
-```
+```json
 {
   "name": "miniapp-tini-shop",
   "version": "1.0.1",
@@ -149,18 +149,17 @@ Break nhỏ layout này ta sẽ được các components:
 
 ###### components/banners/index.js
 
-```
+```js
 Component({
   props: {
-    banners: [],
-  },
+    banners: []
+  }
 });
-
 ```
 
 ###### components/banners/index.txml
 
-```
+```xml
 <carousel
   tiki:else
   autoplay
@@ -199,7 +198,7 @@ Chúng ta có thể dễ dàng nhận ra hình ảnh này được lặp đi l�
 | .font-bold       | font-weight: 700;               |
 | .text-medium     | font-size: 16px;                |
 
-> :pushpin: Các giá trị css như 700 và 16px là giá trị mặc định, bạn có thể customize các giá tị này thông qua việc chỉnh sửa [css token](https://developers.tiki.vn/docs/component/advance/styling/concept/customize)
+> :pushpin: Các giá trị css như 700 và 16px là giá trị mặc định, bạn có thể customize các giá trị này thông qua việc chỉnh sửa [css token](https://developers.tiki.vn/docs/component/advance/styling/concept/customize)
 > :pushpin: Xem thêm [tini-style](https://developers.tiki.vn/docs/component/advance/styling/concept/install)
 
 ![](https://i.imgur.com/WrmCshW.png)
@@ -208,26 +207,24 @@ Chúng ta có thể dễ dàng nhận ra hình ảnh này được lặp đi l�
 
 ###### components/section-title/index.js
 
-```
+```js
 Component({
   props: {
     title: '',
-    onTapActionButton: () => {},
+    onTapActionButton: () => {}
   },
 
   methods: {
     _onTapActionButton() {
       this.props.onTapActionButton();
-    },
-  },
+    }
+  }
 });
-
-
 ```
 
 ###### components/section-title/index.txml
 
-```
+```xml
 <view class="flex justify-between items-center mt-4x-small mb-medium">
   <text class="font-bold text-medium">
     {{title}}
@@ -264,11 +261,11 @@ Có nhiều cách để làm việc này, tuy nhiên trong khuôn khổ bài nà
 
 ###### utils/common.sjs
 
-```
+```js
 // Nhiệm vụ của function này là convert number 1000 --> 1.000 đ
 
-export const moneyFormatter = (number, currency = " ₫") => {
-  return parseInt(number).toLocaleString("vi-VN") + currency;
+export const moneyFormatter = (number, currency = ' ₫') => {
+  return parseInt(number).toLocaleString('vi-VN') + currency;
 };
 ```
 
@@ -276,7 +273,7 @@ export const moneyFormatter = (number, currency = " ₫") => {
 
 ###### components/product/index.txml
 
-```
+```xml
 <import-sjs from="../../utils/common.sjs" name="{moneyFormatter}"></import-sjs>
 ```
 
@@ -284,8 +281,12 @@ export const moneyFormatter = (number, currency = " ₫") => {
 
 ###### components/product/index.js
 
-```
-{{moneyFormatter(product.price)}}
+```js
+{
+  {
+    moneyFormatter(product.price);
+  }
+}
 ```
 
 > :pushpin: [Xem souce code tại đây](https://github.com/tikivn/miniapp-getting-started/tree/main/shop/src/components/product)
@@ -310,19 +311,19 @@ Chúng ta sẽ có một component với các props sau:
 
 ###### components/product-section/index.js
 
-```
+```js
 Component({
   props: {
     type: 'vertical',
     products: [],
-    onTapProduct: () => {},
+    onTapProduct: () => {}
   },
 
   methods: {
     _onTapProduct(product) {
       this.props.onTapProduct(product);
-    },
-  },
+    }
+  }
 });
 ```
 
@@ -332,7 +333,7 @@ Component({
 
 ###### components/product-section/index.txml
 
-```
+```xml
 <view class="{{className}}">
   <template name="vertical">
     <view class="product-section-vertical">
@@ -371,7 +372,7 @@ Component({
 
 ###### components/product-section/index.tcss
 
-```
+```css
 .product-section-vertical {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -405,7 +406,7 @@ Component `category-section` sẽ có layout giống `product-section` dạng ve
 
 ###### components/category-section/index.tcss
 
-```
+```css
 .product-section-vertical {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -431,12 +432,12 @@ Chúng ta sẽ có một component với các props và method sau sau:
 
 ###### components/category-carousel/index.js
 
-```
+```js
 Component({
   props: {
     categories: [],
     onTapCategory: () => {},
-    activatedCategory: 0,
+    activatedCategory: 0
   },
 
   methods: {
@@ -446,17 +447,16 @@ Component({
 
     onCategoryChange(event) {
       this.setData({
-        activatedCategory: event.detail.current,
+        activatedCategory: event.detail.current
       });
-    },
-  },
+    }
+  }
 });
-
 ```
 
 ###### components/category-carousel/index.txml
 
-```
+```xml
 <carousel
   indicator-dots="{{categories.length > 1}}"
   onChange="onCategoryChange"
@@ -475,7 +475,7 @@ Component({
 
 ###### components/category-carousel/index.tcss
 
-```
+```css
 .category-carousel {
   transition: ease-in-out 0.3s;
 }
@@ -493,7 +493,6 @@ Component({
   padding: 0 8px;
   transform: unset;
 }
-
 ```
 
 > :pushpin: [Xem souce code tại đây](https://github.com/tikivn/miniapp-getting-started/tree/main/shop/src/components/category-carousel)
@@ -504,7 +503,7 @@ Như vậy chúng ta đã đi qua tất cả các component ở home page, bây 
 
 ###### pages/home/index.txml
 
-```
+```x ,
 <view tiki:else>
   <banners
     class="home-banners"
@@ -560,17 +559,16 @@ Khai báo tên page
 
 ###### pages/home/index.json
 
-```
+```json
 {
   "defaultTitle": "Shop Name",
   "usingComponents": {
     "banners": "components/banners/index",
     "section-title": "components/section-title/index",
     "product-section": "components/product-section/index",
-    "category-carousel": "components/category-carousel/index",
+    "category-carousel": "components/category-carousel/index"
   }
 }
-
 ```
 
 Thêm icon giỏ hàng
@@ -578,7 +576,7 @@ Thêm icon giỏ hàng
 
 ###### pages/home/index.js
 
-```
+```js
 //...
   async onReady() {
     my.addIconsToNavigationBar({
@@ -599,14 +597,12 @@ Thêm tab bar bằng cách khai bảo ở **app.json**:
 
 ###### app.json
 
-```
+```json
 {
   "window": {
     "defaultTitle": "Tini shop"
   },
-  "pages": [
-    "pages/home/index"
-  ],
+  "pages": ["pages/home/index"],
   "tabBar": {
     "borderTopActiveColor": "#1A94FF",
     "borderTopColor": "#EBEBF0",
@@ -642,14 +638,19 @@ Vì `my.request` có dạng callback nên để thuận tiện mình sẽ wrap n
 
 ###### services/request.js
 
-```
-export const request = async ({ path, method = 'GET', headers = {}, data }) => {
+```js
+export const request = async ({
+  path,
+  method = 'GET',
+  headers = {},
+  data
+}) => {
   return new Promise((resolve, reject) => {
     my.request({
       url: `${BASE_URL}/${path}.json`,
       headers: {
         'Content-Type': 'application/json',
-        ...headers,
+        ...headers
       },
       method,
       data,
@@ -658,7 +659,7 @@ export const request = async ({ path, method = 'GET', headers = {}, data }) => {
       },
       fail: (err) => {
         reject(err);
-      },
+      }
     });
   });
 };
@@ -668,7 +669,7 @@ Cài đặt các API gọi đến từng end-point tương ứng:
 
 ###### services/index.js
 
-```
+```js
 export const getShopInfoAPI = () => {
   return request({ path: '/shop' });
 };
@@ -684,7 +685,6 @@ export const getFeaturedProductsAPI = () => {
 export const getNewProductsAPI = () => {
   return request({ path: '/new-products' });
 };
-
 ```
 
 Và ở page, mình sẽ gọi các API này ở life cycle method `onLoad()` và dùng `setData()` để gán các giá trị mới nhận được vào data đồng thời trigger re-render.
@@ -694,7 +694,7 @@ Và ở page, mình sẽ gọi các API này ở life cycle method `onLoad()` v�
 
 ###### pages/home/index.js
 
-```
+```js
 Page({
   data: {
     shop: {},
@@ -702,7 +702,7 @@ Page({
     featuredProducts: [],
     newProducts: [],
     banners: [],
-    hotDealProducts: [],
+    hotDealProducts: []
   },
 
   async loadData() {
@@ -713,14 +713,14 @@ Page({
         featuredProducts,
         newProducts,
         banners,
-        hotDealProducts,
+        hotDealProducts
       ] = await Promise.all([
         getShopInfoAPI(),
         getCategoriesAPI(),
         getFeaturedProductsAPI(),
         getNewProductsAPI(),
         getBannersAPI(),
-        getHotDealProductsAPI(),
+        getHotDealProductsAPI()
       ]);
 
       this.setData({
@@ -729,18 +729,18 @@ Page({
         newProducts,
         banners,
         hotDealProducts,
-        categories: group(categories, 8),
+        categories: group(categories, 8)
       });
     } catch {
       this.setData({
-        isLoading: false,
+        isLoading: false
       });
     }
   },
 
   async onReady() {
     this.loadData();
-  },
+  }
 });
 ```
 
