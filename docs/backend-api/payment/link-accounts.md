@@ -6,7 +6,10 @@ description: liên kết tài khoản giữa Nhà phát triển và tài khoản
 
 Ý nghĩa của việc liên kết tài khoản Nhà phát triển với tài khoản Seller là giúp tự động tạo SKU sử dụng với Tini App trên Seller Center.
 
-***Lưu ý:*** người tiến hành liên kết tài khoản phải có quyền owner/admin đối với tài khoản Developer, và quyền quản lý cửa hàng đối tài khoản Seller.
+:::note Lưu ý
+
+Người tiến hành liên kết tài khoản phải có quyền owner/admin đối với tài khoản Developer, và quyền quản lý cửa hàng đối tài khoản Seller. Và tài khoản Seller đã đó được kích hoạt.
+:::
 
 Sau đây là các bước thực hiện:
 
