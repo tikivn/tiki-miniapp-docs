@@ -26,7 +26,6 @@ module.exports = {
   themeConfig: {
     typesense: {
       typesenseCollectionName: 'tiniapp-docs', // Replace with your own doc site's name. Should match the collection name in the scraper settings.
-      
       typesenseServerConfig: {
         nodes: [
           {
@@ -42,7 +41,7 @@ module.exports = {
       typesenseSearchParameters: {},
 
       // Optional
-      contextualSearch: true,
+      contextualSearch: false,
     },
     colorMode: {
       defaultMode: 'light',
