@@ -1458,6 +1458,14 @@
     chalk "^4.1.2"
     tslib "^2.3.1"
 
+"@docusaurus/logger@2.0.0-beta.17":
+  version "2.0.0-beta.17"
+  resolved "https://registry.yarnpkg.com/@docusaurus/logger/-/logger-2.0.0-beta.17.tgz#89c5ace3b4efd5274adb0d8919328892c4466d02"
+  integrity sha512-F9JDl06/VLg+ylsvnq9NpILSUeWtl0j4H2LtlLzX5gufEL4dGiCMlnUzYdHl7FSHSzYJ0A/R7vu0SYofsexC4w==
+  dependencies:
+    chalk "^4.1.2"
+    tslib "^2.3.1"
+
 "@docusaurus/mdx-loader@2.0.0-beta.15":
   version "2.0.0-beta.15"
   resolved "https://registry.yarnpkg.com/@docusaurus/mdx-loader/-/mdx-loader-2.0.0-beta.15.tgz#da23745bc73c93338dd330dad6bbc9d9fe325553"
@@ -1687,6 +1695,16 @@
     joi "^17.4.2"
     tslib "^2.3.1"
 
+"@docusaurus/utils-validation@2.0.0-beta.17":
+  version "2.0.0-beta.17"
+  resolved "https://registry.yarnpkg.com/@docusaurus/utils-validation/-/utils-validation-2.0.0-beta.17.tgz#d7dbfc1a29768c37c0d8a6af85eb1bdfef7656df"
+  integrity sha512-5UjayUP16fDjgd52eSEhL7SlN9x60pIhyS+K7kt7RmpSLy42+4/bSr2pns2VlATmuaoNOO6iIFdB2jgSYJ6SGA==
+  dependencies:
+    "@docusaurus/logger" "2.0.0-beta.17"
+    "@docusaurus/utils" "2.0.0-beta.17"
+    joi "^17.6.0"
+    tslib "^2.3.1"
+
 "@docusaurus/utils@2.0.0-beta.15", "@docusaurus/utils@^2.0.0-beta.4":
   version "2.0.0-beta.15"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-2.0.0-beta.15.tgz#60868046700d5585cfa6ffc57c5f3fbed00b61fc"
@@ -1708,6 +1726,27 @@
     resolve-pathname "^3.0.0"
     tslib "^2.3.1"
     url-loader "^4.1.1"
+
+"@docusaurus/utils@2.0.0-beta.17":
+  version "2.0.0-beta.17"
+  resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-2.0.0-beta.17.tgz#6a696e2ec5e50b2271f2d26d31562e9f3e2bc559"
+  integrity sha512-yRKGdzSc5v6M/6GyQ4omkrAHCleevwKYiIrufCJgRbOtkhYE574d8mIjjirOuA/emcyLxjh+TLtqAA5TwhIryA==
+  dependencies:
+    "@docusaurus/logger" "2.0.0-beta.17"
+    "@svgr/webpack" "^6.0.0"
+    file-loader "^6.2.0"
+    fs-extra "^10.0.1"
+    github-slugger "^1.4.0"
+    globby "^11.0.4"
+    gray-matter "^4.0.3"
+    js-yaml "^4.1.0"
+    lodash "^4.17.21"
+    micromatch "^4.0.4"
+    resolve-pathname "^3.0.0"
+    shelljs "^0.8.5"
+    tslib "^2.3.1"
+    url-loader "^4.1.1"
+    webpack "^5.69.1"
 
 "@easyops-cn/autocomplete.js@^0.38.1":
   version "0.38.1"
@@ -2668,6 +2707,13 @@ axios@^0.25.0:
   integrity sha512-cD8FOb0tRH3uuEe6+evtAbgJtfxr7ly3fQjYcMcuPlgkwVS9xboaVIpcDV+cYQe+yGykgwZCs1pzjntcGa6l5g==
   dependencies:
     follow-redirects "^1.14.7"
+
+axios@^0.26.0:
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.26.1.tgz#1ede41c51fcf51bbbd6fd43669caaa4f0495aaa9"
+  integrity sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==
+  dependencies:
+    follow-redirects "^1.14.8"
 
 babel-eslint@^10.1.0:
   version "10.1.0"
@@ -3793,22 +3839,20 @@ docusaurus-plugin-sass@^0.2.2:
   dependencies:
     sass-loader "^10.1.1"
 
-docusaurus-theme-search-typesense@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/docusaurus-theme-search-typesense/-/docusaurus-theme-search-typesense-0.3.0.tgz#b00d9d7432f51b3ed67fa7ce64e7762e82983c0c"
-  integrity sha512-VH8lH7v8NVvCrtSqnKlAxvJKwdDI05e4zH6xFxyqB9MLnN0j/gQLwY5MZNEP+NhIfufGCB/RIbi2QFKzNMfsRQ==
+docusaurus-theme-search-typesense@^0.4.0-2:
+  version "0.4.0-2"
+  resolved "https://registry.yarnpkg.com/docusaurus-theme-search-typesense/-/docusaurus-theme-search-typesense-0.4.0-2.tgz#091a33bccd0cbe48640cf0fcb8ca2f745bf2c42b"
+  integrity sha512-a1IAsEYJblmEkhW2lREe/IY0gmv+ciUwec5mYC8aTVukV769Avb5Eq8/6m6eV2/QOpfE6PUvht5RLxh0xFEtGA==
   dependencies:
-    "@docusaurus/core" "2.0.0-beta.15"
-    "@docusaurus/theme-common" "2.0.0-beta.15"
-    "@docusaurus/utils" "2.0.0-beta.15"
-    "@docusaurus/utils-validation" "2.0.0-beta.15"
+    "@docusaurus/utils" "2.0.0-beta.17"
+    "@docusaurus/utils-validation" "2.0.0-beta.17"
     algoliasearch-helper "^3.7.0"
     clsx "^1.1.1"
     eta "^1.12.1"
     lodash "^4.17.20"
-    typesense "^0.14.0"
+    typesense "^1.2.2"
     typesense-docsearch-react "^0.1.0"
-    typesense-instantsearch-adapter "^2.2.0"
+    typesense-instantsearch-adapter "^2.4.0"
 
 dom-converter@^0.2.0:
   version "0.2.0"
@@ -3973,6 +4017,14 @@ enhanced-resolve@^5.8.3:
   version "5.9.0"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.9.0.tgz#49ac24953ac8452ed8fed2ef1340fc8e043667ee"
   integrity sha512-weDYmzbBygL7HzGGS26M3hGQx68vehdEg6VUmqSOaFzXExFqlnKuSvsEJCVGQHScS8CQMbrAqftT+AzzHNt/YA==
+  dependencies:
+    graceful-fs "^4.2.4"
+    tapable "^2.2.0"
+
+enhanced-resolve@^5.9.2:
+  version "5.9.2"
+  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.9.2.tgz#0224dcd6a43389ebfb2d55efee517e5466772dd9"
+  integrity sha512-GIm3fQfwLJ8YZx2smuHpBKkXC1yOk+OBEmKckVyL0i/ea8mqDEykK3ld5dgH1QYPNyT/lIllxV2LULnxCHaHkA==
   dependencies:
     graceful-fs "^4.2.4"
     tapable "^2.2.0"
@@ -4505,7 +4557,7 @@ flux@^4.0.1:
     fbemitter "^3.0.0"
     fbjs "^3.0.0"
 
-follow-redirects@^1.0.0, follow-redirects@^1.14.7:
+follow-redirects@^1.0.0, follow-redirects@^1.14.7, follow-redirects@^1.14.8:
   version "1.14.9"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.9.tgz#dd4ea157de7bfaf9ea9b3fbd85aa16951f78d8d7"
   integrity sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==
@@ -4558,6 +4610,15 @@ fs-extra@^10.0.0:
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.0.0.tgz#9ff61b655dde53fb34a82df84bb214ce802e17c1"
   integrity sha512-C5owb14u9eJwizKGdchcDUQeFtlSHHthBk8pbX9Vc1PFZrLombudjDnNns88aYslCyF6IY5SUw3Roz6xShcEIQ==
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^2.0.0"
+
+fs-extra@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.0.1.tgz#27de43b4320e833f6867cc044bfce29fdf0ef3b8"
+  integrity sha512-NbdoVMZso2Lsrn/QwLXOy6rm0ufY2zEOKCDzJR/0kBsb0E6qed0P3iYK+Ath3BfvXEeu4JhEtXLgILx5psUfag==
   dependencies:
     graceful-fs "^4.2.0"
     jsonfile "^6.0.1"
@@ -5694,7 +5755,7 @@ js-yaml@^3.13.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-js-yaml@^4.0.0:
+js-yaml@^4.0.0, js-yaml@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
   integrity sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==
@@ -5993,7 +6054,7 @@ lodash@^4.17.14, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
-loglevel@^1.7.1:
+loglevel@^1.7.1, loglevel@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.8.0.tgz#e7ec73a57e1e7b419cb6c6ac06bf050b67356114"
   integrity sha512-G6A/nJLRgWOuuwdNuA6koovfEV1YpqqAG4pRUlFaz3jj2QNZ8M4vBqnVA+HBTmU/AMNUtlOsMmSpF6NyOjztbA==
@@ -8526,7 +8587,7 @@ shell-quote@^1.7.3:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.3.tgz#aa40edac170445b9a431e17bb62c0b881b9c4123"
   integrity sha512-Vpfqwm4EnqGdlsBFNmHhxhElJYrdfcxPThu+ryKS5J8L/fhAwLazFZtq+S+TWZ9ANj2piSQLGj6NQg+lKPmxrw==
 
-shelljs@^0.8.4:
+shelljs@^0.8.4, shelljs@^0.8.5:
   version "0.8.5"
   resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.8.5.tgz#de055408d8361bed66c669d2f000538ced8ee20c"
   integrity sha512-TiwcRcrkhHvbrZbnRcFYMLl30Dfov3HKqzp5tO5b4pt6G/SezKcYhmDg15zXVBswHmctSAQKznqNW2LO5tTDow==
@@ -9038,12 +9099,27 @@ typesense-docsearch-react@^0.1.0:
     typesense "^0.14.0"
     typesense-instantsearch-adapter "^2.0.1"
 
-typesense-instantsearch-adapter@^2.0.1, typesense-instantsearch-adapter@^2.2.0:
+typesense-instantsearch-adapter@2.4.1-1:
+  version "2.4.1-1"
+  resolved "https://registry.yarnpkg.com/typesense-instantsearch-adapter/-/typesense-instantsearch-adapter-2.4.1-1.tgz#f6966f059c1fb30b2732c976db6242dce8e9f8be"
+  integrity sha512-JciaVS1ZZNWhB6FaeYAZJ2VdCz2fqsDglRKM1F8Tay26sNC5iYSIsVHUtAWNpIsoHiniKRRswL1GC50Mgedi5g==
+  dependencies:
+    typesense "^1.3.0-4"
+
+typesense-instantsearch-adapter@^2.0.1, typesense-instantsearch-adapter@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/typesense-instantsearch-adapter/-/typesense-instantsearch-adapter-2.4.0.tgz#27a934bf033a5d7717f269a56b9fc61bd30c9c8c"
   integrity sha512-zJCfrF7j/jgQnyqUoyshSj84IMMaMVYzZyfEnCM/6YQyPPmObbr/EzxL49u4lcl50SW4EjgBie4SRvjR/r8ttA==
   dependencies:
     typesense "^1.2.1"
+
+typesense@1.3.0-4, typesense@^1.3.0-4:
+  version "1.3.0-4"
+  resolved "https://registry.yarnpkg.com/typesense/-/typesense-1.3.0-4.tgz#b60651bc3ac7e12804904496b303fc62483c3381"
+  integrity sha512-A//7y4dNRZhJfq7/DafC2DQDZ4laTej0XNnbGqTpxBOz0RU9fCJTwaXvSHOpJjS+X6vQ9kqKoJQctsQgr7DZIQ==
+  dependencies:
+    axios "^0.26.0"
+    loglevel "^1.8.0"
 
 typesense@^0.14.0:
   version "0.14.0"
@@ -9057,6 +9133,14 @@ typesense@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/typesense/-/typesense-1.2.1.tgz#d9d1e6a1f93db5cddc0d712c5061b7b9acfba3cb"
   integrity sha512-wk5ZPJXSyw9slOfu9kzcqjZAEGmVulgLfxbs+qNNJWY/MOthC+S7Cs02aDyLDg2fCjNeNoZY9HyC6YBYlMPQIA==
+  dependencies:
+    axios "^0.21.1"
+    loglevel "^1.7.1"
+
+typesense@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/typesense/-/typesense-1.2.2.tgz#f70ea67177d9ab26d1fc4760ecaa9c3f08473a37"
+  integrity sha512-MOKAIGTXbL0RkbHOvpr8RHP7it7UhCc0x4KJ8+p5lwh6Q9bSht6pJqMn6bXybomYA7CHVzIm4+IWVz6dHdUBow==
   dependencies:
     axios "^0.21.1"
     loglevel "^1.7.1"
@@ -9627,6 +9711,36 @@ webpack@^5.61.0:
     browserslist "^4.14.5"
     chrome-trace-event "^1.0.2"
     enhanced-resolve "^5.8.3"
+    es-module-lexer "^0.9.0"
+    eslint-scope "5.1.1"
+    events "^3.2.0"
+    glob-to-regexp "^0.4.1"
+    graceful-fs "^4.2.9"
+    json-parse-better-errors "^1.0.2"
+    loader-runner "^4.2.0"
+    mime-types "^2.1.27"
+    neo-async "^2.6.2"
+    schema-utils "^3.1.0"
+    tapable "^2.1.1"
+    terser-webpack-plugin "^5.1.3"
+    watchpack "^2.3.1"
+    webpack-sources "^3.2.3"
+
+webpack@^5.69.1:
+  version "5.70.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.70.0.tgz#3461e6287a72b5e6e2f4872700bc8de0d7500e6d"
+  integrity sha512-ZMWWy8CeuTTjCxbeaQI21xSswseF2oNOwc70QSKNePvmxE7XW36i7vpBMYZFAUHPwQiEbNGCEYIOOlyRbdGmxw==
+  dependencies:
+    "@types/eslint-scope" "^3.7.3"
+    "@types/estree" "^0.0.51"
+    "@webassemblyjs/ast" "1.11.1"
+    "@webassemblyjs/wasm-edit" "1.11.1"
+    "@webassemblyjs/wasm-parser" "1.11.1"
+    acorn "^8.4.1"
+    acorn-import-assertions "^1.7.6"
+    browserslist "^4.14.5"
+    chrome-trace-event "^1.0.2"
+    enhanced-resolve "^5.9.2"
     es-module-lexer "^0.9.0"
     eslint-scope "5.1.1"
     events "^3.2.0"

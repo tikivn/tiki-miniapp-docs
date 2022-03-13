@@ -134,5 +134,9 @@
   "sidebar.design.category.Tài nguyên thiết kế": {
     "message": "Design resources",
     "description": "The label for category Tài nguyên thiết kế in sidebar design"
+  },
+  "theme.SearchBar.label": {
+    "message": "Search",
+    "description": "Search"
   }
 }
