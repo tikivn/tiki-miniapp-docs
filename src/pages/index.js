@@ -1,20 +1,20 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import DevCenterSVG from '@site/static/img/dev-center.svg';
-import ToolSVG from '@site/static/img/tool.svg';
-import AppSVG from '@site/static/img/app.svg';
-import ServiceSVG from '@site/static/img/service.svg';
-import DevAssistantSVG from '@site/static/img/dev-assistant.svg';
-import RegisterSVG from '@site/static/img/register.svg';
-import ArrowRightSVG from '@site/static/img/arrow-right.svg';
-import FrameworkSVG from '@site/static/img/framework.svg';
-import TiniSVG from '@site/static/img/tini.svg';
-import IdeSVG from '@site/static/img/ide.svg';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+
+import ArrowRightSVG from '@site/static/img/arrow-right.svg';
+import DevCenterSVG from '../components/svgIcons/DevCenter';
+import ToolSVG from '../components/svgIcons/Tool';
+import AppSVG from '../components/svgIcons/App';
+import ServiceSVG from '../components/svgIcons/Service';
+import DevAssistantSVG from '../components/svgIcons/DevAssistant';
+import IdeSVG from '../components/svgIcons/Ide';
+import FrameworkSVG from '../components/svgIcons/Framework';
+import TiniSVG from '../components/svgIcons/Tini';
 import styles from './index.module.scss';
 
-function RowItem({ text, url }) {
+function RowItem({text, url}) {
   return (
     <Link className={styles.rowItem} to={url}>
       <span>{text}</span>
@@ -99,13 +99,12 @@ function BecomeDeveloper() {
           Đăng ký trở thành Nhà phát triển để phát triển ứng dụng đa nền tảng và
           đưa sản phẩm của bạn đến hơn 10 triệu người dùng của Tiki.
         </p>
-        <Link
-          className={styles.linkBrand}
-          to="/docs/introduce/register">
+        <Link className={styles.linkBrand} to="/docs/introduce/register">
           Tìm hiểu thêm
         </Link>
       </div>
-      <RegisterSVG />
+      <img src={useBaseUrl('/img/register.svg')} alt="Register" />
+      {/* <RegisterSVG /> */}
     </div>
   );
 }

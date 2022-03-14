@@ -154,5 +154,9 @@
   "theme.common.skipToMainContent": {
     "message": "Nhảy tới nội dung",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.SearchBar.label": {
+    "message": "Tìm kiếm",
+    "description": "Search"
   }
 }

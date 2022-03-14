@@ -33,8 +33,8 @@ File `index.json` có các keys sau
 
 Khi option này được bật lên, các bug sau sẽ được fix
 
-- Thứ tự của các Life Cycle được đảm bảo đúng theo mô tả tại [life-cycle](./life-cycle)
-- Ref handle trong Component được đảm bảo theo mô tả [ref](./ref)
+- Thứ tự của các Life Cycle được đảm bảo đúng theo mô tả tại [life-cycle](/docs/framework/component/life-cycle)
+- Ref handle trong Component được đảm bảo theo mô tả [ref](/docs/framework/component/ref)
 - Các hàm trong Component ngoại trừ các life cycle bắt buộc phải khai báo trong `methods`.
   Cụ thể
 
