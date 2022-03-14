@@ -77,6 +77,12 @@ body {
   }
 }
 
+.navbar__link {
+  svg {
+    display: none;
+  }
+}
+
 .navbar__link:hover,
 .navbar__link--active {
   font-weight: 500;
@@ -107,6 +113,7 @@ body {
     justify-content: space-between;
   }
   .navbar__toggle {
+    margin-right: 3rem;
     path {
       stroke: #fff;
     }
@@ -119,6 +126,9 @@ body {
     svg {
       display: none;
     }
+  }
+  .clean-btn {
+    color: #fff;
   }
   .navbar__link:hover,
   .navbar__link--active {
