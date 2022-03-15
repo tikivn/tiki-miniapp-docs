@@ -42,7 +42,7 @@ Bạn chỉ có thể submit build for review với điều kiện release mới
 2. Sidebar menu >> **Tiện ích của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện.
-5. Click vào **Xem** tương ứng với release mới nhất. 
+5. Click vào **Xem** tương ứng với release mới nhất.  
 6. Điền vào mục **Thông tin ứng dụng**. Xem **Ghi nhớ** ngay bên dưới.
    <img src="/img/Submit_Build_for_Review.png" width="700px" alt="Submit Build for Review" style={{ margin: '0 auto', display: 'flex' }}/>
 7. Đánh dấu chọn vào ô **Xuất bản ứng dụng ngay sau khi thông qua kiểm duyệt** nếu như bạn muốn build (release) này tự động publish lên Kho tiện ích ngay sau khi Bộ phận phê duyệt của Tiki chấp thuận.
@@ -57,13 +57,13 @@ Nhằm tạo điều kiện bộ phận kiểm duyệt của Tiki đánh giá �
 
 :::
 
-## Publish release trên Kho tiện ích
+## Publish release theo cách thủ công trên Kho tiện ích
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Tiện ích của bạn**.
 3. Mở ứng dụng mong muốn.
 4. Sidebar menu >> **Release**. Danh sách release của ứng dụng sẽ xuất hiện.
-5. Click vào **Xem** tương ứng với release mong muốn.
+5. Click vào **Xem** tương ứng với release mới nhất.
 6. Nhấn nút **Publish** ở cuối trang.
 7. Nửa tiếng sau khi publish ứng dụng, bạn vào Kho tiện ích của Tiki App:
    - Kiểm tra xem ứng dụng đã xuất hiện trong Danh mục được thiết lập trong Kho tiện ích hay chưa.
