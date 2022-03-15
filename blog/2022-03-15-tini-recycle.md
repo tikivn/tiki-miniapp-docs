@@ -1,4 +1,4 @@
-# Tini Recycle Lib (Phần 1)
+# Tini Recycle Library
 
 Chào các bạn, mình là **YiYoYa** đây. Vậy là đã gần một năm kể từ khi mình bắt đầu dùng Tini App. Mình thấy Tini App tiết kiệm thời gian khá nhiều để bạn phát triển một ứng dụng, từ bước setup môi trường, code cho tới triển khai nó lên Tiki App. Tuy nhiên, do là một framework mới nên sẽ còn rất nhiều thiếu sót và các thư viện hỗ trợ cũng hạn chế. Vì vậy, hôm nay mình sẽ hướng dẫn các bạn thư viện `tini-recycle` để tăng tốc độ code của bạn cho một dự án lớn.
 
