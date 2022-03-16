@@ -763,6 +763,7 @@ module.exports = {
         'backend-api/payment/cancel-order',
         'backend-api/payment/order-status',
         'backend-api/payment/error-code',
+        'backend-api/payment/bank-transfer',
       ],
     },
     {
