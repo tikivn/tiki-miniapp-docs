@@ -8,7 +8,7 @@ Tùy thuộc vào mỗi ứng dụng, Tini App sẽ yêu cầu các dữ liệu 
 
 ## Danh sách template
 
-_Lưu ý: hiện tại chỉ có một template duy nhất_
+_Lưu ý: hiện tại chỉ có hai template_
 
 ### Template 1
 
@@ -24,6 +24,24 @@ _Lưu ý: hiện tại chỉ có một template duy nhất_
 
 ```
 {"customer_id":"333","inputs":"{\"name\":\"John\",\"phone\":\"090123443\",\"address\":\"101 Nguyen Van Cu\"}"}
+```
+
+Lưu ý giá trị của params `inputs` là một JSON string
+
+### Template 2
+
+| Thuộc tính      | Kiểu dữ liệu | Bắt buộc | Mô tả                        |
+| --------------- | ------------ | :------: | ---------------------------- |
+| name            | string       |    ✓     | Tên của khách hàng           |
+| phone           | string       |    ✓     | Số điện thoại của khách hàng |
+| identity_number | string       |    ✓     | Số CMND/CCCD                 |
+
+## Ví dụ
+
+Ứng dụng "app.test" được yêu cầu gửi dữ liệu của hồ sơ theo Template 2, thì API request sẽ là:
+
+```
+{"customer_id":"333","inputs":"{\"name\":\"John\",\"phone\":\"090123443\",\"identity_number\":\"024591111\"}"}
 ```
 
 Lưu ý giá trị của params `inputs` là một JSON string
