@@ -1,5 +1,5 @@
 ---
-title: Phát hành ứng dụng
+title: Thanh toán bằng chuyển khoản ngân hàng
 
 description: Khách hàng thanh toán đơn hàng trên Tiki mini app bằng phương thức chuyển khoản ngân hàng 
 ---
