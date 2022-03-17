@@ -108,12 +108,12 @@ https://developers.tiki.vn/docs/backend-api/platform-api/exchange-auth-token
 
 def new_request_auth_exchange(data_dict):
     # Chúng ta sẽ truyền thông tin cho các biến sau từ môi trường lúc khởi động container khi deploy Cloud Run
-    CLIENT_ID = os.environ.get("CLIENT_ID")
+    CLIENT_KEY = os.environ.get("CLIENT_KEY")
     CLIENT_SECRET = os.environ.get("CLIENT_SECRET")
     AUTH_ENDPOINT = os.environ.get("AUTH_ENDPOINT")
 
-    if not CLIENT_ID:
-        raise Exception("CLIENT_ID missing")
+    if not CLIENT_KEY:
+        raise Exception("CLIENT_KEY missing")
 
     if not CLIENT_SECRET:
         raise Exception("CLIENT_SECRET missing")
@@ -128,12 +128,12 @@ def new_request_auth_exchange(data_dict):
     data = json.dumps(data_dict, separators=(',', ':'))
 
     my_timestamp = str(time.time_ns() // 1_000_000 )
-    payload = my_timestamp + '.' + CLIENT_ID + '.' + data
+    payload = my_timestamp + '.' + CLIENT_KEY + '.' + data
     encodedPayload = base64URLEncode(payload)
     my_signature = sign(CLIENT_SECRET, encodedPayload)
 
     req = urllib.request.Request(AUTH_ENDPOINT, data.encode(), headers)
-    req.add_header('X-Tiniapp-Client-Id', CLIENT_ID)
+    req.add_header('X-Tiniapp-Client-Key', CLIENT_KEY)
     req.add_header('X-Tiniapp-Signature', my_signature)
     req.add_header('X-Tiniapp-Timestamp', my_timestamp)
 
@@ -198,7 +198,7 @@ Một cách khác là bạn cũng có thể tự build bằng Docker trên môi 
 ```bash
 (terminal) $ gcloud run deploy tiniapp-auth-backend --image asia.gcr.io/PROJECT-ID/tiniapp-auth-backend \
   --region asia-southeast1 \
-  --set-env-vars CLIENT_ID=<Client_ID được cung cấp> \
+  --set-env-vars CLIENT_KEY=<Client_Key được cung cấp> \
   --set-env-vars CLIENT_SECRET=<Client_secret được cung cấp> \
   --set-env-vars AUTH_ENDPOINT=https://api.tiki.vn/tiniapp-open-api/oauth/auth/token \
   --allow-unauthenticated
