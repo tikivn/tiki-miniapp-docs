@@ -8,13 +8,13 @@ Ngoài các APIs mà Tini App có thể thay mặt user gọi cho Tiki thì còn
 
 ## Access Platform APIs Như Thế Nào?
 
-Các APIs của platform được thiết kế để gọi từ backend-2-backend. Để gọi được các API này thì bạn cần có client ID và client secret của Tini App của bạn. Hai thông tin này sẽ được lưu ở backend của bạn và dùng để gọi cho platform backend. Team Tini App platform chủ yếu sử dụng GraphQL APIs. Bạn có thể tìm hiểu thêm về GraphQL qua phần References ở dưới.
+Các APIs của platform được thiết kế để gọi từ backend-2-backend. Để gọi được các API này thì bạn cần có client ID (Key) và client secret của Tini App của bạn. Hai thông tin này sẽ được lưu ở backend của bạn và dùng để gọi cho platform backend. Team Tini App platform chủ yếu sử dụng GraphQL APIs. Bạn có thể tìm hiểu thêm về GraphQL qua phần References ở dưới.
 
 _Khác với [Open APIs](../open-api/overview), platform API phải được gọi trực tiếp từ backend của Tini App vì chỉ có backend của Tini App mới có thể có secret để ký các request giữa Tini App Backend và platform backend_
 
 ### Chú ý
 
-- **Không chia sẻ thông tin client ID và client secret của bạn cho bất cứ ai**
+- **Không chia sẻ thông tin client key và client secret của bạn cho bất cứ ai**
 - **Không gửi client secret từ backend lên frontend vì frontend không thể bảo mật được secret**
 
 ### Chi Tiết
