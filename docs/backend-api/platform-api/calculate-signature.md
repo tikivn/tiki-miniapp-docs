@@ -11,7 +11,7 @@ Với mỗi request để được xác thực cần gửi những thông tin sa
 | Header              | Description                                   |
 | ------------------- | --------------------------------------------- |
 | X-Tiniapp-Timestamp | Thời gian gọi request, tính bằng milliseconds |
-| X-Tiniapp-Client-Key | Client key được cấp khi tạo app                |
+| X-Tiniapp-Client-Id | Client **key** được cấp khi tạo app                |
 | X-Tiniapp-Signature | Signature được tính dựa trên request body     |
 
 
