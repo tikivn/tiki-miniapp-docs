@@ -11,7 +11,7 @@ Với mỗi request để được xác thực cần gửi những thông tin sa
 | Header              | Description                                   |
 | ------------------- | --------------------------------------------- |
 | X-Tiniapp-Timestamp | Thời gian gọi request, tính bằng milliseconds |
-| X-Tiniapp-Client-Id | Client id được cấp khi tạo app                |
+| X-Tiniapp-Client-Key | Client key được cấp khi tạo app                |
 | X-Tiniapp-Signature | Signature được tính dựa trên request body     |
 
 
@@ -33,7 +33,7 @@ body = {
     "<field_name>": <field_value>,
 }
 
-payload = timestamp + "." + client_id + "." + json_stringify(data)
+payload = timestamp + "." + client_key + "." + json_stringify(data)
 secret = "<client_secret>"
 encoded_payload = base64_safeurl_encode_no_padding(payload)
 signature = HMAC_SHA256(secret, payload)
@@ -48,7 +48,7 @@ Sau đây là code mẫu để tính signature với các ngôn ngữ khác nhau
 ```javascript
 const crypto = require("crypto");
 
-const client_id = "RLCKb7Ae9kx4DXtXsCWjnDXtggFnM43W";
+const client_key = "RLCKb7Ae9kx4DXtXsCWjnDXtggFnM43W";
 const client_secret = "EhjGcsUUuRSJTHiYPbW5fxzyaKEx0JuAZIKRQ4HnIfNFidB2kMg6locQbTIEz3Vf";
 const body = {
   id: 123
@@ -69,7 +69,7 @@ function sign(secret, payload) {
   return signature;
 }
 
-const payload = timestamp + '.' + client_id + '.' + JSON.stringify(body);
+const payload = timestamp + '.' + client_key + '.' + JSON.stringify(body);
 console.log("payload: ", payload);
 const encodedPayload = base64URLEncode(payload);
 console.log("encoded_payload: ", encodedPayload);
@@ -107,7 +107,7 @@ func Sign(secret string, payload string) (string, error) {
 }
 
 func main() {
-	clientID := "RLCKb7Ae9kx4DXtXsCWjnDXtggFnM43W"
+	clientKey := "RLCKb7Ae9kx4DXtXsCWjnDXtggFnM43W"
 	clientSecret := "EhjGcsUUuRSJTHiYPbW5fxzyaKEx0JuAZIKRQ4HnIfNFidB2kMg6locQbTIEz3Vf"
 	body := map[string]interface{}{
 		"id": 123,
@@ -115,7 +115,7 @@ func main() {
 
 	timestamp := int64(1620621619569)
 	jsonBody, _ := json.Marshal(body)
-	payload := fmt.Sprintf("%s.%s.%s", strconv.FormatInt(timestamp, 10), clientID, string(jsonBody))
+	payload := fmt.Sprintf("%s.%s.%s", strconv.FormatInt(timestamp, 10), clientKey, string(jsonBody))
 	fmt.Println("payload: ", payload)
 	encodedPayload := base64.RawURLEncoding.EncodeToString([]byte(payload))
 	fmt.Println("encoded_payload: ", encodedPayload)
@@ -144,7 +144,7 @@ order_id=88062110977884170
 path = /order?location=url_encode(location)&order_id=url_encode(88062110977884170)
 // path == /order?location=H%C3%A0+N%E1%BB%99i&order_id=88062110977884170
 
-payload = timestamp + "." + client_id + "." + path
+payload = timestamp + "." + client_key + "." + path
 secret = "<client_secret>"
 encoded_payload = base64_safeurl_encode_no_padding(payload)
 signature = HMAC_SHA256(secret, payload)
@@ -161,7 +161,7 @@ Sau đây là code mẫu để tính signature với các ngôn ngữ khác nhau
 ```javascript
 const crypto = require("crypto");
 
-const client_id = "RLCKb7Ae9kx4DXtXsCWjnDXtggFnM43W";
+const client_key = "RLCKb7Ae9kx4DXtXsCWjnDXtggFnM43W";
 const client_secret = "EhjGcsUUuRSJTHiYPbW5fxzyaKEx0JuAZIKRQ4HnIfNFidB2kMg6locQbTIEz3Vf";
 const timestamp = 1620621619569;
 
@@ -182,7 +182,7 @@ const location = "Hà Nội"
 const order_id = "88062110977884170"
 const encodedPath = `/order?location=${encodeURIComponent(location)}&order_id=${encodeURIComponent(order_id)}`;
 
-const payload = timestamp + '.' + client_id + '.' + encodedPath;
+const payload = timestamp + '.' + client_key + '.' + encodedPath;
 console.log("payload: ", payload);
 const encodedPayload = base64URLEncode(payload);
 console.log("encoded_payload: ", encodedPayload);
@@ -220,14 +220,14 @@ func Sign(secret string, payload string) (string, error) {
 }
 
 func main() {
-	clientID := "RLCKb7Ae9kx4DXtXsCWjnDXtggFnM43W"
+	clientKey := "RLCKb7Ae9kx4DXtXsCWjnDXtggFnM43W"
 	clientSecret := "EhjGcsUUuRSJTHiYPbW5fxzyaKEx0JuAZIKRQ4HnIfNFidB2kMg6locQbTIEz3Vf"
 	location := "Hà Nội"
 	orderID := "88062110977884170"
 	path := fmt.Sprintf("/order?location=%s&order_id=%s", url.PathEscape(location), url.PathEscape(orderID))
 
 	timestamp := int64(1620621619569)
-	payload := fmt.Sprintf("%s.%s.%s", strconv.FormatInt(timestamp, 10), clientID, path)
+	payload := fmt.Sprintf("%s.%s.%s", strconv.FormatInt(timestamp, 10), clientKey, path)
 	fmt.Println("payload: ", payload)
 	encodedPayload := base64.RawURLEncoding.EncodeToString([]byte(payload))
 	fmt.Println("encoded_payload: ", encodedPayload)
