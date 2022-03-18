@@ -83,8 +83,7 @@ Bắt đầu thôi đi từng cái nào.
 1. Install packages
 
 ``packages.json``
-```json=
-
+```json
 {
   "name": "app-typescript",
   "version": "0.1.0",
@@ -126,7 +125,7 @@ Bắt đầu thôi đi từng cái nào.
 
 ``babel.config.js``
 
-```json=
+```js
 module.exports = {
   presets: [
     [
@@ -146,7 +145,7 @@ module.exports = {
 
 Tiếp tục là file script nè: ``compiler.js``
 
-```js=
+```js
 const path = require('path');
 const gulp = require('gulp');
 const less = require('gulp-less');
@@ -234,7 +233,7 @@ Bạn có thể cài đặt thêm tini-types để có thể có các gợi ý c
 Sau đó config như sau:
 
 ``tsconfig.json``
-```json=
+```json
 {
   "compilerOptions": {
     "baseUrl": ".",
@@ -259,7 +258,7 @@ Tuy nhiên việc gợi ý code này đã được support sẵn khi bạn dùng
 Và cuối cùng là nhớ [cấu hình project](https://developers.tiki.vn/docs/development/studio/project-config) của mình root là folder es nè. 
 
 ``project.config.json``
-```json=
+```json
 {
     "miniprogramRoot": "es"
 }
@@ -276,7 +275,7 @@ Example: https://github.com/anhhuynh5/tiniapp-typescript
 
 Ở đây mình viết example component thôi nha. Thế là xong. 
 
-```js=
+```js
 interface TestMethods {
   onClick?: () => void;
 }
@@ -305,8 +304,6 @@ Component({
 ## 5. Sumup
 
 Vậy là chúng ta đã cùng nhau tìm hiểu cách build 1 project **Tini App** với **TypeScript/Less** rồi nè. Như mình đã nói hiện tại thì compiler của Tini App chưa suppport cho TypeScript nhưng trong tương lai gần sẽ có sớm thôi nha. :boom:
-
-Một điều nữa mình muốn chia sẻ, TypeScript không-sinh-ra-với-mục-đích-thay-thế JavaScript. Nó là một-lựa-chọn.
 
 Với sức mạnh nổi bật của TypeScript, việc tích hợp vào Tini App sẽ phù hợp với các dự án dài hạn hoặc phục vụ cho việc phát triển một thư viện. Nếu chưa chọn dùng TypeScript cũng chẳng sao, TypeScript thực sự tốt nhưng JavaScript không gặp bất lợi gì quá lớn cả, nó vẫn đáng để chúng ta tin tưởng.
 
