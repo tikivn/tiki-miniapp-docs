@@ -47,6 +47,10 @@ body {
   box-shadow: none;
 }
 
+.navbar__items:first-child {
+  min-width: 100px;
+}
+
 .navbar__search-input {
   height: 40px;
   outline: none;
