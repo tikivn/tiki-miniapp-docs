@@ -97,7 +97,7 @@ Ví dụ về metadata
           {
             "type": "text",
             "name": "Người gửi",
-            "value": "Tú Bùi"
+            "value": "Nguyễn Văn A"
           },
           {
             "type": "text",
@@ -154,9 +154,9 @@ Ví dụ về metadata
             "type": "images",
             "name": "Hình ảnh gói hàng",
             "value": [
-              "Image1.jpg",
-              "Image2.jpg",
-              "Image3.jpg"
+              "https://salt.tikicdn.com/ts/tiniapp/f9/43/12/d49e6bcba1441f7f985e549e36ad7d83.png",
+              "https://salt.tikicdn.com/ts/tiniapp/1c/c5/06/a19549329bf09a63711bce03a0d58575.png",
+              "https://salt.tikicdn.com/ts/tiniapp/26/e2/08/fa7635a27d45fd3f9463a22645a2687b.png"
             ]
           }
         ]
@@ -169,19 +169,19 @@ Ví dụ về metadata
 
 Ví dụ về metadata với type = action
 
-```
+```json
 {
   "metadata": {
     "sections": [
       {
-        header: '',
-        fields: [
+        "header": "",
+        "fields": [
           {
-            type: 'action',
-            name: 'Giấy chứng nhận điện tử',
-            value: {
-              button_name: 'Xem',
-              link: 'https://'
+            "type": "action",
+            "name": "Giấy chứng nhận điện tử",
+            "value": {
+              "button_name": "Xem",
+              "link": "https://salt.tikicdn.com/ts/tiniapp/b2/6e/d1/2ab2d72f0502596b32c10036a50b54dd.png:"
             }
           }
         ]
