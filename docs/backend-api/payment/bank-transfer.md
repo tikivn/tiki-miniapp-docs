@@ -14,7 +14,7 @@ Thanh toán bằng chuyển khoản ngân hàng đang trong giai đoạn thử n
 
 ## Luồng thanh toán
 
-<img src="/img/Bank_Transfer_UML.png" width="800px" alt="Release list" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Bank_Transfer_UML.png" width="800px" alt="Bank Transfer UML" style={{ margin: '0 auto', display: 'flex' }}/>
 
 1. Khách hàng tạo đơn hàng trong ứng dụng của đối tác.
 2. Ứng dụng chuyển thông tin đơn hàng về hệ thống của đối tác.
@@ -37,9 +37,9 @@ Thanh toán bằng chuyển khoản ngân hàng đang trong giai đoạn thử n
 - Trong quá trình vận hành đơn hàng, nếu khách hàng có nhu cầu huỷ đơn hàng, đối tác có thể tự hoàn tiền và gọi API huỷ đơn đến Tini Order API.
 - Đối tác có thể tự huỷ đơn hàng nếu như khách hàng không thanh toán trong một thời gian quá dài (Tiki đề xuất 7 ngày).
 
-<img src="/img/Bank_Transfer_Cancel_UML.png" width="800px" alt="Release list" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Bank_Transfer_Cancel_UML.png" width="800px" alt="Cancel a bank transfer" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ## Sơ đồ trạng thái cửa đơn hàng
 
-<img src="/img/Bank_Transfer_diagram.png" width="600px" alt="Release list" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Bank_Transfer_diagram.png" width="600px" alt="Bank Transfer diagram" style={{ margin: '0 auto', display: 'flex' }}/>
 
