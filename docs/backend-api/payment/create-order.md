@@ -67,12 +67,12 @@ Mỗi section sẽ gồm một header, một hoặc nhiều field.
 
 | Thuộc tính | Kiểu dữ liệu |  Mô tả                                                      |
 | ---------- | ------------ |  ---------------------------------------------------------- |
-| header     | string       |  Tiêu đề của của section    |
+| header     | string       |  Tiêu đề của section    |
 | fields     | [\]**[Field](#field)** | Danh sách field nằm trong section đó |
 
 #### Field
 
-Field cho phép đối tác định nghĩa thêm các thuộc tính cho sản phẩm. Sau đây là các thuộc tính của field: 
+Field tương đương một thuộc tính tuỳ biến liên quan đến sản phẩm do đối tác định nghĩa. Sau đây là các thuộc tính của field:
 
 | Thuộc tính | Kiểu dữ liệu |  Mô tả                                                      |
 | ---------- | ------------ | ---------------------------------------------------------- |
