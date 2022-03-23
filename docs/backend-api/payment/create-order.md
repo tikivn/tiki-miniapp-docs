@@ -20,10 +20,10 @@ Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính x
 | Thuộc tính       | Kiểu dữ liệu            | Bắt buộc | Mô tả                                                                                                |
 | ---------------- | ----------------------- | :------: | ---------------------------------------------------------------------------------------------------- |
 | customer_id      | string                  |    ✓     | ID người dùng Tiki, có thể lấy ở [đây](../platform-api/exchange-auth-token#get-info-from-auth-token) |
-| items            | [/]**[Item](#item)**     |    ✓     | Danh sách sản phẩm                                                                                   |
+| items            | [\]**[Item](#item)**    |    ✓     | Danh sách sản phẩm                                                                                   |
 | customer_info    | CustomerInfo            |   ✕      | Thông tin khách hàng, dùng để hiện thị trên trang thanh toán Tiki (phần Thông tin khách hàng)        |
 | shipping_fee     | int64                   |    ✕     | Phí giao hàng                                                                                        |
-| extra            | string                  |    ✕     | Thông tin bổ sung theo định dạng **_key=value;key=value_**                                           |
+| extra            | string                  |    ✕     | Thông tin bổ sung theo định dạng **_key=value; key=value_**                                           |
 | reference_id     | string                  |    ✕     | ID đơn hàng của đối tác                                                                              |
 
 :::note Lưu ý
@@ -48,10 +48,10 @@ Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính x
 | ---------- | ------------ | :------: | ---------------------------------------------------------- |
 | name       | string       |    ✓     | Tên sản phẩm                                               |
 | quantity   | int64        |    ✓     | Số lượng sản phẩm                                          |
-| image_url  | string       |   ✕      | Đường dẫn URL của ảnh sản phẩm                             |
-| price      | int64        |    ✓     | Giá tiền sản phẩm                                          |
-| extra      | string       |    ✕     | Thông tin bổ sung theo định dạng **_key=value;key=value_** |
-| metadata   | [Metadata](#metadata)   |   ✕      | Các thông tin chi tiết liên quan đến sản phẩm  |
+| image_url  | string       |   ✕      | Đường dẫn URL của ảnh sản phẩm                              |
+| price      | int64        |    ✓     | Giá tiền sản phẩm                                           |
+| extra      | string       |    ✕     | Thông tin bổ sung theo định dạng **_key=value; key=value_** |
+| metadata   | **[Metadata](#metadata)**  |   ✕   | Các thông tin chi tiết liên quan đến sản phẩm   |
 
 #### Metadata
 
@@ -249,5 +249,4 @@ Ví dụ về dữ liệu trả về
   }
 }
 ```
-
 Khi khách hàng thanh toán bắt đầu thanh toán đơn hàng, JS API [my.makePayment](/docs/api/open/make-payment) sẽ được dùng để mở màn hình thanh toán cho đơn hàng với tham số truyền vào là order ID.
