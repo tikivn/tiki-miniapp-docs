@@ -34,6 +34,7 @@ Các loại nội dung và tính năng sau bị nghiêm cấm xuất hiện tron
 - Tin tức giả mạo, tin đồn chưa được kiểm chứng, hoặc xúc phạm danh dự, uy tín cá nhân, tổ chức.
 - Chứa những ngôn từ, hình ảnh mang tính phản cảm, thô tục, khiêu dâm.
 - Xâm phạm quyền tác giả. Chẳng hạn, công bố, phân phối tác phẩm mà không được phép của tác giả.
+- Đặt liên kết tải các ứng dụng hoặc hướng người dùng cài đặt các ứng dụng trên các Kho ứng dụng bên ngoài Tiki.
 
 Các loại sản phẩm và dịch vụ sau không được phép kinh doanh trên Tini App:
 
