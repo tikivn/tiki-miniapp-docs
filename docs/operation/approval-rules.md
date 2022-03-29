@@ -84,3 +84,4 @@ Bảo vệ người dùng luôn là ưu tiên hàng đầu của Tiki. Ứng d�
 - Thông tin đơn hàng (giá trị giao dịch, mã đơn hàng …)  trên hệ thống của nhà phát triển và trên Seller Center của Tiki khớp nhau. Quan trọng hơn, trạng thái đơn hàng giữa hai luôn đồng bộ.
 - Trạng thái đơn hàng phải nằm ở những vị trí mà người dùng dễ dàng nhìn thấy trong ứng dụng.
 - Cung cấp đầy đủ [thông tin hỗ trợ](/docs/development/tini-console/support) trong phần **Cài đặt** của ứng dụng trên Tini Console để đảm bảo người dùng có thể liên hệ khi cần thiết.
+- Đối với các ứng dụng yêu cầu người dùng đăng ký hồ sơ/thông tin để nhận tư vấn về bảo hiểm, tín dụng, bắt buộc phải sử dụng Lead Gen API.
