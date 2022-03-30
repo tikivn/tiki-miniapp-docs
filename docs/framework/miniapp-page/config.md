@@ -15,6 +15,7 @@ Với mỗi màn hình sẽ tương ứng với một page trên framework. File
 | usingComponents      | Object       | null             | Cấu hình những custom components được sử dụng trong page.                                                                                                                                            |
 | titleBarBottomColor  | HexColor     | "#EBEBF0"        | Quy định màu cho border bottom của NavigationBar.                                                                                                                                                    |
 | disableHardwareBack | string | "YES" | Xác định cho phép vuốt để quay lại trang trước đó hay không? |
+| hideOptionMenuButton | string | "YES" | Xác định việc có ẩn đi button Option Menu hay không? Option này chỉ các ứng dụng được phát triển bởi Tiki được phép sử dụng |
 
 Ví dụ:
 

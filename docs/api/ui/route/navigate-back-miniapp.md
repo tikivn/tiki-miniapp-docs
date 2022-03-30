@@ -4,7 +4,9 @@ title: my.navigateBackMiniApp
 
 ## Giới thiệu
 
-**my.navigateBackMiniApp** là API dùng để quay lại app trước đó. API chỉ gọi thành công khi app hiện tại được mở từ một app khác trước đó.
+**my.navigateBackMiniApp** là API dùng để quay lại app trước đó hoặc nhảy tới 1 app bất kỳ đã được mở trước đó. API chỉ gọi thành công khi app hiện tại được mở bằng jsapi `my.navigateToMiniApp`.
+
+Lưu ý: Nếu app id cần back về có nhiều app cùng id được mở trước đó, thì việc nhảy về sẽ là app dược mở cuối cùng
 
 ## Quét mã để trải nghiệm
 
@@ -48,7 +50,8 @@ Page({
 
 | Attributes | Type     | Required | Description                                                                                                                        |
 | ---------- | -------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| extraData  | Object   | No       | Dữ liệu cần được truyền cho app được nhảy tới.<br /> App được nhảy tới sẽ lấy thông tin qua hàm `App.onLaunch()` và `App.onShow()` |
+| appId  | String   | No       | App Id cần nhảy về. Nếu không truyền sẽ tự động nhảy về app trước đó.|
+| extraData  | Object   | No       | Dữ liệu cần được truyền cho app được nhảy tới.<br /> App được nhảy tới sẽ lấy thông tin qua lifecyle `App.onShow()` |
 | success    | Function | No       | Callback function khi thành công.                                                                                                  |
 | fail       | Function | No       | Callback function khi thất bại.                                                                                                    |
 | complete   | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                                                              |
