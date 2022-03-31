@@ -294,6 +294,7 @@ module.exports = {
             'component/advance/feedback/modal',
             'component/advance/feedback/bottom-sheet',
             'component/advance/feedback/tooltip',
+            'component/advance/feedback/toast-bar',
           ],
         },
         {
