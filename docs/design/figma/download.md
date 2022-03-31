@@ -1,6 +1,28 @@
 ---
 title: Tải về
 ---
+### Phiên bản 2.4
+28/02/2022 <br />
+
+Hôm nay là ngày Tini design system tròn 1 tuổi. Bọn mình bắt đầu với 7 global style, 29 component và nay bọn mình đã có 30 text style, 62 màu global style, hơn 100 color token và 44 component.
+Cùng ăn mừng bằng những sự cải tiến mới:
+- Search & Date field: Đã đổi resizing của field wrapper thành fill container.
+- Carousel: Giờ chúng ta đã có thêm navigation button để dành cho phiên bản desktop. Chỉnh lại hành vi phóng to của component hình.
+- Alphabet: Tăng vùng touch zone
+- Step: Thêm token màu cho trạng thái lỗi
+- Section & Card: Cải thiện khoảng trống và vùng được customized
+Có gì mới?
+- Tab: Thêm phiên bản có thể cuộn ngang của Basic tab và Advance tab (Chủ yếu dùng cho bản desktop)
+- Sheet: Thêm phiên bản center sheet, một biến thể của bottom sheet, nhưng chỉ dành cho bản desktop.
+ 
+Đúng, bạn đã thấy từ “Desktop” khá nhiều. Và bạn có thể đoán được điều gì sắp xảy ra nhỉ?
+Hẹn gặp các bạn vào tháng sau.
+
+
+[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
 ### Phiên bản 2.3
 28/02/2022 <br />
 
@@ -11,8 +33,6 @@ Button: Có điều chỉnh một vài sắc độ xám ở button Neutral và N
 
 Hẹn gặp lại mọi người vào tháng sau nhé. <br />
 Make art, not war. <br />
-
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 ---

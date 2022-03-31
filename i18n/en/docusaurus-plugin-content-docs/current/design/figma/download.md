@@ -3,6 +3,28 @@ order: 51
 category: Design resources
 title: Download here
 ---
+### v2.4
+March 31st, 2022 <br />
+
+Today, the Tini design system is 1 year old. We started with 7 global styles and 29 components and now we have 30 text styles, 62 color global styles, more than 100 color tokens, and 44 components. <br />
+Let’s celebrate with some improvement: <br />
+- Search & Date field: Change field wrapper's resizing to fill container. <br />
+- Carousel: Now we have a navigation button for desktop usage. Fix the scaling behavior of the image. <br />
+- Alphabet: Increase touch zone. <br />
+- Step: Add tokens for error state. <br />
+- Section & Card: Improve spacing and customized zone. <br />
+What’s new? <br />
+- Tab: Add scrollable Basic tab and scrollable Advance tab (mostly used for desktop) <br />
+- Sheet: Add the center sheet, a variant of the bottom sheet, but used on a desktop. <br />
+ 
+Yes, you see the word “Desktop” a lots. You know something is coming, right? <br />
+See you next month.
+
+
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
 ### v2.3
 February 28th, 2022 <br />
 
@@ -13,8 +35,6 @@ Button: Some minor changes about the shade of grey of the Neutral & Neutral Reve
 
 That's it! See you next month. <br />
 Make art, not war. <br />
-
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 ---
