@@ -15,11 +15,10 @@ Tên gọi đã nói lên chức năng của nó. Các lỗi xảy liên quan đ
 
 DevTools trong Tini Studio là bộ công cụ giúp nhà phát triển phát hiện ra các vấn đề mà ứng dụng gặp phải một cách nhanh gọn lẹ. Mỗi công cụ này được phân bố trên một tab riêng biệt.
 
-Để kích hoạt DevTools, hãy làm theo một trong ba cách sau:
+Để kích hoạt DevTools, hãy làm theo một trong hai cách sau:
 
-- Cách 1: Menu >> **Developer Tools**.
-- Cách 2: Menu >> **View** >> **Developer Tools**.
-- Cách 3: Bấm vào nút **DevTools** ngay phía dưới menu.
+- Cách 1: Menu >> **View** >> **Developer Tools**.
+- Cách 2: Bấm vào nút **DevTools** ngay phía dưới menu.
 
 DevTools của Tini Studio có công dụng và phương thức hoạt động không khác gì mấy so với DevTools của Google Chrome. Vì thế bạn có thể tham khảo thêm [Chrome DevTools](https://developer.chrome.com/docs/devtools/).
 
