@@ -18,7 +18,7 @@ Vì đây là trên máy tính, bạn sẽ sử dụng chuột thay cho ngón ta
 
 ## Giả lập các thao tác phần cứng
 
-<img src="/img/Simulator_Simulation_Widget.jpg" width="300px" alt="Simulation Widget" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Simulator_Simulation_Widget.png" width="300px" alt="Simulation Widget" style={{ margin: '0 auto', display: 'flex' }}/>
 
 Bấm vào icon Simulation Widget trên thanh công cụ của Trình giả lập. Danh sách các thao tác giả lập sẽ hiện ra.
 
@@ -29,13 +29,13 @@ Bấm vào icon Simulation Widget trên thanh công cụ của Trình giả lậ
 
 ## Chọn thiết bị cần được giả lập
 
-<img src="/img/Simulator_Choose_Device.jpg" width="300px" alt="Choose Simulated Device" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Simulator_Choose_Device.png" width="300px" alt="Choose Simulated Device" style={{ margin: '0 auto', display: 'flex' }}/>
 
 Trên thanh công cụ của Trình giả lập, chọn thiết bị mà bạn muốn giả lập từ danh sách thả xuống (ngoài cùng bên trái).
 
 ## Phóng to/thu nhỏ màn hình thiết bị giả lập
 
-<img src="/img/Simulator_Choose_ZoomRatio.jpg" width="300px" alt="Zoom Ratio" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Simulator_Choose_ZoomRatio.png" width="300px" alt="Zoom Ratio" style={{ margin: '0 auto', display: 'flex' }}/>
 
 Trên thanh công cụ của Trình giả lập, chọn tỷ lệ phóng to hay thu nhỏ mong muốn từ danh sách thả xuống (chính giữa)
 
@@ -50,4 +50,16 @@ Có 2 cách thực hiện compile bằng tay:
 - Cách 1: menu >> **Tools** >> **Compile**.
 - Cách 2: Trên thanh công cụ của Trình giả lập, bấm vào icon Recompile.
   
-<img src="/img/Simulator_Recompile.jpg" width="300px" alt="Recompile" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Simulator_Recompile.png" width="300px" alt="Recompile" style={{ margin: '0 auto', display: 'flex' }}/>
+
+
+## Di chuyển Trình giả lập
+
+Trình giả lập mặc định được đặt cố định ở bên phải cửa sổ Tini Studio. Tuy vậy, bạn có thể di chuyển Trình giả lập một cách tự do trên màn hình bằng cách:
+
+<img src="/img/Simulator_Undock.png" width="300px" alt="Undock Simulator" style={{ margin: '0 auto', display: 'flex' }}/>
+
+1. Trên thanh công cụ của Trình giả lập, bấm vào icon Undock. Trình giả lập tách thành cửa sổ riêng. 
+2. Kéo rê thanh tiêu đề của cửa sổ Trình giả lập để di chuyển Trình giả lập.
+
+Để dock Trình giả lập trở lại vào cửa sổ Tini Studio, bạn chỉ việc bấm icon này một lần nữa.
