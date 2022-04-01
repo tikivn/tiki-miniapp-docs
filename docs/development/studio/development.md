@@ -44,7 +44,7 @@ Chạy tập tin cài đặt Tini Studio.
    - Cách 1: Menu >> **View** >> **Simulator**.
    - Cách 2: Bấm vào nút **Simulator** ngay phía dưới main menu.
 
-<img src="/img/Simulator.jpg" width="300px" alt="Simulation Widget" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Simulator.png" width="300px" alt="Simulation" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ## 6. Debug
 
