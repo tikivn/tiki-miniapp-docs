@@ -2,9 +2,7 @@
 title: Image Cropper
 ---
 
-## Giới thiệu
-
-Image Cropper là component dùng để giúp user crop ảnh theo tỉ lệ mong muốn
+Image Cropper là component dùng để giúp user crop ảnh theo tỉ lệ mong muốn.
 
 ## Quét mã để trải nghiệm
 
@@ -12,13 +10,24 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/utilities/image-cropper/index" />
 
-## Sử dụng
+## Thuộc tính
 
-### Sample Code:
-javascript code dưới đây được sử dụng cho tất cả các component demo,
-_**lưu ý đây không phải là best practise, nên sử dụng để tham khảo.**_
+| Thuộc tính   | Kiểu dữ liệu    | Giá trị mặc định |  Mô tả                  |
+| ------------ | --------------- | ---------------- | ----------------------- |
+| src          | string          |                  | Đường dẫn cục bộ tới hình ảnh muốn crop                       |
+| aspectRatio  | string          |  1:1             | Tỷ lệ crop ảnh mong muốn, format {w}:{h}. Ví dụ 1:1, 4:3            |
+| className    | string          |                  | Thêm class cho component                   |
+| id           | string          |                  | id của component. Dùng jsapi createCropperContext(id) để reference tới cropper    |
+| onSave       | event           | (e:Object) => void | Callback khi việc crop hình hoàn thành. |
+
+## Sample Code
+
+:::note Lưu ý
+JavaScript code dưới đây được sử dụng cho tất cả các component demo, không phải là best practice.
+:::
 
 Sử dụng image cropper ở txml
+
 ```xml
 <image-cropper id="cropper-1" class="cropper" src={{imagePath}} aspectRatio={{ratio}} onSave="onCropperFinish" />
 ```
@@ -124,7 +133,8 @@ Page({
   </view>
 </view>
 ```
-- **Kết quả**
+
+### Kết quả
 
 <div style={{
     display:'flex',
@@ -139,14 +149,4 @@ Page({
       <img style={{maxWidth: 300}} alt="modal" src="/img/image-cropper.jpg"/>
   </div>
 </div>
-
-### Chi tiết props
-
-| Thuộc tính   | Kiểu dữ liệu    | Giá trị mặc định |  Mô tả                  |
-| ------------ | --------------- | ---------------- | ----------------------- |
-| src          | string          |                  | Đường dẫn cục bộ tới hình ảnh muốn crop                       |
-| aspectRatio  | string          |  1:1             | Tỉ lệ hình mong muốn để crop, format {w}:{h} ví dụ 1:1, 4:3            |
-| className    | string          |                  | Thêm class cho component                   |
-| id           | string          |                  | id của component. Dùng jsapi createCropperContext(id) để reference tới cropper    |
-| onSave       | event           | (e:Object) => void | Callback khi việc crop hình hoàn thành. |
 

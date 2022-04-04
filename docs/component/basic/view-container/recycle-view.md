@@ -2,10 +2,17 @@
 title: recycle-view
 ---
 
-## Giới thiệu
-
 - `recycle-view` dùng để hiển thị một danh sách dữ liệu lớn, giúp tối ưu performance khi chỉ render một số lượng các item cần thiết trong phạm vi nhìn thấy của người dùng.
-- `recycle-view` vẫn còn đang trong giai đoạn phát triển, chưa phải là bản chính thức nên có thể sẽ có lỗi phát sinh trong quá trình sử dụng.
+- Nó có height mặc định là window height, bạn có thể thay đổi thông qua style của recycle-view.
+- `recycle-view` được phân làm hai loại grid view và list view. Mỗi loại đều có các thuộc tính riêng.
+  - Grid view hiển thị nhiều item trên mỗi dòng. Số lượng item trên mỗi dòng thì đồng nhất.
+  - List view hiển thị một item trên một dòng. 
+
+:::note Cảnh báo
+
+`recycle-view` đang trong giai đoạn phát triển, chưa phải là bản chính thức nên có thể sẽ có lỗi phát sinh trong quá trình sử dụng.
+
+:::
 
 ## Quét mã để trải nghiệm
 
@@ -13,15 +20,13 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/recycle-view/index" />
 
-## Sử dụng
 
-- recycle-view có height mặc định là window height, bạn có thể thay đổi thông qua style của recycle-view
-- Có hai loại recycle-view: grid view và list view. Mặc định sẽ là list view. Mỗi loại recycle view sẽ có những thuộc tính khác nhau, một số thuộc tính có thể dùng chung. Các thuộc tính dùng chung bao gồm:
+## Các thuộc tính chung của recycle-view
 
 | Thuộc tính     | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                                                                                                                                                                   |
 | -------------- | ------------ | :------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | totalCount     | string       |    ✓     | Tổng số lượng các phần tử có trong mảng.                                                                                                                                                                                                |
-| isGrid         | boolean      |          | Chỉ định hiển thị view dưới dạng grid, có thể có nhiều phần tử trên 1 dòng, mặc định là false.                                                                                                                                          |
+| isGrid         | boolean      |          | Chỉ định hiển thị view dưới dạng grid, có thể có nhiều phần tử trên 1 dòng. mặc định là false.                                                                                                                                          |
 | hasPlaceholder | boolean      |          | Khi scroll quá nhanh thì có thể sẽ bị trắng một lúc do quá trình tính toán, có thể dùng placeholder để hiển thị thay vùng trắng đó. Bắt buộc phải dùng chung với component `<recycle-placeholder>`. Mặc định là false                   |
 | hasLoading     | boolean      |          | Do recycle view sử dụng cơ chế lazy load, nên có thể mất một khoảng thời gian để khởi tạo component, có thể dùng loading để hiển thị trong lúc chờ component được load xong. Bắt buộc phải dùng chung với component `<recycle-loading>` |
 | onReady        | event        |          | Sự kiện được gọi khi recycle view được khởi tạo xong                                                                                                                                                                                    |
@@ -142,7 +147,7 @@ Page({
 
 ## Grid view
 
-- Grid view và List view dùng chung component là `recycle-view`, tuy nhiên grid cho phép hiển thị nhiều item trên một dòng (số lượng item trên một dòng là giống nhau)
+- Grid view và List view dùng chung component là `recycle-view`. Tuy nhiên, grid cho phép hiển thị nhiều item trên một dòng (số lượng item trên một dòng là giống nhau)
 - Để dùng grid view thì cần khai báo `isGrid = true`.
 - Các item cần có cùng chiều cao (height) với nhau, nếu không có thể gây ra việc scroll không đúng. Có thể thay đổi chiều cao qua style hoặc class của recycle-item.
 
@@ -269,4 +274,6 @@ type ScrollToOptions = {
 };
 ```
 
-Lưu ý: behavior smooth không hỗ trợ cho iOS https://caniuse.com/?search=scroll-behavior
+:::note Lưu ý
+Behavior smooth không hỗ trợ cho iOS https://caniuse.com/?search=scroll-behavior
+:::
