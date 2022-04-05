@@ -10,39 +10,39 @@ title: my.addPhoneContact
 
 | Thuộc tính            | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                       |
 | --------------------- | ------------ | :------: | ------------------------------------------------------------------------------------------- |
-| photoFilePath         | string       |          | Đường dẫn tệp hình đại diện                                                                 |
+| photoFilePath         | string       |          | Đường dẫn đến tập tin hình đại diện                                                         |
 | nickName              | string       |          | Tên đại diện                                                                                |
 | lastName              | string       |          | Họ                                                                                          |
 | middleName            | string       |          | Tên đệm                                                                                     |
 | firstName             | string       |          | Tên                                                                                         |
 | remark                | string       |          | Ghi chú                                                                                     |
-| mobilePhoneNumber     | string       |          | Số điện thoại                                                                               |
-| addressCountry        | string       |          | Địa chỉ liên hệ                                                                             |
-| addressState          | string       |          | Địa chỉ liên hệ tỉnh                                                                        |
-| addressCity           | string       |          | Địa chỉ liên hệ thành phố                                                                   |
-| addressStreet         | string       |          | Địa chỉ liên hệ đường                                                                       |
+| mobilePhoneNumber     | string       |          | Số điện thoại di động                                                                              |
+| addressCountry        | string       |          | Địa chỉ liên hệ - quốc gia                                                                            |
+| addressState          | string       |          | Địa chỉ liên hệ - bang                                                                        |
+| addressCity           | string       |          | Địa chỉ liên hệ - thành phố                                                                   |
+| addressStreet         | string       |          | Địa chỉ liên hệ - đường                                                                       |
 | addressPostalCode     | string       |          | Mã bưu điện                                                                                 |
 | organization          | string       |          | Công ty                                                                                     |
 | title                 | string       |          | Chức vụ                                                                                     |
-| workFaxNumber         | string       |          | Số fax công ty                                                                              |
-| workPhoneNumber       | string       |          | Số điện thoại công ty                                                                       |
-| hostNumber            | string       |          | Điện thoại vănn phòng                                                                       |
+| workFaxNumber         | string       |          | Số fax nơi làm việc                                                                              |
+| workPhoneNumber       | string       |          | Số điện thoại nơi làm việc                                                                       |
+| hostNumber            | string       |          | Điện thoại văn phòng                                                                       |
 | email                 | string       |          | Địa chỉ email                                                                               |
 | url                   | string       |          | Đường dẫn tệp hình đại diện                                                                 |
-| workAddressCountry    | string       |          | Địa chỉ công ty                                                                             |
-| workAddressState      | string       |          | Địa chỉ công ty tỉnh                                                                        |
-| workAddressCity       | string       |          | Địa chỉ công ty thành phố                                                                   |
-| workAddressPostalCode | string       |          | Đường dẫn tệp hình đại diện                                                                 |
-| homeFaxNumber         | string       |          | Số fax nơi cứ trú                                                                           |
-| homePhoneNumber       | string       |          | Số diện thoại nơi cư trú                                                                    |
-| homeAddressCountry    | string       |          | Địa chỉ nơi cư trú                                                                          |
-| homeAddressState      | string       |          | Địa chỉ tỉnh cư trú                                                                         |
-| homeAddressCity       | string       |          | Địa chỉ thành phố cư trú                                                                    |
-| homeAddressStreet     | string       |          | Địa chỉ đường nơi cư trú                                                                    |
-| homeAddressPostalCode | string       |          | Địa chỉ cư trú mã bưu điện                                                                  |
-| success               | Function     |          | Callback function khi ghi thông tin liên hệ vào sổ địa chỉ thành công.                      |
+| workAddressCountry    | string       |          | Địa chỉ nơi làm việc - quốc gia                                                                             |
+| workAddressState      | string       |          | Địa chỉ nơi làm việc - bang                                                                        |
+| workAddressCity       | string       |          | Địa chỉ nơi làm việc - thành phố                                                                   |
+| workAddressPostalCode | string       |          | Mã bưu chính nơi làm việc                                                                 |
+| homeFaxNumber         | string       |          | Số fax của nhà                                                                          |
+| homePhoneNumber       | string       |          | Số điện thoại nhà                                                                    |
+| homeAddressCountry    | string       |          | Địa chỉ nhà - quốc gia                                                                         |
+| homeAddressState      | string       |          | Địa chỉ nhà - bang                                                                         |
+| homeAddressCity       | string       |          | Địa chỉ nhà - thành phố                                                                     |
+| homeAddressStreet     | string       |          | Địa chỉ nhà - đường                                                                    |
+| homeAddressPostalCode | string       |          | Mã bưu chính của nhà                                                                  |
+| success               | Function     |          | Callback function khi việcghi thông tin liên hệ vào sổ địa chỉ thành công.                      |
 | fail                  | Function     |          | Callback function khi việc ghi thông tin liên hệ vào sổ địa chỉ bất thành.                  |
-| complete              | Function     |          | Callback function khi ghi thông tin liên hệ vào sổ địa chỉ bất kể thành công hay thất bại . |
+| complete              | Function     |          | Callback function khi việc ghi thông tin liên hệ vào sổ địa chỉ bất kể thành công hay thất bại . |
 
 ## Giá trị trong success callback
 
@@ -81,7 +81,7 @@ Page({
     workAddressCity: 'HCM',
     workAddressStreet: 'CMT8',
     workAddressPostalCode: '361005',
-    homeAddressCountry: 'Viet Name',
+    homeAddressCountry: 'Viet Nam',
     homeAddressState: 'Binh Duong',
     homeAddressCity: 'Thuan An',
     homeAddressStreet: 'Nguyen Huu Canh',

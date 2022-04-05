@@ -4,21 +4,21 @@ title: my.vibrate
 
 `my.vibrate` là API dùng để làm rung thiết bị, với thời gian rung 200ms.
 
+**_Khả dụng_**: Hỗ trợ từ version 1.85.9 trở lên.
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/vibration/index" />
 
-**_Khả dụng_**: Hỗ trợ từ version 1.85.9 trở lên.
-
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                 |
 | ---------- | ------------ | ------------------------------------------------------------------------------------- |
-| success    | Function     | Callback function khi thực hiện thành công.                                           |
-| fail       | Function     | Callback function khi thực hiện thất bại.                                             |
-| complete   | Function     | Callback function khi thực hiện hoàn tất.                                             |
+| success    | Function     | Callback function khi việc rung thiết bị thành công.                                           |
+| fail       | Function     | Callback function khi việc rung thiết bị thất bại.                                             |
+| complete   | Function     | Callback function việc gọi API hoàn tất bất kể thành công hay thất bại.                        |
 
 ## Sample Code
 
