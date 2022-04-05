@@ -23,8 +23,8 @@ Khi việc gọi API thành công, framework sẽ trả về thông tin về thi
 | brand           | string       | Nhãn hiệu của thiết bị đang chạy (iPhone, Samsung,..).                                                                       |
 | currentBattery  | number       | Mức pin hiện tại, có giá trị từ 0 - 1.                                                                                       |
 | model           | string       | Model của thiết bị (iPhone X, Samsung Note 4, ...).                                                                          |
-| platform        | string       | Nền tảng mà thiết bị chạy trên (iOS, Android, Web).                                                                          |
-| system          | string       | Hệ điều hành chạy trên thiết bị (iOS, Android).                                                                              |
+| platform        | string       | Nền tảng mà thiết bị chạy trên. `platform =  'ios' | 'android' | 'macos' | 'windows' | 'web' | 'native'`       |
+| system          | string       | Hệ điều hành chạy trên thiết bị (iOS, Android, ...).                                                      |
 | version         | string       | Phiên bản của hệ điều hành (12.0, 14.0,...).                                                                                 |
 | hostVersion     | string       | Phiên bản của Tiki App.                                                                                                      |
 | runtimeVersion  | string       | Phiên bản Tini App Framework.                                                                                                | . |

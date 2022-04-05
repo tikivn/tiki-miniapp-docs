@@ -2,7 +2,7 @@
 title: Image Cropper
 ---
 
-Image Cropper là component dùng để giúp user crop ảnh theo tỉ lệ mong muốn.
+Image Cropper là component cho phép crop ảnh theo tỉ lệ mong muốn.
 
 ## Quét mã để trải nghiệm
 

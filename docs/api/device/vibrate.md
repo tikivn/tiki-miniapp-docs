@@ -20,7 +20,7 @@ import { QRCode } from '@site/src/components/QRCode';
 | fail       | Function     | Callback function khi thực hiện thất bại.                                             |
 | complete   | Function     | Callback function khi thực hiện hoàn tất.                                             |
 
-### Sample Code
+## Sample Code
 
 ```xml
 <view>
