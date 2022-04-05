@@ -11,7 +11,7 @@ Với mỗi request để được xác thực cần gửi những thông tin sa
 | Header              | Description                                   |
 | ------------------- | --------------------------------------------- |
 | X-Tiniapp-Timestamp | Thời gian gọi request, tính bằng milliseconds |
-| X-Tiniapp-Client-Id | Client **key** được cấp khi tạo app                |
+| X-Tiniapp-Client-Id | Client **key** được cấp khi tạo app           |
 | X-Tiniapp-Signature | Signature được tính dựa trên request body     |
 
 
@@ -127,6 +127,19 @@ func main() {
 // encoded_payload:  MTYyMDYyMTYxOTU2OS5STENLYjdBZTlreDREWHRYc0NXam5EWHRnZ0ZuTTQzVy57ImlkIjoxMjN9
 // signature:  8ebd092b9df2cf90e8ccbcab2ba87ee14f2abb25eb8f18b4d7286d42adcd45c2
 
+```
+
+### PHP
+```php
+<?php
+$timestamp = '1648463110733';
+$clientId = 'YOUR_CLIENT_ID';
+$secretKey = 'YOUR_SECRET_KEY';
+$body = '{"code":"AoVGh57xCxEq7so22ba6d6pbcEj2Kk2JcImCbHsMQlM.qt90czxRIQAHkQTDgM83tFfm-P9alm8Pd9ja8VVvhV0"}';
+$payloadFormat = '%s.%s.%s'; 
+$payload = sprintf($payloadFormat, $timestamp, $clientId, $body);
+$encodePayload = strtr(base64_encode($payload), '=+/', " -_");
+$sig = hash_hmac('sha256', $encodePayload, $secretKey);
 ```
 
 Link https://play.golang.org/p/HEMA2yZFl-W
