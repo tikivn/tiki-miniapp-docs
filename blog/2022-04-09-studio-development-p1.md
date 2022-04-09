@@ -4,7 +4,7 @@ title: Quá trình xây dựng IDE cho Tini App (Phần 1)
 
 # Quá trình xây dựng IDE cho Tini App (Phần 1)
 
-![Tini App Studio](https://miro.medium.com/max/1400/1*vcnLUNcutOMTGJxdMgb_PA.jpeg)
+![Tini App Studio](https://raw.githubusercontent.com/tikivn/tiki-miniapp-docs/master/static/img/studio-development.jpg)
 
 Với sự phát triển không ngừng của ngành công nghiệp 4.0 và quá trình chuyển đổi số của các doanh nghiệp đang ngày càng tăng. Các khái niệm mới bắt đầu ra đời, điển hình như: AI, Big Data, IoT, Cloud, Blockchain, … Chắc hẳn các cụm từ này không còn quá xa lạ với các bạn, nó hầu như được đề cập khắp mọi nơi, ở các sản phẩm công nghệ đang có trên thị trường.
 
