@@ -253,7 +253,10 @@ module.exports = {
         {
           type: 'category',
           label: 'Actions',
-          items: ['component/advance/actions/button'],
+          items: [
+            'component/advance/actions/button',
+            'component/advance/actions/uploader',
+          ],
         },
         {
           type: 'category',
@@ -262,6 +265,7 @@ module.exports = {
             'component/advance/form/stepper',
             'component/advance/form/steps',
             'component/advance/form/textfield',
+            'component/advance/form/search-bar',
             'component/advance/form/pin',
             'component/advance/form/dropdown',
             'component/advance/form/chip',
