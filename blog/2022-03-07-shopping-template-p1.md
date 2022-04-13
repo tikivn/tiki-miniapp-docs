@@ -503,7 +503,7 @@ Như vậy chúng ta đã đi qua tất cả các component ở home page, bây 
 
 ###### pages/home/index.txml
 
-```x ,
+```xml,
 <view tiki:else>
   <banners
     class="home-banners"

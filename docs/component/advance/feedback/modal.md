@@ -7,6 +7,8 @@ title: Modal
 Khi ứng dụng cần cảnh báo hoặc nhắc nhở hành người dùng, yêu cầu thao tác của người dùng mà không phải chuyển trang, bạn có thể sử dụng modal.
 Người dùng cần thực hiện các thao tác trên modal trước khi đóng.
 
+<img style={{ width: '100%', maxWidth: 360 }} src="https://salt.tikicdn.com/ts/tiniapp/03/f4/21/e87f515aa0dc7e97f7b9ace90b8cf0fb.gif"/>
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
@@ -15,9 +17,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ## Sử dụng
 
-### Sample Code:
-
-Khai báo components:
+_index.json_
 
 ```json
 {
@@ -28,374 +28,99 @@ Khai báo components:
 }
 ```
 
-### Javascript Code
-
-javascript code dưới đây được sử dụng cho tất cả các component demo,
-_**lưu ý đây không phải là best practise, nên sử dụng để tham khảo.**_
+_index.js_
 
 ```js
 Page({
   data: {
-    modal: {}
+    show: false
   },
-  onLoad() {},
-  closeModal() {
-    this.setData({
-      modal: {}
-    });
+
+  handleShowModal() {
+    this.setData({ show: true });
   },
-  onMaskClick() {
-    this.setData({
-      modal: {}
-    });
+
+  handleHideModal() {
+    this.setData({ show: false });
   },
-  onButtonClick(e) {
-    if (e.target.dataset.index === 0) {
-      my.alert({
-        content: 'item' + JSON.stringify(e.target.dataset),
-        success: () => this.setData({ modal: {} })
-      });
-    } else if (e.target.dataset.index === 1) {
-      my.alert({
-        content: 'item' + JSON.stringify(e.target.dataset),
-        success: () => this.setData({ modal: {} })
-      });
-    } else {
-      my.alert({
-        content: 'unhandle',
-        success: () => this.setData({ modal: {} })
-      });
-    }
-  },
-  onModalClick() {
-    this.setData({
-      modal: {}
-    });
-  },
-  onModalClose() {
-    this.setData({
-      modal: {}
-    });
-  },
-  onCancel() {
-    this.setData({ modal: {} });
-  },
-  onTap(e) {
-    this.setData(e.target.dataset);
+
+  handleTapButton(event) {
+    const { item } = event.target.dataset;
+    my.alert({ content: JSON.stringify(item) });
+    this.handleHideModal();
   }
 });
 ```
 
 ### Basic Modal
 
-- **Khai báo modal component**
+<img style={{ width: '100%', maxWidth: 360 }} src="https://salt.tikicdn.com/ts/tiniapp/7e/dc/03/5cbd60b08b386acf78ae09bd715c77be.png"/>
 
 _index.txml_
 
 ```xml
-  <modal
-      show="{{modal.type==='basic'}}"
-      showClose="{{modal.showClose}}"
-      closeType="{{modal.closeType}}"
-      mask="true"
-      onModalClose="onModalClose"
-      onMaskClick="onMaskClick"
-    >
-    <view slot="header">Header</view>
-    <view style="
-      display:flex;
-      flex-direction: column;
-      margin: 16px 0;
-      min-width: 250px;
-    ">
-      <text>
-          Component Props
-      </text>
-    </view>
-    <view tiki:if="{{modal.footer}}" slot="footer">
-      <view onTap="closeModal" style="
-          border-top: 1px solid #ccc;
-          color: #1677ff;
-          cursor: pointer;
-          text-align: center;
-          padding: 8px 0;
-        ">Close</view>
-    </view>
-  </modal>
-```
+<button onTap="handleShowModal">Show modal</button>
 
-- **Khai báo button with dataset**
-
-```xml
-  <view class="button-wrapper">
-   <!-- for basic modal -->
-    <button size="big" type="primary" data-modal="{{
-      type: 'basic',
-      showClose: true,
-      footer: false,
-    }}" onTap="onTap">Basic</button>
-   <!-- for basic modal with footer + showClose button -->
-    <button size="big" type="primary" data-modal="{{
-      type: 'basic',
-      showClose: true,
-      footer: true
-    }}" onTap="onTap">Footer,Close</button>
+<modal
+  show="{{show}}"
+  buttons="{{[{'text': 'Close'}]}}"
+  onMaskClick="handleHideModal"
+  onButtonClick="handleTapButton"
+>
+  <view slot="header">Title</view>
+  <view slot="description">Description</view>
+  <view class="modal-content">
+    Swap me!!!
   </view>
+</modal>
 ```
-
-- **Kết quả**
-
-<div style={{
-    display:'flex',
-    flexDirection:'row',
-    justifyContent:'space-around',
-    widht:'100%',
-    background:'#f2f4f5',
-    padding:'24px',
-    borderRadius:'4px'
-  }}>
-  <div>
-      <h4>Basic modal</h4>
-      <img style={{maxWidth: 300}} alt="modal" src="/img/modal-basic.png"/>
-  </div>
-  <div>
-      <h4>Basic modal with footer,showClose</h4>
-      <img style={{maxWidth: 300}} alt="modal" src="/img/modal-basic-footer.png"/>
-  </div>
-</div>
 
 ### Image Modal
 
-- **Khai báo modal component**
+<img style={{ width: '100%', maxWidth: 360 }} src="https://salt.tikicdn.com/ts/tiniapp/c5/bf/a6/73947c34eb1f06e8b56f43119f36c18a.png"/>
 
 _index.txml_
 
 ```xml
-  <modal
-      show="{{modal.type==='image'}}"
-      showClose="{{modal.showClose}}"
-      closeType="{{modal.closeType}}"
-      mask="true"
-      onModalClose="onModalClose"
-      onMaskClick="onMaskClick"
-      topImage:"{{modal.topImage}}",
-      topImageSize:"{{modal.topImageSize}}",
-    >
-    <view slot="header">Header</view>
-    <view style="
-      display:flex;
-      flex-direction: column;
-      margin: 16px 0;
-      min-width: 250px;
-    ">
-      <text>
-          Component Props
-      </text>
-    </view>
-    <view tiki:if="{{modal.footer}}" slot="footer">
-      <view onTap="closeModal" style="
-          border-top: 1px solid #ccc;
-          color: #1677ff;
-          cursor: pointer;
-          text-align: center;
-          padding: 8px 0;
-        ">Close</view>
-    </view>
-  </modal>
-```
+<button onTap="handleShowModal">Show modal</button>
 
-- **Khai báo button with dataset**
-
-```xml
-  <view class="button-wrapper">
-  <!-- for modal image medium -->
-    <button size="big" type="primary" data-modal="{{
-      type: 'image',
-      showClose: true,
-      footer: false,
-      topImage:'http://placeimg.com/640/480',
-      topImageSize:'md'
-    }}" onTap="onTap">Basic</button>
-  <!-- for modal image large -->
-    <button size="big" type="primary" data-modal="{{
-      type: 'image',
-      showClose: false,
-      footer: true,
-      topImage:'http://placeimg.com/640/480',
-      topImageSize:'lg'
-    }}" onTap="onTap">Modal with footer</button>
+<modal
+  show="{{show}}"
+  topImage="http://placeimg.com/640/480"
+  topImageSize="lg"
+  buttons="{{[{'text': 'Cancel', type: 'outline'}, {'text': 'OK'}]}}"
+  onMaskClick="handleHideModal"
+  onButtonClick="handleTapButton"
+>
+  <view slot="header">Title</view>
+  <view slot="description">Description</view>
+  <view class="modal-content">
+    Swap me!!!
   </view>
+</modal>
+
 ```
-
-- **Kết quả**
-
-<div style={{
-        display:'flex',
-        flexDirection:'row',
-        justifyContent:'space-around',
-        widht:'100%',
-        background:'#f2f4f5',
-        padding:'24px',
-        borderRadius:'4px'
-    }}>
-    <div>
-        <h4>Image size medium</h4>
-        <img style={{maxWidth: 300}} alt="modal" src="/img/modal-image-md.png"/>
-    </div>
-    <div>
-        <h4>Image size large</h4>
-        <img style={{maxWidth: 300}} alt="modal" src="/img/modal-image-lg.png"/>
-    </div>
-</div>
 
 ### Custom Button
 
-- **Khai báo modal component**
+<img style={{ width: '100%', maxWidth: 360 }} src="https://salt.tikicdn.com/ts/tiniapp/b2/d2/92/db92c764b59f46dc57036c99cd134f5b.png"/>
 
 _index.txml_
 
 ```xml
-    <modal
-      show="{{modal.type==='customFooter'}}"
-      mask="true"
-      showClose="false"
-      onModalClose="onModalClose"
-      onMaskClick="onMaskClick"
-      topImage="{{modal.topImage}}"
-      topImageSize="{{modal.topImageSize}}"
-      buttons="{{modal.buttons}}"
-      buttonsLayout="{{modal.buttonsLayout}}"
-      onButtonClick="onButtonClick"
-    >
-    <view slot="header">Header</view>
-    <view style="
-      display:flex;
-      flex-direction: column;
-      margin: 16px 0;
-      min-width: 250px;
-    ">
-      <text>
-          Component Props
-      </text>
-    </view>
-  </modal>
+<button onTap="handleShowModal">Show modal</button>
 
+<modal
+  show="{{show}}"
+  buttons="{{[{'text': 'Close', type: 'ghost'}, {'text': 'Cancel', type: 'outline'}, {'text': 'OK'}]}}"
+  buttonsLayout="vertical"
+  onMaskClick="handleHideModal"
+  onButtonClick="handleTapButton"
+>
+  <view slot="header">Title</view>
+  <view slot="description">Description</view>
+</modal>
 ```
-
-- **Khai báo button with dataset**
-
-```xml
-    <view class="button-wrapper">
-        <!-- buttonLayouts=vertical -->
-        <button size="big" type="primary" data-modal="{{
-          type: 'customFooter',
-          showClose: true,
-          footer: false,
-          buttonsLayout:'vertical',
-          topImage:'http://placeimg.com/640/480',
-          topImageSize:'lg',
-          buttons:[{
-                text:'Cancel',
-            },
-            {
-                text:'Ok',
-            }
-          ]
-        }}" onTap="onTap">Vertical</button>
-        <!-- buttonLayouts=horizontal -->
-        <button size="big" type="primary" data-modal="{{
-          type: 'customFooter',
-          buttonsLayout:'horizontal',
-          showClose: true,
-          footer: false,
-          topImage:'http://placeimg.com/640/480',
-          topImageSize:'lg',
-          buttons:[{
-            text:'Cancel',
-            extStyle:'border-top: 1px solid #ccc;border-right:1px solid #ccc'
-          },
-          {
-            text:'Ok',
-            extStyle:'border-top: 1px solid #ccc'
-          }]
-        }}" onTap="onTap">Horizontal</button>
-    </view>
-
-```
-
-- **Kết quả**
-
-<div style={{
-        display:'flex',
-        flexDirection:'row',
-        justifyContent:'space-around',
-        widht:'100%',
-        background:'#f2f4f5',
-        padding:'24px',
-        borderRadius:'4px'
-    }}>
-    <div>
-        <h4>Vertical buttons layout</h4>
-        <img style={{maxWidth: 300}} alt="modal" src="/img/modal-custom-footer.png"/>
-    </div>
-    <div>
-        <h4>Horizontal buttons layout</h4>
-        <img style={{maxWidth: 300}} alt="modal" src="/img/modal-custom-footer-horizontal.png"/>
-    </div>
-</div>
-
-### Advance
-
-- **Khai báo modal component**
-
-_index.txml_
-
-```xml
-    <modal
-      show="{{modal.type==='advance'}}"
-      mask="true"
-      showClose="false"
-      onModalClose="onModalClose"
-      onMaskClick="onMaskClick"
-      topImage="{{modal.topImage}}"
-      topImageSize="{{modal.topImageSize}}"
-      advance="true"
-      onButtonClick="onButtonClick"
-    />
-
-```
-
-- **Khai báo button with dataset**
-
-```xml
-    <view class="button-wrapper">
-        <button size="big" type="primary" data-modal="{{
-          type: 'advice',
-          showClose: true,
-          footer: false,
-          topImage:'http://placeimg.com/640/480',
-          topImageSize:'lg',
-        }}" onTap="onTap">Show image only</button>
-    </view>
-
-```
-
-- **Kết quả**
-
-<div style={{
-        display:'flex',
-        flexDirection:'row',
-        justifyContent:'space-around',
-        widht:'100%',
-        background:'#f2f4f5',
-        padding:'24px',
-        borderRadius:'4px'
-    }}>
-    <div>
-        <h4>Image only</h4>
-        <img style={{maxWidth: 300}} alt="modal" src="/img/modal-image.png"/>
-    </div>
-</div>
 
 ### Chi tiết props
 
@@ -417,14 +142,16 @@ _index.txml_
 
 ### buttons
 
-| Property | Type   | Default Value | Description          |
-| -------- | ------ | ------------- | -------------------- |
-| text     | string | ''            | Hiển thị text button |
-| extClass | string | ''            | Class cho button     |
+| Property | Type   | Default Value | Description                                                      |
+| -------- | ------ | ------------- | ---------------------------------------------------------------- |
+| type     | string | solid         | Kiểu button. Nhận các giá trị = [solid \|\| outline \|\| ghost]. |
+| text     | string | ''            | Hiển thị text button                                             |
+| extClass | string | ''            | Class cho button                                                 |
 
 ### slots
 
-| Property | Type    | Default Value | Description                       |
-| -------- | ------- | ------------- | --------------------------------- |
-| header   | boolean | false         | Render component ở section header |
-| footer   | boolean | true          | Render component ở section footer |
+| Property    | Type    | Default Value | Description                                 |
+| ----------- | ------- | ------------- | ------------------------------------------- |
+| header      | boolean | false         | Render component ở section header           |
+| description | boolean | false         | Render component ở dưới header và trên body |
+| footer      | boolean | false         | Render component ở section footer           |
