@@ -28,7 +28,7 @@ Super App dịch ra tiếng Việt là siêu ứng dụng. Khái niệm này m�
 Với mô hình truyền thống, một ứng dụng sẽ sở hữu một dịch vụ nhất định và trong đó sẽ có các tính năng nhằm phục vụ, phát triển lợi ích cho dịch vụ (Tạm gọi là dịch vụ gốc).
 
 ![Tini App Studio](https://raw.githubusercontent.com/tikivn/tiki-miniapp-docs/master/static/img/super-app.jpg)
-*Ví dụ Super App*
+<p align=center><i>Ví dụ Super App</i></p>
 
 Với Super App, ứng dụng không chỉ còn gói gọn trong một dịch vụ, mà người dùng có thể tìm kiếm và sử dụng thêm các dịch vụ vệ tinh xung quanh cùng với dịch vụ gốc. Ví dụ, thay vì chúng ta phải cài đặt rất nhiều ứng dụng cho mỗi loại dịch vụ khác nhau như: Thương mại điện tử, ví điện tử, bảo hiểm, … Thì giờ đây, chỉ cần cài đặt một Super App và ở đó tích hợp tất cả các dịch vụ mà chúng ta cần. Việc này không chỉ mang lại lợi ích cho doanh nghiệp mà còn thuận tiện hơn cho người sử dụng, mang tới một trải nghiệm liền mạch.
 
@@ -55,7 +55,7 @@ Giải pháp công nghệ thứ hai là Cross-Platform như: React-Native, Flutt
 Sử dụng WebView để hiển thị website có sẵn từ đối tác cũng là một giải pháp thường được sử dụng. Ưu điểm là chúng ta có thể tái sử dụng được ứng dụng có sẵn, nhiệm vụ là ta cần viết các cơ chế để giao tiếp với các ứng dụng đó. Nhược điểm dễ thấy là ứng dụng Web đôi khi sẽ cho trải nghiệm không tốt về mặt hiệu suất.
 
 ![Tini App Studio](https://raw.githubusercontent.com/tikivn/tiki-miniapp-docs/master/static/img/mini-app.jpg)
-*Ví dụ Super App và Mini App*
+<p align=center><i>Ví dụ Super App và Mini App</i></p>
 
 Mini App là một khái niệm mới, được bắt nguồn từ thị trường Trung Quốc. Mini App được hiểu đơn giản là một ứng dụng nhỏ, có thể xem như là một dịch vụ của đối tác; và được Super App như là một kênh phân phối ứng dụng tới người sử dụng. Mini App có thể tận dụng được hết các lợi thế của những công nghệ nói trên và khắc phục điểm yếu là phải cấp quyền truy cập source code của doanh nghiệp cho đối tác.
 
@@ -64,7 +64,7 @@ Mini App là một khái niệm mới, được bắt nguồn từ thị trườ
 Tini App là một dự án Mini App do Tiki phát triển. Trên thị trường hiện tại có rất nhiều giải pháp để xây dựng Mini App và giải pháp dễ triển khai nhất là xây dựng các bộ thư viện (Bao gồm các APIs giao tiếp với Super App, các thành phần giao diện được xây dựng sẵn) để cung cấp cho đối tác và kèm theo các tài liệu hướng dẫn. Các giải pháp này đều phải phụ thuộc vào công nghệ mà Super App đang sử dụng, ví dụ như Native Code, Cross-Platform; và có thể tiềm ẩn những nguy cơ về bảo mật vì đang chạy trên cùng một môi trường với Super App, ví dụ đọc thông tin từ bộ nhớ để lấy dữ liệu trái phép, …
 
 ![Tini App Studio](https://raw.githubusercontent.com/tikivn/tiki-miniapp-docs/master/static/img/tini-app.png)
-*Ví dụ quy trình phát triển một Tini App*
+<p align=center><i>Ví dụ quy trình phát triển một Tini App</i></p>
 
 Đối với Tini App, Tiki chọn giải pháp có thể xem là tốt nhất, đã được thị trường Trung Quốc xây dựng và chứng minh mức độ hiệu quả. Thay vì sử dụng các công nghệ có sẵn để cung cấp cho đối tác, Tiki xây dựng riêng bộ ngôn ngữ và các công cụ cho Tini App để các đối tác dựa trên đó phát triển sản phẩm của mình. Sau đó, ứng dụng sẽ được chuyển đổi sao cho phù hợp với từng nền tảng, từng thiết bị khác nhau. Quá trình chuyển đối này đều phải thông qua các công cụ của Tiki xây dựng, giảm thiểu tối đa rủi ro có thể gặp phải. Có thể hiểu đơn giản, Tini App như là một hệ điều hành thu nhỏ trên Tiki.
 
