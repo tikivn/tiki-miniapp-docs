@@ -19,8 +19,6 @@ Trong nội dung của phần mở đầu đã đề cập tới mục tiêu c�
 5. Giả lập môi trường ứng dụng Tini App và các cộng cụ debug
 6. Xây dựng các công cụ Tini Console và định hướng phát triển trong tương lai
 
-<br/>
-
 ## Super App là gì?
 
 Super App dịch ra tiếng Việt là siêu ứng dụng. Khái niệm này mới xuất hiện trong một vài năm gần đây, khi mà các doanh nghiệp công nghệ bắt đầu chuyển mình trở thành một công ty đa dịch vụ.
@@ -74,4 +72,4 @@ Chính vì xây dựng bộ ngôn ngữ riêng, Tini App cần có công cụ l�
 
 \***
 
-*Để hiểu rõ hơn, ở các phần tiếp theo của chuỗi bài viết. Mình sẽ chia sẻ nhiều hơn về kiến trúc và các công cụ phát triển một Tini App. Các bạn cũng có thể truy cấp website developers.tiki.vn và cộng đồng Tini App community.tiki.vn để có thêm nhiều thông tin.*
+*Để hiểu rõ hơn, ở các phần tiếp theo của chuỗi bài viết. Mình sẽ chia sẻ nhiều hơn về kiến trúc và các công cụ phát triển một Tini App. Các bạn cũng có thể truy cấp website [developers.tiki.vn](https://developers.tiki.vn) và cộng đồng Tini App [community.tiki.vn](https://community.tiki.vn) để có thêm nhiều thông tin.*
