@@ -7,7 +7,7 @@ title: Modal
 Khi ứng dụng cần cảnh báo hoặc nhắc nhở hành người dùng, yêu cầu thao tác của người dùng mà không phải chuyển trang, bạn có thể sử dụng modal.
 Người dùng cần thực hiện các thao tác trên modal trước khi đóng.
 
-<img style={{ width: '100%', maxWidth: 360 }} src="https://salt.tikicdn.com/ts/tiniapp/03/f4/21/e87f515aa0dc7e97f7b9ace90b8cf0fb.gif"/>
+<img style={{ width: '100%', maxWidth: 360 }} src="https://salt.tikicdn.com/ts/tiniapp/f7/4f/11/d936e3e772479908fa56979a94ca7af2.gif"/>
 
 ## Quét mã để trải nghiệm
 
