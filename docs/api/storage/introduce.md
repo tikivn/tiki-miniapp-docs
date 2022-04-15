@@ -5,17 +5,16 @@ title: Giới thiệu
 
 ## Giới thiệu
 
-Storage API là bộ api để lưu trữ và sử dụng dữ liệu từ local storage.
-Mỗi app sẽ được sử dụng tối đa 6MB cho việc lưu trữ dữ liệu
+Storage API là bộ api dùng để xử lý dữ liệu trong local storage.
 
-### Chi tiết
+Mỗi tiện ích sẽ được sử dụng tối đa 6MB cho việc lưu trữ dữ liệu.
 
-Các apis
+## Danh sách JS API
 
-| API      | JSAPI             | Mô tả                                                                             |
-| -------- | ----------------- | --------------------------------------------------------------------------------- |
-| Write    | my.setStorage     | API để lưu trữ dữ liệu theo key, dữ liệu mới sẽ override dữ liệu cũ nếu chung key |
-| Read     | my.getStorage     | API để đọc dữ liệu theo key                                                       |
-| Clear    | my.clearStorage   | API để xoá toàn bộ dữ liệu được lưu trữ của app                                   |
-| Delete   | my.removeStorage  | API để xoá dữ liệu được lưu theo key                                              |
-| Get info | my.getStorageInfo | API để lấy thông tin về dung lượng, giới hạn của storage hiện tại                 |
+| JS API             | Mô tả                                                                             |
+| ----------------- | --------------------------------------------------------------------------------- |
+| my.setStorage     | Lưu trữ dữ liệu theo key; dữ liệu mới sẽ ghi đè dữ liệu cũ nếu cùng key |
+| my.getStorage     | Lấy dữ liệu theo key                                                       |
+| my.clearStorage   | Xoá toàn bộ dữ liệu được lưu trữ của tiện ích                                   |
+| my.removeStorage  | Xoá dữ liệu được lưu theo key                                              |
+| my.getStorageInfo | Lấy thông tin dung lượng, giới hạn của storage hiện tại                 |

@@ -2,9 +2,16 @@
 title: my.setStorage
 ---
 
-## Giới thiệu
+`my.setStorage` là api để lưu trữ dữ liệu theo key, dữ liệu mới sẽ ghi đè dữ liệu cũ nếu cùng key.
 
-`my.setStorage` là api để lưu trữ dữ liệu theo key, dữ liệu mới sẽ override dữ liệu cũ nếu chung key.
+:::note Lưu ý
+
+- Mỗi tiện ích chỉ được lưu trữ không quá 6MB.
+- Dữ liệu của mỗi tiện ích đã được tách biệt; tiện ích này không thể đọc được thông tin của tiện ích khác.
+- Dữ liệu chỉ bị mất khi ứng dụng bị xoá hoặc thiết bị bị reset. Việc cài đè tiện ích không làm mất dữ liệu được lưu trữ.
+- Trên iOS, storage hỗ trợ iTunes backup.
+
+:::
 
 ## Quét mã để trải nghiệm
 
@@ -12,20 +19,19 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/storage/index" />
 
-## Lưu ý:
+## Thuộc tính
 
-- Mỗi app chỉ được lưu trữ không quá 6MB.
-- Dữ liệu của mỗi app đã được tách biệt, ứng dụng này không thể đọc được thông tin của ứng dụng khác.
-- Dữ liệu chỉ bị mất khi ứng dụng bị xoá hoặc reset devices. Việc cài đè ứng dụng ko làm mất dữ liệu được lưu trữ.
-- Trên ios, storage có hỗ trợ Itunes backup.
+| Thuộc tính | Kiểu dữ liệu  | Bắt buộc | Mô tả                                       |
+| ---------- | ------------- | -------- | ------------------------------------------- |
+| key        | String        | ✓      | Key của dữ liệu                             |
+| data       | Object/String | ✓      | Giá trị của dữ liệu                         |
+| success    | Function      |        | Callback khi dữ liệu được lưu thành công    |
+| fail       | Function      |        | Callback khi dữ liệu được lưu thất bại      |
+| complete   | Function      |        | Callback sau khi thực hiện việc lưu dữ liệu bất kể thành công hay thất bại |
 
-## Sử dụng
+## Sample Code
 
-### Sample Code
-
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onSaveData() {
     my.setStorage({
@@ -42,12 +48,4 @@ Page({
 });
 ```
 
-### Chi tiết
 
-| Thuộc tính | Kiểu dữ liệu  | Required | Mô tả                                       |
-| ---------- | ------------- | -------- | ------------------------------------------- |
-| key        | String        | Yes      | Key của dữ liệu                             |
-| data       | Object/String | Yes      | Giá trị của dữ liệu                         |
-| success    | Function      | No       | Callback khi dữ liệu được lưu thành công    |
-| fail       | Function      | No       | Callback khi dữ liệu được lưu thất bại      |
-| complete   | Function      | No       | Callback sau khi thực hiện việc lưu dữ liệu |

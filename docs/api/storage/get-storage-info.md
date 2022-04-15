@@ -2,9 +2,16 @@
 title: my.getStorageInfo
 ---
 
-## Giới thiệu
+`my.getStorageInfo` là api để đọc ra thông tin storage của tiện ích như dung lượng sử dụng hiện tại, giới hạn, các keys đã được lưu.
 
-`my.getStorageInfo` là api để đọc ra thông tin storage của app như dung lượng sử dụng hiện tại, giới hạn, các keys đã được lưu
+:::note Lưu ý
+
+- Mỗi tiện ích chỉ được lưu trữ không quá 6MB.
+- Dữ liệu của mỗi tiện ích đã được tách biệt; tiện ích này không thể đọc được thông tin của tiện ích khác.
+- Dữ liệu chỉ bị mất khi ứng dụng bị xoá hoặc thiết bị bị reset. Việc cài đè tiện ích không làm mất dữ liệu được lưu trữ.
+- Trên iOS, storage hỗ trợ iTunes backup.
+
+:::
 
 ## Quét mã để trải nghiệm
 
@@ -12,20 +19,25 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/storage/index" />
 
-## Lưu ý:
+## Chi tiết
 
-- Mỗi app chỉ được lưu trữ không quá 6MB.
-- Dữ liệu của mỗi app đã được tách biệt, ứng dụng này không thể đọc được thông tin của ứng dụng khác.
-- Dữ liệu chỉ bị mất khi ứng dụng bị xoá hoặc reset devices. Việc cài đè ứng dụng ko làm mất dữ liệu được lưu trữ.
-- Trên ios, storage có hỗ trợ Itunes backup.
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                              |
+| ---------- | ------------ | -------- | -------------------------------------------------- |
+| success    | Function     |  Callback khi thông tin dữ liệu được đọc thành công |
+| fail       | Function     |  Callback khi thông tin dữ liệu được đọc thất bại   |
+| complete   | Function     | Callback sau khi thực hiện việc đọc dữ liệu bất kể thành công hay thất bại        |
 
-## Sử dụng
+### Success callback
 
-### Sample Code
+| Thuộc tính  | Kiểu dữ liệu | Mô tả                                       |
+| ----------- | ------------ | ------------------------------------------- |
+| keys        | array of strings  | Chứa toàn bộ các keys đã được lưu |
+| currentSize | number       | Dung lượng đã sử dụng, đơn vị là KB         |
+| limitSize   | number       |  Dung lượng giới hạn, đơn vị là KB           |
 
-**index.js**
+## Sample Code
 
-```js
+```js title=index.js
 Page({
   onGetData() {
     my.getStorageInfo({
@@ -39,18 +51,4 @@ Page({
 });
 ```
 
-### Chi tiết
 
-| Thuộc tính | Kiểu dữ liệu | Required | Mô tả                                              |
-| ---------- | ------------ | -------- | -------------------------------------------------- |
-| success    | Function     | No       | Callback khi thông tin dữ liệu được đọc thành công |
-| fail       | Function     | No       | Callback khi thông tin dữ liệu được đọc thất bại   |
-| complete   | Function     | No       | Callback sau khi thực hiện việc đọc dữ liệu        |
-
-Success callback
-
-| Thuộc tính  | Kiểu dữ liệu | Mô tả                                       |
-| ----------- | ------------ | ------------------------------------------- |
-| keys        | String array | Chứa toàn bộ thông tin các keys đã được lưu |
-| currentSize | Number       | Dung lượng đã sử dụng, đơn vị là KB         |
-| limitSize   | Number       | Giới hạn dung lượng, đơn vị là KB           |
