@@ -25,7 +25,7 @@ import { QRCode } from '@site/src/components/QRCode';
 | ----------- | ------------ | ------------------------------------------------------------------------------------------------------------- |
 | permissions | object       | Kết quả người dùng đã bật quyền cho Tiki app, trong đó khoá là giá trị phạm vi và giá trị trả về là kiểu bool |
 
-## Danh sách các phạm vi
+## Danh sách các phạm vi (Scope)
 
 | Phạm vi     | Mô tả             |
 | ----------- | ----------------- |
@@ -33,7 +33,7 @@ import { QRCode } from '@site/src/components/QRCode';
 | camera      | Camera            |
 | photo       | Thư viện ảnh      |
 | contacts    | Danh sách liên hệ |
-| notigcation | Thông báo         |
+| notification | Thông báo         |
 
 ## Sample Code
 

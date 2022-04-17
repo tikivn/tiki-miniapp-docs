@@ -19,7 +19,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/storage/index" />
 
-## Thuộc tính
+## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                       |
 | ---------- | ------------ | -------- | ------------------------------------------- |

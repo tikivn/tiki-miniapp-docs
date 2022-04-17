@@ -2,11 +2,31 @@
 title: my.getLocation
 ---
 
-## Giới thiệu
+`my.getLocation` là API dùng để lấy thông tin vị trí địa lí hiện tại của device.
 
-**my.getLocation** là API dùng để lấy thông tin vị trí địa lí hiện tại của device
-## Lưu ý:
-- Khả dụng: từ runtime version 1.73.1 trở lên.
+***Khả dụng***: từ runtime version 1.73.1 trở lên.
+
+### API Params
+
+| Thuộc tính | Kiểu dữ liệu     |  Mô tả                                                                     |
+| ---------- | -------- | ------------------------------------------------------------------------------ |
+| cacheTimeout      | number  | Thời gian mà cache toạ độ địa lý của thiết bị có hiệu lực. Đơn vị tính là giây, mặc định 30 giây. Sử dụng cache toạ độ giúp tăng tốc độ lấy location, đồng thời tiết kiệm pin.  |
+| type | number    | Chọn độ chính xác: <br/>0 - low accuracy. Sử dụng wifi để lấy location <br/> 1 - high accuracy. Sử dụng GPS để lấy location |
+| success    | Function | Callback function khi lấy thông tin location được thực hiện thành công                     |
+| fail       | Function | Callback function khi lấy thông tin location thất bại                                      |
+| complete   | Function | Callback function khi việc lấy thông tin location kết thúc cho dù thành công hay thất bại |
+
+### Callback success function payload
+
+| Thuộc tính | Kiểu dữ liệu    | Mô tả                  |
+| ---------- | ------ | -------------------------- |
+| latitude  | number  | Kinh độ của thiết bị |
+| longitude  | mumber  | Vĩ độ của thiết bị |  
+| altitude  | number  | Độ cao của thiết bị so với mực nước biển  |
+| accuracy  | number  | Độ chính xác của vị trí; tính bằng mét |
+| altitudeAccuracy  | number  | Độ chính xác của độ cao; tính bằng mét |
+| heading  | number  | Hướng di chuyển |
+| speed | number | Tốc độ di chuyển; tính bằng m/s |
 
 ### Sample Code
 
@@ -48,26 +68,3 @@ Page({
 
 ```
 
-### API Params
-
-Các thuộc tính:
-
-| Attributes | Type     | Required | Description                                                                    |
-| ---------- | -------- | -------- | ------------------------------------------------------------------------------ |
-| cacheTimeout      | Number   | No       |  Thời gian cache của latitude, longitude. Đơn vị là giây. Default là 30s. Sử dụng cache time sẽ tăng speed của việc lấy location và tiết kiệm pin hơn            |
-| type | Number    | No       | Chọn độ chính xác: <br/>0 - low accuracy. Sử dụng wifi để lấy location <br/> 1 - high accuracy. Sử dụng GPS để lấy location |
-| success    | Function | No       | Callback function khi lấy thông tin location được thực hiện thành công                     |
-| fail       | Function | No       | Callback function khi lấy thông tin location thất bại                                      |
-| complete   | Function | No       | Callback function khi việc lấy thông tin location kết thúc cho dù thành công hay thất bại. |
-
-### Callback success function payload
-
-| Attributes | Type   | Description                |
-| ---------- | ------ | -------------------------- |
-| latitude  | Number  | Latitude |
-| longitude  | Number  | Longitude |  
-| altitude  | Number  | Altitude |   
-| accuracy  | Number  | Accuracy (m) |        
-| altitudeAccuracy  | Number  | Altitude accuracy |                   
-| heading  | Number  | Heading |         
-| speed | Number | Speed |

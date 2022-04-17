@@ -19,12 +19,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/storage/index" />
 
-## Thuộc tính
+## API Params
 
 | Thuộc tính | Kiểu dữ liệu  | Bắt buộc | Mô tả                                       |
 | ---------- | ------------- | -------- | ------------------------------------------- |
-| key        | String        | ✓      | Key của dữ liệu                             |
-| data       | Object/String | ✓      | Giá trị của dữ liệu                         |
+| key        | string        | ✓      | Key của dữ liệu                             |
+| data       | Object/string | ✓      | Giá trị của dữ liệu                         |
 | success    | Function      |        | Callback khi dữ liệu được lưu thành công    |
 | fail       | Function      |        | Callback khi dữ liệu được lưu thất bại      |
 | complete   | Function      |        | Callback sau khi thực hiện việc lưu dữ liệu bất kể thành công hay thất bại |
@@ -47,5 +47,3 @@ Page({
   }
 });
 ```
-
-
