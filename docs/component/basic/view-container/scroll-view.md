@@ -6,14 +6,15 @@ title: scroll-view
 
 `scroll-view` là một container component có thể scroll được. Thanh scroll ngoài cùng không ảnh hưởng gì đến thanh scroll của `scroll-view`.
 
-***Lưu ý***:
+:::note Lưu ý
 
-> - Bạn cần thiết lập thuộc tính height cho `scroll-view` thông qua [inline-style](/docs/framework/tcss/tcss-introduction#Inline-style) hoặc [tcss](/docs/framework/tcss/tcss-introduction) nếu `scroll-x` là true
-> - `scroll-view` không hỗ trợ cả `scroll-x` và `scroll-y` cùng lúc, khi cả 2 thuộc tính này là `false`, thanh scroll sẽ không hoạt động
-> - `scroll-view` chỉ hỗ trợ bạn scroll content được hay không, không có tùy chỉnh cho việc pull-down refresh
-> - Để dùng thuộc tính `scroll-into-view` bạn cần để các component vào bên trong thẻ [view](/docs/component/basic/view-container/view) và khai báo id cho nó
->- Không nên dùng dùng `onScroll` để thiết lập giá trị của `scroll-top` hoặc `scroll-left` qua biến trong data, có thể dẫn đến trường hợp thanh scroll bị giật
+- Bạn cần thiết lập thuộc tính height cho `scroll-view` thông qua [inline-style](/docs/framework/tcss/tcss-introduction#Inline-style) hoặc [tcss](/docs/framework/tcss/tcss-introduction) nếu `scroll-x` là true
+- `scroll-view` không hỗ trợ cả `scroll-x` và `scroll-y` cùng lúc, khi cả 2 thuộc tính này là `false`, thanh scroll sẽ không hoạt động
+- `scroll-view` chỉ hỗ trợ bạn scroll content được hay không, không có tùy chỉnh cho việc pull-down refresh
+- Để dùng thuộc tính `scroll-into-view` bạn cần để các component vào bên trong thẻ [view](/docs/component/basic/view-container/view) và khai báo id cho nó
+- Không nên dùng dùng `onScroll` để thiết lập giá trị của `scroll-top` hoặc `scroll-left` qua biến trong data, có thể dẫn đến trường hợp thanh scroll bị giật
 
+:::
 
 ## Thuộc tính
 

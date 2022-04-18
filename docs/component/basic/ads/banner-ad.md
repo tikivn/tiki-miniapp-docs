@@ -2,9 +2,7 @@
 title: Banner Ad
 ---
 
-## Giới thiệu
-
-Banner Ad là component dùng để hiển thị quảng cáo dạng banner ngang
+Banner Ad là component dùng để hiển thị quảng cáo dạng banner ngang.
 
 ## Quét mã để trải nghiệm
 
@@ -12,18 +10,32 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/ads/banner-ad/index" />
 
-## Sử dụng
 
-### Sample Code:
+## Thuộc tính
+
+| Thuộc tính   | Kiểu dữ liệu    |  Mô tả                  |
+| ------------ | --------------- | ----------------------- |
+| className    | string          | Thêm class cho component                   |
+| id           | string          | id của component        |
+
+## Sample Code:
+
 javascript code dưới đây được sử dụng cho tất cả các component demo,
-_**lưu ý đây không phải là best practise, nên sử dụng để tham khảo.**_
+
+:::note Lưu ý
+
+Code dưới đây chỉ được dùng cho mục đích tham khảo  và không phải là best practice, 
+
+:::
 
 Sử dụng ad ở txml
+
 ```xml
 <ad class="banner-ad" />
 ```
 
 Simple style cho ad
+
 ```css
 .banner-ad {
  width: 90%;
@@ -48,9 +60,3 @@ Simple style cho ad
   </div>
 </div>
 
-### Chi tiết props
-
-| Thuộc tính   | Kiểu dữ liệu    | Giá trị mặc định |  Mô tả                  |
-| ------------ | --------------- | ---------------- | ----------------------- |
-| className    | string          |                  | Thêm class cho component                   |
-| id           | string          |                  | id của component        |
