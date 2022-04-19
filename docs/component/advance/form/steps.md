@@ -23,11 +23,11 @@ Component `steps` dùng để tạo các bước trên multi-step form.
   failIndex="{{failIndex}}"
   items="{{items}}"
   activeColor="green"
-  dotSize="30px"
-  dotErrorColor="yellow"
+  milestoneSize="30px"
+  milestoneErrorColor="yellow"
   >
-    <view slot="title_2" style="color: green; font-weight: bold;">title custom with slot</view>
-    <view slot="desc_4">custom <text style="color: green;"> description </text> with slot component here; custom <text style="color: green;"> description </text> with slot component here; </view>
+    <view slot="label_2" style="color: green; font-weight: bold;">label custom with slot</view>
+    <view slot="sub_4">custom <text style="color: green;"> sub </text> with slot component here; custom <text style="color: green;"> sub </text> with slot component here; </view>
   </steps>
 </view>
 ```
@@ -42,26 +42,26 @@ Page({
     size: 0,
     items: [
       {
-        title: 'Step 1',
-        description:
+        label: 'Step 1',
+        sub:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. It was popularised in the 1960s with the release of Letraset PgeMaker including versions of Lorem Ipsum."
       },
       {
-        // item này không có title, title sẽ được render từ <view slot="title_2" ... />
-        description: 'description'
+        // item này không có label, label sẽ được render từ <view slot="label_2" ... />
+        sub: 'sub'
       },
       {
-        title: 'Step 3',
-        description: 'description'
+        label: 'Step 3',
+        sub: 'sub'
       },
       {
-        title: 'Step 4'
-        // item này không có description, description sẽ được render từ <view slot="desc_4" ... />
+        label: 'Step 4'
+        // item này không có sub, sub sẽ được render từ <view slot="sub_4" ... />
       },
 
       {
-        title: 'Step 5',
-        description: 'description'
+        label: 'Step 5',
+        sub: 'sub'
       }
     ]
   }
@@ -70,16 +70,16 @@ Page({
 
 ### Chi tiết
 
-| Property        | Type                                             | Default              | Required | Description                                                                                                               |
+| Property        | Type                                             | Default              | Required | subription                                                                                                               |
 | --------------- | ------------------------------------------------ | -------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
 | className       | `string`                                         | ""                   | no       | Custom class cho component                                                                                                |
 | style           | `string`                                         | ""                   | no       | Custom inline style cho component                                                                                         |
 | direction       | `'horizontal'` \| `'vertical'`                   |                      | yes      | Hướng của steps menu                                                                                                      |
 | activeIndex     | `number` \| `null`                               |                      | yes      | Index của step hiện tại                                                                                                   |
 | failIndex       | `number` \| `null`                               |                      | no       | Index của step bị bỏ qua, step chưa hoàn thành hoặc lỗi                                                                   |
-| items           | `Array<{ title?: string; description?:string }>` |                      | yes      | Danh sách các step. Bạn có thể truyền title hoặc description rỗng và sử dụng custom slot để chỉnh sửa item như ví dụ trên |
-| inactiveColor   | `string`                                         | 'rgba(0, 0, 0, 0.1)' | no       | Màu của line và dot khi step inactive                                                                                     |
-| activeColor     | `string`                                         | '#1a94ff'            | no       | Màu của line và dot khi step active                                                                                       |
-| dotErrorColor   | `string`                                         | '#ff424f'            | no       | Màu của dot khi step được đánh dấu error(index === failIndex)                                                             |
-| dotSize         | `string`                                         | '16px'               | no       | Size của dot                                                                                                              |
+| items           | `Array<{ label?: string; sub?:string }>` |                      | yes      | Danh sách các step. Bạn có thể truyền label hoặc sub rỗng và sử dụng custom slot để chỉnh sửa item như ví dụ trên |
+| inactiveColor   | `string`                                         | 'rgba(0, 0, 0, 0.1)' | no       | Màu của line và milestone khi step inactive                                                                                     |
+| activeColor     | `string`                                         | '#1a94ff'            | no       | Màu của line và milestone khi step active                                                                                       |
+| milestoneErrorColor   | `string`                                         | '#ff424f'            | no       | Màu của milestone khi step được đánh dấu error(index === failIndex)                                                             |
+| milestoneSize         | `string`                                         | '16px'               | no       | Size của milestone                                                                                                              |
 | reverseVertical | `boolean`                                        | false                | no       | Đảo ngược hướng của các vertical steps theo chiều bắt đầu từ dưới lên trên                                                |

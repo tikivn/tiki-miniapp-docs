@@ -29,9 +29,7 @@ $> yarn add @tiki.vn/tini-ui
 {
   "defaultTitle": "Tooltip",
   "usingComponents": {
-    "tooltip": "@tiki.vn/tini-ui/es/tooltip/index",
-    "block-header": "components/block-header/index",
-    "block-variant": "components/block-variant/index"
+    "tooltip": "@tiki.vn/tini-ui/es/tooltip/index"
   }
 }
 ```
@@ -39,61 +37,91 @@ $> yarn add @tiki.vn/tini-ui
 **index.txml**
 
 ```xml
-<template name="variant-format">
-  <block-variant header="Variant" title="1. Format" description="Position & Theme">
-    <view class="mt-48 bg-white" style="height: 55vh">
-      <tooltip class="mt-48" show theme="light" content="Text Light">
-        <view slot="operation"></view>
-      </tooltip>
-
-      <tooltip class="mt-48" show theme="light" onClose="onClose" showCloseIcon>
-        <view slot="content">
-          Text Light With Close
-        </view>
-        <view slot="operation"></view>
-      </tooltip>
-
-      <tooltip class="mt-48" show theme="light">
-        <view slot="content">
-          Top Light
-        </view>
-        <view slot="operation"></view>
-      </tooltip>
-
-      <tooltip position="bottom" show theme="light">
-        <view slot="content">
-          Bottom Light
-        </view>
-        <view slot="operation"></view>
-      </tooltip>
-
-      <tooltip class="mt-48" show position="bottom" theme="dark">
-        <view slot="content">
-          Text Dark
-        </view>
-        <view slot="operation"></view>
-      </tooltip>
-
-      <tooltip class="mt-48" show position="bottom" theme="dark" onClose="onClose" showCloseIcon>
-        <view slot="content">
-          Text Dark With Close
-        </view>
-        <view slot="operation"></view>
-      </tooltip>
-
-      <tooltip class="mt-48" show position="bottom" position="bottom" theme="dark">
-        <view slot="content">
-          Bottom Dark
-        </view>
-        <view slot="operation"></view>
-      </tooltip>
+<view class="wrapper">
+   <tooltip class="mt-48" position="top" show theme="reverse">
+    <view slot="content">
+        Top
     </view>
-  </block-variant>
-</template>
+    <view slot="operation">Text</view>
+  </tooltip>
 
-<view class="page">
-  <block-header title="Usage" description="Tooltips are elements that display informative text as tips or tricks" />
-  <template is="variant-format" />
+  <tooltip class="mt-48" position="top-left" show theme="reverse">
+    <view slot="content">
+        Top Left
+    </view>
+    <view slot="operation">Text</view>
+  </tooltip>
+
+  <tooltip class="mt-48" position="top-right" show theme="reverse">
+    <view slot="content">
+        Top Left
+    </view>
+    <view slot="operation">Text</view>
+  </tooltip>
+
+  <tooltip class="mt-48" position="left" show theme="reverse">
+    <view slot="content">
+        Left
+    </view>
+    <view slot="operation">Text</view>
+  </tooltip>
+
+  <tooltip class="mt-48" position="left-top" show theme="reverse">
+    <view slot="content">
+        Left Top
+    </view>
+    <view slot="operation">Text</view>
+  </tooltip>
+
+  <tooltip class="mt-48" position="left-bottom" show theme="reverse">
+    <view slot="content">
+        Left Bottom
+    </view>
+    <view slot="operation">Text</view>
+  </tooltip>
+
+  <tooltip class="mt-48" position="right" show theme="reverse">
+    <view slot="content">
+        Right
+    </view>
+    <view slot="operation">Text</view>
+  </tooltip>
+
+  <tooltip class="mt-48" position="right-top" show theme="reverse">
+    <view slot="content">
+        Right Top
+    </view>
+    <view slot="operation">Text</view>
+  </tooltip>
+
+  <tooltip class="mt-48" position="right-bottom" show theme="reverse">
+    <view slot="content">
+        Right Top
+    </view>
+    <view slot="operation">Text</view>
+  </tooltip>
+
+  <tooltip class="mt-48" position="bottom" show theme="reverse">
+    <view slot="content">
+        Bottom
+    </view>
+    <view slot="operation">Text</view>
+  </tooltip>
+
+  <tooltip class="mt-48" position="bottom-left" show theme="reverse">
+    <view slot="content">
+        Bottom Left
+    </view>
+    <view slot="operation">Text</view>
+  </tooltip>
+
+  <tooltip class="mt-48" position="bottom-right" show theme="reverse">
+    <view slot="content">
+        Bottom Left
+    </view>
+    <view slot="operation">Text</view>
+  </tooltip>
+  
 </view>
 ```
 
@@ -115,8 +143,8 @@ Page({
 | style         | string                | ''            | Style cho tooltip                              |
 | content       | string                | ''            | Text content của tooltip                       |
 | show          | boolean               | false         | Nếu set `true` tooltip sẽ được show            |
-| theme         | `'light'` \| `'dark'` | 'light'       | Theme của tooltip                              |
-| position      | `'top'` \| `'bottom'` | 'top'         | Vị trí hiển thị của tooltip                    |
+| theme         | `'reverse'` \| `'default'` | 'default'       | Theme của tooltip                              |
+| position      | `'top'` \| `'bottom'` \| `'left'` \| `'right'` \| `'top-left'` \| `'top-right'` \| `'left-top'` \| `'left-bottom'` \| `'right-top'` \| `'right-bottom'` \| `'bottom-left'` \| `'bottom-right'` | 'top'         | Vị trí hiển thị của tooltip                    |
 | showCloseIcon | boolean               | false         | Nếu set `true` icon-close tooltip sẽ được show |
 | iconSizeClose | number                | 16            | size của icon-close tooltip                    |
 

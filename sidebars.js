@@ -288,6 +288,7 @@ module.exports = {
           items: [
             'component/advance/data-visualization/list-item',
             'component/advance/data-visualization/address',
+            'component/advance/data-visualization/alphabet',
           ],
         },
         {
