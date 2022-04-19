@@ -21,7 +21,7 @@ import { QRCode } from '@site/src/components/QRCode';
 | object-fit   | string       | contain          | Quy định cách thức điều chỉnh kích cỡ video sao cho vừa vặn video container. Nhận các giá trị [fill \|\| contain \|\| cover \|\| none \|\| scale down ] . |
 | plays-inline | boolean      | false            | Phát video ở chế độ nội tuyến (inline) hay chế độ toàn màn hình (fullscreen)                                                                              |
 | poster       | string       |                  | Ảnh đại diện cho video trước khi video được phát.                                                                                                         |
-| onWaiting    | event        |                  | Sự kiện được kích hoạt khi video đang tải dữ liệu để play                                                                                                 |
+| onLoading    | event        |                  | Sự kiện được kích hoạt khi video đang tải dữ liệu để play                                                                                                 |
 | onCanPlay    | event        |                  | Sự kiện được kích hoạt khi video có thể phát sau khi tải dữ liệu thành công                                                                               |
 | onPlay       | event        |                  | Sự kiện được kích hoạt khi video bắt đầu được phát hoặc được phát tiếp sau khi tạm dừng                                                                   |
 | onPause      | event        |                  | Sự kiện được kích hoạt khi video bị tạm dừng.                                                                                                             |
