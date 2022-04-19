@@ -2,9 +2,9 @@
 title: player
 ---
 
-Player component hỗ trợ xem video trên youtube, không giống như trên [video](/docs/component/basic/media/video) component là hỗ trợ cho cả native và web video, player component chỉ hỗ trợ dạng web video.
+`player` là component hỗ trợ xem video trên youtube. Không giống như [video](/docs/component/basic/media/video) component hỗ trợ cho cả native và web video, player component chỉ hỗ trợ dạng web video.
 
-**Khả dụng**: Player component chỉ hỗ trợ từ phiên bản 1.88.4 trở lên
+***Khả dụng***: chỉ được hỗ trợ từ phiên bản 1.88.4 trở lên.
 
 ## Quét mã để trải nghiệm
 
@@ -29,18 +29,18 @@ import { QRCode } from '@site/src/components/QRCode';
 | onSeek        | event        |          |                  | Sự kiện được gọi khi video nhảy tới một thời điểm nào đó. `event.detail = { seconds: number }`                                                            |
 | onError       | event        |          |                  | Sự kiện được gọi khi video bị lỗi                                                                                                                         |
 
-**_Lưu ý_**:
+:::note Lưu ý
 
-- Do chính sách của một số trình duyệt, video không thể **Auto play** được ([xem tại đây](https://www.theverge.com/2018/3/22/17150870/google-chrome-autoplay-videos-sound-mute-update)). Do đó để autoplay video, bạn cần thiết lập giá trị của `playing` là true và phải tắt tiếng đi với `muted` là true
+- Do chính sách của một số trình duyệt, video không thể **Auto play** được ([xem tại đây](https://www.theverge.com/2018/3/22/17150870/google-chrome-autoplay-videos-sound-mute-update)). Vì lẽ đó, để autoplay video, bạn cần thiết lập giá trị của `playing` là true và phải tắt tiếng đi với `muted` là true.
 - Trên simulator của studio bạn không thể bận fullscreen của video được
+
+:::
 
 ## Sample Code
 
 Một số component được sử dụng trong source [API Demo](https://github.com/tikivn/miniapp-getting-started/tree/main/api-demo).
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view>
   <block-header title="Usage" description="Allows play a local video or youtube on app" />
   <view class="block-content">
@@ -62,9 +62,8 @@ Một số component được sử dụng trong source [API Demo](https://github
 </view>
 ```
 
-**index.js**
 
-```javascript
+```javascript title=index.js 
 Page({
   onPlayerReady() {
     console.log('onPlayerReady');

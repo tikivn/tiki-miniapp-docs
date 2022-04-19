@@ -2,9 +2,7 @@
 title: slider
 ---
 
-`slider` component cho phép bạn chọn giá trị bằng việc kéo thả trong một phạm vi nhất định
-
-- Để sử dụng `slider` component, bạn cần sử dụng framework version từ `1.73.13` trở lên
+`slider` component cho phép bạn chọn giá trị bằng việc kéo thả trong một phạm vi nhất định.
 
 ***Khả dụng***: Được hỗ trợ từ running version `1.73.13` trở lên.
 

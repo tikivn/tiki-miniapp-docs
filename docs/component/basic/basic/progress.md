@@ -23,9 +23,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ## Sample Code
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view class="container">
   <view class="block">
     <progress />
@@ -39,9 +37,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.tcss**
-
-```css
+```css title=index.tcss
 .container {
   min-height: 100%;
   background-color: var(--gray20);

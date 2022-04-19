@@ -2,13 +2,13 @@
 title: recycle-view
 ---
 
-- `recycle-view` dùng để hiển thị một danh sách dữ liệu lớn, giúp tối ưu performance khi chỉ render một số lượng các item cần thiết trong phạm vi nhìn thấy của người dùng.
+- `recycle-view` dùng để hiển thị một danh sách dữ liệu lớn. Nó giúp tối ưu performance bằng cách chỉ render một số lượng các item cần thiết trong phạm vi nhìn thấy của người dùng.
 - Nó có height mặc định là window height, bạn có thể thay đổi thông qua style của recycle-view.
 - `recycle-view` được phân làm hai loại grid view và list view. Mỗi loại đều có các thuộc tính riêng.
   - Grid view hiển thị nhiều item trên mỗi dòng. Số lượng item trên mỗi dòng thì đồng nhất.
   - List view hiển thị một item trên một dòng. 
 
-:::note Cảnh báo
+:::warning Cảnh báo
 
 `recycle-view` đang trong giai đoạn phát triển, chưa phải là bản chính thức nên có thể sẽ có lỗi phát sinh trong quá trình sử dụng.
 
@@ -54,8 +54,6 @@ Cấu trúc của list view:
 ```
 
 ### Sample Code
-
-**index.txml**
 
 ```xml title=src/pages/component/basic/recycle-view/list/index.txml
 <recycle-view

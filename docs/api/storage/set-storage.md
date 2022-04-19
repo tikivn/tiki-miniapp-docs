@@ -22,7 +22,7 @@ import { QRCode } from '@site/src/components/QRCode';
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu  | Bắt buộc | Mô tả                                       |
-| ---------- | ------------- | -------- | ------------------------------------------- |
+| ---------- | ------------- | :------: | ------------------------------------------- |
 | key        | string        | ✓      | Key của dữ liệu                             |
 | data       | Object/string | ✓      | Giá trị của dữ liệu                         |
 | success    | Function      |        | Callback khi dữ liệu được lưu thành công    |

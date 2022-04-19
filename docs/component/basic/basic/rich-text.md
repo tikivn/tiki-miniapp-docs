@@ -2,10 +2,11 @@
 title: rich-text
 ---
 
-- Thẻ rich-text dùng để hiển thị nội dung cho html dưới dạng các node
-- Chỉ hỗ trợ từ version 1.81.8 trở lên
-- Thẻ rich-text không hỗ trợ render toàn bộ các html, mà chỉ hỗ trợ một số thẻ html và một số thuộc tính
+- Thẻ rich-text dùng để hiển thị nội dung cho HTML dưới dạng các node.
+- Thẻ rich-text không hỗ trợ render toàn bộ các thẻ HTML, mà chỉ hỗ trợ một số thẻ HTML và một số thuộc tính.
 - Một số css selector theo tag name sẽ không được hỗ trợ (ví dụ `div { color: red }`), do đó bạn nên sử dụng inline style trong trường hợp này
+
+***Khả dụng***: hỗ trợ từ version 1.81.8 trở lên.
 
 ## Quét mã để trải nghiệm
 

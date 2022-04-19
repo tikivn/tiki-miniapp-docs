@@ -4,7 +4,7 @@ title: radio
 
 `radio` dùng để chọn một giá trị. Để nhóm nhiều `radio` lại với nhau, bạn cần sử dụng [radio-group](radio-group)
 
-# Thuộc tính
+## Thuộc tính
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                                    |
 | ---------- | ------------ | -------------------------------------------------------- |

@@ -2,8 +2,6 @@
 title: scroll-view
 ---
 
-## Giới thiệu
-
 `scroll-view` là một container component có thể scroll được. Thanh scroll ngoài cùng không ảnh hưởng gì đến thanh scroll của `scroll-view`.
 
 :::note Lưu ý

@@ -16,7 +16,7 @@ Thẻ `<carousel-item>` định nghĩa item (phần tử) của carousel đó. `
 
 ### Chi tiết
 
-| Property               | Type     | Default Value | Description                                                                                                                                                                                                |
+| Thuộc tính               | Kiểu dữ liệu     | Giá trị mặc định | Mô tả                                                                                                                                                                                                |
 | ---------------------- | -------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | arrows                 | boolean  | false         | Hiển thị previous và next arrows                                                                                                                                                                           |
 | indicator-dots         | boolean  | false         | Cho phép hiển thị dot indicator                                                                                                                                                                            |

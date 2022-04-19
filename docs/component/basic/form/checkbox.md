@@ -25,7 +25,6 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ## Sample Code 
 
-
 ```xml title=index.txml
 <view>
   <block-header title="Usage" description="Checkboxes are used to let a user choose one or more options from a limited number of options." />

@@ -2,9 +2,7 @@
 title: my.reportAnalytics
 ---
 
-## Giới thiệu
-
-**my.reportAnalytics** là API dùng để ghi nhận dữ liệu của một số sự kiện tuỳ chỉnh. 
+`my.reportAnalytics` là API dùng để ghi nhận dữ liệu của một số sự kiện tuỳ chỉnh. 
 
 ## Sử dụng
 
@@ -55,6 +53,7 @@ Sự kiện này được ghi nhận khi khách hàng thực hiện thanh toán 
 | ecommerce | Ecommerce | Yes      |         | Chứa thông tin của đơn hàng. |
 
 #### Ecommerce Parameters
+
 | Name     | Type   | Required | Example    | Description                            |
 | -------- | ------ | -------- | ---------- | -------------------------------------- |
 | order_id | string | Yes      | O_12345    | Mã đơn hàng.                           |

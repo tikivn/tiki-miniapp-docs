@@ -31,9 +31,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ## Sample Code
 
-index.txml
-
-```xml
+```xml title=index.txml
 <view class="page">
   <view class="canvas-view">
     <canvas
@@ -49,9 +47,7 @@ index.txml
 </view>
 ```
 
-index.js
-
-```js
+```js title=index.js
 Page({
   onReady() {
     this.point = {
@@ -117,9 +113,7 @@ Page({
 });
 ```
 
-index.tcss
-
-```css
+```css title=index.tcss
 .canvas-view {
   display: flex;
   justify-content: center;

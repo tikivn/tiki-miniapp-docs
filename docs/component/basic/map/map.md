@@ -4,7 +4,7 @@ title: map
 
 - `map` component sử dụng google maps để phục vụ các tác vụ liên quan tới map
 
-**_Lưu ý:_** Component này có mặt trên Tini Studio từ version 1.74.12 trở lên.
+**_Khả dụng_**: Component này có mặt trên Tini Studio từ version 1.74.12 trở lên.
 
 ## Quét mã để trải nghiệm
 
@@ -84,15 +84,17 @@ import { QRCode } from '@site/src/components/QRCode';
 | strokeColor | string       |          | Màu viền của đường tròn    |
 | strokeWidth | number       |          | Độ dày viền của đường tròn |
 
-**_Lưu ý:_** Trong một số trường hợp map không hiển thị trên device. Bạn cần khai báo giá trị cụ thể width, height cho map mà không phải là %
+:::note Lưu ý
+
+Trong một số trường hợp map không hiển thị trên device. Bạn cần khai báo giá trị cụ thể width, height cho map mà không phải là %
+
+:::
 
 ## Sample Code
 
 Một số component được sử dụng trong source [API Demo](https://github.com/tikivn/miniapp-getting-started/tree/main/api-demo).
 
-**pages/component/basic/map/index.txml**
-
-```xml
+```xml title=pages/component/basic/map/index.txml
 <view class="container">
   <view class="block">
     <map
@@ -122,9 +124,7 @@ Một số component được sử dụng trong source [API Demo](https://github
 
 ```
 
-**pages/component/basic/map/index.js**
-
-```js
+```js title=pages/component/basic/map/index.js
 const init = () => ({
   latitude: 10.779693436530149,
   longitude: 106.67971686137946,
@@ -242,9 +242,7 @@ Page({
 });
 ```
 
-**pages/component/basic/map/index.tcss**
-
-```css
+```css title=pages/component/basic/map/index.tcss
 .map {
   height: calc(var(--tf-window-height) / 2);
 }

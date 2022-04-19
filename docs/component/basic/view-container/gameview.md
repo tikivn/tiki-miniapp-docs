@@ -4,11 +4,15 @@ title: game-view
 
 `game-view` là một container component, được tối ưu hoá cho việc chạy các HTML5 game, hay còn biết đến với cái tên rút gọn H5 game, trong Tini App.
 
-***Lưu ý***: Nhằm đáp ứng nhu cầu rất lớn về phát hành game của các đối tác trên nền tảng Tini App, game-view đã được xây dựng từ web-view như một giải pháp tạm thời. Tuy nhiên, game-view sẽ sớm đổi thành native.
+:::note Lưu ý
 
-Mỗi page của Tini App chỉ có thể chứa một `game-view` duy nhất và nó mặc nhiên chiếm trọn màn hình. 
+- Nhằm đáp ứng nhu cầu rất lớn về phát hành game của các đối tác trên nền tảng Tini App, game-view đã được xây dựng từ web-view như một giải pháp tạm thời. Tuy nhiên, game-view sẽ sớm đổi thành native.
+- Mỗi page của Tini App chỉ có thể chứa một `game-view` duy nhất và nó mặc nhiên chiếm trọn màn hình.
+- Khi hoạt động, `game-view` sẽ tự động load tập tin `index.html` trong thư mục `public`.
 
-Khi hoạt động, `game-view` sẽ tự động load tập tin `index.html` trong thư mục `public`.
+:::
+
+******: 
 
 ## Sample Code
 
@@ -49,7 +53,11 @@ Danh sách các API có thể gọi trong game-view
 | [my.showLoading](/docs/api/ui/feedback/show-loading)    | Hiển thị loading.                                                     |
 | my.postMessage                                          | Gọi API nằm ngoài danh sách này.                                      |
 
-***Cảnh báo***: nhiều khả năng `my.postMessage` sẽ không còn sử dụng được với `game-view’ sau khi component này chuyển sang native.
+:::warning Cảnh báo
+
+Nhiều khả năng `my.postMessage` sẽ không còn sử dụng được với `game-view’ sau khi component này chuyển sang native.
+
+:::
 
 ## Tạo cầu để kết nối giữa game-view và các page trong Tini App
 

@@ -2,7 +2,7 @@
 title: my.createInnerAudioContext
 --- 
 
-my.createInnerAudioContext là API dùng để tạo ra InnerAudioContext - đối tượng cung cấp cho bạn các phương thức và thuộc tính để phát audio nền (background audio) trên Tini App.
+`my.createInnerAudioContext` là API dùng để tạo ra InnerAudioContext - đối tượng cung cấp cho bạn các phương thức và thuộc tính để phát audio nền (background audio) trên Tini App.
 
 ## Thuộc tính
 
@@ -14,7 +14,7 @@ my.createInnerAudioContext là API dùng để tạo ra InnerAudioContext - đ�
 | loop           | boolean      | false            | Tự động phát lại audio một khi kết thúc.                                                                    |
 | obeyMuteSwitch | boolean      | true             | Cho phép tắt tiếng audio hay ko. Nếu obeyMuteSwitch = true, dẫu có bật Mute thì audio vẫn phát ra âm thanh. |
 | volumne        | number       | 1                | Điều chỉnh âm lượng. Nhận giá trị từ 0 đến 1.                                                               |
-| duration       | number       |                  | Độ dài audio. Đơn vị tính: giây. Read only                                                                  |
+| duration       | number       |                  | Độ dài audio. Đơn vị tính: giây. Read only.                                                                  |
 | currentTime    | number       |                  | Đang phát đến thời điểm nào trong Audio. Đơn vị tính giây                                                   |
 | paused         | boolean      |                  | Audio bị pause hoặc stop                                                                                    |
 | buffered       | number       |                  | Audio được buffer (lưu trữ tạm thời) đến thời điểm nào.                                                     |

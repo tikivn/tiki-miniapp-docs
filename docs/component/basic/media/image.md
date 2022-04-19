@@ -27,7 +27,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ### Mode
 
-Image component có thể hiển thị hình ảnh ở 14 mode khác nhau, gồm 4 scaling mode và 9 clipping mode.
+`image` component có thể hiển thị hình ảnh ở 14 mode khác nhau, gồm 4 scaling mode và 9 clipping mode.
 
 #### Scaling mode
 
@@ -56,15 +56,14 @@ Image component có thể hiển thị hình ảnh ở 14 mode khác nhau, gồm
 | bottom left  | Phần dưới bên trái của hình được hiển thị nếu kích thước hình lớn hơn kích thước của image component. |
 | bottom right | Phần dưới bên phải của hình được hiển thị nếu kích thước hình lớn hơn kích thước của image component. |
 
-**_Lưu ý_**
+:::note Lưu ý
 
-> Bạn cần khai báo `width` và `height` của image component thông qua inline style hoặc trong tcss, mặc định là `width = 300px` và `height = 225px`. Thuộc tính `width` và `height` sẽ không được kế thừa trong image.
->
-> Để sử dụng hình với height là auto, bạn có thể dùng mode là `widthFix`.
->
-> Nên dùng _absolute path_ cho các đường dẫn của hình.
->
-> Không nên dùng thuộc tính `object-fit` trong tcss để canh kích thước cho image mà thay vào đó dùng `mode`.
+- Bạn cần khai báo `width` và `height` của image component thông qua inline style hoặc trong tcss, mặc định là `width = 300px` và `height = 225px`. Thuộc tính `width` và `height` sẽ không được kế thừa trong image.
+- Để sử dụng hình với height là auto, bạn có thể dùng mode là `widthFix`.
+- Nên dùng _absolute path_ cho các đường dẫn của hình.
+- Không nên dùng thuộc tính `object-fit` trong tcss để canh kích thước cho image mà thay vào đó dùng `mode`.
+
+:::
 
 ## Sample Code
 
@@ -86,9 +85,7 @@ Image component có thể hiển thị hình ảnh ở 14 mode khác nhau, gồm
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onLoad(e) {
     console.log('onLoad', e);
@@ -102,9 +99,7 @@ Page({
 });
 ```
 
-**index.tcss**
-
-```css
+```css title=index.tcss
 .image-item {
   width: 100px;
   height: 100px;

@@ -2,6 +2,8 @@
 title: icon
 ---
 
+`icon` là component dùng để hiển thị icon có sẵn trong Tini App.
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
@@ -15,14 +17,29 @@ import { QRCode } from '@site/src/components/QRCode';
 | type       | string       |                  | ✓        | Loại icon hiển thị. Nhận giá trị : [ home \|\| search \|\| calendar \|\| location \|\| setting \|\| contact \|\| chat \|\| info \|\| warning \|\| success \|\| plus \|\| minus \|\| geometry \|\| close \|\| close_circle \|\| more \|\| arrow_right \|\| arrow_left \|\| arrow_down \|\| arrow_up \|\| bookmark \|\| app_home \|\| phone_home \|\| share \|\| warning_glyph \|\| success_glyph \|\| close_glyph ] |
 | size       | number       | 24               |          | Kích thước icon. Đơn vị tính pixel.                                                                                                                                                                                                                                                                                                                                                                                |
 | color      | string       |                  |          | Màu của icon, sử dụng mã màu như trong css                                                                                                                                                                                                                                                                                                                                                                         |
+### Bộ icon của Tini App
 
-## Sử dụng
+<img src="/img/Action_icons.png" width="600px" alt="Action icons"/>
 
-### Sample Code
+---
 
-**index.txml**
+<img src="/img/Content_icons.png" width="500px" alt="Content icons"/>
 
-```xml
+---
+
+<img src="/img/Media_icons.png" width="400px" alt="Media icons"/>
+
+---
+<img src="/img/Navigation_icons.png" width="600px" alt="Navigation icons"/>
+
+---
+
+<img src="/img/Status_icons.png" width="250px" alt="Status icons"/>
+
+
+## Sample Code
+
+```xml title=index.txml
 <view class="container">
   <view class="block">
     <text class="header">Type</text>
@@ -62,9 +79,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.tcss**
-
-```css
+```css title=index.tcss
 .container {
   min-height: 100%;
   background-color: var(--gray20);
@@ -101,9 +116,7 @@ button {
 }
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   data: {
     iconSize: [20, 30, 40, 50, 60],

@@ -2,7 +2,9 @@
 title: switch
 ---
 
-`switch` dùng để chọn một giá trị
+`switch` hoạt động như một công tắc giúp người dùng chuyển đổi giữa hai trạng thái - ON vs OFF, YES vs NO, ...
+
+<img src="/img/switch_component.png" alt="switch component" style={{ margin: '0 auto', display: 'flex' }}/>
 
 ## Quét mã để trải nghiệm
 

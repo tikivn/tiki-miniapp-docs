@@ -6,9 +6,13 @@ title: web-view
 
 Mỗi page của Tini App chỉ được phép chứa một `web-view` duy nhất. `web-view` sẽ tự động chiếm toàn màn hình; tất cả các component khác sẽ bị che bởi `web-view` đó.
 
-Bạn cần phải có Nhà phát triển loại công ty/doanh nghiệp để có thể khai thác đầy đủ tính năng của `web-view`.
+Bạn cần có tài khoản Nhà phát triển loại Công ty để có thể khai thác đầy đủ tính năng của `web-view`.
 
-**_Quan trọng_**: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên [Tini Console](https://developer.tiki.vn/apps) trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/development/tini-console/whitelist-domains).
+:::note Quan trọng
+
+Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên [Tini Console](https://developer.tiki.vn/apps) trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/development/tini-console/whitelist-domains).
+
+:::
 
 ## Các API có thể được gọi trong web-view
 
@@ -42,15 +46,11 @@ Bạn cần phải có Nhà phát triển loại công ty/doanh nghiệp để c
 
 ## Sample Code
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <web-view id="web-view1" src="https://dev-tikiscp.tbox.vn/miniapps/files/h5.html" onMessage="onMessage" />
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onMessage(e) {
     console.log(e.detail.data); // it will log "ping" to console

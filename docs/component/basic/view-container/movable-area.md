@@ -2,17 +2,17 @@
 title: movable-area
 ---
 
-## Giới thiệu
+`movable-area` là thành phần quy định phạm di chuyển của các [movable-view](movable-view) nằm trong nó.
 
-movable-area là thành phần quy định phạm di chuyển của các [movable-view](movable-view) nằm trong nó.
+## Thuộc tính
 
-## Sử dụng
+| Thuộc tính    | Kiểu dữ liệu    | Giá trị mặc định | Mô tả                                                                                                                  |
+| ---------- | ------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| scale-area | boolean | false         | Khi các movable-view cho phép scaling. Bạn có thể dùng thuộc tính này để tắt việc scaling của tất cả component ở trong area. |
 
-### Sample Code
+## Sample Code
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view>
   <block-header title="Usage" description="A movable view container. It can be dragged to move on a page. " />
   <view class="block-content">
@@ -66,9 +66,5 @@ movable-area là thành phần quy định phạm di chuyển của các [movabl
 </view>
 ```
 
-### Chi tiết
 
-| Property   | Type    | Default Value | Description                                                                                                                  |
-| ---------- | ------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| scale-area | boolean | false         | Khi các movable-view cho phép scaling. Bạn có thể dùng thuộc tính này để tắt việc scaling của tất cả component ở trong area. |
 

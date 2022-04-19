@@ -2,9 +2,19 @@
 title: my.createVideoContext
 ---
 
-## Giới thiệu
+`my.createVideoContext` là API dùng để tạo ra VideoContext - đối tuợng quản lý việc phát video. Cụ thể hơn, nó cung cấp các hàm giúp điều khiển [video](/docs/component/basic/media/video) component.
 
-**my.createVideoContext** là API dùng để tạo ra VideoContext - đối tuợng quản lý việc phát video. Cụ thể hơn, nó cung cấp các hàm giúp điều khiển [video](/docs/component/basic/media/video) component.
+## Return value
+
+Trả về Video Context Object với hỗ trợ thuộc tính và methods theo như bên dưới.
+
+### Video Context Methods
+
+| Phương thức | Tham số  | Mô tả                                                                 |
+| ----------- | -------- | --------------------------------------------------------------------- |
+| play        | no       | Phát video.                                                           |
+| pause       | no       | Dừng phát video. Nếu phát tiếp, sẽ bắt đầu từ thời điểm bị tam ngưng. |
+| seek        | position | Nhảy đến một thời điểm cụ thể trong audio.                            |
 
 ## Sample Code
 
@@ -22,9 +32,7 @@ title: my.createVideoContext
   />
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onReady() {
     const video = my.createAudioContext('video');
@@ -33,13 +41,4 @@ Page({
 })
 ```
 
-### Return value
 
-Trả về Video Context Object với hỗ trợ thuộc tính và methods theo như bên dưới.
-
-### Video Context Methods
-| Phương thức | Tham số  | Mô tả                                                                 |
-| ----------- | -------- | --------------------------------------------------------------------- |
-| play        | no       | Phát video.                                                           |
-| pause       | no       | Dừng phát video. Nếu phát tiếp, sẽ bắt đầu từ thời điểm bị tam ngưng. |
-| seek        | position | Nhảy đến một thời điểm cụ thể trong audio.                            |

@@ -2,11 +2,11 @@
 title: lottie
 ---
 
-Lottie là thư viện cho phép chạy các hoạt ảnh kết xuất từ After Effects và có thể chạy trên ứng dụng mobile và web. Bạn có thể điều khiển lottie component thông qua [my.createLottieContext](/docs/api/media/lottie/create-lottie-context) api.
+`lottie` là thư viện cho phép chạy các hoạt ảnh kết xuất từ After Effects và có thể chạy trên ứng dụng mobile và web. Bạn có thể điều khiển `lottie` component thông qua [my.createLottieContext](/docs/api/media/lottie/create-lottie-context) api.
 
 Để hiểu thêm về lottie, vui lòng tham khảo https://airbnb.io/lottie.
 
-**Khả dụng**: Lottie component chỉ hỗ trợ từ phiên bản 17.5.2 trở lên
+***Khả dụng***: chỉ hỗ trợ từ phiên bản 17.5.2 trở lên.
 
 ## Thuộc tính
 
@@ -20,15 +20,17 @@ Lottie là thư viện cho phép chạy các hoạt ảnh kết xuất từ Afte
 | onDataReady    | event        | Sự kiện được kích hoạt khi animation được load xong.                                                                                                      |
 | onLoopComplete | event        | Animation đuợc phát lần đầu tiên. Nó tiếp tục được phát lại (loop) lần 1, 2, 3 ... Ngay khi loop lần 1 kết thúc, sự kiện onLoopComplete sẽ đuợc kích hoạt |
 
-**_Lưu ý_**: Nếu gặp trường hợp lottie không hiển thị, bạn có thể kiểm tra nội dung của file lottie [tại đây](https://lottiefiles.com/preview)
+:::note Lưu ý
+
+Nếu gặp trường hợp lottie không hiển thị, bạn có thể kiểm tra nội dung của file lottie [tại đây](https://lottiefiles.com/preview)
+
+:::
 
 ## Sample Code
 
 Một số component được sử dụng trong source [API Demo](https://github.com/tikivn/miniapp-getting-started/tree/main/api-demo).
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view class="container">
   <view class="block">
     <lottie
@@ -58,9 +60,7 @@ Một số component được sử dụng trong source [API Demo](https://github
 </view>
 ```
 
-**index.js**
-
-```javascript
+```javascript title=index.js
 Page({
   speed: 1,
   onLoad() {

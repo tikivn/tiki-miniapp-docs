@@ -2,7 +2,7 @@
 title: my.compressVideo
 ---
 
-**my.compressVideo** là API dùng để nén video khiến chúng có dung lượng nhỏ hơn.
+`my.compressVideo` là API dùng để nén video khiến chúng có dung lượng nhỏ hơn.
 
 ## Quét mã để trải nghiệm
 
@@ -24,7 +24,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                         |
 | ---------- | ------------ | --------------------------------------------- |
-| filePath   | String       | Chứa đường đẫn tạm thời của video đã được nén |
+| filePath   | string       | Chứa đường đẫn tạm thời của video đã được nén |
 
 ### Compress level
 

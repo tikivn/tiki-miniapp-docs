@@ -29,9 +29,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ## Sample Code
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <video
     id="video"
     controls="false"
@@ -45,9 +43,7 @@ import { QRCode } from '@site/src/components/QRCode';
   />
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onReady() {
     const video = my.createAudioContext('video');
