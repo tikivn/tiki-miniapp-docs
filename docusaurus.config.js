@@ -28,7 +28,7 @@ module.exports = {
       typesenseCollectionName: 'tiniapp-docs',
       typesenseServerConfig: {
         nodes: [
-           {
+          {
             // host: 'localhost',
             // port: 8108,
             // protocol: 'http',
@@ -45,7 +45,7 @@ module.exports = {
       },
       // Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/documents.md#search-parameters
       typesenseSearchParameters: {
-        filter_by: 'language:=vi'
+        filter_by: 'language:=vi',
       },
       contextualSearch: false,
     },
@@ -161,6 +161,10 @@ module.exports = {
         },
         sitemap: {
           changefreq: 'daily',
+        },
+        gtag: {
+          trackingID: 'GTM-PHDXG93',
+          anonymizeIP: true,
         },
       },
     ],
