@@ -2,22 +2,23 @@
 title: my.getCart
 ---
 
-`my.getCart` là API trả về tổng sản phẩm đang có trong giỏ hàng (cart) của Tiki.
+`my.getCart` là API trả về tổng sản phẩm đang có trong giỏ hàng (cart) của Tiki, được lọc theo sellerId.
 
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                   |
 | ---------- | ------------ | :------: | ----------------------------------------------------------------------- |
+| sellerId   | Number       |    ✓     | Id của nhà bán                                                          |
 | success    | Function     |          | Callback function khi get cart được thực hiện thành công                |
 | fail       | Function     |          | Callback function khi get cart thất bại, argument sẽ là error message   |
 | complete   | Function     |          | Callback function khi get cart kết thúc cho dù thành công hay thất bại. |
 
 ### Giá trị trong success callback
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                          |
-| ---------- | ------------ | ------------------------------ |
-| total      | number       | Tổng sản phẩm                  |
-| items      | array        | Danh sách sản phẩm (tối đa 30) |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                  |
+| ---------- | ------------ | ------------------------------------------------------ |
+| total      | number       | Tổng sản phẩm trong giỏ hàng theo sellerId             |
+| items      | array        | Danh sách tất cả sản phẩm trong giỏ hàng theo sellerId |
 
 ## Sample Code
 
@@ -36,6 +37,7 @@ title: my.getCart
 Page({
   onGetCart() {
     my.getCart({
+      sellerId: 1,
       success: (res) => {
         console.log(res);
         my.alert({
