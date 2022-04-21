@@ -45,3 +45,20 @@ Lưu ý giá trị của params `inputs` là một JSON string
 ```
 
 Lưu ý giá trị của params `inputs` là một JSON string
+
+### Template 3
+
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                        |
+| ---------- | ------------ | :------: | ---------------------------- |
+| email      | string       |    ✓     | Email của khách hàng         |
+| phone      | string       |    ✓     | Số điện thoại của khách hàng |
+
+## Ví dụ
+
+Ứng dụng "app.test" được yêu cầu gửi dữ liệu của hồ sơ theo Template 3, thì API request sẽ là:
+
+```
+{"customer_id":"333","inputs":"{\"email\":\"john@gmail.com\",\"phone\":\"090123443\"}"}
+```
+
+Lưu ý giá trị của params `inputs` là một JSON string
