@@ -140,6 +140,7 @@ module.exports = {
       },
     ],
     path.resolve(__dirname, './plugins/docusaurus-plugin-facebook-pixel'),
+    path.resolve(__dirname, './plugins/docusaurus-plugin-gtm'),
   ],
   presets: [
     [
@@ -161,10 +162,6 @@ module.exports = {
         },
         sitemap: {
           changefreq: 'daily',
-        },
-        gtag: {
-          trackingID: 'GTM-PHDXG93',
-          anonymizeIP: true,
         },
       },
     ],
