@@ -19,7 +19,7 @@ Cách thức lấy mã QR hay liên kết của một Tini App như sau:
 
 ## Tạo mã QR gắn UTM cho ứng dụng
 
-Tiki cung cấp công cụ [Mini App QR Code Generator](/qr-code) tạo ra mã QR có gắn các tham số utm_campaign, utm_source và utm_medium cho các tiện ích.
+Tiki cung cấp công cụ [Mini App QR Code Generator](/qr-code) giúp tạo ra mã QR có gắn các tham số utm_campaign, utm_source và utm_medium cho các tiện ích.
 
 UTM cho bạn biết được những người mở tiện ích của bạn của mình đến từ nguồn nào đâu, bằng phương tiện gì, hoặc từ các chiến dịch nào; từ đó theo dõi các chiến dịch marketing hiệu quả hơn.
 
