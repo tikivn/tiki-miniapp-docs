@@ -43,6 +43,7 @@ module.exports = {
       collapsed: true,
       items: [
         'development/tini-console/overview',
+        'development/tini-console/app_statuses',
         'development/tini-console/delete',
         'development/tini-console/hide',
         'development/tini-console/share-app',
