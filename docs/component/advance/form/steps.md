@@ -2,19 +2,37 @@
 title: Steps
 ---
 
-## Giới thiệu
-
-Component `steps` dùng để tạo các bước trên multi-step form.
-
-## Sử dụng
+`steps` là component dùng để tạo các bước trên multi-step form.
 
 <img src="/img/form-steps.svg" alt="form-steps" style={{ margin: '0 auto', display: 'flex' }}/>
 
-### Sample Code
+## Cài đặt `tini-ui`:
 
-**index.txml**
+```bash
+$> yarn add @tiki.vn/tini-ui
+```
 
-```xml
+
+## Thuộc tính
+
+| Thuộc tính       | Kiểu dữ liệu                                            | Giá trị mặc định              | Bắt buộc | Mô tả                                                                                                              |
+| --------------- | ------------------------------------------------ | -------------------- | :------: | ------------------------------------------------------------------------------------------------------------------------- |
+| className       | `string`                                         | ""                   |        | Custom class cho component                                                                                                |
+| style           | `string`                                         | ""                   |        | Custom inline style cho component                                                                                         |
+| direction       | `'horizontal'` \| `'vertical'`                   |                      |  ✓      | Hướng của steps menu                                                                                                      |
+| activeIndex     | `number` \| `null`                               |                      |  ✓      | Index của step hiện tại                                                                                                   |
+| failIndex       | `number` \| `null`                               |                      |        | Index của step bị bỏ qua, step chưa hoàn thành hoặc lỗi                                                                   |
+| items           | `Array<{ label?: string; sub?:string }>` |                      |  ✓      | Danh sách các step. Bạn có thể truyền label hoặc sub rỗng và sử dụng custom slot để chỉnh sửa item như ví dụ trên |
+| inactiveColor   | `string`                                         | 'rgba(0, 0, 0, 0.1)' |        | Màu của line và milestone khi step inactive                                                                                     |
+| activeColor     | `string`                                         | '#1a94ff'            |        | Màu của line và milestone khi step active                                                                                       |
+| milestoneErrorColor   | `string`                                         | '#ff424f'            |        | Màu của milestone khi step được đánh dấu error(index === failIndex)                                                             |
+| milestoneSize         | `string`                                         | '16px'               |        | Size của milestone                                                                                                              |
+| reverseVertical | `boolean`                                        | false                |        | Đảo ngược hướng của các vertical steps theo chiều bắt đầu từ dưới lên trên                                                |
+
+
+## Sample Code
+
+```xml title=index.txml
 <view class="container">
   <steps
   className="demo-steps-class"
@@ -32,9 +50,7 @@ Component `steps` dùng để tạo các bước trên multi-step form.
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   data: {
     activeIndex: 2,
@@ -68,18 +84,3 @@ Page({
 });
 ```
 
-### Chi tiết
-
-| Property        | Type                                             | Default              | Required | subription                                                                                                               |
-| --------------- | ------------------------------------------------ | -------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
-| className       | `string`                                         | ""                   | no       | Custom class cho component                                                                                                |
-| style           | `string`                                         | ""                   | no       | Custom inline style cho component                                                                                         |
-| direction       | `'horizontal'` \| `'vertical'`                   |                      | yes      | Hướng của steps menu                                                                                                      |
-| activeIndex     | `number` \| `null`                               |                      | yes      | Index của step hiện tại                                                                                                   |
-| failIndex       | `number` \| `null`                               |                      | no       | Index của step bị bỏ qua, step chưa hoàn thành hoặc lỗi                                                                   |
-| items           | `Array<{ label?: string; sub?:string }>` |                      | yes      | Danh sách các step. Bạn có thể truyền label hoặc sub rỗng và sử dụng custom slot để chỉnh sửa item như ví dụ trên |
-| inactiveColor   | `string`                                         | 'rgba(0, 0, 0, 0.1)' | no       | Màu của line và milestone khi step inactive                                                                                     |
-| activeColor     | `string`                                         | '#1a94ff'            | no       | Màu của line và milestone khi step active                                                                                       |
-| milestoneErrorColor   | `string`                                         | '#ff424f'            | no       | Màu của milestone khi step được đánh dấu error(index === failIndex)                                                             |
-| milestoneSize         | `string`                                         | '16px'               | no       | Size của milestone                                                                                                              |
-| reverseVertical | `boolean`                                        | false                | no       | Đảo ngược hướng của các vertical steps theo chiều bắt đầu từ dưới lên trên                                                |

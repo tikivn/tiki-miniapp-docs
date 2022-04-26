@@ -2,11 +2,10 @@
 title: Search bar
 ---
 
-## Giới thiệu
 
 - `search-bar` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) hỗ trợ xây dựng component tìm kiếm.
 
-<div style={{ width: '100%', maxWidth: 360 }}>
+<div style={{ width: '100%', maxWidth: 250 }}>
   <img src="https://salt.tikicdn.com/ts/tiniapp/8b/2e/40/1c13b92f98eac501ee8f71b17c3513ca.png" alt="search-bar-1"/>
   <img src="https://salt.tikicdn.com/ts/tiniapp/db/f7/c4/16d948fe9f27711a598509b9d30fc5bc.png" alt="search-bar-2"/>
 </div>
@@ -51,9 +50,7 @@ $> yarn add @tiki.vn/tini-ui
 
 ## Sample Code
 
-**index.json**
-
-```json
+```json title=index.json
 {
   "defaultTitle": "Search bar",
   "usingComponents": {
@@ -62,9 +59,7 @@ $> yarn add @tiki.vn/tini-ui
 }
 ```
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <search-bar
   placeholder="With label"
   onInput="onInput"
@@ -101,9 +96,7 @@ $> yarn add @tiki.vn/tini-ui
 
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   data: {
     value: 'value'

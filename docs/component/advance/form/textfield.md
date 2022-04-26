@@ -2,8 +2,6 @@
 title: Textfield
 ---
 
-## Giới thiệu
-
 - `textfield` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) với chức năng tương tự như thẻ [input](/docs/component/basic/form/input) nhưng hỗ trợ thêm label, icon và một số tính năng mở rộng về giao diện.
 - Để sử dụng `textfield`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.0.18` trở lên.
 
@@ -57,9 +55,7 @@ $> yarn add @tiki.vn/tini-ui
 
 ## Sample Code
 
-**index.json**
-
-```json
+```json title=index.json
 {
   "defaultTitle": "Text field",
   "usingComponents": {
@@ -71,9 +67,7 @@ $> yarn add @tiki.vn/tini-ui
 }
 ```
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view class="page">
   <block-header title="Usage"
     description="Text fields are used to allow users to provide text input when the expected input is short. Input component has a range of options and supports several text formats including numbers." />
@@ -155,9 +149,7 @@ $> yarn add @tiki.vn/tini-ui
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   data: {
     filled: 'Filled'
@@ -180,9 +172,7 @@ Page({
 });
 ```
 
-**index.tcss**
-
-```css
+```css title=index.tcss
 .list-item-label {
   margin-bottom: 16px;
 }

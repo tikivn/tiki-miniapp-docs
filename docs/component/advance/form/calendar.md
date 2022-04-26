@@ -2,8 +2,6 @@
 title: Calendar
 ---
 
-## Giới thiệu
-
 - `calendar` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) là thành phẩn nhỏ gọn hiển thị thông tin lịch (ngày, tháng, năm).
 - Để sử dụng `calendar`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.2.1-rc.8` trở lên.
 
@@ -13,19 +11,29 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/form/calendar/index" />
 
-## Sử dụng
-
-### Cài đặt `tini-ui`:
+## Cài đặt `tini-ui`:
 
 ```bash
 $> yarn add @tiki.vn/tini-ui
 ```
 
-### Sample Code
+## Chi tiết
 
-**index.json**
+| Thuộc tính    | Kiểu dữ liệu                                                                                         | Giá trị mặc định  | Mô tả                                                                        |
+| ------------ | -------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------------------------------------------------- |
+| className    | string                                                                                       | ''             | Custom class cho calendar                                                          |
+| style        | string                                                                                       | ''             | Style cho calendar                                                                 |
+| locale       | `'en'` \| `'vi'`                                                                             | 'vi            | Hỗ trợ Tiếng Việt / Tiếng Anh.                                                     |
+| tagData      | [{ date: '11-11-2021', tag: 'Aa', tagColor: 'blue', tagInactiveColor: 'red',disable: true},] | []             | Có thể đặt tag (color) hoặc disabled một số ngày cụ thể                            |
+| mode         | `'timeOnly', 'single' , 'range`                                                              | 'timeOnly'     | Chế độ hiển thị/chọn lịch. (single - chọn một ngày, range - chọn khoảng thời gian) |
+| header       | `'year', 'month'`                                                                            | 'month'        | Nếu set 'year' có thể chọn next/pre year.                                          |
+| selectedDate | []                                                                                           | []             | Ngày đang được chọn. (format là timestamp)                                         |
+| onSelect     | event                                                                                        | (data) => void | Trigger function này khi chọn ngày bên trái của calendar                           |
+| onChange     | event                                                                                        | (data) => void | Trigger function này khi thay đổi tháng/năm bên phải của calendar                  |
 
-```json
+## Sample Code
+
+```json title=index.json
 {
   "defaultTitle": "Calendar",
   "usingComponents": {
@@ -37,9 +45,7 @@ $> yarn add @tiki.vn/tini-ui
 }
 ```
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <template name="variant-format">
   <block-variant header="Variant" title="1. Header" description="Default, Title with fast navigation & Time only">
     <view class="mt-medium">
@@ -84,9 +90,7 @@ $> yarn add @tiki.vn/tini-ui
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   data: {
     tagData: [
@@ -130,16 +134,3 @@ Page({
 });
 ```
 
-### Chi tiết
-
-| Property     | Type                                                                                         | Default Value  | Description                                                                        |
-| ------------ | -------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------------------------------------------------- |
-| className    | string                                                                                       | ''             | Custom class cho calendar                                                          |
-| style        | string                                                                                       | ''             | Style cho calendar                                                                 |
-| locale       | `'en'` \| `'vi'`                                                                             | 'vi            | Hỗ trợ Tiếng Việt / Tiếng Anh.                                                     |
-| tagData      | [{ date: '11-11-2021', tag: 'Aa', tagColor: 'blue', tagInactiveColor: 'red',disable: true},] | []             | Có thể đặt tag (color) hoặc disabled một số ngày cụ thể                            |
-| mode         | `'timeOnly', 'single' , 'range`                                                              | 'timeOnly'     | Chế độ hiển thị/chọn lịch. (single - chọn một ngày, range - chọn khoảng thời gian) |
-| header       | `'year', 'month'`                                                                            | 'month'        | Nếu set 'year' có thể chọn next/pre year.                                          |
-| selectedDate | []                                                                                           | []             | Ngày đang được chọn. (format là timestamp)                                         |
-| onSelect     | event                                                                                        | (data) => void | Trigger function này khi chọn ngày bên trái của calendar                           |
-| onChange     | event                                                                                        | (data) => void | Trigger function này khi thay đổi tháng/năm bên phải của calendar                  |

@@ -2,8 +2,6 @@
 title: Stepper
 ---
 
-## Giới thiệu
-
 `stepper` dùng để tăng hoặc giảm giá trị hiện tại.
 
 ## Quét mã để trải nghiệm
@@ -12,13 +10,33 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/form/stepper/index" />
 
-## Sử dụng
+## Cài đặt `tini-ui`:
 
-### Sample Code
+```bash
+$> yarn add @tiki.vn/tini-ui
+```
 
-**index.txml**
 
-```xml
+## Thuộc tính
+
+| Thuộc tính | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                    |
+| ---------- | ------- | ------- | ----------------------------------------------------------------------------------------------- |
+| className  | string  |         |  Custom class cho component                                                                      |
+| min        | number  | 0       | Giá trị nhỏ nhất                                                                                |
+| max        | number  | 10000   | Giá trị lớn nhất                                                                                |
+| value      | number  | 10      | Giá trị khởi tạo                                                                                |
+| step       | number  | 1       | Giá trị mỗi lần tăng hoặc giảm, step có thể nhận giá trị kiểu double                            |
+| disabled   | boolean | false   | Disable stepper component                                                                       |
+| readOnly   | boolean | false   | Nếu cờ được bật lên, users không thể thay đổi giá trị của stepper                               |
+| showNumber | boolean | false   | Nếu cờ được bật lên, hiển thị giá trị trên stepper                                              |
+| inputWidth | number  | 40px    | Độ rộng của phần input trong stepper                                                            |
+| vertical   | boolean | false   | Nếu cờ này được bật, stepper sẽ được hiện thị theo chiều dọc thay vì chiều ngang                |
+| onChange   | event   |         | Sự kiện được gọi khi giá trị thay đổi, với data có dạng `(value: Number, mode: String) => void` |
+
+
+## Sample Code
+
+```xml title=index.txml
 <view class="container">
   <stepper
     onChange="callBackFn"
@@ -30,9 +48,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   data: {
     value: 8
@@ -43,18 +59,3 @@ Page({
 });
 ```
 
-### Chi tiết
-
-| Property   | Type    | default | required | Description                                                                                     |
-| ---------- | ------- | ------- | -------- | ----------------------------------------------------------------------------------------------- |
-| className  | string  |         | no       | custom class cho component                                                                      |
-| min        | number  | 0       | no       | giá trị nhỏ nhất                                                                                |
-| max        | number  | 10000   | no       | giá trị lớn nhất                                                                                |
-| value      | number  | 10      | no       | giá trị khởi tạo                                                                                |
-| step       | number  | 1       | no       | giá trị mỗi lần tăng hoặc giảm, step có thể nhận giá trị kiểu double                            |
-| disabled   | boolean | false   | no       | disable stepper component                                                                       |
-| readOnly   | boolean | false   | no       | nếu cờ được bật lên, users không thể thay đổi giá trị của stepper                               |
-| showNumber | boolean | false   | no       | nếu cờ được bật lên, hiển thị giá trị trên stepper                                              |
-| inputWidth | number  | 40px    | no       | độ rộng của phần input trong stepper                                                            |
-| vertical   | boolean | false   | no       | nếu cờ này được bật, stepper sẽ được hiện thị theo chiều dọc thay vì chiều ngang                |
-| onChange   | event   |         |          | sự kiện được gọi khi giá trị thay đổi, với data có dạng `(value: Number, mode: String) => void` |

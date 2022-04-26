@@ -2,9 +2,13 @@
 title: PIN
 ---
 
-## Giới thiệu
+Để sử dụng `PIN`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.4.1` trở lên.
 
-- Để sử dụng `PIN`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.4.1` trở lên.
+<div style={{ width: '100%', maxWidth: 250 }}>
+  <img src="/img/pin-1.png" alt="form-steps"/>
+  <img src="/img/pin-2.png" alt="form-steps"/>
+  <img src="/img/pin-3.png" alt="form-steps"/>
+</div>
 
 ## Quét mã để trải nghiệm
 
@@ -12,27 +16,16 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/form/pin/index" />
 
-## Sử dụng
-
-<div style={{ width: '100%', maxWidth: 360 }}>
-  <img src="/img/pin-1.png" alt="form-steps"/>
-  <img src="/img/pin-2.png" alt="form-steps"/>
-  <img src="/img/pin-3.png" alt="form-steps"/>
-</div>
-
-### Sample Code
-
-### Cài đặt `tini-ui`:
+## Cài đặt `tini-ui`:
 
 ```bash
 $> yarn add @tiki.vn/tini-ui
 ```
 
-### Sample Code
+## Sample Code
 
-**index.json**
 
-```json
+```json title=index.json
 {
   "defaultTitle": "PIN",
   "usingComponents": {
@@ -42,9 +35,7 @@ $> yarn add @tiki.vn/tini-ui
 }
 ```
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view class="page">
   <block-variant
     header="Variants"
@@ -99,9 +90,7 @@ $> yarn add @tiki.vn/tini-ui
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onPinChange(pin, position) {
     console.log(
@@ -115,9 +104,9 @@ Page({
 });
 ```
 
-### Chi tiết
+## Thuộc tính 
 
-| Property   | Type                  | Default Value                             | Description                                                                   |
+| Thuộc tính   | Kiểu dữ liệu                   |  Giá trị mặc định                           | Mô tả                                                                   |
 | ---------- | --------------------- | ----------------------------------------- | ----------------------------------------------------------------------------- |
 | className  | string                | ''                                        | Custom class                                                                  |
 | style      | string                | ''                                        | Inline style                                                                  |

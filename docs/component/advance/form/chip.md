@@ -2,8 +2,6 @@
 title: Chip
 ---
 
-## Giới thiệu
-
 - `chip` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) là thành phẩn nhỏ gọn diễn tả cho input, attribute, hoặc action.
 - Để sử dụng `chip`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.2.1` trở lên.
 
@@ -13,19 +11,34 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/form/chip/index" />
 
-## Sử dụng
-
-### Cài đặt `tini-ui`:
+## Cài đặt `tini-ui`:
 
 ```bash
 $> yarn add @tiki.vn/tini-ui
 ```
 
-### Sample Code
+## Thuộc tính
 
-**index.json**
+| Thuộc tính       | Kiểu dữ liệu     | Giá trị mặc định | Mô tả                                                |
+| -------------- | ------- | ------------- | ----------------------------------------------------------- |
+| className      | string  | ''            | Custom class cho chip                                       |
+| style          | string  | ''            | Style cho chip                                              |
+| content        | string  | ''            | Text content của chip                                       |
+| active         | boolean | false         | Nếu set `true` chip sẽ được active                          |
+| suffixIcon     | string  | ''            | suffixIcon của chip                                         |
+| suffixImage    | string  | ''            | suffixImage của chip                                        |
+| prefixIcon     | string  | ''            | prefixIcon của chip                                         |
+| prefixIcon     | string  | ''            | suffixIcon của chip                                         |
+| iconLeftColor  | string  | '#1A94FF'     | suffixIcon của chip                                         |
+| iconRightColor | string  | '#1A94FF'     | suffixIcon của chip                                         |
+| disabled       | boolean | false         | Nếu set `true` chip sẽ bị disabled                          |
+| onClick        | event   | () => void    | Trigger function này khi click vào chip                     |
+| onLeftClick    | event   | () => void    | Trigger function này khi click image/icon bên trái của chip |
+| onRightClick   | event   | () => void    | Trigger function này khi click image/icon bên phải của chip |
 
-```json
+## Sample Code
+
+```json title=index.json
 {
   "defaultTitle": "Chip",
   "usingComponents": {
@@ -37,9 +50,7 @@ $> yarn add @tiki.vn/tini-ui
 }
 ```
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <template name="variant-format">
   <block-variant header="Variant" title="1. Format"
     description="Content only, Delete action, Custom icon, Icon & Image">
@@ -74,9 +85,7 @@ $> yarn add @tiki.vn/tini-ui
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onClick(event) {
     console.log('onClick Chip', event);
@@ -90,21 +99,4 @@ Page({
 });
 ```
 
-### Chi tiết
 
-| Property       | Type    | Default Value | Description                                                 |
-| -------------- | ------- | ------------- | ----------------------------------------------------------- |
-| className      | string  | ''            | Custom class cho chip                                       |
-| style          | string  | ''            | Style cho chip                                              |
-| content        | string  | ''            | Text content của chip                                       |
-| active         | boolean | false         | Nếu set `true` chip sẽ được active                          |
-| suffixIcon     | string  | ''            | suffixIcon của chip                                         |
-| suffixImage    | string  | ''            | suffixImage của chip                                        |
-| prefixIcon     | string  | ''            | prefixIcon của chip                                         |
-| prefixIcon     | string  | ''            | suffixIcon của chip                                         |
-| iconLeftColor  | string  | '#1A94FF'     | suffixIcon của chip                                         |
-| iconRightColor | string  | '#1A94FF'     | suffixIcon của chip                                         |
-| disabled       | boolean | false         | Nếu set `true` chip sẽ bị disabled                          |
-| onClick        | event   | () => void    | Trigger function này khi click vào chip                     |
-| onLeftClick    | event   | () => void    | Trigger function này khi click image/icon bên trái của chip |
-| onRightClick   | event   | () => void    | Trigger function này khi click image/icon bên phải của chip |
