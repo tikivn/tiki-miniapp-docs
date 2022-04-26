@@ -12,19 +12,17 @@ title: Toast Bar
 
 <!-- <QRCode page="pages/component/advance/form/tooltip/index" /> -->
 
-## Sử dụng
 
-### Cài đặt `tini-ui`:
+## Cài đặt `tini-ui`:
 
 ```bash
 $> yarn add @tiki.vn/tini-ui
 ```
 
-### Sample Code
+## Sample Code
 
-**index.json**
 
-```json
+```json title=index.json
 {
   "defaultTitle": "Toast Bar",
   "usingComponents": {
@@ -33,9 +31,7 @@ $> yarn add @tiki.vn/tini-ui
 }
 ```
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <button onTap="onShowToast">Show Toast</button>
 <toast-bar
   onClose="onCloseToast"
@@ -47,9 +43,7 @@ $> yarn add @tiki.vn/tini-ui
   type="error" />
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   data: {
     showToast: false
@@ -63,9 +57,9 @@ Page({
 });
 ```
 
-### Chi tiết
+## Thuộc tính 
 
-| Property          | Type                                 | Default Value | Description                                                                                     |
+| Thuộc tính           | Kiểu dữ liệu                                 | Giá trị mặc định   | Mô tả                                                                                      |
 | ----------------- | ------------------------------------ | ------------- | ----------------------------------------------------------------------------------------------- |
 | type              | `'success'` \| `'error'` \| `'info'` | 'success'     | Loại toast bar, mỗi type sẽ có một màu khác nhau                                                |
 | iconLeft          | string                               | ''            | Icon phía bên trái, hỗ trợ các giá trị trong [icon component](/docs/component/basic/basic/icon) |

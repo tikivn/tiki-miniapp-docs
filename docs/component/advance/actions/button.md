@@ -2,8 +2,6 @@
 title: Button
 ---
 
-## Giới thiệu
-
 [Tini Button](https://www.figma.com/file/C2Nq0TcxMbe0vvuVpLY4Gh/?node-id=549%3A6274) là một button component được xây dựng dựa trên Design System của Tiki.
 
 <img alt="Tiki Tini Button - Tini UI Design System Community" src="https://i.imgur.com/O4p4xQG.png"/>
@@ -14,9 +12,23 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/actions/button/index" />
 
-## Sử dụng
+## Thuộc tính
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu                                                | Giá trị mặc định | Mô tả                                                                                                                                                |
+| :--------- | :---------------------------------------------------------- | :--------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| onTap      | function([EventObject](/docs/framework/event/event-object)) |                  | Hàm xử lý được gọi khi người dùng tap vào nút.                                                                                                       |
+| size       | enum('large', 'medium', 'small')                            | `large`          | Kích thước của button.                                                                                                                               |
+| type       | enum('solid', 'outline', 'ghost')                           | `solid`          | Kiểu định sẵn của button.                                                                                                                            |
+| shape      | enum('pill', 'rounded', 'circle', 'square')                 | `pill`           | Hình dạng định sẵn của button.                                                                                                                       |
+| disabled   | bool                                                        | `false`          | Nếu set về `true`, tắt tất cả interactions cho button.                                                                                               |
+| skeleton   | bool                                                        | `false`          | Nếu set về `true`, tắt tất cả interactions cho button và hiển thị default skeleton.                                                                  |
+| loading    | bool                                                        | `false`          | Nếu set về `true`, tắt tất cả interactions cho button, hiển thị loading indicator.                                                                   |
+| iconName   | enum(icon:type)                                             |                  | Hiển thị một icon ở vị trí mặc định, icon sẽ bị ẩn nếu `loading` được đặt về `true`. Xem danh sách icon [tại đây](/docs/component/basic/basic/icon). |
+| formType   | formType                                                    |                  | Xem thêm [button:`formType`](/docs/component/basic/form/button).                                                                                     |
+| class      | string                                                      |                  | Class của button.                                                                                                                                    |
+| style      | string                                                      |                  | Inline styles cho button.                                                                                                                            |
+
+## Sample Code
 
 Khai báo components:
 
@@ -43,22 +55,3 @@ Page({
 });
 ```
 
-### Chi tiết
-
-#### Props Reference
-
-| Thuộc tính | Kiểu dữ liệu                                                | Giá trị mặc định | Mô tả                                                                                                                                                |
-| :--------- | :---------------------------------------------------------- | :--------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| onTap      | function([EventObject](/docs/framework/event/event-object)) |                  | Hàm xử lý được gọi khi người dùng tap vào nút.                                                                                                       |
-| size       | enum('large', 'medium', 'small')                            | `large`          | Kích thước của button.                                                                                                                               |
-| type       | enum('solid', 'outline', 'ghost')                           | `solid`          | Kiểu định sẵn của button.                                                                                                                            |
-| shape      | enum('pill', 'rounded', 'circle', 'square')                 | `pill`           | Hình dạng định sẵn của button.                                                                                                                       |
-| disabled   | bool                                                        | `false`          | Nếu set về `true`, tắt tất cả interactions cho button.                                                                                               |
-| skeleton   | bool                                                        | `false`          | Nếu set về `true`, tắt tất cả interactions cho button và hiển thị default skeleton.                                                                  |
-| loading    | bool                                                        | `false`          | Nếu set về `true`, tắt tất cả interactions cho button, hiển thị loading indicator.                                                                   |
-| iconName   | enum(icon:type)                                             |                  | Hiển thị một icon ở vị trí mặc định, icon sẽ bị ẩn nếu `loading` được đặt về `true`. Xem danh sách icon [tại đây](/docs/component/basic/basic/icon). |
-| formType   | formType                                                    |                  | Xem thêm [button:`formType`](/docs/component/basic/form/button).                                                                                     |
-| class      | string                                                      |                  | Class của button.                                                                                                                                    |
-| style      | string                                                      |                  | Inline styles cho button.                                                                                                                            |
-
----

@@ -2,9 +2,7 @@
 title: Uploader
 ---
 
-## Giới thiệu
-
-- `uploader` là component thuộc [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) hỗ trợ chọn và xem trước file (Hiện tại chỉ hỗ trợ file là hình ảnh).
+`uploader` là component thuộc [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) hỗ trợ chọn và xem trước tập tin (Hiện tại chỉ hỗ trợ tập tin là hình ảnh).
 
 <div style={{ width: '100%', maxWidth: 360 }}>
   <img src="https://salt.tikicdn.com/ts/tiniapp/c7/31/af/65c2c0140f72a72b0c750e6a7c74a0a5.png" alt="uploader-1"/>
@@ -49,9 +47,7 @@ $> yarn add @tiki.vn/tini-ui
 
 ## Sample Code
 
-**index.json**
-
-```json
+```json title=index.json
 {
   "defaultTitle": "Uploader",
   "usingComponents": {
@@ -60,9 +56,7 @@ $> yarn add @tiki.vn/tini-ui
 }
 ```
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <uploader/>
 <uploader icon="plus"/>
 <uploader style="width: 80px; height: 80px;" iconSize="40"/>
@@ -77,9 +71,7 @@ $> yarn add @tiki.vn/tini-ui
 <uploader onChange="onChange"/>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onChange(images) {
     my.alert({

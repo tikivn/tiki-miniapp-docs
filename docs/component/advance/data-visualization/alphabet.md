@@ -2,23 +2,25 @@
 title: Alphabet
 ---
 
-## Giới thiệu
+Alphabet là component được sử dụng để hiển thị các chữ cái trong bảng Alphabet.
 
-Alphabet là component được sử dụng để hiển thị danh sách các kí tự trong alphabet.
 
-## Sử dụng
-
-### Cài đặt `tini-ui`:
+## Cài đặt `tini-ui`:
 
 ```bash
 $> yarn add @tiki.vn/tini-ui
 ```
 
-### Sample Code
+## Thuộc tính
 
-**index.json**
+| Thuộc tính     | Kiểu dữ liệu                  | Giá trị mặc định | Mô tả                                    |
+| ------------- | --------------------- | ------------- | ---------------------------------------------- |
+| alphabet     | string[]                | []            | Khởi tạo các kí tự alphabet |
+| onClick    | event   | () => void    | Trigger function này khi click item của alphabet |
 
-```json
+## Sample Code
+
+```json title=index.json
 {
   "defaultTitle": "Alphabet",
   "usingComponents": {
@@ -27,17 +29,13 @@ $> yarn add @tiki.vn/tini-ui
 }
 ```
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <alphabet alphabet="{{alphabet}}" onClick="onAlphabetClick" >
   <view slot="prefix"><icon size="12" type="info"/></view>
 </alphabet>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   data: {
     alphabet: [
@@ -77,9 +75,4 @@ Page({
 });
 ```
 
-### Chi tiết
 
-| Property      | Type                  | Default Value | Description                                    |
-| ------------- | --------------------- | ------------- | ---------------------------------------------- |
-| alphabet     | string[]                | []            | Khởi tạo các kí tự alphabet|
-| onClick    | event   | () => void    | Trigger function này khi click item của alphabet

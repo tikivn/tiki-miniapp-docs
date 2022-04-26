@@ -2,8 +2,6 @@
 title: Tooltip
 ---
 
-## Giới thiệu
-
 - `tooltip` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) là thành phẩn nhỏ gọn hiển thị nội dung dưới dạng như mẹo, gợi ý hoặc thủ thuật.
 - Để sử dụng `tooltip`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.2.1` trở lên.
 
@@ -13,19 +11,36 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/form/tooltip/index" />
 
-## Sử dụng
-
-### Cài đặt `tini-ui`:
+## Cài đặt `tini-ui`:
 
 ```bash
 $> yarn add @tiki.vn/tini-ui
 ```
 
-### Sample Code
+## Thuộc tính 
 
-**index.json**
+| Thuộc tính      | Kiểu dữ liệu                 | Giá trị mặc định | Mô tả                                   |
+| ------------- | --------------------- | ------------- | ---------------------------------------------- |
+| className     | string                | ''            | Custom class cho tooltip                       |
+| style         | string                | ''            | Style cho tooltip                              |
+| content       | string                | ''            | Text content của tooltip                       |
+| show          | boolean               | false         | Nếu set `true` tooltip sẽ được show            |
+| theme         | `'reverse'` \| `'default'` | 'default'       | Theme của tooltip                              |
+| position      | `'top'` \| `'bottom'` \| `'left'` \| `'right'` \| `'top-left'` \| `'top-right'` \| `'left-top'` \| `'left-bottom'` \| `'right-top'` \| `'right-bottom'` \| `'bottom-left'` \| `'bottom-right'` | 'top'         | Vị trí hiển thị của tooltip                    |
+| showCloseIcon | boolean               | false         | Nếu set `true` icon-close tooltip sẽ được show |
+| iconSizeClose | number                | 16            | size của icon-close tooltip                    |
 
-```json
+### slots
+
+| Thuộc tính  | Kiểu dữ liệu   |  Giá trị mặc định    | Mô tả                             |
+| --------- | ------- | ------------- | --------------------------------------- |
+| content   | boolean | props.content | Render component ở nội dung content tip |
+| operation | boolean | ''            | Render component ở phần hiển thị tip    |
+
+
+## Sample Code
+
+```json title=index.json
 {
   "defaultTitle": "Tooltip",
   "usingComponents": {
@@ -34,9 +49,9 @@ $> yarn add @tiki.vn/tini-ui
 }
 ```
 
-**index.txml**
+****
 
-```xml
+```xml title=index.txml
 <view class="wrapper">
    <tooltip class="mt-48" position="top" show theme="reverse">
     <view slot="content">
@@ -125,9 +140,7 @@ $> yarn add @tiki.vn/tini-ui
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onClose(event) {
     console.log('onClose tip', event);
@@ -135,22 +148,3 @@ Page({
 });
 ```
 
-### Chi tiết
-
-| Property      | Type                  | Default Value | Description                                    |
-| ------------- | --------------------- | ------------- | ---------------------------------------------- |
-| className     | string                | ''            | Custom class cho tooltip                       |
-| style         | string                | ''            | Style cho tooltip                              |
-| content       | string                | ''            | Text content của tooltip                       |
-| show          | boolean               | false         | Nếu set `true` tooltip sẽ được show            |
-| theme         | `'reverse'` \| `'default'` | 'default'       | Theme của tooltip                              |
-| position      | `'top'` \| `'bottom'` \| `'left'` \| `'right'` \| `'top-left'` \| `'top-right'` \| `'left-top'` \| `'left-bottom'` \| `'right-top'` \| `'right-bottom'` \| `'bottom-left'` \| `'bottom-right'` | 'top'         | Vị trí hiển thị của tooltip                    |
-| showCloseIcon | boolean               | false         | Nếu set `true` icon-close tooltip sẽ được show |
-| iconSizeClose | number                | 16            | size của icon-close tooltip                    |
-
-### slots
-
-| Property  | Type    | Default Value | Description                             |
-| --------- | ------- | ------------- | --------------------------------------- |
-| content   | boolean | props.content | Render component ở nội dung content tip |
-| operation | boolean | ''            | Render component ở phần hiển thị tip    |

@@ -2,8 +2,6 @@
 title: Popup
 ---
 
-## Giới thiệu
-
 Hiển thị popup menu
 
 ## Quét mã để trải nghiệm
@@ -12,9 +10,19 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/popup/index" />
 
-## Sử dụng
 
-### Sample Code:
+## Thuộc tính
+
+| Thuộc tính  | Kiểu dữ liệu      | Giá trị mặc định                 | Mô tả                                                               |
+| --------- | ------- | ----------------------------- | ------------------------------------------------------------------------- |
+| show      | boolean | false                         | Hiển thị popup hay không                                                  |
+| className | string  |                               | Thêm class cho popup                                                      |
+| animation | boolean | true                          | Popup show với animation                                                  |
+| mask      | boolean | true                          | Hiển thị mask, sử dụng với props onClose để đóng popup khi click vào mask |
+| position  | string  | "top","right","bottom","left" | Vị trí hiển thị popup                                                     |
+| onClose   | event   |                               | Mask=true, khi click vào mask sẽ trigger function onClose                 |
+
+## Sample Code:
 
 Khai báo components:
 
@@ -27,11 +35,9 @@ Khai báo components:
 }
 ```
 
-#### Shape: circle
+### Shape: circle
 
-_index.txml_
-
-```xml
+```xml title=index.txml
 <view>
    <popup
       position="{{position}}"
@@ -112,9 +118,7 @@ Khai báo các button để mở các loại popup khác nhau
     </view>
 ```
 
-_index.js_
-
-```js
+```js title=index.js
 Page({
   data: {
     show: false,
@@ -173,13 +177,3 @@ _Result: Without mask_
     <img style={{maxWidth: 300}} alt="popup" src="/img/popup-left-nomask.png"/>
 </div>
 
-### Chi tiết
-
-| Property  | Type    | Default Value                 | Description                                                               |
-| --------- | ------- | ----------------------------- | ------------------------------------------------------------------------- |
-| show      | boolean | false                         | Hiển thị popup hay không                                                  |
-| className | string  |                               | Thêm class cho popup                                                      |
-| animation | boolean | true                          | Popup show với animation                                                  |
-| mask      | boolean | true                          | Hiển thị mask, sử dụng với props onClose để đóng popup khi click vào mask |
-| position  | string  | "top","right","bottom","left" | Vị trí hiển thị popup                                                     |
-| onClose   | event   |                               | Mask=true, khi click vào mask sẽ trigger function onClose                 |
