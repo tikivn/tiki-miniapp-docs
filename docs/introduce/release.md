@@ -72,7 +72,7 @@ Nếu đã chọn **Xuất bản tiện ích sau khi thông qua kiểm duyệt**
 Nhằm đảm bảo việc phát hành thành công, bạn nên vào Kho tiện ích nửa tiếng sau khi đã publish release:
 
 - Kiểm tra xem tiện ích đã xuất hiện trong Danh mục được thiết lập trong Kho tiện ích hay chưa.
-- Kiểm tra xem tiện ích xuất hiện trong trang ***Tìm kiếm*** của Kho tiện ích hay không. 
+- Kiểm tra xem tiện ích xuất hiện trong trang **Tìm kiếm** của Kho tiện ích hay không. 
 
 ::: 
 

@@ -8,7 +8,7 @@ Bạn được phép mời ai đó dùng tiện ích đang có mặt trên Kho t
 
 Lẽ dĩ nhiên để chạy được tiện ích, thiết bị di động của họ phải cài Tiki App.
 
-Cách thức lấy mã QR hay liên kết của một Tini App như sau:
+## Lấy mã QR hay liên kết của tiện ích
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).
 2. Sidebar menu >> **Tiện ích của bạn**.
@@ -17,11 +17,11 @@ Cách thức lấy mã QR hay liên kết của một Tini App như sau:
    <img src="/img/QRcode_App.png" width="800px" alt="QR code & link of Tini App " style={{ margin: '0 auto', display: 'flex' }}/>
 5. Gửi mã QR hay liên kết đến những người mà bạn muốn chia sẻ.
 
-## Tạo mã QR gắn UTM cho ứng dụng
+## Tạo mã QR gắn UTM cho tiện ích
 
 Tiki cung cấp công cụ [Mini App QR Code Generator](/qr-code) giúp tạo ra mã QR có gắn các tham số utm_campaign, utm_source và utm_medium cho các tiện ích.
 
-UTM cho bạn biết được những người mở tiện ích của bạn của mình đến từ nguồn nào đâu, bằng phương tiện gì, hoặc từ các chiến dịch nào; từ đó theo dõi các chiến dịch marketing hiệu quả hơn.
+UTM cho bạn biết được những người mở tiện ích của bạn đến từ nguồn nào đâu, bằng phương tiện gì, hoặc từ các chiến dịch nào; từ đó theo dõi các chiến dịch marketing hiệu quả hơn.
 
 - - -
 
