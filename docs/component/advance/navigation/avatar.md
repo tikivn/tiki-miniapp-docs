@@ -2,9 +2,9 @@
 title: Avatar
 ---
 
-## Giới thiệu
+`avatar` là component dùng để hiển thị hình ảnh của user, tên, hoặc text giới thiệu.
 
-Compnent avatar dùng để hiển thị hình ảnh của user, tên, hoặc text giới thiệu.
+<img alt="Avatar" src="/img/avatar-full.png"/>
 
 ## Quét mã để trải nghiệm
 
@@ -12,9 +12,16 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/navigation/avatar/index" />
 
-## Sử dụng
+## Thuộc tính 
 
-### Sample Code:
+| Thuộc tính  | Kiểu dữ liệu    | Giá trị mặc định | Mô tả                      |
+| -------- | ------ | ------------- | -------------------------------- |
+| size     | string | md            | Kích thước avatar (lg/md/xs)     |
+| shape    | string | circle        | Các giá trị: "circle","standard" |
+| src      | string | ""            | source hình ảnh                  |
+| style    | string | ""            | Disabled button                  |
+
+## Sample Code:
 
 Khai báo components:
 
@@ -27,11 +34,9 @@ Khai báo components:
 }
 ```
 
-#### Shape: circle
+### Shape: circle
 
-_index.txml_
-
-```xml
+```xml title=index.txml
 <view class="container">
  <view class="content" style="margin-top:32px">
       <text class="content-label">Shape: circle, Size:lg-md-xs</text>
@@ -51,11 +56,9 @@ import image from '../../../theme/static/images/avatar-circle.png'
 ReactDOM.render(<img style={{maxWidth: 414}} alt="Avatar" src={image}/>, mountNode);
 ```
 
-#### Shape: standard
+### Shape: standard
 
-_index.txml_
-
-```xml
+```xml title=index.txml
 <view class="container">
   <view class="content" style="margin-top:32px">
       <text class="content-label">Shape: standard, Size:lg-md-xs</text>
@@ -75,15 +78,13 @@ import image from '../../../theme/static/images/avatar-standard.png'
 ReactDOM.render(<img style={{maxWidth: 414}} alt="Avatar" src={image}/>, mountNode);
 ```
 
-### Advance
+## Advance
 
 Sử dụng component avatar để implement user item
 
-#### Sample
+### Example
 
-_index.tcss_
-
-```xml
+```xml title=index.tcss
 <view class="content">
   <list>
       <list-item
@@ -103,11 +104,9 @@ import image from '../../../theme/static/images/avatar-row.png'
 ReactDOM.render(<img style={{maxWidth: 414}} alt="Avatar" src={image}/>, mountNode);
 ```
 
-#### Sample
+### Example
 
-_index.tcss_
-
-```xml
+```xml title=index.tcss
 <view class="content">
     <view class="avatar-wrapper">
         <avatar
@@ -121,9 +120,7 @@ _index.tcss_
 </view>
 ```
 
-_index.tcss_
-
-```css
+```css title=index.tcss
 .avatar-wrapper {
   display: flex;
   flex-direction: column;
@@ -152,9 +149,7 @@ import image from '../../../theme/static/images/avatar-column.png'
 ReactDOM.render(<img style={{maxWidth: 414}} alt="Button" src={image}/>, mountNode);
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   data: {},
   onError() {
@@ -162,14 +157,3 @@ Page({
   }
 });
 ```
-
-### Chi tiết
-
-| Property | Type   | Default Value | Description                      |
-| -------- | ------ | ------------- | -------------------------------- |
-| size     | string | md            | Kích thước avatar (lg/md/xs)     |
-| shape    | string | circle        | Các giá trị: "circle","standard" |
-| src      | string | ""            | source hình ảnh                  |
-| style    | string | ""            | Disabled button                  |
-
-<img alt="Avatar" src="/img/avatar-full.png"/>

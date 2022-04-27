@@ -2,17 +2,31 @@
 title: Badge
 ---
 
-## Component đang được cập nhật. Vẫn chưa sẵn sàng để sử dụng
+Hiển thị red dot, số hoặc kí tự, dùng để nhắc nhở cho user khi có update, hoặc hiển thị thông báo.
 
-## Giới thiệu
 
-Red dots, số hoặc kí tự, dùng để nhắc nhở cho user khi có update, hoặc hiển thị thông báo.
+:::warning  Cảnh báo
+
+Component đang được cập nhật. Vẫn chưa sẵn sàng để sử dụng.
+
+:::
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/navigation/badge/index" />
+
+## Thuộc tính
+
+| Thuộc tính     | Kiểu dữ liệu           | Giá trị mặc định | Mô tả                                                                                                |
+| ------------- | ----------------------- | ------------- | ---------------------------------------------------------------------------------------------------------- |
+| text          | string                  | ''            | Nội dung bên trong badge.                                                                                  |
+| dot           | boolean                 | false         | Hiển thị badge như là dot. (require: dot=true)                                                             |
+| overflowCount | number                  | 99            | khi giá trị text là kiểu số và lớn hơn overflowCount, thì sẽ hiển thị ..., ngược lại hiển thị giá trị text |
+| withArrow     | boolean                 | false         | hiển thị arrow cho badge                                                                                   |
+| direction     | 'left','middle','right' | ''            | điều hướng arrow (left,middle,right)                                                                       |
+| stroke        | boolean                 | false         | hiển thị stroke cho badge                                                                                  |
 
 ## Sử dụng
 
@@ -49,9 +63,7 @@ _index.txml_
 
 ```
 
-_index.tcss_
-
-```css
+```css title=index.tcss
 .component-item {
   display: flex;
   flex-direction: row;
@@ -85,9 +97,7 @@ _index.txml_
 
 ```
 
-_index.tcss_
-
-```css
+```css title=index.tcss
 
 ```
 
@@ -175,16 +185,5 @@ Page({
   }
 });
 ```
-
-### Chi tiết
-
-| Property      | Type                    | Default Value | Description                                                                                                |
-| ------------- | ----------------------- | ------------- | ---------------------------------------------------------------------------------------------------------- |
-| text          | string                  | ''            | Nội dung bên trong badge.                                                                                  |
-| dot           | boolean                 | false         | Hiển thị badge như là dot. (require: dot=true)                                                             |
-| overflowCount | number                  | 99            | khi giá trị text là kiểu số và lớn hơn overflowCount, thì sẽ hiển thị ..., ngược lại hiển thị giá trị text |
-| withArrow     | boolean                 | false         | hiển thị arrow cho badge                                                                                   |
-| direction     | 'left','middle','right' | ''            | điều hướng arrow (left,middle,right)                                                                       |
-| stroke        | boolean                 | false         | hiển thị stroke cho badge                                                                                  |
 
 <img alt="Badge" src="/img/badge-full.png"/>
