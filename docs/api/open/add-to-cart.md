@@ -82,10 +82,10 @@ Page({
   },
   onAddToCart() {
     my.addToCart({
-      products: {
+      products: [{
         productId: this.data.productId,
         quantity: 1,
-      },
+      }],
       success: (res) => {
         this.setData({
           quantity: this.data.quantity + 1,
