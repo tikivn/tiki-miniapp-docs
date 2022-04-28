@@ -44,7 +44,7 @@ title: my.addPhoneContact
 | fail                  | Function     | Callback function khi việc ghi thông tin liên hệ vào sổ địa chỉ bất thành.                  |
 | complete              | Function     | Callback function khi việc ghi thông tin liên hệ vào sổ địa chỉ bất kể thành công hay thất bại . |
 
-## Giá trị trong success callback
+### Giá trị trong success callback
 
 Khi việc gọi API thành công, framework sẽ trả về thông tin về pin như sau:
 

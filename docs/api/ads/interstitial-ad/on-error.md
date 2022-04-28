@@ -5,6 +5,7 @@ title: Interstitiad.onError
 Lắng nghe sự kiện hiển thị quảng cáo bị lỗi.
 
 ## Sử dụng
+
 ```js
 this.ad = my.createInterstitialAd();
 this.ad.onError((e) => {

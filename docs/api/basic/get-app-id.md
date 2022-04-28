@@ -2,13 +2,9 @@
 title: my.getAppIdSync
 ---
 
-## Giới thiệu
+`my.getAppIdSync` là API dùng để lấy ID của Mini App hiện tại
 
-**my.getAppIdSync** là API dùng để lấy ID của Mini App hiện tại
-
-## Sử dụng
-
-### Sample code
+## Sample code
 
 ```js
 Page({
@@ -19,8 +15,8 @@ Page({
 });
 ```
 
-### Return value
+## Return value
 
-| Attributes | Type   | Description              |
+| Thuộc tính | Kiểu dữ liệu   | Mô tả              |
 | ---------- | ------ | ------------------------ |
 | appId      | string | ID của Mini App hiện tại |

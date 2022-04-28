@@ -2,9 +2,7 @@
 title: my.getLaunchOptionsSync
 ---
 
-## Giới thiệu
-
-**my.getLaunchOptionsSync** là API dùng để lấy parameters để launch Tini App hiện tại.
+`my.getLaunchOptionsSync` là API dùng để lấy parameters để launch Tini App hiện tại.
 
 ## Quét mã để trải nghiệm
 
@@ -21,11 +19,11 @@ const options = my.getLaunchOptionsSync();
 my.alert({ content: JSON.stringify(options) });
 ```
 
-## Kết quả trả về
+## Return value
 
-Kết quả trả về của jsapi my.getLaunchOptionsSync sẽ giống với options của App.onLoad(options)
+Kết quả trả về của `my.getLaunchOptionsSync` sẽ giống với options của App.onLoad(options)
 
-| Thuộc tính | Kiểu dữ liêuk    | Mô tả                                                             |
+| Thuộc tính | Kiểu dữ liệu    | Mô tả                                                             |
 | ---------- | ---------------- | ----------------------------------------------------------------- |
 | pagePath   | String           | Đường dẫn của page sẽ được mở của miniapp tới. |
 | query      | String           | Query string ví dụ name=A&age=18               |

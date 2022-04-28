@@ -7,7 +7,7 @@ title: my.canIUse
 - Một API cụ thể, hoặc một input parameter cụ thể của một API cùng giá trị của parameter đó.
 - Một component cụ thể, hoặc một thuộc tính cụ thể của một component cùng giá trị của thuộc tính đó.
 
-***Lưu ý***: khả dụng từ runtime version 1.73.11 trở lên.
+***Khả dụng***: Từ runtime version 1.73.11 trở lên.
 
 ## API Params
 

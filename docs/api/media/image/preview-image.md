@@ -2,10 +2,9 @@
 title: my.previewImage
 ---
 
-## Giới thiệu
+`my.previewImage` là API cho phép mở một cửa sổ lớn để xem hình ảnh
 
-- **my.previewImage** là API cho phép mở một cửa sổ lớn để xem hình ảnh
-- Chỉ hỗ trợ từ version 1.81.6 trở lên
+***Khả dụng***: Chỉ hỗ trợ từ version 1.81.6 trở lên
 
 ## Quét mã để trải nghiệm
 

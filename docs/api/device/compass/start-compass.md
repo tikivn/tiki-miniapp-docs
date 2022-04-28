@@ -4,13 +4,15 @@ title: my.startCompass
 
 `my.startCompass` là API dùng để start theo dõi dữ liệu compass.
 
+
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/compass/index" />
 
-### Sample Code
+## Sample Code
 
 ```js
 Page({
@@ -40,7 +42,7 @@ Page({
 | fail       | Function     |          | Callback function khi thực hiện thất bại.                                        |
 | complete   | Function     |          | Callback function khi thực hiện hoàn tất.                                        |
 
-## Interval Param
+### Interval Param
 
 | Giá trị | Mô tả                                                     |
 | ------- | --------------------------------------------------------- |

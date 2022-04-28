@@ -21,7 +21,7 @@ import { QRCode } from '@site/src/components/QRCode';
 | fail         | Function     |          | Callback function khi bật/tắt giữ màn hình bất thành.                                              |
 | complete     | Function     |          | Callback function khi bật/tắt giữ màn hình bất kể thành công hay thất bại.                         |
 
-### Sample Code
+## Sample Code
 
 ```xml
 <view class="page">

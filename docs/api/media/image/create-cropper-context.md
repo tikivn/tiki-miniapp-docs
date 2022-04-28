@@ -2,7 +2,7 @@
 title: my.createCropperContext
 ---
 
-**my.createCropperContext** là API dùng để tạo ra ImageCropperContext - đối tượng cung cấp phương thức giúp bạn điều khiển [ImageCropper](/docs/component/basic/utilities/image-cropper) component.
+`my.createCropperContext` là API dùng để tạo ra ImageCropperContext - đối tượng cung cấp phương thức giúp bạn điều khiển [ImageCropper](/docs/component/basic/utilities/image-cropper) component.
 
 ## Các phương thức LottieContext cung cấp
 

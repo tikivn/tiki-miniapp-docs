@@ -2,7 +2,7 @@
 title: my.compressImage
 ---
 
-**my.compressImage** là API dùng để nén nhiều ảnh (image) cùng một lúc, khiến chúng có dung lượng nhỏ hơn nhưng vẫn giữ nguyên kích thước ban đầu.
+`my.compressImage` là API dùng để nén nhiều ảnh (image) cùng một lúc, khiến chúng có dung lượng nhỏ hơn nhưng vẫn giữ nguyên kích thước ban đầu.
 
 ## API Params
 

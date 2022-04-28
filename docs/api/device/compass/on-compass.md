@@ -22,5 +22,5 @@ my.onCompassChange(function (res) {
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                             |
 | ---------- | ------------ | ------------------------------------------------- |
-| direction  | Number       | Độ của hướng đối diện với hướng bắc thực [0,360). |
-| timestamp  | Number       | Timestamp.                                        |
+| direction  | number       | Độ của hướng đối diện với hướng bắc thực [0,360). |
+| timestamp  | number       | Timestamp.                                        |

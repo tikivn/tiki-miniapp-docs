@@ -4,6 +4,41 @@ title: my.reportAnalytics
 
 `my.reportAnalytics` là API dùng để ghi nhận dữ liệu của một số sự kiện tuỳ chỉnh. 
 
+## Các sự kiện hỗ trợ
+
+### purchase
+
+Sự kiện này được ghi nhận khi khách hàng thực hiện thanh toán cho 1 hay nhiều sản phẩm / dịch vụ:
+
+#### Parameters
+
+| Thuộc tính      | Kiểu dữ liệu      | Bắt buộc | Mô tả                  |
+| --------- | --------- | -------- | :-----: | ---------------------------- |
+| ecommerce | Ecommerce | ✓     | Chứa thông tin của đơn hàng. |
+
+#### Ecommerce Parameters
+
+| Thuộc tính     | Kiểu dữ liệu   | Bắt buộc | Ví dụ    | Mô tả                            |
+| -------- | ------ | :------: | ---------- | -------------------------------------- |
+| order_id | string | ✓      | O_12345    | Mã đơn hàng.                           |
+| coupon   | string |        | SUMMER_FUN | Mã coupon được sử dụng trong đơn hàng. |
+| items    | Item[] |        |            | Danh sách items có trong đơn hàng.     |
+| shipping | number |        | 5000       | Phí vận chuyển của đơn hàng.           |
+| tax      | number |        | 10000      | Thuế trên đơn hàng.                    |
+| value    | number |        | 115000     | Tổng giá trị đơn hàng.                 |
+
+#### Item Parameters
+
+| Thuộc tính          | Kiểu dữ liệu   | Bắt buộc | Ví dụ           | Mô tả                         |
+| ------------- | ------ | :-------: | ----------------- | ----------------------------------- |
+| item_id       | string | ✓      | SKU_12345         | Mã định danh sản phẩm.              |
+| item_name     | string | ✓      | iPhone 12 Pro Max | Tên của sản phẩm.                  |
+| price         | number |        | 50000             | Giá sản phẩm.                       |
+| quantity      | number |        | 1                 | số lượng của sản phẩm đó. |
+| item_brand    | string |        | Apple             | Thương hiệu của sản phẩm.           |
+| item_category | string |        | Mobile Phone      | Danh mục của sản phẩm.              |
+| item_variant  | string |        | White             | Phẩn bản của sản phẩm.              |
+
 ## Sử dụng
 
 Ví dụ sau dùng để ghi nhận đơn hàng lên hệ thống analytics:
@@ -41,42 +76,23 @@ Page({
 })
 ```
 
-## Các sự kiện hỗ trợ
+<div align="center"> ---oOo--- </div>
 
-### purchase
-Sự kiện này được ghi nhận khi khách hàng thực hiện thanh toán cho 1 hay nhiều sản phẩm / dịch vụ:
+## refund
 
-#### Parameters
+### Parameters
 
-| Name      | Type      | Required | Example | Description                  |
-| --------- | --------- | -------- | ------- | ---------------------------- |
-| ecommerce | Ecommerce | Yes      |         | Chứa thông tin của đơn hàng. |
+| Thuộc tính       | Kiểu dữ liệu       | Bắt buộc |  Mô tả                            |
+| --------- | --------- | :-------: | ------------------------------------- |
+| ecommerce | Ecommerce | ✓      |  Chứa thông tin của đơn hàng muốn huỷ. |
 
-#### Ecommerce Parameters
+### Ecommerce Parameters
 
-| Name     | Type   | Required | Example    | Description                            |
-| -------- | ------ | -------- | ---------- | -------------------------------------- |
-| order_id | string | Yes      | O_12345    | Mã đơn hàng.                           |
-| coupon   | string | No       | SUMMER_FUN | Mã coupon được sử dụng trong đơn hàng. |
-| items    | Item[] | No       |            | Danh sách items có trong đơn hàng.     |
-| shipping | number | No       | 5000       | Phí vận chuyển của đơn hàng.           |
-| tax      | number | No       | 10000      | Thuế trên đơn hàng.                    |
-| value    | number | No       | 115000     | Tổng giá trị đơn hàng.                 |
+| Thuộc tính      | Kiểu dữ liệu    | Bắt buộc | Ví dụ | Mô tả          |
+| -------- | ------ | -------- | ------- | ------------------- |
+| order_id | string | ✓      | O_12345 | Mã đơn hàng bị huỷ. |
 
-#### Item Parameters
-
-| Name          | Type   | Required | Example           | Description                         |
-| ------------- | ------ | -------- | ----------------- | ----------------------------------- |
-| item_id       | string | Yes      | SKU_12345         | Mã định danh sản phẩm.              |
-| item_name     | string | Yes      | iPhone 12 Pro Max | Tên của sản phẩm .                  |
-| price         | number | No       | 50000             | Giá sản phẩm.                       |
-| quantity      | number | No       | 1                 | Số lượng sản phẩm trong order item. |
-| item_brand    | string | No       | Apple             | Thương hiệu của sản phẩm.           |
-| item_category | string | No       | Mobile Phone      | Danh mục của sản phẩm.              |
-| item_variant  | string | No       | White             | Phẩn bản của sản phẩm.              |
-
-### refund
-
+### Sample Code
 Sự kiện dùng để ghi nhận đơn hàng bị huỷ
 
 ```js
@@ -86,15 +102,3 @@ my.reportAnalytics('refund', {
   }
 });
 ```
-
-#### Parameters
-
-| Name      | Type      | Required | Example | Description                           |
-| --------- | --------- | -------- | ------- | ------------------------------------- |
-| ecommerce | Ecommerce | Yes      |         | Chứa thông tin của đơn hàng muốn huỷ. |
-
-#### Ecommerce Parameters
-
-| Name     | Type   | Required | Example | Description         |
-| -------- | ------ | -------- | ------- | ------------------- |
-| order_id | string | Yes      | O_12345 | Mã đơn hàng bị huỷ. |

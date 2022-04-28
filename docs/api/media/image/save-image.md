@@ -2,7 +2,7 @@
 title: my.saveImage
 ---
 
-**my.saveImage** là API dùng để lưu 1 remote image vào gallery của thiết bị di động.
+`my.saveImage` là API dùng để lưu 1 remote image vào gallery của thiết bị di động.
 
 ## API Params
 
@@ -13,10 +13,12 @@ title: my.saveImage
 | fail       | Function     |          | Callback function khi save image bất thành                                                |
 | complete   | Function     |          | Callback function khi gọi API hoàn tất bất kể việc save hình ảnh thành công hay thất bại. |
  
-**Lưu ý**: 
+:::note Lưu ý
 
 - Image sẽ được lưu vào album `Tiki-Miniapp`.
 - Không hỗ trợ đường dẫn base64.
+
+:::
 
 ## Sample Code
 

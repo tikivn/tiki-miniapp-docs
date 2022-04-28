@@ -2,13 +2,9 @@
 title: my.SDKVersion
 ---
 
-## Giới thiệu
+`my.SDKVersion` là API dùng để lấy version hiện tại của SDK.
 
-**my.SDKVersion** là API dùng để lấy version hiện tại của SDK.
-
-## Sử dụng
-
-### Sample code
+## Sample code
 
 ```xml
 <view>
@@ -27,6 +23,6 @@ Page({
 });
 ```
 
-### Return value
+## Return value
 
 API sẽ trả về version hiện tại của SDK kiểu chuỗi.

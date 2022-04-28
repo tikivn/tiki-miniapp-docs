@@ -10,7 +10,15 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/compass/index" />
 
-### Sample Code
+## API Params
+
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                       |
+| ---------- | ------------ | ------------------------------------------- |
+| success    | Function     | Callback function khi thực hiện thành công. |
+| fail       | Function     | Callback function khi thực hiện thất bại.   |
+| complete   | Function     | Callback function khi thực hiện hoàn tất.   |
+
+## Sample Code
 
 ```js
 Page({
@@ -38,10 +46,4 @@ Page({
 });
 ```
 
-## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                       |
-| ---------- | ------------ | ------------------------------------------- |
-| success    | Function     | Callback function khi thực hiện thành công. |
-| fail       | Function     | Callback function khi thực hiện thất bại.   |
-| complete   | Function     | Callback function khi thực hiện hoàn tất.   |

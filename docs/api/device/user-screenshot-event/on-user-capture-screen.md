@@ -10,7 +10,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/user-screenshot-event/index" />
 
-### Sample Code
+## Sample Code
 
 ```xml
 <view>

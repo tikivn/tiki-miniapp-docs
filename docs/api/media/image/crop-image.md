@@ -2,10 +2,9 @@
 title: my.cropImage
 ---
 
-## Giới thiệu
-
 - **my.cropImage** là API dùng để crop hình ảnh.
-- Chỉ hỗ trợ từ version 1.82.35 trở lên
+
+***Khả dụng***: Hỗ trợ từ version 1.82.35 trở lên.
 
 ## Quét mã để trải nghiệm
 
