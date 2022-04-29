@@ -7,7 +7,6 @@ title: Troubleshooting
 
 Bạn tạo một https request bằng my.request, my.uploadFile hay một websocket connection tới server domain của bạn nhưng gặp lỗi sau:
 
-
 ```bash
 ErrorCode: Fetch Error
 ErrorMessage: request to <URL> failed, reason: certificate has expired
@@ -41,3 +40,4 @@ echo "export NODE_TLS_REJECT_UNAUTHORIZED='0'" >> ~/.zshenv
 - Trong môi trường Tiki app, tiện ích của bạn sẽ không thể kết nối tới các domain sử dụng TLS/SSL certificate hết hạn và sẽ bị bộ phận kiểm duyệt từ chối yêu cầu cập nhật hoặc các yêu cầu phát hành tiện ích.
 
 :::
+

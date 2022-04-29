@@ -67,8 +67,10 @@ Mọi đối tượng tham gia phát triển/ kiểm thử/ vận hành/… ứn
 
 ### Thêm Thành viên phát triển ứng dụng
 
-:::note Quan trọng
+:::important Quan trọng
+
 Bạn chỉ có thể cấp quyền thành viên phát triển ứng dụng cho những người đã là thành viên thường trực.
+
 :::
 
 1. Truy cập vào [Tini Console](https://developer.tiki.vn/apps).

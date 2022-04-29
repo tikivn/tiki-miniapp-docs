@@ -2,9 +2,8 @@
 title: my.saveFile
 ---
 
-## Giới thiệu
+`my.saveFile` là API dùng lưu lại file về device từ 1 đường dẫn tạm thời (local temporary file)
 
-**my.saveFile** là API dùng lưu lại file về device từ 1 đường dẫn tạm thời (local temporary file)
 ## Sử dụng
 
 ### Sample Code

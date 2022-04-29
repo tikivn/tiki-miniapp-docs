@@ -4,7 +4,7 @@ title: my.chooseVideo
 
 `my.chooseVideo` là API dùng để quay video hoặc chọn video từ album cục bộ.
 
-***Khả dụng***: Chỉ hỗ trợ từ version 1.80.0 trở lên
+***Khả dụng***: Hỗ trợ từ version 1.80.0 trở lên.
 
 ## API Params
 

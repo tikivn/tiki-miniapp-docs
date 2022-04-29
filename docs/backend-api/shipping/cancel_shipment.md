@@ -8,9 +8,13 @@ description: Tiki mini app huỷ đơn vận chuyển hàng với phía Tiki
 
 API này huỷ một đơn vận chuyển hàng.
 
-## Sử dụng
+:::important Quan trọng
 
-***Quan trọng***: API này yêu cầu có [chữ ký điện tử](../platform-api/calculate-signature) khi gửi API request.
+API này yêu cầu có [chữ ký điện tử](../platform-api/calculate-signature) khi gửi API request.
+
+:::
+
+## Sử dụng
 
 ### API Address
 

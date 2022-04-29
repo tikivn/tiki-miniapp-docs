@@ -4,7 +4,8 @@ title: my.trimVideo
 
 `my.trimVideo` là API cho phép cắt video trong 1 khoảng thời gian.
 
-***Khả dụng***: Chỉ hỗ trợ từ version 1.83.40 trở lên
+***Khả dụng***: Hỗ trợ từ version 1.83.40 trở lên.
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';

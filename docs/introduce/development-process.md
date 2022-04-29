@@ -6,8 +6,10 @@ description: các bước xây dựng một Tiki mini app trên nền tảng Tin
 
 <img src="/img/TiniApp_Development_Process.jpg" alt="Tini App Development Process" style={{ margin: '0 auto', display: 'flex' }}/>
 
-:::note Quan trọng
+:::important Quan trọng
+
 Nếu bạn có bất kỳ thắc mắc hoặc trở ngại trong quá trình đăng ký Nhà phát triển hay xây dựng và phân phối Tiki mini app, hãy liên hệ với chúng tôi qua trang [Community](https://community.tiki.vn/) hoặc [Slack](https://join.slack.com/t/tini-apps/shared_invite/zt-z7ikk3ox-rCirvNmeOrSvUo_tW67D4Q).
+
 :::
 
 ## 1. Đăng ký Nhà phát triển

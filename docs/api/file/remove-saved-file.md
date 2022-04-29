@@ -2,9 +2,8 @@
 title: my.removeSavedFile
 ---
 
-## Giới thiệu
+`my.removeSavedFile` là API dùng để xoá 1 local cache file
 
-**my.removeSavedFile** là API dùng để xoá 1 local cache file
 ## Sử dụng
 
 ### Sample Code

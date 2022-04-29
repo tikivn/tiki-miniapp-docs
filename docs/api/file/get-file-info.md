@@ -2,7 +2,7 @@
 title: my.getFileInfo
 ---
 
-**my.getFileInfo** là API dùng để lấy thông tin một tập tin cục bộ. Tập tin có thể ở dạng tạm hoặc được lưu.
+`my.getFileInfo` là API dùng để lấy thông tin một tập tin cục bộ. Tập tin có thể ở dạng tạm hoặc được lưu.
 
 ## API Params
 

@@ -6,7 +6,7 @@ description: Khách hàng thanh toán đơn hàng trên Tiki mini app bằng ph�
 
 Đây là phương thức khách hàng trả tiền cho đơn hàng bằng cách chuyển tiền vào tài khoản ngân hàng của đối tác.
 
-:::note Quan trọng
+:::important Quan trọng
 
 Thanh toán bằng chuyển khoản ngân hàng đang trong giai đoạn thử nghiệm, chưa được áp dụng đại trà.
 

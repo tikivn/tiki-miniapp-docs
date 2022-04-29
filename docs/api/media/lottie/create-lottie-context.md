@@ -2,7 +2,7 @@
 title: my.createLottieContext
 ---
 
-**my.createLottieContext** là API dùng để tạo ra LottieContext - đối tượng cung cấp các thuôc tính và phương thức giúp bạn điều khiển [lottie](/docs/component/basic/media/lottie) component.
+`my.createLottieContext` là API dùng để tạo ra LottieContext - đối tượng cung cấp các thuôc tính và phương thức giúp bạn điều khiển [lottie](/docs/component/basic/media/lottie) component.
 
 ## Các phương thức LottieContext cung cấp
 
@@ -23,9 +23,7 @@ title: my.createLottieContext
 <lottie id="lottie" path="./lottie.json" />
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onReady() {
     const lottieContext = my.createLottieContext('lottie');

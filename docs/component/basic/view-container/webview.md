@@ -8,7 +8,7 @@ Mỗi page của Tini App chỉ được phép chứa một `web-view` duy nhấ
 
 Bạn cần có tài khoản Nhà phát triển loại Công ty để có thể khai thác đầy đủ tính năng của `web-view`.
 
-:::note Quan trọng
+:::important Quan trọng
 
 Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên [Tini Console](https://developer.tiki.vn/apps) trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/development/tini-console/whitelist-domains).
 

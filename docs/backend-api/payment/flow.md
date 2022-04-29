@@ -17,4 +17,10 @@ description: sơ đồ xử lý đơn hàng đặt trên Tiki mini app
 7. Gọi Api hoàn thành đơn hàng hoặc hủy đơn hàng để kết thúc.
 8. Tiki thanh toán tiền cho đối tác trong trường hợp đơn hàng hoàn thành (giao hàng thành công).
 
-***Quan trọng***: khi đối tác tạo đơn hàng phía Tiki, không nhất thiết nó phải bao gồm toàn bộ SKU mà đối tác nhận đặt từ khách hàng; chỉ cần gồm 1 hay vài SKU để dại diện thanh toán. Điểm mấu chốt là giá trị đơn hàng phải chính xác.
+
+:::important Quan trọng
+
+Khi đối tác tạo đơn hàng phía Tiki, không nhất thiết nó phải bao gồm toàn bộ SKU mà đối tác nhận đặt từ khách hàng; chỉ cần gồm 1 hay vài SKU để dại diện thanh toán. Điểm mấu chốt là giá trị đơn hàng phải chính xác.
+
+:::
+

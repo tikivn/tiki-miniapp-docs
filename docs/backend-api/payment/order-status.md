@@ -14,10 +14,15 @@ title: Trạng thái đơn hàng
 | completed                | Đơn hàng đã được giao hàng thành công.                                                                                               |
 | refunded                 | Đơn hàng đã được hoàn tiền cho khách hàng                                                                                            |
 
-**_Quan trọng_**:
+:::important Quan trọng
 
-> - Tất cả đơn hàng đều phải kết thúc ở trạng 'completed', 'canceled' hoặc 'refunded' sau một SLA cụ thể.
-> - Chỉ những đơn hàng có trạng thái 'completed' Tiki mới giải ngân tiền thanh toán của khách hàng cho đối tác.
-> - Trong trường hợp khách hàng thanh toán trực tuyến, một khi nhận được API cancel từ đối tác thì Tiki sẽ xử lý việc hoàn tiền cho khách hàng. Và đối tác không cần làm thêm gì nữa.  
+- Tất cả đơn hàng đều phải kết thúc ở trạng 'completed', 'canceled' hoặc 'refunded' sau một SLA cụ thể.
+- Chỉ những đơn hàng có trạng thái 'completed' Tiki mới giải ngân tiền thanh toán của khách hàng cho đối tác.
+- Trong trường hợp khách hàng thanh toán trực tuyến, một khi nhận được API cancel từ đối tác thì Tiki sẽ xử lý việc hoàn tiền cho khách hàng. Và đối tác không cần làm thêm gì nữa.  
+
+:::
+
+**__**:
+
 
 <img style={{ margin: '0 auto', display: 'flex' }} src="/img/order-state-diagram.png" alt="Order statuses"/>

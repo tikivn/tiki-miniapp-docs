@@ -2,7 +2,12 @@
 title: Component Object
 ---
 
-**_Quan trọng_**: Các hàm xử lý sự kiện của một component (ví dụ như `onTap`) không được hỗ trợ mặc định, các Custom Component phải cài đặt các hàm này.
+
+:::Important
+
+Các hàm xử lý sự kiện của một component (ví dụ như `onTap`) không được hỗ trợ mặc định, các Custom Component phải cài đặt các hàm này.
+
+:::
 
 ## Component Constructor
 
@@ -68,12 +73,14 @@ Component ở trên sẽ render một button, số đếm trên component sẽ �
 Custom Component có thể nhận data từ bên ngoài, và sau khi xử lý xong, nó có thể thông báo lại cho bên ngoài sau khi xử lý xong.
 Tiki Mini App Framework hỗ trợ điều đó bằng cách sử dụng `props` của Component
 
-**_Chú ý_**:
+:::note Chú ý
 
-> - Props là các thuộc tính được truyền từ bên ngoài, những thuộc tính này có thể được xác định giá trị mặc định bởi trường `props` của Component
-> - Component có thể truy cập vào trường `props` để thông qua biến `props`.
-> - Component không thể thay đổi các giá trị của trường `props`
-> - Để thông báo với external callers sau khi xử lý xong, Component có thể định nghĩa các callback để gọi sau khi thực hiện xong việc xử lý. External callers có thể override lại các callback này
+- Props là các thuộc tính được truyền từ bên ngoài, những thuộc tính này có thể được xác định giá trị mặc định bởi trường `props` của Component
+- Component có thể truy cập vào trường `props` để thông qua biến `props`.
+- Component không thể thay đổi các giá trị của trường `props`
+- Để thông báo với external callers sau khi xử lý xong, Component có thể định nghĩa các callback để gọi sau khi thực hiện xong việc xử lý. External callers có thể override lại các callback này.
+ 
+:::
 
 ```xml title=/components/index/index.txml
 <view>{{counter}}</view>

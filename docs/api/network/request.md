@@ -6,7 +6,11 @@ title: my.request
 
 Ứng dụng của bạn sẽ được chạy trong môi trường cô lập thuần javascript nên sẽ không có các hàm gọi network thông thường như `fetch` hay `XMLHttpRequest`. Để thực hiện gọi network bạn phải dùng đến `my.request`.
 
-***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên [Tini Console](https://developer.tiki.vn/apps) trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/development/tini-console/whitelist-domains).
+:::important Quan trọng
+
+Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên [Tini Console](https://developer.tiki.vn/apps) trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/development/tini-console/whitelist-domains).
+
+:::
 
 ## API Params
 
@@ -25,7 +29,7 @@ title: my.request
 | fail          | Function     |          | Callback function khi việc gọi network thất bại.                                                                         |
 | complete      | Function     |          | Callback function khi việc gọi network kết thúc cho dù thành công hay thất bại.                                          |
 
-***Lưu ý***: Định dạng arraybuffer được hỗ trợ từ runtime version 1.85 trở đi.
+***Khả dụng***: Định dạng arraybuffer được hỗ trợ từ runtime version 1.85 trở đi.
 
 ### Callback success function payload
 

@@ -2,13 +2,16 @@
 title: Cập nhật hồ sơ
 ---
 
-## Giới thiệu
-
 API này dùng để cập nhật hồ sơ của khách hàng.
 
-## Sử dụng
 
-**_Quan trọng_**: API này yêu cầu có [chữ ký điện tử](../platform-api/calculate-signature) khi gửi API request.
+:::important Quan trọng
+
+API này yêu cầu có [chữ ký điện tử](../platform-api/calculate-signature) khi gửi API request.
+
+:::
+
+## Sử dụng
 
 ### API Address
 

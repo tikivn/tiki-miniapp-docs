@@ -4,7 +4,11 @@ title: my.offSocketError
 
 `my.offSocketError` là API giúp dừng lắng nghe sự kiện error được tạo trước đó.
 
-***Quan trọng***: Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên Tini Console trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/development/tini-console/whitelist-domains).
+:::important Quan trọng
+
+Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của ứng dụng trên [Tini Console](https://developer.tiki.vn/apps) trước khi sử dụng các Networking API và Webview. Xem phần hướng dẫn [tại đây](/docs/development/tini-console/whitelist-domains).
+
+:::
 
 ## API Params
 

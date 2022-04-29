@@ -10,7 +10,11 @@ API này sẽ tạo một đơn vận chuyển hàng.
 
 ## Sử dụng
 
-**_Quan trọng_**: API này yêu cầu có [chữ ký điện tử](../platform-api/calculate-signature) khi gửi API request.
+:::important Quan trọng
+
+API này yêu cầu có [chữ ký điện tử](../platform-api/calculate-signature) khi gửi API request.
+
+:::
 
 ### API Address
 

@@ -4,7 +4,7 @@ title: 'my.getAuthCode'
 
 ## Giới thiệu
 
-**my.getAuthCode** là API để lấy ra auth code của một user.
+`my.getAuthCode` là API để lấy ra auth code của một user.
 
 Thông qua việc sử dụng auth code, lập trình viên của Mini App có thể gọi tới các Open API của Tiki để
 sử dụng các tính năng phức tạp hơn.
@@ -31,12 +31,12 @@ Page({
 
 ### API Params
 
-| Attributes | Type           | Required | Description                                                           |
-| ---------- | -------------- | -------- | --------------------------------------------------------------------- |
-| scopes     | String / Array | no       | Danh sách các scopes, mặc định là []                                  |
-| success    | Function       | No       | Callback function khi thành công.                                     |
-| fail       | Function       | No       | Callback function khi thất bại.                                       |
-| complete   | Function       | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
+| Attributes | Type           |  Description                                                           |
+| ---------- | -------------- |  --------------------------------------------------------------------- |
+| scopes     | String / Array | Danh sách các scopes, mặc định là []                                  |
+| success    | Function       | Callback function khi thành công.                                     |
+| fail       | Function       | Callback function khi thất bại.                                       |
+| complete   | Function       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
 
 ### Giá trị trong success callback
 
