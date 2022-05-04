@@ -3,7 +3,7 @@ order: 51
 category: Design resources
 title: Download here
 ---
-### v2.5
+### v2.5 
 Apr 30th, 2022 <br />
 
 This month, we focus on building partner apps to test the usability of our Tini design system also observe internal designers using our design system and we recognize how overwhelmed you guys feel when using our design system. So now we include one more page on the Figma file; this is the Get Started training section for the first time you use the Tini design system. Let's try and give us more feedback. <br />

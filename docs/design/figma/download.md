@@ -1,7 +1,7 @@
 ---
 title: Tải về
 ---
-### Phiên bản 2.5
+### Phiên bản 2.5 
 28/02/2022 <br />
 
 Tháng này bọn mình tập trung vào việc xây dựng các ứng dụng tiện ích cho đối tác, nhằm kiểm tra khả năng sử dụng của bộ Tini design system, đồng thời quan sát các bạn designer trong nội bộ Tiki sử dụng như thế nào. Cho nên bọn mình vừa ra mắt thêm một trang mới bên trong file Figma đó là trang Get Started - một trang hướng dẫn và giúp các bạn lần đầu làm quen với việc sử dụng các component của Tini design system. Hãy dùng thử và cho bọn mình những nhận xét của các bạn nhé. <br />
