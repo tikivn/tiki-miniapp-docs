@@ -1,6 +1,23 @@
 ---
 title: Tải về
 ---
+### Phiên bản 2.5
+28/02/2022 <br />
+
+Tháng này bọn mình tập trung vào việc xây dựng các ứng dụng tiện ích cho đối tác, nhằm kiểm tra khả năng sử dụng của bộ Tini design system, đồng thời quan sát các bạn designer trong nội bộ Tiki sử dụng như thế nào. Cho nên bọn mình vừa ra mắt thêm một trang mới bên trong file Figma đó là trang Get Started - một trang hướng dẫn và giúp các bạn lần đầu làm quen với việc sử dụng các component của Tini design system. Hãy dùng thử và cho bọn mình những nhận xét của các bạn nhé. <br />
+
+Về thư viện component, bọn mình có một update nhỏ: <br />
+- Thêm quy định về kích thước chiều ngang nhỏ nhất dành cho button. <br />
+
+Hẹn gặp lại các bạn vào tháng sau.
+
+
+[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
+
+
 ### Phiên bản 2.4
 28/02/2022 <br />
 
@@ -19,10 +36,9 @@ Có gì mới?
 Hẹn gặp các bạn vào tháng sau.
 
 
-[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
-
-
 ---
+
+
 ### Phiên bản 2.3
 28/02/2022 <br />
 
@@ -37,6 +53,7 @@ Make art, not war. <br />
 
 ---
 
+
 ### Phiên bản 2.2
 28/01/2022 <br />
 
@@ -46,6 +63,7 @@ Chào mọi người, hôm nay là ngày làm việc cuối cùng trong năm "co
 
 Đó là những gì của tháng vừa rồi! Hẹn mọi người vào năm sau nhé. <br />
 Year of the Tiger, best luck to the Fighter! <br />
+
 
 ---
 

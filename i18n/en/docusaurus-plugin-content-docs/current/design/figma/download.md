@@ -3,6 +3,23 @@ order: 51
 category: Design resources
 title: Download here
 ---
+### v2.5
+Apr 30th, 2022 <br />
+
+This month, we focus on building partner apps to test the usability of our Tini design system also observe internal designers using our design system and we recognize how overwhelmed you guys feel when using our design system. So now we include one more page on the Figma file; this is the Get Started training section for the first time you use the Tini design system. Let's try and give us more feedback. <br />
+
+For the component library, we have a slight update: <br />
+- Add the button's minimum width rule. <br />
+
+See you next month.
+
+
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+--
+
+
 ### v2.4
 March 31st, 2022 <br />
 
@@ -21,10 +38,9 @@ Yes, you see the word “Desktop” a lots. You know something is coming, right?
 See you next month.
 
 
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
-
-
 ---
+
+
 ### v2.3
 February 28th, 2022 <br />
 
@@ -39,6 +55,7 @@ Make art, not war. <br />
 
 ---
 
+
 ### v2.2
 January 28th, 2022 <br />
 
@@ -52,6 +69,7 @@ Year of the Tiger, best luck to the Fighter! <br />
 
 
 ---
+
 
 ### v2.1
 December 31st, 2021 <br />
@@ -73,6 +91,7 @@ May the force be with you!!!<br />
 
 
 ---
+
 
 ### v2.0
 November 30th, 2021 <br />
