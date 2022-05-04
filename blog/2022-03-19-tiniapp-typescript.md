@@ -1,32 +1,31 @@
 # Build Tini App với TypeScript/Less
-## 1. Introduction
+
 Đợt tháng rồi, mình có đi cafe với 1 ông anh ngồi tám chuyện này kia thì mình có giới thiệu cho ảnh về Tini App của Tiki. Cái mình nói ảnh vậy nè ...
 
 > Công nghệ Tini App của Tiki đi kèm với hệ thống framework đơn giản, hiệu quả với đa dạng các thành phần giao diện cũng như APIs cần thiết cho phép các nhà phát triển xây dựng ứng dụng với trải nghiệm native app trên nền tảng Tiki một cách dễ dàng nhất có thể.
 
- Là một người đã có dày dặn chinh chiến nhiều với ngôn ngữ lập trình và nhiều dự án, cái ảnh nói lại mình vậy nè: 
- 
- > Ủa vậy Tini App này có support Typescript hông?
- Giờ ai cũng dùng TypeScript thôi à.
+Là một người đã có dày dặn chinh chiến nhiều với ngôn ngữ lập trình và nhiều dự án, cái ảnh nói lại mình vậy nè:
 
- Rồi nói cho mình nghe 1 loạt điểm nổi bật của nó. Cá nhân mình cũng đã có tiếp cận với `TypeScript` trong ``React`` không biết sang `Tini App` thì nó sẽ thế nào.
- 
- Hãy đồng hành cùng mình trong bài viết này nha!
- 
-* Lý do chọn [TypeScript](https://serokell.io/blog/why-typescript/).
-* Cấu hình dự án TiniApp kết hợp với [TypeScript](https://www.typescriptlang.org/)/[Less](https://lesscss.org/).
-* Ví dụ.
+> Ủa vậy Tini App này có support Typescript hông?
+> Giờ ai cũng dùng TypeScript thôi à.
+
+Rồi nói cho mình nghe 1 loạt điểm nổi bật của nó. Cá nhân mình cũng đã có tiếp cận với `TypeScript` trong `React` không biết sang `Tini App` thì nó sẽ thế nào.
+
+Hãy đồng hành cùng mình trong bài viết này nha!
+
+- Lý do chọn [TypeScript](https://serokell.io/blog/why-typescript/).
+- Cấu hình dự án TiniApp kết hợp với [TypeScript](https://www.typescriptlang.org/)/[Less](https://lesscss.org/).
+- Ví dụ.
 
 ## 2. Why Typescript ?
 
-
->TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+> TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
 
 TypeScript được phát triển bởi Microsoft và cộng đồng mã nguồn mở.
-"Superset" ở đây có thể được hiểu là: 
+"Superset" ở đây có thể được hiểu là:
 TypeScript = JavaScript + some amazing stuffs :satisfied:
 
-Ngoài sở hữu những đặc điểm của JavaScript, mình thấy rõ nhất ưu điểm ở TypeScript là về việc hỗ trợ **static typing**. Lúc đầu tiếp cận, mọi người có thể cảm thấy "không thoải mái" lắm vì đã quen với **dynamic typing** bên JavaScript rồi đúng hông? :triumph: Và mình cũng thế TypeScript khó tính quá mà. 
+Ngoài sở hữu những đặc điểm của JavaScript, mình thấy rõ nhất ưu điểm ở TypeScript là về việc hỗ trợ **static typing**. Lúc đầu tiếp cận, mọi người có thể cảm thấy "không thoải mái" lắm vì đã quen với **dynamic typing** bên JavaScript rồi đúng hông? :triumph: Và mình cũng thế TypeScript khó tính quá mà.
 
 Nhưng mà suy nghĩ xa đi 1 chút, chúng ta có thể quản lý dữ liệu và luồng dữ liệu chặt chẽ hơn nhờ có TypeScript.
 
@@ -38,41 +37,42 @@ Thì chuyện là hiện tại compiler của tiniapp chỉ hỗ trợ ES chưa 
 
 Do đó ý tưởng của mình ở đây là gì? Tadaa..
 
-Đơn giản là mình sẽ compile code TypeScript/Less sang JS/CSS thôi nè. 
+Đơn giản là mình sẽ compile code TypeScript/Less sang JS/CSS thôi nè.
 
-Theo ý tưởng trên thì mình sẽ viết 1 script cấu hình tasks để compile TS sang ES, rồi dùng ES đó làm entry cho Tini App. 
+Theo ý tưởng trên thì mình sẽ viết 1 script cấu hình tasks để compile TS sang ES, rồi dùng ES đó làm entry cho Tini App.
 
 `es folder` ở đây sẽ được coi như là `dist folder`.
+
 ```
-- scripts/                                        
- |  compiler.js 
-- es/                         
- |- pages/                    
+- scripts/
+ |  compiler.js
+- es/
+ |- pages/
   |  index.js
   |  index.json
   |  index.tcss
-  |  index.txml               
- |  app.js 
+  |  index.txml
+ |  app.js
  |  app.tcss
- |  app.json                  
-- src/                        
- |- pages/                    
-  |  index.ts 
+ |  app.json
+- src/
+ |- pages/
+  |  index.ts
   |  index.less
-  |  index.json 
-  |  index.txml               
- |  app.json                  
+  |  index.json
+  |  index.txml
+ |  app.json
  |  app.ts
  |  app.less
-- types/                                                     
+- types/
  |  index.d.ts
 tsconfig.json
 babel.config.js
 package.json
-  
+
 ```
 
-Vậy đầu tiên làm gì ta? 
+Vậy đầu tiên làm gì ta?
 
 Mình sẽ chọn 1 tool Task Runner có các tính năng mình cần dùng chủ yếu là: Tasks, Minify, Complile, Reload.
 
@@ -82,7 +82,8 @@ Bắt đầu thôi đi từng cái nào.
 
 1. Install packages
 
-``packages.json``
+`packages.json`
+
 ```json
 {
   "name": "app-typescript",
@@ -123,7 +124,7 @@ Bắt đầu thôi đi từng cái nào.
 }
 ```
 
-``babel.config.js``
+`babel.config.js`
 
 ```js
 module.exports = {
@@ -132,18 +133,19 @@ module.exports = {
       '@babel/preset-env',
       {
         loose: true,
-        modules: false,
-      },
+        modules: false
+      }
     ],
-    '@babel/preset-typescript',
+    '@babel/preset-typescript'
   ],
-  plugins: ['@babel/plugin-syntax-dynamic-import', '@babel/plugin-transform-runtime'],
+  plugins: [
+    '@babel/plugin-syntax-dynamic-import',
+    '@babel/plugin-transform-runtime'
+  ]
 };
-
 ```
 
-
-Tiếp tục là file script nè: ``compiler.js``
+Tiếp tục là file script nè: `compiler.js`
 
 ```js
 const path = require('path');
@@ -167,7 +169,7 @@ gulp.task('less', () =>
     .pipe(cleanCss())
     .pipe(
       rename({
-        extname: '.tcss',
+        extname: '.tcss'
       })
     )
     .pipe(gulp.dest(dist))
@@ -197,21 +199,32 @@ gulp.task('js', () =>
     .pipe(gulp.dest(dist))
 );
 
-gulp.task('json', () => gulp.src(`${src}/**/*.json`).pipe(gulp.dest(dist)));
+gulp.task('json', () =>
+  gulp.src(`${src}/**/*.json`).pipe(gulp.dest(dist))
+);
 
-gulp.task('txml', () => gulp.src(`${src}/**/*.txml`).pipe(gulp.dest(dist)));
+gulp.task('txml', () =>
+  gulp.src(`${src}/**/*.txml`).pipe(gulp.dest(dist))
+);
 
-gulp.task('sjs', () => gulp.src(`${src}/**/*.sjs`).pipe(gulp.dest(dist)));
+gulp.task('sjs', () =>
+  gulp.src(`${src}/**/*.sjs`).pipe(gulp.dest(dist))
+);
 
 gulp.task('tcss', () =>
-  gulp.src([`${src}/**/*.tcss`, `!${src}/**/*.skip.tcss`]).pipe(gulp.dest(dist))
+  gulp
+    .src([`${src}/**/*.tcss`, `!${src}/**/*.skip.tcss`])
+    .pipe(gulp.dest(dist))
 );
 
 const build = gulp.series(...extTypes);
 build();
 
 extTypes.forEach((type) => {
-  const watcher = gulp.watch(`${src}/**/*${type}`, gulp.series(type));
+  const watcher = gulp.watch(
+    `${src}/**/*${type}`,
+    gulp.series(type)
+  );
   watcher.on('change', (event) => {
     console.log(`File ${event} was change`);
   });
@@ -222,17 +235,16 @@ extTypes.forEach((type) => {
     console.log(`File ${event} was remove`);
   });
 });
-
 ```
 
+Bạn có thể cài đặt thêm tini-types để có thể có các gợi ý code trên các IDE
 
-Bạn có thể cài đặt thêm tini-types để có thể có các gợi ý code trên các IDE 
-
-``yarn add @tiki.vn/tini-types``
+`yarn add @tiki.vn/tini-types`
 
 Sau đó config như sau:
 
-``tsconfig.json``
+`tsconfig.json`
+
 ```json
 {
   "compilerOptions": {
@@ -240,10 +252,16 @@ Sau đó config như sau:
     "target": "es6",
     "noImplicitThis": true,
     "noImplicitUseStrict": true,
-    "typeRoots": ["types/index.d.ts", "node_modules/@tiki.vn/tini-types/types/index.d.ts" ]
-
+    "typeRoots": [
+      "types/index.d.ts",
+      "node_modules/@tiki.vn/tini-types/types/index.d.ts"
+    ]
   },
-  "include": ["types/**/*", "src/**/*", "node_modules/@tiki.vn/tini-types/types/**/*"]
+  "include": [
+    "types/**/*",
+    "src/**/*",
+    "node_modules/@tiki.vn/tini-types/types/**/*"
+  ]
 }
 ```
 
@@ -251,29 +269,29 @@ Sau đó config như sau:
 
 ![](https://i.imgur.com/GZ1kkIq.png)
 
-Code Tini App sẽ được gợi ý rất nhiệt tình  :yum:
+Code Tini App sẽ được gợi ý rất nhiệt tình :yum:
 
 Tuy nhiên việc gợi ý code này đã được support sẵn khi bạn dùng [Tini Studio](https://developers.tiki.vn/downloads) để code nha.
 
-Và cuối cùng là nhớ [cấu hình project](https://developers.tiki.vn/docs/development/studio/project-config) của mình root là folder es nè. 
+Và cuối cùng là nhớ [cấu hình project](https://developers.tiki.vn/docs/development/studio/project-config) của mình root là folder es nè.
 
-``project.config.json``
+`project.config.json`
+
 ```json
 {
-    "miniprogramRoot": "es"
+  "miniprogramRoot": "es"
 }
 ```
 
-
 Done :yum: chạy lệnh thôi nào ...
 
-``yarn run dev``
+`yarn run dev`
 
 Example: https://github.com/anhhuynh5/tiniapp-typescript
 
 ## 4. Example
 
-Ở đây mình viết example component thôi nha. Thế là xong. 
+Ở đây mình viết example component thôi nha. Thế là xong.
 
 ```js
 interface TestMethods {
@@ -312,3 +330,4 @@ TypeScript là một-lựa-chọn tốt, nhưng nó không thay thế hoàn toà
 Hi vọng bài viết của mình giúp bạn có thêm tài liệu tham khảo khi áp dụng TypeScript cho dự án Tini App của bạn.
 
 Example: https://github.com/anhhuynh5/tiniapp-typescript
+

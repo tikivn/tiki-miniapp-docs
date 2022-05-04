@@ -140,6 +140,7 @@ module.exports = {
       },
     ],
     path.resolve(__dirname, './plugins/docusaurus-plugin-facebook-pixel'),
+    path.resolve(__dirname, './plugins/docusaurus-plugin-facebook-share'),
     path.resolve(__dirname, './plugins/docusaurus-plugin-gtm'),
   ],
   presets: [

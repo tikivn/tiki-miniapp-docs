@@ -1,6 +1,7 @@
 ---
 title: Custom header
 ---
+
 Bài viết này sẽ hướng dẫn các bạn làm một header cho page với nội dung được fixed on top kèm theo animation khi scroll page
 
 <!--truncate-->

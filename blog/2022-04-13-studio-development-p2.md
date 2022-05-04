@@ -1,19 +1,20 @@
 ---
 title: Quá trình xây dựng IDE cho Tini App (Phần 2)
+group: studio
 ---
 
 # Quá trình xây dựng IDE cho Tini App (Phần 2)
 
 ![Tini App Studio](https://raw.githubusercontent.com/tikivn/tiki-miniapp-docs/master/static/img/studio-development.jpg)
 
-Trong nội dung của phần mở đầu đã đề cập tới mục tiêu của chuỗi bài viết ***Quá trình xây dựng IDE cho Tini App*** là tập trung vào các thành phần và quá trình xây dựng IDE. Tuy nhiên, để dễ dàng hơn trong việc tiếp cận những kiến thức đó. Ở phần này, chúng ta sẽ giới thiệu sơ lược về Tini App, những khái niệm liên quan và tại sao phải dành thời gian để xây dựng IDE.
+Trong nội dung của phần mở đầu đã đề cập tới mục tiêu của chuỗi bài viết **_Quá trình xây dựng IDE cho Tini App_** là tập trung vào các thành phần và quá trình xây dựng IDE. Tuy nhiên, để dễ dàng hơn trong việc tiếp cận những kiến thức đó. Ở phần này, chúng ta sẽ giới thiệu sơ lược về Tini App, những khái niệm liên quan và tại sao phải dành thời gian để xây dựng IDE.
 
 <br/>
 
 **Nội dung bao gồm:**
 
 1. Phần mở đầu
-2. Sơ lược về Tini App và tại sao phải xây dựng IDE? *(Bạn đang đọc bài này)*
+2. Sơ lược về Tini App và tại sao phải xây dựng IDE? _(Bạn đang đọc bài này)_
 3. Ngôn ngữ cho Tini App và công cụ compiler
 4. Chọn giải pháp và xây dựng editor
 5. Giả lập môi trường ứng dụng Tini App và các cộng cụ debug
@@ -27,13 +28,13 @@ Với mô hình truyền thống, một ứng dụng sẽ sở hữu một dịc
 
 ![Tini App Studio](https://raw.githubusercontent.com/tikivn/tiki-miniapp-docs/master/static/img/super-app.jpg)
 
-***Ví dụ Super App***
+**_Ví dụ Super App_**
 
 Với Super App, ứng dụng không chỉ còn gói gọn trong một dịch vụ, mà người dùng có thể tìm kiếm và sử dụng thêm các dịch vụ vệ tinh xung quanh cùng với dịch vụ gốc. Ví dụ, thay vì chúng ta phải cài đặt rất nhiều ứng dụng cho mỗi loại dịch vụ khác nhau như: Thương mại điện tử, ví điện tử, bảo hiểm, … Thì giờ đây, chỉ cần cài đặt một Super App và ở đó tích hợp tất cả các dịch vụ mà chúng ta cần. Việc này không chỉ mang lại lợi ích cho doanh nghiệp mà còn thuận tiện hơn cho người sử dụng, mang tới một trải nghiệm liền mạch.
 
 ## Những giải pháp để xây dựng Super App
 
-Giải pháp đầu tiên cho việc chuyển đổi ứng dụng của doanh nghiệp trở thành một Super App là *“Tự thân làm nên tất cả”*. Cụ thể, doanh nghiệp sẽ chủ động xây dựng đội ngũ để làm các tính năng cho từng dịch vụ của đối tác.
+Giải pháp đầu tiên cho việc chuyển đổi ứng dụng của doanh nghiệp trở thành một Super App là _“Tự thân làm nên tất cả”_. Cụ thể, doanh nghiệp sẽ chủ động xây dựng đội ngũ để làm các tính năng cho từng dịch vụ của đối tác.
 
 - **Ưu điểm:** Chủ động kiểm soát được chất lượng sản phẩm đạt mức tốt nhất, an toàn nhất cho doanh nghiệp.
 
@@ -55,7 +56,7 @@ Sử dụng WebView để hiển thị website có sẵn từ đối tác cũng 
 
 ![Tini App Studio](https://raw.githubusercontent.com/tikivn/tiki-miniapp-docs/master/static/img/mini-app.jpg)
 
-***Ví dụ Super App và Mini App***
+**_Ví dụ Super App và Mini App_**
 
 Mini App là một khái niệm mới, được bắt nguồn từ thị trường Trung Quốc. Mini App được hiểu đơn giản là một ứng dụng nhỏ, có thể xem như là một dịch vụ của đối tác; và được Super App như là một kênh phân phối ứng dụng tới người sử dụng. Mini App có thể tận dụng được hết các lợi thế của những công nghệ nói trên và khắc phục điểm yếu là phải cấp quyền truy cập source code của doanh nghiệp cho đối tác.
 
@@ -65,7 +66,7 @@ Tini App là một dự án Mini App do Tiki phát triển. Trên thị trườn
 
 ![Tini App Studio](https://raw.githubusercontent.com/tikivn/tiki-miniapp-docs/master/static/img/tini-app.png)
 
-***Ví dụ quy trình phát triển một Tini App***
+**_Ví dụ quy trình phát triển một Tini App_**
 
 Đối với Tini App, Tiki chọn giải pháp có thể xem là tốt nhất, đã được thị trường Trung Quốc xây dựng và chứng minh mức độ hiệu quả. Thay vì sử dụng các công nghệ có sẵn để cung cấp cho đối tác, Tiki xây dựng riêng bộ ngôn ngữ và các công cụ cho Tini App để các đối tác dựa trên đó phát triển sản phẩm của mình. Sau đó, ứng dụng sẽ được chuyển đổi sao cho phù hợp với từng nền tảng, từng thiết bị khác nhau. Quá trình chuyển đối này đều phải thông qua các công cụ của Tiki xây dựng, giảm thiểu tối đa rủi ro có thể gặp phải. Có thể hiểu đơn giản, Tini App như là một hệ điều hành thu nhỏ trên Tiki.
 
@@ -73,6 +74,6 @@ Tini App là một dự án Mini App do Tiki phát triển. Trên thị trườn
 
 Chính vì xây dựng bộ ngôn ngữ riêng, Tini App cần có công cụ lập trình, kiểm thử và các giải pháp đính kèm để hỗ trợ tối đa, thuận tiện cho việc phát triển ứng dụng.
 
-\***
+\*\*\*
 
-*Để hiểu rõ hơn, ở các phần tiếp theo của chuỗi bài viết. Mình sẽ chia sẻ nhiều hơn về kiến trúc và các công cụ phát triển một Tini App. Các bạn cũng có thể truy cấp website [developers.tiki.vn](https://developers.tiki.vn) và cộng đồng Tini App [community.tiki.vn](https://community.tiki.vn) để có thêm nhiều thông tin.*
+_Để hiểu rõ hơn, ở các phần tiếp theo của chuỗi bài viết. Mình sẽ chia sẻ nhiều hơn về kiến trúc và các công cụ phát triển một Tini App. Các bạn cũng có thể truy cấp website [developers.tiki.vn](https://developers.tiki.vn) và cộng đồng Tini App [community.tiki.vn](https://community.tiki.vn) để có thêm nhiều thông tin._

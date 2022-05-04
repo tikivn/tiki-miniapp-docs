@@ -1,5 +1,6 @@
 ---
 title: Quá trình xây dựng IDE cho Tini App (Phần 1)
+group: studio
 ---
 
 # Quá trình xây dựng IDE cho Tini App (Phần 1)
@@ -12,13 +13,13 @@ Cùng với sự phát triển đó, các doanh nghiệp công nghệ đang dầ
 
 Với việc xoay chuyển để trở thành một hệ sinh thái đa dịch vụ, trong thế giới của các nhà phát triển ứng dụng công nghệ có một khái niệm mới được ra đời, đó là Super App (Siêu ứng dụng).
 
-Ở nội dung của chuỗi bài viết ***“Quá trình xây dựng IDE cho Tini App”*** chúng ta sẽ đề cập tới Super App là gì; những khó khăn trong việc phát triển Super App; Tini App ra đời như thế nào và có mối liên hệ gì với Super App; để phát triển Tini App đạt hiệu quả tốt nhất ta cần xây dựng những gì. Ta cũng dành thời gian để đi sâu hơn về công nghệ và kiến trúc của IDE cho Tini App.
+Ở nội dung của chuỗi bài viết **_“Quá trình xây dựng IDE cho Tini App”_** chúng ta sẽ đề cập tới Super App là gì; những khó khăn trong việc phát triển Super App; Tini App ra đời như thế nào và có mối liên hệ gì với Super App; để phát triển Tini App đạt hiệu quả tốt nhất ta cần xây dựng những gì. Ta cũng dành thời gian để đi sâu hơn về công nghệ và kiến trúc của IDE cho Tini App.
 
 <br/>
 
 **Nội dung bao gồm:**
 
-1. Phần mở đầu *(Bạn đang đọc bài này)*
+1. Phần mở đầu _(Bạn đang đọc bài này)_
 2. Sơ lược về Tini App và tại sao phải xây dựng IDE?
 3. Ngôn ngữ cho Tini App và công cụ compiler
 4. Chọn giải pháp và xây dựng editor
@@ -27,4 +28,4 @@ Với việc xoay chuyển để trở thành một hệ sinh thái đa dịch v
 
 <br/>
 
-*Lưu ý: Bài viết được viết dưới góc nhìn của một người làm sản phẩm. Tập trung chủ yếu vào mục tiêu tìm kiếm giải pháp xây dựng hiệu quả. Không nhằm mục đích đánh giá hay so sánh bất kì công nghệ nào.*
+_Lưu ý: Bài viết được viết dưới góc nhìn của một người làm sản phẩm. Tập trung chủ yếu vào mục tiêu tìm kiếm giải pháp xây dựng hiệu quả. Không nhằm mục đích đánh giá hay so sánh bất kì công nghệ nào._
