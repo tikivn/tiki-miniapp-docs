@@ -2,9 +2,7 @@
 title: my.showToast
 ---
 
-## Giới thiệu
-
-`my.showToast` là api để hiển thị toast popup slide từ top và tự hide đi sau 1 khoảng thời gian được set hoặc dùng api `my.hideToast`
+`my.showToast` là API để hiển thị Toast từ top và tự hide đi sau 1 khoảng thời gian được set hoặc dùng `my.hideToast` api.
 
 ## Quét mã để trải nghiệm
 
@@ -12,13 +10,22 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/toast/index" />
 
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                       |
+| ---------- | ------------ | ------------------------------------------- |
+| type       | string       | success hoặc fail                           |
+| content    | string       | Content message của toast                   |
+| buttonText | string       | Text của button, mặc định là rỗng           |
+| duration   | number       | Thời gian để hide toast, mặc định là 3000ms |
+| success    | Function     | Callback function khi hiển thị toast thành công.             |
+| fail       | Function     | Callback function khi hiển thị toast thất bại.                |
+| complete   | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại.         |
 
-**index.txml**
 
-```xml
+## Sample Code
+
+```xml title=index.txml
 <view class="page">
   <view class="page-description">Toast API</view>
   <view class="page-section">
@@ -30,9 +37,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onToast() {
     my.showToast({
@@ -53,14 +58,3 @@ Page({
 })
 ```
 
-### Chi tiết
-
-| Thuộc tính | Kiểu dữ liệu | Required | Mô tả                                       |
-| ---------- | ------------ | -------- | ------------------------------------------- |
-| type       | String       | No       | success hoặc fail                           |
-| content    | String       | No       | Content message của toast                   |
-| buttonText | String       | No       | Text của button, mặc định là rỗng           |
-| duration   | Number       | No       | Thời gian để hide toast, mặc định là 3000ms |
-| success    | Function     | No       | Callback khi toast show success             |
-| fail       | Function     | No       | Callback khi toast show fail                |
-| complete   | Function     | No       | Callback khi toast đã được show             |

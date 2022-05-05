@@ -2,11 +2,24 @@
 title: my.saveFile
 ---
 
-`my.saveFile` là API dùng lưu lại file về device từ 1 đường dẫn tạm thời (local temporary file)
+`my.saveFile` là API dùng để lưu lại file về thiết bị từ 1 đường dẫn tạm thời (local temporary file)
 
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                     |
+| ---------- | -------- | :-------: | ------------------------------------------------------------------------------ |
+| filePath      | String   | ✓       |  Đường dẫn của local temporary file                   |
+| success    | Function |        | Callback function khi save file được thực hiện thành công                     |
+| fail       | Function |        | Callback function khi save file thất bại                                      |
+| complete   | Function |        | Callback function khi việc save file kết thúc cho dù thành công hay thất bại. |
+
+### Callback success function payload
+
+| Thuộc tính | Kiểu dữ liệu   | Mô tả                 |
+| ---------- | ------ | -------------------------- |
+| filePath  | String  | Đường dẫn của tới file đã saved |
+
+## Sample Code
 
 ```xml
 <view>
@@ -63,20 +76,3 @@ Page({
 });
 
 ```
-
-### API Params
-
-Các thuộc tính:
-
-| Attributes | Type     | Required | Description                                                                    |
-| ---------- | -------- | -------- | ------------------------------------------------------------------------------ |
-| filePath      | String   | Yes       |  Đường dẫn của local temporary file                   |
-| success    | Function | No       | Callback function khi save file được thực hiện thành công                     |
-| fail       | Function | No       | Callback function khi save file thất bại                                      |
-| complete   | Function | No       | Callback function khi việc save file kết thúc cho dù thành công hay thất bại. |
-
-### Callback success function payload
-
-| Attributes | Type   | Description                |
-| ---------- | ------ | -------------------------- |
-| filePath  | String  | Đường dẫn của tới file đã saved |                                    

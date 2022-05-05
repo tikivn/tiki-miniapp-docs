@@ -13,7 +13,7 @@ import { QRCode } from '@site/src/components/QRCode';
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                            |
-| ---------- | ------------ | -------- | -------------------------------------------------------------------------------- |
+| ---------- | ------------ | :------: | -------------------------------------------------------------------------------- |
 | interval   | string       | ✓        | Tham số dùng để giám sát tần suất gọi lại dữ liệu. Giá trị mặc định là 'normal'. |
 | success    | Function     |          | Callback function khi thực hiện thành công.                                      |
 | fail       | Function     |          | Callback function khi thực hiện thất bại.                                        |

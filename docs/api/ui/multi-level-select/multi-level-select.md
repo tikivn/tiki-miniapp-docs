@@ -2,9 +2,32 @@
 title: my.multiLevelSelect
 ---
 
-## Giới thiệu
+`my.multiLevelSelect` là API dùng để tạo component select đa cấp.
 
-**my.multiLevelSelect** là API dùng để tạo component select đa cấp.
+## API Params
+
+| Thuộc tính | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                             |
+| ---------- | ---------------- | :------: | --------------------------------------------------------------------------------- |
+| title      | string           |          | Tiêu đề.                                                                          |
+| list       | Array of objects |    ✓     | Danh sách các mục tùy chọn. Vui lòng tham khảo bảng đối tượng danh sách bên dưới. |
+| suggest    | string           |          | Text gợi ý lựa chọn, Mặc định là "Vui lòng chọn".                                 |
+| success    | Function         |          | Callback function khi chọn thành công.                                            |
+| fail       | Function         |          | Callback function khi thất bại.                                                   |
+| complete   | Function         |          | Callback function khi gọi API hoàn tất bất kể thành công hay thất bại.            |
+
+### Giá trị trong list
+
+| Thuộc tính | Kiểu dữ liệu             | Mô tả                |
+| ---------- | ---------------- | ------------------------- |
+| name       | String           | Tên của mục nhập.         |
+| subList    | Array of objects | Danh sách các subentries. |
+
+### Giá trị trong success callback
+
+| Thuộc tính | Kiểu dữ liệu     | Mô tả                                                                                      |
+| ---------- | ------- | ----------------------------------------------------------------------------------------------- |
+| success    | boolean | True hoặc False                                                                                 |
+| result     | string  | Kết quả trả về. Ví dụ [{"name":"HCM City"},{"name":"District 3"},{"name":"Vo Van Tan Street"}]. |
 
 ## Quét mã để trải nghiệm
 
@@ -12,13 +35,9 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/multi-level-select/index" />
 
-## Sử dụng
+## Sample Code
 
-### Sample Code
-
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view>
   <block-header title="Usage" description="my.multiLevelSelect" />
   <view class="block-content">
@@ -29,9 +48,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onShowMultiLevelSelect() {
     my.multiLevelSelect({
@@ -98,27 +115,4 @@ Page({
 });
 ```
 
-## API Params
 
-| Thuộc tính | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                             |
-| ---------- | ---------------- | :------: | --------------------------------------------------------------------------------- |
-| title      | String           |          | Tiêu đề.                                                                          |
-| list       | Array of objects |    ✓     | Danh sách các mục tùy chọn. Vui lòng tham khảo bảng đối tượng danh sách bên dưới. |
-| suggest    | String           |          | Text gợi ý lựa chọn, Mặc định là "Vui lòng chọn".                                 |
-| success    | Function         |          | Callback function khi chọn thành công.                                            |
-| fail       | Function         |          | Callback function khi thất bại.                                                   |
-| complete   | Function         |          | Callback function khi gọi API hoàn tất bất kể thành công hay thất bại.            |
-
-### Giá trị trong list
-
-| Attributes | Type             | Description               |
-| ---------- | ---------------- | ------------------------- |
-| name       | String           | Tên của mục nhập.         |
-| subList    | Array of objects | Danh sách các subentries. |
-
-### Giá trị trong success callback
-
-| Attributes | Type    | Description                                                                                     |
-| ---------- | ------- | ----------------------------------------------------------------------------------------------- |
-| success    | Boolean | True hoặc False                                                                                 |
-| result     | String  | Kết quả trả về. Ví dụ [{"name":"HCM City"},{"name":"District 3"},{"name":"Vo Van Tan Street"}]. |

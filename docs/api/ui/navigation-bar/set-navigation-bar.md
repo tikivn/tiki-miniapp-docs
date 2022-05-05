@@ -2,9 +2,7 @@
 title: my.setNavigationBar
 ---
 
-## Giới thiệu
-
-**my.setNavigationBar** là API để set style cho Navigation Bar
+`my.setNavigationBar` là API để set style cho Navigation Bar
 
 ## Quét mã để trải nghiệm
 
@@ -12,9 +10,20 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/navigation-bar/set-navigation-bar/index" />
 
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính        | Kiểu dữ liệu    | Mô tả                                                                                         |
+| ----------------- | -------- | --------------------------------------------------------------------------------------------------- |
+| title             | string   | Tiêu đề của Navigation Bar                                                                                 |
+| image             | string   | Image URL được sử dụng để render trên title. Khi image được set thì `title` sẽ không còn hiệu lực   |
+| titleBarColor     | HexColor | Background color của Navigation Bar                                                                 |
+| borderBottomColor | HexColor | Nếu `backgroundColor` được set, thì `borderBottomColor` sẽ luôn nhận giá trị bằng `backgroundColor` |
+| reset             | Boolean  | Reset về `titleBarColor` và `borderBottomColor` về màu mặc định                                     |
+| success           | Function | Callback function khi thành công.                                                                   |
+| fail              | Function | Callback function khi thất bại.                                                                     |
+| complete          | Function | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                               |
+
+## Sample Code
 
 ```js
 Page({
@@ -40,15 +49,4 @@ Page({
 });
 ```
 
-### API Params
 
-| Attributes        | Type     | Required | Description                                                                                         |
-| ----------------- | -------- | -------- | --------------------------------------------------------------------------------------------------- |
-| title             | string   | no       | Navigation Bar title                                                                                |
-| image             | string   | no       | Image URL được sử dụng để render trên title. Khi image được set thì `title` sẽ không còn hiệu lực   |
-| titleBarColor     | HexColor | no       | Background color của Navigation Bar                                                                 |
-| borderBottomColor | HexColor | no       | Nếu `backgroundColor` được set, thì `borderBottomColor` sẽ luôn nhận giá trị bằng `backgroundColor` |
-| reset             | Boolean  | no       | Reset về `titleBarColor` và `borderBottomColor` về màu mặc định                                     |
-| success           | Function | No       | Callback function khi thành công.                                                                   |
-| fail              | Function | No       | Callback function khi thất bại.                                                                     |
-| complete          | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                               |

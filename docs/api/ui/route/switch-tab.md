@@ -2,9 +2,17 @@
 title: my.switchTab
 ---
 
-## Giới thiệu
+`my.switchTab` là API dùng để nhảy về một tab ở màn hình home
 
-**my.switchTab** là API dùng để nhảy về một tab ở màn hình home
+## API Params
+
+|Thuộc tính  | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                                                     |
+| ---------- | -------- | :------: | --------------------------------------------------------------------------------------------------------------- |
+| url        | String   | ✓      | Đường dẫn (pagePath) của màn hình muốn nhảy tới. pagePath phải được định nghĩa trong trường tabBar của app.json |
+| success    | Function |        | Callback function khi gọi hàm thành công.                                                                               |
+| fail       | Function |        | Callback function khi gọi hàm thất bại.                                                                                 |
+| complete   | Function |        | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại.                                           |
+
 
 ## Quét mã để trải nghiệm
 
@@ -46,11 +54,3 @@ Page({
 });
 ```
 
-### API Params
-
-| Attributes | Type     | Required | Description                                                                                                     |
-| ---------- | -------- | -------- | --------------------------------------------------------------------------------------------------------------- |
-| url        | String   | Yes      | Đường dẫn (pagePath) của màn hình muốn nhảy tới. pagePath phải được định nghĩa trong trường tabBar của app.json |
-| success    | Function | No       | Callback function khi thành công.                                                                               |
-| fail       | Function | No       | Callback function khi thất bại.                                                                                 |
-| complete   | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                                           |

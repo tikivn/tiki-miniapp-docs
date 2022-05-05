@@ -2,9 +2,7 @@
 title: my.createAnimation
 ---
 
-## Giới thiệu
-
-my.createAnimation là api để tạo ra một animation instance.
+`my.createAnimation` là API để tạo ra một animation instance.
 
 Animation instance sử dụng các hàm của nó để mô tả animation và cuối cùng,
 sử dụng hàm `export` để truyền thuộc tính animation vào các view trên TXML.
@@ -15,9 +13,16 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/animation/index" />
 
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính      | Kiểu dữ liệu | Mô tả                                                                                                                                                             |
+| --------------- | ------------ |  ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| duration        | Number       | Thời gian để animation được thực hiện, mặc định là 400ms                                                                                                          |
+| timeFunction    | String       | Hiệu ứng để thực hiện animation, có thể nhận các giá trị: `linear`, `ease`, `ease-in`, `ease-out`, `ease-in-out`, `step-start`, `step-end`. Mặc định là `linear`. |
+| delay           | Number       | Animation delay time. Đơn vị tính mili giây.   |
+| transformOrigin | string       | Giá trị ban đầu của CSS transform.                                                                                                                                |
+
+## Sample Code
 
 ```css
 .animation-element {
@@ -139,11 +144,4 @@ Page({
 });
 ```
 
-### Chi tiết
 
-| Thuộc tính      | Kiểu dữ liệu | Required | Mô tả                                                                                                                                                             |
-| --------------- | ------------ | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| duration        | Number       | No       | Thời gian để animation được thực hiện, mặc định là 400ms                                                                                                          |
-| timeFunction    | String       | No       | Hiệu ứng để thực hiện animation, có thể nhận các giá trị: `linear`, `ease`, `ease-in`, `ease-out`, `ease-in-out`, `step-start`, `step-end`. Mặc định là `linear`. |
-| delay           | Number       | No       | Animation delay time (in ms).                                                                                                                                     |
-| transformOrigin | string       | No       | Giá trị ban đầu của CSS transform.                                                                                                                                |

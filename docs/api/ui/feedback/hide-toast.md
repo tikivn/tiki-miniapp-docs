@@ -2,9 +2,15 @@
 title: my.hideToast
 ---
 
-## Giới thiệu
+`my.hideToast` là API để hide toast thủ công.
 
-my.hideToast là api để hide toast thủ công.
+## API Params
+
+| Thuộc tính | Kiểu dữ liệu | Mô tả                           |
+| ---------- | ------------ | ------------------------------- |
+| success    | Function     | Callback function ẩn toast hàm thành công. |
+| fail       | Function     | Callback function khi ẩn toast thất bại.  |
+| complete   | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại.   |
 
 ## Quét mã để trải nghiệm
 
@@ -12,13 +18,9 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/toast/index" />
 
-## Sử dụng
+## Sample Code
 
-### Sample Code
-
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view class="page">
   <view class="page-description">Loading API</view>
   <view class="page-section">
@@ -30,9 +32,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onHideToast() {
     my.showToast({
@@ -56,10 +56,3 @@ Page({
 });
 ```
 
-### Chi tiết
-
-| Thuộc tính | Kiểu dữ liệu | Required | Mô tả                           |
-| ---------- | ------------ | -------- | ------------------------------- |
-| success    | Function     | No       | Callback khi toast hide success |
-| fail       | Function     | No       | Callback khi loading hide fail  |
-| complete   | Function     | No       | Callback khi toast được hide    |

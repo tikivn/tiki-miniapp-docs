@@ -2,15 +2,43 @@
 title: my.openScreen
 ---
 
-## Giới thiệu
+`my.openScreen` là API dùng để mở 1 số màn hình của Tiki.
 
-**my.openScreen** là API dùng để mở 1 số màn hình của tiki
+## API Params
 
-## Sử dụng
 
-### Sample Code
-index.txml
-```xml
+| Thuộc tính | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                         |
+| ---------- | -------- | :------: | ----------------------------------------------------------------------------------- |
+| screenCode | String   | ✓     | Mã screen cần mở |
+| params     | Object   |          | Các thông số params gửi kèm khi mở màn hình ví dụ màn hình product detail cần product id |
+| success    | Function |        | Callback function khi mở màn hình được thực hiện thành công                             |
+| fail       | Function |        | Callback function khi mở màn hình thất bại, argument sẽ là error message                |
+| complete   | Function |        | Callback function khi việc mở màn hình kết thúc cho dù thành công hay thất bại.     |
+
+### Callback function payload
+
+* success callback payload là 1 biến boolean và luôn là true 
+* Fail callback payload 
+
+| Thuộc tính   | Kiểu dữ liệu     |  Mô tả              |
+| ----------   | -------- | ------------------------- |
+| error        | string   | error title               |
+| errorMessage | string   | error message in detail   |
+
+### Mã màn hình
+
+| Mã màn hình  | Mô tả | Params required |
+| ----------   | -------- | ------------------------- |
+| TK_PRODUCT_DETAIL  | Màn hình Product detail   |     productId          |
+| TK_HOME | Màn hình home   | No |
+| TK_LISTING | Màn hình categories   | categoryId (web) |
+| TK_SOCIAL_FEED | Màn hình Lướt   | No |
+| TK_PROFILE | Màn hình user profile   | tikiid |
+| TK_CART | Màn hình Cart          |  |
+
+## Sample Code
+
+```xml title=index.txml
 <view>
   <block-header title="Usage" description="Open a screen" />
   <view class="block-content">
@@ -41,8 +69,8 @@ index.txml
 </view>
 ```
 
-index.js
-```js
+
+```js title=index.js
 Page({
   ...
   onOpenProductDetail() {
@@ -129,35 +157,4 @@ Page({
 }
 ```
 
-### API Params
 
-Các thuộc tính:
-
-| Attributes | Type     | Required | Description                                                                         |
-| ---------- | -------- | -------- | ----------------------------------------------------------------------------------- |
-| screenCode        | String   | Yes      | Mã screen cần mở |
-| params | Object | No | Các thông số params gửi kèm khi mở màn hình ví dụ màn hình product detail cần product id |
-| success    | Function | No       | Callback function khi mở màn hình được thực hiện thành công                             |
-| fail       | Function | No       | Callback function khi mở màn hình thất bại, argument sẽ là error message                |
-| complete   | Function | No       | Callback function khi việc mở màn hình kết thúc cho dù thành công hay thất bại.     |
-
-### Callback function payload
-* success callback payload là 1 biến boolean và luôn là true 
-* Fail callback payload 
-
-| Attributes   | Type     |  Description              |
-| ----------   | -------- | ------------------------- |
-| error        | string   | error title               |
-| errorMessage | string   | error message in detail   |
-
-### Mã màn hình
-
-
-| Mã màn hình  | Description | Params required |
-| ----------   | -------- | ------------------------- |
-| TK_PRODUCT_DETAIL  | Màn hình Product detail   |     productId          |
-| TK_HOME | Màn hình home   | No |
-| TK_LISTING | Màn hình categories   | categoryId (web) |
-| TK_SOCIAL_FEED | Màn hình Lướt   | No |
-| TK_PROFILE | Màn hình user profile   | tikiid |
-| TK_CART | Màn hình Cart          |  |

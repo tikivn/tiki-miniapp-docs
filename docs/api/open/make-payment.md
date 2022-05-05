@@ -13,11 +13,13 @@ title: my.makePayment
 
 Xem thêm [Trạng thái đơn hàng](/docs/backend-api/payment/order-status)
 
-***Lưu ý***: Việc makePayment cần user phải được login từ trước. Sử dụng jsapi my.getAuthCode để lấy accessToken và sau đó tạo order.
+:::note Lưu ý
+
+Việc makePayment cần user phải được login từ trước. Sử dụng jsapi my.getAuthCode để lấy accessToken và sau đó tạo order.
+
+:::
 
 ## API Params
-
-Các thuộc tính:
 
 | Thuộc tính    | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                           |
 | ------------- | ------------ | :------: | ----------------------------------------------------------------------------------------------- |

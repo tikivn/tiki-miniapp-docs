@@ -2,9 +2,7 @@
 title: my.showActionSheet
 ---
 
-## Giới thiệu
-
-my.showActionSheet là api để hiển thị bottom popup để user có thể chọn option.
+`my.showActionSheet` là API để hiển thị bottom popup để user có thể chọn option.
 
 ## Quét mã để trải nghiệm
 
@@ -12,13 +10,21 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/action-sheet/index" />
 
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính          | Kiểu dữ liệu | Bắt buộc | Mô tả                                                     |
+| ------------------- | ------------ | :------: | --------------------------------------------------------- |
+| title               | string       |        | Title của action sheet                                    |
+| items               | Array of strings | ✓       | Các options hiển thị ra cho user                          |
+| destructiveBtnIndex | number       |        | Chỉ ra index của option mà muốn hiển thị kiểu destructive |
+| cancelButtonText    | string       |        | Text của button cancel, mặc định là Cancel                |
+| success             | Function     |        | Callback function khi hiển thị bottom popup thành công.                    |
+| fail                | Function     |        | Callback function khi hiển thị bottom popup thất bại.                        |
+| complete            | Function     |        | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại.                   |
 
-**index.txml**
+## Sample Code
 
-```xml
+```xml title=index.txml
 <view class="page">
   <view class="page-description">Confirm API</view>
   <view class="page-section">
@@ -30,9 +36,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onActionSheet() {
     my.showActionSheet({
@@ -51,14 +55,5 @@ Page({
 });
 ```
 
-### Chi tiết
 
-| Thuộc tính          | Kiểu dữ liệu | Required | Mô tả                                                     |
-| ------------------- | ------------ | -------- | --------------------------------------------------------- |
-| title               | String       | No       | Title của action sheet                                    |
-| items               | Array String | Yes      | Các options hiển thị ra cho user                          |
-| destructiveBtnIndex | Number       | No       | Chỉ ra index của option mà muốn hiển thị kiểu destructive |
-| cancelButtonText    | String       | No       | Text của button cancel, mặc định là Cancel                |
-| success             | Function     | No       | Callback khi action sheet show success                    |
-| fail                | Function     | No       | Callback khi action sheetshow fail                        |
-| complete            | Function     | No       | Callback khi action sheet đã được show                    |
+ 

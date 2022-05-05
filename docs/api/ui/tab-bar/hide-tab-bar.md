@@ -2,13 +2,18 @@
 title: my.hideTabBar
 ---
 
-## Giới thiệu
+`my.hideTabBar` là API để ẩn đi thanh Tab Bar
 
-**my.hideTabBar** là API để ẩn đi thanh Tab Bar
+## API Params
 
-## Sử dụng
+| Thuộc tính | Kiểu dữ liệu     | Mô tả                                                            |
+| ---------- | -------- | --------------------------------------------------------------------- |
+| animation  | boolean  | Xác định việc ẩn Tab Bar đi có cần thực hiện với animation hay không  |
+| success    | Function | Callback function khi ẩn Tab Bar thành công.                                     |
+| fail       | Function | Callback function khi ẩn Tab Bar thất bại.                                       |
+| complete   | Function | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
 
-### Sample Code
+## Sample Code
 
 ```js
 my.hideTabBar({
@@ -16,11 +21,3 @@ my.hideTabBar({
 });
 ```
 
-### API Params
-
-| Attributes | Type     | Required | Description                                                           |
-| ---------- | -------- | -------- | --------------------------------------------------------------------- |
-| animation  | Boolean  | no       | Xác định việc ẩn Tab Bar đi có cần thực hiện với animation hay không  |
-| success    | Function | No       | Callback function khi thành công.                                     |
-| fail       | Function | No       | Callback function khi thất bại.                                       |
-| complete   | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |

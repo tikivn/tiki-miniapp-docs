@@ -2,8 +2,6 @@
 title: my.showLoading
 ---
 
-## Giới thiệu
-
 `my.showLoading` là api để hiển thị Loading. Có thể manual tắt loading bằng cách dùng api `my.hideLoading`.
 
 ## Quét mã để trải nghiệm
@@ -12,13 +10,9 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/loading/index" />
 
-## Sử dụng
+## Sample Code
 
-### Sample Code
-
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view class="page">
   <view class="page-description">Loading API</view>
   <view class="page-section">
@@ -30,9 +24,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onLoading() {
     my.showLoading({ content: 'Loading...', delay: 1000 });
@@ -43,12 +35,12 @@ Page({
 });
 ```
 
-### Chi tiết
+### API Params
 
-| Thuộc tính | Kiểu dữ liệu | Required | Mô tả                             |
-| ---------- | ------------ | -------- | --------------------------------- |
-| content    | String       | No       | Content message của loading box   |
-| delay      | Number       | No       | Delay thời gian show loading      |
-| success    | Function     | No       | Callback khi loading show success |
-| fail       | Function     | No       | Callback khi loading show fail    |
-| complete   | Function     | No       | Callback khi loading đã được show |
+| Thuộc tính | Kiểu dữ liệu |  Mô tả                             |
+| ---------- | ------------ | --------------------------------- |
+| content    | String       | Content message của loading box   |
+| delay      | Number       | Delay thời gian show loading      |
+| success    | Function     | Callback function khi hiển thị loading thành công. |
+| fail       | Function     | Callback function khi hiển thị loading thất bại.    |
+| complete   | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại. |

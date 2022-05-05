@@ -2,9 +2,7 @@
 title: my.hideKeyboard
 ---
 
-## Giới thiệu
-
-**my.hideKeyboard** là API dùng để ẩn bàn phím.
+`my.hideKeyboard` là API dùng để ẩn bàn phím.
 
 ## Quét mã để trải nghiệm
 
@@ -12,13 +10,10 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/keyboard/index" />
 
-## Sử dụng
 
-### Sample Code
+## Sample Code
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view>
   <block-header
     title="Usage"
@@ -37,9 +32,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   bindHideKeyboard(e) {
     if (e.detail.value === '123') {

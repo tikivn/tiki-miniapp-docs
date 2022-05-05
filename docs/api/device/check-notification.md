@@ -10,7 +10,6 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/check-notification/index" />
 
-
 ***Khả dụng***: hỗ trợ từ version 1.83.20 trở lên.
 
 ## API Params
@@ -31,7 +30,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 | Giá trị | Mô tả                                         |
 | ------- | --------------------------------------------- |
-| granted | Notification của Tiki app đã đuuợc bật lên.   |
+| granted | Notification của Tiki app đã được bật lên.   |
 | denied  | Notification của Tiki app không được bật lên. |
 
 

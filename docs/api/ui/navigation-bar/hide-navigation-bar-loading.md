@@ -2,9 +2,7 @@
 title: my.hideNavigationBarLoading
 ---
 
-## Giới thiệu
-
-**my.hideNavigationBarLoading** là API để ẩn đi loading animation trên thanh Navigation Bar của page hiện tại
+`my.hideNavigationBarLoading` là API để ẩn đi loading animation trên thanh Navigation Bar của page hiện tại
 
 ## Quét mã để trải nghiệm
 
@@ -12,13 +10,9 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/navigation-bar/loading/index" />
 
-## Sử dụng
-
 ### Sample Code
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view>
   <view class="block-content">
     <button class="button-full" onTap="showLoading">Show navigation bar loading</button>
@@ -27,9 +21,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   showLoading() {
     my.showNavigationBarLoading();

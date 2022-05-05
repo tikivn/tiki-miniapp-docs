@@ -2,17 +2,22 @@
 title: my.hideLoading
 ---
 
-## Giới thiệu
+`my.hideLoading` là api để hide loading.
 
-my.hideLoading là api để hide loading.
+## API Params
+
+| Thuộc tính | Kiểu dữ liệu |  Mô tả                             |
+| ---------- | ------------ |  --------------------------------- |
+| success    | Function     | Callback function khi gọi hàm thành công. |
+| fail       | Function     | Callback function khi gọi hàm thất bại.   |
+| complete   | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại. |
+
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/loading/index" />
-
-## Sử dụng
 
 ### Sample Code
 
@@ -30,9 +35,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onLoading() {
     my.showLoading({ content: 'Loading...' });
@@ -43,10 +46,3 @@ Page({
 });
 ```
 
-### Chi tiết
-
-| Thuộc tính | Kiểu dữ liệu | Required | Mô tả                             |
-| ---------- | ------------ | -------- | --------------------------------- |
-| success    | Function     | No       | Callback khi loading hide success |
-| fail       | Function     | No       | Callback khi loading hide fail    |
-| complete   | Function     | No       | Callback khi loading đã được hide |

@@ -2,7 +2,7 @@
 title: my.getAppIdSync
 ---
 
-`my.getAppIdSync` là API dùng để lấy ID của Mini App hiện tại
+`my.getAppIdSync` là API dùng để lấy ID của Mini App hiện tại.
 
 ## Sample code
 

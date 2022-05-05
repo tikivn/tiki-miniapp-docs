@@ -7,7 +7,7 @@ title: my.getSavedFileList
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                       |
-| ---------- | ------------ | -------- | --------------------------------------------------------------------------- |
+| ---------- | ------------ | :------: | --------------------------------------------------------------------------- |
 | filePath   | String       | ✓        | Đường dẫn tới local file                                                    |
 | success    | Function     |          | Callback function khi lấy thông tin tất cả tập tin thành công               |
 | fail       | Function     |          | Callback function khi lấy thông tin tất cả tập tin thất bại                 |

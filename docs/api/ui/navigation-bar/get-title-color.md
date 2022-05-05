@@ -2,9 +2,22 @@
 title: my.getTitleColor
 ---
 
-## Giới thiệu
+`my.getTitleColor` là API để lấy background color của Navigation Bar.
 
-**my.getTitleColor** là API để lấy background color của Navigation Bar
+## API Params
+
+| Thuộc tính | Kiểu dữ liệu     |  Mô tả                                                           |
+| ---------- | -------- | --------------------------------------------------------------------- |
+| success    | Function | Callback function khi thành công.                                     |
+| fail       | Function | Callback function khi thất bại.                                       |
+| complete   | Function | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
+
+### Giá trị trong success callback
+
+| Thuộc tính | Kiểu dữ liệu     | Mô tả                         |
+| ---------- | -------- | ----------------------------------- |
+| color      | HexColor | Background color của Navigation Bar |
+
 
 ## Quét mã để trải nghiệm
 
@@ -12,7 +25,6 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/navigation-bar/get-title-color/index" />
 
-## Sử dụng
 
 ### Sample Code
 
@@ -45,16 +57,3 @@ Page({
 });
 ```
 
-### API Params
-
-| Attributes | Type     | Required | Description                                                           |
-| ---------- | -------- | -------- | --------------------------------------------------------------------- |
-| success    | Function | No       | Callback function khi thành công.                                     |
-| fail       | Function | No       | Callback function khi thất bại.                                       |
-| complete   | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
-
-### Giá trị trong success callback
-
-| Attributes | Type     | Description                         |
-| ---------- | -------- | ----------------------------------- |
-| color      | HexColor | Background color của Navigation Bar |

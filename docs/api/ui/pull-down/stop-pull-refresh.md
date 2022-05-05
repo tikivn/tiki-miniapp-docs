@@ -2,8 +2,6 @@
 title: my.stopPullDownRefresh
 ---
 
-## Giới thiệu
-
 `my.stopPullDownRefresh` là api để stop loading khi đã gọi `my.startPullDownRefresh` hoặc manual pull down. Khi đã có được dữ liệu, phải gọi hàm này để tắt loading.
 
 ## Quét mã để trải nghiệm
@@ -12,22 +10,26 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/pull-refresh/index" />
 
-## Sử dụng
 
-### Sample Code
+## API Params
 
-**index.json**
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                 |
+| ---------- | ------------ | ----------------------------------------------------- |
+| success    | Function     | Callback function khi gọi hàm thành công. |
+| fail       | Function     | Callback function khi gọi hàm thất bại.    |
+| complete   | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại.             |
 
-```json
+
+## Sample Code
+
+```json title=index.json
 {
   "defaultTitle": "Pull down to refresh",
   "pullRefresh": true
 }
 ```
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view class="page">
   <view class="page-description">Pull down to refresh API</view>
   <view class="page-section">
@@ -40,9 +42,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onPullDownRefresh() {
     //do load data here
@@ -57,10 +57,4 @@ Page({
 })
 ```
 
-### Chi tiết
 
-| Thuộc tính | Kiểu dữ liệu | Required | Mô tả                                                 |
-| ---------- | ------------ | -------- | ----------------------------------------------------- |
-| success    | Function     | No       | Callback khi stop pull down animation trigger success |
-| fail       | Function     | No       | Callback khi stop pull down animation trigger fail    |
-| complete   | Function     | No       | Callback sau khi stop pull down animation             |

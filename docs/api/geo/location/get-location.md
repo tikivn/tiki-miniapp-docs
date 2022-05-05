@@ -4,7 +4,7 @@ title: my.getLocation
 
 `my.getLocation` là API dùng để lấy thông tin vị trí địa lí hiện tại của device.
 
-***Khả dụng***: từ runtime version 1.73.1 trở lên.
+***Khả dụng***: Hỗ trợ từ runtime version 1.73.1 trở lên.
 
 ### API Params
 

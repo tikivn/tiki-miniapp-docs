@@ -2,9 +2,7 @@
 title: my.confirm
 ---
 
-## Giới thiệu
-
-my.confirm là api để hiển thị Confirm popup. Có thể set được title, content, text của button confirm và cancel
+`my.confirm` là API để hiển thị Confirm popup. Có thể set được title, content, text của  Confirm và Cancel button
 
 ## Quét mã để trải nghiệm
 
@@ -12,13 +10,21 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/confirm/index" />
 
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính        | Kiểu dữ liệu | Mô tả                                       |
+| ----------------- | ------------ | ------------------------------------------- |
+| title             | String       | Title của confirm box                       |
+| content           | String       | Content message của confirm box             |
+| confirmButtonText | String       | Text của button confirm, mặc định là OK     |
+| cancelButtonText  | String       | Text của button confirm, mặc định là Cancel |
+| success           | Function     | Callback function khi gọi hàm thành công.       |
+| fail              | Function     | Callback function khi gọi hàm thất bại.          |
+| complete          | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại.     |
 
-**index.txml**
+## Sample Code
 
-```xml
+```xml title=index.txml
 <view class="page">
   <view class="page-description">Confirm API</view>
   <view class="page-section">
@@ -30,9 +36,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onConfirm() {
     my.confirm({
@@ -54,14 +58,4 @@ Page({
 });
 ```
 
-### Chi tiết
 
-| Thuộc tính        | Kiểu dữ liệu | Required | Mô tả                                       |
-| ----------------- | ------------ | -------- | ------------------------------------------- |
-| title             | String       | No       | Title của confirm box                       |
-| content           | String       | No       | Content message của confirm box             |
-| confirmButtonText | String       | No       | Text của button confirm, mặc định là OK     |
-| cancelButtonText  | String       | No       | Text của button confirm, mặc định là Cancel |
-| success           | Function     | No       | Callback khi confirm box show success       |
-| fail              | Function     | No       | Callback khi confirm box show fail          |
-| complete          | Function     | No       | Callback khi confirm box đã được show       |

@@ -2,9 +2,7 @@
 title: my.alert
 ---
 
-## Giới thiệu
-
-my.alert là api để hiển thị Alert. Có thể set được title, content, buttonText...
+`my.alert` là API để hiển thị Alert. Có thể set được title, content, buttonText...
 
 ## Quét mã để trải nghiệm
 
@@ -12,13 +10,21 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/alert/index" />
 
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu |  Mô tả                           |
+| ---------- | ------------ | ------------------------------- |
+| title      | string       | Title của alert box             |
+| content    | string       | Content message của alert box   |
+| buttonText | string       | Text của button, mặc định là OK |
+| success    | Function     | Callback function khi gọi hàm thành công. |
+| fail       | Function     | Callback function khi gọi hàm thất bại.    |
+| complete   | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại. |
 
-**index.txml**
 
-```xml
+## Sample Code
+
+```xml title=index.txml
 <view class="page">
   <view class="page-description">Alert API</view>
   <view class="page-section">
@@ -30,9 +36,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onAlert() {
     my.alert({
@@ -53,13 +57,3 @@ Page({
 });
 ```
 
-### Chi tiết
-
-| Thuộc tính | Kiểu dữ liệu | Required | Mô tả                           |
-| ---------- | ------------ | -------- | ------------------------------- |
-| title      | String       | No       | Title của alert box             |
-| content    | String       | No       | Content message của alert box   |
-| buttonText | String       | No       | Text của button, mặc định là OK |
-| success    | Function     | No       | Callback khi alert show success |
-| fail       | Function     | No       | Callback khi alert show fail    |
-| complete   | Function     | No       | Callback khi alert đã được show |

@@ -12,7 +12,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ***Khả dụng***: hỗ trợ từ version 1.89.5 trở lên.
 
-## Sử dụng 
+## Sample Code 
 
 ```js
 const options = my.getLaunchOptionsSync();

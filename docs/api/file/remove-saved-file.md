@@ -2,11 +2,20 @@
 title: my.removeSavedFile
 ---
 
-`my.removeSavedFile` là API dùng để xoá 1 local cache file
+`my.removeSavedFile` là API dùng để xoá 1 local cache file.
 
-## Sử dụng
+## API Params
 
-### Sample Code
+Các thuộc tính:
+
+| Thuộc tính | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                  |
+| ---------- | -------- | :------: | ------------------------------------------------------------------------------ |
+| filePath      | String   | ✓        |  Đường dẫn tới local cache file                   |
+| success    | Function |        | Callback function khi xoá file được thực hiện thành công                     |
+| fail       | Function |        | Callback function khi xoá file thất bại                                      |
+| complete   | Function |        | Callback function khi việc xoá kết thúc cho dù thành công hay thất bại. |
+
+## Sample Code
 
 ```xml
 <view>
@@ -54,13 +63,4 @@ Page({
 
 ```
 
-### API Params
 
-Các thuộc tính:
-
-| Attributes | Type     | Required | Description                                                                    |
-| ---------- | -------- | -------- | ------------------------------------------------------------------------------ |
-| filePath      | String   | Yes       |  Đường dẫn tới local cache file                   |
-| success    | Function | No       | Callback function khi xoá file được thực hiện thành công                     |
-| fail       | Function | No       | Callback function khi xoá file thất bại                                      |
-| complete   | Function | No       | Callback function khi việc xoá kết thúc cho dù thành công hay thất bại. |

@@ -2,12 +2,21 @@
 title: 'my.isLoggedIn'
 ---
 
-## Giới thiệu
+`my.isLoggedIn` là API để kiểm tra user đã log in hay chưa.
 
-**my.isLoggedIn** là API để kiểm tra user đã logged in hay chưa.
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu   |  Mô tả                                                                |
+| ---------- | -------------- | --------------------------------------------------------------------- |
+| success    | Function       | Callback function khi thành công.                                     |
+| fail       | Function       | Callback function khi thất bại.                                       |
+| complete   | Function       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
+
+### Giá trị trong success callback
+
+payload của success callback là giá trị boolean, kết quả của việc kiểm tra user đã logged in hay chưa.
+
+## Sample Code
 
 ```xml
  <view class="block-content">
@@ -39,13 +48,3 @@ Page({
 
 ```
 
-### API Params
-
-| Attributes | Type           | Required | Description                                                           |
-| ---------- | -------------- | -------- | --------------------------------------------------------------------- |
-| success    | Function       | No       | Callback function khi thành công.                                     |
-| fail       | Function       | No       | Callback function khi thất bại.                                       |
-| complete   | Function       | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
-
-### Giá trị trong success callback
-payload của success callback là giá trị boolean, kết quả của việc kiểm tra user đã logged in hay chưa.
