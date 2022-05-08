@@ -14,12 +14,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 | Thuộc tính       | Kiểu dữ liệu | Mô tả                                                |
 | ---------------- | ------------ | ---------------------------------------------------- |
-| title            | String       |  Title của prompt box                                 |
-| message          | String       | Content message của prompt box                       |
-| placeholder      | String       | Placeholder của text box                             |
-| align            | String       | Kiểu align cho message, "left", "center" hoặc "right |
-| okButtonText     | String       | Text của button ok, mặc định là OK                   |
-| cancelButtonText | String       | Text của button cancel, mặc định là Cancel           |
+| title            | string       |  Title của prompt box                                 |
+| message          | string       | Content message của prompt box                       |
+| placeholder      | string       | Placeholder của text box                             |
+| align            | string       | Kiểu align cho message:J "left", "center" hoặc "right" |
+| okButtonText     | string       | Text của button ok, mặc định là OK                   |
+| cancelButtonText | string       | Text của button cancel, mặc định là Cancel           |
 | success          | Function     | Callback function khi hiển thị prompt box thành công.|
 | fail             | Function     | Callback function khi hiển thị prompt box thất bại.  |
 | complete         | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại.  |

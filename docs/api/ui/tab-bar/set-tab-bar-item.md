@@ -8,10 +8,10 @@ title: my.setTabBarItem
 
 | Thuộc tính       | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                                                                                   |
 | ---------------- | ------------ | :------: | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| index            | Number       |    ✓     | Số thứ tự của item. Các item trên Tab bar được đánh số từ trái sang phải, bắt đầu bằng 0.                                                               |
-| text             | String       |    ✓     | Text của TabBar item.                                                                                                                                   |
-| iconPath         | String       |    ✓     | Đường dẫn của icon khi item bình thường (không được chọn). Nếu đường dẫn là ảnh local, thì cần truyền vào đường dẫn tuyệt đối. Ví dụ: `images/icon.png` |
-| selectedIconPath | String       |    ✓     | Đường dẫn của icon khi item được chọn (selected). Nếu đường dẫn là ảnh local, thì cần truyền vào đường dẫn tuyệt đối                                    |
+| index            | number       |     ✓    | Số thứ tự của item. Các item trên Tab bar được đánh số từ trái sang phải, bắt đầu bằng 0.                                                               |
+| text             | string       |    ✓     | Text của TabBar item.                                                                                                                                   |
+| iconPath         | string       |    ✓     | Đường dẫn của icon khi item bình thường (không được chọn). Nếu đường dẫn là ảnh local, thì cần truyền vào đường dẫn tuyệt đối. Ví dụ: `images/icon.png` |
+| selectedIconPath | string       |    ✓     | Đường dẫn của icon khi item được chọn (selected). Nếu đường dẫn là ảnh local, thì cần truyền vào đường dẫn tuyệt đối                                    |
 | success          | Function     |          | Callback function khi việc thay đổi thành công.                                                                                                         |
 | fail             | Function     |          | Callback function khi việc thay đổi bất thành.                                                                                                          |
 | complete         | Function     |          | Callback function khi gọi API hoàn tất bất kể thành công hay thất bại.                                                                                  |

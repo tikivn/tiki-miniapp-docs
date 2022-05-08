@@ -6,7 +6,7 @@ title: my.switchTab
 
 ## API Params
 
-|Thuộc tính  | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                                                     |
+| Thuộc tính  | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                                                     |
 | ---------- | -------- | :------: | --------------------------------------------------------------------------------------------------------------- |
 | url        | String   | ✓      | Đường dẫn (pagePath) của màn hình muốn nhảy tới. pagePath phải được định nghĩa trong trường tabBar của app.json |
 | success    | Function |        | Callback function khi gọi hàm thành công.                                                                               |

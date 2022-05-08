@@ -2,7 +2,6 @@
 title: my.startPullDownRefresh
 ---
 
-## Giới thiệu
 
 `my.startPullDownRefresh` là api để active tính năng pull down to refresh, khi được gọi sẽ có animation loading tương đương với việc manual pull down list. Hàm `onPullDownRefresh` của `page` sẽ được trigger. Sau khi đã lấy được dữ liệu, có thể gọi `my.stopPullDownRefresh` để stop loading.
 
@@ -29,28 +28,31 @@ Tuy nhiên hàm `my.startPullDownRefresh` chỉ hoạt động khi thoả mãn 2
 
 Vì vây muốn disable tính năng pull to refresh chỉ cần set `allowsBounceVertical` thành `NO` hoặc `pullRefresh` thành `false`
 
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/pull-refresh/index" />
 
-## Sử dụng
+## API Params
 
-### Sample Code
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                            |
+| ---------- | ------------ | ------------------------------------------------ |
+| success    | Function     | Callback khi pull down animation trigger success |
+| fail       | Function     | Callback khi pull down animation trigger fail    |
+| complete   | Function     | Callback sau khi pull down animation trigger     |
 
-**index.json**
+## Sample Code
 
-```json
+```json title=index.json
 {
   "defaultTitle": "Pull down to refresh",
   "pullRefresh": true
 }
 ```
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view class="page">
   <view class="page-description">Pull down to refresh API</view>
   <view class="page-section">
@@ -63,9 +65,7 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-**index.js**
-
-```js
+```js title=index.js
 Page({
   onPullDownRefresh() {
     //do load data here
@@ -80,10 +80,4 @@ Page({
 })
 ```
 
-### Chi tiết
 
-| Thuộc tính | Kiểu dữ liệu | Required | Mô tả                                            |
-| ---------- | ------------ | -------- | ------------------------------------------------ |
-| success    | Function     | No       | Callback khi pull down animation trigger success |
-| fail       | Function     | No       | Callback khi pull down animation trigger fail    |
-| complete   | Function     | No       | Callback sau khi pull down animation trigger     |

@@ -3,8 +3,6 @@ sidebar_position: 1
 title: Giới thiệu
 ---
 
-## Giới thiệu
-
 Tiki Mini App cho phép lập trình viên có thể thay đổi cấu hình của tabBar trong khi app đang chạy.
 
 Mini App có thể cấu hình Tab Bar với những trường

@@ -10,7 +10,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/navigation-bar/loading/index" />
 
-### Sample Code
+## Sample Code
 
 ```xml title=index.txml
 <view>

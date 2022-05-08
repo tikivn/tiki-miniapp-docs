@@ -2,11 +2,10 @@
 title: my.showTabBar
 ---
 
-## Giới thiệu
+`my.showTabBar` là API để show lại tab bar.
 
-**my.showTabBar** là API để show lại tab bar
 
-## Sử dụng
+
 
 ### Sample Code
 
@@ -16,11 +15,11 @@ my.showTabBar({
 });
 ```
 
-### API Params
+## API Params
 
-| Attributes | Type     | Required | Description                                                           |
-| ---------- | -------- | -------- | --------------------------------------------------------------------- |
-| animation  | Boolean  | no       | Xác định việc ẩn Tab Bar đi có cần thực hiện với animation hay không  |
-| success    | Function | No       | Callback function khi thành công.                                     |
-| fail       | Function | No       | Callback function khi thất bại.                                       |
-| complete   | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
+| Thuộc tính | Kiểu dữ liệu     |  Mô tả                                                          |
+| ---------- | -------- | --------------------------------------------------------------------- |
+| animation  | boolean  | Xác định việc ẩn Tab Bar đi có cần thực hiện với animation hay không.  |
+| success    | Function | Callback function khi hiển thị Tab Barthành công.                                     |
+| fail       | Function | Callback function khi hiển thị Tab Bar thất bại.                                       |
+| complete   | Function | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |

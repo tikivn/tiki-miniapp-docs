@@ -2,9 +2,14 @@
 title: my.navigateBack
 ---
 
-## Giới thiệu
+`my.navigateTo` là API dùng để đóng màn hình hiện tại và trở lại màn hình trước đó.
 
-**my.navigateTo** là API dùng để đóng màn hình hiện tại và trở lại màn hình trước đó.
+## API Params
+
+| Thuộc tính | Kiểu dữ liệu   | Mô tả                                                                                                                                  |
+| ---------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| delta      | Number |  Số lượng giữa page hiện tại với page muốn quay lại. Ví dụ bạn muốn bỏ qua page trước đó và quay lại page trước đó nữa thì `delta = 2`. Mặc định delta = 1. |
+
 
 ## Quét mã để trải nghiệm
 
@@ -12,9 +17,7 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/navigator/index" />
 
-## Sử dụng
-
-### Sample Code
+## Sample Code
 
 ```xml
 <view class="page">
@@ -43,8 +46,3 @@ Page({
 });
 ```
 
-### API Params
-
-| Attributes | Type   | Required | Description                                                                                                                                                |
-| ---------- | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| delta      | Number | No       | Số lượng giữa page hiện tại với page muốn quay lại. Ví dụ bạn muốn bỏ qua page trước đó và quay lại page trước đó nữa thì `delta = 2`. Mặc định delta = 1. |

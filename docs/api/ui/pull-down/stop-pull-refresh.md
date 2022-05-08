@@ -10,7 +10,6 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/pull-refresh/index" />
 
-
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                                 |

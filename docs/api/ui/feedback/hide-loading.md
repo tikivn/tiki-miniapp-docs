@@ -19,11 +19,9 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/loading/index" />
 
-### Sample Code
+## Sample Code
 
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view class="page">
   <view class="page-description">Loading API</view>
   <view class="page-section">

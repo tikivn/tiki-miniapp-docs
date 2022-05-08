@@ -10,13 +10,9 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/navigation-bar/loading/index" />
 
-## Sử dụng
+## Sample Code
 
-### Sample Code
-
-**index.txml**
-
-```xml
+```xml title=index.txml
 <view>
   <view class="block-content">
     <button class="button-full" onTap="showLoading">Show navigation bar loading</button>

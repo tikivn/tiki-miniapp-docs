@@ -8,9 +8,9 @@ title: 'my.isLoggedIn'
 
 | Thuộc tính | Kiểu dữ liệu   |  Mô tả                                                                |
 | ---------- | -------------- | --------------------------------------------------------------------- |
-| success    | Function       | Callback function khi thành công.                                     |
-| fail       | Function       | Callback function khi thất bại.                                       |
-| complete   | Function       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
+| success    | Function       | Callback function khi kiểm tra thành công.                                     |
+| fail       | Function       | Callback function khi kiểm tra thất bại.                                       |
+| complete   | Function       | Callback function khi kiểm tra hoàn tất cho dù thành công hay thất bại. |
 
 ### Giá trị trong success callback
 

@@ -2,13 +2,22 @@
 title: my.setTabBarStyle
 ---
 
-## Giới thiệu
+`my.setTabBarStyle` là API để set style cho Tab Bar
 
-**my.setTabBarStyle** là API để set style cho Tab Bar
+## API Params
 
-## Sử dụng
+| Thuộc tính     | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                           |
+| --------------- | -------- | :------: | --------------------------------------------------------------------- |
+| color           | HexColor | ✓      | Color của tabBar                                                      |
+| selectedColor   | HexColor | ✓      | Màu của tab bar được lựa chọn                                         |
+| backgroundColor | HexColor | ✓      | Màu background                                                        |
+| borderStyle     | String   | ✓      | Màu của border                                                        |
+| success         | Function |        | Callback function khi thành công.                                     |
+| fail            | Function |        | Callback function khi thất bại.                                       |
+| complete        | Function |        | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
 
-### Sample Code
+
+## Sample Code
 
 ```js
 my.setTabBarStyle({
@@ -19,14 +28,3 @@ my.setTabBarStyle({
 });
 ```
 
-### API Params
-
-| Attributes      | Type     | Required | Description                                                           |
-| --------------- | -------- | -------- | --------------------------------------------------------------------- |
-| color           | HexColor | yes      | Color của tabBar                                                      |
-| selectedColor   | HexColor | yes      | Màu của tab bar được lựa chọn                                         |
-| backgroundColor | HexColor | Yes      | Màu background                                                        |
-| borderStyle     | String   | Yes      | Màu của border                                                        |
-| success         | Function | No       | Callback function khi thành công.                                     |
-| fail            | Function | No       | Callback function khi thất bại.                                       |
-| complete        | Function | No       | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại. |
