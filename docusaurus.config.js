@@ -14,10 +14,10 @@ module.exports = {
     locales: ['vi', 'en'],
     localeConfigs: {
       vi: {
-        label: 'Tiếng Việt',
+        label: 'VI',
       },
       en: {
-        label: 'English',
+        label: 'EN',
       },
     },
   },
@@ -117,6 +117,14 @@ module.exports = {
           label: 'Blog',
           href: '/blog',
           position: 'right',
+        },
+        {
+          label: 'Tini Console',
+          href: '/apps',
+          position: 'right',
+          className: 'tini-console-link',
+          target: '_blank',
+          'aria-label': 'Tini Console',
         },
         {type: 'localeDropdown', position: 'right'},
       ],
