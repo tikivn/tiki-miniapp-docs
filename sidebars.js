@@ -195,6 +195,11 @@ module.exports = {
         },
         {
           type: 'category',
+          label: 'Navigation',
+          items: ['component/basic/navigation/navigator'],
+        },
+        {
+          type: 'category',
           label: 'Graphics',
           items: [
             {
