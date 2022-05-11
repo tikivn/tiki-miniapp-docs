@@ -45,17 +45,14 @@
 
 .tini-console-link {
   background: #fff;
-  color: #1a94ff;
+  color: #1a94ff !important;
   border-radius: 4px;
-  padding: 0px 12px;
-  height: 32px;
+  padding: 8px 12px;
   text-align: center;
   font-weight: 500;
-  display: inline-flex;
   align-items: center;
 }
 .tini-console-link:hover {
-  color: #1a94ff;
   opacity: 0.9;
 }
 .tini-console-link:hover:after {
