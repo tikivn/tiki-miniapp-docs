@@ -71,7 +71,7 @@ function Hero() {
   );
 }
 
-function Banner() {
+function Banner({images = [], className}) {
   const [viewportRef, embla] = useEmblaCarousel({loop: true}, [Autoplay()]);
   const [scrollSnaps, setScrollSnaps] = useState([]);
   const scrollTo = useCallback(
@@ -92,21 +92,10 @@ function Banner() {
   }, [embla, setScrollSnaps, onSelect]);
 
   return (
-    <div className={styles.banner}>
+    <div className={`${className} ${styles.banner}`}>
       <div className="embla" ref={viewportRef}>
         <div className="embla__container">
-          {[
-            {
-              image:
-                'https://salt.tikicdn.com/ts/tiniapp/46/9d/43/beff6daac7df4d6c889f35d1a2f54366.jpeg',
-              link: 'https://hackathon.tiki.vn',
-            },
-            {
-              image:
-                'https://salt.tikicdn.com/ts/tiniapp/1a/de/6a/7dbe2bab9315f8ac92068d50afc6d473.jpg',
-              link: '/docs/introduce/register',
-            },
-          ].map(item => (
+          {images.map(item => (
             <div className="embla__slide" key={item.link}>
               <Link to={item.link}>
                 <img style={{width: '100%'}} src={item.image} alt="Tini App" />
@@ -276,7 +265,31 @@ function Content() {
 export default function Home() {
   return (
     <Layout title="Tini App" description="Tini App">
-      <Banner />
+      <Banner
+        className="banner-desktop"
+        images={[
+          {
+            image:
+              'https://salt.tikicdn.com/ts/tiniapp/46/9d/43/beff6daac7df4d6c889f35d1a2f54366.jpeg',
+            link: 'https://hackathon.tiki.vn',
+          },
+          {
+            image:
+              'https://salt.tikicdn.com/ts/tiniapp/1a/de/6a/7dbe2bab9315f8ac92068d50afc6d473.jpg',
+            link: '/docs/introduce/register',
+          },
+        ]}
+      />
+      <Banner
+        className="banner-mobile"
+        images={[
+          {
+            image:
+              'https://salt.tikicdn.com/ts/tiniapp/a7/4c/d4/74439a87ca5e7277c58ccbc86c50130b.jpeg',
+            link: 'https://hackathon.tiki.vn',
+          },
+        ]}
+      />
       {/* <Hero /> */}
       <main>
         <Content />

@@ -114,3 +114,16 @@
   background-color: #1A94FF;
   opacity: 1;
 }
+
+.banner-mobile {
+  display: none;
+}
+
+@media (max-width: 996px) {
+  .banner-desktop {
+    display: none;
+  }
+  .banner-mobile {
+    display: block;
+  }
+}
