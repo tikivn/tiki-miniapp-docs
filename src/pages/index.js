@@ -98,7 +98,7 @@ function Banner() {
           {[
             {
               image:
-                'https://salt.tikicdn.com/ts/tiniapp/3f/bf/0b/fa256e8bff738530239940eb02417f99.jpg',
+                'https://salt.tikicdn.com/ts/tiniapp/46/9d/43/beff6daac7df4d6c889f35d1a2f54366.jpeg',
               link: 'https://hackathon.tiki.vn',
             },
             {
