@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useEffect, useCallback, useState} from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 
 import ArrowRightSVG from '@site/static/img/arrow-right.svg';
 import DevCenterSVG from '../components/svgIcons/DevCenter';
@@ -66,6 +68,65 @@ function Hero() {
       {/* <div className={styles.background}></div> */}
       <div className={styles.ellipse}></div>
     </header>
+  );
+}
+
+function Banner() {
+  const [viewportRef, embla] = useEmblaCarousel({loop: true}, [Autoplay()]);
+  const [scrollSnaps, setScrollSnaps] = useState([]);
+  const scrollTo = useCallback(
+    index => embla && embla.scrollTo(index),
+    [embla],
+  );
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  const onSelect = useCallback(() => {
+    if (!embla) return;
+    setSelectedIndex(embla.selectedScrollSnap());
+  }, [embla, setSelectedIndex]);
+
+  useEffect(() => {
+    if (!embla) return;
+    setScrollSnaps(embla.scrollSnapList());
+    embla.on('select', onSelect);
+  }, [embla, setScrollSnaps, onSelect]);
+
+  return (
+    <div className={styles.banner}>
+      <div className="embla" ref={viewportRef}>
+        <div className="embla__container">
+          {[
+            {
+              image:
+                'https://salt.tikicdn.com/ts/tiniapp/3f/bf/0b/fa256e8bff738530239940eb02417f99.jpg',
+              link: 'https://hackathon.tiki.vn',
+            },
+            {
+              image:
+                'https://salt.tikicdn.com/ts/tiniapp/1a/de/6a/7dbe2bab9315f8ac92068d50afc6d473.jpg',
+              link: '/docs/introduce/register',
+            },
+          ].map(item => (
+            <div className="embla__slide" key={item.link}>
+              <Link to={item.link}>
+                <img style={{width: '100%'}} src={item.image} alt="Tini App" />
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="embla__dots">
+        {scrollSnaps.map((_, index) => (
+          <button
+            key={index}
+            className={`embla__dot ${
+              index === selectedIndex ? 'is-selected' : ''
+            }`}
+            onClick={() => scrollTo(index)}
+          />
+        ))}
+      </div>
+    </div>
   );
 }
 
@@ -215,7 +276,8 @@ function Content() {
 export default function Home() {
   return (
     <Layout title="Tini App" description="Tini App">
-      <Hero />
+      <Banner />
+      {/* <Hero /> */}
       <main>
         <Content />
       </main>

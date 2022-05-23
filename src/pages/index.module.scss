@@ -22,6 +22,10 @@
   margin-top: 40px;
 }
 
+.banner {
+  margin-bottom: 80px;
+}
+
 .heroText {
   margin-bottom: 24px;
 }
@@ -265,7 +269,8 @@
   padding: 0 16px;
   margin: 0 auto;
 
-  img, svg {
+  img,
+  svg {
     min-width: 208px;
     min-height: 208px;
     margin-left: 24px;
@@ -273,7 +278,8 @@
 
   @media (max-width: 996px) {
     flex-direction: column-reverse;
-    img, svg {
+    img,
+    svg {
       width: 208px;
       margin: 0 auto;
       margin-bottom: 24px;
