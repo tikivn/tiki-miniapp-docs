@@ -1,8 +1,37 @@
 ---
 title: Tải về
 ---
+
+### Phiên bản 2.6 
+31/05/2022 <br />
+
+Xin chào tất cả mọi người, tháng này sẽ xoay quanh tính năng mới của Figma là Auto layout. Nhờ các tính năng mới (như absolute position and individual strokes) Giờ đây, chúng ta có thể làm cho một số components dễ sử dụng hơn trước.
+Có những component được cải thiện như sau:
+- Button bar
+- Text field
+- Date field
+- Textarea
+- Combo field
+- Slider
+- Navigation bar
+- Sidebar
+- Badge
+- Tabs
+- Bottom bar
+- Carousel
+- Bottom sheet
+
+Tháng tới, bọn mình sẽ khám phá component properties để cải thiện hệ thống thiết kế Tini của chúng tôi.
+Hẹn sớm gặp lại.
+
+[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+---
+
+
 ### Phiên bản 2.5 
-28/02/2022 <br />
+30/04/2022 <br />
 
 Tháng này bọn mình tập trung vào việc xây dựng các ứng dụng tiện ích cho đối tác, nhằm kiểm tra khả năng sử dụng của bộ Tini design system, đồng thời quan sát các bạn designer trong nội bộ Tiki sử dụng như thế nào. Cho nên bọn mình vừa ra mắt thêm một trang mới bên trong file Figma đó là trang Get Started - một trang hướng dẫn và giúp các bạn lần đầu làm quen với việc sử dụng các component của Tini design system. Hãy dùng thử và cho bọn mình những nhận xét của các bạn nhé. <br />
 
@@ -12,14 +41,11 @@ Về thư viện component, bọn mình có một update nhỏ: <br />
 Hẹn gặp lại các bạn vào tháng sau.
 
 
-[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
-
-
 ---
 
 
 ### Phiên bản 2.4
-28/02/2022 <br />
+31/03/2022 <br />
 
 Hôm nay là ngày Tini design system tròn 1 tuổi. Bọn mình bắt đầu với 7 global style, 29 component và nay bọn mình đã có 30 text style, 62 màu global style, hơn 100 color token và 44 component.
 Cùng ăn mừng bằng những sự cải tiến mới:

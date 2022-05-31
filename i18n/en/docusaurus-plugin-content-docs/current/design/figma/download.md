@@ -3,6 +3,36 @@ order: 51
 category: Design resources
 title: Download here
 ---
+
+### v2.6
+May 31st, 2022 <br />
+
+Hi everyone, this month is all about the new auto layout of Figma. Thanks to the powerful features (absolute position and individual strokes) Now, we can make some components more effortless to use than before.<br />
+There are those improved components:<br />
+- Button bar<br />
+- Text field<br />
+- Date field<br />
+- Textarea<br />
+- Combo field<br />
+- Slider<br />
+- Navigation bar<br />
+- Sidebar<br />
+- Badge<br />
+- Tabs<br />
+- Bottom bar<br />
+- Carousel<br />
+- Bottom sheet<br />
+
+Next month, we will explore the component properties to improve our Tini design system.<br />
+See you soon.<br />
+
+
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+--
+
+
 ### v2.5 
 Apr 30th, 2022 <br />
 
@@ -12,9 +42,6 @@ For the component library, we have a slight update: <br />
 - Add the button's minimum width rule. <br />
 
 See you next month.
-
-
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 --
