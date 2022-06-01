@@ -4,7 +4,7 @@ title: Typescript Experimental Support for Tiki Tini Studio
 description: Typescript Experimental Support for Tiki Tini Studio
 ---
 
-Tiki Tini App hỗ trợ sử dụng Typescript từ phiên bản [**Tini Studio 1.27.2**](https://developers.tiki.vn/downloads).
+Tiki Tini App hỗ trợ sử dụng Typescript từ phiên bản [**Tini Studio 1.28.0**](https://developers.tiki.vn/downloads).
 
 TypeScript type definition của Tini App được cung cấp bởi Tiki Open Platfrom thông qua NPM package **[`@tiki.vn/tini-types`](https://www.npmjs.com/package/@tiki.vn/tini-types)** và GitHub chính thức của Tiki **[`github.com/tikivn/tini-types`](https://github.com/tikivn/tini-types)**.
 
