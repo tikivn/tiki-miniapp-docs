@@ -34,6 +34,7 @@ module.exports = {
         'development/studio/simulator',
         'development/studio/debug',
         'development/studio/project-config',
+        'development/studio/typescript-support',
         'development/studio/troubleshooting-studio',
       ],
     },
