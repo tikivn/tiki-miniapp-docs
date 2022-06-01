@@ -5,24 +5,24 @@ title: Tải về
 ### Phiên bản 2.6 
 31/05/2022 <br />
 
-Xin chào tất cả mọi người, tháng này sẽ xoay quanh tính năng mới của Figma là Auto layout. Nhờ các tính năng mới (như absolute position and individual strokes) Giờ đây, chúng ta có thể làm cho một số components dễ sử dụng hơn trước.
-Có những component được cải thiện như sau:
-- Button bar
-- Text field
-- Date field
-- Textarea
-- Combo field
-- Slider
-- Navigation bar
-- Sidebar
-- Badge
-- Tabs
-- Bottom bar
-- Carousel
-- Bottom sheet
+Xin chào tất cả mọi người, tháng này sẽ xoay quanh tính năng mới của Figma là Auto layout. Nhờ các tính năng mới (như absolute position and individual strokes) Giờ đây, chúng ta có thể làm cho một số components dễ sử dụng hơn trước.<br />
+Có những component được cải thiện như sau:<br />
+- Button bar<br />
+- Text field<br />
+- Date field<br />
+- Textarea<br />
+- Combo field<br />
+- Slider<br />
+- Navigation bar<br />
+- Sidebar<br />
+- Badge<br />
+- Tabs<br />
+- Bottom bar<br />
+- Carousel<br />
+- Bottom sheet<br />
 
-Tháng tới, bọn mình sẽ khám phá component properties để cải thiện hệ thống thiết kế Tini của chúng tôi.
-Hẹn sớm gặp lại.
+Tháng tới, bọn mình sẽ khám phá component properties để cải thiện hệ thống thiết kế Tini của chúng tôi.<br />
+Hẹn sớm gặp lại.<br />
 
 [Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
