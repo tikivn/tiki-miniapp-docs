@@ -40,7 +40,6 @@ Bạn cần tạo file tsconfig.json và thêm `@tiki.vn/tini-types` vào thuộ
         "types" :  [ "@tiki.vn/tini-types" ]
     }
 }
-// NOTE: Bạn không thể sử dụng comment trong `tsconfig.json`
 ```
 > NOTE: Để xem các cài đặt khác cho TypeScript tsconfig.json, xem thêm [tại đây](https://www.typescriptlang.org/tsconfig).
 
