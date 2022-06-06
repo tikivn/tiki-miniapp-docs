@@ -270,7 +270,7 @@ export default function Home() {
         images={[
           {
             image:
-              'https://salt.tikicdn.com/ts/tiniapp/46/9d/43/beff6daac7df4d6c889f35d1a2f54366.jpeg',
+              'https://salt.tikicdn.com/ts/tiniapp/03/58/d1/c6abf52f2c5a0457e1a3caec5a0b6223.jpeg',
             link: 'https://hackathon.tiki.vn',
           },
           {
@@ -285,7 +285,7 @@ export default function Home() {
         images={[
           {
             image:
-              'https://salt.tikicdn.com/ts/tiniapp/a7/4c/d4/74439a87ca5e7277c58ccbc86c50130b.jpeg',
+              'https://salt.tikicdn.com/ts/tiniapp/c3/b6/2f/a46eb01fcac9cbf099d5d3a421222f30.jpeg',
             link: 'https://hackathon.tiki.vn',
           },
         ]}
