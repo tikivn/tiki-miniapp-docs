@@ -14,4 +14,4 @@ Bạn cần đăng ký với Tiki các tên miền mà ứng dụng của bạn 
 6. Các bước xác thực hiện ra ngay bên dưới. Bạn chỉ cần làm theo hướng dẫn. Cuối cùng, nhấn nút **Thêm mới**.
    <img src="/img/Domain_Management.jpg" width="700px" alt="Whitelist domains" style={{ margin: '0 auto', display: 'flex' }}/>
 
-***Lưu ý***: Trường hợp Tini App của bạn sử dụng tên miền thuộc bên thứ 3, hãy thông báo cho Tiki theo địa chỉ email tikiapp@tiki.vn.
+***Lưu ý***: Trường hợp Tini App của bạn sử dụng tên miền thuộc bên thứ 3, hãy thông báo cho Tiki theo địa chỉ email <a href="mailto:tiniapp@tiki.vn">tiniapp@tiki.vn</a>.

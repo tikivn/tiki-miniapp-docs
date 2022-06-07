@@ -72,5 +72,5 @@ Mở tài khoản email (**Địa chỉ email chính**). Email xác thực của
 
 <div align="center"> ---oOo--- </div>
 
-Nhà phát triển có thể liên lạc với Tiki thông qua địa chỉ email tikiapp@tiki.vn nếu có bất kỳ thắc mắc gì.
+Nhà phát triển có thể liên lạc với Tiki thông qua địa chỉ email <a href="mailto:tiniapp@tiki.vn">tiniapp@tiki.vn</a> nếu có bất kỳ thắc mắc gì.
 

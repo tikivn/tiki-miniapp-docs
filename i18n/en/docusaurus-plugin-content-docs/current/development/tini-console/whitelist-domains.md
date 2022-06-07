@@ -11,4 +11,4 @@ You must register all the domains used by your Tini App to call networking APIs 
 5. In the **Domain whitelist** section, type the desired domain in the **Add a domain to the whitelist** [Thêm mới tên miền vào danh sách quản lý] box, and then click the **Verify** [Xác thực] button.
    <img src="/img/Domain_Management.jpg" width="700px" alt="Whitelist domains" style={{ margin: '0 auto', display: 'flex' }}/>
 
-***Note***: If you use third party domains, please inform Tiki at tikiapp@tiki.vn.
+***Note***: If you use third party domains, please inform Tiki at <a href="mailto:tiniapp@tiki.vn">tiniapp@tiki.vn</a>.
