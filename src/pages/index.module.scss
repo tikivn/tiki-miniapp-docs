@@ -453,4 +453,23 @@
   &:active {
     background: rgba(26, 148, 255, 0.6);
   }
+  &:disabled {
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+    cursor: not-allowed;
+  }
+}
+
+.qrButtonWhite {
+  @extend .qrButton;
+
+  background: #fff;
+  color: #1a94ff;
+  border: solid 1px #1a94ff;
+  margin-right: 16px;
+  &:hover {
+    color: #fff;
+    border-color: rgba(26, 148, 255, 0.6);
+  }
 }

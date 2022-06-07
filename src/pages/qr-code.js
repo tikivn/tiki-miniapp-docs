@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 
 import {QRCode} from '../components/QRCode';
 import styles from './index.module.scss';
+import {graphql} from '../utils/request';
 
 const hasValue = val =>
   val !== null && val !== undefined && `${val}`.trim().length > 0;
@@ -50,6 +51,8 @@ export default function QRCodePage() {
     },
   ]);
   const [params, setParams] = useState(null);
+  const [qrValue, setQrValue] = useState();
+  const [url, setUrl] = useState();
   const timeout = useRef(null);
 
   useEffect(() => {
@@ -99,18 +102,9 @@ export default function QRCodePage() {
             }
           }
       `;
-      const response = await fetch(
-        'https://api.tiki.vn/tiniapp/api/graphql/query',
-        {
-          body: JSON.stringify({query}),
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        },
-      );
-      const appInfo = await response.json();
-      const image = appInfo.data.get_app.image_url;
+
+      const data = await graphql({query});
+      const image = data.get_app.image_url;
       if (image) {
         setImage(image);
         localStorage.setItem(APP_IMAGE_KEY, image);
@@ -136,6 +130,30 @@ export default function QRCodePage() {
     }
   };
 
+  const onGetQrCode = async () => {
+    const url = `https://tiki.vn/apps/${appId}${
+      params ? '?' : ''
+    }${new URLSearchParams(params || {})}`;
+    try {
+      const query = `  
+         mutation shorten_link_create {
+          shorten_link_create(input: {
+            app_identifier: "${appId}"
+            original_link: "${url}"
+          })
+        }
+      `;
+
+      const data = await graphql({query});
+      const shortLink = data.shorten_link_create;
+      setQrValue(shortLink || url);
+    } catch (error) {
+      setQrValue(url);
+    } finally {
+      setUrl(url);
+    }
+  };
+
   return (
     <Layout title="QR Code Generator" description="Tini App QR Code Generator">
       <main className={styles.allCenter}>
@@ -157,20 +175,28 @@ export default function QRCodePage() {
               value={input.value}
             />
             {index === inputs.length - 1 && (
-              <button className={styles.qrButton} onClick={onAddInput}>
-                Thêm mới
-              </button>
+              <div className="flex">
+                <button className={styles.qrButtonWhite} onClick={onAddInput}>
+                  Thêm mới
+                </button>
+                <button
+                  className={styles.qrButton}
+                  onClick={onGetQrCode}
+                  disabled={!appId || !appImage}>
+                  Lấy QR Code
+                </button>
+              </div>
             )}
           </React.Fragment>
         ))}
 
-        {!!appId && !!appImage && (
+        {qrValue && (
           <div style={{marginTop: 40}}>
             <QRCode
-              params={params}
+              qrValue={qrValue}
               showImport={false}
-              appId={appId}
               logoImage={appImage}
+              subLink={url}
             />
           </div>
         )}

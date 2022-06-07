@@ -57,6 +57,8 @@ export class QRCode extends React.Component {
     importGithubFolder: null,
     params: null, // Object
     qrId: 'react-qrcode-tiki',
+    qrValue: '',
+    subLink: '',
   };
 
   static utf16to8(str) {
@@ -204,6 +206,15 @@ export class QRCode extends React.Component {
     this.update();
   }
 
+  get qrValue() {
+    const {qrValue} = this.props;
+    if (qrValue) {
+      return qrValue;
+    }
+
+    return this.qrPage;
+  }
+
   get qrPage() {
     const {page, firstPage, domainUrl, appId, params} = this.props;
 
@@ -234,7 +245,7 @@ export class QRCode extends React.Component {
     } = this.props;
 
     const qrCode = qrGenerator(0, ecLevel);
-    qrCode.addData(QRCode.utf16to8(this.qrPage));
+    qrCode.addData(QRCode.utf16to8(this.qrValue));
     qrCode.make();
 
     const canvas = ReactDOM.findDOMNode(this.canvas.current);
@@ -368,7 +379,7 @@ export class QRCode extends React.Component {
       return;
     }
 
-    window.open(this.qrPage);
+    window.open(this.qrValue);
   };
 
   get importPage() {
@@ -390,6 +401,7 @@ export class QRCode extends React.Component {
       importGithub,
       importGithubFolder,
       qrId,
+      subLink,
     } = this.props;
     const size = +this.props.size + 2 * +this.props.quietZone;
 
@@ -413,9 +425,17 @@ export class QRCode extends React.Component {
         <div>
           Hoặc sử dụng link
           <br />
-          <a target="_blank" href={this.qrPage}>
-            {this.qrPage}
+          <a target="_blank" href={this.qrValue}>
+            {this.qrValue}
           </a>
+          {subLink && (
+            <a
+              style={{display: 'flex', marginTop: 16}}
+              target="_blank"
+              href={subLink}>
+              {subLink}
+            </a>
+          )}
         </div>
         {!!showImport && (
           <Import
