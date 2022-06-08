@@ -135,6 +135,7 @@ export default function QRCodePage() {
       params ? '?' : ''
     }${new URLSearchParams(params || {})}`;
     setUrl(url);
+    setQrValue(url);
   };
 
   return (
