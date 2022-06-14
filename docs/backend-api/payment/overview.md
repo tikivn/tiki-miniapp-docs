@@ -13,7 +13,13 @@ Về phía người dùng Tiki, họ chỉ cần mở ứng dụng từ Kho ti�
 Để có thể mang hàng hoá lên Tini App của mình, điều kiện đầu tiên là bạn có 2 tài khoản:
 
 - Tài khoản Nhà phát triển - nên là loại tài khoản Công ty vì bạn sắp sửa tiến hành khai thác kinh doanh. Tài khoản này cho phép bạn đăng ký tạo ứng dụng, quản lý phiên bản, phát hành ứng dụng trên Kho tiện ích. Tham khảo: [Đăng ký Nhà phát triển](/docs/introduce/register)
-- Tài khoản Seller - cho phép tạo ra và quản lý sản phẩm (SKU) trên Seller Center, thực hiện sao kê, đối soát. Tham khảo: [Hướng dẫn đăng ký tài khoản bán hàng tại Tiki](https://hocvien.tiki.vn/faq/huong-dan-dang-ky-ban-hang-va-ky-hop-dong/)
+- Tài khoản Nhà bán - cho phép quản lý sản phẩm (SKU), và sao kê trên Seller Center. Tham khảo: [Hướng dẫn đăng ký tài khoản bán hàng tại Tiki](https://hocvien.tiki.vn/faq/huong-dan-dang-ky-ban-hang-va-ky-hop-dong/)
+
+:::note Lưu ý
+
+Kể từ tháng 3/2022, bạn không cần phải tạo sản phẩm trên Seller Center để sử dụng với Tini App. Bạn chỉ cần liên kết tài khoản nhà bán, gửi yêu cầu mở tính năng thanh toán và được đồng ý thì hệ thống sẽ tự động tạo SKU trong tài khoản nhà bán của bạn.
+
+:::
 
 Sau đây là các công đoạn cụ thể:
 

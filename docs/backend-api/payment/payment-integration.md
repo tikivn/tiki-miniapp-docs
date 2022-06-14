@@ -11,11 +11,11 @@ title: Tích hợp thanh toán cho Tini App
 4. Sidebar menu >> **Cài đặt** >> **Thanh toán**.
 5. Bấm nút **Gửi yêu cầu mở tính năng** trong phần Production để yêu cầu Tiki bật tính năng thanh toán cho ứng dụng của bạn.
 
-<img style={{ margin: '0 auto', display: 'flex' }} width="600px" src="/img/Payment_Feature_Request.png" alt="Yêu cầu duyệt"/>
+<img style={{ margin: '0 auto', display: 'flex' }} width="640px" src="/img/Payment_Feature_Request.png" alt="Yêu cầu duyệt"/>
 
 Một khi Tính năng thanh toán của ứng dụng được bật lên. Giao diện trang **Thanh toán** sẽ như hình dưới đây.
 
-<img style={{ margin: '0 auto', display: 'flex' }} width="600px" src="https://salt.tikicdn.com/ts/tiniapp/d3/08/78/499f1e95a89c5eae9ed647dbebe5a487.png" alt="Đã mở tính năng thanh toá"/>
+<img style={{ margin: '0 auto', display: 'flex' }} width="640px" src="https://salt.tikicdn.com/ts/tiniapp/d3/08/78/499f1e95a89c5eae9ed647dbebe5a487.png" alt="Đã mở tính năng thanh toá"/>
 
 ## Thiết lập thông tin thanh toán cho ứng dụng
 
