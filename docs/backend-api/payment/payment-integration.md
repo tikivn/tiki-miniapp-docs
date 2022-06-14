@@ -15,7 +15,7 @@ title: Tích hợp thanh toán cho Tini App
 
 Một khi Tính năng thanh toán của ứng dụng được bật lên. Giao diện trang **Thanh toán** sẽ như hình dưới đây.
 
-<img style={{ margin: '0 auto', display: 'flex' }} width="600px" src="/img/Payment_Feature_Enabled.png" alt="Đã mở tính năng thanh toá"/>
+<img style={{ margin: '0 auto', display: 'flex' }} width="600px" src="https://salt.tikicdn.com/ts/tiniapp/d3/08/78/499f1e95a89c5eae9ed647dbebe5a487.png" alt="Đã mở tính năng thanh toá"/>
 
 ## Thiết lập thông tin thanh toán cho ứng dụng
 
@@ -27,5 +27,3 @@ Sau đây là ý nghĩa các thông số:
 - **Production**: áp dụng cho việc thanh toán thực thụ.
   - **IPN Callback URL**: URL backend của ứng dụng để nhận thông báo trạng thái thanh toán của đơn hàng từ hệ thống của Tiki.
   - **Gửi mail**: cho phép Tiki gửi email xác nhận thanh toán thành công đến khách hàng. 
-  - **SKU**: nhập SKU đã được duyệt trên Seller Center.
-- **Phương thức thanh toán**: chọn các phương thức thanh toán mà ứng dụng muốn hỗ trợ. 
