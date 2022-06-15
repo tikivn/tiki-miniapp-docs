@@ -10,6 +10,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/data-visualization/list/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/data-visualization/list/index" />
+
 ## Cài đặt `tini-ui`:
 
 Để sử dụng list item bạn cần phải cài đặt thư viện tini-ui.
@@ -32,20 +38,19 @@ property của `<list-item>`.
 
 ### Thuộc tính
 
-| Thuộc tính      | Kiểu dữ liệu                      | Giá trị mặc định | Mô tả                                                                                                                                                                                                                                                |
-| ------------- | ------------------------------- | -------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| padding       | boolean                         |  false         | Nếu cờ được bật, list-item sẽ được bao ngoài bởi một phần padding. Chi tiết phần padding này vui lòng xem file Figma của Design System                                                                                                                     |
-| class         | string                          |                | custom class để thay đổi thuộc tính cho list-item                                                                                                                                                                                                          |
-| thumb         | URL                             |                | url cuả thumb image. Nếu thumb không được truyền vào, thumb image sẽ không hiển thị.                                                                                                                                                                       |
-| thumbSize     | number                          |                | size của image. Trường này bắt buộc phải truyền nếu như truyền vào `thumb`                                                                                                                                                                                 |
-| upperSubtitle | string                          |  no            | Giá trị của upperSubtitle                                                                                                                                                                                                                                  |
-| lowerSubtitle | string                          |  no            | Giá trị của lowerSubtitle                                                                                                                                                                                                                                  |
-| titlePosition | enum('top', 'middle', 'bottom') |  'top'         | Vị trí của title. Nếu là 'top' thì slot `<default>` sẽ được render trên đầu của `upperSubtitle`. Nếu là `middle` thì `<default>` được render ở giữa `upperSubtitle` và `lowerSubtitle`. Nếu là `bottom` thì `<default>` được render ở dưới `lowerSubtitle` |
-| arrow         | boolean                         |  false         | Nếu cờ được bật, thì sẽ render arrow icon ở bên phải của `<list-item>`.                                                                                                                                                                                    |
-| iconSize      | number                          |  20px          | size của icon                                                                                                                                                                                                                                              |
-| disabled      | boolean                         |  false         | Nếu cờ được bật, `<list-item>` là không thể click vào                                                                                                                                                                                                      |
-| onClick       | event                           |                | Hàm để xử lý sự kiện click vào                                                                                                                                                                                                                             |
-
+| Thuộc tính    | Kiểu dữ liệu                    | Giá trị mặc định | Mô tả                                                                                                                                                                                                                                                      |
+| ------------- | ------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| padding       | boolean                         | false            | Nếu cờ được bật, list-item sẽ được bao ngoài bởi một phần padding. Chi tiết phần padding này vui lòng xem file Figma của Design System                                                                                                                     |
+| class         | string                          |                  | custom class để thay đổi thuộc tính cho list-item                                                                                                                                                                                                          |
+| thumb         | URL                             |                  | url cuả thumb image. Nếu thumb không được truyền vào, thumb image sẽ không hiển thị.                                                                                                                                                                       |
+| thumbSize     | number                          |                  | size của image. Trường này bắt buộc phải truyền nếu như truyền vào `thumb`                                                                                                                                                                                 |
+| upperSubtitle | string                          | no               | Giá trị của upperSubtitle                                                                                                                                                                                                                                  |
+| lowerSubtitle | string                          | no               | Giá trị của lowerSubtitle                                                                                                                                                                                                                                  |
+| titlePosition | enum('top', 'middle', 'bottom') | 'top'            | Vị trí của title. Nếu là 'top' thì slot `<default>` sẽ được render trên đầu của `upperSubtitle`. Nếu là `middle` thì `<default>` được render ở giữa `upperSubtitle` và `lowerSubtitle`. Nếu là `bottom` thì `<default>` được render ở dưới `lowerSubtitle` |
+| arrow         | boolean                         | false            | Nếu cờ được bật, thì sẽ render arrow icon ở bên phải của `<list-item>`.                                                                                                                                                                                    |
+| iconSize      | number                          | 20px             | size của icon                                                                                                                                                                                                                                              |
+| disabled      | boolean                         | false            | Nếu cờ được bật, `<list-item>` là không thể click vào                                                                                                                                                                                                      |
+| onClick       | event                           |                  | Hàm để xử lý sự kiện click vào                                                                                                                                                                                                                             |
 
 ## Sample Code
 
@@ -188,4 +193,3 @@ Khai báo style với tcss
 Đoạn code trên sẽ tạo ra giao diện như sau
 
 ![image](https://salt.tikicdn.com/ts/miniapp/45/c3/35/9368721ab3652cd71ecb4232a86b25de.png)
-

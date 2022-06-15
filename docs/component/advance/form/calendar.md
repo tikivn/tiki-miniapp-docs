@@ -11,6 +11,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/form/calendar/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/form/calendar/index" />
+
 ## Cài đặt `tini-ui`:
 
 ```bash
@@ -19,17 +25,17 @@ $> yarn add @tiki.vn/tini-ui
 
 ## Chi tiết
 
-| Thuộc tính    | Kiểu dữ liệu                                                                                         | Giá trị mặc định  | Mô tả                                                                        |
-| ------------ | -------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------------------------------------------------- |
-| className    | string                                                                                       | ''             | Custom class cho calendar                                                          |
-| style        | string                                                                                       | ''             | Style cho calendar                                                                 |
-| locale       | `'en'` \| `'vi'`                                                                             | 'vi            | Hỗ trợ Tiếng Việt / Tiếng Anh.                                                     |
-| tagData      | [{ date: '11-11-2021', tag: 'Aa', tagColor: 'blue', tagInactiveColor: 'red',disable: true},] | []             | Có thể đặt tag (color) hoặc disabled một số ngày cụ thể                            |
-| mode         | `'timeOnly', 'single' , 'range`                                                              | 'timeOnly'     | Chế độ hiển thị/chọn lịch. (single - chọn một ngày, range - chọn khoảng thời gian) |
-| header       | `'year', 'month'`                                                                            | 'month'        | Nếu set 'year' có thể chọn next/pre year.                                          |
-| selectedDate | []                                                                                           | []             | Ngày đang được chọn. (format là timestamp)                                         |
-| onSelect     | event                                                                                        | (data) => void | Trigger function này khi chọn ngày bên trái của calendar                           |
-| onChange     | event                                                                                        | (data) => void | Trigger function này khi thay đổi tháng/năm bên phải của calendar                  |
+| Thuộc tính   | Kiểu dữ liệu                                                                                 | Giá trị mặc định | Mô tả                                                                              |
+| ------------ | -------------------------------------------------------------------------------------------- | ---------------- | ---------------------------------------------------------------------------------- |
+| className    | string                                                                                       | ''               | Custom class cho calendar                                                          |
+| style        | string                                                                                       | ''               | Style cho calendar                                                                 |
+| locale       | `'en'` \| `'vi'`                                                                             | 'vi              | Hỗ trợ Tiếng Việt / Tiếng Anh.                                                     |
+| tagData      | [{ date: '11-11-2021', tag: 'Aa', tagColor: 'blue', tagInactiveColor: 'red',disable: true},] | []               | Có thể đặt tag (color) hoặc disabled một số ngày cụ thể                            |
+| mode         | `'timeOnly', 'single' , 'range`                                                              | 'timeOnly'       | Chế độ hiển thị/chọn lịch. (single - chọn một ngày, range - chọn khoảng thời gian) |
+| header       | `'year', 'month'`                                                                            | 'month'          | Nếu set 'year' có thể chọn next/pre year.                                          |
+| selectedDate | []                                                                                           | []               | Ngày đang được chọn. (format là timestamp)                                         |
+| onSelect     | event                                                                                        | (data) => void   | Trigger function này khi chọn ngày bên trái của calendar                           |
+| onChange     | event                                                                                        | (data) => void   | Trigger function này khi thay đổi tháng/năm bên phải của calendar                  |
 
 ## Sample Code
 
@@ -133,4 +139,3 @@ Page({
   }
 });
 ```
-

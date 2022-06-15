@@ -4,6 +4,17 @@ title: Alphabet
 
 Alphabet là component được sử dụng để hiển thị các chữ cái trong bảng Alphabet.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/navigation/alphabet/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/navigation/alphabet/index" />
 
 ## Cài đặt `tini-ui`:
 
@@ -13,10 +24,10 @@ $> yarn add @tiki.vn/tini-ui
 
 ## Thuộc tính
 
-| Thuộc tính     | Kiểu dữ liệu                  | Giá trị mặc định | Mô tả                                    |
-| ------------- | --------------------- | ------------- | ---------------------------------------------- |
-| alphabet     | string[]                | []            | Khởi tạo các kí tự alphabet |
-| onClick    | event   | () => void    | Trigger function này khi click item của alphabet |
+| Thuộc tính | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                            |
+| ---------- | ------------ | ---------------- | ------------------------------------------------ |
+| alphabet   | string[]     | []               | Khởi tạo các kí tự alphabet                      |
+| onClick    | event        | () => void       | Trigger function này khi click item của alphabet |
 
 ## Sample Code
 
@@ -64,15 +75,13 @@ Page({
       'W',
       'X',
       'Y',
-      'Z',
-    ],
+      'Z'
+    ]
   },
   onAlphabetClick(ev) {
     my.alert({
-      content: JSON.stringify(ev.data),
+      content: JSON.stringify(ev.data)
     });
-  },
+  }
 });
 ```
-
-

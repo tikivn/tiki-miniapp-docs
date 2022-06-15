@@ -11,32 +11,37 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/form/tooltip/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/form/tooltip/index" />
+
 ## Cài đặt `tini-ui`:
 
 ```bash
 $> yarn add @tiki.vn/tini-ui
 ```
 
-## Thuộc tính 
+## Thuộc tính
 
-| Thuộc tính      | Kiểu dữ liệu                 | Giá trị mặc định | Mô tả                                   |
-| ------------- | --------------------- | ------------- | ---------------------------------------------- |
-| className     | string                | ''            | Custom class cho tooltip                       |
-| style         | string                | ''            | Style cho tooltip                              |
-| content       | string                | ''            | Text content của tooltip                       |
-| show          | boolean               | false         | Nếu set `true` tooltip sẽ được show            |
-| theme         | `'reverse'` \| `'default'` | 'default'       | Theme của tooltip                              |
-| position      | `'top'` \| `'bottom'` \| `'left'` \| `'right'` \| `'top-left'` \| `'top-right'` \| `'left-top'` \| `'left-bottom'` \| `'right-top'` \| `'right-bottom'` \| `'bottom-left'` \| `'bottom-right'` | 'top'         | Vị trí hiển thị của tooltip                    |
-| showCloseIcon | boolean               | false         | Nếu set `true` icon-close tooltip sẽ được show |
-| iconSizeClose | number                | 16            | size của icon-close tooltip                    |
+| Thuộc tính    | Kiểu dữ liệu                                                                                                                                                                                   | Giá trị mặc định | Mô tả                                          |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ---------------------------------------------- |
+| className     | string                                                                                                                                                                                         | ''               | Custom class cho tooltip                       |
+| style         | string                                                                                                                                                                                         | ''               | Style cho tooltip                              |
+| content       | string                                                                                                                                                                                         | ''               | Text content của tooltip                       |
+| show          | boolean                                                                                                                                                                                        | false            | Nếu set `true` tooltip sẽ được show            |
+| theme         | `'reverse'` \| `'default'`                                                                                                                                                                     | 'default'        | Theme của tooltip                              |
+| position      | `'top'` \| `'bottom'` \| `'left'` \| `'right'` \| `'top-left'` \| `'top-right'` \| `'left-top'` \| `'left-bottom'` \| `'right-top'` \| `'right-bottom'` \| `'bottom-left'` \| `'bottom-right'` | 'top'            | Vị trí hiển thị của tooltip                    |
+| showCloseIcon | boolean                                                                                                                                                                                        | false            | Nếu set `true` icon-close tooltip sẽ được show |
+| iconSizeClose | number                                                                                                                                                                                         | 16               | size của icon-close tooltip                    |
 
 ### slots
 
-| Thuộc tính  | Kiểu dữ liệu   |  Giá trị mặc định    | Mô tả                             |
-| --------- | ------- | ------------- | --------------------------------------- |
-| content   | boolean | props.content | Render component ở nội dung content tip |
-| operation | boolean | ''            | Render component ở phần hiển thị tip    |
-
+| Thuộc tính | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                   |
+| ---------- | ------------ | ---------------- | --------------------------------------- |
+| content    | boolean      | props.content    | Render component ở nội dung content tip |
+| operation  | boolean      | ''               | Render component ở phần hiển thị tip    |
 
 ## Sample Code
 
@@ -49,7 +54,7 @@ $> yarn add @tiki.vn/tini-ui
 }
 ```
 
-****
+---
 
 ```xml title=index.txml
 <view class="wrapper">
@@ -136,7 +141,7 @@ $> yarn add @tiki.vn/tini-ui
     </view>
     <view slot="operation">Text</view>
   </tooltip>
-  
+
 </view>
 ```
 
@@ -147,4 +152,3 @@ Page({
   }
 });
 ```
-

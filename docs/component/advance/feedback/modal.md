@@ -13,6 +13,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/modal/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/modal/index" />
+
 ## Thuộc tính
 
 | Thuộc tính    | Kiểu dữ liệu            | Giá trị mặc định   | Mô tả                                                                             |
@@ -33,19 +39,19 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ### buttons
 
-| Thuộc tính   | Kiểu dữ liệu   | Giá trị mặc định | Mô tả                                                      |
-| -------- | ------ | ------------- | ---------------------------------------------------------------- |
-| type     | string | solid         | Kiểu button. Nhận các giá trị = [solid \|\| outline \|\| ghost]. |
-| text     | string | ''            | Hiển thị text button                                             |
-| extClass | string | ''            | Class cho button                                                 |
+| Thuộc tính | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                            |
+| ---------- | ------------ | ---------------- | ---------------------------------------------------------------- |
+| type       | string       | solid            | Kiểu button. Nhận các giá trị = [solid \|\| outline \|\| ghost]. |
+| text       | string       | ''               | Hiển thị text button                                             |
+| extClass   | string       | ''               | Class cho button                                                 |
 
 ### slots
 
-| Thuộc tính      | Kiểu dữ liệu   | Giá trị mặc định | Mô tả                                   |
-| ----------- | ------- | ------------- | ------------------------------------------- |
-| header      | boolean | false         | Render component ở section header           |
-| description | boolean | false         | Render component ở dưới header và trên body |
-| footer      | boolean | false         | Render component ở section footer           |
+| Thuộc tính  | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                       |
+| ----------- | ------------ | ---------------- | ------------------------------------------- |
+| header      | boolean      | false            | Render component ở section header           |
+| description | boolean      | false            | Render component ở dưới header và trên body |
+| footer      | boolean      | false            | Render component ở section footer           |
 
 ## Sample Code
 
@@ -83,7 +89,6 @@ Page({
 ### Basic Modal
 
 <img style={{ width: '100%', maxWidth: 360 }} src="https://salt.tikicdn.com/ts/tiniapp/7e/dc/03/5cbd60b08b386acf78ae09bd715c77be.png"/>
-
 
 ```xml title=index.txml
 <button onTap="handleShowModal">Show modal</button>
@@ -130,7 +135,6 @@ Page({
 
 <img style={{ width: '100%', maxWidth: 360 }} src="https://salt.tikicdn.com/ts/tiniapp/b2/d2/92/db92c764b59f46dc57036c99cd134f5b.png"/>
 
-
 ```xml title=index.txml
 <button onTap="handleShowModal">Show modal</button>
 
@@ -145,5 +149,3 @@ Page({
   <view slot="description">Description</view>
 </modal>
 ```
-
-

@@ -10,15 +10,21 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/navigation/sidebar/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/navigation/sidebar/index" />
+
 ## Thuộc tính
 
 | Thuộc tính               | Kiểu dữ liệu | Giá trị mặc định | Bắt buộc | Mô tả                                                                                                    |
 | ------------------------ | ------------ | ---------------- | :------: | -------------------------------------------------------------------------------------------------------- |
-| activeItem               | number       | 0                | ✓     | Chỉ định item được active theo index                                                                     |
+| activeItem               | number       | 0                |    ✓     | Chỉ định item được active theo index                                                                     |
 | activeChild              | number       | 0                |          | Chỉ định item con được active theo index, chỉ được khai báo khi item có `children`                       |
 | width                    | string       | 124px            |          | Width của sidebar                                                                                        |
 | className                | string       |                  |          | Custom class cho sidebar                                                                                 |
-| items                    | array        |                  | ✓     | Mảng các đối tượng, bạn có thể xem cấu hình của items ở bên dưới                                         |
+| items                    | array        |                  |    ✓     | Mảng các đối tượng, bạn có thể xem cấu hình của items ở bên dưới                                         |
 | direction                | string       | horizontal       |          | Chỉ định direction cho các phần tử bên trong tab (title, image, icon). Hỗ trợ `horizontal` và `vertical` |
 | animated                 | boolean      | false            |          | Có animation khi đổi content                                                                             |
 | swipeable                | boolean      | true             |          | Cho phép sidebar có thể swipe dọc được                                                                   |
@@ -47,7 +53,7 @@ import { QRCode } from '@site/src/components/QRCode';
 | badge          | object       |                  |          | Cấu hình của badge, là một object có dạng `badge={ arrow: boolean, arrow: boolean }`. Trong đó: <br /> - arrow: hiển thị arrow left bên dưới tab<br/> - stroke: hiển thị stroke cho badge <br/>Nếu bạn chỉ muốn hiển thị badge dạng dot, bạn chỉ cần khai báo `showBadge=true` và không cần khai báo thêm biến này |
 | children       | array        |                  |          | Mảng các phần tử con bên trong item, là một object `{ title: string, anchor: string }`, với anchor cũng là duy nhất                                                                                                                                                                                                |
 | expandChildren | boolean      |                  |          | Hiển thị danh sách các item con, được dùng khi length của `children` > 0                                                                                                                                                                                                                                           |
-| anchor         | string       |                  | ✓      | Được dùng như là id của item, các `anchor` không được trùng nhau                                                                                                                                                                                                                                                   |
+| anchor         | string       |                  |    ✓     | Được dùng như là id của item, các `anchor` không được trùng nhau                                                                                                                                                                                                                                                   |
 
 ### Cấu hình sidebar-content
 
@@ -55,14 +61,14 @@ Mỗi content bên trong item cần được bao bởi `sidebar-content`
 
 | Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                            |
 | ---------- | ------------ | :------: | ---------------------------------------------------------------- |
-| anchor     | string       | ✓      | Được dùng như là id của item, các `anchor` không được trùng nhau |
+| anchor     | string       |    ✓     | Được dùng như là id của item, các `anchor` không được trùng nhau |
 
 :::note Lưu ý
 
 - Các `icon` trong `tabs` bạn có thể tìm thấy ở [đây](/docs/component/basic/basic/icon)
 - Số lượng các phần tử trong biến `sidebar` và số component trong thẻ `<sidebar>` nên bằng nhau
 - Nếu số lượng items nhiều dẫn đến xuất hiện thanh scroll trên sidebar, có thể sẽ xuất hiện hiện tượng khi bấm vào 2 item cách xa nhau, thanh scroll sẽ bị thay đổi vị trí 2 lần
-:::
+  :::
 
 ## Sample Code
 
@@ -332,4 +338,3 @@ Page({
   }
 });
 ```
-
