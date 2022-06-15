@@ -4,13 +4,19 @@ title: slider
 
 `slider` component cho phép bạn chọn giá trị bằng việc kéo thả trong một phạm vi nhất định.
 
-***Khả dụng***: Được hỗ trợ từ running version `1.73.13` trở lên.
+**_Khả dụng_**: Được hỗ trợ từ running version `1.73.13` trở lên.
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/slider/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/slider/index" />
 
 ## Thuộc tính
 
@@ -83,5 +89,3 @@ Page({
   margin-top: 32px;
 }
 ```
-
-

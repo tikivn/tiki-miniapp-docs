@@ -8,6 +8,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/button/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/button/index" />
+
 ## Thuộc tính
 
 | Thuộc tính | Kiểu dữ liệu | Giá trị măc định | Mô tả                                                                                                                               |

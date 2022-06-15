@@ -10,6 +10,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/foundation/icons/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/foundation/icons/index" />
+
 ## Thuộc tính
 
 | Thuộc tính | Kiểu dữ liêu | Gia trị mặc định | Bắt buộc | Mô tả                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -17,6 +23,7 @@ import { QRCode } from '@site/src/components/QRCode';
 | type       | string       |                  | ✓        | Loại icon hiển thị. Nhận giá trị : [ home \|\| search \|\| calendar \|\| location \|\| setting \|\| contact \|\| chat \|\| info \|\| warning \|\| success \|\| plus \|\| minus \|\| geometry \|\| close \|\| close_circle \|\| more \|\| arrow_right \|\| arrow_left \|\| arrow_down \|\| arrow_up \|\| bookmark \|\| app_home \|\| phone_home \|\| share \|\| warning_glyph \|\| success_glyph \|\| close_glyph ] |
 | size       | number       | 24               |          | Kích thước icon. Đơn vị tính pixel.                                                                                                                                                                                                                                                                                                                                                                                |
 | color      | string       |                  |          | Màu của icon, sử dụng mã màu như trong css                                                                                                                                                                                                                                                                                                                                                                         |
+
 ### Bộ icon của Tini App
 
 <img src="/img/Action_icons.png" width="600px" alt="Action icons"/>
@@ -30,12 +37,12 @@ import { QRCode } from '@site/src/components/QRCode';
 <img src="/img/Media_icons.png" width="400px" alt="Media icons"/>
 
 ---
+
 <img src="/img/Navigation_icons.png" width="600px" alt="Navigation icons"/>
 
 ---
 
 <img src="/img/Status_icons.png" width="250px" alt="Status icons"/>
-
 
 ## Sample Code
 

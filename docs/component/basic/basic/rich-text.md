@@ -6,13 +6,19 @@ title: rich-text
 - Thẻ rich-text không hỗ trợ render toàn bộ các thẻ HTML, mà chỉ hỗ trợ một số thẻ HTML và một số thuộc tính.
 - Một số css selector theo tag name sẽ không được hỗ trợ (ví dụ `div { color: red }`), do đó bạn nên sử dụng inline style trong trường hợp này
 
-***Khả dụng***: hỗ trợ từ version 1.81.8 trở lên.
+**_Khả dụng_**: hỗ trợ từ version 1.81.8 trở lên.
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/rich-text/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/rich-text/index" />
 
 ## Thuộc tính
 
@@ -141,8 +147,8 @@ Khi bạn khai báo **type=text**
 import parse from '@tiki.vn/mini-html-parser2';
 
 const html = `<div class="rt-container">
-  <img 
-    style="width: 200px; height: 200px" 
+  <img
+    style="width: 200px; height: 200px"
     class="rt-image"
     src="https://salt.tikicdn.com/cache/w400/ts/product/5e/18/24/2a6154ba08df6ce6161c13f4303fa19e.jpg" alt="Product" />
   <h3 style="margin: 8px 0;">Cây cam ngọt của tôi</h3>
