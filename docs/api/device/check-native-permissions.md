@@ -10,14 +10,20 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/check-native-permissions/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/check-native-permissions/index" />
+
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                                            |
-| ---------- | ------------ | ---------------------------------------------------------------------------------------------------------------- |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                                               |
+| ---------- | ------------ | ------------------------------------------------------------------------------------------------------------------- |
 | scope      | Array        | Mảng các quyền người dùng muốn kiểm tra. Hãy xem danh sách phạm vi để biết chi tiết.<br/> Ví dụ: scope:["contacts"] |
-| success    | Function     | Callback function khi việc kiểm tra thành công.                                                                  |
-| fail       | Function     | Callback function khi việc kiểm tra bất thành.                                                                   |
-| complete   | Function     | Callback function khi việc kiểm tra hoàn tất bất kể thành công hay thất bại.                                     |
+| success    | Function     | Callback function khi việc kiểm tra thành công.                                                                     |
+| fail       | Function     | Callback function khi việc kiểm tra bất thành.                                                                      |
+| complete   | Function     | Callback function khi việc kiểm tra hoàn tất bất kể thành công hay thất bại.                                        |
 
 ## Callback function payload
 
@@ -27,12 +33,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ## Danh sách các phạm vi (Scope)
 
-| Phạm vi     | Mô tả             |
-| ----------- | ----------------- |
-| location    | Vị trí            |
-| camera      | Camera            |
-| photo       | Thư viện ảnh      |
-| contacts    | Danh sách liên hệ |
+| Phạm vi      | Mô tả             |
+| ------------ | ----------------- |
+| location     | Vị trí            |
+| camera       | Camera            |
+| photo        | Thư viện ảnh      |
+| contacts     | Danh sách liên hệ |
 | notification | Thông báo         |
 
 ## Sample Code

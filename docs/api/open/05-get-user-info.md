@@ -6,6 +6,18 @@ title: 'my.getUserInfo'
 
 Để lấy được email và phone, bạn cần thêm quyền _getUserPhoneAndEmail_. Chi tiết có thể xem [tại đây](/docs/api/backend-permission)
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/get-user-info/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/get-user-info/index" />
+
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                                                 |

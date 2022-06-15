@@ -5,9 +5,9 @@ title: my.makePayment
 `my.makePayment` là API dùng để tạo payment. Luồng payment như sau:
 
 - Developer dùng JS của Tiki để tạo order từ đơn hàng. Tham khảo [Quy trình tạo và xử lý đơn hàng](/docs/backend-api/payment/overview)
-- Gọi API `my.makePayment` để tạo khởi tạo payment. Kế đó, ứng dụng sẽ được redirect tới trang quick payment của Tiki. 
+- Gọi API `my.makePayment` để tạo khởi tạo payment. Kế đó, ứng dụng sẽ được redirect tới trang quick payment của Tiki.
   - Trường hợp khách hàng chọn COD (thanh toán tiền mặt khi giao hàng), đơn hàng sẽ chuyển thẳng sang trạng thái 'processing'.
-  - Trường hợp khách hàng chọn thanh toán trực tuyến, thì họ sẽ tiến hành thủ tục thanh toán. Nếu thanh toán thành công, đơn hàng sẽ chuyển sang trạng thái 'processing'. 
+  - Trường hợp khách hàng chọn thanh toán trực tuyến, thì họ sẽ tiến hành thủ tục thanh toán. Nếu thanh toán thành công, đơn hàng sẽ chuyển sang trạng thái 'processing'.
 
 <!--- khi việc khi việc thanh toán hoàn tất sẽ trả về success callback hoặc fail callback. --->
 
@@ -18,6 +18,18 @@ Xem thêm [Trạng thái đơn hàng](/docs/backend-api/payment/order-status)
 Việc makePayment cần user phải được login từ trước. Sử dụng jsapi my.getAuthCode để lấy accessToken và sau đó tạo order.
 
 :::
+
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/make-payment-V2/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/make-payment-V2/index" />
 
 ## API Params
 
@@ -61,4 +73,3 @@ Page({
   }
 });
 ```
-

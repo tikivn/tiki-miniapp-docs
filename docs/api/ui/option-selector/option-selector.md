@@ -10,6 +10,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/option-selector/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/option-selector/index" />
+
 ## API Params
 
 | Thuộc tính       | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                  |
@@ -27,12 +33,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 ### Giá trị trong success callback
 
-| Thuộc tính        | Kiểu dữ liệu   | Mô tả                                                                              |
-| ----------------- | ------ | ---------------------------------------------------------------------------------------- |
-| selectedOneIndex  | number | Giá trị được chọn cho tùy chọn một. Nếu bạn chọn hủy, một chuỗi trống sẽ được trả về.    |
-| selectedOneOption | string | Nội dung được chọn trong tùy chọn một. Nếu bạn chọn hủy, một chuỗi trống sẽ được trả về. |
-| selectedTwoIndex  | number | Giá trị được chọn cho tùy chọn hai. Nếu bạn chọn hủy, một chuỗi trống sẽ được trả về.    |
-| selectedTwoOption | string | Nội dung được chọn trong tùy chọn hai. Nếu bạn chọn hủy, một chuỗi trống sẽ được trả về. |
+| Thuộc tính        | Kiểu dữ liệu | Mô tả                                                                                    |
+| ----------------- | ------------ | ---------------------------------------------------------------------------------------- |
+| selectedOneIndex  | number       | Giá trị được chọn cho tùy chọn một. Nếu bạn chọn hủy, một chuỗi trống sẽ được trả về.    |
+| selectedOneOption | string       | Nội dung được chọn trong tùy chọn một. Nếu bạn chọn hủy, một chuỗi trống sẽ được trả về. |
+| selectedTwoIndex  | number       | Giá trị được chọn cho tùy chọn hai. Nếu bạn chọn hủy, một chuỗi trống sẽ được trả về.    |
+| selectedTwoOption | string       | Nội dung được chọn trong tùy chọn hai. Nếu bạn chọn hủy, một chuỗi trống sẽ được trả về. |
 
 ## Sample Code
 
@@ -108,5 +114,3 @@ Page({
   }
 });
 ```
-
-

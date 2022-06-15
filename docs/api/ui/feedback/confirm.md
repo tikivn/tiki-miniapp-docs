@@ -2,7 +2,7 @@
 title: my.confirm
 ---
 
-`my.confirm` là API để hiển thị Confirm popup. Có thể set được title, content, text của  Confirm và Cancel button
+`my.confirm` là API để hiển thị Confirm popup. Có thể set được title, content, text của Confirm và Cancel button
 
 ## Quét mã để trải nghiệm
 
@@ -10,17 +10,23 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/confirm/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/confirm/index" />
+
 ## API Params
 
-| Thuộc tính        | Kiểu dữ liệu | Mô tả                                       |
-| ----------------- | ------------ | ------------------------------------------- |
-| title             | String       | Title của confirm box                       |
-| content           | String       | Content message của confirm box             |
-| confirmButtonText | String       | Text của button confirm, mặc định là OK     |
-| cancelButtonText  | String       | Text của button confirm, mặc định là Cancel |
-| success           | Function     | Callback function khi gọi hàm thành công.       |
-| fail              | Function     | Callback function khi gọi hàm thất bại.          |
-| complete          | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại.     |
+| Thuộc tính        | Kiểu dữ liệu | Mô tả                                                                  |
+| ----------------- | ------------ | ---------------------------------------------------------------------- |
+| title             | String       | Title của confirm box                                                  |
+| content           | String       | Content message của confirm box                                        |
+| confirmButtonText | String       | Text của button confirm, mặc định là OK                                |
+| cancelButtonText  | String       | Text của button confirm, mặc định là Cancel                            |
+| success           | Function     | Callback function khi gọi hàm thành công.                              |
+| fail              | Function     | Callback function khi gọi hàm thất bại.                                |
+| complete          | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại. |
 
 ## Sample Code
 
@@ -57,5 +63,3 @@ Page({
   }
 });
 ```
-
-

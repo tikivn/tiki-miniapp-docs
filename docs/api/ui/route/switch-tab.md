@@ -6,19 +6,24 @@ title: my.switchTab
 
 ## API Params
 
-| Thuộc tính  | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                                                     |
-| ---------- | -------- | :------: | --------------------------------------------------------------------------------------------------------------- |
-| url        | String   | ✓      | Đường dẫn (pagePath) của màn hình muốn nhảy tới. pagePath phải được định nghĩa trong trường tabBar của app.json |
-| success    | Function |        | Callback function khi gọi hàm thành công.                                                                               |
-| fail       | Function |        | Callback function khi gọi hàm thất bại.                                                                                 |
-| complete   | Function |        | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại.                                           |
-
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                                           |
+| ---------- | ------------ | :------: | --------------------------------------------------------------------------------------------------------------- |
+| url        | String       |    ✓     | Đường dẫn (pagePath) của màn hình muốn nhảy tới. pagePath phải được định nghĩa trong trường tabBar của app.json |
+| success    | Function     |          | Callback function khi gọi hàm thành công.                                                                       |
+| fail       | Function     |          | Callback function khi gọi hàm thất bại.                                                                         |
+| complete   | Function     |          | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại.                                          |
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/navigator/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/navigator/index" />
 
 ## Sử dụng
 
@@ -53,4 +58,3 @@ Page({
   }
 });
 ```
-

@@ -8,7 +8,13 @@ title: my.pageScrollTo
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/api/option-selector/index" />
+<QRCode page="pages/api/page-scroll-to/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/page-scroll-to/index" />
 
 ## API Params
 
@@ -64,5 +70,3 @@ Page({
   }
 });
 ```
-
-

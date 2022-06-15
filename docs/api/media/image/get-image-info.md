@@ -4,11 +4,23 @@ title: my.getImageInfo
 
 `my.getImageInfo` là API dùng để lấy thông tin của 1 ảnh (image). Ảnh có thể từ remote, từ đường dẫn cục bộ hoặc từ resources của app.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/get-image-info/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/get-image-info/index" />
+
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Băt buộc | Mô tả                                                                                         |
 | ---------- | ------------ | :------: | --------------------------------------------------------------------------------------------- |
-| src        | string       | ✓        | Đường dẫn của ảnh. Hỗ trợ remote URL, đường dẫn tương đối, đường dẫn từ resources của app.    |
+| src        | string       |    ✓     | Đường dẫn của ảnh. Hỗ trợ remote URL, đường dẫn tương đối, đường dẫn từ resources của app.    |
 | success    | Function     |          | Callback function khi lấy thông tin ảnh thành công                                            |
 | fail       | Function     |          | Callback function khi lấy thông tin ảnh bất thành                                             |
 | complete   | Function     |          | Callback function khi gọi API hoàn tất bất kể việc lấy thông tin ảnh thành công hay thất bại. |
@@ -35,7 +47,6 @@ title: my.getImageInfo
 | down-mirrored  | Giống down nhưng lật theo chiều ngang |
 | left-mirrored  | Giống left nhưng lật theo chiều dọc   |
 | right-mirrored | Giống right nhưng lật theo chiều dọc  |
-
 
 ## Sample Code
 
@@ -99,4 +110,3 @@ Page({
   }
 });
 ```
-

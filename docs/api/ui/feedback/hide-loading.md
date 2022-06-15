@@ -6,18 +6,23 @@ title: my.hideLoading
 
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu |  Mô tả                             |
-| ---------- | ------------ |  --------------------------------- |
-| success    | Function     | Callback function khi gọi hàm thành công. |
-| fail       | Function     | Callback function khi gọi hàm thất bại.   |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                  |
+| ---------- | ------------ | ---------------------------------------------------------------------- |
+| success    | Function     | Callback function khi gọi hàm thành công.                              |
+| fail       | Function     | Callback function khi gọi hàm thất bại.                                |
 | complete   | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại. |
-
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/loading/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/loading/index" />
 
 ## Sample Code
 
@@ -43,4 +48,3 @@ Page({
   }
 });
 ```
-

@@ -11,7 +11,9 @@ Tham khảo full luồng xác thực người dùng bằng biometrics
 - Nếu xác thực thành công, private key này sẽ dùng để encrypt challenge để tạo ra 1 chuỗi RSA PKCS#1v1.5 SHA 256 gọi là signature.
 - Phía Tiniapp, sau khi có signature này, client gửi signature lên cho server để verify.
 - Phía server của Tiniapp, nhận được response từ client, dùng public key để verify response và trả về kết quả authentication cho client
-  
+
+**_Khả dụng_**: Hỗ trợ từ version 1.96.7 trở lên.
+
 **Lưu ý:**
 
 - Việc tạo ra signature đòi hỏi phải có cặp private/public key được tạo ra trước đó bằng JSAPI [my.bioMetrics.createKey](../create-key)
@@ -20,27 +22,31 @@ Tham khảo full luồng xác thực người dùng bằng biometrics
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/component/api/bio-metrics/server/index" />
+<QRCode page="pages/api/bio-metrics/server/index" />
 
-**_Khả dụng_**: Hỗ trợ từ version 1.96.7 trở lên.
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/bio-metrics/server/index" />
 
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu |Bắt buộc |  Mô tả                                                                                 |
-| ---------- | ------------ | ------------ | ------------------------------------------------------------------------ |
-| challenge  | String       | √            | Challenge mà server gửi về cho client hoặc chuỗi data mà client muốn gửi lên server để verify                                        |
-| content    | String       | √            | Content của popup hiện ra khi xác thực bằng biometrics                                      |
-| success    | Function     |              | Callback function khi việc tạo signature thành công                                        |
-| fail       | Function     |              | Callback function khi việc tạo signature thất bại                                           |
-| complete   | Function     |              | Callback function bất kể thành công hay thất bại                                      |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                         |
+| ---------- | ------------ | -------- | --------------------------------------------------------------------------------------------- |
+| challenge  | String       | √        | Challenge mà server gửi về cho client hoặc chuỗi data mà client muốn gửi lên server để verify |
+| content    | String       | √        | Content của popup hiện ra khi xác thực bằng biometrics                                        |
+| success    | Function     |          | Callback function khi việc tạo signature thành công                                           |
+| fail       | Function     |          | Callback function khi việc tạo signature thất bại                                             |
+| complete   | Function     |          | Callback function bất kể thành công hay thất bại                                              |
 
 ## Giá trị trong success callback
 
 Khi việc gọi API thành công, framework sẽ trả về payload chứa các thông tin sau
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                 |
-| ---------- | ------------ | ------------------------------------------------------------------------------------- |
-| signature    | String       | Signature được sinh ra                                                              |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                  |
+| ---------- | ------------ | ---------------------- |
+| signature  | String       | Signature được sinh ra |
 
 ### Sample Code
 
@@ -66,20 +72,25 @@ Khi việc gọi API thành công, framework sẽ trả về payload chứa các
 Page({
   data: {
     username: 'test@gmail.com',
-    password: 'test',
-  },  
+    password: 'test'
+  },
   createSignature() {
-    const payload = `${new Date().getTime()}-${this.data.username}/${this.data.password}`;
+    const payload = `${new Date().getTime()}-${
+      this.data.username
+    }/${this.data.password}`;
     my.bioMetrics.createSignature({
       content: 'Login using Biometrics',
       challenge: payload,
       success: (res) => {
-        my.alert({ title: 'Success', content: JSON.stringify(res) });
+        my.alert({
+          title: 'Success',
+          content: JSON.stringify(res)
+        });
       },
       fail: (res) => {
         my.alert({ title: 'Fail', content: JSON.stringify(res) });
-      },
+      }
     });
-  },
+  }
 });
 ```

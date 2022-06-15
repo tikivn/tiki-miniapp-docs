@@ -4,6 +4,18 @@ title: my.getFileInfo
 
 `my.getFileInfo` là API dùng để lấy thông tin một tập tin cục bộ. Tập tin có thể ở dạng tạm hoặc được lưu.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/file/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/file/index" />
+
 ## API Params
 
 | Thuộc tính      | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                              |
@@ -44,7 +56,7 @@ title: my.getFileInfo
 Page({
   data: {
     tempFilePath: undefined,
-    savedFilePath: undefined,
+    savedFilePath: undefined
   },
   onChooseImage() {
     my.chooseImage({
@@ -52,12 +64,12 @@ Page({
       success: (res) => {
         console.log(res);
         this.setData({
-          tempFilePath: res.filePaths[0],
+          tempFilePath: res.filePaths[0]
         });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
   },
   onGetFileInfo() {
@@ -65,14 +77,15 @@ Page({
       filePath: this.data.tempFilePath,
       success: (res) => {
         console.log(res);
-        my.alert({ title: "File Info", content: JSON.stringify(res) });
+        my.alert({
+          title: 'File Info',
+          content: JSON.stringify(res)
+        });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
-
 ```
-

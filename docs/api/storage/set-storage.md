@@ -19,15 +19,21 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/storage/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/storage/index" />
+
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu  | Bắt buộc | Mô tả                                       |
-| ---------- | ------------- | :------: | ------------------------------------------- |
-| key        | string        | ✓      | Key của dữ liệu                             |
-| data       | Object/string | ✓      | Giá trị của dữ liệu                         |
-| success    | Function      |        | Callback khi dữ liệu được lưu thành công    |
-| fail       | Function      |        | Callback khi dữ liệu được lưu thất bại      |
-| complete   | Function      |        | Callback sau khi thực hiện việc lưu dữ liệu bất kể thành công hay thất bại |
+| Thuộc tính | Kiểu dữ liệu  | Bắt buộc | Mô tả                                                                      |
+| ---------- | ------------- | :------: | -------------------------------------------------------------------------- |
+| key        | string        |    ✓     | Key của dữ liệu                                                            |
+| data       | Object/string |    ✓     | Giá trị của dữ liệu                                                        |
+| success    | Function      |          | Callback khi dữ liệu được lưu thành công                                   |
+| fail       | Function      |          | Callback khi dữ liệu được lưu thất bại                                     |
+| complete   | Function      |          | Callback sau khi thực hiện việc lưu dữ liệu bất kể thành công hay thất bại |
 
 ## Sample Code
 

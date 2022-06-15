@@ -10,17 +10,22 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/alert/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/alert/index" />
+
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu |  Mô tả                           |
-| ---------- | ------------ | ------------------------------- |
-| title      | string       | Title của alert box             |
-| content    | string       | Content message của alert box   |
-| buttonText | string       | Text của button, mặc định là OK |
-| success    | Function     | Callback function khi gọi hàm thành công. |
-| fail       | Function     | Callback function khi gọi hàm thất bại.    |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                  |
+| ---------- | ------------ | ---------------------------------------------------------------------- |
+| title      | string       | Title của alert box                                                    |
+| content    | string       | Content message của alert box                                          |
+| buttonText | string       | Text của button, mặc định là OK                                        |
+| success    | Function     | Callback function khi gọi hàm thành công.                              |
+| fail       | Function     | Callback function khi gọi hàm thất bại.                                |
 | complete   | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại. |
-
 
 ## Sample Code
 
@@ -56,4 +61,3 @@ Page({
   }
 });
 ```
-

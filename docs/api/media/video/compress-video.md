@@ -10,6 +10,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/compress-video/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/compress-video/index" />
+
 ## API Params
 
 | Thuộc tính    | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                            |

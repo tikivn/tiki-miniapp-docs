@@ -4,13 +4,19 @@ title: my.loadFontFace
 
 `my.loadFontFace` là API để load 1 web font.
 
-***Khả dụng***:Hỗ trợ từ version 1.89.5 trở lên. 
+**_Khả dụng_**:Hỗ trợ từ version 1.89.5 trở lên.
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/load-font-face/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/load-font-face/index" />
 
 :::note Lưu ý
 
@@ -24,20 +30,21 @@ import { QRCode } from '@site/src/components/QRCode';
 
 | Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                  |
 | ---------- | ------------ | :------: | ---------------------------------------------------------------------- |
-| family  | string       |        √  | Tên font
-| source   | string       |       √   | Đường dẫn của font
-| desc   | String       |          |  Thuộc tính của font
-| success    | Function     |          | Callback function khi load font thành công.                                 |
-| fail       | Function     |          | Callback function khi việc load font bất thành.                         |
+| family     | string       |    √     | Tên font                                                               |
+| source     | string       |    √     | Đường dẫn của font                                                     |
+| desc       | String       |          | Thuộc tính của font                                                    |
+| success    | Function     |          | Callback function khi load font thành công.                            |
+| fail       | Function     |          | Callback function khi việc load font bất thành.                        |
 | complete   | Function     |          | Callback function khi gọi API hoàn tất bất kể thành công hay thất bại. |
 
 ### desc params
 
-| Thuộc tính | Kiểu dữ liệu |  Mô tả                                                                  |
-| ---------- | ------------ |  ---------------------------------------------------------------------- |
-| style  | string       |   Style của font, mặc định là normal. Các giá trị normal/italic/oblique
-| weight   | string       | Font weight, mặc định là normal. Các giá trị normal/bold/100/200../900
-| variant   | String       | Thiết lập việc có chuyển các "ký tự in thường" trong văn bản sang dạng "ký tự in hoa" hay không. Mặc định là normal. Các giá trị normal/small-caps/inherit. |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                                                                                       |
+| ---------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| style      | string       | Style của font, mặc định là normal. Các giá trị normal/italic/oblique                                                                                       |
+| weight     | string       | Font weight, mặc định là normal. Các giá trị normal/bold/100/200../900                                                                                      |
+| variant    | String       | Thiết lập việc có chuyển các "ký tự in thường" trong văn bản sang dạng "ký tự in hoa" hay không. Mặc định là normal. Các giá trị normal/small-caps/inherit. |
+
 ## Sample Code
 
 ```xml title=index.txml
@@ -50,7 +57,6 @@ import { QRCode } from '@site/src/components/QRCode';
 </view>
 ```
 
-
 ```js title=index.js
 Page({
   onLoadFontFace() {
@@ -62,9 +68,8 @@ Page({
       },
       fail: (res) => {
         my.showAlert({ title: JSON.stringify(res) });
-      },
+      }
     });
-  },
+  }
 });
 ```
-

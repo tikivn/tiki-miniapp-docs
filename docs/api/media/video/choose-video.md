@@ -4,7 +4,19 @@ title: my.chooseVideo
 
 `my.chooseVideo` là API dùng để quay video hoặc chọn video từ album cục bộ.
 
-***Khả dụng***: Hỗ trợ từ version 1.80.0 trở lên.
+**_Khả dụng_**: Hỗ trợ từ version 1.80.0 trở lên.
+
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/choose-video/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/choose-video/index" />
 
 ## API Params
 
@@ -53,7 +65,7 @@ title: my.chooseVideo
 ```js
 Page({
   data: {
-    videoUrl: undefined,
+    videoUrl: undefined
   },
   onChooseVideo() {
     my.chooseVideo({
@@ -62,15 +74,14 @@ Page({
       success: (res) => {
         my.alert({ content: JSON.stringify(res) });
         this.setData({
-          videoUrl: res.filePaths[0],
+          videoUrl: res.filePaths[0]
         });
       },
       fail: (e) => {
         my.alert({ content: JSON.stringify(e) });
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
-
 ```

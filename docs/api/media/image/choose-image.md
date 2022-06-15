@@ -4,6 +4,18 @@ title: my.chooseImage
 
 `my.chooseImage` là API dùng để chụp ảnh bằng camera hoặc chọn hình từ album cục bộ.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/image-picker/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/image-picker/index" />
+
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                                                             |
@@ -30,7 +42,6 @@ title: my.chooseImage
 | width      | number       | Chiều rộng của ảnh. Đơn vị tính: pixel |
 | height     | number       | Chiều cao của ảnh. Đơn vị tính pixel   |
 
-
 ## Sample Code
 
 ```xml
@@ -48,7 +59,7 @@ title: my.chooseImage
 ```js
 Page({
   data: {
-    imgs: undefined,
+    imgs: undefined
   },
   onChooseImage() {
     my.chooseImage({
@@ -56,17 +67,17 @@ Page({
       success: (res) => {
         console.log(res);
         this.setData({
-          imgs: res.filePaths,
+          imgs: res.filePaths
         });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
 ```
 
-<!--- 
-<img style={{maxWidth: 414}} alt="choose-image" src="/img/choose-image.gif"/>  
+<!---
+<img style={{maxWidth: 414}} alt="choose-image" src="/img/choose-image.gif"/>
 --->

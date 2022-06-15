@@ -10,6 +10,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/network-type/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/network-type/index" />
+
 **_Khả dụng_**: Hỗ trợ từ version 1.86.2 trở lên.
 
 ## API Params
@@ -37,11 +43,11 @@ import { QRCode } from '@site/src/components/QRCode';
 ```js
 Page({
   data: {
-    liveNetworkType: null,
+    liveNetworkType: null
   },
-  stopObservingNetworkStatus(){
-    my.offNetworkStatusChange(callback)
-    this.setData({liveNetworkType: null})
+  stopObservingNetworkStatus() {
+    my.offNetworkStatusChange(callback);
+    this.setData({ liveNetworkType: null });
   }
 });
 ```
