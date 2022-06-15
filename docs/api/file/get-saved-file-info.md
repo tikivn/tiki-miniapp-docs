@@ -4,6 +4,18 @@ title: my.getSavedFileInfo
 
 `my.getSavedFileInfo` là API dùng để lấy thông tin tập tin được lưu cục bộ. Để lấy thông tin tập tin tạm, sử dụng `my.getFileInfo()`.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/file/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/file/index" />
+
 ## API Params
 
 Các thuộc tính:
@@ -21,7 +33,6 @@ Các thuộc tính:
 | ---------- | ------------ | -------------------------------------- |
 | size       | number       | Dung lượng của file. Đơn vị tính: byte |
 | createTime | string       | Ngày giờ tập tin được tạo ra           |
-
 
 ## Sample Code
 
@@ -46,7 +57,7 @@ Các thuộc tính:
 Page({
   data: {
     tempFilePath: undefined,
-    savedFilePath: undefined,
+    savedFilePath: undefined
   },
   onChooseImage() {
     my.chooseImage({
@@ -54,12 +65,12 @@ Page({
       success: (res) => {
         console.log(res);
         this.setData({
-          tempFilePath: res.filePaths[0],
+          tempFilePath: res.filePaths[0]
         });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
   },
   onSaveFile() {
@@ -67,14 +78,17 @@ Page({
       filePath: this.data.tempFilePath,
       success: (res) => {
         console.log(res);
-        my.alert({ title: "Saved", content: `File path ${res.filePath}` });
+        my.alert({
+          title: 'Saved',
+          content: `File path ${res.filePath}`
+        });
         this.setData({
-          savedFilePath: res.filePath,
+          savedFilePath: res.filePath
         });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
   },
   onGetSavedFileInfo() {
@@ -82,16 +96,15 @@ Page({
       filePath: this.data.savedFilePath,
       success: (res) => {
         my.alert({
-          title: "Saved File Info",
-          content: JSON.stringify(res),
+          title: 'Saved File Info',
+          content: JSON.stringify(res)
         });
         console.log(JSON.stringify(res));
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
-
 ```

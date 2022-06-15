@@ -4,24 +4,32 @@ title: my.bioMetrics.localAuth
 
 `my.bioMetrics.localAuth` là API dùng để xác thực người dùng ở mức độ device. Tức là JSAPI này sẽ mở tính năng xác thực bằng Biometrics sẵn có của device (nếu device đã cài đặt face id, hoặc touch id, hoặc xác thực móng măt...), sau khi xác thực xong thì trả về kết quả thành công hay thất bại.
 
+**_Khả dụng_**: Hỗ trợ từ version 1.96.7 trở lên.
+
 **Lưu ý:**
+
 - Việc lưu trữ cặp key này đòi hỏi thiết bị phải có sensor của bio metrics và đã cài đặt sẵn 1 trong face id, touch id hoặc móng mắt... Sử dụng JSAPI [my.bioMetrics.isSupported](./server-authentication/is-supported) để kiểm tra việc này.
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/component/api/bio-metrics/local/index" />
+<QRCode page="pages/api/bio-metrics/local/index" />
 
-**_Khả dụng_**: Hỗ trợ từ version 1.96.7 trở lên.
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/bio-metrics/local/index" />
 
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                 |
-| ---------- | ------------ | -------- | ---------------------------------------------------------------------------- |
-| content    | String       | √        | Content của popup hiện ra khi xác thực bằng biometrics                                      |
-| success    | Function     |          | Callback function khi việc xác thực thành công                                        |
-| fail       | Function     |          | Callback function khi việc xác thực thất bại hoặc user huỷ bỏ                         |
-| complete   | Function     |          | Callback function bất kể thành công hay thất bại                                      |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                         |
+| ---------- | ------------ | -------- | ------------------------------------------------------------- |
+| content    | String       | √        | Content của popup hiện ra khi xác thực bằng biometrics        |
+| success    | Function     |          | Callback function khi việc xác thực thành công                |
+| fail       | Function     |          | Callback function khi việc xác thực thất bại hoặc user huỷ bỏ |
+| complete   | Function     |          | Callback function bất kể thành công hay thất bại              |
 
 ## Giá trị trong success callback
 
@@ -50,8 +58,8 @@ Page({
       },
       fail: (res) => {
         my.alert({ title: 'Fail', content: JSON.stringify(res) });
-      },
+      }
     });
-  },
+  }
 });
 ```

@@ -12,6 +12,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/canvas/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/canvas/index" />
+
 ## Khái niệm Path
 
 Path là tập hợp các điểm được nối với nhau bằng các đoạn. Những đoạn này có thể là đường thẳng hoặc đường cong, … , độ dày khác nhau, màu sắc khác nhau.

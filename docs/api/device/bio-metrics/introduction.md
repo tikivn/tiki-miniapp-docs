@@ -6,14 +6,20 @@ Biometrics hay còn gọi là xác thực sinh trắc học, là tính năng c�
 
 `my.biometrics` là tập JSAPI sử dụng biometrics của device để giúp developer có thể sử dụng để xác thực người dùng, bảo mật dữ liệu người dùng.
 Có 2 cách để sử dụng xác thực sinh trắc hoặc.
+
 - Local authentication: Nghĩa là việc xác thực chỉ đơn giản sử dụng biometrics của device và trả về kết quả có thành công hay không. Tham khảo tại [đây](./local-auth)
 - Server authentication: Việc xác thực này sẽ cần phía developer xây dựng hệ thống backend để verify dữ liệu. Tham khảo tại [đây](./server-authentication/an-introduction)
 
-
-***Khả dụng***: Hỗ trợ từ version 1.96.7 trở lên.
+**_Khả dụng_**: Hỗ trợ từ version 1.96.7 trở lên.
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
-<QRCode page="pages/component/api/bio-metrics/local/index" />
 
+<QRCode page="pages/api/bio-metrics/local/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/bio-metrics/local/index" />

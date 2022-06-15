@@ -4,21 +4,27 @@ title: my.openAppSetting
 
 `my.openAppSetting` là API dùng để mở app cài đặt của hệ thống và hiển thị màn hình các cài đặt tuỳ biến của app hiện tại (nếu có).
 
+**_Khả dụng_**: Hỗ trợ từ version 1.88.3 trở lên.
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/open-app-setting/index" />
 
-**_Khả dụng_**: Hỗ trợ từ version 1.88.3 trở lên.
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/open-app-setting/index" />
 
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                         |
-| ---------- | ------------ | --------------------------------------------- |
-| success    | Function     | Callback function khi thực hiện thành công.   |
-| fail       | Function     | Callback function khi thực hiện thất bại.     |
-| complete   | Function     | Callback function khi thực hiện hoàn tất.     |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                       |
+| ---------- | ------------ | ------------------------------------------- |
+| success    | Function     | Callback function khi thực hiện thành công. |
+| fail       | Function     | Callback function khi thực hiện thất bại.   |
+| complete   | Function     | Callback function khi thực hiện hoàn tất.   |
 
 ### Sample Code
 
@@ -42,8 +48,8 @@ Page({
       },
       fail: (res) => {
         my.alert({ title: 'Fail', content: JSON.stringify(res) });
-      },
+      }
     });
-  },
+  }
 });
 ```

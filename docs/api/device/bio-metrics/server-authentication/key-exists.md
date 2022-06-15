@@ -4,22 +4,27 @@ title: my.bioMetrics.keyExists
 
 `my.bioMetrics.keyExists` là API để kiểm tra thiết bị đã có lưu sẵn cặp key đề cập ở JSAPI [my.bioMetrics.createKey](./create-key). Nếu thiết bị đã có sẵn cặp key này, chúng ta ko cần phải tạo thêm.
 
-
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/component/api/bio-metrics/server/index" />
+<QRCode page="pages/api/bio-metrics/server/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/bio-metrics/server/index" />
 
 **_Khả dụng_**: Hỗ trợ từ version 1.96.7 trở lên.
 
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                 |
-| ---------- | ------------ | ------------------------------------------------------------------------------------- |
-| success    | Function     | Callback function khi việc kiểm tra thành công                                        |
-| fail       | Function     | Callback function khi việc kiểm tra thất bại                                          |
-| complete   | Function     | Callback function bất kể thành công hay thất bại                                      |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                            |
+| ---------- | ------------ | ------------------------------------------------ |
+| success    | Function     | Callback function khi việc kiểm tra thành công   |
+| fail       | Function     | Callback function khi việc kiểm tra thất bại     |
+| complete   | Function     | Callback function bất kể thành công hay thất bại |
 
 ## Giá trị trong success callback
 
@@ -50,12 +55,15 @@ Page({
   keyExists() {
     my.bioMetrics.keyExists({
       success: (isExist) => {
-        my.alert({ title: 'Success', content: keyExists ? 'Key is exist' : 'No key found'});
+        my.alert({
+          title: 'Success',
+          content: keyExists ? 'Key is exist' : 'No key found'
+        });
       },
       fail: (res) => {
         my.alert({ title: 'Fail', content: JSON.stringify(res) });
-      },
+      }
     });
-  },
+  }
 });
 ```

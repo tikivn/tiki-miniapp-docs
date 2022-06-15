@@ -4,13 +4,19 @@ title: my.getBatteryInfo
 
 `my.getBatteryInfo` là API dùng để lấy thông tin pin của thiết bị.
 
+**_Khả dụng_**: Hỗ trợ từ version 1.84.11 trở lên. Không hỗ trợ máy ảo.
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/battery/index" />
 
-**_Khả dụng_**: Hỗ trợ từ version 1.84.11 trở lên. Không hỗ trợ máy ảo.
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/battery/index" />
 
 ## API Params
 

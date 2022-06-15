@@ -4,13 +4,19 @@ title: my.checkNotification
 
 `my.checkNotification` là API dùng để kiểm tra người dùng đã bật notification cho Tiki app hay chưa.
 
+**_Khả dụng_**: hỗ trợ từ version 1.83.20 trở lên.
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/check-notification/index" />
 
-***Khả dụng***: hỗ trợ từ version 1.83.20 trở lên.
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/check-notification/index" />
 
 ## API Params
 
@@ -30,9 +36,8 @@ import { QRCode } from '@site/src/components/QRCode';
 
 | Giá trị | Mô tả                                         |
 | ------- | --------------------------------------------- |
-| granted | Notification của Tiki app đã được bật lên.   |
+| granted | Notification của Tiki app đã được bật lên.    |
 | denied  | Notification của Tiki app không được bật lên. |
-
 
 ## Sample Code
 
@@ -45,9 +50,9 @@ Page({
       },
       fail: (res) => {
         my.alert({ content: JSON.stringify(res) });
-      },
+      }
     });
-  },
+  }
 });
 ```
 
@@ -59,4 +64,3 @@ Page({
   </view>
 </view>
 ```
-

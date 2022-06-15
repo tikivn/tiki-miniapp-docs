@@ -4,32 +4,37 @@ title: my.bioMetrics.isSupported
 
 `my.bioMetrics.isSupported` là API để kiểm tra thiết bị có sensor của bio metrics hay không và đã cài đặt sẵn 1 trong các loại xác thực face id, touch id hoặc móng mắt (tuỳ thuộc vào thiết bị)... hay chưa.
 
+**_Khả dụng_**: Hỗ trợ từ version 1.96.7 trở lên.
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/component/api/bio-metrics/server/index" />
+<QRCode page="pages/api/bio-metrics/server/index" />
 
-**_Khả dụng_**: Hỗ trợ từ version 1.96.7 trở lên.
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/bio-metrics/server/index" />
 
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                 |
-| ---------- | ------------ | ------------------------------------------------------------------------------------- |
-| success    | Function     | Callback function khi việc kiểm tra thành công                                        |
-| fail       | Function     | Callback function khi việc kiểm tra thất bại                                          |
-| complete   | Function     | Callback function bất kể thành công hay thất bại                                      |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                            |
+| ---------- | ------------ | ------------------------------------------------ |
+| success    | Function     | Callback function khi việc kiểm tra thành công   |
+| fail       | Function     | Callback function khi việc kiểm tra thất bại     |
+| complete   | Function     | Callback function bất kể thành công hay thất bại |
 
 ## Giá trị trong success callback
 
 Khi việc gọi API thành công, framework sẽ trả về payload chứa các thông tin sau
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                 |
-| ---------- | ------------ | ------------------------------------------------------------------------------------- |
-| isSupported    | Boolean       | Device có support hay không                                                   |
-| mode    | String       | Trên ios sẽ trả về loại xác thực là `fingerprint` hay `facial`, còn trên android thì sẽ ko trả về                        |
-| error    | String       | Dùng biến này để biết được vì sao thiết bị không support việc xác thực, ví dự như không có sensor hoặc chưa đăng ký vân tay... |
+| Thuộc tính  | Kiểu dữ liệu | Mô tả                                                                                                                          |
+| ----------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| isSupported | Boolean      | Device có support hay không                                                                                                    |
+| mode        | String       | Trên ios sẽ trả về loại xác thực là `fingerprint` hay `facial`, còn trên android thì sẽ ko trả về                              |
+| error       | String       | Dùng biến này để biết được vì sao thiết bị không support việc xác thực, ví dự như không có sensor hoặc chưa đăng ký vân tay... |
 
 ### Sample Code
 

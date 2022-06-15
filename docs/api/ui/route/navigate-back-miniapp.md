@@ -9,7 +9,7 @@ title: my.navigateBackMiniApp
 :::note Lưu ý
 
 Nếu app id cần back về có nhiều app cùng id được mở trước đó, thì việc nhảy về sẽ là app dược mở cuối cùng
-::: 
+:::
 
 ## Quét mã để trải nghiệm
 
@@ -17,16 +17,21 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/navigator/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/navigator/index" />
 
 ## API Params
 
-| Thuộc tính             | Kiểu dữ liệu   | Mô tả                                                                                                                         |
-| ---------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| appId  | string   |  App Id cần nhảy về. Nếu không truyền sẽ tự động nhảy về app trước đó.|
-| extraData  | Object   |  Dữ liệu cần được truyền cho app được nhảy tới.<br /> App được nhảy tới sẽ lấy thông tin qua lifecyle `App.onShow()` |
-| success    | Function | Callback function khi thành công.                                                                                                  |
-| fail       | Function | Callback function khi thất bại.                                                                                                    |
-| complete   | Function | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                                                              |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                                               |
+| ---------- | ------------ | ------------------------------------------------------------------------------------------------------------------- |
+| appId      | string       | App Id cần nhảy về. Nếu không truyền sẽ tự động nhảy về app trước đó.                                               |
+| extraData  | Object       | Dữ liệu cần được truyền cho app được nhảy tới.<br /> App được nhảy tới sẽ lấy thông tin qua lifecyle `App.onShow()` |
+| success    | Function     | Callback function khi thành công.                                                                                   |
+| fail       | Function     | Callback function khi thất bại.                                                                                     |
+| complete   | Function     | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                                               |
 
 ## Sample Code
 
@@ -57,5 +62,3 @@ Page({
   }
 });
 ```
-
-

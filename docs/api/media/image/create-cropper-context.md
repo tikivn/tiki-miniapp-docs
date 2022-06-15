@@ -4,12 +4,23 @@ title: my.createCropperContext
 
 `my.createCropperContext` là API dùng để tạo ra ImageCropperContext - đối tượng cung cấp phương thức giúp bạn điều khiển [ImageCropper](/docs/component/basic/utilities/image-cropper) component.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/advance/utilities/image-cropper/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/utilities/image-cropper/index" />
+
 ## Các phương thức LottieContext cung cấp
 
-| Phương thức  | Tham số           | Mô tả                                                                                                                         |
-| ------------ | ----------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| save         | no                | Thực hiện việc crop ảnh                                   |
-
+| Phương thức | Tham số | Mô tả                   |
+| ----------- | ------- | ----------------------- |
+| save        | no      | Thực hiện việc crop ảnh |
 
 ## Sample Code
 

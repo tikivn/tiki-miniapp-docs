@@ -10,6 +10,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/user-screenshot-event/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/user-screenshot-event/index" />
+
 ## Sample Code
 
 ```xml

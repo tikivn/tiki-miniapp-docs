@@ -12,6 +12,18 @@ Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của �
 
 :::
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/request/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/request/index" />
+
 ## API Params
 
 Để cấu hình việc gọi network, bạn cần truyền object với các thuộc tính sau:
@@ -29,7 +41,7 @@ Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của �
 | fail          | Function     |          | Callback function khi việc gọi network thất bại.                                                                         |
 | complete      | Function     |          | Callback function khi việc gọi network kết thúc cho dù thành công hay thất bại.                                          |
 
-***Khả dụng***: Định dạng arraybuffer được hỗ trợ từ runtime version 1.85 trở đi.
+**_Khả dụng_**: Định dạng arraybuffer được hỗ trợ từ runtime version 1.85 trở đi.
 
 ### Callback success function payload
 

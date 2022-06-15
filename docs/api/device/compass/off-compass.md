@@ -4,6 +4,18 @@ title: my.offCompassChange
 
 `my.offCompassChange` là API giúp dừng việc theo dõi dữ liệu compass.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/compass/index" />
+
+<!-- ## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/compass/index" /> -->
+
 ## API Params
 
 - Khi gọi API kèm theo callback thì chỉ event callback đó được xoá:

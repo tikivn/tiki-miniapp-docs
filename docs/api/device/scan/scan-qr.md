@@ -4,7 +4,19 @@ title: my.scan
 
 `my.scan` là API dùng để quét mã QR hoặc mã vạch (barcode)
 
-***Khả dụng:*** Chỉ hỗ trợ từ version 1.78.1 trở lên
+**_Khả dụng:_** Chỉ hỗ trợ từ version 1.78.1 trở lên
+
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/scan-qr/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/scan-qr/index" />
 
 ## Sample Code
 
@@ -14,13 +26,13 @@ Page({
     my.scan({
       success: (res) => {
         console.log(res);
-        my.alert({ title: 'Found', content: res});
+        my.alert({ title: 'Found', content: res });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
 ```
 

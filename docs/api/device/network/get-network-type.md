@@ -4,30 +4,36 @@ title: my.getNetworkType
 
 `my.getNetworkType` là API dùng để lấy thông tin kết nối mạng của thiết bị.
 
+**_Khả dụng_**: Hỗ trợ từ version 1.85.7 trở lên.
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/network-type/index" />
 
-**_Khả dụng_**: Hỗ trợ từ version 1.85.7 trở lên.
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/network-type/index" />
 
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                 |
-| ---------- | ------------ | ------------------------------------------------------------------------------------- |
-| success    | Function     | Callback function khi lấy thông tin thành công.                                       |
-| fail       | Function     | Callback function khi lấy thông tin thất bại.                                         |
-| complete   | Function     | Callback function khi lấy thông tin hoàn tất.                                         |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                           |
+| ---------- | ------------ | ----------------------------------------------- |
+| success    | Function     | Callback function khi lấy thông tin thành công. |
+| fail       | Function     | Callback function khi lấy thông tin thất bại.   |
+| complete   | Function     | Callback function khi lấy thông tin hoàn tất.   |
 
 ## Giá trị trong success callback
 
 Khi việc gọi API thành công, framework sẽ trả về thông tin như sau:
 
-| Thuộc tính            | Kiểu dữ liệu | Mô tả                                                                                            |
-| --------------------- | -------------| ------------------------------------------------------------------------------------------------ |
-| networkAvailable      | boolean      | Thiết bị có kết nối mạng hay không                                                               |
-| networkType           | string       | Loại kết nối mạng, là một trong các giá trị UNKNOWN / NOTREACHABLE / WIFI / 3G / 2G / 4G / 5G.   |
+| Thuộc tính       | Kiểu dữ liệu | Mô tả                                                                                          |
+| ---------------- | ------------ | ---------------------------------------------------------------------------------------------- |
+| networkAvailable | boolean      | Thiết bị có kết nối mạng hay không                                                             |
+| networkType      | string       | Loại kết nối mạng, là một trong các giá trị UNKNOWN / NOTREACHABLE / WIFI / 3G / 2G / 4G / 5G. |
 
 ### Sample Code
 
@@ -43,18 +49,21 @@ Khi việc gọi API thành công, framework sẽ trả về thông tin như sau
 ```js
 Page({
   data: {
-    networkType: undefined,
+    networkType: undefined
   },
   onGetNetworkType() {
     my.getNetworkType({
       success: (res) => {
         this.setData({ networkType: res });
-        my.alert({ title: 'Success', content: JSON.stringify(res) });
+        my.alert({
+          title: 'Success',
+          content: JSON.stringify(res)
+        });
       },
       fail: (e) => {
         my.alert({ title: 'Fail', content: JSON.stringify(e) });
-      },
+      }
     });
-  },
+  }
 });
 ```

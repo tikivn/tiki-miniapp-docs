@@ -11,10 +11,22 @@ Mỗi tiện ích sẽ được sử dụng tối đa 6MB cho việc lưu trữ 
 
 ## Danh sách JS API
 
-| JS API             | Mô tả                                                                             |
-| ----------------- | --------------------------------------------------------------------------------- |
+| JS API            | Mô tả                                                                   |
+| ----------------- | ----------------------------------------------------------------------- |
 | my.setStorage     | Lưu trữ dữ liệu theo key; dữ liệu mới sẽ ghi đè dữ liệu cũ nếu cùng key |
-| my.getStorage     | Lấy dữ liệu theo key                                                       |
-| my.clearStorage   | Xoá toàn bộ dữ liệu được lưu trữ của tiện ích                                   |
-| my.removeStorage  | Xoá dữ liệu được lưu theo key                                              |
+| my.getStorage     | Lấy dữ liệu theo key                                                    |
+| my.clearStorage   | Xoá toàn bộ dữ liệu được lưu trữ của tiện ích                           |
+| my.removeStorage  | Xoá dữ liệu được lưu theo key                                           |
 | my.getStorageInfo | Lấy thông tin dung lượng, giới hạn của storage hiện tại                 |
+
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/storage/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/storage/index" />

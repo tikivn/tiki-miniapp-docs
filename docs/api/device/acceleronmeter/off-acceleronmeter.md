@@ -4,6 +4,18 @@ title: my.offAcceleronmeterChange
 
 `my.offAcceleronmeterChange` là API giúp dừng việc theo dõi dữ liệu acceleronmeter.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/acceleronmeter/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/acceleronmeter/index" />
+
 ## API Params
 
 - Khi gọi API kèm theo callback thì chỉ event callback đó được xoá:

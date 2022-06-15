@@ -4,13 +4,19 @@ title: my.previewImage
 
 `my.previewImage` là API cho phép mở một cửa sổ lớn để xem hình ảnh
 
-***Khả dụng***: Chỉ hỗ trợ từ version 1.81.6 trở lên
+**_Khả dụng_**: Chỉ hỗ trợ từ version 1.81.6 trở lên
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/preview-image/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/preview-image/index" />
 
 ## API Params
 

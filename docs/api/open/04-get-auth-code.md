@@ -16,10 +16,22 @@ Nếu như trường `appIdentifier` không trùng với app id được tạo b
 
 :::
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/get-auth-code/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/get-auth-code/index" />
+
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu           |  Mô tả                                                            |
-| ---------- | -------------- |  --------------------------------------------------------------------- |
+| Thuộc tính | Kiểu dữ liệu   | Mô tả                                                                 |
+| ---------- | -------------- | --------------------------------------------------------------------- |
 | scopes     | String / Array | Danh sách các scopes, mặc định là []                                  |
 | success    | Function       | Callback function khi thành công.                                     |
 | fail       | Function       | Callback function khi thất bại.                                       |
@@ -27,11 +39,11 @@ Nếu như trường `appIdentifier` không trùng với app id được tạo b
 
 ### Giá trị trong success callback
 
-| Thuộc tính       | Kiểu dữ liệu   | Mô tả                               |
-| ----------------- | --------- | ---------------------------------------- |
-| authCode          | String    | URL ảnh đại diện của user                |
-| authErrorScopes   | Key-Value | Key là tên scope, value là error code    |
-| authSuccessScopes | Array     | Danh sách các scopes được users cho phép |
+| Thuộc tính        | Kiểu dữ liệu | Mô tả                                    |
+| ----------------- | ------------ | ---------------------------------------- |
+| authCode          | String       | URL ảnh đại diện của user                |
+| authErrorScopes   | Key-Value    | Key là tên scope, value là error code    |
+| authSuccessScopes | Array        | Danh sách các scopes được users cho phép |
 
 Error code là một chuỗi, có thể nhận các giá trị
 
@@ -52,5 +64,3 @@ Page({
   }
 });
 ```
-
-

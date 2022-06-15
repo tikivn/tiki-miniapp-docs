@@ -4,7 +4,19 @@ title: my.getClipboard
 
 `my.getClipboard` là API dùng để lấy nội dung từ clipboard của thiết bị.
 
-***Khả dụng***: hỗ trợ từ version 1.79.1 trở lên.
+**_Khả dụng_**: hỗ trợ từ version 1.79.1 trở lên.
+
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/clipboard/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/clipboard/index" />
 
 ## API Params
 
@@ -25,11 +37,11 @@ title: my.getClipboard
 ```js title=index.js
 Page({
   data: {
-    text: undefined,
+    text: undefined
   },
   textChange(e) {
     this.setData({
-      text: e.detail.value,
+      text: e.detail.value
     });
   },
   onSetClipboard() {
@@ -39,8 +51,8 @@ Page({
         my.alert({ title: 'Success' });
       },
       fail: (e) => {
-        my.alert({ title: "error", content: JSON.stringify(e) });
-      },
+        my.alert({ title: 'error', content: JSON.stringify(e) });
+      }
     });
   },
   onGetClipboard() {
@@ -49,10 +61,10 @@ Page({
         my.alert({ title: 'Success', content: res.text });
       },
       fail: (e) => {
-        my.alert({ title: "error", content: JSON.stringify(e) });
-      },
+        my.alert({ title: 'error', content: JSON.stringify(e) });
+      }
     });
-  },
+  }
 });
 ```
 
@@ -69,4 +81,3 @@ Page({
   </view>
 </view>
 ```
-

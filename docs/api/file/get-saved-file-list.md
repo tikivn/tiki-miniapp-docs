@@ -4,11 +4,23 @@ title: my.getSavedFileList
 
 `my.getSavedFileList` là API dùng để lấy thông tin tất cả các tập tin được lưu cục bộ của Tini App gọi API này.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/file/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/file/index" />
+
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                       |
 | ---------- | ------------ | :------: | --------------------------------------------------------------------------- |
-| filePath   | String       | ✓        | Đường dẫn tới local file                                                    |
+| filePath   | String       |    ✓     | Đường dẫn tới local file                                                    |
 | success    | Function     |          | Callback function khi lấy thông tin tất cả tập tin thành công               |
 | fail       | Function     |          | Callback function khi lấy thông tin tất cả tập tin thất bại                 |
 | complete   | Function     |          | Callback function khi việc gọi API kết thúc bất kể thành công hay thất bại. |
@@ -50,7 +62,7 @@ title: my.getSavedFileList
 Page({
   data: {
     tempFilePath: undefined,
-    savedFilePath: undefined,
+    savedFilePath: undefined
   },
   onChooseImage() {
     my.chooseImage({
@@ -58,29 +70,27 @@ Page({
       success: (res) => {
         console.log(res);
         this.setData({
-          tempFilePath: res.filePaths[0],
+          tempFilePath: res.filePaths[0]
         });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
   },
   onGetSavedFileList() {
     my.getSavedFileList({
       success: (res) => {
         my.alert({
-          title: "Saved File List",
-          content: JSON.stringify(res),
+          title: 'Saved File List',
+          content: JSON.stringify(res)
         });
         console.log(JSON.stringify(res));
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
-
 ```
-

@@ -4,6 +4,18 @@ title: my.multiLevelSelect
 
 `my.multiLevelSelect` là API dùng để tạo component select đa cấp.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/multi-level-select/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/multi-level-select/index" />
+
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                             |
@@ -17,23 +29,17 @@ title: my.multiLevelSelect
 
 ### Giá trị trong list
 
-| Thuộc tính | Kiểu dữ liệu             | Mô tả                |
+| Thuộc tính | Kiểu dữ liệu     | Mô tả                     |
 | ---------- | ---------------- | ------------------------- |
 | name       | String           | Tên của mục nhập.         |
 | subList    | Array of objects | Danh sách các subentries. |
 
 ### Giá trị trong success callback
 
-| Thuộc tính | Kiểu dữ liệu     | Mô tả                                                                                      |
-| ---------- | ------- | ----------------------------------------------------------------------------------------------- |
-| success    | boolean | True hoặc False                                                                                 |
-| result     | string  | Kết quả trả về. Ví dụ [{"name":"HCM City"},{"name":"District 3"},{"name":"Vo Van Tan Street"}]. |
-
-## Quét mã để trải nghiệm
-
-import { QRCode } from '@site/src/components/QRCode';
-
-<QRCode page="pages/api/multi-level-select/index" />
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                           |
+| ---------- | ------------ | ----------------------------------------------------------------------------------------------- |
+| success    | boolean      | True hoặc False                                                                                 |
+| result     | string       | Kết quả trả về. Ví dụ [{"name":"HCM City"},{"name":"District 3"},{"name":"Vo Van Tan Street"}]. |
 
 ## Sample Code
 
@@ -114,5 +120,3 @@ Page({
   }
 });
 ```
-
-

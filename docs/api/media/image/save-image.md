@@ -4,15 +4,27 @@ title: my.saveImage
 
 `my.saveImage` là API dùng để lưu 1 remote image vào gallery của thiết bị di động.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/save-image/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/save-image/index" />
+
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                     |
-| ---------- | ------------ | :------: | ----------------------------------------------------------------------------------------- |
-| url        | string       |    ✓     | Đường dẫn của remote image.                                                               |  |
+| ---------- | ------------ | :------: | ----------------------------------------------------------------------------------------- | --- |
+| url        | string       |    ✓     | Đường dẫn của remote image.                                                               |     |
 | success    | Function     |          | Callback function khi save hình ảnh thành công                                            |
 | fail       | Function     |          | Callback function khi save image bất thành                                                |
 | complete   | Function     |          | Callback function khi gọi API hoàn tất bất kể việc save hình ảnh thành công hay thất bại. |
- 
+
 :::note Lưu ý
 
 - Image sẽ được lưu vào album `Tiki-Miniapp`.
@@ -38,23 +50,26 @@ title: my.saveImage
 ```js
 Page({
   data: {
-    url: undefined,
+    url: undefined
   },
   urlChange(e) {
     this.setData({
-      url: e.detail.value,
+      url: e.detail.value
     });
   },
   onSaveImage() {
     my.saveImage({
       url: this.data.url,
       success: (res) => {
-        my.alert({ title: "Saved!", content: "Check your gallery" });
+        my.alert({
+          title: 'Saved!',
+          content: 'Check your gallery'
+        });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
 ```

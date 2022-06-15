@@ -4,7 +4,19 @@ title: my.makePhoneCall
 
 `my.makePhoneCall` là API dùng để gọi tới 1 số điện thoại cụ thể.
 
-***Khả dụng***: hỗ trợ từ version 1.77.1 trở lên.
+**_Khả dụng_**: hỗ trợ từ version 1.77.1 trở lên.
+
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/make-phone-call/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/make-phone-call/index" />
 
 ## API Params
 
@@ -17,7 +29,7 @@ title: my.makePhoneCall
 
 ### Callback function payload
 
-* Fail callback payload 
+- Fail callback payload
 
 | Thuộc tính   | Kiểu dữ liệu | Mô tả        |
 | ------------ | ------------ | ------------ |
@@ -29,11 +41,11 @@ title: my.makePhoneCall
 ```js title=index.js
 Page({
   data: {
-    phone: undefined,
+    phone: undefined
   },
   phoneChange(e) {
     this.setData({
-      phone: e.detail.value,
+      phone: e.detail.value
     });
   },
   onPhoneCall() {
@@ -43,10 +55,10 @@ Page({
         console.log(res);
       },
       fail: (e) => {
-        my.alert({title: error, content: JSON.stringify(e)});
-      },
+        my.alert({ title: error, content: JSON.stringify(e) });
+      }
     });
-  },
+  }
 });
 ```
 
@@ -63,4 +75,5 @@ Page({
   </view>
 </view>
 ```
+
 |
