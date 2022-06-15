@@ -4,17 +4,17 @@ title: PIN
 
 Để sử dụng `PIN`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.4.1` trở lên.
 
-<div style={{ width: '100%', maxWidth: 250 }}>
-  <img src="/img/pin-1.png" alt="form-steps"/>
-  <img src="/img/pin-2.png" alt="form-steps"/>
-  <img src="/img/pin-3.png" alt="form-steps"/>
-</div>
-
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/form/pin/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/form/pin/index" />
 
 ## Cài đặt `tini-ui`:
 
@@ -23,7 +23,6 @@ $> yarn add @tiki.vn/tini-ui
 ```
 
 ## Sample Code
-
 
 ```json title=index.json
 {
@@ -104,9 +103,9 @@ Page({
 });
 ```
 
-## Thuộc tính 
+## Thuộc tính
 
-| Thuộc tính   | Kiểu dữ liệu                   |  Giá trị mặc định                           | Mô tả                                                                   |
+| Thuộc tính | Kiểu dữ liệu          | Giá trị mặc định                          | Mô tả                                                                         |
 | ---------- | --------------------- | ----------------------------------------- | ----------------------------------------------------------------------------- |
 | className  | string                | ''                                        | Custom class                                                                  |
 | style      | string                | ''                                        | Inline style                                                                  |

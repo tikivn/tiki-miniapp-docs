@@ -11,6 +11,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/form/text-field/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/form/text-field/index" />
+
 ## Cài đặt `tini-ui`:
 
 ```bash
@@ -186,4 +192,3 @@ Page({
   margin-bottom: 8px;
 }
 ```
-
