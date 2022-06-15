@@ -2,7 +2,19 @@
 title: view
 ---
 
-Thẻ `view` là một container component dùng để chứa các component khác, có chức năng tự với thẻ `div` trong HTML. 
+Thẻ `view` là một container component dùng để chứa các component khác, có chức năng tự với thẻ `div` trong HTML.
+
+<!-- ## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/view/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/view/index" /> -->
 
 ## Thuộc tính
 
@@ -39,4 +51,3 @@ Thẻ `view` là một container component dùng để chứa các component kh�
   padding: 16px;
 }
 ```
-

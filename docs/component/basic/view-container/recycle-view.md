@@ -6,7 +6,7 @@ title: recycle-view
 - Nó có height mặc định là window height, bạn có thể thay đổi thông qua style của recycle-view.
 - `recycle-view` được phân làm hai loại grid view và list view. Mỗi loại đều có các thuộc tính riêng.
   - Grid view hiển thị nhiều item trên mỗi dòng. Số lượng item trên mỗi dòng thì đồng nhất.
-  - List view hiển thị một item trên một dòng. 
+  - List view hiển thị một item trên một dòng.
 
 :::warning Cảnh báo
 
@@ -20,6 +20,11 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/recycle-view/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/recycle-view/index" />
 
 ## Các thuộc tính chung của recycle-view
 

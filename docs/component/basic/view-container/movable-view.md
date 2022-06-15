@@ -4,6 +4,18 @@ title: movable-view
 
 `movable-view` là container component cho phép kéo và thả chính nó và các thành phần con trong nó trên page. `movable-view` bắt buộc phải nằm trong [movable-area](movable-area). Nếu không, movable-view không thể di chuyển được.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/movable-view/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/movable-view/index" />
+
 ## Thuộc tính
 
 | Thuộc tính    | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                                   |
@@ -91,4 +103,3 @@ Sự kiện onChange và onScale có thể được kích hoạt do người dù
   </view>
 </view>
 ```
-

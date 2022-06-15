@@ -10,6 +10,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/video/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/video/index" />
+
 ## Thuộc tính
 
 | Thuộc tính   | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                                                                     |
@@ -26,7 +32,7 @@ import { QRCode } from '@site/src/components/QRCode';
 | onPlay       | event        |                  | Sự kiện được kích hoạt khi video bắt đầu được phát hoặc được phát tiếp sau khi tạm dừng                                                                   |
 | onPause      | event        |                  | Sự kiện được kích hoạt khi video bị tạm dừng.                                                                                                             |
 | onEnded      | event        |                  | Sự kiện được kích hoạt khi video được phát đến hết.                                                                                                       |
-| onTimeUpdate | event        |                  | Sự kiện được kích hoạt khi thời điểm hiện tại của video thay đổi. `event.detail = { currentTime: number }`                                                                                         |
+| onTimeUpdate | event        |                  | Sự kiện được kích hoạt khi thời điểm hiện tại của video thay đổi. `event.detail = { currentTime: number }`                                                |
 | onError      | event        |                  | Sự kiện được khích hoạt khi lỗi phát sinh trong lúc phát audio. `event.detail = { errMsg: 'MEDIA_ERR_NETWORK' }`.                                         |
 
 ## Sample Code

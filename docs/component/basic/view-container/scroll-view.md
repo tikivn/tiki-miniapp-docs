@@ -14,6 +14,18 @@ title: scroll-view
 
 :::
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/scroll-view/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/scroll-view/index" />
+
 ## Thuộc tính
 
 | Thuộc tính            | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                                                                                                                 |
@@ -36,7 +48,6 @@ title: scroll-view
 | onTouchStart          | event        |                  | Sự kiện được gọi khi bắt đầu chạm vào `scroll-view`. [Xem thêm](/docs/framework/event/event-object#TouchEvent-touch-event-object)                                                                     |
 | onTouchmove           | event        |                  | Sự kiện được gọi khi bạn di chuyển trong lúc chạm vào `scroll-view`. [Xem thêm](/docs/framework/event/event-object#TouchEvent-touch-event-object)                                                     |
 | onTouchEnd            | event        |                  | Sự kiện được gọi khi dừng chạm vào `scroll-view`. [Xem thêm](/docs/framework/event/event-object#TouchEvent-touch-event-object)                                                                        |
-
 
 ## Sample Code
 
