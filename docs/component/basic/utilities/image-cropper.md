@@ -10,15 +10,21 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/utilities/image-cropper/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/utilities/image-cropper/index" />
+
 ## Thuộc tính
 
-| Thuộc tính   | Kiểu dữ liệu    | Giá trị mặc định |  Mô tả                  |
-| ------------ | --------------- | ---------------- | ----------------------- |
-| src          | string          |                  | Đường dẫn cục bộ tới hình ảnh muốn crop                       |
-| aspectRatio  | string          |  1:1             | Tỷ lệ crop ảnh mong muốn, format {w}:{h}. Ví dụ 1:1, 4:3            |
-| className    | string          |                  | Thêm class cho component                   |
-| id           | string          |                  | id của component. Dùng jsapi createCropperContext(id) để reference tới cropper    |
-| onSave       | event           | (e:Object) => void | Callback khi việc crop hình hoàn thành. |
+| Thuộc tính  | Kiểu dữ liệu | Giá trị mặc định   | Mô tả                                                                          |
+| ----------- | ------------ | ------------------ | ------------------------------------------------------------------------------ |
+| src         | string       |                    | Đường dẫn cục bộ tới hình ảnh muốn crop                                        |
+| aspectRatio | string       | 1:1                | Tỷ lệ crop ảnh mong muốn, format {w}:{h}. Ví dụ 1:1, 4:3                       |
+| className   | string       |                    | Thêm class cho component                                                       |
+| id          | string       |                    | id của component. Dùng jsapi createCropperContext(id) để reference tới cropper |
+| onSave      | event        | (e:Object) => void | Callback khi việc crop hình hoàn thành.                                        |
 
 ## Sample Code
 
@@ -55,7 +61,7 @@ onCropperFinish(e) {
       },
     });
   },
-} 
+}
 ```
 
 Sample hoàn chỉnh
@@ -64,25 +70,25 @@ Sample hoàn chỉnh
 Page({
   data: {
     imagePath: undefined,
-    ratio: '1:1',
+    ratio: '1:1'
   },
   onLoad() {
     my.chooseImage({
       count: 1,
       success: (res) => {
         this.setData({
-          imagePath: res.filePaths[0],
+          imagePath: res.filePaths[0]
         });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
   },
   onChangeRatio(e) {
     const ratio = e.target.dataset.ratio;
     this.setData({
-      ratio,
+      ratio
     });
   },
   onSave(e) {
@@ -100,7 +106,7 @@ Page({
       },
       fail: (err) => {
         console.log('fail', err);
-      },
+      }
     });
   },
   onChangePhoto() {
@@ -108,14 +114,14 @@ Page({
       count: 1,
       success: (res) => {
         this.setData({
-          imagePath: res.filePaths[0],
+          imagePath: res.filePaths[0]
         });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
 ```
 
@@ -149,4 +155,3 @@ Page({
       <img style={{maxWidth: 300}} alt="modal" src="/img/image-cropper.jpg"/>
   </div>
 </div>
-

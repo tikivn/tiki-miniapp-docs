@@ -4,21 +4,21 @@ title: my.watchShake
 
 `my.watchShake` là API dùng để nhận sự kiện lắc thiết bị. Success callback chỉ được gọi một lần khi thiết bị được lắc sau khi API đã được gọi. Cần gọi lại API này nếu muốn nhận sự kiện thiết bị lắc ở lần sau.
 
+**_Khả dụng_**: Hỗ trợ từ version 1.86.3 trở lên.
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/shake/index" />
 
-**_Khả dụng_**: Hỗ trợ từ version 1.86.3 trở lên.
-
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                      |
-| ---------- | ------------ | ------------------------------------------ |
-| success    | Function     | Callback function khi thiết bị được lắc.   |
-| fail       | Function     | Callback function khi có lỗi xảy ra.       |
-| complete   | Function     | Callback function khi thực hiện hoàn tất.  |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                     |
+| ---------- | ------------ | ----------------------------------------- |
+| success    | Function     | Callback function khi thiết bị được lắc.  |
+| fail       | Function     | Callback function khi có lỗi xảy ra.      |
+| complete   | Function     | Callback function khi thực hiện hoàn tất. |
 
 ### Sample Code
 
@@ -34,23 +34,26 @@ import { QRCode } from '@site/src/components/QRCode';
 ```js
 Page({
   data: {
-    isWatchingShake: false,
+    isWatchingShake: false
   },
   onWatchShake() {
-    if(!this.data.isWatchingShake){
+    if (!this.data.isWatchingShake) {
       my.watchShake({
         success: () => {
           this.setData({ isWatchingShake: false });
-          my.alert({ title: 'Success', content: 'Device is shaked' });
+          my.alert({
+            title: 'Success',
+            content: 'Device is shaked'
+          });
         },
         fail: (e) => {
           this.setData({ isWatchingShake: false });
           my.alert({ title: 'Fail', content: JSON.stringify(e) });
-        },
+        }
       });
 
       this.setData({ isWatchingShake: true });
     }
-  },
+  }
 });
 ```

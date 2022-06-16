@@ -10,6 +10,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/compass/index" />
 
+<!-- ## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/compass/index" /> -->
+
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                       |
@@ -45,5 +51,3 @@ Page({
   }
 });
 ```
-
-

@@ -6,6 +6,18 @@ title: my.askDownloadNewClient
 
 <img src="/img/my_askDownloadNewClient_popup.png" width="300px" alt="Tini App version update popup" style={{ margin: '0 auto', display: 'flex' }}/>
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/update-client/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/update-client/index" />
+
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                                                        |
@@ -17,8 +29,8 @@ title: my.askDownloadNewClient
 ### Callback function payload
 
 - Success callback payload là 1 biến boolean thể hiện việc update thành công hay không. Nếu user cancel, không đồng ý update thì biến này sẽ là false.
-  
-- Fail callback payload. 
+
+- Fail callback payload.
 
 | Thuộc tính   | Kiểu dữ liệu | Mô tả        |
 | ------------ | ------------ | ------------ |
@@ -45,9 +57,8 @@ Page({
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
-
 ```

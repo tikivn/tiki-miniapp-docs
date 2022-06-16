@@ -10,6 +10,11 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/textarea/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/textarea/index" />
 
 ## Thuộc tính
 
@@ -30,7 +35,6 @@ import { QRCode } from '@site/src/components/QRCode';
 | onConfirm         | event        |                  | Sự kiện sẽ được gọi khi nhấn nút submit (return/Nhập) , `event.detail = { value: value }`                                    |
 | onFocus           | event        |                  | Sự kiện sẽ được gọi khi textarea được focus , `event.detail = { value: value }`                                              |
 | onBlur            | event        |                  | Sự kiện sẽ được gọi khi textarea không được focus nữa , `event.detail = { value: value }`                                    |
-
 
 ## Sample Code
 

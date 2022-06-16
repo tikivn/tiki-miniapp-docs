@@ -10,6 +10,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/picker-view/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/picker-view/index" />
+
 ## Thuộc tính
 
 | Thuộc tính      | Kiểu dữ liệu | Mô tả                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -20,6 +26,7 @@ import { QRCode } from '@site/src/components/QRCode';
 | mask-style      | string       | Inline style cho mask                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | mask-class      | string       | Class name cho mask                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | onChange        | event        | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { value: value }`, trong đó value là mảng các index đang được chọn trong `picker-column`                                                                                                                                                                                                                                                                                           |
+
 ## Sample Code
 
 ```json title=index.json

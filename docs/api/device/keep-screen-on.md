@@ -4,13 +4,19 @@ title: my.setKeepScreenOn
 
 `my.setKeepScreenOn` my.setKeepScreenOn là một API dùng để giữ màn hình luôn sáng.
 
+**_Khả dụng_**: Hỗ trợ từ version 1.84.21 trở lên.
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/brightness/index" />
 
-**_Khả dụng_**: Hỗ trợ từ version 1.84.21 trở lên.
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/brightness/index" />
 
 ## API Params
 

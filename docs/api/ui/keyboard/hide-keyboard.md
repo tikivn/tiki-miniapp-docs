@@ -10,7 +10,6 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/keyboard/index" />
 
-
 ## Sample Code
 
 ```xml title=index.txml

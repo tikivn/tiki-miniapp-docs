@@ -4,13 +4,19 @@ title: my.openSetting
 
 `my.openSetting` my.openSetting là một API đùng để mở giao diện cài đặt. Trả về kết quả cài đặt quyền của người dùng. Chỉ quyền đã yêu cầu từ người dùng mới xuất hiện trong giao diện cài đặt.
 
+**_Khả dụng_**: Hỗ trợ từ version 1.85.8 trở lên.
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/open-setting/index" />
 
-**_Khả dụng_**: Hỗ trợ từ version 1.85.8 trở lên.
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/open-setting/index" />
 
 ## API Params
 

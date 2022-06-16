@@ -10,6 +10,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/navigation-bar/loading/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/navigation-bar/loading/index" />
+
 ## Sample Code
 
 ```xml title=index.txml

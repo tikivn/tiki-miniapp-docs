@@ -4,20 +4,26 @@ title: my.onNetworkStatusChange
 
 `my.onNetworkStatusChange` là API dùng để nhận sự kiện thay đổi trạng thái mạng của thiết bị.
 
+**_Khả dụng_**: Hỗ trợ từ version 1.86.2 trở lên.
+
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/network-type/index" />
 
-**_Khả dụng_**: Hỗ trợ từ version 1.86.2 trở lên.
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/network-type/index" />
 
 ## Giá trị trong callback
 
-| Thuộc tính            | Kiểu dữ liệu | Mô tả                                                                                            |
-| --------------------- | -------------| ------------------------------------------------------------------------------------------------ |
-| networkAvailable      | boolean      | Thiết bị có kết nối mạng hay không                                                               |
-| networkType           | string       | Loại kết nối mạng, là một trong các giá trị UNKNOWN / NOTREACHABLE / WIFI / 3G / 2G / 4G / 5G.   |                                     |
+| Thuộc tính       | Kiểu dữ liệu | Mô tả                                                                                          |
+| ---------------- | ------------ | ---------------------------------------------------------------------------------------------- | --- |
+| networkAvailable | boolean      | Thiết bị có kết nối mạng hay không                                                             |
+| networkType      | string       | Loại kết nối mạng, là một trong các giá trị UNKNOWN / NOTREACHABLE / WIFI / 3G / 2G / 4G / 5G. |     |
 
 ### Sample Code
 
@@ -38,12 +44,14 @@ import { QRCode } from '@site/src/components/QRCode';
 ```js
 Page({
   data: {
-    liveNetworkType: null,
+    liveNetworkType: null
   },
-  startObservingNetworkStatus(){
-    my.onNetworkStatusChange((networkType)=>{
-      this.setData({ liveNetworkType: JSON.stringify(networkType) });
-    })
+  startObservingNetworkStatus() {
+    my.onNetworkStatusChange((networkType) => {
+      this.setData({
+        liveNetworkType: JSON.stringify(networkType)
+      });
+    });
   }
 });
 ```

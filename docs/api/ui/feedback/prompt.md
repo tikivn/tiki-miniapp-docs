@@ -10,20 +10,25 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/prompt/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/prompt/index" />
+
 ## API Params
 
-| Thuộc tính       | Kiểu dữ liệu | Mô tả                                                |
-| ---------------- | ------------ | ---------------------------------------------------- |
-| title            | string       |  Title của prompt box                                 |
-| message          | string       | Content message của prompt box                       |
-| placeholder      | string       | Placeholder của text box                             |
-| align            | string       | Kiểu align cho message:J "left", "center" hoặc "right" |
-| okButtonText     | string       | Text của button ok, mặc định là OK                   |
-| cancelButtonText | string       | Text của button cancel, mặc định là Cancel           |
-| success          | Function     | Callback function khi hiển thị prompt box thành công.|
-| fail             | Function     | Callback function khi hiển thị prompt box thất bại.  |
-| complete         | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại.  |
-
+| Thuộc tính       | Kiểu dữ liệu | Mô tả                                                                  |
+| ---------------- | ------------ | ---------------------------------------------------------------------- |
+| title            | string       | Title của prompt box                                                   |
+| message          | string       | Content message của prompt box                                         |
+| placeholder      | string       | Placeholder của text box                                               |
+| align            | string       | Kiểu align cho message:J "left", "center" hoặc "right"                 |
+| okButtonText     | string       | Text của button ok, mặc định là OK                                     |
+| cancelButtonText | string       | Text của button cancel, mặc định là Cancel                             |
+| success          | Function     | Callback function khi hiển thị prompt box thành công.                  |
+| fail             | Function     | Callback function khi hiển thị prompt box thất bại.                    |
+| complete         | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại. |
 
 ## Sample Code
 

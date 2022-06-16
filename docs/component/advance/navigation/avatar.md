@@ -4,22 +4,26 @@ title: Avatar
 
 `avatar` là component dùng để hiển thị hình ảnh của user, tên, hoặc text giới thiệu.
 
-<img alt="Avatar" src="/img/avatar-full.png"/>
-
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/navigation/avatar/index" />
 
-## Thuộc tính 
+## Demo
 
-| Thuộc tính  | Kiểu dữ liệu    | Giá trị mặc định | Mô tả                      |
-| -------- | ------ | ------------- | -------------------------------- |
-| size     | string | md            | Kích thước avatar (lg/md/xs)     |
-| shape    | string | circle        | Các giá trị: "circle","standard" |
-| src      | string | ""            | source hình ảnh                  |
-| style    | string | ""            | Disabled button                  |
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/navigation/avatar/index" />
+
+## Thuộc tính
+
+| Thuộc tính | Kiểu dữ liệu | Giá trị mặc định | Mô tả                            |
+| ---------- | ------------ | ---------------- | -------------------------------- |
+| size       | string       | md               | Kích thước avatar (lg/md/xs)     |
+| shape      | string       | circle           | Các giá trị: "circle","standard" |
+| src        | string       | ""               | source hình ảnh                  |
+| style      | string       | ""               | Disabled button                  |
 
 ## Sample Code:
 

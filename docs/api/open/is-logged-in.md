@@ -4,13 +4,25 @@ title: 'my.isLoggedIn'
 
 `my.isLoggedIn` là API để kiểm tra user đã log in hay chưa.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/is-user-logged/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/is-user-logged/index" />
+
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu   |  Mô tả                                                                |
-| ---------- | -------------- | --------------------------------------------------------------------- |
-| success    | Function       | Callback function khi kiểm tra thành công.                                     |
-| fail       | Function       | Callback function khi kiểm tra thất bại.                                       |
-| complete   | Function       | Callback function khi kiểm tra hoàn tất cho dù thành công hay thất bại. |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                   |
+| ---------- | ------------ | ----------------------------------------------------------------------- |
+| success    | Function     | Callback function khi kiểm tra thành công.                              |
+| fail       | Function     | Callback function khi kiểm tra thất bại.                                |
+| complete   | Function     | Callback function khi kiểm tra hoàn tất cho dù thành công hay thất bại. |
 
 ### Giá trị trong success callback
 
@@ -31,7 +43,7 @@ payload của success callback là giá trị boolean, kết quả của việc 
 ```js
 Page({
   data: {
-    isLogged: undefined,
+    isLogged: undefined
   },
 
   onCheckUserLoggedIn() {
@@ -41,10 +53,8 @@ Page({
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
-
 ```
-

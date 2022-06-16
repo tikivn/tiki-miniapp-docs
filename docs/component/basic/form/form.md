@@ -14,6 +14,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/form/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/form/index" />
+
 ## Thuộc tính
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                                                                                                                          |
@@ -135,4 +141,3 @@ Page({
   }
 });
 ```
-

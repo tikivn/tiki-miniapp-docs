@@ -4,21 +4,25 @@ title: my.hideToast
 
 `my.hideToast` là API để hide toast thủ công.
 
-
-
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/toast/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/toast/index" />
+
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                           |
-| ---------- | ------------ | ------------------------------- |
-| success    | Function     | Callback function ẩn toast hàm thành công. |
-| fail       | Function     | Callback function khi ẩn toast thất bại.  |
-| complete   | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại.   |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                  |
+| ---------- | ------------ | ---------------------------------------------------------------------- |
+| success    | Function     | Callback function ẩn toast hàm thành công.                             |
+| fail       | Function     | Callback function khi ẩn toast thất bại.                               |
+| complete   | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại. |
 
 ## Sample Code
 
@@ -57,4 +61,3 @@ Page({
   }
 });
 ```
-

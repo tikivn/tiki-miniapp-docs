@@ -4,12 +4,19 @@ title: Introduction
 
 InterstitialAd là 1 component để hiển thị quảng cáo dạng popup. Khi sử dụng jsapi [my.createInterstitialAd](../create-interstitial-ad.md), 1 instance InterstitialAd sẽ được tạo ra. Mặc định quảng cáo sẽ hide đi, bạn phải gọi bàm `show` để hiển thị quảng cáo.
 
-***Khả dụng***: hỗ trợ từ version 1.82.1 trở lên.
+**_Khả dụng_**: hỗ trợ từ version 1.82.1 trở lên.
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
+
 <QRCode page="pages/component/advance/ads/interstitial-ad/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/ads/interstitial-ad/index" />
 
 ## Sử dụng
 

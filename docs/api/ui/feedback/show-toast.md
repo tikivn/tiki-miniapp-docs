@@ -10,18 +10,23 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/toast/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/toast/index" />
+
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                       |
-| ---------- | ------------ | ------------------------------------------- |
-| type       | string       | success hoặc fail                           |
-| content    | string       | Content message của toast                   |
-| buttonText | string       | Text của button, mặc định là rỗng           |
-| duration   | number       | Thời gian để hide toast, mặc định là 3000ms |
-| success    | Function     | Callback function khi hiển thị toast thành công.             |
-| fail       | Function     | Callback function khi hiển thị toast thất bại.                |
-| complete   | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại.         |
-
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                  |
+| ---------- | ------------ | ---------------------------------------------------------------------- |
+| type       | string       | success hoặc fail                                                      |
+| content    | string       | Content message của toast                                              |
+| buttonText | string       | Text của button, mặc định là rỗng                                      |
+| duration   | number       | Thời gian để hide toast, mặc định là 3000ms                            |
+| success    | Function     | Callback function khi hiển thị toast thành công.                       |
+| fail       | Function     | Callback function khi hiển thị toast thất bại.                         |
+| complete   | Function     | Callback function khi hoàn tất gọi hàm bất kể thành công hay thất bại. |
 
 ## Sample Code
 
@@ -57,4 +62,3 @@ Page({
     });
 })
 ```
-

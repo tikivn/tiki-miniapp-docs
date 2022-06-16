@@ -4,7 +4,7 @@ title: my.trimVideo
 
 `my.trimVideo` là API cho phép cắt video trong 1 khoảng thời gian.
 
-***Khả dụng***: Hỗ trợ từ version 1.83.40 trở lên.
+**_Khả dụng_**: Hỗ trợ từ version 1.83.40 trở lên.
 
 ## Quét mã để trải nghiệm
 
@@ -12,30 +12,36 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/trim-video/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/trim-video/index" />
+
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                |
-| ---------- | ------------ | :------: | ------------------------------------------------------------------------------------ |
-| minDuration     | number       |    ✓     |  Thời gian ít nhất của video |
-| maxDuration | Bumber        |      ✓   | Thời gian lớn nhất của video                                                   |
-| range       | Object        |         | Nếu muốn trim video trong 1 khoảng range cho trước, nếu range được set thì video sẽ trim theo range này mà không bật UI                                               |
-| success    | Function     |          | Callback function khi cắt video thành công.                                          |
-| fail       | Function     |          | Callback function khi cắt video bất thành.                                           |
-| complete   | Function     |          | Callback function khi gọi API hoàn tất bất kể có cắt được video hay không.           |
+| Thuộc tính  | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                                                   |
+| ----------- | ------------ | :------: | ----------------------------------------------------------------------------------------------------------------------- |
+| minDuration | number       |    ✓     | Thời gian ít nhất của video                                                                                             |
+| maxDuration | Bumber       |    ✓     | Thời gian lớn nhất của video                                                                                            |
+| range       | Object       |          | Nếu muốn trim video trong 1 khoảng range cho trước, nếu range được set thì video sẽ trim theo range này mà không bật UI |
+| success     | Function     |          | Callback function khi cắt video thành công.                                                                             |
+| fail        | Function     |          | Callback function khi cắt video bất thành.                                                                              |
+| complete    | Function     |          | Callback function khi gọi API hoàn tất bất kể có cắt được video hay không.                                              |
 
 ### range object
 
-| Thuộc tính | Kiểu dữ liệu     | Mô tả                                                                                   |
-| ---------- | ---------------- | --------------------------------------------------------------------------------------- |
-| start  | number            | Thời điểm bắt đầu  |
-| end  | number | Thời điểm kết thúc |
+| Thuộc tính | Kiểu dữ liệu | Mô tả              |
+| ---------- | ------------ | ------------------ |
+| start      | number       | Thời điểm bắt đầu  |
+| end        | number       | Thời điểm kết thúc |
 
 ### Callback function payload
 
-| Thuộc tính | Kiểu dữ liệu     | Mô tả                                                                                   |
-| ---------- | ---------------- | --------------------------------------------------------------------------------------- |
-| filePath  | string            | Đường dẫn của video đã được cắt. Sử dụng đường dẫn này để hiển thị video hoặc upload  |
-| duration  | number | Thời gian của video được cắt |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                |
+| ---------- | ------------ | ------------------------------------------------------------------------------------ |
+| filePath   | string       | Đường dẫn của video đã được cắt. Sử dụng đường dẫn này để hiển thị video hoặc upload |
+| duration   | number       | Thời gian của video được cắt                                                         |
 
 ## Sample Code
 
@@ -54,7 +60,7 @@ import { QRCode } from '@site/src/components/QRCode';
 ```js
 Page({
   data: {
-    videoUrl: undefined,
+    videoUrl: undefined
   },
   onChooseVideo() {
     my.chooseVideo({
@@ -64,8 +70,8 @@ Page({
       fail: (e) => {
         my.alert({ content: JSON.stringify(e) });
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
 ```

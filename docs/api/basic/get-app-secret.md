@@ -8,17 +8,23 @@ title: my.getAppSecret
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/api/app-secret/index" />
+<QRCode page="pages/api/get-app-secret/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/get-app-secret/index" />
 
 **_Khả dụng_**: Hỗ trợ từ version 1.87.5 trở lên.
 
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                       |
-| ---------- | ------------ | ------------------------------------------- |
-| success    | Function     | Callback function khi thực hiện thành công. |
-| fail       | Function     | Callback function khi thực hiện thất bại.   |
-| complete   | Function     | Callback function khi thực hiện hoàn tất bất kể thành công hay thất bại.   |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                    |
+| ---------- | ------------ | ------------------------------------------------------------------------ |
+| success    | Function     | Callback function khi thực hiện thành công.                              |
+| fail       | Function     | Callback function khi thực hiện thất bại.                                |
+| complete   | Function     | Callback function khi thực hiện hoàn tất bất kể thành công hay thất bại. |
 
 ## Sample Code
 
@@ -37,12 +43,15 @@ Page({
   onGetAppSecret() {
     my.getAppSecret({
       success: (res) => {
-        my.alert({ title: 'Success', content: JSON.stringify(res) });
+        my.alert({
+          title: 'Success',
+          content: JSON.stringify(res)
+        });
       },
       fail: (e) => {
         my.alert({ title: 'Fail', content: JSON.stringify(e) });
-      },
+      }
     });
-  },
+  }
 });
 ```

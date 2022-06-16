@@ -4,6 +4,18 @@ title: picker
 
 `picker` tương tự với `picker-view`, cho phép người dùng chọn một phần tử trong một mảng dưới dạng scroll, tuy nhiên nó sẽ được hiển thị bên trong popup ở dưới page.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/picker/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/picker/index" />
+
 ## Thuộc tính
 
 | Thuộc tính           | Kiểu dữ liệu             | Mô tả                                                                                                                   |
@@ -16,12 +28,6 @@ title: picker
 | value                | string                   | Chỉ định index nào được chọn, bắt đầu từ 0                                                                              |
 | onChange             | event                    | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { value: value }`, trong đó value là index của item được chọn |
 | disabled             | boolean                  | Nếu giá trị là `true`, khi bạn bấm vào `picker` thì sẽ không hiển thị                                                   |
-
-## Quét mã để trải nghiệm
-
-import { QRCode } from '@site/src/components/QRCode';
-
-<QRCode page="pages/component/basic/picker/index" />
 
 ## Sample Code
 
@@ -89,4 +95,3 @@ Page({
   width: 100%;
 }
 ```
-

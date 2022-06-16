@@ -19,14 +19,20 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/storage/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/storage/index" />
+
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                       |
-| ---------- | ------------ | -------- | ------------------------------------------- |
-| key        | String       | ✓      | Key của dữ liệu                             |
-| success    | Function     |        | Callback khi dữ liệu được xoá thành công    |
-| fail       | Function     |        | Callback khi xoá dữ liệu thất bại           |
-| complete   | Function     |        | Callback sau khi thực hiện việc xoá dữ liệu bất kể thành công hay thất bại |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                      |
+| ---------- | ------------ | -------- | -------------------------------------------------------------------------- |
+| key        | String       | ✓        | Key của dữ liệu                                                            |
+| success    | Function     |          | Callback khi dữ liệu được xoá thành công                                   |
+| fail       | Function     |          | Callback khi xoá dữ liệu thất bại                                          |
+| complete   | Function     |          | Callback sau khi thực hiện việc xoá dữ liệu bất kể thành công hay thất bại |
 
 ## Sample Code
 
@@ -45,5 +51,3 @@ Page({
   }
 });
 ```
-
-

@@ -10,6 +10,11 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/checkbox/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/checkbox/index" />
 
 ## Thuộc tính
 
@@ -23,7 +28,7 @@ import { QRCode } from '@site/src/components/QRCode';
 | icon       | string       | Loại icon hiển thị khi checkbox được chọn. Chỉ hỗ trợ 2 loại icon là `success` và `minus`, [Xem thêm](/docs/component/basic/basic/icon). Giá trị mặc định là `success` |
 | onChange   | event        | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { value: value }`. Giá trị của `value` là `true`/`false` tùy vào `checkbox` được chọn hay không              |
 
-## Sample Code 
+## Sample Code
 
 ```xml title=index.txml
 <view>
@@ -68,5 +73,3 @@ Page({
   align-items: center;
 }
 ```
-
-
