@@ -4,6 +4,18 @@ title: my.createVideoContext
 
 `my.createVideoContext` là API dùng để tạo ra VideoContext - đối tuợng quản lý việc phát video. Cụ thể hơn, nó cung cấp các hàm giúp điều khiển [video](/docs/component/basic/media/video) component.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/video/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/video/index" />
+
 ## Return value
 
 Trả về Video Context Object với hỗ trợ thuộc tính và methods theo như bên dưới.
@@ -38,7 +50,5 @@ Page({
     const video = my.createAudioContext('video');
     video.pause();
   }
-})
+});
 ```
-
-

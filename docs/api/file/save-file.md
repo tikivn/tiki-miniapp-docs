@@ -4,20 +4,32 @@ title: my.saveFile
 
 `my.saveFile` là API dùng để lưu lại file về thiết bị từ 1 đường dẫn tạm thời (local temporary file)
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/file/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/file/index" />
+
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                     |
-| ---------- | -------- | :-------: | ------------------------------------------------------------------------------ |
-| filePath      | String   | ✓       |  Đường dẫn của local temporary file                   |
-| success    | Function |        | Callback function khi save file được thực hiện thành công                     |
-| fail       | Function |        | Callback function khi save file thất bại                                      |
-| complete   | Function |        | Callback function khi việc save file kết thúc cho dù thành công hay thất bại. |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                         |
+| ---------- | ------------ | :------: | ----------------------------------------------------------------------------- |
+| filePath   | String       |    ✓     | Đường dẫn của local temporary file                                            |
+| success    | Function     |          | Callback function khi save file được thực hiện thành công                     |
+| fail       | Function     |          | Callback function khi save file thất bại                                      |
+| complete   | Function     |          | Callback function khi việc save file kết thúc cho dù thành công hay thất bại. |
 
 ### Callback success function payload
 
-| Thuộc tính | Kiểu dữ liệu   | Mô tả                 |
-| ---------- | ------ | -------------------------- |
-| filePath  | String  | Đường dẫn của tới file đã saved |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                           |
+| ---------- | ------------ | ------------------------------- |
+| filePath   | String       | Đường dẫn của tới file đã saved |
 
 ## Sample Code
 
@@ -42,7 +54,7 @@ title: my.saveFile
 Page({
   data: {
     tempFilePath: undefined,
-    savedFilePath: undefined,
+    savedFilePath: undefined
   },
   onChooseImage() {
     my.chooseImage({
@@ -50,12 +62,12 @@ Page({
       success: (res) => {
         console.log(res);
         this.setData({
-          tempFilePath: res.filePaths[0],
+          tempFilePath: res.filePaths[0]
         });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
   },
   onSaveFile() {
@@ -63,16 +75,18 @@ Page({
       filePath: this.data.tempFilePath,
       success: (res) => {
         console.log(res);
-        my.alert({ title: "Saved", content: `File path ${res.filePath}` });
+        my.alert({
+          title: 'Saved',
+          content: `File path ${res.filePath}`
+        });
         this.setData({
-          savedFilePath: res.filePath,
+          savedFilePath: res.filePath
         });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
-
 ```

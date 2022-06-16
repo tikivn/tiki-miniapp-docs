@@ -11,6 +11,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/form/chip/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/form/chip/index" />
+
 ## Cài đặt `tini-ui`:
 
 ```bash
@@ -19,22 +25,22 @@ $> yarn add @tiki.vn/tini-ui
 
 ## Thuộc tính
 
-| Thuộc tính       | Kiểu dữ liệu     | Giá trị mặc định | Mô tả                                                |
-| -------------- | ------- | ------------- | ----------------------------------------------------------- |
-| className      | string  | ''            | Custom class cho chip                                       |
-| style          | string  | ''            | Style cho chip                                              |
-| content        | string  | ''            | Text content của chip                                       |
-| active         | boolean | false         | Nếu set `true` chip sẽ được active                          |
-| suffixIcon     | string  | ''            | suffixIcon của chip                                         |
-| suffixImage    | string  | ''            | suffixImage của chip                                        |
-| prefixIcon     | string  | ''            | prefixIcon của chip                                         |
-| prefixIcon     | string  | ''            | suffixIcon của chip                                         |
-| iconLeftColor  | string  | '#1A94FF'     | suffixIcon của chip                                         |
-| iconRightColor | string  | '#1A94FF'     | suffixIcon của chip                                         |
-| disabled       | boolean | false         | Nếu set `true` chip sẽ bị disabled                          |
-| onClick        | event   | () => void    | Trigger function này khi click vào chip                     |
-| onLeftClick    | event   | () => void    | Trigger function này khi click image/icon bên trái của chip |
-| onRightClick   | event   | () => void    | Trigger function này khi click image/icon bên phải của chip |
+| Thuộc tính     | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                       |
+| -------------- | ------------ | ---------------- | ----------------------------------------------------------- |
+| className      | string       | ''               | Custom class cho chip                                       |
+| style          | string       | ''               | Style cho chip                                              |
+| content        | string       | ''               | Text content của chip                                       |
+| active         | boolean      | false            | Nếu set `true` chip sẽ được active                          |
+| suffixIcon     | string       | ''               | suffixIcon của chip                                         |
+| suffixImage    | string       | ''               | suffixImage của chip                                        |
+| prefixIcon     | string       | ''               | prefixIcon của chip                                         |
+| prefixIcon     | string       | ''               | suffixIcon của chip                                         |
+| iconLeftColor  | string       | '#1A94FF'        | suffixIcon của chip                                         |
+| iconRightColor | string       | '#1A94FF'        | suffixIcon của chip                                         |
+| disabled       | boolean      | false            | Nếu set `true` chip sẽ bị disabled                          |
+| onClick        | event        | () => void       | Trigger function này khi click vào chip                     |
+| onLeftClick    | event        | () => void       | Trigger function này khi click image/icon bên trái của chip |
+| onRightClick   | event        | () => void       | Trigger function này khi click image/icon bên phải của chip |
 
 ## Sample Code
 
@@ -98,5 +104,3 @@ Page({
   }
 });
 ```
-
-

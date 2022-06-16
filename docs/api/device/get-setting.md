@@ -4,13 +4,19 @@ title: my.getSetting
 
 `my.getSetting` là một API lấy thông tin cài đặt. Trả về kết quả cài đặt quyền của người dùng. Chỉ quyền đã yêu cầu từ người dùng mới xuất hiện trong kết quả trả về.
 
-## Quét mã để trải nghiệm
+**_Khả dụng_**: Hỗ trợ từ version v1.86.3 trở lên.
+
+<!-- ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/get-setting/index" />
 
-**_Khả dụng_**: Hỗ trợ từ version v1.86.3 trở lên.
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/get-setting/index" /> -->
 
 ## API Params
 

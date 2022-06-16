@@ -12,11 +12,21 @@ title: game-view
 
 :::
 
-******: 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/game-view/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/game-view/index" />
 
 ## Sample Code
 
-``` js
+```js
 <script>
   my.navigateTo({ url: 'pages/user-info/index' });
   my.postMessage('ping');
@@ -61,7 +71,7 @@ Nhiều khả năng `my.postMessage` sẽ không còn sử dụng được với
 
 ## Tạo cầu để kết nối giữa game-view và các page trong Tini App
 
-Do `game-view` chỉ được phép gọi một số API nhất định, bạn có thể thông qua `my.postMessage` để gọi những API khác mà không thể được gọi trực tiếp trong `game-view`. Cách làm là bạn dùng `my.postMessage` sẽ gửi message đến một page khác của Tini App.  Page này sẽ gọi API và gửi message phản hồi cho `game-view`. `onMessage`sẽ được dùng để nhận message trả về.
+Do `game-view` chỉ được phép gọi một số API nhất định, bạn có thể thông qua `my.postMessage` để gọi những API khác mà không thể được gọi trực tiếp trong `game-view`. Cách làm là bạn dùng `my.postMessage` sẽ gửi message đến một page khác của Tini App. Page này sẽ gọi API và gửi message phản hồi cho `game-view`. `onMessage`sẽ được dùng để nhận message trả về.
 
 Ví dụ dưới đây mô tả một cách cài đặt cầu đơn giản để kết nối giữa `game-view` và các page trong Tini App.
 
@@ -80,9 +90,9 @@ function sendMessageToTiniApp(params, callback) {
 }
 ```
 
-Ở Tini App chúng ta sẽ viết hàm xử lý message khi nhận được message này.  Ở đây, chúng ta nhận api muốn gọi từ `game-view`, rồi gọi API này ở tầng Tini App. Khi trả về result cho game-view, chúng ta sẽ trả về kèm theo requestId đã nhận được.
+Ở Tini App chúng ta sẽ viết hàm xử lý message khi nhận được message này. Ở đây, chúng ta nhận api muốn gọi từ `game-view`, rồi gọi API này ở tầng Tini App. Khi trả về result cho game-view, chúng ta sẽ trả về kèm theo requestId đã nhận được.
 
-```js  title=src/pages/webview-postmessage/index.js
+```js title=src/pages/webview-postmessage/index.js
 Page({
   onMessage(e) {
     console.log('receive message from webview', e.detail);
@@ -122,10 +132,10 @@ Page({
   }
 });
 ```
+
 Khi `game-view` nhận được message, thì dựa vào requestId, chúng ta có thể lấy ra callback cần xử lý là gì và gọi callback đó thôi.
 
 ```js titel=title=src/public/webview/index.html
-
 window.addEventListener('message', (e) => {
   const { requestId, result } = e.data;
   if (callbacks[requestId] === undefined) {

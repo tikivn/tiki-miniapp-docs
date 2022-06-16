@@ -10,7 +10,13 @@ Bottom Sheet là component được sử dụng để hiển thị modal show t�
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/component/advance/data-visualization/list/index" />
+<QRCode page="pages/component/advance/feedback/bottom-sheet/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/feedback/bottom-sheet/index" />
 
 ## Cài đặt
 
@@ -33,20 +39,20 @@ các thuộc tính title, và buttonTitle
 
 ### Thuộc tính
 
-| Thuộc tính       | Kiểu dữ liệu                        |  Giá trị mặc định  | Mô tả                                                 |
-| -------------- | ------------------------------------- | -------------- | ----------------------------------------------------------- |
-| title          | string                                |  'Bottom sheet' | header title                                                |
-| buttonTitle    | string                                |  'OK'           | title của footer button                                     |
-| buttonShape    | 'pill', 'rounded', 'circle', 'square' |  'rounded'      | shape của footer button. Hỗ trợ từ version 0.2.1-rc trở lên |
-| buttonCls      | string                                |  ''             | class của footer button. Hỗ trợ từ version 0.2.1-rc trở lên |
-| mark           | boolean                               |  true           | Giống thuộc tính mark của popup                             |
-| animation      | boolean                               |  true           | Giống thuộc tính animation của popup                        |
-| show           | boolean                               |  true           | Giống thuộc tính show của popup                             |
-| disableScroll  | boolean                               |  false          | Giống thuộc tính disableScroll của popup                    |
-| zIndex         | number                                |  2              | Giống thuộc tính zIndex của popup                           |
-| disableFromTop | number                                |  50             | Khoảng cách từ navigation title tới bottom sheet            |
-| onClose        | event                                 |  no             | Xử lý sự kiện close bottom sheet                            |
-| onClick        | event                                 |  no             | Xử lý sự kiện click vào button ở footer                     |
+| Thuộc tính     | Kiểu dữ liệu                          | Giá trị mặc định | Mô tả                                                       |
+| -------------- | ------------------------------------- | ---------------- | ----------------------------------------------------------- |
+| title          | string                                | 'Bottom sheet'   | header title                                                |
+| buttonTitle    | string                                | 'OK'             | title của footer button                                     |
+| buttonShape    | 'pill', 'rounded', 'circle', 'square' | 'rounded'        | shape của footer button. Hỗ trợ từ version 0.2.1-rc trở lên |
+| buttonCls      | string                                | ''               | class của footer button. Hỗ trợ từ version 0.2.1-rc trở lên |
+| mark           | boolean                               | true             | Giống thuộc tính mark của popup                             |
+| animation      | boolean                               | true             | Giống thuộc tính animation của popup                        |
+| show           | boolean                               | true             | Giống thuộc tính show của popup                             |
+| disableScroll  | boolean                               | false            | Giống thuộc tính disableScroll của popup                    |
+| zIndex         | number                                | 2                | Giống thuộc tính zIndex của popup                           |
+| disableFromTop | number                                | 50               | Khoảng cách từ navigation title tới bottom sheet            |
+| onClose        | event                                 | no               | Xử lý sự kiện close bottom sheet                            |
+| onClick        | event                                 | no               | Xử lý sự kiện click vào button ở footer                     |
 
 ## Sample Code
 
@@ -103,4 +109,3 @@ Sử dụng trong txml
 Đoạn code trên sẽ tạo ra giao diện như sau
 
 ![image](https://salt.tikicdn.com/ts/miniapp/17/39/96/0a7ed3934129953b1038012a51e6158f.png)
-

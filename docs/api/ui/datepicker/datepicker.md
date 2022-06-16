@@ -10,6 +10,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/datepicker/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/datepicker/index" />
+
 ## API Params
 
 | Thuộc tính             | Kiểu dữ liệu |      Mặc định      | Mô tả                                                                                                                                                                                   |

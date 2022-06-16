@@ -4,6 +4,18 @@ title: my.offUserCaptureScreen
 
 `my.offUserCaptureScreen` là API giúp dừng việc lắng nghe các sự kiện chụp màn hình.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/user-screenshot-event/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/user-screenshot-event/index" />
+
 ## API Params
 
 - Khi gọi API kèm theo callback thì chỉ event callback đó được xoá:
@@ -17,7 +29,6 @@ my.offUserCaptureScreen(this.callback);
 ```js
 my.offUserCaptureScreen();
 ```
-
 
 ## Sample Code
 
@@ -57,4 +68,3 @@ Page({
   }
 });
 ```
-

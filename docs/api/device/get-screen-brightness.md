@@ -12,6 +12,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/brightness/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/brightness/index" />
+
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                    |

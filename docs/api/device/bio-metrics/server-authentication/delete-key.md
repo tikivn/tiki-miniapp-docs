@@ -4,22 +4,27 @@ title: my.bioMetrics.deleteKey
 
 `my.bioMetrics.deleteKey` là API để xoá cặp key đề cập ở JSAPI [my.bioMetrics.createKey](./create-key) nếu có.
 
-
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/component/api/bio-metrics/server/index" />
+<QRCode page="pages/api/bio-metrics/server/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/bio-metrics/server/index" />
 
 **_Khả dụng_**: Hỗ trợ từ version 1.96.7 trở lên.
 
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                 |
-| ---------- | ------------ | ------------------------------------------------------------------------------------- |
-| success    | Function     | Callback function khi việc xoá key thành công                                        |
-| fail       | Function     | Callback function khi việc xoá key thất bại                                          |
-| complete   | Function     | Callback function bất kể thành công hay thất bại                                      |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                            |
+| ---------- | ------------ | ------------------------------------------------ |
+| success    | Function     | Callback function khi việc xoá key thành công    |
+| fail       | Function     | Callback function khi việc xoá key thất bại      |
+| complete   | Function     | Callback function bất kể thành công hay thất bại |
 
 ## Giá trị trong success callback
 
@@ -54,8 +59,8 @@ Page({
       },
       fail: (res) => {
         my.alert({ title: 'Fail', content: JSON.stringify(res) });
-      },
+      }
     });
-  },
+  }
 });
 ```

@@ -4,13 +4,19 @@ title: player
 
 `player` là component hỗ trợ xem video trên youtube. Không giống như [video](/docs/component/basic/media/video) component hỗ trợ cho cả native và web video, player component chỉ hỗ trợ dạng web video.
 
-***Khả dụng***: chỉ được hỗ trợ từ phiên bản 1.88.4 trở lên.
+**_Khả dụng_**: chỉ được hỗ trợ từ phiên bản 1.88.4 trở lên.
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/player/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/player/index" />
 
 ## Thuộc tính
 
@@ -62,8 +68,7 @@ Một số component được sử dụng trong source [API Demo](https://github
 </view>
 ```
 
-
-```javascript title=index.js 
+```javascript title=index.js
 Page({
   onPlayerReady() {
     console.log('onPlayerReady');

@@ -12,15 +12,13 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/vibration/index" />
 
-
-
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                 |
-| ---------- | ------------ | ------------------------------------------------------------------------------------- |
-| success    | Function     | Callback function khi việc rung thiết bị thành công.                                           |
-| fail       | Function     | Callback function khi việc rung thiết bị thất bại.                                             |
-| complete   | Function     | Callback function việc gọi API hoàn tất bất kể thành công hay thất bại.                        |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                   |
+| ---------- | ------------ | ----------------------------------------------------------------------- |
+| success    | Function     | Callback function khi việc rung thiết bị thành công.                    |
+| fail       | Function     | Callback function khi việc rung thiết bị thất bại.                      |
+| complete   | Function     | Callback function việc gọi API hoàn tất bất kể thành công hay thất bại. |
 
 ## Sample Code
 
@@ -40,8 +38,8 @@ Page({
     my.vibrateShort({
       fail: (e) => {
         my.alert({ title: 'Fail', content: JSON.stringify(e) });
-      },
+      }
     });
-  },
+  }
 });
 ```

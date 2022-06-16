@@ -16,6 +16,18 @@ Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của �
 
 :::
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/download-file/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/download-file/index" />
+
 ## API Params
 
 Để cấu hình việc gọi network, bạn cần truyền object với các thuộc tính sau:
@@ -54,11 +66,11 @@ Example bên dưới nhập vào 1 url để download file
 Page({
   data: {
     url: undefined,
-    image: undefined,
+    image: undefined
   },
   urlChange(e) {
     this.setData({
-      url: e.detail.value,
+      url: e.detail.value
     });
   },
   onDownloadFile() {
@@ -70,9 +82,8 @@ Page({
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
 ```
-

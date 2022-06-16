@@ -14,6 +14,18 @@ Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của �
 
 :::
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/webview/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/webview/index" />
+
 ## Các API có thể được gọi trong web-view
 
 | API                                                     | Mô tả                                                                                                                                   |

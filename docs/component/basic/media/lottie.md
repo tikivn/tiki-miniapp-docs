@@ -6,7 +6,19 @@ title: lottie
 
 Để hiểu thêm về lottie, vui lòng tham khảo https://airbnb.io/lottie.
 
-***Khả dụng***: chỉ hỗ trợ từ phiên bản 17.5.2 trở lên.
+**_Khả dụng_**: chỉ hỗ trợ từ phiên bản 17.5.2 trở lên.
+
+<!-- ## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/lottie/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/lottie/index" /> -->
 
 ## Thuộc tính
 

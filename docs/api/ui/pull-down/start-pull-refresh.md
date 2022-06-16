@@ -2,7 +2,6 @@
 title: my.startPullDownRefresh
 ---
 
-
 `my.startPullDownRefresh` là api để active tính năng pull down to refresh, khi được gọi sẽ có animation loading tương đương với việc manual pull down list. Hàm `onPullDownRefresh` của `page` sẽ được trigger. Sau khi đã lấy được dữ liệu, có thể gọi `my.stopPullDownRefresh` để stop loading.
 
 Tuy nhiên hàm `my.startPullDownRefresh` chỉ hoạt động khi thoả mãn 2 điều kiện:
@@ -28,12 +27,17 @@ Tuy nhiên hàm `my.startPullDownRefresh` chỉ hoạt động khi thoả mãn 2
 
 Vì vây muốn disable tính năng pull to refresh chỉ cần set `allowsBounceVertical` thành `NO` hoặc `pullRefresh` thành `false`
 
-
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/pull-refresh/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/pull-refresh/index" />
 
 ## API Params
 
@@ -79,5 +83,3 @@ Page({
   }
 })
 ```
-
-

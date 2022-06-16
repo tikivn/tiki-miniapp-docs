@@ -4,6 +4,18 @@ title: my.compressImage
 
 `my.compressImage` là API dùng để nén nhiều ảnh (image) cùng một lúc, khiến chúng có dung lượng nhỏ hơn nhưng vẫn giữ nguyên kích thước ban đầu.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/compress-image/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/compress-image/index" />
+
 ## API Params
 
 | Thuộc tính    | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                          |
@@ -49,7 +61,7 @@ title: my.compressImage
 Page({
   data: {
     tempFilePath: undefined,
-    compressedFilePath: undefined,
+    compressedFilePath: undefined
   },
   onChooseImage() {
     my.chooseImage({
@@ -57,12 +69,12 @@ Page({
       success: (res) => {
         console.log(res);
         this.setData({
-          tempFilePath: res.filePaths[0],
+          tempFilePath: res.filePaths[0]
         });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
   },
   onCompressImage() {
@@ -72,17 +84,17 @@ Page({
       success: (res) => {
         console.log(res);
         my.alert({
-          title: "Compressed",
-          content: `File path ${res.filePaths}`,
+          title: 'Compressed',
+          content: `File path ${res.filePaths}`
         });
         this.setData({
-          compressedFilePath: res.filePaths[0],
+          compressedFilePath: res.filePaths[0]
         });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
 ```

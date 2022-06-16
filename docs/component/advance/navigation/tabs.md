@@ -10,49 +10,55 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/navigation/tabs/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/navigation/tabs/index" />
+
 ## Thuộc tính
 
-| Thuộc tính                | Kiểu dữ liệu    | Giá trị mặc định | Bắt buộc | Mô tả                                                                |
-| ------------------------ | ------- | ------------- | :------: | ------------------------------------------------------------------------- |
-| className                | string  |               |          | Custom class cho tabs                                                     |
-| activeCls                | string  |               |          | Class cho tab đang được active                                            |
-| tabBarCls                | string  |               |          | Custom class cho thanh tab bar                                            |
-| tabBarUnderlineColor     | string  | #1A94FF       |          | Màu underline của tab khi được active                                     |
-| tabBarActiveTextColor    | string  | #1A94FF       |          | Màu của text khi tab được active                                          |
-| tabBarInactiveTextColor  | string  | #808089       |          | Màu của text khi tab không active                                         |
-| tabBarSubTextColor       | string  |               |          | Màu của sub text khi không active                                         |
-| tabBarActiveSubTextColor | string  | #1A94FF       |          | Màu của sub text khi active                                               |
-| tabBarBackgroundColor    | string  | #FFFFFF       |          | Màu nền của tab bar                                                       |
-| tabBarActiveIconColor    | string  | #1A94FF       |          | Màu của icon khi được active                                              |
-| tabBarInactiveIconColor  | string  | #808089       |          | Màu của icon khi không active                                             |
-| iconSize                 | number  | 24            |          | Kích thước của icon, dùng khi tab có icon                                 |
-| swipeable                | boolean | true          |          | Cho phép tabs có thể swipe được                                           |
-| tabs                     | array   |               | ✓      | Mảng các đối tượng `tab`, bạn có thể xem cấu hình của tab ở bên dưới      |
-| activeTab                | number  | 0             | ✓      | Chỉ định tab được active theo index                                       |
-| animation                | boolean | true          |          | Có animation khi đổi tab                                                  |
-| duration                 | number  | 500           |          | Khoảng thời gian để đổi tab content, chỉ có hiệu lực khi `swipeable=true` |
-| hasSubTitle              | boolean | false         |          | Hiển thị sub title                                                        |
-| tabsName                 | string  |               | ✓     | Được dùng như là id của tabs                                              |
-| tabBarUnderlineWidth     | string  | 100%          |          | Width của underline                                                       |
-| tabBarUnderlineHeight    | string  | 1px           |          | Width của underline                                                       |
-| tabContentHeight         | string  |               |          | Chiều cao của tab content, có hiệu lực khi `swipeable=true`               |
-| stickyBar                | boolean | false         |          | Chỉ định position của tab bar là sticky                                   |
-| onTabClick               | event   |               |          | Sự kiện được gọi khi bấm vào tab, `event.detail = { index, tabsName }`    |
-| onChange                 | event   |               |          | Sự kiện được gọi khi đổi tab, `event.detail = { index, tabsName }`        |
+| Thuộc tính               | Kiểu dữ liệu | Giá trị mặc định | Bắt buộc | Mô tả                                                                     |
+| ------------------------ | ------------ | ---------------- | :------: | ------------------------------------------------------------------------- |
+| className                | string       |                  |          | Custom class cho tabs                                                     |
+| activeCls                | string       |                  |          | Class cho tab đang được active                                            |
+| tabBarCls                | string       |                  |          | Custom class cho thanh tab bar                                            |
+| tabBarUnderlineColor     | string       | #1A94FF          |          | Màu underline của tab khi được active                                     |
+| tabBarActiveTextColor    | string       | #1A94FF          |          | Màu của text khi tab được active                                          |
+| tabBarInactiveTextColor  | string       | #808089          |          | Màu của text khi tab không active                                         |
+| tabBarSubTextColor       | string       |                  |          | Màu của sub text khi không active                                         |
+| tabBarActiveSubTextColor | string       | #1A94FF          |          | Màu của sub text khi active                                               |
+| tabBarBackgroundColor    | string       | #FFFFFF          |          | Màu nền của tab bar                                                       |
+| tabBarActiveIconColor    | string       | #1A94FF          |          | Màu của icon khi được active                                              |
+| tabBarInactiveIconColor  | string       | #808089          |          | Màu của icon khi không active                                             |
+| iconSize                 | number       | 24               |          | Kích thước của icon, dùng khi tab có icon                                 |
+| swipeable                | boolean      | true             |          | Cho phép tabs có thể swipe được                                           |
+| tabs                     | array        |                  |    ✓     | Mảng các đối tượng `tab`, bạn có thể xem cấu hình của tab ở bên dưới      |
+| activeTab                | number       | 0                |    ✓     | Chỉ định tab được active theo index                                       |
+| animation                | boolean      | true             |          | Có animation khi đổi tab                                                  |
+| duration                 | number       | 500              |          | Khoảng thời gian để đổi tab content, chỉ có hiệu lực khi `swipeable=true` |
+| hasSubTitle              | boolean      | false            |          | Hiển thị sub title                                                        |
+| tabsName                 | string       |                  |    ✓     | Được dùng như là id của tabs                                              |
+| tabBarUnderlineWidth     | string       | 100%             |          | Width của underline                                                       |
+| tabBarUnderlineHeight    | string       | 1px              |          | Width của underline                                                       |
+| tabContentHeight         | string       |                  |          | Chiều cao của tab content, có hiệu lực khi `swipeable=true`               |
+| stickyBar                | boolean      | false            |          | Chỉ định position của tab bar là sticky                                   |
+| onTabClick               | event        |                  |          | Sự kiện được gọi khi bấm vào tab, `event.detail = { index, tabsName }`    |
+| onChange                 | event        |                  |          | Sự kiện được gọi khi đổi tab, `event.detail = { index, tabsName }`        |
 
 ### Cấu hình của tab
 
-| Thuộc tính    | Kiểu dữ liệu    | Giá trị mặc định |  Mô tả                                                                                                                                                                                                                                                                                                        |
-| ----------- | ------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| title       | string  |               | Text của tab                                                                                                                                                                                                                                                                                                       |
-| badgeText   | string  |               | Nội dung của badge, chỉ có hiệu lực khi `showBadge=true`                                                                                                                                                                                                                                                           |
-| showBadge   | boolean | false         | Hiển thị badge                                                                                                                                                                                                                                                                                                     |
-| subTitle    | string  |               | Sub text của tab                                                                                                                                                                                                                                                                                                   |
-| icon        | string  |               | Icon name, bạn có thể xem các `icon` được hỗ trợ [tại đây](/docs/component/basic/basic/icon)                                                                                                                                                                                                                       |
-| iconActive  | string  |               | Icon name khi tab được active, nếu không khai báo thì sẽ sử dụng biến `icon`                                                                                                                                                                                                                                       |
-| image       | string  |               | Link hình của icon, hiện tại chỉ hỗ trợ hình với remote url hoặc hình đi từ root, ví dụ: _/images/image.png_                                                                                                                                                                                                       |
-| imageActive | string  |               | Link hình của icon khi tab được active, nếu không khai báo sẽ sử dụng biên `image`, hiện tại chỉ hỗ trợ hình với remote url hoặc hình đi từ root, ví dụ: _/images/image.png_                                                                                                                                       |
-| badge       | object  |               | Cấu hình của badge, là một object có dạng `badge={ arrow: boolean, arrow: boolean }`. Trong đó: <br /> - arrow: hiển thị arrow left bên dưới tab<br/> - stroke: hiển thị stroke cho badge <br/>Nếu bạn chỉ muốn hiển thị badge dạng dot, bạn chỉ cần khai báo `showBadge=true` và không cần khai báo thêm biến này |
+| Thuộc tính  | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                                                                                                                                                                                                                              |
+| ----------- | ------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| title       | string       |                  | Text của tab                                                                                                                                                                                                                                                                                                       |
+| badgeText   | string       |                  | Nội dung của badge, chỉ có hiệu lực khi `showBadge=true`                                                                                                                                                                                                                                                           |
+| showBadge   | boolean      | false            | Hiển thị badge                                                                                                                                                                                                                                                                                                     |
+| subTitle    | string       |                  | Sub text của tab                                                                                                                                                                                                                                                                                                   |
+| icon        | string       |                  | Icon name, bạn có thể xem các `icon` được hỗ trợ [tại đây](/docs/component/basic/basic/icon)                                                                                                                                                                                                                       |
+| iconActive  | string       |                  | Icon name khi tab được active, nếu không khai báo thì sẽ sử dụng biến `icon`                                                                                                                                                                                                                                       |
+| image       | string       |                  | Link hình của icon, hiện tại chỉ hỗ trợ hình với remote url hoặc hình đi từ root, ví dụ: _/images/image.png_                                                                                                                                                                                                       |
+| imageActive | string       |                  | Link hình của icon khi tab được active, nếu không khai báo sẽ sử dụng biên `image`, hiện tại chỉ hỗ trợ hình với remote url hoặc hình đi từ root, ví dụ: _/images/image.png_                                                                                                                                       |
+| badge       | object       |                  | Cấu hình của badge, là một object có dạng `badge={ arrow: boolean, arrow: boolean }`. Trong đó: <br /> - arrow: hiển thị arrow left bên dưới tab<br/> - stroke: hiển thị stroke cho badge <br/>Nếu bạn chỉ muốn hiển thị badge dạng dot, bạn chỉ cần khai báo `showBadge=true` và không cần khai báo thêm biến này |
 
 ### Cấu hình tab-content
 
@@ -61,12 +67,11 @@ Mỗi content bên trong tab cần được bao bởi `tab-content`
 - Nếu bạn có khai báo `tabId` và `activeTab` cho `tab-content`, thì `tab-content` sẽ điều chỉnh height=auto khi `tabId` bằng với `activeTab`, ngược lại, height của content sẽ bằng 0
 - Nếu bạn muốn tự mình control height của content, bạn có thể khai báo thêm thuộc tính `style` cho tab-content
 
-| Property  | Type   | Default Value |  Description                                                                                                                                                                                                           |
-| --------- | ------ | ------------- |  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| tabId     | number |               |  `tabId` với giá trị chính là index của tab đó, bạn không cần khai báo `tabId` nếu bạn đã khai báo thêm `style` cho tab-content, khi đó bạn cần tự control height của tab-content đó                                   |
-| activeTab | number |               |  `activeTab` của `tab-content` với giá trị bằng với `activeTab` trong `tabs`, bạn không cần khai báo `activeTab` nếu bạn đã khai báo thêm `style` cho tab-content, khi đó bạn cần tự control height của tab-content đó |
-| style     | number |               |  Inline style cho tab-content                                                                                                                                                                                          |
-
+| Property  | Type   | Default Value | Description                                                                                                                                                                                                           |
+| --------- | ------ | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| tabId     | number |               | `tabId` với giá trị chính là index của tab đó, bạn không cần khai báo `tabId` nếu bạn đã khai báo thêm `style` cho tab-content, khi đó bạn cần tự control height của tab-content đó                                   |
+| activeTab | number |               | `activeTab` của `tab-content` với giá trị bằng với `activeTab` trong `tabs`, bạn không cần khai báo `activeTab` nếu bạn đã khai báo thêm `style` cho tab-content, khi đó bạn cần tự control height của tab-content đó |
+| style     | number |               | Inline style cho tab-content                                                                                                                                                                                          |
 
 :::note Lưu ý
 
@@ -181,4 +186,3 @@ Page({
   }
 });
 ```
-

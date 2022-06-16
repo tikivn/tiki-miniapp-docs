@@ -13,27 +13,32 @@ title: my.getStorage
 
 :::
 
-## API Params
-
-| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                                |
-| ---------- | ------------ | -------- | ---------------------------------------------------------------------------------------------------- |
-| key        | string       | ✓     | Key của dữ liệu                                                                                      |
-| success    | Function     |        | Callback khi dữ liệu được đọc thành công. Trong cấu trúc của response, `data` là field chứa dữ liêu. |
-| fail       | Function     |        | Callback khi đọc dữ liệu thất bại                                                                    |
-| complete   | Function     |        | Callback sau khi thực hiện việc lưu dữ liệu  bất kể thành công hay thất bại                                                        |
-
-### Success callback
-
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                             |
-| ---------- | ------------ | --------------------------------------------------------------------------------- |
-| data       | string/Object       | Giá trị của dữ liệu được lấy ra. Giá trị của data có thể là string hoặc là object |
-
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/storage/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/storage/index" />
+
+## API Params
+
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                                |
+| ---------- | ------------ | -------- | ---------------------------------------------------------------------------------------------------- |
+| key        | string       | ✓        | Key của dữ liệu                                                                                      |
+| success    | Function     |          | Callback khi dữ liệu được đọc thành công. Trong cấu trúc của response, `data` là field chứa dữ liêu. |
+| fail       | Function     |          | Callback khi đọc dữ liệu thất bại                                                                    |
+| complete   | Function     |          | Callback sau khi thực hiện việc lưu dữ liệu bất kể thành công hay thất bại                           |
+
+### Success callback
+
+| Thuộc tính | Kiểu dữ liệu  | Mô tả                                                                             |
+| ---------- | ------------- | --------------------------------------------------------------------------------- |
+| data       | string/Object | Giá trị của dữ liệu được lấy ra. Giá trị của data có thể là string hoặc là object |
 
 ## Sample Code
 
@@ -52,4 +57,3 @@ Page({
   }
 });
 ```
-

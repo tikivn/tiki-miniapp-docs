@@ -10,6 +10,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/image/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/image/index" />
+
 ## Thuộc tính
 
 | Thuộc tính     | Kiểu dữ liệu | Mô tả                                                                                                                                                                           |

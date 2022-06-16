@@ -16,26 +16,31 @@ title: my.bioMetrics.createKey
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/component/api/bio-metrics/server/index" />
+<QRCode page="pages/api/bio-metrics/server/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/bio-metrics/server/index" />
 
 **_Khả dụng_**: Hỗ trợ từ version 1.96.7 trở lên.
 
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                 |
-| ---------- | ------------ | ------------------------------------------------------------------------------------- |
-| success    | Function     | Callback function khi việc tạo key  thành công                                        |
-| fail       | Function     | Callback function khi việc tạo key thất bại                                           |
-| complete   | Function     | Callback function bất kể thành công hay thất bại                                      |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                            |
+| ---------- | ------------ | ------------------------------------------------ |
+| success    | Function     | Callback function khi việc tạo key thành công    |
+| fail       | Function     | Callback function khi việc tạo key thất bại      |
+| complete   | Function     | Callback function bất kể thành công hay thất bại |
 
 ## Giá trị trong success callback
 
 Khi việc gọi API thành công, framework sẽ trả về payload chứa các thông tin sau
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                 |
-| ---------- | ------------ | ------------------------------------------------------------------------------------- |
-| publicKey  | String       | Public key được lưu ở dưới device                                                     |
-
+| Thuộc tính | Kiểu dữ liệu | Mô tả                             |
+| ---------- | ------------ | --------------------------------- |
+| publicKey  | String       | Public key được lưu ở dưới device |
 
 ### Sample Code
 
@@ -62,12 +67,15 @@ Page({
   createKey() {
     my.bioMetrics.createKey({
       success: ({ publicKey }) => {
-        my.alert({ title: 'Success', content: `Public Key:${publicKey}` });
+        my.alert({
+          title: 'Success',
+          content: `Public Key:${publicKey}`
+        });
       },
       fail: (res) => {
         my.alert({ title: 'Fail', content: JSON.stringify(res) });
-      },
+      }
     });
-  },
+  }
 });
 ```

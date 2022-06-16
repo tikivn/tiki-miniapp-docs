@@ -4,6 +4,18 @@ title: my.getCart
 
 `my.getCart` là API trả về tổng sản phẩm đang có trong giỏ hàng (cart) của Tiki, được lọc theo sellerId.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/get-cart/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/get-cart/index" />
+
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                   |

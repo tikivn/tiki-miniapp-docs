@@ -13,13 +13,19 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/animation/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/animation/index" />
+
 ## API Params
 
 | Thuộc tính      | Kiểu dữ liệu | Mô tả                                                                                                                                                             |
-| --------------- | ------------ |  ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | duration        | Number       | Thời gian để animation được thực hiện, mặc định là 400ms                                                                                                          |
 | timeFunction    | String       | Hiệu ứng để thực hiện animation, có thể nhận các giá trị: `linear`, `ease`, `ease-in`, `ease-out`, `ease-in-out`, `step-start`, `step-end`. Mặc định là `linear`. |
-| delay           | Number       | Animation delay time. Đơn vị tính mili giây.   |
+| delay           | Number       | Animation delay time. Đơn vị tính mili giây.                                                                                                                      |
 | transformOrigin | string       | Giá trị ban đầu của CSS transform.                                                                                                                                |
 
 ## Sample Code
@@ -143,5 +149,3 @@ Page({
   }
 });
 ```
-
-

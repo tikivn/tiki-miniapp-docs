@@ -10,6 +10,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/acceleronmeter/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/acceleronmeter/index" />
+
 ## API Params
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                       |
@@ -47,5 +53,3 @@ Page({
   },
 });
 ```
-
-

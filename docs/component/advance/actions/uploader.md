@@ -4,17 +4,17 @@ title: Uploader
 
 `uploader` là component thuộc [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) hỗ trợ chọn và xem trước tập tin (Hiện tại chỉ hỗ trợ tập tin là hình ảnh).
 
-<div style={{ width: '100%', maxWidth: 360 }}>
-  <img src="https://salt.tikicdn.com/ts/tiniapp/c7/31/af/65c2c0140f72a72b0c750e6a7c74a0a5.png" alt="uploader-1"/>
-  <img src="https://salt.tikicdn.com/ts/tiniapp/7f/4b/13/cd926e44504c8a024c592e84158580f1.png" alt="uploader-2"/>
-  <img src="https://salt.tikicdn.com/ts/tiniapp/52/21/95/88dcd6cc33ccf999f524709f26488bf7.png" alt="uploader-3"/>
-</div>
-
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/component/advance/form/uploader/index" />
+<QRCode page="pages/component/advance/actions/uploader/index" />
+
+<!-- ## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/actions/uploader/index" /> -->
 
 ## Cài đặt `tini-ui`:
 

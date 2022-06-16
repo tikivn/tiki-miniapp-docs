@@ -19,21 +19,27 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/storage/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/storage/index" />
+
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                              |
-| ---------- | ------------ | -------- | -------------------------------------------------- |
-| success    | Function     |  Callback khi thông tin dữ liệu được đọc thành công |
-| fail       | Function     |  Callback khi thông tin dữ liệu được đọc thất bại   |
-| complete   | Function     | Callback sau khi thực hiện việc đọc dữ liệu bất kể thành công hay thất bại        |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                      |
+| ---------- | ------------ | -------------------------------------------------------------------------- |
+| success    | Function     | Callback khi thông tin dữ liệu được đọc thành công                         |
+| fail       | Function     | Callback khi thông tin dữ liệu được đọc thất bại                           |
+| complete   | Function     | Callback sau khi thực hiện việc đọc dữ liệu bất kể thành công hay thất bại |
 
 ### Success callback
 
-| Thuộc tính  | Kiểu dữ liệu | Mô tả                                       |
-| ----------- | ------------ | ------------------------------------------- |
-| keys        | array of strings  | Chứa toàn bộ các keys đã được lưu |
-| currentSize | number       | Dung lượng đã sử dụng, đơn vị là KB         |
-| limitSize   | number       |  Dung lượng giới hạn, đơn vị là KB           |
+| Thuộc tính  | Kiểu dữ liệu     | Mô tả                               |
+| ----------- | ---------------- | ----------------------------------- |
+| keys        | array of strings | Chứa toàn bộ các keys đã được lưu   |
+| currentSize | number           | Dung lượng đã sử dụng, đơn vị là KB |
+| limitSize   | number           | Dung lượng giới hạn, đơn vị là KB   |
 
 ## Sample Code
 
@@ -50,5 +56,3 @@ Page({
   }
 });
 ```
-
-

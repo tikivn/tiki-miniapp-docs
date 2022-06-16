@@ -10,13 +10,18 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/ads/banner-ad/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/advance/ads/banner-ad/index" />
 
 ## Thuộc tính
 
-| Thuộc tính   | Kiểu dữ liệu    |  Mô tả                  |
-| ------------ | --------------- | ----------------------- |
-| className    | string          | Thêm class cho component                   |
-| id           | string          | id của component        |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                    |
+| ---------- | ------------ | ------------------------ |
+| className  | string       | Thêm class cho component |
+| id         | string       | id của component         |
 
 ## Sample Code:
 
@@ -24,7 +29,7 @@ javascript code dưới đây được sử dụng cho tất cả các component
 
 :::note Lưu ý
 
-Code dưới đây chỉ được dùng cho mục đích tham khảo  và không phải là best practice, 
+Code dưới đây chỉ được dùng cho mục đích tham khảo và không phải là best practice,
 
 :::
 
@@ -38,10 +43,9 @@ Simple style cho ad
 
 ```css
 .banner-ad {
- width: 90%;
- margin-left: 5%;
+  width: 90%;
+  margin-left: 5%;
 }
-
 ```
 
 - **Kết quả**
@@ -59,4 +63,3 @@ Simple style cho ad
       <img style={{maxWidth: 300}} alt="modal" src="/img/banner-ad.png"/>
   </div>
 </div>
-

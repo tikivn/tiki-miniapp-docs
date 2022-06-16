@@ -4,16 +4,28 @@ title: my.removeSavedFile
 
 `my.removeSavedFile` là API dùng để xoá 1 local cache file.
 
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/file/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/file/index" />
+
 ## API Params
 
 Các thuộc tính:
 
-| Thuộc tính | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                  |
-| ---------- | -------- | :------: | ------------------------------------------------------------------------------ |
-| filePath      | String   | ✓        |  Đường dẫn tới local cache file                   |
-| success    | Function |        | Callback function khi xoá file được thực hiện thành công                     |
-| fail       | Function |        | Callback function khi xoá file thất bại                                      |
-| complete   | Function |        | Callback function khi việc xoá kết thúc cho dù thành công hay thất bại. |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                   |
+| ---------- | ------------ | :------: | ----------------------------------------------------------------------- |
+| filePath   | String       |    ✓     | Đường dẫn tới local cache file                                          |
+| success    | Function     |          | Callback function khi xoá file được thực hiện thành công                |
+| fail       | Function     |          | Callback function khi xoá file thất bại                                 |
+| complete   | Function     |          | Callback function khi việc xoá kết thúc cho dù thành công hay thất bại. |
 
 ## Sample Code
 
@@ -38,7 +50,7 @@ Các thuộc tính:
 Page({
   data: {
     tempFilePath: undefined,
-    savedFilePath: undefined,
+    savedFilePath: undefined
   },
   onRemoveSavedFile() {
     my.getSavedFileList({
@@ -47,20 +59,17 @@ Page({
           filePath: res.fileList[0].filePath,
           success: (res) => {
             my.alert({
-              title: "Remove file success",
-              content: JSON.stringify(res),
+              title: 'Remove file success',
+              content: JSON.stringify(res)
             });
-            console.log("remove success");
+            console.log('remove success');
           },
           fail: (e) => {
             console.log(e);
-          },
+          }
         });
-      },
+      }
     });
-  },
+  }
 });
-
 ```
-
-

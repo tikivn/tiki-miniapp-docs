@@ -4,7 +4,7 @@ title: my.cropImage
 
 - `my.cropImage` là API dùng để crop hình ảnh.
 
-***Khả dụng***: Hỗ trợ từ version 1.82.35 trở lên.
+**_Khả dụng_**: Hỗ trợ từ version 1.82.35 trở lên.
 
 ## Quét mã để trải nghiệm
 
@@ -12,17 +12,23 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/api/crop-image/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/crop-image/index" />
+
 ## API Params
 
-| Thuộc tính              | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                         |
-| ----------------------- | ------------ | :------: | --------------------------------------------------------------------------------------------- |
-| filePath                 | string       |    ✓     | Đường dẫn tới hình ảnh cần crop. Chỉ support đường dẫn cục bộ. |
-| width                    | number       |    ✓     | Chiều rộng mong muốn của hình ảnh sau khi crop |
-| height                   | number       |    ✓     | Chiều dài mong muốn của hình ảnh sau khi crop  |
-| circle                 | boolean       |           | Bật/tắt chế độ crop ảnh thành hình tròn |
-| success                 | Function     |          | Callback function khi việc crop hình ảnh thành công.                                           |
-| fail                    | Function     |          | Callback function khi việc crop hình ảnh bất thành.                                            |
-| complete                | Function     |          | Callback function khi gọi API hoàn tất bất kể việc crop hình ảnh thành công hay thất bại. |
+| Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                     |
+| ---------- | ------------ | :------: | ----------------------------------------------------------------------------------------- |
+| filePath   | string       |    ✓     | Đường dẫn tới hình ảnh cần crop. Chỉ support đường dẫn cục bộ.                            |
+| width      | number       |    ✓     | Chiều rộng mong muốn của hình ảnh sau khi crop                                            |
+| height     | number       |    ✓     | Chiều dài mong muốn của hình ảnh sau khi crop                                             |
+| circle     | boolean      |          | Bật/tắt chế độ crop ảnh thành hình tròn                                                   |
+| success    | Function     |          | Callback function khi việc crop hình ảnh thành công.                                      |
+| fail       | Function     |          | Callback function khi việc crop hình ảnh bất thành.                                       |
+| complete   | Function     |          | Callback function khi gọi API hoàn tất bất kể việc crop hình ảnh thành công hay thất bại. |
 
 ## Sample Code
 
@@ -44,7 +50,7 @@ import { QRCode } from '@site/src/components/QRCode';
 Page({
   data: {
     tempFilePath: undefined,
-    cropFilePath: undefined,
+    cropFilePath: undefined
   },
   onChooseImage() {
     my.chooseImage({
@@ -52,12 +58,12 @@ Page({
       success: (res) => {
         console.log(res);
         this.setData({
-          tempFilePath: res.filePaths[0],
+          tempFilePath: res.filePaths[0]
         });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
   },
 
@@ -77,13 +83,13 @@ Page({
           },
           fail: (err) => {
             console.log('fail', err);
-          },
+          }
         });
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
 ```

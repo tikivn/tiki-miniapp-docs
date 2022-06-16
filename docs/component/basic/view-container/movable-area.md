@@ -4,11 +4,23 @@ title: movable-area
 
 `movable-area` là thành phần quy định phạm di chuyển của các [movable-view](movable-view) nằm trong nó.
 
+<!-- ## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/component/basic/movable-area/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/movable-area/index" /> -->
+
 ## Thuộc tính
 
-| Thuộc tính    | Kiểu dữ liệu    | Giá trị mặc định | Mô tả                                                                                                                  |
-| ---------- | ------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| scale-area | boolean | false         | Khi các movable-view cho phép scaling. Bạn có thể dùng thuộc tính này để tắt việc scaling của tất cả component ở trong area. |
+| Thuộc tính | Kiểu dữ liệu | Giá trị mặc định | Mô tả                                                                                                                        |
+| ---------- | ------------ | ---------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| scale-area | boolean      | false            | Khi các movable-view cho phép scaling. Bạn có thể dùng thuộc tính này để tắt việc scaling của tất cả component ở trong area. |
 
 ## Sample Code
 
@@ -65,6 +77,3 @@ title: movable-area
   </view>
 </view>
 ```
-
-
-

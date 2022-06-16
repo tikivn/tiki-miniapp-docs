@@ -4,29 +4,41 @@ title: my.getLocation
 
 `my.getLocation` là API dùng để lấy thông tin vị trí địa lí hiện tại của device.
 
-***Khả dụng***: Hỗ trợ từ runtime version 1.73.1 trở lên.
+**_Khả dụng_**: Hỗ trợ từ runtime version 1.73.1 trở lên.
+
+## Quét mã để trải nghiệm
+
+import { QRCode } from '@site/src/components/QRCode';
+
+<QRCode page="pages/api/get-location/index" />
+
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/api/get-location/index" />
 
 ### API Params
 
-| Thuộc tính | Kiểu dữ liệu     |  Mô tả                                                                     |
-| ---------- | -------- | ------------------------------------------------------------------------------ |
-| cacheTimeout      | number  | Thời gian mà cache toạ độ địa lý của thiết bị có hiệu lực. Đơn vị tính là giây, mặc định 30 giây. Sử dụng cache toạ độ giúp tăng tốc độ lấy location, đồng thời tiết kiệm pin.  |
-| type | number    | Chọn độ chính xác: <br/>0 - low accuracy. Sử dụng wifi để lấy location <br/> 1 - high accuracy. Sử dụng GPS để lấy location |
-| success    | Function | Callback function khi lấy thông tin location được thực hiện thành công                     |
-| fail       | Function | Callback function khi lấy thông tin location thất bại                                      |
-| complete   | Function | Callback function khi việc lấy thông tin location kết thúc cho dù thành công hay thất bại |
+| Thuộc tính   | Kiểu dữ liệu | Mô tả                                                                                                                                                                          |
+| ------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| cacheTimeout | number       | Thời gian mà cache toạ độ địa lý của thiết bị có hiệu lực. Đơn vị tính là giây, mặc định 30 giây. Sử dụng cache toạ độ giúp tăng tốc độ lấy location, đồng thời tiết kiệm pin. |
+| type         | number       | Chọn độ chính xác: <br/>0 - low accuracy. Sử dụng wifi để lấy location <br/> 1 - high accuracy. Sử dụng GPS để lấy location                                                    |
+| success      | Function     | Callback function khi lấy thông tin location được thực hiện thành công                                                                                                         |
+| fail         | Function     | Callback function khi lấy thông tin location thất bại                                                                                                                          |
+| complete     | Function     | Callback function khi việc lấy thông tin location kết thúc cho dù thành công hay thất bại                                                                                      |
 
 ### Callback success function payload
 
-| Thuộc tính | Kiểu dữ liệu    | Mô tả                  |
-| ---------- | ------ | -------------------------- |
-| latitude  | number  | Kinh độ của thiết bị |
-| longitude  | mumber  | Vĩ độ của thiết bị |  
-| altitude  | number  | Độ cao của thiết bị so với mực nước biển  |
-| accuracy  | number  | Độ chính xác của vị trí; tính bằng mét |
-| altitudeAccuracy  | number  | Độ chính xác của độ cao; tính bằng mét |
-| heading  | number  | Hướng di chuyển |
-| speed | number | Tốc độ di chuyển; tính bằng m/s |
+| Thuộc tính       | Kiểu dữ liệu | Mô tả                                    |
+| ---------------- | ------------ | ---------------------------------------- |
+| latitude         | number       | Kinh độ của thiết bị                     |
+| longitude        | mumber       | Vĩ độ của thiết bị                       |
+| altitude         | number       | Độ cao của thiết bị so với mực nước biển |
+| accuracy         | number       | Độ chính xác của vị trí; tính bằng mét   |
+| altitudeAccuracy | number       | Độ chính xác của độ cao; tính bằng mét   |
+| heading          | number       | Hướng di chuyển                          |
+| speed            | number       | Tốc độ di chuyển; tính bằng m/s          |
 
 ### Sample Code
 
@@ -51,7 +63,7 @@ title: my.getLocation
 ```js
 Page({
   data: {
-    location: undefined,
+    location: undefined
   },
   onGetLocation() {
     my.getLocation({
@@ -61,10 +73,8 @@ Page({
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
-
 ```
-

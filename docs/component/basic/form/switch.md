@@ -12,6 +12,12 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/basic/switch/index" />
 
+## Demo
+
+import { Simulator } from '@site/src/components/Simulator';
+
+<Simulator page="pages/component/basic/switch/index" />
+
 ## Chi tiết
 
 | Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                                          |
