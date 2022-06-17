@@ -6,9 +6,10 @@ const DEFAULT_APP_ID = 'vn.tiki.miniapp.demo';
 const generateURL = (appId = '', page = '', params = {}) => {
   const fullParams = {
     ...params,
+    page,
     simulateMobile: true,
   };
-  return `${BASE_URL}/${appId}/${page}?${
+  return `${BASE_URL}/${appId}?${
     typeof window !== 'undefined'
       ? new window.URLSearchParams(fullParams).toString()
       : 'simulateMobile=true'
