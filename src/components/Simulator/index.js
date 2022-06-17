@@ -23,12 +23,11 @@ export const Simulator = ({
   params = {},
 }) => {
   return (
-    // <iframe
-    //   src={generateURL(appId, page, params)}
-    //   width={width}
-    //   height={height}
-    // />
-    <>Coming soon</>
+    <iframe
+      src={generateURL(appId, page, params)}
+      width={width}
+      height={height}
+    />
   );
 };
 
