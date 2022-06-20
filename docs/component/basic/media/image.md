@@ -1,5 +1,7 @@
 ---
 title: image
+sidebar_custom_props:
+  description: Component dùng để hiển thị hình ảnh
 ---
 
 `image` component dùng để hiển thị hình ảnh.

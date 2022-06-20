@@ -1,5 +1,7 @@
 ---
 title: navigator
+sidebar_custom_props:
+  description: Component hỗ trợ điều hướng (routing) một cách trực tiếp trong txml
 ---
 
 `navigator` là component hỗ trợ điều hướng (routing) một cách trực tiếp trong txml.

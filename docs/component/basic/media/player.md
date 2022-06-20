@@ -1,5 +1,7 @@
 ---
 title: player
+sidebar_custom_props:
+  description: Component hỗ trợ xem video trên youtube
 ---
 
 `player` là component hỗ trợ xem video trên youtube. Không giống như [video](/docs/component/basic/media/video) component hỗ trợ cho cả native và web video, player component chỉ hỗ trợ dạng web video.

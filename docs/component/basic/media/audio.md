@@ -1,5 +1,7 @@
 ---
 title: audio
+sidebar_custom_props:
+  description: Component cho phép người dùng phát âm thanh trên Tini App
 ---
 
 `audio` là component cho phép người dùng phát âm thanh trên Tini App. Bạn có thể điều khiển audio component thông qua [my.createAudioContext](/docs/api/media/audio/create-audio-context) api.

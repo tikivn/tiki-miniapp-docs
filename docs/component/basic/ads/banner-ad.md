@@ -1,5 +1,7 @@
 ---
 title: Banner Ad
+sidebar_custom_props:
+  description: Component dùng để hiển thị quảng cáo dạng banner ngang
 ---
 
 Banner Ad là component dùng để hiển thị quảng cáo dạng banner ngang.

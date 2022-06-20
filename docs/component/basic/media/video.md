@@ -1,5 +1,7 @@
 ---
 title: video
+sidebar_custom_props:
+  description: Component cho phép người dùng phát video trên Tini App
 ---
 
 `video` là component cho phép người dùng phát video trên Tini App. Bạn có thể điều khiển component này thông qua [my.createVideoContext](/docs/api/media/video/create-video-context) api.

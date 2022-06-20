@@ -1,5 +1,7 @@
 ---
 title: lottie
+sidebar_custom_props:
+  description: Component cho phép chạy các hoạt ảnh kết xuất từ After Effects
 ---
 
 `lottie` là thư viện cho phép chạy các hoạt ảnh kết xuất từ After Effects và có thể chạy trên ứng dụng mobile và web. Bạn có thể điều khiển `lottie` component thông qua [my.createLottieContext](/docs/api/media/lottie/create-lottie-context) api.

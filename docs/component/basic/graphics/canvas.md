@@ -1,5 +1,7 @@
 ---
 title: canvas
+sidebar_custom_props:
+  description: Component phục vụ cho mục đích chứa đồ hoạ
 ---
 
 `canvas` là một vùng hình chữ nhật phục vụ cho mục đích chứa đồ hoạ. Theo mặc định, nó không có đường viền cũng như nội dung; bạn sẽ sử dụng JavaScript để kết xuất đồ hoạ.
