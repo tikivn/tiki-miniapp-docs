@@ -1,5 +1,7 @@
 ---
 title: icon
+sidebar_custom_props:
+  description: Component hiển thị icon có sẵn trong Tini App
 ---
 
 `icon` là component dùng để hiển thị icon có sẵn trong Tini App.

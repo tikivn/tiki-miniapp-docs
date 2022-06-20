@@ -1,5 +1,7 @@
 ---
 title: label
+sidebar_custom_props:
+  description: Các thành phần bên trong label sẽ được focus khi bấm vào phạm vi của
 ---
 
 Để tăng trải nghiệm với các form component, các thành phần bên trong `label` sẽ được focus khi bấm vào phạm vi của `label`. Hỗ trợ các component `radio`, `checkbox`, `input` và `switch`, nếu có nhiều component trong `label`, chỉ component đầu tiên được focus.

@@ -1,5 +1,7 @@
 ---
 title: radio-group
+sidebar_custom_props:
+  description: Nhóm các radio lại với nhau
 ---
 
 `radio-group` dùng để nhóm các [radio](radio) lại với nhau. Bên trong `radio-group` có thể chứa nhiều `radio`, nhưng tại một thời điểm chỉ có một `radio` có thể được chọn, các `radio` cần khai báo thuộc tính `value`

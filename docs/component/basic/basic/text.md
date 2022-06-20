@@ -1,5 +1,7 @@
 ---
 title: text
+sidebar_custom_props:
+  description: Component hiển thị nội dung văn bản
 ---
 
 Thẻ text dùng để hiển thị nội dung văn bản, và phải nằm trong các thẻ component khác. Thẻ text có những đặc điểm như sau:

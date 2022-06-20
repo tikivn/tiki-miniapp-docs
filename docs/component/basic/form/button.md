@@ -1,5 +1,7 @@
 ---
 title: button
+sidebar_custom_props:
+  description: Component button (nút)
 ---
 
 ## Quét mã để trải nghiệm

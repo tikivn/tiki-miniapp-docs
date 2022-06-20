@@ -1,5 +1,7 @@
 ---
 title: progress
+sidebar_custom_props:
+  description: Thanh tiến trình
 ---
 
 Progress bar (thanh tiến trình).

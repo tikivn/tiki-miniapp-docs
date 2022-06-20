@@ -1,5 +1,7 @@
 ---
 title: input
+sidebar_custom_props:
+  description: Cho phép người dùng nhập thông tin dạng text
 ---
 
 `input`, tên đầy đủ là input box, cho phép người dùng nhập thông tin dạng text.
