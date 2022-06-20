@@ -1,16 +1,13 @@
-import React from 'react';
-import uniqueid from 'lodash.uniqueid';
+import Link from '@docusaurus/Link';
 import {useHistory} from '@docusaurus/router';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+import uniqueid from 'lodash.uniqueid';
+import React from 'react';
 import './styles.scss';
 
 export const Overview = () => {
   const sidebars = useCurrentSidebarCategory();
   const history = useHistory();
-
-  const handleNavigateToDoc = sidebar => {
-    if (sidebar.href) history.push(sidebar.href);
-  };
 
   const renderHTML = data => {
     const html = [];
@@ -18,12 +15,13 @@ export const Overview = () => {
     const generateHTML = (sidebar, result, level) => {
       if (sidebar.type === 'link' && sidebar.customProps?.description) {
         result.push(
-          <tr
-            className="overview-row"
-            key={sidebar.label}
-            onClick={() => handleNavigateToDoc(sidebar)}>
-            <td>{sidebar.label}</td>
-            <td>{sidebar.customProps.description}</td>
+          <tr className="overview-row" key={sidebar.label}>
+            <td>
+              <Link to={sidebar.href}>{sidebar.label}</Link>
+            </td>
+            <td className="overview-description">
+              {sidebar.customProps.description}
+            </td>
           </tr>,
         );
       }

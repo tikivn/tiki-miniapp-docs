@@ -1,4 +1,7 @@
 .overview-row:hover {
-  cursor: pointer;
   background-color: rgba(22, 118, 255, 0.1);
+}
+
+.overview-description:hover {
+  cursor: default;
 }
