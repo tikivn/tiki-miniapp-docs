@@ -1,5 +1,7 @@
 ---
 title: game-view
+sidebar_custom_props:
+  description: Container component được tối ưu hoá cho việc chạy các HTML5 game
 ---
 
 `game-view` là một container component, được tối ưu hoá cho việc chạy các HTML5 game, hay còn biết đến với cái tên rút gọn H5 game, trong Tini App.

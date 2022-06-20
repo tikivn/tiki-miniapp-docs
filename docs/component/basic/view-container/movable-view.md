@@ -1,5 +1,7 @@
 ---
 title: movable-view
+sidebar_custom_props:
+  description: Container component cho phép kéo và thả chính nó và các thành phần con trong nó trên page
 ---
 
 `movable-view` là container component cho phép kéo và thả chính nó và các thành phần con trong nó trên page. `movable-view` bắt buộc phải nằm trong [movable-area](movable-area). Nếu không, movable-view không thể di chuyển được.

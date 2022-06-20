@@ -1,5 +1,7 @@
 ---
 title: web-view
+sidebar_custom_props:
+  description: Container component dùng để hiển thị trang web trong một Tini App
 ---
 
 `web-view` là một container component dùng để hiển thị trang web trong một Tini App. Nó đặc biệt hữu dụng chính vì Tini App không thể nhảy đến một trang web bên ngoài Tiki App.

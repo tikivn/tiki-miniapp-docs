@@ -1,5 +1,7 @@
 ---
 title: view
+sidebar_custom_props:
+  description: Container component dùng để chứa các component khác, có chức năng tự với thẻ div trong HTML
 ---
 
 Thẻ `view` là một container component dùng để chứa các component khác, có chức năng tự với thẻ `div` trong HTML.

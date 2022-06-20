@@ -1,5 +1,7 @@
 ---
 title: carousel
+sidebar_custom_props:
+  description: Container component cho phép bạn tổ chức các phần tử theo dạng băng chuyền
 ---
 
 <img src="/img/Carousel.png" width="600px" alt="DevTools" style={{ margin: '0 auto', display: 'flex' }}/>

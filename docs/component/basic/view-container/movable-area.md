@@ -1,5 +1,7 @@
 ---
 title: movable-area
+sidebar_custom_props:
+  description: Component quy định phạm di chuyển của các movable-view nằm trong nó
 ---
 
 `movable-area` là thành phần quy định phạm di chuyển của các [movable-view](movable-view) nằm trong nó.

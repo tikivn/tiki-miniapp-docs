@@ -1,5 +1,7 @@
 ---
 title: scroll-view
+sidebar_custom_props:
+  description: Container component có thể scroll được. Thanh scroll ngoài cùng không ảnh hưởng gì đến thanh scroll của scroll-view
 ---
 
 `scroll-view` là một container component có thể scroll được. Thanh scroll ngoài cùng không ảnh hưởng gì đến thanh scroll của `scroll-view`.
