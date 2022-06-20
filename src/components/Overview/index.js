@@ -1,15 +1,13 @@
 import Link from '@docusaurus/Link';
-import {useHistory} from '@docusaurus/router';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 import uniqueid from 'lodash.uniqueid';
-import React from 'react';
+import React, {memo, useCallback} from 'react';
 import './styles.scss';
 
-export const Overview = () => {
+export const Overview = memo(() => {
   const sidebars = useCurrentSidebarCategory();
-  const history = useHistory();
 
-  const renderHTML = data => {
+  const renderHTML = useCallback(data => {
     const html = [];
 
     const generateHTML = (sidebar, result, level) => {
@@ -68,9 +66,9 @@ export const Overview = () => {
     generateHTML(data, html, 1);
 
     return html;
-  };
+  }, []);
 
   return <>{renderHTML(sidebars)}</>;
-};
+});
 
 export default Overview;
