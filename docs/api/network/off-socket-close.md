@@ -1,5 +1,7 @@
 ---
 title: my.offSocketClose
+sidebar_custom_props:
+  description: Dừng lắng nghe sự kiện đóng WebSocket connection trước đó
 ---
 
 `my.offSocketClose` là API giúp dừng lắng nghe sự kiện đóng WebSocket connection trước đó.
@@ -19,7 +21,7 @@ my.offSocketClose(this.callback);
 ```
 
 - Khi callback không được truyền vào, tất cả các callback được xoá khỏi danh sách lắng nghe:
-  
+
 ```js
 my.offSocketClose();
 ```
@@ -35,8 +37,6 @@ Page({
   onUnload() {
     my.offSocketClose(this.callback);
   },
-  callback(res) {
-  },
-})
+  callback(res) {}
+});
 ```
-

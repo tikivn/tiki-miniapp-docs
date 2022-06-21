@@ -1,5 +1,7 @@
 ---
 title: my.showNavigationBarLoading
+sidebar_custom_props:
+  description: Hiển thị loading animation trên thanh Navigation Bar của page hiện tại
 ---
 
 `my.showNavigationBarLoading` là API để hiển thị loading animation trên thanh Navigation Bar của page hiện tại.

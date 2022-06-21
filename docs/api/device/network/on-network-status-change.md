@@ -1,5 +1,7 @@
 ---
 title: my.onNetworkStatusChange
+sidebar_custom_props:
+  description: Nhận sự kiện thay đổi trạng thái mạng của thiết bị
 ---
 
 `my.onNetworkStatusChange` là API dùng để nhận sự kiện thay đổi trạng thái mạng của thiết bị.

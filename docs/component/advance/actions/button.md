@@ -1,5 +1,7 @@
 ---
-title: Button
+title: button
+sidebar_custom_props:
+  description: Component Tini UI - Button theo Design System của Tiki
 ---
 
 [Tini Button](https://www.figma.com/file/C2Nq0TcxMbe0vvuVpLY4Gh/?node-id=549%3A6274) là một button component được xây dựng dựa trên Design System của Tiki.

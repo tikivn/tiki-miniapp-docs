@@ -1,5 +1,7 @@
 ---
 title: radio
+sidebar_custom_props:
+  description: Component cho phép người dùng chọn duy nhất một phương án
 ---
 
 `radio` dùng để chọn một giá trị. Để nhóm nhiều `radio` lại với nhau, bạn cần sử dụng [radio-group](radio-group)

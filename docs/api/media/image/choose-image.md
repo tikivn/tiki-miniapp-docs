@@ -1,5 +1,7 @@
 ---
 title: my.chooseImage
+sidebar_custom_props:
+  description: dùng để chụp ảnh bằng camera hoặc chọn hình từ album cục bộ
 ---
 
 `my.chooseImage` là API dùng để chụp ảnh bằng camera hoặc chọn hình từ album cục bộ.

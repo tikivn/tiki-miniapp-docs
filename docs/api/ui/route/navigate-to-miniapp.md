@@ -1,5 +1,7 @@
 ---
 title: my.navigateToMiniApp
+sidebar_custom_props:
+  description: Dùng để di chuyển giữa các app
 ---
 
 `my.navigateToMiniApp` là API dùng để di chuyển giữa các app.

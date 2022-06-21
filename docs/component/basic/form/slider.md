@@ -1,5 +1,7 @@
 ---
 title: slider
+sidebar_custom_props:
+  description: Component cho phép bạn chọn giá trị bằng việc kéo thả trong một phạm vi nhất định
 ---
 
 `slider` component cho phép bạn chọn giá trị bằng việc kéo thả trong một phạm vi nhất định.

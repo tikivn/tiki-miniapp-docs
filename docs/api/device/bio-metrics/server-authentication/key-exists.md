@@ -1,5 +1,7 @@
 ---
 title: my.bioMetrics.keyExists
+sidebar_custom_props:
+  description: Kiểm tra thiết bị đã có lưu sẵn cặp key đề cập ở JSAPI my.bioMetrics.createKey
 ---
 
 `my.bioMetrics.keyExists` là API để kiểm tra thiết bị đã có lưu sẵn cặp key đề cập ở JSAPI [my.bioMetrics.createKey](./create-key). Nếu thiết bị đã có sẵn cặp key này, chúng ta ko cần phải tạo thêm.

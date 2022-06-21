@@ -1,5 +1,7 @@
 ---
 title: my.showActionSheet
+sidebar_custom_props:
+  description: Hiển thị bottom popup để user có thể chọn option
 ---
 
 `my.showActionSheet` là API để hiển thị bottom popup để user có thể chọn option.

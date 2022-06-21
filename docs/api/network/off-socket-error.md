@@ -1,5 +1,7 @@
 ---
 title: my.offSocketError
+sidebar_custom_props:
+  description: Dừng lắng nghe sự kiện error được tạo trước đó
 ---
 
 `my.offSocketError` là API giúp dừng lắng nghe sự kiện error được tạo trước đó.
@@ -19,7 +21,7 @@ my.offSocketError(this.callback);
 ```
 
 - Khi callback không được truyền vào, tất cả các callback được xoá khỏi danh sách lắng nghe:
-  
+
 ```js
 my.offSocketError();
 ```
@@ -35,8 +37,6 @@ Page({
   onUnload() {
     my.offSocketError(this.callback);
   },
-  callback(res) {
-  },
-})
+  callback(res) {}
+});
 ```
-

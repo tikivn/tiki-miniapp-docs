@@ -1,5 +1,7 @@
 ---
 title: my.request
+sidebar_custom_props:
+  description: Dùng để thực hiện các network request. Hiện chỉ hỗ trợ những request qua giao thức https
 ---
 
 `my.request` là API dùng để thực hiện các network request. Hiện chỉ hỗ trợ những request qua giao thức **https**.

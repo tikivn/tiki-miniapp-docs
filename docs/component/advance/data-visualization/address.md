@@ -1,5 +1,7 @@
 ---
-title: Address
+title: address
+sidebar_custom_props:
+  description: Component Tini UI - Cho phép bạn thực hiện các thao tác liên quan tới địa chỉ của Tiki
 ---
 
 - `address` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui). Cho phép bạn thực hiện các thao tác liên quan tới địa chỉ của Tiki, như lấy thông tin thành phố, quận/huyện, ...

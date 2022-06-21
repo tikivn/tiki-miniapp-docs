@@ -1,5 +1,7 @@
 ---
 title: picker
+sidebar_custom_props:
+  description: Component cung cấp một vùng chọn dạng scroll được hiển thị bên trong popup
 ---
 
 `picker` tương tự với `picker-view`, cho phép người dùng chọn một phần tử trong một mảng dưới dạng scroll, tuy nhiên nó sẽ được hiển thị bên trong popup ở dưới page.

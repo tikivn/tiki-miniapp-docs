@@ -1,5 +1,7 @@
 ---
 title: switch
+sidebar_custom_props:
+  description: Component hoạt động như một công tắc giúp người dùng chuyển đổi giữa hai trạng thái - ON vs OFF, YES vs NO
 ---
 
 `switch` hoạt động như một công tắc giúp người dùng chuyển đổi giữa hai trạng thái - ON vs OFF, YES vs NO, ...

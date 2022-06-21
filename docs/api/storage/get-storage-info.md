@@ -1,5 +1,7 @@
 ---
 title: my.getStorageInfo
+sidebar_custom_props:
+  description: Đọc ra thông tin storage của tiện ích như dung lượng sử dụng hiện tại, giới hạn, các keys đã được lưu
 ---
 
 `my.getStorageInfo` là api để đọc ra thông tin storage của tiện ích như dung lượng sử dụng hiện tại, giới hạn, các keys đã được lưu.

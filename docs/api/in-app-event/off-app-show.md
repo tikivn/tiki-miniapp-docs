@@ -1,5 +1,7 @@
 ---
 title: my.offAppShow
+sidebar_custom_props:
+  description: Dùng để remove listener của event `onAppShow` từ trước
 ---
 
 ## Giới thiệu

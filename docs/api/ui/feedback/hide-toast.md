@@ -1,5 +1,7 @@
 ---
 title: my.hideToast
+sidebar_custom_props:
+  description: Ẩn toast
 ---
 
 `my.hideToast` là API để hide toast thủ công.

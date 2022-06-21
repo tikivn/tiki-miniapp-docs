@@ -1,5 +1,7 @@
 ---
-title: Tabs
+title: tabs
+sidebar_custom_props:
+  description: Component Tini UI - Được sử dụng khi bạn cần hiển thị nội dung với 2 thành phần là thanh tab bar ở trên đầu và tab content bên dưới
 ---
 
 `tabs` được sử dụng khi bạn cần hiển thị nội dung với 2 thành phần là thanh tab bar ở trên đầu và tab content bên dưới

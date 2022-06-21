@@ -1,5 +1,7 @@
 ---
 title: my.offSocketMessage
+sidebar_custom_props:
+  description: Dừng lắng nghe sự kiện message được thiết lập trước đó
 ---
 
 `my.offSocketMessage` là API giúp dừng lắng nghe sự kiện message được thiết lập trước đó.
@@ -19,7 +21,7 @@ my.offSocketMessage(this.callback);
 ```
 
 - Khi callback không được truyền vào, tất cả các callback được xoá khỏi danh sách lắng nghe:
-  
+
 ```js
 my.offSocketMessage();
 ```
@@ -35,8 +37,6 @@ Page({
   onUnload() {
     my.offSocketMessage(this.callback);
   },
-  callback(res) {
-  },
-})
+  callback(res) {}
+});
 ```
-

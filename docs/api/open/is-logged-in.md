@@ -1,5 +1,7 @@
 ---
-title: 'my.isLoggedIn'
+title: my.isLoggedIn
+sidebar_custom_props:
+  description: Kiểm tra user đã log in hay chưa
 ---
 
 `my.isLoggedIn` là API để kiểm tra user đã log in hay chưa.

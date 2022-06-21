@@ -1,5 +1,7 @@
 ---
 title: my.setStorage
+sidebar_custom_props:
+  description: Lưu trữ dữ liệu theo key, dữ liệu mới sẽ ghi đè dữ liệu cũ nếu cùng key
 ---
 
 `my.setStorage` là api để lưu trữ dữ liệu theo key, dữ liệu mới sẽ ghi đè dữ liệu cũ nếu cùng key.

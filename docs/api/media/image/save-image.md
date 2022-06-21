@@ -1,5 +1,7 @@
 ---
 title: my.saveImage
+sidebar_custom_props:
+  description: Dùng để lưu 1 remote image vào gallery của thiết bị di động
 ---
 
 `my.saveImage` là API dùng để lưu 1 remote image vào gallery của thiết bị di động.

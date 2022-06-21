@@ -1,5 +1,7 @@
 ---
 title: Interstitiad.offClose
+sidebar_custom_props:
+  description: Huỷ việc lắng nghe sự kiện quảng cáo bị đóng
 ---
 
 Huỷ việc lắng nghe sự kiện quảng cáo bị đóng.

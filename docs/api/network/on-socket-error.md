@@ -1,5 +1,7 @@
 ---
 title: my.onSocketError
+sidebar_custom_props:
+  description: Lắng nghe sự kiện error trên WebSocket connection
 ---
 
 `my.onSocketError` là API giúp lắng nghe sự kiện error trên WebSocket connection.
@@ -20,14 +22,10 @@ Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của �
 
 ```js
 my.connectSocket({
-  url: 'wes://sample',
+  url: 'wes://sample'
 });
 
-my.onSocketError(function(res) {
+my.onSocketError(function (res) {
   console.log('<<< error', res);
 });
 ```
-
-
-
-

@@ -1,5 +1,7 @@
 ---
 title: my.makePayment
+sidebar_custom_props:
+  description: Tạo payment
 ---
 
 `my.makePayment` là API dùng để tạo payment. Luồng payment như sau:

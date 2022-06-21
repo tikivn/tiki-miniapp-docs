@@ -1,5 +1,7 @@
 ---
 title: my.setTabBarBadge
+sidebar_custom_props:
+  description: Thêm badge text vào một Tab bar item
 ---
 
 `my.setTabBarBadge` là API để dùng để thêm badge text vào một Tab bar item.
@@ -15,7 +17,6 @@ Badge là một vòng tròn màu đỏ xuất hiện ở góc phải trên của
 | success    | Function     |          | Callback function khi thành công.                                                                                         |
 | fail       | Function     |          | Callback function khi thất bại.                                                                                           |
 | complete   | Function     |          | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                                                     |
-
 
 ## Sample Code
 

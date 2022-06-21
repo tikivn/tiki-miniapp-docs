@@ -1,5 +1,7 @@
 ---
 title: recycle-view
+sidebar_custom_props:
+  description: Container component hiển thị một danh sách dữ liệu lớn. Nó giúp tối ưu performance bằng cách chỉ render một số lượng các item cần thiết trong phạm vi nhìn thấy của người dùng
 ---
 
 - `recycle-view` dùng để hiển thị một danh sách dữ liệu lớn. Nó giúp tối ưu performance bằng cách chỉ render một số lượng các item cần thiết trong phạm vi nhìn thấy của người dùng.

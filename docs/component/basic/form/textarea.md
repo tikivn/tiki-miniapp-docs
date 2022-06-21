@@ -1,8 +1,10 @@
 ---
 title: textarea
+sidebar_custom_props:
+  description: Component dạng text box cho phép bạn có thể nhập nhiều dòng vào
 ---
 
-Tương tự với thẻ `textarea` trên web, `textarea` component là một dạng text box cho phép bạn có thể nhập nhiều dòng vào.
+Tương tự với thẻ `textarea` trên web, `textarea` là một dạng text box cho phép bạn có thể nhập nhiều dòng vào.
 
 ## Quét mã để trải nghiệm
 

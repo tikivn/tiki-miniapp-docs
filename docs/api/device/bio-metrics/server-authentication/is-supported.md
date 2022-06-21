@@ -1,5 +1,7 @@
 ---
 title: my.bioMetrics.isSupported
+sidebar_custom_props:
+  description: Kiểm tra thiết bị có sensor của bio metrics hay không và đã cài đặt sẵn 1 trong các loại xác thực face id, touch id hoặc móng mắt (tuỳ thuộc vào thiết bị)... hay chưa
 ---
 
 `my.bioMetrics.isSupported` là API để kiểm tra thiết bị có sensor của bio metrics hay không và đã cài đặt sẵn 1 trong các loại xác thực face id, touch id hoặc móng mắt (tuỳ thuộc vào thiết bị)... hay chưa.

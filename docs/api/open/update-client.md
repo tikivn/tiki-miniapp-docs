@@ -1,5 +1,7 @@
 ---
 title: my.askDownloadNewClient
+sidebar_custom_props:
+  description: Dùng để kiểm tra Tiki App cài trên thiết bị di động có phải là phiên bản mới nhất không
 ---
 
 `my.askDownloadNewClient` là API dùng để kiểm tra Tiki App cài trên thiết bị di động có phải là phiên bản mới nhất không. Nếu đó là phiên bản cũ, 1 popup sẽ được hiển thị hỏi xem liệu người dùng có muốn nâng cấp lên phiên bản Tiki App mới nhất không. Người dùng có quyền từ chối bằng cách bấm nút **Huỷ**, hoặc bấm nút **Cập nhật** để truy cập vào Apple Store hay Google Play Store, và cập nhật Tiki App.

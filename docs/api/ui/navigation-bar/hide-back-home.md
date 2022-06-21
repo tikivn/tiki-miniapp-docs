@@ -1,8 +1,10 @@
 ---
 title: my.hideBackHome
+sidebar_custom_props:
+  description: Ẩn đi nút back trên Title Bar
 ---
 
-`my.hideBackHome` là API để ẩn đi nút back trên tile Bar.
+`my.hideBackHome` là API để ẩn đi nút back trên Title Bar.
 
 ## Quét mã để trải nghiệm
 

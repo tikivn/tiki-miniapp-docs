@@ -1,5 +1,7 @@
 ---
 title: form
+sidebar_custom_props:
+  description: Dùng để lưu trữ giá trị của các components input, switch, checkbox, radio, picker
 ---
 
 ## Giới thiệu

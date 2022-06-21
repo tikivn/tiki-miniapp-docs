@@ -1,5 +1,7 @@
 ---
 title: my.getNetworkType
+sidebar_custom_props:
+  description: Lấy thông tin kết nối mạng của thiết bị
 ---
 
 `my.getNetworkType` là API dùng để lấy thông tin kết nối mạng của thiết bị.

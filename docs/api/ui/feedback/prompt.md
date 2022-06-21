@@ -1,5 +1,7 @@
 ---
 title: my.prompt
+sidebar_custom_props:
+  description: Hiển thị prompt popup, để user có thể nhập giá tri vào
 ---
 
 `my.prompt` là api để hiển thị prompt popup, để user có thể nhập giá tri vào.

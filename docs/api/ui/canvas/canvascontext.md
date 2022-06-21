@@ -1,5 +1,7 @@
 ---
 title: my.createCanvasContext
+sidebar_custom_props:
+  description: Tạo ra canvas drawing context
 ---
 
 my.createCanvasContext là API dùng để tạo ra canvas drawing context.

@@ -1,5 +1,7 @@
 ---
 title: my.offAppError
+sidebar_custom_props:
+  description: Dùng để remove listener của event `onAppError` từ trước
 ---
 
 ## Giới thiệu

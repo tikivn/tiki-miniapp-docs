@@ -1,5 +1,7 @@
 ---
 title: my.alert
+sidebar_custom_props:
+  description: Hiển thị alert
 ---
 
 `my.alert` là API để hiển thị Alert. Có thể set được title, content, buttonText...

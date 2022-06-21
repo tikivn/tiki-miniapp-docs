@@ -1,5 +1,7 @@
 ---
 title: my.offCompassChange
+sidebar_custom_props:
+  description: Dừng việc theo dõi dữ liệu compass
 ---
 
 `my.offCompassChange` là API giúp dừng việc theo dõi dữ liệu compass.

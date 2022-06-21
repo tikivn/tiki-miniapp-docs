@@ -1,5 +1,7 @@
 ---
-title: Textfield
+title: textfield
+sidebar_custom_props:
+  description: Component Tini UI - Chức năng tương tự như thẻ input nhưng hỗ trợ thêm label, icon và một số tính năng mở rộng về giao diện
 ---
 
 - `textfield` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) với chức năng tương tự như thẻ [input](/docs/component/basic/form/input) nhưng hỗ trợ thêm label, icon và một số tính năng mở rộng về giao diện.

@@ -1,5 +1,7 @@
 ---
 title: my.getSavedFileList
+sidebar_custom_props:
+  description: Dùng để lấy thông tin tất cả các tập tin được lưu cục bộ của Tini App gọi API này
 ---
 
 `my.getSavedFileList` là API dùng để lấy thông tin tất cả các tập tin được lưu cục bộ của Tini App gọi API này.

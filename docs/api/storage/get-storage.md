@@ -1,8 +1,10 @@
 ---
 title: my.getStorage
+sidebar_custom_props:
+  description: Lấy dữ liệu đã được lưu theo key
 ---
 
-`my.getStorage` là api để lấy dữ liệu đã được lưu theo key
+`my.getStorage` là api để lấy dữ liệu đã được lưu theo key.
 
 :::note Lưu ý
 

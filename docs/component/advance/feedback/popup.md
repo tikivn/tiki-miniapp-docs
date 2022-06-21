@@ -1,5 +1,7 @@
 ---
-title: Popup
+title: popup
+sidebar_custom_props:
+  description: Component Tini UI - Hiển thị popup menu
 ---
 
 Hiển thị popup menu

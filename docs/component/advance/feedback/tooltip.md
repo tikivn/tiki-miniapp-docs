@@ -1,5 +1,7 @@
 ---
-title: Tooltip
+title: tooltip
+sidebar_custom_props:
+  description: Component Tini UI - Hiển thị nội dung dưới dạng như mẹo, gợi ý hoặc thủ thuật
 ---
 
 - `tooltip` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) là thành phẩn nhỏ gọn hiển thị nội dung dưới dạng như mẹo, gợi ý hoặc thủ thuật.

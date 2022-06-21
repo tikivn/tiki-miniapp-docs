@@ -1,5 +1,7 @@
 ---
 title: my.reLaunch
+sidebar_custom_props:
+  description: Dùng để đóng tất cả các pages hiện tại và nhảy tới một page nào đó trong ứng dụng
 ---
 
 `my.reLaunch` là API dùng để đóng tất cả các pages hiện tại và nhảy tới một page nào đó trong ứng dụng.

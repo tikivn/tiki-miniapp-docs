@@ -1,5 +1,7 @@
 ---
 title: button
+sidebar_custom_props:
+  description: Component button, hỗ trợ các action click
 ---
 
 ## Quét mã để trải nghiệm

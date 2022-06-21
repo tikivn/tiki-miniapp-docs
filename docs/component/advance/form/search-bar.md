@@ -1,5 +1,7 @@
 ---
-title: Search bar
+title: search-bar
+sidebar_custom_props:
+  description: Component Tini UI - Hỗ trợ xây dựng component tìm kiếm
 ---
 
 - `search-bar` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) hỗ trợ xây dựng component tìm kiếm.

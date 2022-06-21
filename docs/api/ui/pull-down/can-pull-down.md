@@ -1,5 +1,7 @@
 ---
 title: my.setCanPullDown
+sidebar_custom_props:
+  description: Set lại việc có hỗ trợ kéo xuống để refresh hay ko. Mặc định thì page hỗ trợ kéo xuống để refresh
 ---
 
 `my.setCanPullDown` là API để set lại việc có hỗ trợ kéo xuống để refresh hay ko. Mặc định thì page hỗ trợ kéo xuống để refresh.

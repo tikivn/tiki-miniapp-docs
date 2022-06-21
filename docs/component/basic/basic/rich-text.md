@@ -1,5 +1,7 @@
 ---
 title: rich-text
+sidebar_custom_props:
+  description: Component hiển thị nội dung cho HTML dưới dạng các node
 ---
 
 - Thẻ rich-text dùng để hiển thị nội dung cho HTML dưới dạng các node.

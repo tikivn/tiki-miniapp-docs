@@ -1,5 +1,7 @@
 ---
 title: map
+sidebar_custom_props:
+  description: Component sử dụng google maps để phục vụ các tác vụ liên quan tới map
 ---
 
 - `map` component sử dụng google maps để phục vụ các tác vụ liên quan tới map

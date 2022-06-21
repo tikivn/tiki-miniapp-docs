@@ -1,5 +1,7 @@
 ---
 title: my.bioMetrics.createKey
+sidebar_custom_props:
+  description: Tạo ra cặp public và private key RSA 2048, được lưu trữ vào keychain của ios hoặc keystore của android
 ---
 
 `my.bioMetrics.createKey` là API tạo ra cặp public và private key RSA 2048, được lưu trữ vào keychain của ios hoặc keystore của android. Private key này sẽ dùng để encrypt data như flow. Public key dùng để gửi lên server, server sẽ dùng public key để decrypt data mà client gửi lên.

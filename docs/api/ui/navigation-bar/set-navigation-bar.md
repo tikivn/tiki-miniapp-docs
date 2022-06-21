@@ -1,5 +1,7 @@
 ---
 title: my.setNavigationBar
+sidebar_custom_props:
+  description: Set style cho Navigation Bar
 ---
 
 `my.setNavigationBar` là API để set style cho Navigation Bar

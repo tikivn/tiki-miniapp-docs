@@ -1,5 +1,7 @@
 ---
 title: my.connectSocket
+sidebar_custom_props:
+  description: Dùng để mở websocket connection trên ứng dụng
 ---
 
 `my.connectSocket` là API được dùng để mở websocket connection trên ứng dụng. Một ứng dụng chỉ có thể duy trì một WebSocket connection ở một thời điểm. Nếu api này được gọi khi có connection đang được mở, thì connection có sẵn đó sẽ tự động đóng lại và connection mới được mở ra.
@@ -22,7 +24,6 @@ Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của �
 | fail       | Function     |          | Callback function khi việc kết nối thất bại.                                                         |
 | complete   | Function     |          | Callback function khi việc kết nối kết thúc bất kể thành công hay thất bại.                          |
 
-
 :::note Lưu ý
 
 - `my.connectSocket` sẽ phát sinh lỗi nếu giá trị truyền vào thuộc tính `url` không phải kiểu string, bị NULL, hoặc không đúng dịnh dạng `ws://` hay `wss://`.
@@ -37,11 +38,8 @@ my.connectSocket({
   url: this.data.websocketServer,
   data: {},
   success: (res) => {
-     console.log(JSON.stringify(res));
+    console.log(JSON.stringify(res));
   },
-  fail: () => { 
-  }
+  fail: () => {}
 });
 ```
-
-

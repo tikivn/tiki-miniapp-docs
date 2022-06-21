@@ -1,5 +1,7 @@
 ---
 title: my.removeStorage
+sidebar_custom_props:
+  description: Xoá dữ liệu đã được lưu theo key
 ---
 
 `my.removeStorage` là api để xoá dữ liệu đã được lưu theo key

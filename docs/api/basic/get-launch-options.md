@@ -1,5 +1,7 @@
 ---
 title: my.getLaunchOptionsSync
+sidebar_custom_props:
+  description: Lấy parameters để launch Tini App hiện tại
 ---
 
 `my.getLaunchOptionsSync` là API dùng để lấy parameters để launch Tini App hiện tại.

@@ -1,5 +1,7 @@
 ---
 title: my.scan
+sidebar_custom_props:
+  description: Quét mã QR hoặc mã vạch (barcode)
 ---
 
 `my.scan` là API dùng để quét mã QR hoặc mã vạch (barcode)

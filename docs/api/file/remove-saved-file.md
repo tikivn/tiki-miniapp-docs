@@ -1,5 +1,7 @@
 ---
 title: my.removeSavedFile
+sidebar_custom_props:
+  description: Dùng để xoá 1 local cache file
 ---
 
 `my.removeSavedFile` là API dùng để xoá 1 local cache file.

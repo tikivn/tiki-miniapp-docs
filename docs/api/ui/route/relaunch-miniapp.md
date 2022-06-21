@@ -1,5 +1,7 @@
 ---
 title: my.reLaunchMiniApp
+sidebar_custom_props:
+  description: Giống với `my.navigateToMiniApp` tuy nhiên thay vì được chồng lên Tiniapp cũ, Tiniapp mới sẽ replace luôn Tiniapp cũ
 ---
 
 - `my.reLaunchMiniApp` là API giống với `my.navigateToMiniApp` tuy nhiên thay vì được chồng lên Tiniapp cũ, Tiniapp mới sẽ replace luôn Tiniapp cũ.

@@ -1,5 +1,7 @@
 ---
-title: Image Cropper
+title: image-cropper
+sidebar_custom_props:
+  description: Component cho phép crop ảnh theo tỉ lệ mong muốn
 ---
 
 Image Cropper là component cho phép crop ảnh theo tỉ lệ mong muốn.

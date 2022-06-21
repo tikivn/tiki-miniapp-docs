@@ -1,5 +1,7 @@
 ---
-title: Modal
+title: modal
+sidebar_custom_props:
+  description: Component Tini UI - Hiển thị hoặc yêu cầu thao tác của người dùng mà không phải chuyển trang
 ---
 
 Khi ứng dụng cần cảnh báo hoặc nhắc nhở người dùng, yêu cầu thao tác của người dùng mà không phải chuyển trang, bạn có thể sử dụng modal.

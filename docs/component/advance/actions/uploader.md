@@ -1,5 +1,7 @@
 ---
-title: Uploader
+title: uploader
+sidebar_custom_props:
+  description: Component Tini UI - Hỗ trợ chọn và xem trước tập tin
 ---
 
 `uploader` là component thuộc [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) hỗ trợ chọn và xem trước tập tin (Hiện tại chỉ hỗ trợ tập tin là hình ảnh).

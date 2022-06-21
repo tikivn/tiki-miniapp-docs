@@ -1,5 +1,7 @@
 ---
 title: Interstitiad.load
+sidebar_custom_props:
+  description: Tải quảng cáo
 ---
 
 Thực hiện việc tải quảng cáo

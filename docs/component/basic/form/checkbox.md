@@ -1,5 +1,7 @@
 ---
 title: checkbox
+sidebar_custom_props:
+  description: Component cho phép người dùng chọn một hoặc nhiều phương án
 ---
 
 `checkbox` là một component cho phép người dùng chọn một hoặc nhiều phương án.

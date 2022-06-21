@@ -1,5 +1,7 @@
 ---
 title: my.stopCompass
+sidebar_custom_props:
+  description: Dừng theo dõi dữ liệu compass
 ---
 
 `my.stopCompass` là API dùng để dừng theo dõi dữ liệu compass.

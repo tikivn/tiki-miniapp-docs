@@ -1,5 +1,7 @@
 ---
 title: my.onUnhandledRejection
+sidebar_custom_props:
+  description: Dùng để lắng nghe sự kiện khi 1 Promise reject xảy ra nhưng không được handle, tương đương với function `onUnhandledRejection` trong app.js
 ---
 
 ## Giới thiệu

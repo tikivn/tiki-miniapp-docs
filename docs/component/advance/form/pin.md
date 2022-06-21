@@ -1,8 +1,11 @@
 ---
-title: PIN
+title: pin
+sidebar_custom_props:
+  description: Component Tini UI - Hỗ trợ nhập liệu mã PIN
 ---
 
-Để sử dụng `PIN`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.4.1` trở lên.
+- `PIN` là component hỗ trợ nhập liệu mã PIN.
+- Để sử dụng `PIN`, bạn cần phải cài [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) từ version `0.4.1` trở lên.
 
 ## Quét mã để trải nghiệm
 

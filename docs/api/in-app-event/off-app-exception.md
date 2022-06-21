@@ -1,5 +1,7 @@
 ---
 title: my.offUnhandledRejection
+sidebar_custom_props:
+  description: Dùng để remove listener của event `onUnhandledRejection` từ trước
 ---
 
 ## Giới thiệu

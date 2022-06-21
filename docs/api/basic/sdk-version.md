@@ -1,5 +1,7 @@
 ---
 title: my.SDKVersion
+sidebar_custom_props:
+  description: Lấy version hiện tại của SDK
 ---
 
 `my.SDKVersion` là API dùng để lấy version hiện tại của SDK.

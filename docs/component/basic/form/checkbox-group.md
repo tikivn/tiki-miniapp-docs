@@ -1,5 +1,7 @@
 ---
 title: checkbox-group
+sidebar_custom_props:
+  description: Nhóm các checkbox lại với nhau
 ---
 
 - `checkbox-group` dùng để nhóm các [checkbox](checkbox) lại với nhau, value của `checkbox-group` sẽ là một mảng chứa value của các `checkbox` được chọn

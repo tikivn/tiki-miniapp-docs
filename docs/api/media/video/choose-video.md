@@ -1,5 +1,7 @@
 ---
 title: my.chooseVideo
+sidebar_custom_props:
+  description: Dùng để quay video hoặc chọn video từ album cục bộ
 ---
 
 `my.chooseVideo` là API dùng để quay video hoặc chọn video từ album cục bộ.

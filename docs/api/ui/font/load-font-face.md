@@ -1,5 +1,7 @@
 ---
 title: my.loadFontFace
+sidebar_custom_props:
+  description: Load 1 web font
 ---
 
 `my.loadFontFace` là API để load 1 web font.

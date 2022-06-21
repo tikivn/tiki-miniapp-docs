@@ -1,5 +1,7 @@
 ---
 title: my.onAppShow
+sidebar_custom_props:
+  description: dùng để lắng nghe sự kiện app show, tương đương với function `onShow` trong app.js
 ---
 
 ## Giới thiệu

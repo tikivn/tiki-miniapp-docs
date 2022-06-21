@@ -1,5 +1,7 @@
 ---
 title: my.onAppError
+sidebar_custom_props:
+  description: Dùng để lắng nghe sự kiện app error khi có error xảy ra trong lúc gọi api, tương đương với function `onError` trong app.js
 ---
 
 ## Giới thiệu
