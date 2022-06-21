@@ -1,5 +1,7 @@
 ---
-title: Calendar
+title: calendar
+sidebar_custom_props:
+  description: Component Tini UI - Hiển thị và hỗ trợ chọn lịch
 ---
 
 - `calendar` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) là thành phẩn nhỏ gọn hiển thị thông tin lịch (ngày, tháng, năm).

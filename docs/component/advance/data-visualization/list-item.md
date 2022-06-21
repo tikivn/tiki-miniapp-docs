@@ -1,5 +1,7 @@
 ---
-title: List item
+title: list-item
+sidebar_custom_props:
+  description: Component Tini UI - Hiển thị một item trong list
 ---
 
 List item là component được sử dụng để hiển thị một item trong list.

@@ -1,5 +1,7 @@
 ---
-title: Avatar
+title: avatar
+sidebar_custom_props:
+  description: Component Tini UI - Hiển thị hình ảnh của user, tên, hoặc text giới thiệu
 ---
 
 `avatar` là component dùng để hiển thị hình ảnh của user, tên, hoặc text giới thiệu.

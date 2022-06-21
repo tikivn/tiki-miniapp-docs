@@ -1,5 +1,7 @@
 ---
-title: Badge
+title: badge
+sidebar_custom_props:
+  description: Component Tini UI - Hiển thị red dot, số hoặc kí tự, dùng để nhắc nhở cho user khi có update, hoặc hiển thị thông báo
 ---
 
 Hiển thị red dot, số hoặc kí tự, dùng để nhắc nhở cho user khi có update, hoặc hiển thị thông báo.

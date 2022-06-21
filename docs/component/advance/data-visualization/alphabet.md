@@ -1,5 +1,7 @@
 ---
-title: Alphabet
+title: alphabet
+sidebar_custom_props:
+  description: Component Tini UI - Hiển thị các chữ cái trong bảng Alphabet
 ---
 
 Alphabet là component được sử dụng để hiển thị các chữ cái trong bảng Alphabet.

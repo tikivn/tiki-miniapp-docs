@@ -1,5 +1,7 @@
 ---
-title: Toast Bar
+title: toast-bar
+sidebar_custom_props:
+  description: Component Tini UI - Hỗ trợ thông báo
 ---
 
 - `toast-bar` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) hỗ trợ show toast. Bạn có thể dùng jsAPI showToast với chức năng cũng gần tương tự
@@ -10,33 +12,31 @@ title: Toast Bar
 
 <!-- <QRCode page="pages/component/advance/form/tooltip/index" /> -->
 
-
 ## Cài đặt `tini-ui`:
 
 ```bash
 $> yarn add @tiki.vn/tini-ui
 ```
 
-## Thuộc tính 
+## Thuộc tính
 
-| Thuộc tính           | Kiểu dữ liệu                                 | Giá trị mặc định   | Mô tả                                                                                      |
-| ----------------- | ------------------------------------ | ------------- | ----------------------------------------------------------------------------------------------- |
-| type              | `'success'` \| `'error'` \| `'info'` | 'success'     | Loại toast bar, mỗi type sẽ có một màu khác nhau                                                |
-| iconLeft          | string                               | ''            | Icon phía bên trái, hỗ trợ các giá trị trong [icon component](/docs/component/basic/basic/icon) |
-| show              | boolean                              | false         | Cho phép hiển thị toast bar hay không                                                           |
-| className         | string                               | ''            | Custom class cho toast bar                                                                      |
-| style             | string                               | ''            | Style cho toast bar                                                                             |
-| content           | string                               | ''            | Nội dung của toast bar                                                                          |
-| textColor         | string                               | ''            | Nội dung của toast bar                                                                          |
-| placement         | `'top'` \| `'bottom'`                | 'bottom'      | Vị trí hiển thị của tooltip                                                                     |
-| top               | string                               | '24px'        | Vị trí của toast bar đi từ top của page, có tác dụng khi placement là `top`                     |
-| bottom            | string                               | '24px'        | Vị trí của toast bar đi từ bottom của page, có tác dụng khi placement là `bottom`               |
-| duration          | number                               | 3000          | Thời gian toast bar xuất hiện                                                                   |
-| animationDuration | number                               | 300           | Thời gian animation của toast bar                                                               |
-| zIndex            | number                               | 999           | z-index của toast bar                                                                           |
-| onTapAction       | function                             |               | Sự kiện được gọi khi bấm vào action trên toast bar                                              |
-| onClose           | function                             |               | Sự kiện được gọi khi bấm vào icon close                                                         |
-
+| Thuộc tính        | Kiểu dữ liệu                         | Giá trị mặc định | Mô tả                                                                                           |
+| ----------------- | ------------------------------------ | ---------------- | ----------------------------------------------------------------------------------------------- |
+| type              | `'success'` \| `'error'` \| `'info'` | 'success'        | Loại toast bar, mỗi type sẽ có một màu khác nhau                                                |
+| iconLeft          | string                               | ''               | Icon phía bên trái, hỗ trợ các giá trị trong [icon component](/docs/component/basic/basic/icon) |
+| show              | boolean                              | false            | Cho phép hiển thị toast bar hay không                                                           |
+| className         | string                               | ''               | Custom class cho toast bar                                                                      |
+| style             | string                               | ''               | Style cho toast bar                                                                             |
+| content           | string                               | ''               | Nội dung của toast bar                                                                          |
+| textColor         | string                               | ''               | Nội dung của toast bar                                                                          |
+| placement         | `'top'` \| `'bottom'`                | 'bottom'         | Vị trí hiển thị của tooltip                                                                     |
+| top               | string                               | '24px'           | Vị trí của toast bar đi từ top của page, có tác dụng khi placement là `top`                     |
+| bottom            | string                               | '24px'           | Vị trí của toast bar đi từ bottom của page, có tác dụng khi placement là `bottom`               |
+| duration          | number                               | 3000             | Thời gian toast bar xuất hiện                                                                   |
+| animationDuration | number                               | 300              | Thời gian animation của toast bar                                                               |
+| zIndex            | number                               | 999              | z-index của toast bar                                                                           |
+| onTapAction       | function                             |                  | Sự kiện được gọi khi bấm vào action trên toast bar                                              |
+| onClose           | function                             |                  | Sự kiện được gọi khi bấm vào icon close                                                         |
 
 ## Sample Code
 

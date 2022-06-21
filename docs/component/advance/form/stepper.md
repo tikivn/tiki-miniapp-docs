@@ -1,5 +1,7 @@
 ---
-title: Stepper
+title: stepper
+sidebar_custom_props:
+  description: Component Tini UI - Tăng hoặc giảm giá trị input
 ---
 
 `stepper` dùng để tăng hoặc giảm giá trị hiện tại.

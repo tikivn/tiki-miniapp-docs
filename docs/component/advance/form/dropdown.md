@@ -1,5 +1,7 @@
 ---
-title: Dropdown
+title: dropdown
+sidebar_custom_props:
+  description: Component Tini UI -Hỗ trợ bottom sheet cho phép hiển thị và chọn data
 ---
 
 - `dropdown` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui). Với giao diện gần giống với `textfield`, nhưng có hỗ trợ bottom sheet khi bấm vào cho phép hiển thị và chọn data

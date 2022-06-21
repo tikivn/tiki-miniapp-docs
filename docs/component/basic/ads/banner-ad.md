@@ -1,5 +1,5 @@
 ---
-title: Banner Ad
+title: ad
 sidebar_custom_props:
   description: Component dùng để hiển thị quảng cáo dạng banner ngang
 ---

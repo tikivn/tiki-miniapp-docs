@@ -1,5 +1,7 @@
 ---
-title: Bottom Sheet
+title: bottom-sheet
+sidebar_custom_props:
+  description: Component Tini UI - Hiển thị modal show từ dưới lên
 ---
 
 Bottom Sheet là component được sử dụng để hiển thị modal show từ dưới lên.

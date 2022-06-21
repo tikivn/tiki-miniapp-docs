@@ -1,5 +1,7 @@
 ---
-title: Chip
+title: chip
+sidebar_custom_props:
+  description: Component Tini UI - Diễn tả cho input, attribute, hoặc action
 ---
 
 - `chip` là component trong [tini-ui](https://www.npmjs.com/package/@tiki.vn/tini-ui) là thành phẩn nhỏ gọn diễn tả cho input, attribute, hoặc action.

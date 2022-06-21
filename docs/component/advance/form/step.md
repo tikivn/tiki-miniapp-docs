@@ -1,5 +1,7 @@
 ---
-title: Step
+title: step
+sidebar_custom_props:
+  description: Component Tini UI - Hỗ trợ tạo các bước trên multi-step form
 ---
 
 `steps` là component dùng để tạo các bước trên multi-step form.

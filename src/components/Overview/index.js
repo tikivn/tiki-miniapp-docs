@@ -4,13 +4,15 @@ import uniqueid from 'lodash.uniqueid';
 import React, {memo, useCallback} from 'react';
 import './styles.scss';
 
-export const Overview = memo(() => {
+export const Overview = memo(({excludes = []}) => {
   const sidebars = useCurrentSidebarCategory();
 
   const renderHTML = useCallback(data => {
     const html = [];
 
     const generateHTML = (sidebar, result, level) => {
+      if (excludes.includes(sidebar.label)) return;
+
       if (sidebar.type === 'link' && sidebar.customProps?.description) {
         result.push(
           <tr className="overview-row" key={sidebar.label}>
@@ -30,6 +32,7 @@ export const Overview = memo(() => {
             `h${level}`,
             {
               key: sidebar.label,
+              className: `overview-h${level}`,
             },
             sidebar.label,
           ),
@@ -68,7 +71,7 @@ export const Overview = memo(() => {
     return html;
   }, []);
 
-  return <>{renderHTML(sidebars)}</>;
+  return <>{renderHTML(sidebars.items)}</>;
 });
 
 export default Overview;

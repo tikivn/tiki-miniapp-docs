@@ -1,8 +1,10 @@
 ---
-title: Sidebar
+title: sidebar
+sidebar_custom_props:
+  description: Component Tini UI - là một cột hiển thị nội dung ở bên trái hoặc phải trên app dọc theo nội dung chính
 ---
 
-`sidebar`
+`sidebar` là một cột hiển thị nội dung ở bên trái hoặc phải trên app dọc theo nội dung chính
 
 ## Quét mã để trải nghiệm
 
