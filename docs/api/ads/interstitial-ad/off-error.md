@@ -1,5 +1,7 @@
 ---
 title: Interstitiad.offError
+sidebar_custom_props:
+  description: Huỷ việc lắng nghe sự kiện quảng cáo bị lỗi
 ---
 
 Huỷ việc lắng nghe sự kiện quảng cáo bị lỗi.

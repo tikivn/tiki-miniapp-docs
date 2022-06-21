@@ -1,5 +1,7 @@
 ---
 title: my.createInterstitialAd
+sidebar_custom_props:
+  description: Hiển thị quảng cáo dạng popup. Khi dùng jsapi này sẽ trả ra 1 instance `interstitial-ad`
 ---
 
 `my.createInterstitialAd` là API dùng để hiển thị quảng cáo dạng popup. Khi dùng jsapi này sẽ trả ra 1 instance [InterstitialAd](interstitial-ad/introduction.md)
