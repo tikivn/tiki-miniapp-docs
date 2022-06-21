@@ -1,5 +1,7 @@
 ---
 title: my.offNetworkStatusChange
+sidebar_custom_props:
+  description: Huỷ nhận sự kiện thay đổi trạng thái mạng của thiết bị
 ---
 
 `my.offNetworkStatusChange` là API dùng để huỷ nhận sự kiện thay đổi trạng thái mạng của thiết bị.

@@ -1,5 +1,7 @@
 ---
 title: my.startCompass
+sidebar_custom_props:
+  description: Start theo dõi dữ liệu compass
 ---
 
 `my.startCompass` là API dùng để start theo dõi dữ liệu compass.

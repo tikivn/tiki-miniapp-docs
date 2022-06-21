@@ -1,5 +1,7 @@
 ---
 title: my.bioMetrics.deleteKey
+sidebar_custom_props:
+  description: Xoá cặp key đề cập ở my.bioMetrics.createKey
 ---
 
 `my.bioMetrics.deleteKey` là API để xoá cặp key đề cập ở JSAPI [my.bioMetrics.createKey](./create-key) nếu có.

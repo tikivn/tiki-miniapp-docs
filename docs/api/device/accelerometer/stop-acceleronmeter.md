@@ -1,22 +1,22 @@
 ---
-title: my.stopCompass
+title: my.stopAccelerometer
 sidebar_custom_props:
-  description: Dừng theo dõi dữ liệu compass
+  description: Dừng lắng nghe các sự kiện thay đổi dữ liệu cảm biến gia tốc
 ---
 
-`my.stopCompass` là API dùng để dừng theo dõi dữ liệu compass.
+`my.stopAccelerometer` là một API dùng để stop lắng nghe các sự kiện thay đổi dữ liệu cảm biến gia tốc.
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/api/compass/index" />
+<QRCode page="pages/api/acceleronmeter/index" />
 
-<!-- ## Demo
+## Demo
 
 import { Simulator } from '@site/src/components/Simulator';
 
-<Simulator page="pages/api/compass/index" /> -->
+<Simulator page="pages/api/acceleronmeter/index" />
 
 ## API Params
 
@@ -26,30 +26,32 @@ import { Simulator } from '@site/src/components/Simulator';
 | fail       | Function     | Callback function khi thực hiện thất bại.   |
 | complete   | Function     | Callback function khi thực hiện hoàn tất.   |
 
-## Sample Code
+### Sample Code
 
 ```js
 Page({
   onReady() {
-    this.compassChangeCallback = (res) => {
+    this.acceleronmeterChangeCallback = (res) => {
       console.log(res);
     };
-    my.startCompass({
+    my.startAcceleronmeter({
       interval: 'ui',
       success: () => {
-        my.onCompassChange(this.compassChangeCallback);
+        my.onAcceleronmeterChange(
+          this.acceleronmeterChangeCallback
+        );
       },
       fail: (res) => {
         my.alert({ title: 'Fail', content: res.errorMessage });
       }
     });
-  },
-  onUnload() {
-    my.stopCompass({
-      success: () => {
-        my.offCompassChange(this.compassChangeCallback);
-      }
-    });
   }
+  onUnload() {
+    my.stopAcceleronmeter({
+      success: () => {
+        my.offAcceleronmeterChange(this.acceleronmeterChangeCallback);
+      },
+    });
+  },
 });
 ```

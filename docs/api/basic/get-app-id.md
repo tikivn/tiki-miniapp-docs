@@ -1,5 +1,7 @@
 ---
 title: my.getAppIdSync
+sidebar_custom_props:
+  description: Lấy ID của Mini App hiện tại
 ---
 
 `my.getAppIdSync` là API dùng để lấy ID của Mini App hiện tại.

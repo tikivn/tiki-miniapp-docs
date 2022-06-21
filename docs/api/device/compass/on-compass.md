@@ -1,5 +1,7 @@
 ---
 title: my.onCompassChange
+sidebar_custom_props:
+  description: Theo dõi các sự kiện thay đổi dữ liệu compass
 ---
 
 `my.onCompassChange` là một API để theo dõi các sự kiện thay đổi dữ liệu compass. Sau khi giao diện được gọi, quá trình giám sát sẽ tự động bắt đầu và khoảng thời gian gọi lại là 200ms. Bạn có thể sử dụng my.offCompassChange() để dừng việc giám sát.

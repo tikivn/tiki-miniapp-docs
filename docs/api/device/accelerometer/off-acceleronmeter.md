@@ -1,35 +1,35 @@
 ---
-title: my.offCompassChange
+title: my.offAcceleronmeterChange
 sidebar_custom_props:
-  description: Dừng việc theo dõi dữ liệu compass
+  description: Dừng việc theo dõi dữ liệu acceleronmeter
 ---
 
-`my.offCompassChange` là API giúp dừng việc theo dõi dữ liệu compass.
+`my.offAcceleronmeterChange` là API giúp dừng việc theo dõi dữ liệu acceleronmeter.
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/api/compass/index" />
+<QRCode page="pages/api/acceleronmeter/index" />
 
-<!-- ## Demo
+## Demo
 
 import { Simulator } from '@site/src/components/Simulator';
 
-<Simulator page="pages/api/compass/index" /> -->
+<Simulator page="pages/api/acceleronmeter/index" />
 
 ## API Params
 
 - Khi gọi API kèm theo callback thì chỉ event callback đó được xoá:
 
 ```js
-my.offCompassChange(this.callback);
+my.offAcceleronmeterChange(this.callback);
 ```
 
 - Khi callback không được truyền vào, tất cả các event callback được xoá:
 
 ```js
-my.offCompassChange();
+my.offAcceleronmeterChange();
 ```
 
 ## Sample Code
@@ -38,10 +38,10 @@ my.offCompassChange();
 Page({
   onLoad() {
     this.callback = this.callback.bind(this);
-    my.offCompassChange(this.callback);
+    my.offAcceleronmeterChange(this.callback);
   },
   onUnload() {
-    my.offCompassChange(this.callback);
+    my.offAcceleronmeterChange(this.callback);
   },
   callback(res) {}
 });

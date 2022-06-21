@@ -1,5 +1,7 @@
 ---
 title: my.bioMetrics.createSignature
+sidebar_custom_props:
+  description: Tạo ra chuỗi signature từ challenge. Tham khảo full luồng xác thực người dùng bằng biometrics
 ---
 
 `my.bioMetrics.createSignature` là API tạo ra chuỗi signature từ challenge.

@@ -1,5 +1,7 @@
 ---
 title: my.exitMiniApp
+sidebar_custom_props:
+  description: Đóng miniapp hiện tại
 ---
 
 `my.exitMiniApp` là API dùng để đóng miniapp hiện tại.
