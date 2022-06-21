@@ -1,5 +1,7 @@
 ---
 title: my.addIconsToNavigationBar
+sidebar_custom_props:
+  description: Thêm icons vào navigation bar bên cạnh nút ba chấm nằm ngang (⋯) mở menu
 ---
 
 **my.setNavigationBar** là API để thêm icons vào navigation bar bên cạnh nút ba chấm nằm ngang (⋯) mở menu.

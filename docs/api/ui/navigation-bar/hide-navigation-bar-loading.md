@@ -1,5 +1,7 @@
 ---
 title: my.hideNavigationBarLoading
+sidebar_custom_props:
+  description: Ẩn đi loading animation trên thanh Navigation Bar của page hiện tại
 ---
 
 `my.hideNavigationBarLoading` là API để ẩn đi loading animation trên thanh Navigation Bar của page hiện tại

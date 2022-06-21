@@ -1,5 +1,7 @@
 ---
 title: my.startPullDownRefresh
+sidebar_custom_props:
+  description: Active tính năng pull down to refresh, khi được gọi sẽ có animation loading tương đương với việc manual pull down list
 ---
 
 `my.startPullDownRefresh` là api để active tính năng pull down to refresh, khi được gọi sẽ có animation loading tương đương với việc manual pull down list. Hàm `onPullDownRefresh` của `page` sẽ được trigger. Sau khi đã lấy được dữ liệu, có thể gọi `my.stopPullDownRefresh` để stop loading.

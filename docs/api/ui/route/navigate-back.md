@@ -1,5 +1,7 @@
 ---
 title: my.navigateBack
+sidebar_custom_props:
+  description: Dùng để đóng màn hình hiện tại và trở lại màn hình trước đó
 ---
 
 `my.navigateTo` là API dùng để đóng màn hình hiện tại và trở lại màn hình trước đó.

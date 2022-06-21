@@ -1,5 +1,7 @@
 ---
 title: my.createAnimation
+sidebar_custom_props:
+  description: Tạo ra một animation instance
 ---
 
 `my.createAnimation` là API để tạo ra một animation instance.

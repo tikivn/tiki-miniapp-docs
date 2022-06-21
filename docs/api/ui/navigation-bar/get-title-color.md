@@ -1,5 +1,7 @@
 ---
 title: my.getTitleColor
+sidebar_custom_props:
+  description: Lấy background color của Navigation Bar
 ---
 
 `my.getTitleColor` là API để lấy background color của Navigation Bar.

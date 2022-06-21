@@ -1,5 +1,7 @@
 ---
 title: my.switchTab
+sidebar_custom_props:
+  description: Dùng để nhảy về một tab ở màn hình home
 ---
 
 `my.switchTab` là API dùng để nhảy về một tab ở màn hình home

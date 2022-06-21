@@ -1,5 +1,7 @@
 ---
 title: my.redirectTo
+sidebar_custom_props:
+  description: Dùng để di chuyển từ màn hình hiện tại tới màn hình mong muốn trong ứng dụng
 ---
 
 `my.redirectTo` là API dùng để di chuyển từ màn hình hiện tại tới màn hình mong muốn trong ứng dụng.

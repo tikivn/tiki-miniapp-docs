@@ -1,5 +1,7 @@
 ---
 title: my.multiLevelSelect
+sidebar_custom_props:
+  description: Tạo component select đa cấp
 ---
 
 `my.multiLevelSelect` là API dùng để tạo component select đa cấp.

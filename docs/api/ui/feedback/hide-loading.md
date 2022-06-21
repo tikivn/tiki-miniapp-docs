@@ -1,5 +1,7 @@
 ---
 title: my.hideLoading
+sidebar_custom_props:
+  description: Ẩn loading
 ---
 
 `my.hideLoading` là api để hide loading.

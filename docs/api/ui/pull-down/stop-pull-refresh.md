@@ -1,5 +1,7 @@
 ---
 title: my.stopPullDownRefresh
+sidebar_custom_props:
+  description: Stop loading khi đã gọi `my.startPullDownRefresh` hoặc manual pull down
 ---
 
 `my.stopPullDownRefresh` là api để stop loading khi đã gọi `my.startPullDownRefresh` hoặc manual pull down. Khi đã có được dữ liệu, phải gọi hàm này để tắt loading.

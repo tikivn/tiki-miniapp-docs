@@ -1,5 +1,7 @@
 ---
 title: my.navigateBackMiniApp
+sidebar_custom_props:
+  description: Dùng để quay lại app trước đó hoặc nhảy tới 1 app bất kỳ đã được mở trước đó
 ---
 
 ## Giới thiệu

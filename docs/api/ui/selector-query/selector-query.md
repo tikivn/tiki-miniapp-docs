@@ -1,5 +1,7 @@
 ---
 title: my.createSelectorQuery
+sidebar_custom_props:
+  description: Dùng để tạo SelectorQuery object
 ---
 
 `my.createSelectorQuery` API dùng để tạo SelectorQuery object. Với SelectorObject bạn có thể truy cập một số thông tin cơ bản của một node trên UI sử dụng css selector.
@@ -11,7 +13,7 @@ title: my.createSelectorQuery
 ### Selector
 
 - **select(selector)**: dùng để truy xuất thông tin node đầu tiên khớp với selector. selector có thể là class hoặc là id selector.
--* **selectAll(selector)**: dùng để truy xuất thông tin của tất cả các nodes khớp với selector.
+  -\* **selectAll(selector)**: dùng để truy xuất thông tin của tất cả các nodes khớp với selector.
 - **selectViewport()**: dùng để truy xuất thông tin trong window.
 
 ### Action
@@ -37,18 +39,22 @@ Các action sau được hỗ trợ trên tini framework:
 Page({
   createSelectorQuery() {
     my.createSelectorQuery()
-      .select('#target-id').boundingClientRect()
-      .select('.target-class').boundingClientRect()
-      .selectAll('.all').boundingClientRect()
-      .selectViewport().boundingClientRect()
-      .selectViewport().scrollOffset()
+      .select('#target-id')
+      .boundingClientRect()
+      .select('.target-class')
+      .boundingClientRect()
+      .selectAll('.all')
+      .boundingClientRect()
+      .selectViewport()
+      .boundingClientRect()
+      .selectViewport()
+      .scrollOffset()
       .exec((ret) => {
         console.log(ret);
         my.alert({
-          content: JSON.stringify(ret, null, 2),
+          content: JSON.stringify(ret, null, 2)
         });
-      })
+      });
   }
-})
+});
 ```
-

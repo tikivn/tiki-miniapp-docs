@@ -1,5 +1,7 @@
 ---
 title: my.confirm
+sidebar_custom_props:
+  description: Hiển thị confirm popup
 ---
 
 `my.confirm` là API để hiển thị Confirm popup. Có thể set được title, content, text của Confirm và Cancel button

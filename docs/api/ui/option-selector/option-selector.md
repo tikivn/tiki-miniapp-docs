@@ -1,5 +1,7 @@
 ---
 title: my.optionsSelect
+sidebar_custom_props:
+  description: Dùng để tạo component Select. Bạn có thể tạo component Select 1 cấp hoặc 2 cấp
 ---
 
 `my.optionsSelect` là API dùng để tạo component Select. Bạn có thể tạo component Select 1 cấp hoặc 2 cấp.

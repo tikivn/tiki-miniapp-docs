@@ -1,5 +1,7 @@
 ---
 title: my.setBackgroundColor
+sidebar_custom_props:
+  description: Thay đổi màu nền của page
 ---
 
 `my.setBackgroundColor` là API để thay đổi màu nền của page.
@@ -20,5 +22,3 @@ my.setBackgroundColor({
   backgroundColor: '#ff0000'
 });
 ```
-
-

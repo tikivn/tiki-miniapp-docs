@@ -1,5 +1,7 @@
 ---
 title: my.datePicker
+sidebar_custom_props:
+  description: Cho phép user chọn thời gian
 ---
 
 `my.datePicker` là API cho phép user chọn thời gian. Chỉ hỗ trợ từ version 1.84.13 trở lên.

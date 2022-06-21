@@ -1,5 +1,7 @@
 ---
 title: my.hideKeyboard
+sidebar_custom_props:
+  description: Ẩn bàn phím
 ---
 
 `my.hideKeyboard` là API dùng để ẩn bàn phím.

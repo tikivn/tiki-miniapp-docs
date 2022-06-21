@@ -1,5 +1,7 @@
 ---
 title: my.showLoading
+sidebar_custom_props:
+  description: Hiển thị loading
 ---
 
 `my.showLoading` là api để hiển thị Loading. Có thể manual tắt loading bằng cách dùng api `my.hideLoading`.

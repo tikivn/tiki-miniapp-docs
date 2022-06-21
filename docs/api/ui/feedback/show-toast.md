@@ -1,5 +1,7 @@
 ---
 title: my.showToast
+sidebar_custom_props:
+  description: Hiển thị toast từ top và tự hide đi sau 1 khoảng thời gian
 ---
 
 `my.showToast` là API để hiển thị Toast từ top và tự hide đi sau 1 khoảng thời gian được set hoặc dùng `my.hideToast` api.

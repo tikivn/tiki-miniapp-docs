@@ -1,5 +1,7 @@
 ---
 title: my.pageScrollTo
+sidebar_custom_props:
+  description: Dùng để scroll đến vị trí bất kỳ trong trang
 ---
 
 `my.pageScrollTo` là API dùng để scroll đến vị trí bất kỳ trong trang.
