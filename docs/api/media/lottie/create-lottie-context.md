@@ -1,5 +1,7 @@
 ---
 title: my.createLottieContext
+sidebar_custom_props:
+  description: Dùng để tạo ra LottieContext - đối tượng cung cấp các thuôc tính và phương thức giúp bạn điều khiển `lottie` component
 ---
 
 `my.createLottieContext` là API dùng để tạo ra LottieContext - đối tượng cung cấp các thuôc tính và phương thức giúp bạn điều khiển [lottie](/docs/component/basic/media/lottie) component.
@@ -15,7 +17,6 @@ title: my.createLottieContext
 | goToAndStop  | { value: number } | Nhảy tới một thời điểm được chỉ định trong animation sau đó dừng hẳn (stop).                                                  |
 | goToAndPlay  | { value: number } | Nhảy tới một thời điểm được chỉ định, sau đó phát tiếp animation                                                              |
 | setDirection | { value: number } | Thay đổi direction cho lottie. Mặc định là 1. 1: theo chiều bình thường; -1: theo chiều ngược lại                             |
-
 
 ## Sample Code
 

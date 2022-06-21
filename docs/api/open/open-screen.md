@@ -1,5 +1,7 @@
 ---
 title: my.openScreen
+sidebar_custom_props:
+  description: Dùng để mở 1 số màn hình của Tiki
 ---
 
 `my.openScreen` là API dùng để mở 1 số màn hình của Tiki.

@@ -1,5 +1,7 @@
 ---
 title: my.downloadFile
+sidebar_custom_props:
+  description: Dùng để dowload file về máy. File sẽ được lưu trữ tạm ở device
 ---
 
 `my.downloadFile` là API dùng để dowload file về máy. File sẽ được lưu trữ tạm ở device.

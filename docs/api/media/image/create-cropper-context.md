@@ -1,5 +1,7 @@
 ---
 title: my.createCropperContext
+sidebar_custom_props:
+  description: Dùng để tạo ra ImageCropperContext - đối tượng cung cấp phương thức giúp bạn điều khiển `image-cropper` component
 ---
 
 `my.createCropperContext` là API dùng để tạo ra ImageCropperContext - đối tượng cung cấp phương thức giúp bạn điều khiển [ImageCropper](/docs/component/basic/utilities/image-cropper) component.

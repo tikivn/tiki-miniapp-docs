@@ -1,5 +1,7 @@
 ---
 title: my.getSavedFileInfo
+sidebar_custom_props:
+  description: Dùng để lấy thông tin tập tin được lưu cục bộ. Để lấy thông tin tập tin tạm
 ---
 
 `my.getSavedFileInfo` là API dùng để lấy thông tin tập tin được lưu cục bộ. Để lấy thông tin tập tin tạm, sử dụng `my.getFileInfo()`.

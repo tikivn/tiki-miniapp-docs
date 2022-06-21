@@ -1,5 +1,7 @@
 ---
 title: my.getImageInfo
+sidebar_custom_props:
+  description: Dùng để lấy thông tin của 1 ảnh (image). Ảnh có thể từ remote, từ đường dẫn cục bộ hoặc từ resources của app
 ---
 
 `my.getImageInfo` là API dùng để lấy thông tin của 1 ảnh (image). Ảnh có thể từ remote, từ đường dẫn cục bộ hoặc từ resources của app.

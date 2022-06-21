@@ -1,8 +1,10 @@
 ---
 title: my.closeSocket
+sidebar_custom_props:
+  description: Dùng để đóng một WebSocket connection được mở trước đó
 ---
 
-`my.closeSocket`  là API được dùng để đóng một WebSocket connection được mở trước đó.
+`my.closeSocket` là API được dùng để đóng một WebSocket connection được mở trước đó.
 
 :::important Quan trọng
 
@@ -21,13 +23,11 @@ Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của �
 ## Sample Code
 
 ```js
-my.onSocketOpen(function() {
-  my.closeSocket()
-})
+my.onSocketOpen(function () {
+  my.closeSocket();
+});
 
-my.onSocketClose(function(res) {
-  console.log('WebSocket is closed！')
-})
+my.onSocketClose(function (res) {
+  console.log('WebSocket is closed！');
+});
 ```
-
-

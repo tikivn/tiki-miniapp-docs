@@ -1,8 +1,10 @@
 ---
 title: my.previewImage
+sidebar_custom_props:
+  description: Cho phép mở một cửa sổ lớn để xem hình ảnh
 ---
 
-`my.previewImage` là API cho phép mở một cửa sổ lớn để xem hình ảnh
+`my.previewImage` là API cho phép mở một cửa sổ lớn để xem hình ảnh.
 
 **_Khả dụng_**: Chỉ hỗ trợ từ version 1.81.6 trở lên
 

@@ -1,5 +1,7 @@
 ---
 title: my.createVideoContext
+sidebar_custom_props:
+  description: dùng để tạo ra VideoContext - đối tuợng quản lý việc phát video. Cụ thể hơn, nó cung cấp các hàm giúp điều khiển `video` component
 ---
 
 `my.createVideoContext` là API dùng để tạo ra VideoContext - đối tuợng quản lý việc phát video. Cụ thể hơn, nó cung cấp các hàm giúp điều khiển [video](/docs/component/basic/media/video) component.

@@ -1,5 +1,7 @@
 ---
 title: my.uploadFile
+sidebar_custom_props:
+  description: Dùng để upload file từ máy lên server
 ---
 
 `my.uploadFile` là API dùng để upload file từ máy lên server.

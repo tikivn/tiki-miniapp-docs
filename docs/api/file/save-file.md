@@ -1,5 +1,7 @@
 ---
 title: my.saveFile
+sidebar_custom_props:
+  description: Dùng để lưu lại file về thiết bị từ 1 đường dẫn tạm thời (local temporary file)
 ---
 
 `my.saveFile` là API dùng để lưu lại file về thiết bị từ 1 đường dẫn tạm thời (local temporary file)

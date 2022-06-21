@@ -1,5 +1,7 @@
 ---
 title: my.onAppHide
+sidebar_custom_props:
+  description: Dùng để lắng nghe sự kiện app hide (app enter background), tương đương với function `onHide` trong app.js
 ---
 
 ## Giới thiệu

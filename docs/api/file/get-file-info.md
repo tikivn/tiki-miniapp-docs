@@ -1,5 +1,7 @@
 ---
 title: my.getFileInfo
+sidebar_custom_props:
+  description: Dùng để lấy thông tin một tập tin cục bộ. Tập tin có thể ở dạng tạm hoặc được lưu
 ---
 
 `my.getFileInfo` là API dùng để lấy thông tin một tập tin cục bộ. Tập tin có thể ở dạng tạm hoặc được lưu.

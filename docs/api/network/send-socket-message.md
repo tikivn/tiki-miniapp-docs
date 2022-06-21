@@ -1,5 +1,7 @@
 ---
 title: my.sendSocketMessage
+sidebar_custom_props:
+  description: Dùng để gửi dữ liệu thông qua một WebSocket connection
 ---
 
 `my.sendSocketMessage` là một API dùng để gửi dữ liệu thông qua một WebSocket connection. Để sử dụng `my.sendSocketMessage`, bạn trước hết cần thiết lập WebSocket connection bằng `my.connectSocket`, tiếp đến là gọi `my.onSocketOpen` callback.
@@ -21,16 +23,16 @@ Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của �
 
 ## Sample Code
 
-``` js
+```js
 let socketOpen = false;
 let socketMsgQueue = [];
 my.connectSocket({
-   url: 'wss://www.example.com/socketserver'
+  url: 'wss://www.example.com/socketserver'
 });
 
-my.onSocketOpen(function(res) {
+my.onSocketOpen(function (res) {
   socketOpen = true;
-  for (let i = 0; i < socketMsgQueue.length; i++){
+  for (let i = 0; i < socketMsgQueue.length; i++) {
     sendSocketMessage(socketMsgQueue[i]);
   }
   socketMsgQueue = [];

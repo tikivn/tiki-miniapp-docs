@@ -1,5 +1,8 @@
 ---
-title: 'my.getAuthCode'
+sidebar_position: 3
+title: my.getAuthCode
+sidebar_custom_props:
+  description: Lấy ra auth code của một user
 ---
 
 `my.getAuthCode` là API để lấy ra auth code của một user.

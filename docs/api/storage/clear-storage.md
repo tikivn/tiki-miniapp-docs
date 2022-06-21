@@ -1,5 +1,7 @@
 ---
 title: my.clearStorage
+sidebar_custom_props:
+  description: Xoá toàn bộ dữ liệu của app
 ---
 
 `my.clearStorage` là api để xoá toàn bộ dữ liệu của app.

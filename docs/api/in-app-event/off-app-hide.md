@@ -1,5 +1,7 @@
 ---
 title: my.offAppHide
+sidebar_custom_props:
+  description: Dùng để remove listener của event `onAppHide` từ trước
 ---
 
 ## Giới thiệu

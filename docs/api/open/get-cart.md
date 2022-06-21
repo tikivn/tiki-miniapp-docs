@@ -1,5 +1,7 @@
 ---
 title: my.getCart
+sidebar_custom_props:
+  description: Trả về tổng sản phẩm đang có trong giỏ hàng (cart) của Tiki, được lọc theo sellerId
 ---
 
 `my.getCart` là API trả về tổng sản phẩm đang có trong giỏ hàng (cart) của Tiki, được lọc theo sellerId.

@@ -1,5 +1,8 @@
 ---
+sidebar_position: 2
 title: my.saveAddress
+sidebar_custom_props:
+  description: Dùng để lưu địa chỉ vào Sổ địa chỉ của Tiki. Yêu cầu người dùng phải đăng nhập trước
 ---
 
 - `my.saveAddress` là API dùng để lưu địa chỉ vào Sổ địa chỉ của Tiki. Yêu cầu người dùng phải đăng nhập trước

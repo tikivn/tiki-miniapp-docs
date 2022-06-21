@@ -1,5 +1,7 @@
 ---
 title: my.onSocketOpen
+sidebar_custom_props:
+  description: Lắng nghe sự kiện mở connection của WebSocket
 ---
 
 `my.onSocketOpen` là API giúp lắng nghe sự kiện mở connection của WebSocket.
@@ -12,20 +14,18 @@ Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của �
 
 ## API Params
 
-| Thuộc tính | Kiểu dữ liệu     | Mô tả                                                    |
-| ---------- | -------- | ------------------------------------------------------------ |
-| callback   | Function | Callback function khi sự kiện WebSocket open được kích hoạt. |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                        |
+| ---------- | ------------ | ------------------------------------------------------------ |
+| callback   | Function     | Callback function khi sự kiện WebSocket open được kích hoạt. |
 
 ## Sample Code
 
 ```js
 my.connectSocket({
-  url: 'wes://sample',
+  url: 'wes://sample'
 });
 
-my.onSocketOpen(function(res) {
+my.onSocketOpen(function (res) {
   console.log('WebSocket is opened.');
 });
 ```
-
-

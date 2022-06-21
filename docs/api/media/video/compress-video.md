@@ -1,5 +1,7 @@
 ---
 title: my.compressVideo
+sidebar_custom_props:
+  description: Dùng để nén video khiến chúng có dung lượng nhỏ hơn
 ---
 
 `my.compressVideo` là API dùng để nén video khiến chúng có dung lượng nhỏ hơn.

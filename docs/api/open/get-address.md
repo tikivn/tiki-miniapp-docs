@@ -1,5 +1,8 @@
 ---
+sidebar_position: 1
 title: my.getAddress
+sidebar_custom_props:
+  description: Dùng để chọn một địa chỉ từ Sổ địa chỉ của Tiki. Yêu cầu người dùng phải đăng nhập trước
 ---
 
 `my.getAddress` là API dùng để chọn một địa chỉ từ Sổ địa chỉ của Tiki. Yêu cầu người dùng phải đăng nhập trước

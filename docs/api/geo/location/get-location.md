@@ -1,5 +1,7 @@
 ---
 title: my.getLocation
+sidebar_custom_props:
+  description: Dùng để lấy thông tin vị trí địa lí hiện tại của device
 ---
 
 `my.getLocation` là API dùng để lấy thông tin vị trí địa lí hiện tại của device.

@@ -1,5 +1,7 @@
 ---
 title: my.onSocketClose
+sidebar_custom_props:
+  description: Lắng nghe sự kiện mở close của WebSocket
 ---
 
 `my.onSocketClose` là API giúp lắng nghe sự kiện mở close của WebSocket.
@@ -20,14 +22,12 @@ Bạn cần phải thêm tên miền trong phần **Cài đặt chung** của �
 
 ```js
 my.connectSocket({
-  url: 'wes://sample',
+  url: 'wes://sample'
 });
 
 my.closeSocket();
 
-my.onSocketClose(function(res) {
+my.onSocketClose(function (res) {
   console.log('WebSocket is closed.');
 });
 ```
-
-

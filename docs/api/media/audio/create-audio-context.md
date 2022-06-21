@@ -1,5 +1,7 @@
 ---
 title: my.createAudioContext
+sidebar_custom_props:
+  description: Dùng để tạo ra AudioContext - đối tượng quản lý việc phát audio trên Tini App
 ---
 
 `my.createAudioContext` là API dùng để tạo ra AudioContext - đối tượng quản lý việc phát audio trên Tini App. Cụ thể hơn, nó cung cấp các hàm giúp điều khiển [audio](/docs/component/basic/media/audio) component.
@@ -25,5 +27,5 @@ Page({
     const audio = my.createAudioContext('audio1');
     audio.pause();
   }
-})
+});
 ```

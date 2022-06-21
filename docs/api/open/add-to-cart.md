@@ -1,5 +1,7 @@
 ---
 title: my.addToCart
+sidebar_custom_props:
+  description: Thêm 1 hoặc nhiều sản phẩm vào giỏ hàng (cart) của Tiki
 ---
 
 `my.addToCart` là API để thêm 1 hoặc nhiều sản phẩm vào giỏ hàng (cart) của Tiki.

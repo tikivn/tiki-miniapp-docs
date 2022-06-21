@@ -1,5 +1,7 @@
 ---
 title: my.offSocketOpen
+sidebar_custom_props:
+  description: Dừng lắng nghe sự kiện mở WebSocket connection trước đó
 ---
 
 `my.offSocketOpen` là API giúp dừng lắng nghe sự kiện mở WebSocket connection trước đó.
@@ -19,8 +21,8 @@ my.offSocketOpen(this.callback);
 ```
 
 - Khi callback không được truyền vào, tất cả các callback được xoá khỏi danh sách lắng nghe:
-  
-```js
+
+````js
 my.offSocketOpen();
 
 ## Sample Code
@@ -37,7 +39,8 @@ Page({
   callback(res) {
   },
 })
-```
+````
 
+```
 
 ```

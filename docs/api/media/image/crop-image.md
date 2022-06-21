@@ -1,5 +1,7 @@
 ---
 title: my.cropImage
+sidebar_custom_props:
+  description: Dùng để crop hình ảnh
 ---
 
 - `my.cropImage` là API dùng để crop hình ảnh.

@@ -1,5 +1,8 @@
 ---
-title: 'my.getUserInfo'
+sidebar_position: 4
+title: my.getUserInfo
+sidebar_custom_props:
+  description: Lấy các thông tin cơ bản của users (tên, ảnh, số điện thoại, email và tiki user id)
 ---
 
 `my.getUserInfo` là API để lấy các thông tin cơ bản của users (tên, ảnh, số điện thoại, email và tiki user id)

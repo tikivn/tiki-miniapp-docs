@@ -1,5 +1,7 @@
 ---
-title: 'my.callSecuritySystem'
+title: my.callSecuritySystem
+sidebar_custom_props:
+  description: Xác thực người dùng khi gọi các APIs lấy dữ liệu từ hệ thống Tiki
 ---
 
 `my.callSecuritySystem` dùng để xác thực người dùng khi gọi các APIs lấy dữ liệu từ hệ thống Tiki.

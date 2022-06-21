@@ -1,5 +1,7 @@
 ---
 title: my.openNativeAppStore
+sidebar_custom_props:
+  description: Dùng để truy cập đến một ứng dụng trên Apple Store hay Google Play Store
 ---
 
 `my.openNativeAppStore` là API dùng để truy cập đến một ứng dụng trên Apple Store hay Google Play Store.
@@ -18,9 +20,9 @@ Các thuộc tính:
 
 ### Callback function payload
 
-* success callback payload là 1 biến kiểu boolean và luôn mang giá trị true
+- success callback payload là 1 biến kiểu boolean và luôn mang giá trị true
 
-* Fail callback payload
+- Fail callback payload
 
 | Thuộc tính   | Kiểu dữ liệu | Mô tả        |
 | ------------ | ------------ | ------------ |
@@ -49,10 +51,8 @@ Page({
       },
       fail: (e) => {
         console.log(e);
-      },
+      }
     });
-  },
+  }
 });
 ```
-
-

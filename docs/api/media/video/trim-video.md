@@ -1,5 +1,7 @@
 ---
 title: my.trimVideo
+sidebar_custom_props:
+  description: Cho phép cắt video trong 1 khoảng thời gian
 ---
 
 `my.trimVideo` là API cho phép cắt video trong 1 khoảng thời gian.
