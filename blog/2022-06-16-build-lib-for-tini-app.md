@@ -1,4 +1,6 @@
-# Xây dựng thư viện và tích hợp với tini-app
+---
+title: Xây dựng thư viện và tích hợp với tini-app
+---
 
 ## Những gì bạn sẽ học trong bài blog này
 

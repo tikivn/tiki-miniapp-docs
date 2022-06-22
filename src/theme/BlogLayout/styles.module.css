@@ -10,6 +10,11 @@
   overflow-y: auto;
   position: sticky;
   top: calc(var(--ifm-navbar-height) + 2rem);
+  padding-right: 10px;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 4px;
 }
 
 .sidebarItemTitle {
@@ -43,4 +48,15 @@
   .sidebar {
     display: none;
   }
+}
+
+.blogSidebarCategoryLabel {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  user-select: none;
+}
+
+.blogSidebarCategoryList {
+  list-style-type: none;
 }

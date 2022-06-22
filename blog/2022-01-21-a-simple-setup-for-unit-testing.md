@@ -1,7 +1,6 @@
 ---
-title: A simple setup for Unit Testing in the Tiki Tini App
+title: Một ví dụ đơn giản về việc viết unit test cho Tiki Tini App
 image: https://raw.githubusercontent.com/cute-me-on-repos/tiki-tiniapp-with-unit-tests/main/passed-tests.png
-slug: 2022-01-21-a-simple-setup-for-unit-testing
 date: 2022-01-21
 description: Một ví dụ đơn giản về việc viết unit test cho Tiki Tini App
 --- 

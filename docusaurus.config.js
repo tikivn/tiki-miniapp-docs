@@ -162,7 +162,7 @@ module.exports = {
         },
         blog: {
           showReadingTime: true,
-          blogSidebarTitle: 'Bài viết gần đây',
+          blogSidebarTitle: 'Tất cả bài viết',
           blogSidebarCount: 'ALL',
           // editUrl: 'https://github.com/tikivn/tiki-miniapp-docs/blob/master',
         },

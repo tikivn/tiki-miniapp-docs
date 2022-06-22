@@ -1,8 +1,6 @@
 ---
 title: Mini app - cuộc cách mạng trong làng phần mềm di động
-
 image: https://developers.tiki.vn/img/Blog_Miniapp01.png
-slug: 2021-12-14-mini-app-revolution
 date: 2021-12-14
 description: mini app thổi luồng sinh khí mới vào ngành di động
 ---
