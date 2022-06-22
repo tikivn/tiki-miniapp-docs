@@ -1,4 +1,6 @@
-# Build Tini App với TypeScript/Less
+---
+title: Build Tini App với TypeScript/Less
+---
 
 Đợt tháng rồi, mình có đi cafe với 1 ông anh ngồi tám chuyện này kia thì mình có giới thiệu cho ảnh về Tini App của Tiki. Cái mình nói ảnh vậy nè ...
 
@@ -330,4 +332,3 @@ TypeScript là một-lựa-chọn tốt, nhưng nó không thay thế hoàn toà
 Hi vọng bài viết của mình giúp bạn có thêm tài liệu tham khảo khi áp dụng TypeScript cho dự án Tini App của bạn.
 
 Example: https://github.com/anhhuynh5/tiniapp-typescript
-

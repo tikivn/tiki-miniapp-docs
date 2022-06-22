@@ -1,9 +1,6 @@
 ---
 title: Có bao nhiêu loại ứng dụng di động
-
 image: https://developers.tiki.vn/img/Blog_Types_of_Apps.png
-slug: 2021-12-27-types-of-mobile-apps
-date: 2021-12-27
 description: Giới thiệu 4 loại ứng dụng có mặt trên thị trường di động
 ---
 
@@ -69,9 +66,4 @@ Sinh sau đẻ muộn so với các 3 loại ứng dụng kể trên, mini app c
 
 - Mini app phụ thuộc vào super app. Người dùng phải cài super app mới có thể sử dụng mini app.
 
-
 _Hãy cũng nhau tìm hiểu về [Tiki mini app](/docs/introduce/getting-started)_.
-
-
-
-
