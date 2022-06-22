@@ -40,28 +40,30 @@ export default function BlogSidebar({sidebar: originSidebar}) {
         {originSidebar.title}
       </div>
       <ul className={styles.sidebarItemList}>
-        {mappedSidebar.map(category => {
-          return (
-            <>
-              <li className={styles.blogSidebarCategoryLabel}>
-                {category.label}
-              </li>
-              <ul className={styles.blogSidebarCategoryList}>
-                {category.mappedItems.map(item => (
-                  <li key={item.permalink} className={styles.sidebarItem}>
-                    <Link
-                      isNavLink
-                      to={item.permalink}
-                      className={styles.sidebarItemLink}
-                      activeClassName={styles.sidebarItemLinkActive}>
-                      {item.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </>
-          );
-        })}
+        {mappedSidebar?.length &&
+          mappedSidebar.map(category => {
+            return (
+              <>
+                <li className={styles.blogSidebarCategoryLabel}>
+                  {category.label}
+                </li>
+                <ul className={styles.blogSidebarCategoryList}>
+                  {category?.mappedItems?.length &&
+                    category.mappedItems.map(item => (
+                      <li key={item.permalink} className={styles.sidebarItem}>
+                        <Link
+                          isNavLink
+                          to={item.permalink}
+                          className={styles.sidebarItemLink}
+                          activeClassName={styles.sidebarItemLinkActive}>
+                          {item.title}
+                        </Link>
+                      </li>
+                    ))}
+                </ul>
+              </>
+            );
+          })}
       </ul>
     </nav>
   );
