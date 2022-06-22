@@ -18,7 +18,9 @@ export default function BlogSidebar({sidebar: originSidebar}) {
 
           sidebar.mappedItems = sidebar.items.map(item =>
             originSidebar.items.find(originItem =>
-              item.includes(originItem.permalink.split('/').slice(-1).pop()),
+              item.includes(
+                (originItem?.permalink || '').split('/').slice(-1).pop(),
+              ),
             ),
           );
 
@@ -49,17 +51,22 @@ export default function BlogSidebar({sidebar: originSidebar}) {
                 </li>
                 <ul className={styles.blogSidebarCategoryList}>
                   {category?.mappedItems?.length &&
-                    category.mappedItems.map(item => (
-                      <li key={item.permalink} className={styles.sidebarItem}>
-                        <Link
-                          isNavLink
-                          to={item.permalink}
-                          className={styles.sidebarItemLink}
-                          activeClassName={styles.sidebarItemLinkActive}>
-                          {item.title}
-                        </Link>
-                      </li>
-                    ))}
+                    category.mappedItems.map(
+                      item =>
+                        !!item && (
+                          <li
+                            key={item.permalink}
+                            className={styles.sidebarItem}>
+                            <Link
+                              isNavLink
+                              to={item.permalink}
+                              className={styles.sidebarItemLink}
+                              activeClassName={styles.sidebarItemLinkActive}>
+                              {item.title}
+                            </Link>
+                          </li>
+                        ),
+                    )}
                 </ul>
               </>
             );
