@@ -884,7 +884,6 @@ module.exports = {
       items: [
         'backend-api/open-api/overview',
         'backend-api/open-api/user-profile',
-        'backend-api/open-api/auth-code',
       ],
     },
     {
