@@ -884,7 +884,6 @@ module.exports = {
       items: [
         'backend-api/open-api/overview',
         'backend-api/open-api/user-profile',
-        'backend-api/open-api/auth-code',
       ],
     },
     {
@@ -897,6 +896,7 @@ module.exports = {
         'backend-api/platform-api/production',
         'backend-api/platform-api/calculate-signature',
         'backend-api/platform-api/exchange-auth-token',
+        'backend-api/platform-api/auth-code',
       ],
     },
     {
