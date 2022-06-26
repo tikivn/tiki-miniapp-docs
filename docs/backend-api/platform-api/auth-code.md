@@ -1,9 +1,9 @@
 ---
-title: Why should we use Auth Code
+title: Vì Sao Cần Sử Dụng Auth Code
 ---
 
 ### Vì Sao Cần Sử Dụng Auth Code
-Ta có một luồng authentication không sử dụng **Auth Code** sẽ như sau:
+Ta có một luồng authentication không sử dụng **Auth Code** như sau:
 
 <img style={{ margin: '0 auto', display: 'flex' }} src="/img/basic-oauth2.png" alt="Basic oauth2"/>
 
