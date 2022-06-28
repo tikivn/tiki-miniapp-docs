@@ -39,7 +39,7 @@ Thanh toán bằng chuyển khoản ngân hàng đang trong giai đoạn thử n
 
 <img src="/img/Bank_Transfer_Cancel_UML.png" width="800px" alt="Cancel a bank transfer" style={{ margin: '0 auto', display: 'flex' }}/>
 
-## Sơ đồ trạng thái cửa đơn hàng
+## Sơ đồ trạng thái của đơn hàng
 
-<img src="/img/Bank_Transfer_diagram.png" width="600px" alt="Bank Transfer diagram" style={{ margin: '0 auto', display: 'flex' }}/>
+<img src="/img/Bank_Transfer_diagram_v2.png" width="600px" alt="Bank Transfer diagram" style={{ margin: '0 auto', display: 'flex' }}/>
 

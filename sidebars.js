@@ -896,6 +896,7 @@ module.exports = {
         'backend-api/platform-api/production',
         'backend-api/platform-api/calculate-signature',
         'backend-api/platform-api/exchange-auth-token',
+        'backend-api/platform-api/auth-code',
       ],
     },
     {

@@ -1,8 +1,15 @@
 ---
-title: Hủy đơn hàng
+title: Hủy đơn hàng và hoàn tiền
 
 description: Tiki mini app thông báo cho Tiki huỷ đơn hàng; tích hợp thanh toán với Tiki
 ---
+
+:::important Lưu ý
+
+- Chỉ có thể huỷ dơn hàng khi đơn hàng chưa dược hoàn thành (trạng thái của đơn hàng chưa được chuyển thành 'completed')
+- Sau khi đơn hàng được huỷ thành công, khách hàng sẽ được hoàn tiền nếu khách hàng lựa chọn phương thức thanh toán online và đã thanh toán thành công
+
+:::
 
 #### Thông tin HTTP
 

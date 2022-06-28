@@ -45,3 +45,4 @@ Lưu ý để lấy được `refresh_token` cần, khi lấy `auth_code` từ `
 - Tham khảo cách tính signature ở [đây](../platform-api/calculate-signature)
 - Tham khảo một backend ngôn ngữ Python chạy trên Google Cloud ở [đây](../gcp-sponsor/intro)
 - Tham khảo một backend ngôn ngữ Go ở [đây](https://github.com/tikivn/tiniapp-backend-oauth-sample)
+- Tham khảo từ Cộng đồng Tini App developers ở [đây](https://community.tiki.vn/t/h-i-trao-d-i-ki-n-th-c-flow-l-y-access-token-c-a-tini-app/168/3)
