@@ -35,13 +35,13 @@ import { Simulator } from '@site/src/components/Simulator';
 
 ## API Params
 
-| Thuộc tính    | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                           |
-| ------------- | ------------ | :------: | ----------------------------------------------------------------------------------------------- |
-| orderId       | string       |    ✓     | Order Id để thực hiện payment                                                                   |
-| paymentMethod | string       |          | Thêm tham số `paymentMethod : 'cod'` vào nếu khách hàng chọn thanh toán tiền mặt khi giao hàng. |
-| success       | Function     |          | Callback function khi payment được thực hiện thành công, argument luôn là `success`             |
-| fail          | Function     |          | Callback function khi payment thất bại, argument sẽ là error message                            |
-| complete      | Function     |          | Callback function khi việc gọi payment kết thúc cho dù thành công hay thất bại.                 |
+| Thuộc tính    | Kiểu dữ liệu | Bắt buộc | Mô tả                                                                                                                           |
+| ------------- | ------------ | :------: | ------------------------------------------------------------------------------------------------------------------------------- |
+| orderId       | string       |    ✓     | Order Id để thực hiện payment. Mỗi orderId chỉ được dùng để makePayment một lần, không được dùng orderId cũ để makePayment lại. |
+| paymentMethod | string       |          | Thêm tham số `paymentMethod : 'cod'` vào nếu khách hàng chọn thanh toán tiền mặt khi giao hàng.                                 |
+| success       | Function     |          | Callback function khi payment được thực hiện thành công, argument luôn là `success`                                             |
+| fail          | Function     |          | Callback function khi payment thất bại, argument sẽ là error message                                                            |
+| complete      | Function     |          | Callback function khi việc gọi payment kết thúc cho dù thành công hay thất bại.                                                 |
 
 ### Callback function payload
 
