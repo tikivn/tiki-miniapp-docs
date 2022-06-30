@@ -1,6 +1,5 @@
 ---
 title: Tổng quan về Component
-
 description: Giới thiệu & phân loại component trong Tini App Framework
 ---
 

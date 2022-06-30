@@ -167,7 +167,7 @@ module.exports = {
         {
           type: 'category',
           label: 'Basic components',
-          collapsed: true,
+          collapsed: false,
           items: [
             {
               type: 'category',
@@ -259,7 +259,7 @@ module.exports = {
         {
           type: 'category',
           label: 'Advanced components',
-          collapsed: true,
+          collapsed: false,
           items: [
             'component/advance/introduce',
             {

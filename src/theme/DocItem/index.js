@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from 'react';
+import React, {useCallback} from 'react';
 import clsx from 'clsx';
 import DocPaginator from '@theme/DocPaginator';
 import DocVersionBanner from '@theme/DocVersionBanner';
@@ -50,6 +50,19 @@ export default function DocItem(props) {
   const renderTocDesktop =
     canRenderTOC && (windowSize === 'desktop' || windowSize === 'ssr');
 
+  const renderSEOHeaderForJSAPI = useCallback(() => {
+    const PREFIX = 'my.';
+    const prefixPos = title.indexOf(PREFIX);
+
+    if (prefixPos === -1) return null;
+
+    return (
+      <Heading as="h1" className={styles.transparentText}>
+        {title.slice(prefixPos + PREFIX.length)}
+      </Heading>
+    );
+  }, [title]);
+
   return (
     <>
       <Seo {...{title, description, keywords, image}} />
@@ -88,6 +101,7 @@ export default function DocItem(props) {
                     <Heading as="h1">{title}</Heading>
                   </header>
                 )}
+                <>{renderSEOHeaderForJSAPI()}</>
                 {(lastUpdatedAt || lastUpdatedBy) && (
                   <LastUpdated
                     lastUpdatedAt={lastUpdatedAt}

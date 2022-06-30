@@ -22,13 +22,17 @@ export const Simulator = ({
   appId = DEFAULT_APP_ID,
   page = '',
   params = {},
+  description = 'Trải nghiệm thử với trình giả lập bên dưới',
 }) => {
   return (
-    <iframe
-      src={generateURL(appId, page, params)}
-      width={width}
-      height={height}
-    />
+    <>
+      {description && <div style={{marginBottom: 10}}>{description}</div>}
+      <iframe
+        src={generateURL(appId, page, params)}
+        width={width}
+        height={height}
+      />
+    </>
   );
 };
 
