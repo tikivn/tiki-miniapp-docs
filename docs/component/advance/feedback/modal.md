@@ -88,7 +88,7 @@ Page({
 });
 ```
 
-### Basic Modal
+### Basic
 
 <img style={{ width: '100%', maxWidth: 360 }} src="https://salt.tikicdn.com/ts/tiniapp/7e/dc/03/5cbd60b08b386acf78ae09bd715c77be.png"/>
 
@@ -109,7 +109,7 @@ Page({
 </modal>
 ```
 
-### Image Modal
+### Top Image
 
 <img style={{ width: '100%', maxWidth: 360 }} src="https://salt.tikicdn.com/ts/tiniapp/c5/bf/a6/73947c34eb1f06e8b56f43119f36c18a.png"/>
 
