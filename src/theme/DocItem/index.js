@@ -99,9 +99,9 @@ export default function DocItem(props) {
                 {shouldAddTitle && (
                   <header>
                     <Heading as="h1">{title}</Heading>
+                    {renderSEOHeaderForJSAPI()}
                   </header>
                 )}
-                <>{renderSEOHeaderForJSAPI()}</>
                 {(lastUpdatedAt || lastUpdatedBy) && (
                   <LastUpdated
                     lastUpdatedAt={lastUpdatedAt}
