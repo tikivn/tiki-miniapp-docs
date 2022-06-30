@@ -20,3 +20,10 @@
     display: none;
   }
 }
+
+.transparentText {
+  display: block;
+  margin: 0;
+  height: 0;
+  color: var(--ifm-background-color);
+}
