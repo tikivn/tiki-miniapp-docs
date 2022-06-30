@@ -10,6 +10,10 @@
   margin-top: 40px;
 }
 
+h1.overview-h1:first-child {
+  --ifm-h1-font-size: 2rem;
+}
+
 .overview-h2 {
   margin-top: 20px;
 }

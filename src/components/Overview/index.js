@@ -4,7 +4,7 @@ import uniqueid from 'lodash.uniqueid';
 import React, {memo, useCallback} from 'react';
 import './styles.scss';
 
-export const Overview = memo(({excludes = []}) => {
+export const Overview = memo(({excludes = [], className = ''}) => {
   const sidebars = useCurrentSidebarCategory();
 
   const renderHTML = useCallback(data => {
@@ -71,7 +71,9 @@ export const Overview = memo(({excludes = []}) => {
     return html;
   }, []);
 
-  return <>{renderHTML(sidebars.items)}</>;
+  return (
+    <div className={`overview ${className}`}>{renderHTML(sidebars.items)}</div>
+  );
 });
 
 export default Overview;
