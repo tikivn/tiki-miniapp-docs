@@ -12,4 +12,4 @@ import { Simulator } from '@site/src/components/Simulator';
 
 import { Overview } from '@site/src/components/Overview';
 
-<Overview className="exclude-search"/>
+<Overview />
