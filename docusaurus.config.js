@@ -41,7 +41,7 @@ module.exports = {
         ],
         // apiKey: '__w3r0ck__',
         // apiKey: 'XQE43G2ZrXZWpC8utUlXetUSM929kQh6', // UAT
-        apiKey: '25de9A8j5KT1Esm7kdNDOzUE4xQdik0R', // Prod
+        apiKey: '7kxk8OfF50SHDcyLc7uJp4dMCNGnAroC', // Prod
       },
       // Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/documents.md#search-parameters
       typesenseSearchParameters: {
