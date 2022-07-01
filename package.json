@@ -5,7 +5,7 @@
   "scripts": {
     "docusaurus": "yarn generate:style_doc && docusaurus",
     "start": "yarn generate:style_doc && docusaurus start",
-    "build": "yarn generate:style_doc && docusaurus build",
+    "build": "yarn clear && yarn generate:style_doc && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
