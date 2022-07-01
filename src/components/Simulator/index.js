@@ -9,10 +9,11 @@ const generateURL = (appId = '', page = '', params = {}) => {
     page,
     simulateMobile: true,
   };
+
   return `${BASE_URL}/${appId}?${
     typeof window !== 'undefined'
       ? new window.URLSearchParams(fullParams).toString()
-      : 'simulateMobile=true'
+      : `page=${page}&simulateMobile=true`
   }`;
 };
 
