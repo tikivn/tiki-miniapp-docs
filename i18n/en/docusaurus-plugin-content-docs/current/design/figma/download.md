@@ -8,14 +8,11 @@ title: Download here
 
 June 30th, 2022 <br />
 
-
-
 Hi all, this month, we have some quick significant updates. <br />
 
 We change the way we document and try it for the Foundation elements first (Color, Font, Icon...). Next month we will adapt to all components. <br />
 Second, we release the new template - the Hotel booking template. [Click here](https://www.figma.com/community/file/1124335122737712334) for the detail. <br />
 Save the best for last; we launch the iconography library designed by us. <br />
-
 
 That's it, see you next month!!! <br />
 
