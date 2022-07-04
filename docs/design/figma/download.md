@@ -2,6 +2,27 @@
 title: Tải về
 ---
 
+### Phiên bản 2.7
+
+30/06/2022 <br />
+
+
+
+Chào mọi người, bọn mình sẽ cập nhật nhanh về vài thay đổi ngoạn mục trong tháng này. <br />
+
+Đầu tiên là bọn mình thay đổi cách viết tài liệu và đã thử nghiệm ở phần Foundation (Màu sắc, Font, Icon...). Tháng sau bọn mình hy vọng sẽ áp dụng hết cho tất cả component. <br />
+Thứ hai, bọn mình đã cho ra mắt thêm một template mới - Đặt khách sạn. [Click ở đây](https://www.figma.com/community/file/1124335122737712334) để xem thêm chi tiết. <br />
+Và điều xịn xò nhất của tháng này là...bọn mình đã cho ra mắt thư viện icon mà cho chính bọn mình thiết kế. <br />
+
+
+Đó là những cập nhật nhanh trong tháng này, hẹn mọi người vào tháng sau nhé!!! <br />
+
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+--
+
+
 ### Phiên bản 2.6 
 31/05/2022 <br />
 

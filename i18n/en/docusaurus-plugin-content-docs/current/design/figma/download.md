@@ -4,6 +4,27 @@ category: Design resources
 title: Download here
 ---
 
+### v2.7
+
+June 30th, 2022 <br />
+
+
+
+Hi all, this month, we have some quick significant updates. <br />
+
+We change the way we document and try it for the Foundation elements first (Color, Font, Icon...). Next month we will adapt to all components. <br />
+Second, we release the new template - the Hotel booking template. [Click here](https://www.figma.com/community/file/1124335122737712334) for the detail. <br />
+Save the best for last; we launch the iconography library designed by us. <br />
+
+
+That's it, see you next month!!! <br />
+
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+--
+
+
 ### v2.6
 May 31st, 2022 <br />
 
@@ -27,7 +48,6 @@ Next month, we will explore the component properties to improve our Tini design 
 See you soon.<br />
 
 
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 --
