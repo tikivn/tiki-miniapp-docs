@@ -64,8 +64,8 @@ module.exports = {
         'development/testing/quick-test',
       ],
     },
+    'faq/index',
   ],
-
   framework: [
     'framework/overview',
     /*{
