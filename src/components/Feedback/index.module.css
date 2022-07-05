@@ -1,0 +1,52 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.feedback {
+  margin-top: 60px;
+  display: flex;
+}
+
+.reply,
+.question {
+  color: rgb(109, 109, 109);
+  margin-right: 8px;
+  font-style: italic;
+  user-select: none;
+}
+
+.thumbs {
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+
+.dislike,
+.like {
+  height: 1.5em;
+  width: 1.5em;
+  fill: rgb(109, 109, 109);
+  transition: ease-in-out 0.2s;
+}
+
+.dislike:hover,
+.like:hover {
+  fill: rgb(26, 26, 26);
+}
+
+.like {
+  margin-right: 4px;
+}
+
+.dislike {
+  transform: translateY(5px) rotateZ(180deg);
+}
+
+.reply {
+  animation: 0.6s fade-in;
+  white-space: pre-line;
+}
