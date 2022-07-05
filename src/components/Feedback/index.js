@@ -1,5 +1,4 @@
 import React, {memo, useState, useCallback} from 'react';
-import {useLocation} from 'react-router-dom';
 import styles from './index.module.css';
 import Thumb from '../svgIcons/Thumb';
 
