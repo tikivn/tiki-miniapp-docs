@@ -14,11 +14,10 @@ export const Feedback = ({className, ...rest}) => {
   const {pathname} = useLocation();
 
   const sendFeedback = useCallback(value => {
-    if (!window.dataLayer || typeof window.dataLayer.push !== 'function')
-      return;
+    window.dataLayer = window.dataLayer || [];
 
     window.dataLayer.push({
-      event: 'doc_feedback',
+      event: 'doc.feedback',
       pagePath: pathname,
       pageTitle: document.title,
       value,
