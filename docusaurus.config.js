@@ -63,45 +63,20 @@ module.exports = {
         {
           type: 'doc',
           docId: 'introduce/getting-started',
-          position: 'right',
-          label: 'Bắt đầu',
+          position: 'left',
+          label: 'Get Started',
         },
         {
           type: 'doc',
           docId: 'development/studio/overview',
           position: 'right',
-          label: 'Phát triển',
+          label: 'Develop',
         },
         {
           to: 'showcase',
           label: 'Showcase',
           position: 'right',
         },
-        {
-          type: 'doc',
-          docId: 'framework/overview',
-          position: 'right',
-          label: 'Framework',
-        },
-        {
-          type: 'doc',
-          docId: 'component/overview',
-          position: 'right',
-          label: 'Components',
-        },
-        {
-          type: 'doc',
-          docId: 'api/overview',
-          position: 'right',
-          label: 'JS APIs',
-        },
-        {
-          type: 'doc',
-          docId: 'backend-api/overview',
-          position: 'right',
-          label: 'Server APIs',
-        },
-
         {
           type: 'doc',
           docId: 'design/overview',
@@ -126,7 +101,35 @@ module.exports = {
           target: '_blank',
           'aria-label': 'Tini Console',
         },
-        {type: 'localeDropdown', position: 'right'},
+        {
+          type: 'dropdown',
+          label: 'Docs',
+          position: 'left',
+          className: 'navbar-dropdown',
+          items: [
+            {
+              type: 'doc',
+              docId: 'framework/overview',
+              label: 'Framework',
+            },
+            {
+              type: 'doc',
+              docId: 'component/overview',
+              label: 'Components',
+            },
+            {
+              type: 'doc',
+              docId: 'api/overview',
+              label: 'JS APIs',
+            },
+            {
+              type: 'doc',
+              docId: 'backend-api/overview',
+              label: 'Server APIs',
+            },
+          ],
+        },
+        // {type: 'localeDropdown', position: 'right'},
       ],
     },
     facebook: {
