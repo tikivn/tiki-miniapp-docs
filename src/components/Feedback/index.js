@@ -14,25 +14,15 @@ export const Feedback = ({className, ...rest}) => {
   const {pathname} = useLocation();
 
   const sendFeedback = useCallback(value => {
-    if (typeof ga !== 'function') return;
+    if (!window.dataLayer || typeof window.dataLayer.push !== 'function')
+      return;
 
-    const args = {
-      command: 'send',
-      hitType: 'event',
-      category: 'feedback',
-      action: 'click',
-      label: pathname,
-      value: value,
-    };
-
-    ga(
-      args.command,
-      args.hitType,
-      args.category,
-      args.action,
-      args.label,
-      args.value,
-    );
+    window.dataLayer.push({
+      event: 'doc_feedback',
+      pagePath: pathname,
+      pageTitle: document.title,
+      value,
+    });
   }, []);
 
   const handleLike = useCallback(() => {
