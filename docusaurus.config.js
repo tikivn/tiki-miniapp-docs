@@ -172,6 +172,10 @@ module.exports = {
         sitemap: {
           changefreq: 'daily',
         },
+        googleAnalytics: {
+          trackingID: 'G-HHXP89J0H8',
+          anonymizeIP: true,
+        },
       },
     ],
   ],
