@@ -1,4 +1,5 @@
 import React, {memo, useState, useCallback} from 'react';
+import {useLocation} from 'react-router-dom';
 import styles from './index.module.css';
 import Thumb from '../svgIcons/Thumb';
 
@@ -10,13 +11,38 @@ const FEEDBACK_STATUS = {
 
 export const Feedback = ({className, ...rest}) => {
   const [feedbackStatus, setFeedbackStatus] = useState(FEEDBACK_STATUS.NONE);
+  const {pathname} = useLocation();
+
+  const sendFeedback = useCallback(value => {
+    if (typeof ga !== 'function') return;
+
+    const args = {
+      command: 'send',
+      hitType: 'event',
+      category: 'feedback',
+      action: 'click',
+      label: pathname,
+      value: value,
+    };
+
+    ga(
+      args.command,
+      args.hitType,
+      args.category,
+      args.action,
+      args.label,
+      args.value,
+    );
+  }, []);
 
   const handleLike = useCallback(() => {
     setFeedbackStatus(FEEDBACK_STATUS.LIKE);
+    sendFeedback(1);
   }, []);
 
   const handleDislike = useCallback(() => {
     setFeedbackStatus(FEEDBACK_STATUS.DISLIKE);
+    sendFeedback(0);
   }, []);
 
   return (
