@@ -17,7 +17,7 @@ export const Feedback = ({className, ...rest}) => {
     window.dataLayer = window.dataLayer || [];
 
     window.dataLayer.push({
-      event: 'doc.feedback',
+      event: 'doc_feedback',
       pagePath: pathname,
       pageTitle: document.title,
       value,
@@ -49,7 +49,7 @@ export const Feedback = ({className, ...rest}) => {
       )}
 
       {feedbackStatus === FEEDBACK_STATUS.LIKE && (
-        <span className={styles.reply}>Cám ơn bạn đã đánh giá.</span>
+        <span className={styles.reply}>Cảm ơn bạn đã đánh giá.</span>
       )}
 
       {feedbackStatus === FEEDBACK_STATUS.DISLIKE && (
