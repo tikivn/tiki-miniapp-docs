@@ -138,7 +138,7 @@ $secretKey = 'YOUR_SECRET_KEY';
 $body = '{"code":"AoVGh57xCxEq7so22ba6d6pbcEj2Kk2JcImCbHsMQlM.qt90czxRIQAHkQTDgM83tFfm-P9alm8Pd9ja8VVvhV0"}';
 $payloadFormat = '%s.%s.%s'; 
 $payload = sprintf($payloadFormat, $timestamp, $clientId, $body);
-$encodePayload = strtr(base64_encode($payload), '=+/', " -_");
+$encodePayload = preg_replace(['/=/', '/\+/', '/\//'], ['', '-', '_'], base64_encode($payload));
 $sig = hash_hmac('sha256', $encodePayload, $secretKey);
 ```
 
