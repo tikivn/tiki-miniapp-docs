@@ -285,7 +285,7 @@ export default function Home() {
         images={[
           {
             image:
-              'https://salt.tikicdn.com/ts/tiniapp/c3/b6/2f/a46eb01fcac9cbf099d5d3a421222f30.jpeg',
+              'https://salt.tikicdn.com/ts/tiniapp/4b/1c/15/9f973904a5e1307137c09f34c41eaeb2.png',
             link: 'https://hackathon.tiki.vn',
           },
         ]}
