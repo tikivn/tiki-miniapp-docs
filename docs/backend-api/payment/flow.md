@@ -14,13 +14,14 @@ description: sơ đồ xử lý đơn hàng đặt trên Tiki mini app
 4. Gọi [my.makePayment](/docs/api/open/make-payment) để phục vụ cho quá trình thanh toán cuả khách hàng.
 5. Sau khi khách thanh toán xong, Tiki sẽ gởi [thông báo] (ipn) đến đối tác.
 6. Backend của đối tác xác thực giao dịch và cập nhật dịch vụ cho khách hàng.
-7. Gọi Api hoàn thành đơn hàng hoặc hủy đơn hàng để kết thúc.
+7. Gọi API hoàn thành đơn hàng hoặc hủy đơn hàng để kết thúc (bắt buộc).
 8. Tiki thanh toán tiền cho đối tác trong trường hợp đơn hàng hoàn thành (giao hàng thành công).
 
 
 :::important Quan trọng
 
-Khi đối tác tạo đơn hàng phía Tiki, không nhất thiết nó phải bao gồm toàn bộ SKU mà đối tác nhận đặt từ khách hàng; chỉ cần gồm 1 hay vài SKU để dại diện thanh toán. Điểm mấu chốt là giá trị đơn hàng phải chính xác.
+1. Khi đối tác tạo đơn hàng phía Tiki, không nhất thiết nó phải bao gồm toàn bộ SKU mà đối tác nhận đặt từ khách hàng; chỉ cần gồm 1 hay vài SKU để dại diện thanh toán. Điểm mấu chốt là giá trị đơn hàng phải chính xác.
+2. Sau khi giao hàng thành công, phía đối tác có trách nhiệm phải gọi API để hoàn thành đơn hàng (completed) thì Tiki mới thanh toán tiền về phía đối tác.
 
 :::
 
