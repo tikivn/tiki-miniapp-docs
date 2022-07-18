@@ -265,32 +265,32 @@ function Content() {
 export default function Home() {
   return (
     <Layout title="Tini App" description="Tini App">
-      <Banner
-        className="banner-desktop"
-        images={[
-          {
-            image:
-              'https://salt.tikicdn.com/ts/tiniapp/7d/8a/60/41d2db68d57d127cf919093671b2f4cd.png',
-            link: 'https://hackathon.tiki.vn',
-          },
-          {
-            image:
-              'https://salt.tikicdn.com/ts/tiniapp/1a/de/6a/7dbe2bab9315f8ac92068d50afc6d473.jpg',
-            link: '/docs/introduce/register',
-          },
-        ]}
-      />
-      <Banner
-        className="banner-mobile"
-        images={[
-          {
-            image:
-              'https://salt.tikicdn.com/ts/tiniapp/4b/1c/15/9f973904a5e1307137c09f34c41eaeb2.png',
-            link: 'https://hackathon.tiki.vn',
-          },
-        ]}
-      />
-      {/* <Hero /> */}
+      {/* <Banner */}
+      {/*   className="banner-desktop" */}
+      {/*   images={[ */}
+      {/*     { */}
+      {/*       image: */}
+      {/*         'https://salt.tikicdn.com/ts/tiniapp/03/58/d1/c6abf52f2c5a0457e1a3caec5a0b6223.jpeg'', */}
+      {/*       link: 'https://hackathon.tiki.vn', */}
+      {/*     }, */}
+      {/*     { */}
+      {/*       image: */}
+      {/*         'https://salt.tikicdn.com/ts/tiniapp/1a/de/6a/7dbe2bab9315f8ac92068d50afc6d473.jpg', */}
+      {/*       link: '/docs/introduce/register', */}
+      {/*     }, */}
+      {/*   ]} */}
+      {/* /> */}
+      {/* <Banner */}
+      {/*   className="banner-mobile" */}
+      {/*   images={[ */}
+      {/*     { */}
+      {/*       image: */}
+      {/*         'https://salt.tikicdn.com/ts/tiniapp/c3/b6/2f/a46eb01fcac9cbf099d5d3a421222f30.jpeg'', */}
+      {/*       link: 'https://hackathon.tiki.vn', */}
+      {/*     }, */}
+      {/*   ]} */}
+      {/* /> */}
+      <Hero />
       <main>
         <Content />
       </main>
