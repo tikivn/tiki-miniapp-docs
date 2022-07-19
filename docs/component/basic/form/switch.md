@@ -22,15 +22,14 @@ import { Simulator } from '@site/src/components/Simulator';
 
 ## Chi tiết
 
-| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                                          |
-| ---------- | ------------ | -------------------------------------------------------------------------------------------------------------- |
-| name       | string       | Khai báo `name` khi được sử dụng trong [form](form), được sử dụng để lấy `value` cho `form`                    |
-| controlled | boolean      | Khi giá trị là `true`, giá trị của switch sẽ được điều khiển hoàn toàn thông qua hàm `setData` trong file `js` |
-| checked    | boolean      | Chỉ định giá trị của switch có được chọn hay không                                                             |
-| disabled   | boolean      | Disable switch component                                                                                       |
-| color      | string       | Màu của component, sử dụng mã màu như trong css                                                                |
-| onChange   | event        | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { checked: checked }`                                |
-| controlled | boolean      | Nếu giá trị là true, giá trị của component chỉ thay đổi thông qua `setData`                                    |
+| Thuộc tính | Kiểu dữ liệu | Mô tả                                                                                       |
+| ---------- | ------------ | ------------------------------------------------------------------------------------------- |
+| name       | string       | Khai báo `name` khi được sử dụng trong [form](form), được sử dụng để lấy `value` cho `form` |
+| checked    | boolean      | Chỉ định giá trị của switch có được chọn hay không                                          |
+| disabled   | boolean      | Disable switch component                                                                    |
+| color      | string       | Màu của component, sử dụng mã màu như trong css                                             |
+| onChange   | event        | Sự kiện được gọi khi giá trị bị thay đổi, `event.detail = { checked: checked }`             |
+| controlled | boolean      | Nếu giá trị là true, giá trị của component chỉ thay đổi thông qua `setData`                 |
 
 ## Sample Code
 
