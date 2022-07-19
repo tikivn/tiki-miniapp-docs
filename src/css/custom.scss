@@ -134,23 +134,27 @@ body {
 }
 
 .navbar__item {
+  white-space: nowrap;
   .dropdown__menu {
     background-color: #fff;
   }
 }
 
-.navbar-dropdown + ul:has(.navbar__link--active) {
-  color: red;
+@media (max-width: 996px) {
+  .menu__list-item a.button-link {
+    text-align: left;
+    &:hover {
+      color: white !important;
+    }
+  }
 }
 
-@media (max-width: 996px) {
-  .navbar__items {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+@media screen and (max-width: 1120px) {
+  .navbar__items--right a.button-link {
+    display: none;
   }
-  .navbar__toggle {
-    margin-right: 3rem;
+  .navbar__toggle,
+  .navbar-sidebar__close {
     path {
       stroke: #fff;
     }

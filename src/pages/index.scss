@@ -1,3 +1,9 @@
+.mr-16x {
+  margin-right: 16px;
+}
+.ml-16x {
+  margin-left: 16px;
+}
 .flex {
   display: flex;
 }
@@ -43,7 +49,7 @@
   }
 }
 
-.tini-console-link {
+.button-link {
   background: #fff;
   color: #1a94ff !important;
   border-radius: 4px;
@@ -52,10 +58,10 @@
   font-weight: 500;
   align-items: center;
 }
-.tini-console-link:hover {
+.button-link:hover {
   opacity: 0.9;
 }
-.tini-console-link:hover:after {
+.button-link:hover:after {
   content: "";
   height: 0;
   height: 0;
@@ -99,7 +105,7 @@
 }
 
 .embla__dot:after {
-  background-color: #EBEBF0;
+  background-color: #ebebf0;
   width: 100%;
   height: 2px;
   border-radius: 4px;
@@ -111,7 +117,7 @@
 }
 
 .embla__dot.is-selected:after {
-  background-color: #1A94FF;
+  background-color: #1a94ff;
   opacity: 1;
 }
 
