@@ -121,6 +121,31 @@
   opacity: 1;
 }
 
+.primaryButton {
+  background: #1a94ff;
+  border-radius: 4px;
+  height: 40px;
+  min-height: 40px;
+  color: #fff;
+  border: 0;
+  padding: 0 16px;
+  cursor: pointer;
+  &:hover {
+    background: rgba(26, 148, 255, 0.8);
+    text-decoration: none;
+    color: #fff;
+  }
+  &:active {
+    background: rgba(26, 148, 255, 0.6);
+  }
+  &:disabled {
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+    cursor: not-allowed;
+  }
+}
+
 .banner-mobile {
   display: none;
 }
