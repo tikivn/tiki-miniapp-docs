@@ -4,6 +4,21 @@ category: Design resources
 title: Download here
 ---
 
+### v3.0
+July 27th, 2022 <br />
+
+Today, we are glad to present you guys version 3.0 of the Tini design library. So what are the significant improvements? <br />
+- First, We upgrade all components with all new updates of the Figma. <br />
+- Second, re-work all the components’ properties to sync up between design and development. <br /> 
+- Last but not least, more icons for the Tini icon library. <br />
+
+See you next month with the new way of presenting the documentation! <br />
+
+
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+--
 ### v2.7
 
 June 30th, 2022 <br />
@@ -15,8 +30,6 @@ Second, we release the new template - the Hotel booking template. [Click here](h
 Save the best for last; we launch the iconography library designed by us. <br />
 
 That's it, see you next month!!! <br />
-
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 --
@@ -43,8 +56,6 @@ There are those improved components:<br />
 
 Next month, we will explore the component properties to improve our Tini design system.<br />
 See you soon.<br />
-
-
 
 
 --
