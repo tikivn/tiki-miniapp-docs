@@ -16,6 +16,7 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import {ThemeClassNames, useWindowSize} from '@docusaurus/theme-common';
 import LastUpdated from '@theme/LastUpdated';
+import Feedback from '../../components/Feedback';
 
 export default function DocItem(props) {
   const {content: DocContent} = props;
@@ -116,6 +117,7 @@ export default function DocItem(props) {
               {/* <DocItemFooter {...props} /> */}
             </article>
 
+            <Feedback />
             <DocPaginator previous={metadata.previous} next={metadata.next} />
           </div>
         </div>

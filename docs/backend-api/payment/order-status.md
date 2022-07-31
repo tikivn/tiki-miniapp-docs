@@ -19,6 +19,7 @@ title: Trạng thái đơn hàng
 - Chỉ những đơn hàng có trạng thái 'completed' Tiki mới giải ngân tiền thanh toán của khách hàng cho đối tác.
 - Trong trường hợp khách hàng thanh toán trực tuyến, một khi nhận được API cancel từ đối tác thì Tiki sẽ xử lý việc hoàn tiền cho khách hàng. Và đối tác không cần làm thêm gì nữa.  
 - Đơn hàng đã có trạng thái 'completed' thì không thể chuyển về trạng thái 'canceled' và hoàn tiền cho khách hàng.
+- Đơn hàng đã có trạng thái 'completed' hoặc 'cancled' thì không thể đổi được sang trạng thái khác.
 :::
 
 

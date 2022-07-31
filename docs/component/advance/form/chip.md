@@ -35,7 +35,6 @@ $> yarn add @tiki.vn/tini-ui
 | active         | boolean      | false            | Nếu set `true` chip sẽ được active                          |
 | suffixIcon     | string       | ''               | suffixIcon của chip                                         |
 | suffixImage    | string       | ''               | suffixImage của chip                                        |
-| prefixIcon     | string       | ''               | prefixIcon của chip                                         |
 | prefixIcon     | string       | ''               | suffixIcon của chip                                         |
 | iconLeftColor  | string       | '#1A94FF'        | suffixIcon của chip                                         |
 | iconRightColor | string       | '#1A94FF'        | suffixIcon của chip                                         |
