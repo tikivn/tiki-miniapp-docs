@@ -6,7 +6,7 @@ title: Tải về
 27/07/2022 <br />
 
 Hôm nay, bọn mình rất vui khi được giới thiệu với các bạn phiên bản 3.0 của Tini design library. Vậy đâu là những cải tiến đáng kể của tháng này? <br />
-- Đầu tiên, bọn mình nâng cấp tất cả các component với tất cả các tính năng nhật mới nhất của Figma. <br />
+- Đầu tiên, bọn mình nâng cấp tất cả các component với tất cả các tính năng cập nhật mới nhất của Figma. <br />
 - Thứ hai, cân chỉnh lại tất cả các property của các copmponent để đồng bộ hóa giữa bên thiết kế và bên developer. <br />
 - Cuối cùng nhưng không kém phần quan trọng, bọn mình đã cập nhật thêm nhiều icon hơn cho thư viện icon của Tini. <br />
 
