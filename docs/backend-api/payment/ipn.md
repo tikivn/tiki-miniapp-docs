@@ -5,7 +5,14 @@ title: Xử lý kết quả thanh toán
 Sau khi khách hàng thanh toán trực tuyến trên Tiki, chúng tôi thực hiện hàm callback mà đối tác đăng ký khi gọi [my.makePayment](/docs/api/open/make-payment).
 Đồng thời, chúng tôi còn gửi một IPN message đến backend của phía đối tác.
 
-***Quan trọng***: Nếu khách hàng chọn phương thức COD (Thanh toán tiền mặt khi nhận hàng), thì Tiki sẽ không gởi IPN message đến backend của đối tác.
+:::important Quan trọng
+
+- Nếu khách hàng chọn phương thức COD (Thanh toán tiền mặt khi nhận hàng), thì Tiki sẽ không gởi IPN message đến backend của đối tác.
+- Khi thanh toán thành công, IPN sẽ được gởi ngay lập tức với status `online_paid`
+- Khi thanh toán thất bại, IPN sẽ được gởi với trạng thái `canceled` trong hai trường hợp sau:
+  - Khách hàng tới màn hình thanh toán và click huỷ thanh toán: IPN sẽ được gởi ngay lập tức
+  - Khách hàng tới màn hình thanh toán và tắt app hoặc không làm gì cả: IPN sẽ được gởi sau đó 4 tiếng 
+:::
 
 ## IPN - Instant Payment Notification
 
