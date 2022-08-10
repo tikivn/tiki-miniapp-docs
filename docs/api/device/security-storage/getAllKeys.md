@@ -41,7 +41,7 @@ import { Simulator } from '@site/src/components/Simulator';
 ```js title=index.js
 Page({
   onClearData() {
-    my.clearStorage({
+    my.getAllKeysEncryptedStorage({
       config: {
         authenticationPrompt: 'login with yourself',
         accessControl: 'BIOMETRY_ANY_OR_DEVICE_PASSCODE'
