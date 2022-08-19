@@ -51,8 +51,9 @@ Page({
       url: this.data.urlFile,
       success: (res) => {
         my.openDocument({
-          filePath: res.filePath,
+          filePath: res.filePath, // only for mobile
           fileType: 'pdf',
+          url: this.data.urlFile // only for web
           success: (res) => {
             console.log('open document success');
             my.hideLoading();
