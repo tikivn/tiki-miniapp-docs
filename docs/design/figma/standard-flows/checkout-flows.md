@@ -38,6 +38,8 @@ Các ứng dụng sử dụng giải pháp Tiki Open Platform.
 
 ## Tải về
 
+<img src="/img/standard-flows/atc-checkout-flow.png" width="860"/>
+
 :::tip Figma community
 
 Tải về và xem thêm chi tiết: https://www.figma.com/community/file/1136188457172652362

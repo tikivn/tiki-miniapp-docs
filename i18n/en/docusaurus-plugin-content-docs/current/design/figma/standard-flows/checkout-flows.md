@@ -37,6 +37,8 @@ To synchronize the checkout experience of first-party & third-party applications
 
 ## Download
 
+<img src="../../../../img/standard-flows/atc-checkout-flow.png" width="860"/>
+
 :::tip Figma community
 
 Download and view details: https://www.figma.com/community/file/1136188457172652362
