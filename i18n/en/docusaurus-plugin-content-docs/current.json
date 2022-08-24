@@ -135,6 +135,10 @@
     "message": "Design resources",
     "description": "The label for category Tài nguyên thiết kế in sidebar design"
   },
+  "sidebar.design.category.Các luồng chuẩn": {
+    "message": "Standard flows",
+    "description": "The label for category Các luồng chuẩn in sidebar design"
+  },
   "theme.SearchBar.label": {
     "message": "Search",
     "description": "Search"
