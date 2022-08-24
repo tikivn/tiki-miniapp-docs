@@ -1,5 +1,5 @@
 ---
-title: flow thanh toán
+title: Flow thanh toán
 sidebar_position: 1
 ---
 
