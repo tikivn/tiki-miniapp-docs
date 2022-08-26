@@ -18,148 +18,87 @@ import { Simulator } from '@site/src/components/Simulator';
 
 <Simulator page="pages/component/advance/navigation/avatar/index" />
 
+
+## Sample Code
+
+```json title=index.json
+{
+  "defaultTitle": "Avatar",
+  "usingComponents": {
+    "avatar": "@tiki.vn/tini-ui/es/avatar/index",
+    "block-header": "components/block-header/index",
+    "block-variant": "components/block-variant/index"
+  }
+}
+```
+
+```xml title=index.txml
+<view>
+  <block-header
+      title="Usage"
+      description="Avatars represent the user behind them."
+    />
+
+  <block-variant header="Variant" title="1. Shape" description="Circle, Rounded.">
+    <view class="block-variant-content-line">
+      <view class="w-full flex">
+        <avatar shape="square" size="72" class="mr-small"/>
+        <avatar shape="circle" size="72"/>
+      </view>
+    </view>
+  </block-variant>
+
+  <block-variant title="2. Content" description="Image, Initials">
+    <view class="block-variant-content-line">
+      <view class="w-full flex">
+        <avatar shape="circle" size="72" class="mr-small"/>
+        <avatar shape="circle" size="72" name="W W"/>
+      </view>
+    </view>
+  </block-variant>
+
+  <block-variant title="3. Size" description="24, 40, 56, 72px">
+    <view class="block-variant-content-line">
+      <view class="w-full flex">
+        <avatar shape="circle" size="24" class="mr-small"/>
+        <avatar shape="circle" size="40" class="mr-small"/>
+        <avatar shape="circle" size="56" class="mr-small"/>
+        <avatar shape="circle" size="72" class="mr-small"/>
+      </view>
+    </view>
+  </block-variant>
+
+  <block-variant title="4. Border" description="With white border, without white border">
+    <view class="block-variant-content-line mt-small p-small bg-black">
+      <view class="w-full flex">
+        <avatar shape="circle" size="24" class="mr-small"/>
+        <avatar shape="circle" size="40" class="mr-small"/>
+        <avatar shape="circle" size="56" class="mr-small"/>
+        <avatar shape="circle" size="72" class="mr-small"/>
+      </view>
+    </view><view class="p-small bg-black">
+      <view class="w-full flex">
+        <avatar shape="circle" size="24" name="W W" showBorder={{false}} class="mr-small"/>
+        <avatar shape="circle" size="40" name="W W" showBorder={{false}} class="mr-small"/>
+        <avatar shape="circle" size="56" name="W W" showBorder={{false}} class="mr-small"/>
+        <avatar shape="circle" size="72" name="W W" showBorder={{false}} class="mr-small"/>
+      </view>
+    </view>
+  </block-variant>
+
+</view>
+```
 ## Thuộc tính
 
 | Thuộc tính | Kiểu dữ liệu | Giá trị mặc định | Mô tả                            |
 | ---------- | ------------ | ---------------- | -------------------------------- |
-| size       | string       | md               | Kích thước avatar (lg/md/xs)     |
-| shape      | string       | circle           | Các giá trị: "circle","standard" |
-| src        | string       | ""               | source hình ảnh                  |
+| size       | number       | 40               | Kích thước avatar (width x height) px|
+| shape      | string       | circle           | Các giá trị: "circle", "square" |
+| src        | string       | ""               | Source hình ảnh                  |
+| name       | string       | ""               | Hiển thị shortname nếu không có source hình ảnh|
+| lazyLoad   | boolean      | false            | Thuộc tính lazyLoad của avatar   |
+| showBorder | boolean      | true             | Hiển thị border của avatar       |
+| className  | string       | ""               | className của avatar             |
 | style      | string       | ""               | Disabled button                  |
 
-## Sample Code:
 
-Khai báo components:
-
-```json
-{
-  "defaultTitle": "Avatar",
-  "usingComponents": {
-    "avatar": "@tiki.vn/tini-ui/es/avatar/index"
-  }
-}
-```
-
-### Shape: circle
-
-```xml title=index.txml
-<view class="container">
- <view class="content" style="margin-top:32px">
-      <text class="content-label">Shape: circle, Size:lg-md-xs</text>
-      <view style="flex-direction:row;align-items:flex-end">
-          <avatar name="Avatar" size="lg" style="margin:8px" src="https://www.denofgeek.com/wp-content/uploads/2016/11/avatar-sequel.jpg"/>
-          <avatar name="Default" size="md" style="margin:8px" />
-          <avatar name="Author" size="xs" style="margin:8px" />
-      </view>
-  </view>
-</view>
-```
-
-_Result:_
-
-```__react
-import image from '../../../theme/static/images/avatar-circle.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Avatar" src={image}/>, mountNode);
-```
-
-### Shape: standard
-
-```xml title=index.txml
-<view class="container">
-  <view class="content" style="margin-top:32px">
-      <text class="content-label">Shape: standard, Size:lg-md-xs</text>
-      <view style="flex-direction:row;align-items:flex-end">
-          <avatar name="Avatar" size="lg" style="margin:8px" shape="standard" src="https://www.denofgeek.com/wp-content/uploads/2016/11/avatar-sequel.jpg"/>
-          <avatar name="Default" size="md" style="margin:8px" shape="standard"/>
-          <avatar name="Author" size="xs" style="margin:8px" shape="standard"/>
-      </view>
-  </view>
-</view>
-```
-
-_Result_
-
-```__react
-import image from '../../../theme/static/images/avatar-standard.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Avatar" src={image}/>, mountNode);
-```
-
-## Advance
-
-Sử dụng component avatar để implement user item
-
-### Example
-
-```xml title=index.tcss
-<view class="content">
-  <list>
-      <list-item
-          upperSubtitle="We're using react-native-config for configuration, so to make android work with config we need to add below line to android/app/build.gradle"
-          >
-      <view slot="supporting">
-          <avatar size="lg" style="margin:8px" src="https://www.denofgeek.com/wp-content/uploads/2016/11/avatar-sequel.jpg"/>
-      </view>
-          Lý Nhân
-  </list-item>
-</list>
-</view>
-```
-
-```__react
-import image from '../../../theme/static/images/avatar-row.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Avatar" src={image}/>, mountNode);
-```
-
-### Example
-
-```xml title=index.tcss
-<view class="content">
-    <view class="avatar-wrapper">
-        <avatar
-            size="md"
-            shape="standard"
-            src="https://www.denofgeek.com/wp-content/uploads/2016/11/avatar-sequel.jpg"
-          />
-        <text class="avatar-name">Username</text>
-        <text class="avatar-desc">Dev Assistant is a mini app that lists all mini apps of a developer which are build on tiki-studio</text>
-    </view>
-</view>
-```
-
-```css title=index.tcss
-.avatar-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 8px;
-}
-.avatar-info {
-  padding: 8;
-  max-width: 300px;
-}
-.avatar-info-name {
-  font-size: 16px;
-  font-weight: 500;
-}
-.avatar-info-desc {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-}
-```
-
-_Result_
-
-```__react
-import image from '../../../theme/static/images/avatar-column.png'
-ReactDOM.render(<img style={{maxWidth: 414}} alt="Button" src={image}/>, mountNode);
-```
-
-```js title=index.js
-Page({
-  data: {},
-  onError() {
-    console.log('Onload error');
-  }
-});
-```
