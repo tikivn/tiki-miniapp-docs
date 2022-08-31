@@ -2,6 +2,21 @@
 title: Tải về
 ---
 
+
+### Phiên bản 3.1
+31/08/2022 <br />
+
+Chào mọi người, lần cập nhật này bọn mình cho ra mắt bộ document hoàn toàn mới. Chi tiết hơn so với phiên bản cũ, bao gồm những thông tin về component properties, cấu trúc của component và cách sử dụng component, v.v <br />
+
+Bên cạnh đó, Tini design library cũng có nhật cập nhật mới về component Rating và Input stepper. Cũng như là cập nhật thêm các icon mới vào trong page Icons hiện có trong file Figma của Tini Design library. <br />
+
+Đó là phần cập nhật của tháng này! Hẹn các bạn vào tháng sau. <br />
+[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+--
+
+
 ### Phiên bản 3.0
 27/07/2022 <br />
 
@@ -11,9 +26,6 @@ Hôm nay, bọn mình rất vui khi được giới thiệu với các bạn phi
 - Cuối cùng nhưng không kém phần quan trọng, bọn mình đã cập nhật thêm nhiều icon hơn cho thư viện icon của Tini. <br />
 
 Hẹn gặp lại các bạn vào tháng sau với cách trình bày document mới nhé! <br />
-
-
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 --
@@ -30,8 +42,6 @@ Thứ hai, bọn mình đã cho ra mắt thêm một template mới - Đặt kh�
 Và điều xịn xò nhất của tháng này là...bọn mình đã cho ra mắt thư viện icon mà cho chính bọn mình thiết kế. <br />
 
 Đó là những cập nhật nhanh trong tháng này, hẹn mọi người vào tháng sau nhé!!! <br />
-
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 --
@@ -58,8 +68,6 @@ Có những component được cải thiện như sau:<br />
 
 Tháng tới, bọn mình sẽ khám phá component properties để cải thiện hệ thống thiết kế Tini của chúng tôi.<br />
 Hẹn sớm gặp lại.<br />
-
-[Tải về](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
 
 
 ---
