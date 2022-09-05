@@ -33,6 +33,7 @@ module.exports = {
         'development/studio/development',
         'development/studio/simulator',
         'development/studio/debug',
+        'development/studio/remote-debug',
         'development/studio/project-config',
         'development/studio/typescript-support',
         'development/studio/troubleshooting-studio',
