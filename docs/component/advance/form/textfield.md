@@ -35,8 +35,12 @@ $> yarn add @tiki.vn/tini-ui
 | labelIconColor   | string       | #808089          | Mã màu cho icon trên label                                                                                             |
 | labelHelperText  | string       |                  | Helper text hiển thị bên dưới `labelText`                                                                              |
 | labelText        | string       |                  | Nội dung của label                                                                                                     |
-| iconRight        | string       |                  | Type của icon hiển thị bên phải input                                                                                  |
-| iconLeft         | string       |                  | Type của icon hiển thị bên trái input                                                                                  |
+| trailingIcon     | string       |                  | Type của icon hiển thị bên phải input                                                                                  |
+| suffix           | string       | ''               | Type của suffix hiển thị bên phải input `button, text`                                                                 |
+| prefix           | string       | ''               | Type của prefix hiển thị bên trái input `button, text`                                                                 |
+| suffixContent    | string       | ''               | Content của suffix hiển thị bên phải input                                                                             |
+| prefixContent    | string       | ''               | Content của prefix hiển thị bên trái input                                                                             |
+| leadingIcon      | string       |                  | Type của icon hiển thị bên trái input                                                                                  |
 | iconColor        | string       | #808089          | Mã màu cho icon trên input                                                                                             |
 | shape            | string       | rounded          | Kiểu border radius của input. Hỗ trợ `rounded` hoặc `pill`. Mặc định là `rounded`                                      |
 | loading          | boolean      | false            | Hiển thị loading skeleton cho textfield                                                                                |
@@ -59,6 +63,10 @@ $> yarn add @tiki.vn/tini-ui
 | onInput          | event        |                  | Sự kiện sẽ được gọi khi nội dung của input bị thay đổi, `event.detail = { value: value }`                              |
 | onConfirm        | event        |                  | Sự kiện sẽ được gọi khi nhấn nút submit (return/Nhập) , `event.detail = { value: value }`                              |
 | onFocus          | event        |                  | Sự kiện sẽ được gọi khi input được focus , `event.detail = { value: value }`                                           |
+| onTapLeadingIcon | event        |                  | Sự kiện sẽ được gọi khi nhấn vào leadingIcon                                                                           |
+| onTapTrailingIcon| event        |                  | Sự kiện sẽ được gọi khi nhấn vào trailingIcon                                                                          |
+| onTapSuffix      | event        |                  | Sự kiện sẽ được gọi khi nhấn vào suffix (button or text)                                                               |
+| onTapPrefix      | event        |                  | Sự kiện sẽ được gọi khi nhấn vào prefix (button or text)                                                               |
 | onBlur           | event        |                  | Sự kiện sẽ được gọi khi input không được focus nữa , `event.detail = { value: value }`                                 |
 
 ## Sample Code
@@ -87,16 +95,11 @@ $> yarn add @tiki.vn/tini-ui
       <view class="line" />
 
       <view class="list-item-label">
-        <textfield
-          placeholder="With label"
-          onInput="onInput"
-          onFocus="onFocus"
-          onBlur="onBlur"
-          onConfirm="onConfirm"
+        <textfield placeholder="Placeholder" onInput="onInput" onFocus="onFocus" onBlur="onBlur" onConfirm="onConfirm"
           labelText="Label" />
       </view>
       <view class="list-item-label">
-        <textfield placeholder="Without label" />
+        <textfield placeholder="Placeholder" />
       </view>
     </view>
   </block-variant>
@@ -108,49 +111,70 @@ $> yarn add @tiki.vn/tini-ui
       <view class="line" />
 
       <view class="list-item-label">
-        <textfield placeholder="Click to type here" labelText="Rounded" shape="rounded" />
+        <textfield placeholder="Placeholder" labelText="Rounded" shape="rounded" />
       </view>
       <view class="list-item-label">
-        <textfield placeholder="Click to type here" labelText="Pill" shape="pill" />
+        <textfield placeholder="Placeholder" labelText="Pill" shape="pill" />
       </view>
     </view>
   </block-variant>
 
   <block-variant header="">
     <view class="list-item">
-      <view class="subtitle mb-8">3. State</view>
-      <view class="sub-content mb-8">Filled, Disabled, Error, Skeleton loading.</view>
+      <view class="subtitle mb-8">3. Content</view>
+      <view class="sub-content mb-8">Text only, Leading icon, Trailing icon.</view>
+      <view class="line" />
+
+      <view class="list-item-label">
+        <textfield placeholder="Placeholder" />
+      </view>
+      <view class="list-item-label">
+        <textfield placeholder="Placeholder" leadingIcon="placeholder" />
+      </view>
+      <view class="list-item-label">
+        <textfield placeholder="Placeholder" trailingIcon="placeholder" />
+      </view>
+
+      <view class="list-item-label">
+        <textfield placeholder="Placeholder" leadingIcon="placeholder" trailingIcon="placeholder" />
+      </view>
+
+      <view class="list-item-label">
+        <textfield placeholder="Placeholder" prefix="text" prefixContent="Label" />
+      </view>
+
+      <view class="list-item-label">
+        <textfield placeholder="Placeholder" suffix="button" suffixContent="Button" />
+      </view>
+
+      <view class="list-item-label">
+        <textfield placeholder="Placeholder" prefix="text" prefixContent="Label" suffix="button"
+          suffixContent="Button" />
+      </view>
+    </view>
+  </block-variant>
+
+  <block-variant header="">
+    <view class="list-item">
+      <view class="subtitle mb-8">4. States & Statuses</view>
+      <view class="sub-content mb-8">Empty, Hove, Focus, Typing, Filled, Disabled, Error, Skeleton loading.</view>
       <view class="line" />
 
       <view class="list-item-label">
         <textfield value="{{filled}}" labelText="Label" onInput="onChangeFilled" />
       </view>
       <view class="list-item-label">
-        <textfield disabled labelText="Disabled" placeholder="Disabled" />
+        <textfield disabled labelText="Label" placeholder="Placeholder" />
       </view>
       <view class="list-item-label">
-        <textfield hasError errorMsg="Error message" placeholder="Error" labelText="Label" />
+        <textfield hasError errorMsg="Error message" placeholder="Placeholder" labelText="Label" />
       </view>
-      <view class="list-item-label">
-        <textfield loading placeholder="Loading" />
-      </view>
-    </view>
-  </block-variant>
-
-  <block-variant header="">
-    <view class="list-item">
-      <view class="subtitle mb-8">4. Content</view>
-      <view class="sub-content mb-8">Text only, Leading icon, Trailing icon.</view>
-      <view class="line" />
 
       <view class="list-item-label">
-        <textfield placeholder="Text only" />
+        <textfield hasSuccess successMsg="Success message" placeholder="Placeholder" labelText="Label" />
       </view>
       <view class="list-item-label">
-        <textfield placeholder="Text with leading icon" iconLeft="placeholder" />
-      </view>
-      <view class="list-item-label">
-        <textfield placeholder="Text with trailing icon" iconRight="placeholder" />
+        <textfield loading placeholder="Placeholder" />
       </view>
     </view>
   </block-variant>
@@ -192,5 +216,9 @@ Page({
 
 .line {
   margin-bottom: 8px;
+}
+
+.list-item {
+  display: block;
 }
 ```

@@ -4,6 +4,25 @@ category: Design resources
 title: Download here
 ---
 
+
+### v3.1
+August 31st, 2022 <br />
+
+Hi everyone, we are happy to present the whole new component documentation to you. It will provide more detail about component properties, anatomy, usages, etc. <br />
+
+
+
+Besides, the Tini design library has a minor update for the Rating, Input stepper component, and more icons on the Icons page. <br />
+
+
+
+That's it! See you next month. <br />
+[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
+
+
+--
+
+
 ### v3.0
 July 27th, 2022 <br />
 
@@ -15,10 +34,9 @@ Today, we are glad to present you guys version 3.0 of the Tini design library. S
 See you next month with the new way of presenting the documentation! <br />
 
 
-[Download here](https://www.figma.com/community/file/958198956095698455/Tini-design-system)
-
-
 --
+
+
 ### v2.7
 
 June 30th, 2022 <br />
