@@ -32,7 +32,7 @@ import { Simulator } from '@site/src/components/Simulator';
 
 | Giá trị | Mô tả         |
 | ------- | ------------- |
-| PDF     | Định dạng PDF |
+| pdf     | Định dạng PDF |
 
 ## Sample Code
 
