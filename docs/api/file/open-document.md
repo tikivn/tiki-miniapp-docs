@@ -28,11 +28,11 @@ import { Simulator } from '@site/src/components/Simulator';
 | fail       | Function     |          | Callback function khi open document thất bại.                                                                                               |
 | complete   | Function     |          | Callback function khi việc open document kết thúc cho dù thành công hay thất bại.                                                           |
 
-## Giá trị fileType
+## Legal values for fileType
 
-| Thuộc tính | Mô tả                    |
-| ---------- | ------------------------ |
-| fileType   | Chỉ hỗ trợ định dạng PDF |
+| Giá trị | Mô tả         |
+| ------- | ------------- |
+| PDF     | Định dạng PDF |
 
 ## Sample Code
 
