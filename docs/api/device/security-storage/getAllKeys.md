@@ -4,7 +4,7 @@ sidebar_custom_props:
   description: Lấy toàn bộ key của app
 ---
 
-`my.getAllKeysEncryptedStorage` là api để lấy toàn bộ key của app.
+`my.getAllKeysEncryptedStorage` là api để lấy toàn bộ key của app, (IOS only).
 
 ## Quét mã để trải nghiệm
 
