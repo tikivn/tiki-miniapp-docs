@@ -70,7 +70,7 @@ module.exports = {
           type: 'doc',
           docId: 'development/studio/overview',
           position: 'left',
-          label: 'Devtools',
+          label: 'DevTools',
         },
         {
           type: 'doc',
