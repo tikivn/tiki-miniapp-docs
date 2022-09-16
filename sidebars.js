@@ -35,6 +35,7 @@ module.exports = {
         'development/studio/debug',
         'development/studio/remote-debug',
         'development/studio/project-config',
+        'development/studio/vscode-extension',
         'development/studio/typescript-support',
         'development/studio/troubleshooting-studio',
       ],
@@ -163,7 +164,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Components',
-      link: { type: 'doc', id: 'component/overview' },
+      link: {type: 'doc', id: 'component/overview'},
       items: [
         {
           type: 'category',
@@ -409,7 +410,7 @@ module.exports = {
     {
       type: 'category',
       label: 'JS APIs',
-      link: { type: 'doc', id: 'api/overview' },
+      link: {type: 'doc', id: 'api/overview'},
       items: [
         {
           type: 'category',
@@ -1022,7 +1023,7 @@ module.exports = {
           ],
         },
         'design/figma/started',
-        'design/figma/download'
+        'design/figma/download',
       ],
     },
   ],
