@@ -1,12 +1,18 @@
 ---
 title: Remote Debugging
-
-description: Remote Debug Tini App trên Tini Studio
+image: https://global.discourse-cdn.com/standard14/uploads/tiki/original/2X/d/dace50ba90a7713ba920b5106f7d7ec6dcb4a066.png
+description: Operation guide for Remote Debug Tini App on Tiki IDE - Tini Studio 
 --- 
+
+
+![Remote Debugging](https://global.discourse-cdn.com/standard14/uploads/tiki/original/2X/d/dace50ba90a7713ba920b5106f7d7ec6dcb4a066.png)
+<br/>
+
 > Tính năng Remote Debug được hỗ trợ kể từ Tini Studio version 1.30.0 và Tini App Framework version 1.101.0
  
 
 ## 📡 Overview
+
 
 Nhằm hỗ trợ debug Tini App trên các thiết bị di động một cách dễ dàng và kiểm thử nhanh chóng ứng dụng trên môi trường testing gần với production nhất, Tini Studio cung cấp giải pháp Remote Debug.
 
