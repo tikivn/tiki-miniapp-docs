@@ -55,6 +55,7 @@ module.exports = {
         'development/tini-console/whitelist-domains',
         'development/tini-console/app-key',
         'development/tini-console/mobile-web',
+        'development/tini-console/sitemap-seo',
       ],
     },
     {

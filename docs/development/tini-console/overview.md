@@ -31,7 +31,11 @@ Những nhóm tính năng chính của Tini Console bao gồm:
 - Phát hành phiên bản đã được phê duyệt của ứng dụng lên trên Kho tiện ích của Tiki App.
 - Tạm thời ẩn đi ứng dụng khỏi Kho tiện ích.
 
-## Hỗ trợ 
+## Sitemap & SEO
+
+- Cung cấp sitemap của ứng dụng
+
+## Hỗ trợ
 
 - Thông tin liên hệ hỗ trợ người dùng: Nhà phát triển cung cấp thông tin thông qua Tini Console.
 - Chat: người dùng sử dụng tính năng chat trên Tini App. Nhà phát triển sẽ trả lời tin nhắn trên Tini Console.
