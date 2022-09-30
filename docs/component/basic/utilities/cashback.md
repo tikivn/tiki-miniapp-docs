@@ -14,8 +14,6 @@ sidebar_custom_props:
 | ---------- | ------------ | :------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | product-id | string       |    ✓     | Id của sản phẩm. Bạn có thể lấy được từ link chi tiết sản phẩm của Tiki. Ví dụ với link https://tiki.vn/apple-iphone-12-hang-chinh-hang-p123345348.html?spid=70766425, thì product id là 123345348 |
 
-:::
-
 ## Sample Code
 
 ```xml title=index.txml
