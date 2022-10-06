@@ -61,36 +61,86 @@ import { Simulator } from '@site/src/components/Simulator';
 ## Sample Code
 
 ```xml title=index.txml
-<web-view id="web-view1" src="https://dev-tikiscp.tbox.vn/miniapps/files/h5.html" onMessage="onMessage" />
+<web-view id="web-view1" src="https://your-example-host.com/miniapps/your-file.html" onMessage="onWebviewMessage" />
 ```
 
 ```js title=index.js
 Page({
-  onMessage(e) {
+  onLoad() {
+    this.webviewContext = my.createWebViewContext('web-view1');
+  }
+  onWebviewMessage(e) {
     console.log(e.detail.data); // it will log "ping" to console
-    const webview = my.createWebViewContext('web-view1');
-    webview.postMessage('pong');
+   if(e.detail.data ==="ping") {
+     this.webviewContext.postMessage('pong'); // send string "pong" to webview
+   }
   }
 });
 ```
 
-```html title=h5.html
-<script
-  type="text/javascript"
-  src="https://tiki/tf-miniapp.webview.js"
-></script>
+```html title=your-file.html
+<body>
+  <button id="send">
+    send message to webview
+  </button>
+  <button id="goto">
+    go to tini app user info example page
+  </button>
+</body>
 <script>
-  my.navigateTo({ url: 'pages/user-info/index' });
-  my.postMessage('ping');
-  window.onmessage = function () {
-    alert(JSON.stringify(e.data)); // this will alert "pong" message
-  };
-  window.addEventListener('message', (e) => {
-    alert(JSON.stringify(e.data)); // this will alert "pong" message
-  });
+  function main(){
+    console.debug("window.my",window.my);
+
+    if(!window.my) {
+      throw new Error('main function has to wait for the Tini app framework ready event');
+    };
+
+    // setup buttons' click event
+    document.querySelector('button#send').addEventListener('click', function(){
+      my.postMessage('ping');
+    });
+    document.querySelector('button#goto').addEventListener('click', function(){
+      my.navigateTo({ url: 'pages/user-info/index' });
+    });
+
+    // handle messages from tini app:
+    window.onmessage = function () {
+      alert(JSON.stringify(e.data)); // this will alert "pong" message
+    };
+    /** or you can use:
+     *   
+     * window.addEventListener('message', (e) => {
+     *   alert(JSON.stringify(e.data)); // this will alert "pong" message
+     * });
+     * 
+     * 
+    */
+  
+  }
+ // check if jsapi `my` is available
+ // if not, wait until the event `TiniAppJSBridgeReady` is emitted
+  try {
+    if(window.my) {
+      main();
+    }
+    else {
+      window.addEventListener('TiniAppJSBridgeReady', () => {
+        // window.my is available here
+        main();
+      });
+    }
+  } catch(e){
+    console.error(e)
+    // your code to handle errors goes here
+  }
 </script>
 ```
+:::note Lưu ý
 
+- Bridge `my` được đăng ký như một global variable (window.my);
+- Các jsapi `my.<tiki-api>` trên webview chỉ có thể gọi sau khi event `TiniAppJSBridgeReady` được emit;
+
+:::
 ## Tạo cầu để kết nối giữa `web-view` và các page trong Tini App
 
 `web-view` chỉ cung cấp giới hạn một số API mà thôi.
@@ -201,3 +251,4 @@ Hàm `sendMessageToTiniApp` nhận vào 2 tham số
   - api: là JSAPI mà bạn muốn gọi ở Tini App
   - params: là các tham số bạn muốn JSAPI gọi
 - callback là function bạn muốn gọi khi nhận được result (success / failure) từ Tini App
+
