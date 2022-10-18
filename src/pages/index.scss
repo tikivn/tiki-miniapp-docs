@@ -36,6 +36,12 @@
   font-weight: 700;
   color: #fff;
 }
+.download-label-info {
+  font-size: 12px;
+  line-height: 10px;
+  color: rgb(210, 204, 204);
+  font-weight: normal;
+}
 .download-button {
   background-color: #000;
   border-radius: 8px;
@@ -47,6 +53,41 @@
   @media only screen and (max-width: 768px) {
     width: 156px;
   }
+  transition: all 0.2s linear;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  // display: inline-block;
+  border-bottom: 1px dotted black;
+  /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  // width: 120px;
+  background-color: var(--docsearch-modal-background);
+  color: var(--docsearch-text-color);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  left: 25%;
+  z-index: 1;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid rgba(26, 148, 255, 0.388);
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 .button-link {
@@ -156,5 +197,22 @@
   }
   .banner-mobile {
     display: block;
+  }
+}
+
+button.button-show-all {
+  border: none;
+  color: rgb(26, 148, 255);
+  // width: 220px;
+  height: 32px;
+  padding: 16px;
+  padding-left: 32px;
+  background-color: transparent;
+  // border-radius: 16px;
+  text-decoration: none;
+  align-self: center;
+
+  &:hover {
+    text-decoration: underline;
   }
 }

@@ -32,7 +32,7 @@ const getParameter = () => {
         },
       }),
     })
-      .then(resp => resp.json())
+      .then(resp => (resp.ok ? resp.json() : void 0))
       .then(res => {
         if (res && res.data) {
           return resolve(
@@ -41,6 +41,7 @@ const getParameter = () => {
         }
         resolve({
           version: 'latest',
+          'macosx-arm64': 'https://bit.ly/tini-studio-latest',
           macosx: 'https://bit.ly/tini-studio-latest',
           windows: 'https://bit.ly/tini-studio-windows-latest',
         });
@@ -48,6 +49,7 @@ const getParameter = () => {
       .catch(() => {
         resolve({
           version: 'latest',
+          'macosx-arm64': 'https://bit.ly/tini-studio-latest',
           macosx: 'https://bit.ly/tini-studio-latest',
           windows: 'https://bit.ly/tini-studio-windows-latest',
         });
@@ -67,10 +69,29 @@ const DownloadSEO = () => {
     </Head>
   );
 };
+
+let platform = '';
+
+const isApple = (() => {
+  return navigator.userAgent.match(/OS X/);
+})();
+const isAppleM1 = (() => {
+  var w = document.createElement('canvas').getContext('webgl');
+  var d = w.getExtension('WEBGL_debug_renderer_info');
+  var g = (d && w.getParameter(d.UNMASKED_RENDERER_WEBGL)) || '';
+  if (g.match(/Apple/) && !g.match(/Apple GPU/)) {
+    return true;
+  }
+  return false;
+})();
+const isWindows = navigator.platform === 'Windows';
+const isMobileOrNotSupportedDevices = !isWindows && !isApple;
+
 const Download = () => {
   const [version, setVersion] = React.useState({
     version: '',
     macosx: '',
+    'macosx-arm64': '',
     windows: '',
   });
   const features = React.useMemo(
@@ -106,6 +127,26 @@ const Download = () => {
     });
   }, []);
 
+  const [platformToShow, setPlatformToShow] = React.useState('');
+
+  React.useEffect(() => {
+    let string = '';
+    if (isApple) {
+      if (isAppleM1) {
+        string += '-arm64';
+      } else {
+        string += '-MacOSX';
+      }
+    } else if (isWindows) {
+      string += '-Windows';
+    } else {
+      string = 'arm64-Windows-MacOSX';
+    }
+    setPlatformToShow(string);
+  }, [setPlatformToShow]);
+  const showAll = () => {
+    setPlatformToShow('arm64-Windows-MacOSX');
+  };
   return (
     <>
       <DownloadSEO />
@@ -116,34 +157,85 @@ const Download = () => {
               'linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 100%)',
             marginBottom: 40,
           }}>
-          <div style={{ marginTop: 40 }}>
+          <div style={{marginTop: 40}}>
             <Banner version={version.version} />
           </div>
+
           <div
-            className="flex fr jc-center"
-            style={{ padding: 8, paddingBottom: 40, marginTop: 24 }}>
-            <DownloadLinks
-              style={{ marginRight: 32 }}
-              link={version.windows}
-              platform="Windows"
-              version={version.version}>
-              <Win style={{ marginRight: 16 }} />
-              <span className="download-label">Windows</span>
-            </DownloadLinks>
-            <DownloadLinks
-              link={version.macosx}
-              platform="MacOSX"
-              version={version.version}>
-              <Apple style={{ marginRight: 16 }} />
-              <span className="download-label">MacOS</span>
-            </DownloadLinks>
+            className="flex fc jc-center"
+            style={{padding: 8, paddingBottom: 40, marginTop: 24}}>
+            <div className="flex fr jc-center">
+              {platformToShow.includes('Windows') && (
+                <DownloadLinks
+                  className="tooltip"
+                  style={{margin: '0 16px'}}
+                  link={version.windows}
+                  platform="Windows"
+                  version={version.version}>
+                  <Win style={{marginRight: 16}} />
+                  <span className="download-label">Windows</span>
+
+                  <span className="tooltiptext">
+                    Download Tini Studio for Windows devices
+                  </span>
+                </DownloadLinks>
+              )}
+              {platformToShow.includes('MacOSX') && (
+                <DownloadLinks
+                  style={{margin: '0 16px'}}
+                  className="tooltip"
+                  link={version.macosx}
+                  platform="MacOSX"
+                  version={version.version}>
+                  <Apple style={{marginRight: 16}} />
+                  <span className="flex fc">
+                    <span className="download-label">MacOS</span>
+                    <span className="download-label download-label-info">
+                      {'(x64)'}
+                    </span>
+                  </span>
+
+                  <span className="tooltiptext">
+                    Download Tini Studio for Macbook device with Intel processor
+                  </span>
+                </DownloadLinks>
+              )}
+              {platformToShow.includes('arm64') && (
+                <DownloadLinks
+                  className="tooltip"
+                  style={{margin: '0 16px'}}
+                  link={version['macosx-arm64']}
+                  platform="MacOSX-arm64"
+                  version={version.version}>
+                  <Apple style={{marginRight: 16}} />
+                  <span className="flex fc">
+                    <span className="download-label">MacOS</span>
+                    <span className="download-label download-label-info">
+                      {'(arm64 - Apple Silicon)'}
+                    </span>
+                  </span>
+
+                  <span className="tooltiptext">
+                    Download Tini Studio for Macbook device with Apple Silicon
+                    processor
+                  </span>
+                </DownloadLinks>
+              )}
+            </div>
+            {(!platformToShow.includes('arm64') ||
+              !platformToShow.includes('MacOSX') ||
+              !platformToShow.includes('Windows')) && (
+              <button className="flex fc button-show-all" onClick={showAll}>
+                Show all downloads
+              </button>
+            )}
           </div>
         </div>
         <div
-          style={{ backgroundColor: '#fff', width: '100%' }}
+          style={{backgroundColor: '#fff', width: '100%'}}
           className="flex fc ai-center">
           {features.map((props, idx) => (
-            <div style={{ marginBottom: 40 }}>
+            <div style={{marginBottom: 40}}>
               <Feature {...props} key={`feature-${idx}`} />
             </div>
           ))}
@@ -152,15 +244,15 @@ const Download = () => {
     </>
   );
 };
-const Feature = ({ description, link, thumbnail, header }) => {
+const Feature = ({description, link, thumbnail, header}) => {
   return (
     <div className="flex fr feature-layout">
       <div
         className="feature-thumbail"
-        style={{ maxWidth: 328, marginRight: 32 }}>
-        {React.cloneElement(thumbnail, { width: 328 })}
+        style={{maxWidth: 328, marginRight: 32}}>
+        {React.cloneElement(thumbnail, {width: 328})}
       </div>
-      <div className="flex fc" style={{ maxWidth: 328 }}>
+      <div className="flex fc" style={{maxWidth: 328}}>
         <h3>{header}</h3>
         <p>{description}</p>
         <a
@@ -182,14 +274,22 @@ const Feature = ({ description, link, thumbnail, header }) => {
   );
 };
 
-const Banner = ({ version }) => {
+const Banner = ({version}) => {
   return (
     <div className="flex fc fcc">
       <Logo />
       <LogoLabel />
-      <span style={{ fontSize: '14px', color: '#808089' }}>
-        version {version}
-      </span>
+      {
+        <span
+          style={{
+            fontSize: 14,
+            display: 'inline-flex',
+            height: 14,
+            color: '#808089',
+          }}>
+          {version && <>Current version {version}</>}
+        </span>
+      }
     </div>
   );
 };
@@ -198,6 +298,7 @@ const DownloadLinks = ({
   link,
   children,
   style = {},
+  className = '',
   platform = 'MacOSX',
   version = '',
 }) => {
@@ -214,7 +315,8 @@ const DownloadLinks = ({
     <a
       href={link}
       onClick={sendTracking}
-      className="flex fr fcc download-button"
+      className={`flex fr fcc download-button ${className}`}
+      about={platform}
       style={{
         textDecoration: 'none',
         ...style,
