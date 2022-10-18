@@ -131,6 +131,7 @@ const Download = () => {
   const [platformToShow, setPlatformToShow] = React.useState('');
 
   React.useEffect(() => {
+    if (!version.version) return;
     let string = '';
     if (isApple) {
       if (isAppleM1) {
@@ -144,7 +145,7 @@ const Download = () => {
       string = 'arm64-Windows-MacOSX';
     }
     setPlatformToShow(string);
-  }, [setPlatformToShow]);
+  }, [setPlatformToShow, version]);
   const showAll = () => {
     setPlatformToShow('arm64-Windows-MacOSX');
   };
