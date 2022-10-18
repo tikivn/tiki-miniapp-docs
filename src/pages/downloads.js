@@ -7,8 +7,6 @@ import LogoLabel from '@site/static/tini-studio-label.svg';
 import Logo from '@site/static/tini-studio-logo.svg';
 import Win from '@site/static/microsoft.svg';
 import Apple from '@site/static/apple.svg';
-import useIsBrowser from '@docusaurus/useIsBrowser';
-
 import Code from '@site/static/IDE-code.svg';
 import Simulator from '@site/static/IDE-simulation.svg';
 import Manage from '@site/static/IDE-manage.svg';
@@ -72,7 +70,7 @@ const DownloadSEO = () => {
 };
 
 const Download = () => {
-  const isServer = !useIsBrowser();
+  const isServer = !global.navigator;
 
   const isApple = isServer
     ? false
