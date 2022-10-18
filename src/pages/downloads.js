@@ -7,6 +7,7 @@ import LogoLabel from '@site/static/tini-studio-label.svg';
 import Logo from '@site/static/tini-studio-logo.svg';
 import Win from '@site/static/microsoft.svg';
 import Apple from '@site/static/apple.svg';
+import useIsBrowser from '@docusaurus/useIsBrowser';
 
 import Code from '@site/static/IDE-code.svg';
 import Simulator from '@site/static/IDE-simulation.svg';
@@ -71,19 +72,25 @@ const DownloadSEO = () => {
 };
 
 const Download = () => {
-  const isApple = (() => {
-    return navigator.userAgent.match(/OS X/);
-  })();
-  const isAppleM1 = (() => {
-    var w = document.createElement('canvas').getContext('webgl');
-    var d = w.getExtension('WEBGL_debug_renderer_info');
-    var g = (d && w.getParameter(d.UNMASKED_RENDERER_WEBGL)) || '';
-    if (g.match(/Apple/) && !g.match(/Apple GPU/)) {
-      return true;
-    }
-    return false;
-  })();
-  const isWindows = navigator.platform === 'Windows';
+  const isServer = !useIsBrowser();
+
+  const isApple = isServer
+    ? false
+    : (() => {
+        return navigator.userAgent.match(/OS X/);
+      })();
+  const isAppleM1 = isServer
+    ? false
+    : (() => {
+        var w = document.createElement('canvas').getContext('webgl');
+        var d = w.getExtension('WEBGL_debug_renderer_info');
+        var g = (d && w.getParameter(d.UNMASKED_RENDERER_WEBGL)) || '';
+        if (g.match(/Apple/) && !g.match(/Apple GPU/)) {
+          return true;
+        }
+        return false;
+      })();
+  const isWindows = isServer ? false : navigator.platform === 'Windows';
 
   const [version, setVersion] = React.useState({
     version: '',
