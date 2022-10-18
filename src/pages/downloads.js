@@ -70,24 +70,21 @@ const DownloadSEO = () => {
   );
 };
 
-let platform = '';
-
-const isApple = (() => {
-  return navigator.userAgent.match(/OS X/);
-})();
-const isAppleM1 = (() => {
-  var w = document.createElement('canvas').getContext('webgl');
-  var d = w.getExtension('WEBGL_debug_renderer_info');
-  var g = (d && w.getParameter(d.UNMASKED_RENDERER_WEBGL)) || '';
-  if (g.match(/Apple/) && !g.match(/Apple GPU/)) {
-    return true;
-  }
-  return false;
-})();
-const isWindows = navigator.platform === 'Windows';
-const isMobileOrNotSupportedDevices = !isWindows && !isApple;
-
 const Download = () => {
+  const isApple = (() => {
+    return navigator.userAgent.match(/OS X/);
+  })();
+  const isAppleM1 = (() => {
+    var w = document.createElement('canvas').getContext('webgl');
+    var d = w.getExtension('WEBGL_debug_renderer_info');
+    var g = (d && w.getParameter(d.UNMASKED_RENDERER_WEBGL)) || '';
+    if (g.match(/Apple/) && !g.match(/Apple GPU/)) {
+      return true;
+    }
+    return false;
+  })();
+  const isWindows = navigator.platform === 'Windows';
+
   const [version, setVersion] = React.useState({
     version: '',
     macosx: '',
