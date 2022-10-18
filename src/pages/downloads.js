@@ -128,9 +128,7 @@ const Download = () => {
     });
   }, []);
 
-  const [platformToShow, setPlatformToShow] = React.useState(
-    isServer ? 'arm64-Windows-MacOSX' : '',
-  );
+  const [platformToShow, setPlatformToShow] = React.useState('');
 
   React.useEffect(() => {
     let string = '';
