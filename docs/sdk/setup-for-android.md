@@ -6,7 +6,7 @@ Hướng dẫn cài đặt Tini App SDK cho dự án Android
 
 ## Hướng dẫn
 
-### Bước 1: Thêm TiniAppSDK dependency vào build.gradle
+#### Thêm TiniAppSDK dependency vào build.gradle
 
 - Thêm `jitpack.io` vào build.gradle ở rootProject
 
@@ -39,7 +39,7 @@ dependencies {
 }
 ```
 
-### Bước 2: Cấu hình AndroidManifest.xml
+#### Cấu hình AndroidManifest.xml
 
 - Thêm các permissions
 
@@ -59,7 +59,20 @@ dependencies {
 ...
 ```
 
-### Bước 3: Tạo Activity
+#### Tạo Application
+
+Tạo một `Application` được kế thừa từ `TiniAppApplication`
+
+```
+import vn.tiki.TiniAppSDK.TiniAppApplication;
+
+public class SomeApplication extends TiniAppApplication {
+  // Do something
+}
+
+```
+
+#### Tạo Activity
 
 Tạo một `Activity` được kế thừa từ `TiniAppActivity`
 
@@ -74,6 +87,6 @@ public class SomeActivity extends TiniAppActivity {
 
 ## Các vấn đề gặp phải
 
-### Vấn đề 1: Conflict thư viện
+#### Vấn đề 1: Conflict thư viện
 
-### Vấn đề 2: Conflict thư viện
+#### Vấn đề 2: Conflict thư viện
