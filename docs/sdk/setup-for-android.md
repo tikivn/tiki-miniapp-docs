@@ -10,32 +10,32 @@ Hướng dẫn cài đặt Tini App SDK cho dự án Android
 
 - Thêm `jitpack.io` vào build.gradle ở rootProject
 
-```
+```groovy
 allprojects {
   repositories {
-    ...
+    // ...
     maven { url "https://jitpack.io" }
-    ...
+    // ...
   }
 }
 ```
 
 - Thêm `android.enableJetifier` vào gradle.properties ở rootProject
 
-```
-...
+```bash
+# ...
 android.enableJetifier=true
-...
+# ...
 ```
 
 - Thêm dependencies vào build.gradle trong app
 
-```
+```groovy
 dependencies {
-  ...
+  // ...
   implementation 'com.facebook.conceal:conceal:1.1.3@aar'
-  implementation 'com.github.lamvd0101:tiniapp-sdk-android:v1.24.0'
-  ...
+  implementation 'com.github.tikivn:tiniapp-sdk-android:v1.0.0'
+  // ...
 }
 ```
 
@@ -43,8 +43,8 @@ dependencies {
 
 - Thêm các permissions
 
-```
-...
+```xml
+<!-- ... -->
 <uses-permission android:name="android.permission.CAMERA" />
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -56,18 +56,18 @@ dependencies {
 <uses-permission android:name="android.permission.WRITE_CONTACTS" />
 <uses-permission android:name="android.permission.READ_PROFILE" />
 <uses-permission android:name="android.permission.READ_CONTACTS" />
-...
+<!-- ... -->
 ```
 
 #### Tạo Application
 
 Tạo một `Application` được kế thừa từ `TiniAppApplication`
 
-```
+```java
 import vn.tiki.TiniAppSDK.TiniAppApplication;
 
 public class SomeApplication extends TiniAppApplication {
-  // Do something
+  // Setup config
 }
 
 ```
@@ -76,17 +76,17 @@ public class SomeApplication extends TiniAppApplication {
 
 Tạo một `Activity` được kế thừa từ `TiniAppActivity`
 
-```
+```java
 import vn.tiki.TiniAppSDK.TiniAppActivity;
 
 public class SomeActivity extends TiniAppActivity {
-  // Do something
+  // Setup config
 }
 
 ```
 
-## Các vấn đề gặp phải
+<!-- ## Các vấn đề gặp phải
 
 #### Vấn đề 1: Conflict thư viện
 
-#### Vấn đề 2: Conflict thư viện
+#### Vấn đề 2: Conflict thư viện -->
