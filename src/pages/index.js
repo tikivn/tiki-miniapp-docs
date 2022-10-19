@@ -147,7 +147,7 @@ function BecomeDeveloper() {
         <h3 className={styles.headText}>Trở thành Nhà phát triển</h3>
         <p className={styles.gray}>
           Đăng ký trở thành Nhà phát triển để phát triển ứng dụng đa nền tảng và
-          đưa sản phẩm của bạn đến hơn 10 triệu người dùng của Tiki.
+          đưa sản phẩm của bạn đến hơn 30 triệu người dùng của Tiki.
         </p>
         <Link className={styles.linkBrand} to="/docs/introduce/register">
           Tìm hiểu thêm
