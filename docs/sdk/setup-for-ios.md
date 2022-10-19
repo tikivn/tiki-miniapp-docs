@@ -6,7 +6,7 @@ Hướng dẫn cài đặt Tini App SDK cho dự án iOS
 
 ## Hướng dẫn
 
-### Bước 1: Thêm TiniAppSDK dependency vào Podfile
+#### Thêm TiniAppSDK dependency vào Podfile
 
 ```
 ...
@@ -14,7 +14,7 @@ pod 'TiniAppSDK', :git => 'https://github.com/lamvd0101/tiniapp-sdk-ios.git', :c
 ...
 ```
 
-### Bước 2: Cấu hình Info.plist
+#### Cấu hình Info.plist
 
 - Thêm thuộc tính `UIViewControllerBasedStatusBarAppearance`
 
@@ -48,7 +48,7 @@ pod 'TiniAppSDK', :git => 'https://github.com/lamvd0101/tiniapp-sdk-ios.git', :c
 ...
 ```
 
-### Bước 3: Tạo ViewController
+#### Tạo ViewController
 
 Tạo một `ViewController` được kế thừa từ `TiniAppViewController`
 
@@ -62,6 +62,6 @@ class ViewController: TiniAppViewController {
 
 ## Các vấn đề gặp phải
 
-### Vấn đề 1: Conflict thư viện
+#### Vấn đề 1: Conflict thư viện
 
-### Vấn đề 2: Conflict thư viện
+#### Vấn đề 2: Conflict thư viện
