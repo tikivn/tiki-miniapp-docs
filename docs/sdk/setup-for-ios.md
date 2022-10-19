@@ -9,7 +9,9 @@ Hướng dẫn cài đặt Tini App SDK cho dự án iOS
 ### Bước 1: Thêm TiniAppSDK dependency vào Podfile
 
 ```
+...
 pod 'TiniAppSDK', :git => 'https://github.com/lamvd0101/tiniapp-sdk-ios.git', :commit => 'e1a7b35'
+...
 ```
 
 ### Bước 2: Cấu hình Info.plist
@@ -17,13 +19,16 @@ pod 'TiniAppSDK', :git => 'https://github.com/lamvd0101/tiniapp-sdk-ios.git', :c
 - Thêm thuộc tính `UIViewControllerBasedStatusBarAppearance`
 
 ```
+...
 <key>UIViewControllerBasedStatusBarAppearance</key>
 <false/>
+...
 ```
 
 - Thêm các permissions
 
 ```
+...
 <key>NSCameraUsageDescription</key>
 <string>TiniApp wants to access your camera</string>
 <key>NSContactsUsageDescription</key>
@@ -40,6 +45,7 @@ pod 'TiniAppSDK', :git => 'https://github.com/lamvd0101/tiniapp-sdk-ios.git', :c
 <string>TiniApp wants to access your microphone</string>
 <key>NSPhotoLibraryUsageDescription</key>
 <string>TiniApp wants to access your album</string>
+...
 ```
 
 ### Bước 3: Tạo ViewController
