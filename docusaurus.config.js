@@ -131,7 +131,7 @@ module.exports = {
         },
         {
           label: 'Tini Console',
-          href: '/apps',
+          href: 'https://developers.tiki.vn/apps',
           position: 'right',
           className: 'button-link ml-16x',
           target: '_blank',

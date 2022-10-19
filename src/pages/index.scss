@@ -38,21 +38,24 @@
 }
 .download-label-info {
   font-size: 12px;
-  line-height: 10px;
-  color: rgb(210, 204, 204);
+  color: #d2cccc;
   font-weight: normal;
+  max-width: 145px;
+  height: 10px;
+  line-height: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .download-button {
   background-color: #000;
   border-radius: 8px;
   padding: 8px;
   text-decoration: none;
-  width: 208px;
+  width: 210px;
   height: 40px;
   font-size: 16px;
-  @media only screen and (max-width: 768px) {
-    width: 156px;
-  }
+  justify-content: flex-start;
   transition: all 0.2s linear;
 }
 
@@ -64,6 +67,21 @@
   /* If you want dots under the hoverable text */
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0.4;
+    transform: translateX(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate__fadeIn {
+  animation: fadeIn 500ms;
+}
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
@@ -200,17 +218,35 @@
   }
 }
 
+.download-links {
+  margin-top: 16px;
+  & > a {
+    margin: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .download-links {
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    & > a {
+      margin: 8px 16px;
+    }
+  }
+}
 button.button-show-all {
   border: none;
   color: rgb(26, 148, 255);
   // width: 220px;
   height: 32px;
-  padding: 16px;
-  padding-left: 32px;
+  padding: 8px;
+  // padding-left: 32px;
   background-color: transparent;
   // border-radius: 16px;
   text-decoration: none;
   align-self: center;
+  position: absolute;
+  bottom: -25px;
 
   &:hover {
     text-decoration: underline;

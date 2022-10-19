@@ -134,8 +134,24 @@ export default function QRCodePage() {
     const url = `https://tiki.vn/apps/${appId}${
       params ? '?' : ''
     }${new URLSearchParams(params || {})}`;
-    setUrl(url);
-    setQrValue(url);
+    try {
+      const query = `  
+         mutation shorten_link_create {
+          shorten_link_create(input: {
+            app_identifier: "${appId}"
+            original_link: "${url}"
+          })
+        }
+      `;
+
+      const data = await graphql({query});
+      const shortLink = data.shorten_link_create;
+      setQrValue(shortLink || url);
+    } catch (error) {
+      setQrValue(url);
+    } finally {
+      setUrl(url);
+    }
   };
 
   return (

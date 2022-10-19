@@ -7,8 +7,6 @@ import LogoLabel from '@site/static/tini-studio-label.svg';
 import Logo from '@site/static/tini-studio-logo.svg';
 import Win from '@site/static/microsoft.svg';
 import Apple from '@site/static/apple.svg';
-import useIsBrowser from '@docusaurus/useIsBrowser';
-
 import Code from '@site/static/IDE-code.svg';
 import Simulator from '@site/static/IDE-simulation.svg';
 import Manage from '@site/static/IDE-manage.svg';
@@ -72,12 +70,11 @@ const DownloadSEO = () => {
 };
 
 const Download = () => {
-  const isServer = !useIsBrowser();
-
+  const isServer = !global.navigator;
   const isApple = isServer
     ? false
     : (() => {
-        return navigator.userAgent.match(/OS X/);
+        return /OS X/.test(navigator.userAgent);
       })();
   const isAppleM1 = isServer
     ? false
@@ -134,6 +131,7 @@ const Download = () => {
   const [platformToShow, setPlatformToShow] = React.useState('');
 
   React.useEffect(() => {
+    if (!version.version) return;
     let string = '';
     if (isApple) {
       if (isAppleM1) {
@@ -147,7 +145,7 @@ const Download = () => {
       string = 'arm64-Windows-MacOSX';
     }
     setPlatformToShow(string);
-  }, [setPlatformToShow]);
+  }, [setPlatformToShow, version]);
   const showAll = () => {
     setPlatformToShow('arm64-Windows-MacOSX');
   };
@@ -159,73 +157,69 @@ const Download = () => {
           style={{
             background:
               'linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 100%)',
-            marginBottom: 40,
+            marginBottom: 30,
+            paddingBottom: 30,
           }}>
-          <div style={{marginTop: 40}}>
+          <div style={{marginTop: 30}}>
             <Banner version={version.version} />
           </div>
 
           <div
-            className="flex fc jc-center"
-            style={{padding: 8, paddingBottom: 40, marginTop: 24}}>
-            <div className="flex fr jc-center">
-              {platformToShow.includes('Windows') && (
-                <DownloadLinks
-                  className="tooltip"
-                  style={{margin: '0 16px'}}
-                  link={version.windows}
-                  platform="Windows"
-                  version={version.version}>
-                  <Win style={{marginRight: 16}} />
-                  <span className="download-label">Windows</span>
+            className="flex fr jc-center download-links"
+            style={{position: 'relative', minHeight: 72}}>
+            {platformToShow.includes('Windows') && (
+              <DownloadLinks
+                className="tooltip"
+                link={version.windows}
+                platform="Windows"
+                version={version.version}>
+                <Win style={{marginRight: 16}} />
+                <span className="download-label">Windows</span>
 
-                  <span className="tooltiptext">
-                    Download Tini Studio for Windows devices
+                <span className="tooltiptext">
+                  Download Tini Studio for Windows devices
+                </span>
+              </DownloadLinks>
+            )}
+            {platformToShow.includes('MacOSX') && (
+              <DownloadLinks
+                className="tooltip"
+                link={version.macosx}
+                platform="MacOSX"
+                version={version.version}>
+                <Apple style={{marginRight: 16}} />
+                <span className="flex fc">
+                  <span className="download-label">MacOS</span>
+                  <span className="download-label download-label-info">
+                    {'(x64)'}
                   </span>
-                </DownloadLinks>
-              )}
-              {platformToShow.includes('MacOSX') && (
-                <DownloadLinks
-                  style={{margin: '0 16px'}}
-                  className="tooltip"
-                  link={version.macosx}
-                  platform="MacOSX"
-                  version={version.version}>
-                  <Apple style={{marginRight: 16}} />
-                  <span className="flex fc">
-                    <span className="download-label">MacOS</span>
-                    <span className="download-label download-label-info">
-                      {'(x64)'}
-                    </span>
-                  </span>
+                </span>
 
-                  <span className="tooltiptext">
-                    Download Tini Studio for Macbook device with Intel processor
+                <span className="tooltiptext">
+                  Download Tini Studio for Macbook device with Intel processor
+                </span>
+              </DownloadLinks>
+            )}
+            {platformToShow.includes('arm64') && (
+              <DownloadLinks
+                className="tooltip"
+                link={version['macosx-arm64']}
+                platform="MacOSX-arm64"
+                version={version.version}>
+                <Apple style={{marginRight: 16}} />
+                <span className="flex fc">
+                  <span className="download-label">MacOS</span>
+                  <span className="download-label download-label-info">
+                    {'(arm64 - Apple Silicon)'}
                   </span>
-                </DownloadLinks>
-              )}
-              {platformToShow.includes('arm64') && (
-                <DownloadLinks
-                  className="tooltip"
-                  style={{margin: '0 16px'}}
-                  link={version['macosx-arm64']}
-                  platform="MacOSX-arm64"
-                  version={version.version}>
-                  <Apple style={{marginRight: 16}} />
-                  <span className="flex fc">
-                    <span className="download-label">MacOS</span>
-                    <span className="download-label download-label-info">
-                      {'(arm64 - Apple Silicon)'}
-                    </span>
-                  </span>
+                </span>
 
-                  <span className="tooltiptext">
-                    Download Tini Studio for Macbook device with Apple Silicon
-                    processor
-                  </span>
-                </DownloadLinks>
-              )}
-            </div>
+                <span className="tooltiptext">
+                  Download Tini Studio for Macbook device with Apple Silicon
+                  processor
+                </span>
+              </DownloadLinks>
+            )}
             {(!platformToShow.includes('arm64') ||
               !platformToShow.includes('MacOSX') ||
               !platformToShow.includes('Windows')) && (
@@ -286,12 +280,18 @@ const Banner = ({version}) => {
       {
         <span
           style={{
-            fontSize: 14,
-            display: 'inline-flex',
-            height: 14,
-            color: '#808089',
+            display: 'block',
+            height: 20,
           }}>
-          {version && <>Current version {version}</>}
+          {version && (
+            <span
+              className="animate__fadeIn"
+              style={{
+                color: '#808089',
+              }}>
+              Current version: v{version}
+            </span>
+          )}
         </span>
       }
     </div>
@@ -319,7 +319,7 @@ const DownloadLinks = ({
     <a
       href={link}
       onClick={sendTracking}
-      className={`flex fr fcc download-button ${className}`}
+      className={`flex fr fcc download-button  animate__fadeIn ${className}`}
       about={platform}
       style={{
         textDecoration: 'none',

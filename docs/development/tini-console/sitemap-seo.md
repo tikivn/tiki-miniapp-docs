@@ -50,6 +50,26 @@ Sitemap là gì?
 </urlset>
 ```
 
+- Ví dụ:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://tiki.vn/apps/vn.tiki.miki/pages/book-detail/index?id=1</loc>
+    <lastmod>2022-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://tiki.vn/apps/vn.tiki.miki/pages/book-detail/index?id=2</loc>
+    <lastmod>2022-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://tiki.vn/apps/vn.tiki.miki/pages/book-detail/index?id=3</loc>
+    <lastmod>2022-09-26</lastmod>
+  </url>
+</urlset>
+```
+
 - Lưu ý:
   - TiniApp Crawler chỉ hỗ trợ các url sử dụng https
   - TiniApp Crawler chỉ hỗ trợ các url là đường dẫn của ứng dụng
