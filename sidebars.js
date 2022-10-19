@@ -250,7 +250,11 @@ module.exports = {
             {
               type: 'category',
               label: 'Utilities',
-              items: ['component/basic/utilities/image-cropper'],
+              items: [
+                'component/basic/utilities/image-cropper',
+                'component/basic/utilities/cashback',
+                'component/basic/utilities/share-to-earn',
+              ],
             },
             {
               type: 'category',

@@ -21,11 +21,31 @@ Sitemap là gì?
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.example.com/foo.html</loc>
-    <lastmod>2022-09-26</lastmod>
+    <lastmod>2022-09-27T10:01:36.385Z</lastmod>
   </url>
   <url>
     <loc>https://www.example.com/bar.html</loc>
-    <lastmod>2022-09-26</lastmod>
+    <lastmod>2022-09-27T10:01:36.385Z</lastmod>
+  </url>
+</urlset>
+```
+
+- Ví dụ:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://tiki.vn/apps/vn.tiki.miki/pages/book-detail/index?id=1</loc>
+    <lastmod>2022-09-27T10:01:36.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tiki.vn/apps/vn.tiki.miki/pages/book-detail/index?id=2</loc>
+    <lastmod>2022-09-27T10:01:36.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tiki.vn/apps/vn.tiki.miki/pages/book-detail/index?id=3</loc>
+    <lastmod>2022-09-27T10:01:36.385Z</lastmod>
   </url>
 </urlset>
 ```
