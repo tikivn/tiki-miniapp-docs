@@ -66,6 +66,7 @@ class ViewController: TiniAppViewController {
 
 #### Vấn đề 2: Conflict thư viện -->
 
-#### Ví dụ mẫu
+## Thông tin thêm
 
-Tini App SDK Example
+- [Xây dựng ứng dụng iOS](/docs/sdk/example-for-ios)
+- [Các vấn đề gặp phải](/docs/sdk/troubleshooting)

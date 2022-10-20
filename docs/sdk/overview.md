@@ -15,12 +15,13 @@ Ngoài các Tini App có sẵn và hệ sinh thái của Tiki, các bạn hoàn 
 
 - **Tini App Studio:** Công cụ lập trình phát triển ứng dụng Tini App
 - **Tini Console:** Công cụ quản lý và phát hành ứng dụng Tini App của bạn
+- Chi tiết [xem tại đây](https://developers.tiki.vn/docs/development/studio/overview).
 
 Sau khi ứng dụng Tini App của bạn được phát hành trên kho ứng dụng, mặc nhiên sẽ có trên tất cả các `Super App` đang tích hợp Tini App SDK.
 
 ## Các bước triển khai
 
-<img src="/img/sdk/tini-app-sdk-step.jpg"  alt="Tini App SDK"/>
+<img src="/img/sdk/tini-app-sdk-step.png"  alt="Tini App SDK"/>
 
 #### Tạo tài khoản nhà phát triển
 
@@ -30,7 +31,7 @@ Liên hệ với chúng tôi để tạo một tài khoản hỗ trợ tích h�
 
 #### Thiết kế vùng hoạt động
 
-Thiết kế một vùng hoạt động cho Tini App trên ứng dụng của bạn, như: Màn hình chứa Tini App, điểm dẫn vào Tini App, ...
+Thiết kế một vùng hoạt động cho Tini App trên ứng dụng của bạn như: Màn hình chứa Tini App, điểm dẫn vào Tini App, ...
 
 #### Tích hợp Tini App SDK
 

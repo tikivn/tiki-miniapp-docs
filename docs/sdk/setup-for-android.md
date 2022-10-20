@@ -90,3 +90,8 @@ public class SomeActivity extends TiniAppActivity {
 #### Vấn đề 1: Conflict thư viện
 
 #### Vấn đề 2: Conflict thư viện -->
+
+## Thông tin thêm
+
+- [Xây dựng ứng dụng Android](/docs/sdk/example-for-android)
+- [Các vấn đề gặp phải](/docs/sdk/troubleshooting)
