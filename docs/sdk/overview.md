@@ -38,6 +38,7 @@ Làm theo hướng dẫn ở các bước tiếp theo để tích hợp Tini App
 
 - [Cài đặt cho iOS](/docs/sdk/setup-for-ios)
 - [Cài đặt cho Android](/docs/sdk/setup-for-android)
+- [Cài đặt cho React-Native](/docs/sdk/setup-for-react-native)
 
 #### Xây dựng các APIs hỗ trợ cho Tini App
 
