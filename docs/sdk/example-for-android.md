@@ -53,7 +53,6 @@ dependencies {
   // ==== Tini App SDK ====
   implementation 'com.facebook.conceal:conceal:1.1.3@aar'
   implementation('com.github.lamvd0101:tiniapp-sdk-android:v1.24.0') {
-    exclude group: "androidx.appcompat"
     exclude group: "androidx.lifecycle"
   }
 }

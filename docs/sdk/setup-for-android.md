@@ -35,7 +35,6 @@ dependencies {
   // ...
   implementation 'com.facebook.conceal:conceal:1.1.3@aar'
   implementation('vn.tiki:tiniapp-sdk:v1.0.0') {
-    exclude group: "androidx.appcompat"
     exclude group: "androidx.lifecycle"
   }
   // ...
