@@ -34,7 +34,7 @@ android.enableJetifier=true
 dependencies {
   // ...
   implementation 'com.facebook.conceal:conceal:1.1.3@aar'
-  implementation 'com.github.tikivn:tiniapp-sdk-android:v1.0.0'
+  implementation 'vn.tiki:tiniapp-sdk:v1.0.0'
   // ...
 }
 ```
