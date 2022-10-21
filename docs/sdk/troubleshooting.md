@@ -2,4 +2,9 @@
 title: Các vấn đề gặp phải
 ---
 
-Đang cập nhật...
+## Các lỗi có thể gặp với iOS
+
+#### RuntimeError - [Xcodeproj] Unknown object version (56)
+
+- **Mô tả:** Lỗi conflict version của CocoaPods với Xcode phiên bản mới
+- **Giải pháp:** Chỉnh sửa Project Format thành Xcode 13.0 - compatible

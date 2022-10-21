@@ -32,6 +32,10 @@ Xem tài liệu sau để cấu hình cho Android. Lưu ý: Bỏ qua bước cà
 
 - [Cài đặt cho Android](/docs/sdk/setup-for-android)
 
+## Các phương thức
+
+==== Các phương thức ====
+
 ## Thông tin thêm
 
 - [Xây dựng ứng dụng React-Native](/docs/sdk/example-for-react-native)

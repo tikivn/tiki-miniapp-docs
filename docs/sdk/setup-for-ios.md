@@ -30,21 +30,21 @@ pod 'TiniAppSDK', '1.0.0'
 ```xml
 <!-- ... -->
 <key>NSCameraUsageDescription</key>
-<string>TiniApp wants to access your camera</string>
+<string>Tini App muốn truy cập camera của bạn</string>
 <key>NSContactsUsageDescription</key>
-<string>TiniApp wants to access your contacts</string>
+<string>Tini App muốn truy cập danh bạ của bạn</string>
 <key>NSFaceIDUsageDescription</key>
 <string>Sử dụng FaceID hoặc TouchID để xác thực</string>
 <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-<string>This is the plist item for NSLocationAlwaysAndWhenInUseUsageDescription</string>
+<string>Tini App muốn sử dụng vị trí của bạn</string>
 <key>NSLocationAlwaysUsageDescription</key>
-<string>This is the plist item for NSLocationAlwaysUsageDescription</string>
+<string>Tini App muốn sử dụng vị trí của bạn</string>
 <key>NSLocationWhenInUseUsageDescription</key>
-<string>This is the plist item for NSLocationWhenInUseUsageDescription</string>
+<string>Tini App muốn sử dụng vị trí của bạn</string>
 <key>NSMicrophoneUsageDescription</key>
-<string>TiniApp wants to access your microphone</string>
+<string>Tini App muốn truy cập ghi âm của bạn</string>
 <key>NSPhotoLibraryUsageDescription</key>
-<string>TiniApp wants to access your album</string>
+<string>Tini App muốn truy cập thư viện ảnh của bạn</string>
 <!-- ... -->
 ```
 
@@ -60,11 +60,9 @@ class ViewController: TiniAppViewController {
 }
 ```
 
-<!-- ## Các vấn đề gặp phải
+## Các phương thức
 
-#### Vấn đề 1: Conflict thư viện
-
-#### Vấn đề 2: Conflict thư viện -->
+==== Các phương thức ====
 
 ## Thông tin thêm
 
