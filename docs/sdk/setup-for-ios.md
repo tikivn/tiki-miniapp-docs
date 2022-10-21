@@ -10,7 +10,7 @@ Hướng dẫn cài đặt Tini App SDK cho dự án iOS
 
 ```pod
 # ...
-pod 'TiniAppSDK', :git => 'https://github.com/tikivn/tiniapp-sdk-ios.git', :tag => 'v1.0.0'
+pod 'TiniAppSDK', '1.0.0'
 # ...
 ```
 
