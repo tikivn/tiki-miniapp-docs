@@ -8,7 +8,7 @@ Hướng dẫn cài đặt Tini App SDK cho dự án Android
 
 #### Thêm TiniAppSDK dependency vào build.gradle
 
-- Thêm `jitpack.io` vào build.gradle ở rootProject
+- Thêm `jitpack.io` vào build.gradle hoặc settings.gradle ở rootProject
 
 ```groovy
 allprojects {
@@ -34,7 +34,9 @@ android.enableJetifier=true
 dependencies {
   // ...
   implementation 'com.facebook.conceal:conceal:1.1.3@aar'
-  implementation 'vn.tiki:tiniapp-sdk:v1.0.0'
+  implementation('vn.tiki:tiniapp-sdk:v1.0.0') {
+    exclude group: "androidx.lifecycle"
+  }
   // ...
 }
 ```
@@ -85,11 +87,9 @@ public class SomeActivity extends TiniAppActivity {
 
 ```
 
-<!-- ## Các vấn đề gặp phải
+## Các phương thức
 
-#### Vấn đề 1: Conflict thư viện
-
-#### Vấn đề 2: Conflict thư viện -->
+==== Các phương thức ====
 
 ## Thông tin thêm
 
