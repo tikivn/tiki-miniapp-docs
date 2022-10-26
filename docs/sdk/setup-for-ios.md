@@ -100,6 +100,7 @@ trong đó:
 
 kết quả trả về:
   - **TiniAppViewController**: Hàm openMiniapp trả về 1 view controller. Chúng ta có thể present hay push view controller này vào stack  tuỳ theo mục đích sử dụng
+  - 
 ### 5. Handle deeplink
 Để có thể mở 1 tiniapp từ deeplink, chúng ta cần implement các phương thức sau ở application delegate
 
@@ -122,8 +123,8 @@ Lưu ý:
 
 | Method | description                                                       |
 |--------|------|-------------------------------------------------------------------|
-| `openMiniApp` | Mở 1 tiniapp bất kì |
-| `getScore()` | The score from 0 to 1 |
+| `openMiniApp()` | Mở 1 tiniapp bất kì |
+| `config()` | Cấu hình cho TiniAppSDK |
 
 
 #### 2. TiniAppViewController

@@ -1051,7 +1051,6 @@ module.exports = {
       items: [
         'sdk/setup-for-ios',
         'sdk/setup-for-android',
-        'sdk/setup-for-react-native',
         'sdk/troubleshooting',
       ],
     },
@@ -1059,11 +1058,7 @@ module.exports = {
       type: 'category',
       label: 'Các ví dụ mẫu',
       collapsed: false,
-      items: [
-        'sdk/example-for-ios',
-        'sdk/example-for-android',
-        'sdk/example-for-react-native',
-      ],
+      items: ['sdk/example-for-ios', 'sdk/example-for-android'],
     },
   ],
 };

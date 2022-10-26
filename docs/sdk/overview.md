@@ -3,8 +3,11 @@ title: Tổng quan về Tini App SDK
 ---
 
 <!-- <img src="/img/TiniApp_Development_to_End_users_diagram.png" width="700px" alt="Tini App SDK"/> -->
+<!-- <iframe src="https://www.figma.com/proto/LsVCqpM9LO2lLUVzOb8JXC/Tiki-VIP?node-id=246%3A154483&sc[…]g=scale-down&page-id=1%3A4&starting-point-node-id=246%3A154483"  width={320} height={480}/> -->
 
 ## Giới thiệu
+
+
 
 Tini App SDK là bộ công cụ thuộc sản phẩm `Tini App OS`. Được cài đặt để biến bất kì ứng dụng nào trở thành một `Super App`; bao gồm toàn bộ kho ứng dụng Tini App và hệ sinh thái của Tiki. Sau khi tích hợp Tini App SDK, ứng dụng của bạn sẽ có các thành phần sau:
 
@@ -43,7 +46,7 @@ Làm theo hướng dẫn ở các bước tiếp theo để tích hợp Tini App
 
 - [Cài đặt cho iOS](/docs/sdk/setup-for-ios)
 - [Cài đặt cho Android](/docs/sdk/setup-for-android)
-- [Cài đặt cho React-Native](/docs/sdk/setup-for-react-native)
+<!-- - [Cài đặt cho React-Native](/docs/sdk/setup-for-react-native) -->
 
 #### Xây dựng các APIs hỗ trợ cho Tini App
 
