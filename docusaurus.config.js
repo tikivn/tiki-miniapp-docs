@@ -114,11 +114,11 @@ module.exports = {
               docId: 'backend-api/overview',
               label: 'Server APIs',
             },
-            // {
-            //   type: 'doc',
-            //   docId: 'sdk/overview',
-            //   label: 'Tini App SDK',
-            // },
+            {
+              type: 'doc',
+              docId: 'sdk/overview',
+              label: 'Tini App SDK',
+            },
           ],
         },
         {
