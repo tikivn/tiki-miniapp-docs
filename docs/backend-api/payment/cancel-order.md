@@ -28,7 +28,13 @@ Request gửi đi phải kèm chữ ký điện tử nhằm đảm bảo tính x
 | ---------- | ------------ | :------: | ------------------ |
 | order_id   | string       |    ✓     | ID của đơn hàng    |
 | comment    | string       |    ✓     | Lý do hủy đơn hàng |
+| push_opts  | object       |          | Tùy chọn thông báo |
 
+- Chi tiết thuộc tính push_opts:
+
+  | Thuộc tính | Kiểu dữ liệu | Bắt buộc | Mô tả              |
+  | ---------- | ------------ | :------: | ------------------ |
+  | page_path  | string       |    ✓     | Đường dẫn đơn hàng |
 
 Vi dụ về yêu cầu hoàn thành đơn hàng
 
@@ -38,7 +44,7 @@ curl --location --request POST 'https://api.tiki.vn/tiniapp-open-api/order/cance
 --header 'X-Tiniapp-Client-Id: 8GXqhWDK3EppMwf8IyQU1GHgfq2TPADe' \
 --header 'X-Tiniapp-Signature: 50cc41cb0d18eca77d4990baaddb5d7c1a1b058e97eb3a170b0abd9a8f6c87b8' \
 --header 'X-Tiniapp-Timestamp: 1624558318419' \
---data-raw '{"order_id":"77062110977884170","comment":"Hết hàng"}'
+--data-raw '{"order_id":"77062110977884170","comment":"Hết hàng","pust_opts":{"page_path":"/order/detail/88062110977884170"}}'
 ```
 
 #### HTTP Response
@@ -50,6 +56,7 @@ curl --location --request POST 'https://api.tiki.vn/tiniapp-open-api/order/cance
 | Data       | []**[Data](#data)** |    ✓     |       |
 
 ##### Data
+
 | Thuộc tính | Kiểu dữ liệu                    | Bắt buộc | Mô tả |
 | ---------- | ------------------------------- | :------: | ----- |
 | order      | **[Order](create-order#order)** |    ✓     |       |
