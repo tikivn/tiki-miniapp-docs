@@ -3,7 +3,7 @@ title: Tổng quan về Tini App SDK
 ---
 
 <!-- <img src="/img/TiniApp_Development_to_End_users_diagram.png" width="700px" alt="Tini App SDK"/> -->
-<iframe width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLsVCqpM9LO2lLUVzOb8JXC%2FTiki-VIP%3Fnode-id%3D246%253A154483%26scaling%3Dscale-down%26page-id%3D1%253A4%26starting-point-node-id%3D246%253A154483" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FRBKId028r1sdqChrPoDpPm%2F%255BPublic%255D-Tini-OS%3Fpage-id%3D0%25253A1%26node-id%3D1%253A78586%26scaling%3Dmin-zoom%26starting-point-node-id%3D1%253A78586" allowfullscreen></iframe>
 
 ## Giới thiệu
 
