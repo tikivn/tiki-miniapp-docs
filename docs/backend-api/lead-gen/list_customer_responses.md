@@ -54,7 +54,8 @@ curl --location --request GET 'https://api.tiki.vn/tiniapp-sandbox-open-api/lead
 
 - `%2C` đại diện cho dấu phẩy (,) trong URL
 - Khi đối tác sử dụng thử ở sandbox, vui lòng không thay đổi `form_ids` ở URL để luôn nhận được data.
-  :::
+- Trường `inputs` trong data sandbox chỉ là data mẫu để đối tác tham khảo. Mỗi đối tác sẽ được gắn với những form khác nhau, với những câu hỏi và trường dữ liệu khác nhau
+:::
 
 ### HTTP Response
 
@@ -130,7 +131,7 @@ Ví dụ về dữ liệu trả về
                     "age": 22,
                     "avatar": "https://salt.tikicdn.com/ts/tiniapp/f7/a0/73/2d203498a7fff724255d67ed47577c6e.png",
                     "birthday": "11/9/1993",
-                    "favourite": [
+                    "hobbies": [
                         "Đọc sách",
                         "Đá banh"
                     ],
