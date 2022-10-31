@@ -6,7 +6,7 @@ title: Tạo hồ sơ
 
 API này sẽ tạo một hồ sơ của khách hàng.
 
-::: important Quan trọng
+:::important Quan trọng
 
 API này yêu cầu có [chữ ký điện tử](../platform-api/calculate-signature) khi gửi API request.
 
