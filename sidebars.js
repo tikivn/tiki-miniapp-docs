@@ -165,7 +165,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Components',
-      link: {type: 'doc', id: 'component/overview'},
+      link: { type: 'doc', id: 'component/overview' },
       items: [
         {
           type: 'category',
@@ -415,7 +415,7 @@ module.exports = {
     {
       type: 'category',
       label: 'JS APIs',
-      link: {type: 'doc', id: 'api/overview'},
+      link: { type: 'doc', id: 'api/overview' },
       items: [
         {
           type: 'category',
@@ -1059,6 +1059,12 @@ module.exports = {
       label: 'Các ví dụ mẫu',
       collapsed: false,
       items: ['sdk/example-for-ios', 'sdk/example-for-android'],
+    },
+    {
+      type: 'category',
+      label: 'Server Side API',
+      collapsed: false,
+      items: ['sdk/ipn', 'sdk/api_signature'],
     },
   ],
 };
