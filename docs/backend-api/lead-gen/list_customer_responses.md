@@ -11,7 +11,7 @@ description: Lấy thông tin user phản hồi về form của đối tác
 | Content-Type | application/json                     |
 | Method       | GET                                  |
 | Base URL     | https://api.tiki.vn/tiniapp-open-api |
-| Path         | /lead/customer-response/list         |
+| Path         | /lead/responses                      |
 
 ### Parameters
 
@@ -33,7 +33,7 @@ description: Lấy thông tin user phản hồi về form của đối tác
 Vi dụ về request lấy thông tin phản hồi của user
 
 ```
-curl --location --request GET 'https://api.tiki.vn/tiniapp-open-api/lead/customer-response/list?form_ids=84112926079713300%2C88238130968199168&size=100' \
+curl --location --request GET 'https://api.tiki.vn/tiniapp-open-api/lead/responses?form_ids=84112926079713300%2C88238130968199168&size=100' \
 --header 'Content-Type: application/json' \
 --header 'X-Tiniapp-Client-Id: 8GXqhWDK3EppMwf8IyQU1GHgfq2TPADe' \
 --header 'X-Tiniapp-Signature: 4d7bf4bc83e3e9884ce7ebfb1b2477aca66d40188df2de26053f59fe1067f4d3' \
@@ -53,12 +53,12 @@ curl --location --request GET 'https://api.tiki.vn/tiniapp-open-api/lead/custome
 
 #### Data
 
-| Thuộc tinh         | Kiểu dữ liệu                     | Bắt buộc | Mô tả                                        |
-|--------------------|----------------------------------| :------: |----------------------------------------------|
-| total              | int64                            |    ✓     | Tổng số lượng phản hồi theo query của đối tác |
-| customer_responses | []**[Customer Response](#data)** |    ✓     |                                              |
+| Thuộc tinh  | Kiểu dữ liệu            | Bắt buộc | Mô tả                                        |
+|-------------|-------------------------| :------: |----------------------------------------------|
+| total       | int64                   |    ✓     | Tổng số lượng phản hồi theo query của đối tác |
+| responses   | []**[Response](#data)** |    ✓     |                                              |
 
-#### Customer Response
+#### Response
 
 | Thuộc tinh | Kiểu dữ liệu | Bắt buộc | Mô tả                        |
 |------------|--------------| :------: |------------------------------|
@@ -73,7 +73,7 @@ Ví dụ về dữ liệu trả về
 {
     "data": {
         "total": 10,
-        "customer_responses": [
+        "responses": [
             {
                 "created_at": "2021-12-16T17:43:51Z",
                 "form_id": "1",
