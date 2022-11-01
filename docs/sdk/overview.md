@@ -24,11 +24,15 @@ Sau khi ứng dụng Tini App của bạn được phát hành trên kho ứng d
 
 ## Các bước triển khai
 
-<img src="https://salt.tikicdn.com/ts/tiniapp/0f/e5/e2/08459c104b6d21c351839c0bb7ad5df4.png"  alt="Steps to integrate with Tini SDK"/>
+<img src="https://salt.tikicdn.com/ts/tiniapp/01/60/24/7407330ab422aec525f4c264e0794ec0.png" style={{ margin: '0 auto', display: 'flex' }} width="700" alt="Steps to integrate with Tini SDK"/>
 
 #### Liên hệ và đăng ký tài khoản
 
-Bạn vui lòng gửi email đến <a href="mailto:tiniapp@tiki.vn?subject=%C4%90%C4%83ng%20k%C3%BD%20s%E1%BB%AD%20d%E1%BB%A5ng%20Tini%20App%20SDK">tiniapp@tiki.vn</a> với tiêu đề: *Đăng ký sử dụng Tini SDK*
+Vui lòng nhấn vào nút bên dưới và gửi thông tin đến chúng tôi để đăng ký tích hợp Tini SDK.
+
+<div style={{ 'text-align': 'center', padding: 16 }}>
+<a style={{ padding: 16, fontSize: 16 }} target="_blank" href="https://forms.gle/kM2iJG6QXvW7rjXYA" className="primaryButton">Đăng ký trải nghiệm Tini SDK</a>
+</div>
 
 #### Download Tini SDK
 
