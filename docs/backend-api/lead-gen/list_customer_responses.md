@@ -28,9 +28,9 @@ description: Lấy thông tin user phản hồi về form của đối tác
 - Lấy thông tin phản hồi của người dùng cũng đòi hỏi chữ ký điện tử. Tham
   khảo [Cách tạo chữ ký điện tử](../platform-api/calculate-signature)
 - Data sẽ được trả về theo id giảm dần, tương ứng là những phản hồi gần nhất so với thời điểm mà đối tác gửi request
-  :::
+:::
 
-Vi dụ về request lấy thông tin phản hồi của user ở production
+Vi dụ về request lấy thông tin phản hồi của user
 
 ```
 curl --location --request GET 'https://api.tiki.vn/tiniapp-open-api/lead/customer-response/list?form_ids=84112926079713300%2C88238130968199168&size=100' \
@@ -40,30 +40,16 @@ curl --location --request GET 'https://api.tiki.vn/tiniapp-open-api/lead/custome
 --header 'X-Tiniapp-Timestamp: 1624613199164'
 ```
 
-Vi dụ về request lấy thông tin phản hồi của user ở sandbox
-
-```
-curl --location --request GET 'https://api.tiki.vn/tiniapp-sandbox-open-api/lead/customer-response/list?form_ids=1&size=100' \
---header 'Content-Type: application/json' \
---header 'X-Tiniapp-Client-Id: 8GXqhWDK3EppMwf8IyQU1GHgfq2TPADe' \
---header 'X-Tiniapp-Signature: 4d7bf4bc83e3e9884ce7ebfb1b2477aca66d40188df2de26053f59fe1067f4d3' \
---header 'X-Tiniapp-Timestamp: 1624613199164'
-```
-
 :::note Lưu ý
 
 - `%2C` đại diện cho dấu phẩy (,) trong URL
-- Khi đối tác sử dụng thử ở sandbox, vui lòng không thay đổi `form_ids` ở URL để luôn nhận được data.
-- Trường `inputs` trong data sandbox chỉ là data mẫu để đối tác tham khảo. Mỗi đối tác sẽ được gắn với những form khác nhau, với những câu hỏi và trường dữ liệu khác nhau
 :::
 
 ### HTTP Response
 
-[**Kết quả lỗi**](error-code)
-
-| Thuộc tinh | Kiểu dữ liệu        | Bắt buộc | Mô tả |
-| ---------- | ------------------- | :------: | ----- |
-| Data       | []**[Data](#data)** |    ✓     |       |
+| Thuộc tinh | Kiểu dữ liệu      | Bắt buộc | Mô tả |
+|------------| ----------------- | :------: | ----- |
+| data       | **[Data](#data)** |    ✓     |       |
 
 #### Data
 
@@ -87,7 +73,7 @@ Ví dụ về dữ liệu trả về
 {
     "data": {
         "total": 10,
-        "data": [
+        "customer_responses": [
             {
                 "created_at": "2021-12-16T17:43:51Z",
                 "form_id": "1",
