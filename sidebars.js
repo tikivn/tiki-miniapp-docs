@@ -970,6 +970,7 @@ module.exports = {
         'backend-api/lead-gen/update_application',
         'backend-api/lead-gen/input_templates',
         'backend-api/lead-gen/status',
+        'backend-api/lead-gen/list_customer_responses',
       ],
     },
 
