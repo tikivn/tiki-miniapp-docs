@@ -33,6 +33,10 @@ import { Simulator } from '@site/src/components/Simulator';
 | fail              | Function     | Callback function khi thất bại.                                                                      |
 | complete          | Function     | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                                |
 
+## Theme
+
+<img src="/img/theme-nav.png" width="100%" alt="Default Theme" style={{ margin: '0 auto', display: 'flex' }}/>
+
 ## Giá trị trong search
 
 | Thuộc tính   | Kiểu dữ liệu | Mô tả                          |
