@@ -19,6 +19,7 @@ Dưới đây là ví dụ của một `app.json` với một vài cấu hình t
   "window": {
     "defaultTitle": "My App",
     "titleBarColor": "#fff",
+    "theme": "reverse",
     "backgroundColor": "#F5F7FC",
     "allowsBounceVertical": "NO"
   },
@@ -53,7 +54,7 @@ Dưới đây là ví dụ của một `app.json` với một vài cấu hình t
 
 Đây là cấu hình giúp cho Tini App Framework xác định được các pages và đường dẫn tới các files của page. Khi định nghĩa không cần xác định đuôi của file, framework sẽ tự động tìm kiếm file .json, .js, .jsx và .style dựa trên page path được quy định.
 
-***Lưu ý:***
+**_Lưu ý:_**
 
 > - Các pages không được quy định ở đây sẽ không được bundle khi app được build. Việc chuyển tới một page thường bị lỗi có thể do quên trong việc quy định page ở đây.
 > - Item đầu tiên trong array sẽ được chọn làm trang khởi tạo khi app được mở lên. Nên cần lưu ý khi thay đổi thứ tự của item đầu tiên.
@@ -94,9 +95,10 @@ Cấu hình để framework có thể load được `page/index/index` như sau:
 | allowsBounceVertical | string       | "YES"            | Xác định cho phép kéo màn hình vượt quá size của window hay không?                                                                                                                                   |
 | transparentTitle     | string       | "none"           | Cấu hình thuộc tính trong suốt của navigation bar. Hỗ trợ 3 giá trị `none` - có màu. `always` - trong suốt. `auto` sẽ tự động chuyển giữa trong suốt và có màu tuỳ theo vị trí scroll trên màn hình. |
 | titleBarColor        | HexColor     | "#FFFFFF"        | Quy định màu nền của navigation bar.                                                                                                                                                                 |
+| theme                | string       | "default"        | Quy định theme của navigation bar. Giá trị là `reverse` hoặc `default`.                                                                                                                              |
 | backgroundColor      | HexColor     | "#FFFFFF"        | Quy định màu nền mặc định của page.                                                                                                                                                                  |
 | titleBarBottomColor  | HexColor     | "#EBEBF0"        | Quy định màu cho border bottom của NavigationBar.                                                                                                                                                    |
-| disableHardwareBack | string       | "YES"            | Xác định cho phép vuốt để quay lại trang trước đó hay không?  |           
+| disableHardwareBack  | string       | "YES"            | Xác định cho phép vuốt để quay lại trang trước đó hay không?                                                                                                                                         |
 
 Ví dụ:
 
@@ -105,9 +107,10 @@ Ví dụ:
   "window": {
     "defaultTitle": "My App",
     "titleBarColor": "#fff",
+    "theme": "reverse",
     "backgroundColor": "#F5F7FC",
     "allowsBounceVertical": "NO",
-    "disableHardwareBack": "NO",
+    "disableHardwareBack": "NO"
   }
 }
 ```

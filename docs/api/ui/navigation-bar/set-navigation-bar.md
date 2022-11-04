@@ -20,16 +20,26 @@ import { Simulator } from '@site/src/components/Simulator';
 
 ## API Params
 
-| Thuộc tính        | Kiểu dữ liệu | Mô tả                                                                                               |
-| ----------------- | ------------ | --------------------------------------------------------------------------------------------------- |
-| title             | string       | Tiêu đề của Navigation Bar                                                                          |
-| image             | string       | Image URL được sử dụng để render trên title. Khi image được set thì `title` sẽ không còn hiệu lực   |
-| titleBarColor     | HexColor     | Background color của Navigation Bar                                                                 |
-| borderBottomColor | HexColor     | Nếu `backgroundColor` được set, thì `borderBottomColor` sẽ luôn nhận giá trị bằng `backgroundColor` |
-| reset             | Boolean      | Reset về `titleBarColor` và `borderBottomColor` về màu mặc định                                     |
-| success           | Function     | Callback function khi thành công.                                                                   |
-| fail              | Function     | Callback function khi thất bại.                                                                     |
-| complete          | Function     | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                               |
+| Thuộc tính        | Kiểu dữ liệu | Mô tả                                                                                                |
+| ----------------- | ------------ | ---------------------------------------------------------------------------------------------------- |
+| title             | String       | Tiêu đề của Navigation Bar.                                                                          |
+| image             | String       | Image URL được sử dụng để render trên title. Có thể set cùng lúc title và image.                     |
+| titleBarColor     | HexColor     | Background color của Navigation Bar.                                                                 |
+| borderBottomColor | HexColor     | Nếu `backgroundColor` được set, thì `borderBottomColor` sẽ luôn nhận giá trị bằng `backgroundColor`. |
+| theme             | String       | Set theme của Navigation. Giá trị `reverse` hoặc `default`.                                          |
+| search            | Object       | Các giá trị hiển thị khung search.                                                                   |
+| reset             | Boolean      | Reset về `titleBarColor` và `borderBottomColor` về màu mặc định.                                     |
+| success           | Function     | Callback function khi thành công.                                                                    |
+| fail              | Function     | Callback function khi thất bại.                                                                      |
+| complete          | Function     | Callback function khi hoàn tất tác vụ cho dù thành công hay thất bại.                                |
+
+## Giá trị trong search
+
+| Thuộc tính   | Kiểu dữ liệu | Mô tả                          |
+| ------------ | ------------ | ------------------------------ |
+| show         | Boolean      | Bật/tắt hiển thị khung search. |
+| placeholder  | String       | Placeholder.                   |
+| borderRadius | Number       | Border radius.                 |
 
 ## Sample Code
 
@@ -40,12 +50,21 @@ Page({
     var backgroundColor = e.detail.value.backgroundColor;
     var borderBottomColor = e.detail.value.borderBottomColor;
     var image = e.detail.value.image;
-    console.log(title);
+    var show = e.detail.value.show;
+    var placeholder = e.detail.value.placeholder;
+    var borderRadius = e.detail.value.borderRadius;
+    var theme = e.detail.value.theme;
     my.setNavigationBar({
       title,
       backgroundColor,
       borderBottomColor,
-      image
+      image,
+      search: {
+        show,
+        placeholder
+        borderRadius,
+      },
+      theme,
     });
   },
   resetNavigationBar() {

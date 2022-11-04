@@ -4,7 +4,7 @@ sidebar_custom_props:
   description: Thêm icons vào navigation bar bên cạnh nút ba chấm nằm ngang (⋯) mở menu
 ---
 
-**my.setNavigationBar** là API để thêm icons vào navigation bar bên cạnh nút ba chấm nằm ngang (⋯) mở menu.
+**my.setNavigationBar** là API để thêm icon vào navigation bar bên cạnh nút ba chấm nằm ngang (⋯) mở menu.
 
 <img src="/img/Add_Icon_to_NavigationBar.jpg" width="400px" alt="Simulation Widget" style={{ margin: '0 auto', display: 'flex' }}/>
 
@@ -24,7 +24,7 @@ import { Simulator } from '@site/src/components/Simulator';
 
 | Thuộc tính    | Kiểu dữ liệu     | Bắt buộc | Mô tả                                                                 |
 | ------------- | ---------------- | :------: | --------------------------------------------------------------------- |
-| icons         | Array of objects |    ✓     | Danh sách các icons thêm vào navigation bar.                          |
+| icons         | Array of objects |    ✓     | Danh sách các icons thêm vào navigation bar. Hiển thị item đầu tiên.  |
 | padding       | number           |          | Khoảng cách giữa các icons.                                           |
 | titleBarColor | HexColor         |          | Màu nền của navigation bar. Đơn vị tính pixel.                        |
 | success       | Function         |          | Callback function thi thêm icon khi thành công.                       |
