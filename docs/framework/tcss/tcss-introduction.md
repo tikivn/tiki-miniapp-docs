@@ -4,8 +4,6 @@ title: Giới thiệu về TCSS
 description: TCSS ngôn ngữ định dạng các phần tử trong Tiki mini app
 ---
 
-
-
 TCSS là một tập ngôn ngữ được sử dụng để mô tả style của các component từ TXML. TCSS sẽ quyết định việc các TXML component được hiển thị ra sao.
 
 ## Đơn vị đo
@@ -134,7 +132,7 @@ Sau đây là danh sách các thuộc tính CSS mà Tiki Mini App hỗ trợ
 
 ## Import
 
-Tiki Mini App cho phép bạn có thể import các file TCSS từ các nguồn khác nhau bằng cách sử dụng cú pháp `@import` 
+Tiki Mini App cho phép bạn có thể import các file TCSS từ các nguồn khác nhau bằng cách sử dụng cú pháp `@import`
 
 ```css
 /** common.tcss  */
@@ -212,3 +210,18 @@ Thế thì khi đó, thứ tự import của tcss sẽ là
 - components/component4/index.tcss
 - components/component1/index.tcss
 - pages/page1/index.tcss
+
+## Các biến global trong TCSS
+
+| Thuộc tính                | Mô tả                                       |
+| ------------------------- | ------------------------------------------- |
+| --tf-header-padding-right | Vị trí khả dụng tính từ bên phải header bar |
+| --tf-header-padding-left  | Vị trí khả dụng tính từ bên trái header bar |
+
+```jsx
+// Ví dụ
+ .header {
+  display: flex;
+  left: --tf-header-padding-left;
+ }
+```
