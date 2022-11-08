@@ -213,15 +213,56 @@ Thế thì khi đó, thứ tự import của tcss sẽ là
 
 ## Các biến global trong TCSS
 
-| Thuộc tính                | Mô tả                                       |
-| ------------------------- | ------------------------------------------- |
-| --tf-header-padding-right | Vị trí khả dụng tính từ bên phải header bar |
-| --tf-header-padding-left  | Vị trí khả dụng tính từ bên trái header bar |
+| Tên biến                  | Mô tả                                               |
+| ------------------------- | --------------------------------------------------- |
+| --tf-header-padding-right | Khoảng cách khả dụng từ bên phải của navigation bar |
+| --tf-header-padding-left  | Khoảng cách khả dụng từ bên trái của navigation bar |
+
+```css
+/** index.tcss */
+.header {
+  display: flex;
+  left: var(--tf-header-padding-left);
+}
+```
+
+\*\*\* Lưu ý khi sử dụng:
+Nếu sử dụng JSAPI addIconsToNavigationBar để add icon vào navigation bar, thì bên phải chúng ta nên cộng thêm 44px. Xem ví dụ bên dưới.
 
 ```jsx
-// Ví dụ
- .header {
-  display: flex;
-  left: --tf-header-padding-left;
- }
+/** index.js */
+Page({
+  data: {
+    addPadding: false
+  }
+  onAddExtraIcon() {
+    my.addIconsToNavigationBar({
+      icons: [
+        {
+          image: '/images/cart.png',
+          badge: '4'
+        },
+      ],
+      success: (res) => {
+        this.setData({ addPadding: true });
+      },
+      fail: (res) => {
+      },
+    });
+  }
+})
+```
+
+```xml
+ <view class="header {{addPadding ? 'padding' : ''}}" />
+```
+
+```css
+.header {
+  right: var(--tf-header-padding-right);
+}
+
+.padding {
+  margin-right: 44px;
+}
 ```
