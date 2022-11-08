@@ -4,8 +4,6 @@ title: Giới thiệu về TCSS
 description: TCSS ngôn ngữ định dạng các phần tử trong Tiki mini app
 ---
 
-
-
 TCSS là một tập ngôn ngữ được sử dụng để mô tả style của các component từ TXML. TCSS sẽ quyết định việc các TXML component được hiển thị ra sao.
 
 ## Đơn vị đo
@@ -134,7 +132,7 @@ Sau đây là danh sách các thuộc tính CSS mà Tiki Mini App hỗ trợ
 
 ## Import
 
-Tiki Mini App cho phép bạn có thể import các file TCSS từ các nguồn khác nhau bằng cách sử dụng cú pháp `@import` 
+Tiki Mini App cho phép bạn có thể import các file TCSS từ các nguồn khác nhau bằng cách sử dụng cú pháp `@import`
 
 ```css
 /** common.tcss  */
@@ -212,3 +210,59 @@ Thế thì khi đó, thứ tự import của tcss sẽ là
 - components/component4/index.tcss
 - components/component1/index.tcss
 - pages/page1/index.tcss
+
+## Các biến global trong TCSS
+
+| Tên biến                  | Mô tả                                               |
+| ------------------------- | --------------------------------------------------- |
+| --tf-header-padding-right | Khoảng cách khả dụng từ bên phải của navigation bar |
+| --tf-header-padding-left  | Khoảng cách khả dụng từ bên trái của navigation bar |
+
+```css
+/** index.tcss */
+.header {
+  display: flex;
+  left: var(--tf-header-padding-left);
+}
+```
+
+\*\*\* Lưu ý khi sử dụng:
+Nếu sử dụng JSAPI addIconsToNavigationBar để add icon vào navigation bar, thì bên phải chúng ta nên cộng thêm 44px. Xem ví dụ bên dưới.
+
+```jsx
+/** index.js */
+Page({
+  data: {
+    addPadding: false
+  }
+  onAddExtraIcon() {
+    my.addIconsToNavigationBar({
+      icons: [
+        {
+          image: '/images/cart.png',
+          badge: '4'
+        },
+      ],
+      success: (res) => {
+        this.setData({ addPadding: true });
+      },
+      fail: (res) => {
+      },
+    });
+  }
+})
+```
+
+```xml
+ <view class="header {{addPadding ? 'padding' : ''}}" />
+```
+
+```css
+.header {
+  right: var(--tf-header-padding-right);
+}
+
+.padding {
+  margin-right: 44px;
+}
+```
