@@ -1052,9 +1052,8 @@ module.exports = {
       collapsed: false,
       items: [
         'sdk/backend/payment',
-        'sdk/backend/ipn',
-        'sdk/backend/refund',
         'sdk/backend/api_signature',
+        'sdk/backend/ref',
       ],
     },
   ],

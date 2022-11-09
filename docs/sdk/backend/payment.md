@@ -13,10 +13,15 @@ Chi tiết việc tính signature được mô tả trong tài liệu [tính sig
 
 ## Luồng tích hợp thanh toán
 
-![image](https://www.planttext.com/api/plantuml/png/fLG_RzD07DtlK_pK5ShGqKAeDQWB0v6IpjNbOdAdsdUHVQxQiUh0q2ap0ucYge2e118Iaa-8mLM_ntqJtjbDiGijI6I8a_kztx_ttdcxi3otPPOoNbgZosoSv8nnOKrEUqMI4ozeZys0KKBDkBOqKbhjp6R35oz3RCZOs1pHnW08dUGRFUZwb7PpessY9uJ4ZP0ssFqpCERY0BWM4xEGWlAi3nwf0zL3ZcB6zcZp6GqZihvQ6hgQNoyroNgXfyI68JJOZKZ8yjYxKqq5ntc6A22Vj2GhUVWsDPA4TnUSrWCnRMn2vX0_CRDtxv4uyUuSZpvG-Ee2oVL2eRclljdGFQD9aYPJZX9CIDFXxWdHSwd8Ab_zi7IKPEJTEvh9fegjBuKawTrgHcn7JtAZ9dHOBqYz0jyZRAXeVFtPkxU2TBquVepa3_SDLlZgEsaKljI15cIj1B4jx5n_1TWg7R57P7Ek2yYkZDv7Cvpmp9HWkz4WaD0o76YqcEoB8AcyUwDxtDcy_gWV6WRMIc6XRaeGIOAuC0nZX0vh9NDVhUZGknCIF4t749oAKeYaAAXF9Y5jU9CLfZhLpOndzqdSwnbAbN1wGRVD1t54K-yk5KqLDs6JCo53D0xHKHojoHlNy5e7SsSReevxOlnzNYz5X_WRqpIj48KASFP-Nug8KWYVrQjU7on6OV6MtUP2e00-L_E0R6PlJFw05hRdewrsW7_etLQ1oTqS1WuR_PRQUYU2zzmyUDoThEzLdz1RRpNSFjtSRCdz9Jnah9Q1B5bZrYwxZ2LfaTonag_EBOsRlVvgfTTSfVJVHkfqx1cfkJQCRUE1b-jF)
+![image](https://www.planttext.com/api/plantuml/png/fLLDInmn6BxdLxnuRUt1uz0jEXPfwQ4BEvubcvtk16UIxKn6z2WUUl2qvnwwoo9QgT12eJ13wI7Y_yW_wPl4jHE_MgW7NVC-xzVpFCckLugMgYvoGcibHLqCqv8GofGiORjAIw0LR9C9OZZZ4oeK95pmZSbayFADZGq86SfzMEaZGgJbIW1Tdi9MAOLAnGWmSSMczRVk1yQKxIBEOs9YKx0y2S49t-K1Cea9wVKWoQZ8G4az5t0vlSBVcPw9CVHwP1jMNy0W0cMQkGo2P613_Qq8M5OVcFP8G4NnlC0eGhxOYfswpBId59RZ4Y5L2d8FF-96fZt3n95fJ_1F26IcESLaFUFOt3G_bErUm2ZDqp754eHbiiFiCu3DZ8FYflcbO3yjmBIVO9AvAafVi0moqoucG3R4g9Hy17jw1lmjgf7WXXo6LrzD-v61qBE3fvZy-Q71AjFy1865BnndcBLWGDPmP_qTmOgBY3m1LL9HeIcu53lO34ze8MlKmYbaIV0CMneLJlQDGSPD-q44tAbIdul7Xa7ZvIgGKLcHCYJE3aC8O8UbagLf5h1dsaDWDC-7Q0UeQiRIgeAGJC2qmNMMdUf8k1cF7v8uw6bBrNWFAhXfteyZ69lsWiEOKsatEMQPZSOsciJHahoXHgzrCBUs0UYu9yP_D_MSTOY_DerhXL5K0Ns_4qeHGOx25teHzC75m2xksNNN1GlWp-NK8jtipkIFQA427wtv0VwXjw-29c-dQ62xqPrKxvq8lTTEhSVRm-Mz2WczyPRZzldggYVtZ_0eOpEtP6KQP-soIqYQL-ajAvdcHC7GxVLNAxsZF8V_DbAdOs0aTstSc_LAsjp4au0FLHA75ZlGvxKpGWsPWtg-EWyFFdxT1z7VQ9-ygyyAv2Dq5RdNI7SkERbFCpmiKrf9uJwyhzDATIF-07Dlb4kyRlrRkfLTtRpq6_tNXAnZ8duN_GO0)
 
-Để tích hợp thanh toán, bạn cần thực hiện 2 bước
+Để tích hợp thanh toán, Partner cần thực hiện các bước sau (số thứ tự của các bước được tính mô tả trên sơ đồ luồng ở trên):
 
 - Bước 2: Cài đặt hàm Delegate trên ứng dụng Android / iOS của bạn. Chi tiết xem tại phần cài đặt cho [Android](/docs/sdk/setup-for-android#62-tích-hợp-thanh-toán) và [iOS](/docs/sdk/setup-for-ios#62-t%C3%ADch-h%E1%BB%A3p-thanh-to%C3%A1n)
 
-- Bước 4: Cài đặt một webhook IPN để gọi sang backend của Tiki. Mục đích của IPN này nhằm báo cho Backend của Tiki biết giao dịch đã được thực hiện thành công, chi tiết xem tại [IPN](/docs/sdk/backend/ipn#1-api-nhận-ipn-từ-đối-tác)
+- Bước 4: Cài đặt một webhook IPN để gọi sang backend của Tiki. Mục đích của IPN này nhằm báo cho Backend của Tiki biết giao dịch đã được thực hiện thành công, chi tiết xem tại [IPN](/docs/sdk/backend/ref#1-api-nhận-ipn-từ-đối-tác)
+
+Trong trường hợp đối tác gọi tới IPN của Tiki mà bị lỗi, đối tác nên retry gọi lại IPN này ít nhất 3 lần.
+Sau 3 lần gọi, đối tác cũng có thể gọi API để [kiểm tra trạng thái đơn giao dịch](/docs/sdk/backend/ref#2-api-%C4%91%E1%BB%83-l%E1%BA%A5y-th%C3%B4ng-tin-tr%E1%BA%A1ng-th%C3%A1i-c%E1%BB%A7a-transaction-tr%C3%AAn-tiki)
+
+- Bước 12: Cài đặt API để nhận về request hoàn tiền của Tiki. Trong trường hợp cần hoàn tiền, Tiki Backend sẽ gửi tới backend của đối tác chi tiết [hoàn tiền cho từng giao dịch](/docs/sdk/backend/ref#3-refund-api)
