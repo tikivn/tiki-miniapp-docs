@@ -24,10 +24,11 @@ Chi tiết việc tính signature được mô tả trong tài liệu [tính sig
 
 Tài liệu mô tả API nhận IPN từ đối tác về các cập nhật của giao dịch
 
-| Field  | Value |
-| ------ | ----- |
-| url    |       |
-| method | POST  |
+| Field    | Value                                    |
+| -------- | ---------------------------------------- |
+| PROD URL |                                          |
+| UAT URL  | https://api.tala.xyz/miniapp/tikivip/ipn |
+| method   | POST                                     |
 
 #### Body Params
 
@@ -65,18 +66,54 @@ Tài liệu mô tả API nhận IPN từ đối tác về các cập nhật củ
 }
 ```
 
-### 2. API để lấy thông tin trạng thái của transaction trên Tiki
+### 2. API để lấy thông tin chi tiết của transaction trên Tiki
+
+Mô tả API lấy thông tin chi tiết của transaction
+
+| Field    | Value                                             |
+| -------- | ------------------------------------------------- |
+| PROD URL |                                                   |
+| UAT URL  | https://api.tala.xyz/miniapp/tikivip/transactions |
+| method   | GET                                               |
+
+
+#### Params
+
+| Field              | Type   | Required | Description         |
+| ------------------ | ------ | -------- | ------------------- |
+| tik_transaction_id | string | yes      | Tiki transaction id |
+
+#### Response
+| Field                  | Type   | Description                |
+| ---------------------- | ------ | -------------------------- |
+| tik_transaction_id     | string | Tiki transaction id        |
+| partner_transaction_id | string | Transaction id của đối tác |
+| status                 | string | Trạng thái transaction     |
+| amount                 | number | Số tiền của transaction    |
+
+##### Trường hợp thành công
+
+HTTP Status 200
+
+
+##### Trường hợp thất bại
+
+HTTP Status 500
+
+Các trạng thái của transaction
+
+| Field   | Value                 |
+| ------- | --------------------- |
+| PENDING | đang chờ thanh toán   |
+| SUCCESS | thanh toán thành công |
+| FAILURE | thanh toán thất bại   |
+
 
 ### 3. Refund API
 
-Tài liệu mô tả request từ Tiki sẽ gọi tới API của đối tác, thông báo hoàn tiền một giao dịch.
+Mô tả request từ Tiki sẽ gọi tới API của đối tác, thông báo hoàn tiền một giao dịch.
 
 Để đảm bảo bảo mật, trong API gọi tới đối tác, Tiki cũng sẽ gửi kèm các header và signature được mô tả như trong tài liệu [tính signature](/docs/sdk/backend/api_signature)
-
-| Field  | Value |
-| ------ | ----- |
-| url    |       |
-| method | POST  |
 
 #### Body Params
 
