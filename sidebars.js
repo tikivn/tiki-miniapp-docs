@@ -1037,7 +1037,7 @@ module.exports = {
     'sdk/overview',
     {
       type: 'category',
-      label: 'Hướng dẫn cài đặt',
+      label: 'Tích hợp SDK',
       collapsed: false,
       items: [
         'sdk/setup-for-ios',
@@ -1045,17 +1045,21 @@ module.exports = {
         'sdk/troubleshooting',
       ],
     },
+    // {
+    //   type: 'category',
+    //   label: 'Các ví dụ mẫu',
+    //   collapsed: false,
+    //   items: ['sdk/example-for-ios', 'sdk/example-for-android'],
+    // },
     {
       type: 'category',
-      label: 'Các ví dụ mẫu',
+      label: 'Tích hợp Backend',
       collapsed: false,
-      items: ['sdk/example-for-ios', 'sdk/example-for-android'],
-    },
-    {
-      type: 'category',
-      label: 'Server Side API',
-      collapsed: false,
-      items: ['sdk/ipn', 'sdk/api_signature'],
+      items: [
+        'sdk/backend/payment',
+        'sdk/backend/ipn',
+        'sdk/backend/api_signature',
+      ],
     },
   ],
 };
