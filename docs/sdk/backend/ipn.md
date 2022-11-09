@@ -19,11 +19,11 @@ Request cần đính kèm các header được mô tả trong tài liệu [này]
 
 ### Body Params
 
-| Field               | Type                                 | Required | Description                   |
-| ------------------- | ------------------------------------ | -------- | ----------------------------- |
-| tiki_transaction_id | application/json                     | yes      | Tiki transaction id           |
-| transaction_amount  | POST                                 | yes      | Số tiền của transaction       |
-| transaction_id      | https://api.tiki.vn/tiniapp-open-api | yes      | Transaction id ở phía đối tác |
+| Field               | Type   | Required | Description                   |
+| ------------------- | ------ | -------- | ----------------------------- |
+| tiki_transaction_id | string | yes      | Tiki transaction id           |
+| transaction_amount  | number | yes      | Số tiền của transaction       |
+| transaction_id      | string | yes      | Transaction id ở phía đối tác |
 
 ### Response
 

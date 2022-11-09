@@ -165,7 +165,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Components',
-      link: {type: 'doc', id: 'component/overview'},
+      link: { type: 'doc', id: 'component/overview' },
       items: [
         {
           type: 'category',
@@ -415,7 +415,7 @@ module.exports = {
     {
       type: 'category',
       label: 'JS APIs',
-      link: {type: 'doc', id: 'api/overview'},
+      link: { type: 'doc', id: 'api/overview' },
       items: [
         {
           type: 'category',
@@ -1058,6 +1058,7 @@ module.exports = {
       items: [
         'sdk/backend/payment',
         'sdk/backend/ipn',
+        'sdk/backend/refund',
         'sdk/backend/api_signature',
       ],
     },
