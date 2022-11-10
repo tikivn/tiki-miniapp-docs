@@ -115,6 +115,17 @@ TiniAppSDK cần 1 số quyền runtime để xin quyền từ user khi cần, n
 <!-- ... -->
 ```
 
+| Quyền                      | Type     | JSAPI sử dụng                               |
+| -------------------------- | -------- | ------------------------------------------- |
+| NSCameraUsageDescription   | Camera   | my.chooseImage, my.chooseVideo my.scan |
+| NSPhotoLibraryUsageDescription   | Camera   | my.chooseImage, my.chooseVideo, my.scan, my.saveImage |
+| NSContactsUsageDescription   | Contact   | my.chooseContact, my.addPhoneContact |
+| NSFaceIDUsageDescription   | Biometric   | my.bioMetrics.createKey, my.bioMetrics.createSignature, my.bioMetrics.deleteKey, my.bioMetrics.isSupported,  my.bioMetrics.keyExists, my.bioMetrics.localAuth my.getEncryptedStorage,  my.setEncryptedStorage |
+| NSLocationAlwaysAndWhenInUseUsageDescription   | Location   | my.getLocation |
+| NSLocationAlwaysUsageDescription   | Location   | my.getLocation |
+| NSLocationWhenInUseUsageDescription   | Location   | my.getLocation |
+| NSMicrophoneUsageDescription   | Microphone   | my.chooseVideo, my.scan |
+
 ### 3. Khởi tạo SDK
 
 TiniAppSDK trước khi sử dụng, cần gọi phương thức config một lần duy nhất để khởi tạo SDK. `partnerCode` và `clientId` là thông tin đã lấy trước đó từ TiniConsole.
