@@ -24,6 +24,9 @@ module.exports = {
   projectName: 'tiniapp',
   themes: ['docusaurus-theme-search-typesense'],
   themeConfig: {
+    prism: {
+      additionalLanguages: ['swift', 'bash', 'objectivec'],
+    },
     typesense: {
       typesenseCollectionName: 'tiniapp-docs',
       typesenseServerConfig: {
