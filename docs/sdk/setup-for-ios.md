@@ -73,7 +73,7 @@ post_install do |installer|
 end
 ```
 
-### 1.2. Thêm TiniAppSDK vào Podfile
+#### 1.2. Thêm TiniAppSDK vào Podfile
 
 ```pod
 # ...
@@ -81,7 +81,7 @@ pod 'TiniAppSDK'
 # ...
 ```
 
-### 1.3. Install hoặc Update Pod
+#### 1.3. Install hoặc Update Pod
 ```
 pod install
 ```
