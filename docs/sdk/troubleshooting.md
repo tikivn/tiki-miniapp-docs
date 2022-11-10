@@ -1,5 +1,5 @@
 ---
-title: Các vấn đề gặp phải
+title: Các vấn đề thường gặp
 ---
 
 ## Các lỗi có thể gặp với iOS
