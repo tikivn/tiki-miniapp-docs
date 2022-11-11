@@ -1,35 +1,35 @@
 ---
-title: my.hideAddToDevice
+title: my.showAddToDevice
 sidebar_custom_props:
-  description: Ẩn đi nút lưu tiện ích xuống thiết bị trên Title Bar
+  description: Hiển thị nút lưu tiện ích xuống thiết bị trên Title Bar
 ---
 
-`my.hideAddToDevice` là API để ẩn đi nút lưu tiện ích xuống thiết bị Title Bar.
+`my.showAddToDevice` là API để hiển thị nút lưu tiện ích xuống thiết bị trên Title Bar.
 
 ## Quét mã để trải nghiệm
 
 import { QRCode } from '@site/src/components/QRCode';
 
-<QRCode page="pages/api/navigation-bar/hide-add-to-device/index" />
+<QRCode page="pages/api/navigation-bar/show-add-to-device/index" />
 
 ## Demo
 
 import { Simulator } from '@site/src/components/Simulator';
 
-<Simulator page="pages/api/navigation-bar/hide-add-to-device/index" />
+<Simulator page="pages/api/navigation-bar/show-add-to-device/index" />
 
 ## API Params
 
 | Thuộc tính | Type    | Bắt buộc | Mô tả                                                                                               |
 | ---------- | ------- | :------: | --------------------------------------------------------------------------------------------------- |
-| hide       | boolean |    ✓     | set = true nếu muốn hide save to device button, set = false nếu muốn show lại save to device button |
+| show       | boolean |    ✓     | set = true nếu muốn hiển thị button lưu tiện ích xuống thiết bị, set = false nếu muốn ẩn button lưu tiện ích xuống thiết bị |
 
 ## Sample Code
 
 ```js
 Page({
   onReady() {
-    my.hideAddToDevice({ hide: true });
+    my.showAddToDevice({ show: true });
   }
 });
 ```

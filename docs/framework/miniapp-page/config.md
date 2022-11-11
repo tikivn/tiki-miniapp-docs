@@ -16,7 +16,7 @@ Với mỗi màn hình sẽ tương ứng với một page trên framework. File
 | titleBarBottomColor  | HexColor     | "#EBEBF0"        | Quy định màu cho border bottom của NavigationBar.                                                                                                                                                    |
 | disableHardwareBack | string | "YES" | Xác định cho phép vuốt để quay lại trang trước đó hay không? |
 | hideOptionMenuButton | string | "YES" | Xác định việc có ẩn đi button Option Menu hay không? Option này chỉ các ứng dụng được phát triển bởi Tiki được phép sử dụng |
-| hideAddToDeviceButton | string | "YES" | Xác định việc có ẩn đi button lưu tiện ích xuống thiết bị hay không. |
+| showAddToDeviceButton | string | "NO" | Xác định việc có hiển thị button lưu tiện ích xuống thiết bị trên Title Bar |
 
 Ví dụ:
 
