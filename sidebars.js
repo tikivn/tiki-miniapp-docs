@@ -921,6 +921,7 @@ module.exports = {
         'backend-api/payment/payment-integration',
         'backend-api/payment/flow',
         'backend-api/payment/create-order',
+        'backend-api/payment/create-order-with-multi-sku',
         'backend-api/payment/ipn',
         'backend-api/payment/get-order',
         'backend-api/payment/list-orders',
