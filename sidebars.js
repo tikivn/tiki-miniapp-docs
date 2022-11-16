@@ -165,7 +165,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Components',
-      link: {type: 'doc', id: 'component/overview'},
+      link: { type: 'doc', id: 'component/overview' },
       items: [
         {
           type: 'category',
@@ -281,6 +281,7 @@ module.exports = {
               type: 'category',
               label: 'Forms',
               items: [
+                'component/advance/form/tu-label',
                 'component/advance/form/textfield',
                 'component/advance/form/dropdown',
                 'component/advance/form/search-bar',
@@ -415,7 +416,7 @@ module.exports = {
     {
       type: 'category',
       label: 'JS APIs',
-      link: {type: 'doc', id: 'api/overview'},
+      link: { type: 'doc', id: 'api/overview' },
       items: [
         {
           type: 'category',
