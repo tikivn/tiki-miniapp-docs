@@ -12,11 +12,11 @@ import { QRCode } from '@site/src/components/QRCode';
 
 <QRCode page="pages/component/advance/actions/uploader/index" />
 
-<!-- ## Demo
+## Demo
 
 import { Simulator } from '@site/src/components/Simulator';
 
-<Simulator page="pages/component/advance/actions/uploader/index" /> -->
+<Simulator page="pages/component/advance/actions/uploader/index" />
 
 ## Cài đặt `tini-ui`:
 
