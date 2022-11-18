@@ -15,7 +15,7 @@ Thay vì phải code lại toàn bộ chức năng này trên Tini App B, Tini A
 
 Hãy cũng tìm hiểu cách làm nhé :)
 
-### Tổng quan cách bước
+### Tổng quan các bước
 
 ![image](https://www.planttext.com/api/plantuml/svg/TP91Qm8n48NlyoiUFUd12ZqkfRYXB7WezA0_O5nJ6znDbcHMMuh_lPErLYts5kQzVFCUoIm9H-dRXhYNuFjsPIDHfpDNkuwzu6wPRBm39oolvmld7SgkWnbKSwrMaLkx3t4xYDK_Lyj1BObeYSaJJ86TIquWsS2PJIOBLO6QcmRbwnpjvxtddTkms4LuKQE2o0Un23iRzSOjm-YBa87pTQ7hCD1MN6z7qQQ-aJ6o3aodw6AeRKeu2Zezq65Crg-HTr2LuvG5JXiWuPosFDPGUHsGGclbtVaDWh-qL7YSJBBdLYEZcMwrAkcFwRAN_P38ponSd59hOZeUiNUwPMNHiPRIiAVcS1u6B4XYEpoS6veXNvLPqaT_GfgV1nfI_qBUUb-Bqu9d4CqKfJ_g6m00)
 
@@ -234,6 +234,14 @@ Trong trường hợp thất bại, chúng ta trả về `extraData` với cấu
 }
 ```
 
+## Kiểm thử integration mà không cần publish app
+
+Để kiểm thử một integration mà không publish app, bạn có thể sử dụng chức năng [Kiểm thử nhanh ứng dụng](/docs/development/testing/quick-test)
+
+Sau khi mở bằng mã QR code, nếu integration của bạn có trả về kết quả, kết quả đó sẽ được hiển thị trên màn hình
+
+![image](/img/integration-api/testing.png)
+
 ## Sử dụng JS API
 
 Để sử dụng JS API vừa kể trên, chúng ta tạo ra một ứng dụng với id là `vn.tiki.integration.usageex`.
@@ -369,4 +377,4 @@ Một số ví dụ về các API mà tôi có thể nghĩ tới
 - Tạo API để gia hạn thời gian gửi heo vàng
   ...
 
-Hy vong trong tương lai, chúng ta có thể thấy nhiều API được mở ra trên nền tảng của Tini App hơn :)
+Hy vọng trong tương lai, chúng ta có thể thấy nhiều API được mở ra trên nền tảng của Tini App hơn :)
