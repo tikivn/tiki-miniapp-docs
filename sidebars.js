@@ -274,6 +274,7 @@ module.exports = {
               label: 'Actions',
               items: [
                 'component/advance/actions/button',
+                'component/advance/actions/button-bar',
                 'component/advance/actions/uploader',
               ],
             },
