@@ -25,7 +25,7 @@ module.exports = {
   themes: ['docusaurus-theme-search-typesense'],
   themeConfig: {
     prism: {
-      additionalLanguages: ['swift', 'bash', 'objectivec'],
+      additionalLanguages: ['swift', 'bash', 'objectivec', 'java', 'kotlin'],
     },
     typesense: {
       typesenseCollectionName: 'tiniapp-docs',

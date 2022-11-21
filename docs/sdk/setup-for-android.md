@@ -52,17 +52,34 @@ android.enableJetifier=true
 dependencies {
   // ...
   implementation 'com.facebook.conceal:conceal:1.1.3@aar'
-  implementation('vn.tiki:tiniapp-sdk:v1.0.0') {
-    exclude group: "androidx.lifecycle"
-  }
-  // ...
+  implementation 'vn.tiki:tiniapp-sdk:v1.2.4'
 }
 ```
 
-### 2. Khởi tạo SDK
+### 2. Các quyền truy cập mà SDK sử dụng
+Khi sử dụng các jsapi truy cập tới các dữ liêụ riêng tư, SDK cần sự cho phép của người dùng. Do đó các quyền dưới đây đã được thêm vào SDK
+
+| Quyền                      | Type     | JSAPI sử dụng                               |
+| -------------------------- | -------- | ------------------------------------------- |
+| android.permission.CAMERA   | Camera   | my.chooseImage, my.chooseVideo, my.scan |
+| android.permission.READ_EXTERNAL_STORAGE   | Storage   | my.chooseImage, my.chooseVideo, my.scan, my.getStorage, my.uploadFile |
+| android.permission.WRITE_EXTERNAL_STORAGE   | Storage   | my.saveImage, my.saveFile, my.setStorage, my.downloadFile |
+| android.permission.ACCESS_FINE_LOCATION   | Location   | my.getLocation |
+| android.permission.RECORD_AUDIO   | Microphone   | my.chooseVideo, my.scan |
+| android.permission.WRITE_CONTACTS"  | Contact   | my.addContact |
+| android.permission.READ_CONTACTS   | Contact   | my.getContact |
+| android.permission.READ_PROFILE   | Contact   | my.getContact |
+
+### 3. Khởi tạo SDK
 
 TiniAppSDK trước khi sử dụng, cần gọi phương thức sdkInit một lần duy nhất để khởi tạo SDK. hostId là ID của ứng dụng lấy từ trang TiniConsole.
 Ví dụ, Có thể đặt hàm sdkInit ở onCreate của Application
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="java" label="Java">
 
 ```java
 public class MainApplication extends Application {
@@ -79,7 +96,7 @@ public class MainApplication extends Application {
       }
 
       @Override
-      public void getUserInfo(TiniAppCallback callback) {
+      public void getUserInfo(TiniAppCallback<Bundle> callback) {
         Bundle bundle = new Bundle();
         bundle.putString("name", "Test user");
         bundle.putString("email", "Test user");
@@ -87,9 +104,9 @@ public class MainApplication extends Application {
       }
 
       @Override
-      public void openPayment(String transactionId, TiniAppCallback callback) {
+      public void openPayment(String transactionId, double amount, TiniAppCallback<Bundle> callback) {
         Bundle bundle = new Bundle();
-        bundle.putString("orderId", "1234");
+        bundle.putString("transactionId", transactionId);
         callback.onSuccess(bundle);
       }
     });
@@ -98,13 +115,63 @@ public class MainApplication extends Application {
 }
 ```
 
+  </TabItem>
+  <TabItem value="kotlin" label="Kotlin">
+
+```java
+val tiniAppConfigBuilder = TiniAppConfiguration.Builder()
+tiniAppConfigBuilder.setClientId("76e643c9-5239-444f-a3e0-c777fd0cec09")
+tiniAppConfigBuilder.setPartnerCode("app-demo")
+tiniAppConfigBuilder.setEnv(TiniAppConfiguration.TiniSDKEnv.UAT)
+tiniAppConfigBuilder.registerTiniAppCallback(object : TiniAppInterface {
+    override fun closeApp(activity: Activity) {
+        activity.finish()
+    }
+
+    override fun openPayment(
+        transactionId: String,
+        amount: Double,
+        callback: TiniAppCallback<Bundle>
+    ) {
+        val bundle = Bundle()
+        bundle.putString("transactionId", transactionId)
+        callback?.onSuccess(bundle)
+    }
+
+    override fun getUserInfo(callback: TiniAppCallback<Bundle>?) {
+        val bundle = Bundle()
+        bundle.putString("name", "Test user")
+        bundle.putString("email", "Test user")
+        callback?.onSuccess(bundle)
+    }
+})
+TiniAppSDK.sdkInit(this.applicationContext, tiniAppConfigBuilder.build())
+ ```
+
+  </TabItem>
+</Tabs>
+       
+
 ### 4. Mở 1 miniapp
 
 Để mở 1 miniapp, chúng ta có thể dùng cách sau:
 
+<Tabs>
+  <TabItem value="java" label="Java">
+
 ```java
-    TiniAppSDK.getInstance().openMiniApp(MainActivity.this, "com.tini.appstore", null, null);
+TiniAppSDK.getInstance().openMiniApp(this, "com.tini.appstore", null, null);
 ```
+
+  </TabItem>
+  <TabItem value="kotlin" label="Kotlin">
+
+```java
+TiniAppSDK.getInstance().openMiniApp(this, "com.tini.appstore", null, null);
+```
+
+  </TabItem>
+</Tabs>
 
 trong đó:
 
@@ -119,7 +186,7 @@ trong đó:
 - Sử dụng method TiniAppSDK.extractLink(url) để lấy thông tin appId, pagePath, params và sử dụng method openMiniApp để mở Tiniapp tương ứng
 
 ```java
-    TiniAppLinkInfo linkInfo = TiniAppSDK.extractLink(deeplink);
+TiniAppLinkInfo linkInfo = TiniAppSDK.extractLink(deeplink);
 ```
 
 TiniAppLinkInfo
@@ -130,21 +197,169 @@ TiniAppLinkInfo
 
 ### 6. Cài đặt delegate của TiniAppSDK
 
+`TiniAppSDK` cung cấp 3 hàm delegate bạn cần implement trong Super App của mình. Bạn cần set delegate cho class được implement
+
+<Tabs>
+  <TabItem value="java" label="Java">
+
+  ```java
+tiniAppConfigBuilder.registerTiniAppCallback(new TiniAppInterface() {
+    @Override
+    public void closeApp(Activity activity) {
+      activity.finish();
+    }
+
+    @Override
+    public void getUserInfo(TiniAppCallback<Bundle> callback) {
+      Bundle bundle = new Bundle();
+      bundle.putString("name", "Test user");
+      bundle.putString("email", "Test user");
+      callback.onSuccess(bundle);
+    }
+
+    @Override
+    public void openPayment(String transactionId, double amount, TiniAppCallback<Bundle> callback) {
+      Bundle bundle = new Bundle();
+      bundle.putString("transactionId", transactionId);
+      callback.onSuccess(bundle);
+    }
+});
+  ```
+  
+  </TabItem>
+  <TabItem value="kotlin" label="Kotlin">
+
+```java
+tiniAppConfigBuilder.registerTiniAppCallback(object : TiniAppInterface {
+  override fun closeApp(activity: Activity) {
+  }
+
+  override fun openPayment(
+      transactionId: String,
+      amount: Double,
+      callback: TiniAppCallback<Bundle>
+  ) {
+  }
+
+  override fun getUserInfo(callback: TiniAppCallback<Bundle>?) {
+  }
+})
+```
+
+  </TabItem>
+</Tabs>
+
+
 #### 6.1. Tích hợp đăng ký đăng nhập
 
-TBD
+Khi một Tini App cần lấy thông tin tài khoản đang đăng nhập từ Super App, `TiniAppSDK` sẽ gọi tới hàm implement `getUserInfo`
+
+Bạn có thể cài đặt implementation này như sau
+<Tabs>
+  <TabItem value="java" label="Java">
+
+```java
+tiniAppConfigBuilder.registerTiniAppCallback(new TiniAppInterface() {
+    @Override
+    public void getUserInfo(TiniAppCallback<Bundle> callback) {
+      Bundle bundle = new Bundle()
+      bundle.putString("name", "Test user")
+      bundle.putString("email", "test@gmail.com")
+      bundle.putString("phone", "1234")
+      callback?.onSuccess(bundle)
+    }
+});
+```
+  
+  </TabItem>
+  <TabItem value="kotlin" label="Kotlin">
+
+```java
+tiniAppConfigBuilder.registerTiniAppCallback(object : TiniAppInterface {
+  override fun getUserInfo(callback: TiniAppCallback<Bundle>?) {
+    val bundle = Bundle()
+    bundle.putString("name", "Test user")
+    bundle.putString("email", "Test user")
+    callback?.onSuccess(bundle)
+  }
+})
+```
+
+  </TabItem>
+</Tabs>
 
 #### 6.2. Tích hợp thanh toán
 
-TBD
+Khi một Tini App cần thanh toán một đơn hàng, `TiniAppSDK` sẽ gọi tới hàm implement `openPayment`
+
+Bạn có thể implement như sau. 
+<Tabs>
+  <TabItem value="java" label="Java">
+
+  ```java
+tiniAppConfigBuilder.registerTiniAppCallback(new TiniAppInterface() {
+    @Override
+    public void openPayment(String transactionId, double amount, TiniAppCallback<Bundle> callback) {
+      Bundle bundle = new Bundle();
+      bundle.putString("transactionId", transactionId);
+      callback.onSuccess(bundle);
+    }
+});
+  ```
+  
+  </TabItem>
+  <TabItem value="kotlin" label="Kotlin">
+
+```java
+tiniAppConfigBuilder.registerTiniAppCallback(object : TiniAppInterface {
+  override fun openPayment(
+      transactionId: String,
+      amount: Double,
+      callback: TiniAppCallback<Bundle>
+  ) {
+    val bundle = Bundle()
+    bundle.putString("transactionId", transactionId)
+    callback?.onSuccess(bundle)
+  }
+})
+```
+
+  </TabItem>
+</Tabs>
+
 
 #### 6.3. Đóng toàn bộ Tini App
 
-TBD
+<Tabs>
+  <TabItem value="java" label="Java">
+
+  ```java
+tiniAppConfigBuilder.registerTiniAppCallback(new TiniAppInterface() {
+    @Override
+    public void closeApp(Activity activity) {
+      activity.finish();
+    }
+});
+  ```
+  
+  </TabItem>
+  <TabItem value="kotlin" label="Kotlin">
+
+```java
+tiniAppConfigBuilder.registerTiniAppCallback(object : TiniAppInterface {
+  override fun closeApp(activity: Activity) {
+    activity.finish()
+  }
+})
+```
+
+  </TabItem>
+</Tabs>
+
 
 ## Ứng dụng tích hợp mẫu
 
-Bạn có thể xem một ứng dụng Android mẫu đã được tích hợp tại địa chỉ [TBD](https://github.com/tikivn/)
+Bạn có thể xem một ứng dụng Android mẫu đã được tích hợp tại địa chỉ [Link](https://github.com/lamvd0101/tiniapp-sdk-android)
 
 ## API Interface
 
@@ -163,5 +378,6 @@ Bạn có thể xem một ứng dụng Android mẫu đã được tích hợp t
 | Method                    | description                                  |
 | ------------------------- | -------------------------------------------- |
 | `setEnv()`                | Chỉ định môi trường test UAT hoặc Production |
-| `setHostId`               | Host id từ TiniConsole                       |
+| `setPartnerCode`               | Partner Code từ TiniConsole                       |
+| `setClientId`               | Client ID từ TiniConsole                       |
 | `registerTiniAppCallback` | Implement các phương thức mà TiniApp cần     |
