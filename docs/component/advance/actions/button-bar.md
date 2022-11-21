@@ -20,15 +20,16 @@ import { Simulator } from '@site/src/components/Simulator';
 
 ## Thuộc tính
 
-| Thuộc tính  | Kiểu dữ liệu                                                | Giá trị mặc định | Mô tả                                                                                                                            |
-| :---------- | :---------------------------------------------------------- | :--------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| onTapFirst  | function([EventObject](/docs/framework/event/event-object)) |                  | Hàm xử lý được gọi khi người dùng tap vào nút đầu tiên.                                                                          |
-| onTapSecond | function([EventObject](/docs/framework/event/event-object)) |                  | Hàm xử lý được gọi khi người dùng tap vào nút thứ hai (nếu có).                                                                  |
-| onOption    | function([EventObject](/docs/framework/event/event-object)) |                  | Hàm xử lý được gọi khi người dùng tap vào checkbox.                                                                              |
-| button      | array                                                       |                  | Mảng bao gồm các thuộc tính của các [button](/docs/component/advance/actions/button) hiển thị trên button-bar (tối đa 2 buttons) |
-| direction   | string                                                      | 'row'            | Hướng sắp xếp của các button                                                                                                     |
-| class       | string                                                      |                  | Class của button-bar.                                                                                                            |
-| style       | string                                                      |                  | Inline styles cho button-bar.                                                                                                    |
+| Thuộc tính    | Kiểu dữ liệu                                                | Giá trị mặc định | Mô tả                                                                                                                            |
+| :------------ | :---------------------------------------------------------- | :--------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| onTapFirst    | function([EventObject](/docs/framework/event/event-object)) |                  | Hàm xử lý được gọi khi người dùng tap vào nút đầu tiên.                                                                          |
+| onTapSecond   | function([EventObject](/docs/framework/event/event-object)) |                  | Hàm xử lý được gọi khi người dùng tap vào nút thứ hai (nếu có).                                                                  |
+| onTapCheckbox | function([EventObject](/docs/framework/event/event-object)) |                  | Hàm xử lý được gọi khi người dùng tap vào checkbox.                                                                              |
+| buttons       | array                                                       |                  | Mảng bao gồm các thuộc tính của các [button](/docs/component/advance/actions/button) hiển thị trên button-bar (tối đa 2 buttons) |
+| direction     | enum('row', 'column')                                       | 'row'            | Hướng sắp xếp của các button                                                                                                     |
+| checkboxText  | string                                                      | ""               | Nội dung hiển thị của checkbox                                                                                                   |
+| class         | string                                                      |                  | Class của button-bar.                                                                                                            |
+| style         | string                                                      |                  | Inline styles cho button-bar.                                                                                                    |
 
 ## Sample Code
 
@@ -44,7 +45,7 @@ Khai báo components:
 ```
 
 ```xml
-<button-bar option="Option"
+<button-bar checkboxText="Option"
             direction="row"
             onTapFirst="onTap"
             buttons="{{[
