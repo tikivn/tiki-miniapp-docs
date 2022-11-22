@@ -24,19 +24,30 @@ Chi tiết việc tính signature được mô tả trong tài liệu [tính sig
 
 Tài liệu mô tả API nhận IPN từ đối tác về các cập nhật của giao dịch
 
-| Field    | Value                                    |
-| -------- | ---------------------------------------- |
-| PROD URL |                                          |
-| UAT URL  | https://api.tala.xyz/miniapp/tikivip/ipn |
-| method   | POST                                     |
+| Field    | Value                                            |
+| -------- |--------------------------------------------------|
+| PROD URL | https://api.tiki.vn/miniapp/tikivip/payment/ipn  |
+| UAT URL  | https://api.tala.xyz/miniapp/tikivip/payment/sandbox/ipn |
+| method   | POST                                             |
 
-#### Body Params
+#### Body Params Sandbox
 
-| Field               | Type   | Required | Description                   |
-| ------------------- | ------ | -------- | ----------------------------- |
-| tiki_transaction_id | string | yes      | Tiki transaction id           |
-| transaction_amount  | number | yes      | Số tiền của transaction       |
-| transaction_id      | string | yes      | Transaction id ở phía đối tác |
+| Field                    | Type   | Required | Description                   |
+|--------------------------| ------ | -------- | ----------------------------- |
+| reference_transaction_id | string | yes      | Tiki transaction id           |
+| transaction_amount       | number | yes      | Số tiền của transaction       |
+| transaction_id           | string | yes      | Transaction id ở phía đối tác |
+
+#### Body Params Production
+
+| Field                    | Type   | Required | Description                 |
+|--------------------------|--------|----------|-----------------------------|
+| reference_transaction_id | string | yes      | Tiki transaction id         |
+| transaction_amount       | number | yes      | Số tiền của transaction     |
+| transaction_id           | string | yes      | Transaction id ở phía đối tác |
+| status                   | string | yes      | SUCCESS / FAILURE / PENDING |
+| description              | string | no       |                             |
+| response_code            | string | yes      |                             |
 
 #### Response
 
@@ -46,23 +57,18 @@ Tài liệu mô tả API nhận IPN từ đối tác về các cập nhật củ
 
 ```json
 {
-  "data": {
-    "status": "success"
-  }
+  "result_code": "SUCCESS",
+  "request_id": "02e6d1e5-6a95-492a-abb2-f3dccbefe0b9"
 }
 ```
 
 ##### Trường hợp thất bại
 
-###### HTTP Status 500
+###### HTTP Status 400, 404, 403, 500
 
 ```json
 {
-  "data": null,
-  "error": {
-    "code": "1",
-    "message": "invalid transaction id"
-  }
+  "error": "error message"
 }
 ```
 
@@ -71,8 +77,8 @@ Tài liệu mô tả API nhận IPN từ đối tác về các cập nhật củ
 Mô tả API lấy thông tin chi tiết của transaction
 
 | Field    | Value                                             |
-| -------- | ------------------------------------------------- |
-| PROD URL |                                                   |
+| -------- |---------------------------------------------------|
+| PROD URL | https://api.tiki.vn/miniapp/tikivip/transactions  |
 | UAT URL  | https://api.tala.xyz/miniapp/tikivip/transactions |
 | method   | GET                                               |
 
@@ -81,12 +87,12 @@ Mô tả API lấy thông tin chi tiết của transaction
 
 | Field              | Type   | Required | Description         |
 | ------------------ | ------ | -------- | ------------------- |
-| tik_transaction_id | string | yes      | Tiki transaction id |
+| tiki_transaction_id| string | yes      | Tiki transaction id |
 
 #### Response
 | Field                  | Type   | Description                |
-| ---------------------- | ------ | -------------------------- |
-| tik_transaction_id     | string | Tiki transaction id        |
+|------------------------| ------ | -------------------------- |
+| tiki_transaction_id    | string | Tiki transaction id        |
 | partner_transaction_id | string | Transaction id của đối tác |
 | status                 | string | Trạng thái transaction     |
 | amount                 | number | Số tiền của transaction    |
@@ -98,7 +104,7 @@ HTTP Status 200
 
 ##### Trường hợp thất bại
 
-HTTP Status 500
+HTTP Status 400, 404, 403, 500
 
 Các trạng thái của transaction
 
@@ -108,6 +114,31 @@ Các trạng thái của transaction
 | SUCCESS | thanh toán thành công |
 | FAILURE | thanh toán thất bại   |
 
+
+#### Response
+
+##### Trường hợp thành công
+
+###### HTTP Status 200
+
+```json
+{
+  "tiki_transaction_id": "221115TIKIVIP-235784371-1668488254",
+  "partner_transaction_id": "8A43B011-0EC9-4AA5-8D83-6FE7B2BCE4EC",
+  "status": "SUCCESS",
+  "amount": 100000
+}
+```
+
+##### Trường hợp thất bại
+
+###### HTTP Status 400, 404, 403, 500
+
+```json
+{
+  "error": "error message"
+}
+```
 
 ### 3. Refund API
 
