@@ -240,20 +240,14 @@ Ví dụ về dữ liệu trả về
     "order": {
       "id": "141857488587784201",
       "extra": "",
-      "status": "canceled",
+      "status": "draft",
       "grand_total": 35000,
       "reference_id": "0",
-      "tiki_order_id": "1001059779",
-      "tiki_order_code": "308714458"
+      "tiki_order_id": "",
+      "tiki_order_code": ""
     }
   }
 }
 ```
-
-:::note Lưu ý
-
-- Trường thông tin **tiki_order_id** và **tiki_order_code** chỉ có giá trị khi khách hàng tiến hành thanh toán
-
-:::
 
 Khi khách hàng thanh toán bắt đầu thanh toán đơn hàng, JS API [my.makePayment](/docs/api/open/make-payment) sẽ được dùng để mở màn hình thanh toán cho đơn hàng với tham số truyền vào là order ID.

@@ -58,3 +58,9 @@ Ví dụ về dữ liệu trả về
   }
 }
 ```
+
+:::note Lưu ý
+
+- Trường thông tin **tiki_order_id** và **tiki_order_code** chỉ có giá trị khi khách hàng tiến hành thanh toán
+
+:::
