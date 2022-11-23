@@ -9,10 +9,10 @@ Với mỗi request để được xác thực cần gửi những thông tin sa
 
 
 | Header              | Description                                                                                                                                                |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| X-Tiniapp-Timestamp | Thời gian gọi request, tính bằng milliseconds. Timestamp này không được cũ hơn (time_now  - 1 phút). Với time_now là thời gian Tiki nhận được API request. |
-| X-Tiniapp-Signature | Signature được tính dựa trên request body                                                                                                                  |
-| X-Tiniapp-Client-Id | Client id mà đối tác được cấp                                                                                                                              |
+|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| X-Tikivip-Timestamp | Thời gian gọi request, tính bằng milliseconds. Timestamp này không được cũ hơn (time_now  - 5 phút). Với time_now là thời gian Tiki nhận được API request. |
+| X-Tikivip-Signature | Signature được tính dựa trên request body                                                                                                                  |
+| X-Tikivip-Client-Id | Client id mà đối tác được cấp                                                                                                                              |
 
 ## Signature Là Gì?
 
