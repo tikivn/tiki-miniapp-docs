@@ -57,8 +57,9 @@ Tài liệu mô tả API nhận IPN từ đối tác về các cập nhật củ
 
 ```json
 {
-  "result_code": "SUCCESS",
-  "request_id": "02e6d1e5-6a95-492a-abb2-f3dccbefe0b9"
+  "data": {
+    "transaction_id": "8A43B011-0EC9-4AA5-8D83-6FE7B2BCE4EC"
+  }
 }
 ```
 
