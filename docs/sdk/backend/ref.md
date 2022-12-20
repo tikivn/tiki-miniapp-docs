@@ -24,30 +24,30 @@ Chi tiết việc tính signature được mô tả trong tài liệu [tính sig
 
 Tài liệu mô tả API nhận IPN từ đối tác về các cập nhật của giao dịch
 
-| Field    | Value                                            |
-| -------- |--------------------------------------------------|
-| PROD URL | https://api.tiki.vn/miniapp/tikivip/payment/ipn  |
+| Field    | Value                                                    |
+| -------- | -------------------------------------------------------- |
+| PROD URL | https://api.tiki.vn/miniapp/tikivip/payment/ipn          |
 | UAT URL  | https://api.tala.xyz/miniapp/tikivip/payment/sandbox/ipn |
-| method   | POST                                             |
+| method   | POST                                                     |
 
 #### Body Params Sandbox
 
 | Field                    | Type   | Required | Description                   |
-|--------------------------| ------ | -------- | ----------------------------- |
+| ------------------------ | ------ | -------- | ----------------------------- |
 | reference_transaction_id | string | yes      | Tiki transaction id           |
 | transaction_amount       | number | yes      | Số tiền của transaction       |
 | transaction_id           | string | yes      | Transaction id ở phía đối tác |
 
 #### Body Params Production
 
-| Field                    | Type   | Required | Description                 |
-|--------------------------|--------|----------|-----------------------------|
-| reference_transaction_id | string | yes      | Tiki transaction id         |
-| transaction_amount       | number | yes      | Số tiền của transaction     |
+| Field                    | Type   | Required | Description                   |
+| ------------------------ | ------ | -------- | ----------------------------- |
+| reference_transaction_id | string | yes      | Tiki transaction id           |
+| transaction_amount       | number | yes      | Số tiền của transaction       |
 | transaction_id           | string | yes      | Transaction id ở phía đối tác |
-| status                   | string | yes      | SUCCESS / FAILURE / PENDING |
-| description              | string | no       |                             |
-| response_code            | string | yes      |                             |
+| status                   | string | yes      | SUCCESS / FAILURE / PENDING   |
+| description              | string | no       |                               |
+| response_code            | string | yes      |                               |
 
 #### Response
 
@@ -77,22 +77,22 @@ Tài liệu mô tả API nhận IPN từ đối tác về các cập nhật củ
 
 Mô tả API lấy thông tin chi tiết của transaction
 
-| Field    | Value                                             |
-| -------- |---------------------------------------------------|
-| PROD URL | https://api.tiki.vn/miniapp/tikivip/transactions  |
-| UAT URL  | https://api.tala.xyz/miniapp/tikivip/transactions |
-| method   | GET                                               |
+| Field    | Value                                            |
+| -------- | ------------------------------------------------ |
+| PROD URL | https://api.tiki.vn/miniapp/tikivip/transaction  |
+| UAT URL  | https://api.tala.xyz/miniapp/tikivip/transaction |
+| method   | GET                                              |
 
 
 #### Params
 
-| Field              | Type   | Required | Description         |
-| ------------------ | ------ | -------- | ------------------- |
-| tiki_transaction_id| string | yes      | Tiki transaction id |
+| Field               | Type   | Required | Description         |
+| ------------------- | ------ | -------- | ------------------- |
+| tiki_transaction_id | string | yes      | Tiki transaction id |
 
 #### Response
 | Field                  | Type   | Description                |
-|------------------------| ------ | -------------------------- |
+| ---------------------- | ------ | -------------------------- |
 | tiki_transaction_id    | string | Tiki transaction id        |
 | partner_transaction_id | string | Transaction id của đối tác |
 | status                 | string | Trạng thái transaction     |
