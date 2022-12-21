@@ -30,7 +30,7 @@ Tài liệu mô tả API nhận IPN từ đối tác về các cập nhật củ
 | UAT URL  | https://api.tala.xyz/miniapp/tikivip/payment/ipn |
 | method   | POST                                             |
 
-#### Body Params Production
+#### Body Params
 
 | Field                    | Type   | Required | Description                   |
 | ------------------------ | ------ | -------- | ----------------------------- |
@@ -38,8 +38,6 @@ Tài liệu mô tả API nhận IPN từ đối tác về các cập nhật củ
 | transaction_amount       | number | yes      | Số tiền của transaction       |
 | transaction_id           | string | yes      | Transaction id ở phía đối tác |
 | status                   | string | yes      | SUCCESS / FAILURE / PENDING   |
-| description              | string | no       |                               |
-| response_code            | string | yes      |                               |
 
 #### Response
 
