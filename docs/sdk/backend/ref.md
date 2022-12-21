@@ -24,19 +24,11 @@ Chi tiết việc tính signature được mô tả trong tài liệu [tính sig
 
 Tài liệu mô tả API nhận IPN từ đối tác về các cập nhật của giao dịch
 
-| Field    | Value                                                    |
-| -------- | -------------------------------------------------------- |
-| PROD URL | https://api.tiki.vn/miniapp/tikivip/payment/ipn          |
-| UAT URL  | https://api.tala.xyz/miniapp/tikivip/payment/sandbox/ipn |
-| method   | POST                                                     |
-
-#### Body Params Sandbox
-
-| Field                    | Type   | Required | Description                   |
-| ------------------------ | ------ | -------- | ----------------------------- |
-| reference_transaction_id | string | yes      | Tiki transaction id           |
-| transaction_amount       | number | yes      | Số tiền của transaction       |
-| transaction_id           | string | yes      | Transaction id ở phía đối tác |
+| Field    | Value                                            |
+| -------- | ------------------------------------------------ |
+| PROD URL | https://api.tiki.vn/miniapp/tikivip/payment/ipn  |
+| UAT URL  | https://api.tala.xyz/miniapp/tikivip/payment/ipn |
+| method   | POST                                             |
 
 #### Body Params Production
 
