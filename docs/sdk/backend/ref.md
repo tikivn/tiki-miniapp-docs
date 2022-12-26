@@ -47,21 +47,35 @@ Tài liệu mô tả API nhận IPN từ đối tác về các cập nhật củ
 
 ```json
 {
+  "code": 0,
+  "message": "success",
   "data": {
     "transaction_id": "8A43B011-0EC9-4AA5-8D83-6FE7B2BCE4EC"
   }
 }
 ```
-
 ##### Trường hợp thất bại
-
-###### HTTP Status 400, 404, 403, 500
+###### HTTP Status 200
 
 ```json
 {
-  "error": "error message"
+  "code": 2,
+  "message": "error message"
 }
 ```
+
+##### Bảng chi tiết mã lỗi `code` 
+| Code               | Description   | Action |
+| ------------------- | ------------ | -------- |
+|0|Thành công ||
+|1|Request không hợp lệ |Hoàn tiền|
+|2|Lỗi hệ thống    |Hoàn tiền|
+|3|Giao dịch không tìm thấy   |Hoàn tiền|
+|4|Giao dịch không thuộc đối tác   |Hoàn tiền|
+|5|Số tiền giao dịch không hợp lệ   |Hoàn tiền|
+
+##### HTTP Status 4xx, 5xx
+Lỗi về hệ thống cần liên hệ với Tiki
 
 ### 2. API để lấy thông tin chi tiết của transaction trên Tiki
 
@@ -88,15 +102,6 @@ Mô tả API lấy thông tin chi tiết của transaction
 | status                 | string | Trạng thái transaction     |
 | amount                 | number | Số tiền của transaction    |
 
-##### Trường hợp thành công
-
-HTTP Status 200
-
-
-##### Trường hợp thất bại
-
-HTTP Status 400, 404, 403, 500
-
 Các trạng thái của transaction
 
 | Field   | Value                 |
@@ -114,6 +119,8 @@ Các trạng thái của transaction
 
 ```json
 {
+  "code": 0,
+  "message": "success",
   "tiki_transaction_id": "221115TIKIVIP-235784371-1668488254",
   "partner_transaction_id": "8A43B011-0EC9-4AA5-8D83-6FE7B2BCE4EC",
   "status": "SUCCESS",
@@ -122,14 +129,26 @@ Các trạng thái của transaction
 ```
 
 ##### Trường hợp thất bại
-
-###### HTTP Status 400, 404, 403, 500
+###### HTTP Status 200
 
 ```json
 {
-  "error": "error message"
+  "code": 2,
+  "message": "error message"
 }
 ```
+
+##### Bảng chi tiết mã lỗi `code` 
+| Code               | Description   | Action |
+| ------------------- | ------------ | -------- |
+|0|Thành công ||
+|1|Request không hợp lệ |Kiểm tra lại request|
+|2|Lỗi hệ thống    |Thực hiện lại|
+|3|Giao dịch không tìm thấy   |Hoàn tiền|
+|4|Giao dịch không thuộc đối tác   |Kiểm tra lại tiki transaction id|
+
+##### HTTP Status 4xx, 5xx
+Lỗi về hệ thống cần liên hệ với Tiki
 
 ### 3. Refund API
 

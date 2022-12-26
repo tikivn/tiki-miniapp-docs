@@ -29,10 +29,10 @@ body = {
     "<field_name>": <field_value>,
 }
   
-payload = timestamp + "." + client_key + "." + json_stringify(data)
+payload = timestamp + "." + client_key + "." + json_stringify(body)
 secret = "<client_secret>"
 encoded_payload = base64_safeurl_encode_no_padding(payload)
-signature = HMAC_SHA256(secret, payload)
+signature = HMAC_SHA256(secret, encoded_payload)
 ```
 
 ## Code mẫu
