@@ -52,7 +52,7 @@ android.enableJetifier=true
 dependencies {
   // ...
   implementation 'com.facebook.conceal:conceal:1.1.3@aar'
-  implementation 'vn.tiki:tiniapp-sdk:v1.2.4'
+  implementation 'com.github.tikivn:tiniapp-sdk-android:v1.3.1'
 }
 ```
 
@@ -87,7 +87,8 @@ public class MainApplication extends Application {
   public void onCreate() {
     super.onCreate();
     TiniAppConfiguration.Builder tiniAppConfigBuilder = new TiniAppConfiguration.Builder();
-    tiniAppConfigBuilder.setHostId("miniapp-demo");
+    tiniAppConfigBuilder.setClientId("76e643c9-5239-444f-a3e0-c777fd0cec09");
+    tiniAppConfigBuilder.setPartnerCode("app-demo");
     tiniAppConfigBuilder.setEnv(TiniAppConfiguration.TiniSDKEnv.PROD);
     tiniAppConfigBuilder.registerTiniAppCallback(new TiniAppInterface() {
       @Override
@@ -359,7 +360,7 @@ tiniAppConfigBuilder.registerTiniAppCallback(object : TiniAppInterface {
 
 ## Ứng dụng tích hợp mẫu
 
-Bạn có thể xem một ứng dụng Android mẫu đã được tích hợp tại địa chỉ [Link](https://github.com/lamvd0101/tiniapp-sdk-android)
+Bạn có thể xem một ứng dụng Android mẫu đã được tích hợp tại địa chỉ [Link](https://github.com/tikivn/tiniapp-sdk-android)
 
 ## API Interface
 

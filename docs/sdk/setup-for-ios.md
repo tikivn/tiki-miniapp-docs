@@ -421,7 +421,7 @@ Sau khi toàn bộ Tini App được đóng, `TiniAppSDK` sẽ gọi tới hàm 
 
 ## Ứng dụng tích hợp mẫu
 
-Bạn có thể xem một ứng dụng IOS mẫu đã được tích hợp tại địa chỉ [Link](https://github.com/lamvd0101/tiniapp-sdk-ios)
+Bạn có thể xem một ứng dụng IOS mẫu đã được tích hợp tại địa chỉ [Link](https://github.com/tikivn/tiniapp-sdk-ios)
 - Download Example, mở terminator và cd tới folder Example, chạy `pod install`
 
 ```bash
