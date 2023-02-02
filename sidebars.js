@@ -1043,6 +1043,14 @@ module.exports = {
         'sdk/troubleshooting',
       ],
     },
+    {
+      type: 'category',
+      label: 'Tích hợp Webview',
+      collapsed: false,
+      items: [
+        'sdk/webview-overview',
+      ],
+    },
     // {
     //   type: 'category',
     //   label: 'Các ví dụ mẫu',
