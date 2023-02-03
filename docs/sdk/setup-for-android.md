@@ -161,14 +161,14 @@ TiniAppSDK.sdkInit(this.applicationContext, tiniAppConfigBuilder.build())
   <TabItem value="java" label="Java">
 
 ```java
-TiniAppSDK.getInstance().openMiniApp(this, "com.tini.appstore", null, null);
+TiniAppSDK.getInstance().openMiniApp(this, "vn.tiki.vip", null, null);
 ```
 
   </TabItem>
   <TabItem value="kotlin" label="Kotlin">
 
 ```java
-TiniAppSDK.getInstance().openMiniApp(this, "com.tini.appstore", null, null);
+TiniAppSDK.getInstance().openMiniApp(this, "vn.tiki.vip", null, null);
 ```
 
   </TabItem>
@@ -183,7 +183,7 @@ trong đó:
 
 ### 5. Handle deeplink
 
-- Deeplink cho tiniapp bắt buộc sẽ có định dạng: scheme://apps/appId/pagePath?params. Ví dụ: tikivn://apps/com.tini.appstore
+- Deeplink cho tiniapp bắt buộc sẽ có định dạng: scheme://apps/appId/pagePath?params. Ví dụ: tikivn://apps/vn.tiki.vip
 - Sử dụng method TiniAppSDK.extractLink(url) để lấy thông tin appId, pagePath, params và sử dụng method openMiniApp để mở Tiniapp tương ứng
 
 ```java

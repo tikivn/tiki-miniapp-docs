@@ -174,7 +174,7 @@ import TabItem from '@theme/TabItem';
   <TabItem value="objc" label="Objective-C">
 
   ```objectivec
-  TiniAppViewController *vc = [[TiniAppSDK sharedInstance] openMiniAppWithAppId:@"com.tini.appstore" pathPath:nil params:nil];
+  TiniAppViewController *vc = [[TiniAppSDK sharedInstance] openMiniAppWithAppId:@"vn.tiki.vip" pathPath:nil params:nil];
   vc.modalPresentationStyle = UIModalPresentationFullScreen;
   [self presentViewController:vc animated:YES completion:nil];
   ```
@@ -183,7 +183,7 @@ import TabItem from '@theme/TabItem';
   <TabItem value="swift" label="Swift">
 
 ```swift
-  let vc = TiniAppSDK.shared.openMiniApp(appId: "com.tini.appstore", pathPath: nil, params: nil)
+  let vc = TiniAppSDK.shared.openMiniApp(appId: "vn.tiki.vip", pathPath: nil, params: nil)
   vc.modalPresentationStyle = .fullScreen
   self.present(vc, animated: true)
 ```
@@ -238,7 +238,7 @@ kết quả trả về:
 
 Lưu ý:
 
-- Deeplink cho tiniapp bắt buộc sẽ có định dạng: scheme://apps/appId/pagePath?params. Ví dụ: tikivn://apps/com.tini.appstore
+- Deeplink cho tiniapp bắt buộc sẽ có định dạng: scheme://apps/appId/pagePath?params. Ví dụ: tikivn://apps/vn.tiki.vip
 
 ### 6. Cài đặt delegate của TiniAppSDK
 
