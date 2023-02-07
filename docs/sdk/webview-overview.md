@@ -7,7 +7,25 @@ description: Giới thiệu và hướng dẫn cách tích hợp webview cho h�
 
 Tài liệu hướng dẫn và giới thiệu cách tích hợp WebView của chương trình Tiki Vip vào các đối tác thanh toán.
 
-## Luồng tích hợp
+## Danh sách tích hợp
+
+### Thanh toán
+
+| # | Tiki | Đối tác                              | Mô tả |
+| --- | ----------- | ------------------------------------- |--- |
+| 1 | Url mở sản phẩm Tiki | N/A | Đối tác thực hiện tích hợp mở webview của Tiki| 
+| 2 | Url kết quả thanh toán | N/A| Chuyển về màn hình kết quả đơn hàng của tiki   (phụ thuộc vào đối tác) |
+| 3 | API kiểm tra giao dịch | N/A | Đối tác kiểm tra giao dịch tại Tiki |
+| 4 | API IPN trạng thái giao dịch | N/A | Cập nhật trạng thái thanh toán sang Tiki |
+| 5 | N/A | URL hoặc function để Tiki gọi qua màn hình thanh toán | Tiki sẽ thực hiện gọi từ webview để chuyển qua màn hình thanh toán của đối tác |
+| 6 | N/A | API kiểm tra giao dịch | Tiki gọi API để kiểm tra các giao dịch từ đối tác + phục vụ quá trình vận hành |
+| 7 | N/A | API refund (hoàn tiền từng phần + toàn phần) | Tiki gọi API để hoàn tiền cho khách hàng |
+
+### Đối soát
+
+Tiki hỗ trợ thực hiện đối soát tự động qua API hoặc SFPT. Hai bên cùng thống nhất template + thời gian.
+
+## Luồng tích hợp thanh toán
 
 ![image](https://salt.tikicdn.com/ts/tiniapp/b8/75/ba/1ae7aec2b6e6184d77580fd5f1899695.jpg)
 
