@@ -11,15 +11,15 @@ Tài liệu hướng dẫn và giới thiệu cách tích hợp WebView của ch
 
 ### Thanh toán
 
-| # | Tiki | Đối tác                              | Mô tả |
-| --- | ----------- | ------------------------------------- |--- |
-| 1 | Url mở sản phẩm Tiki | N/A | Đối tác thực hiện tích hợp mở webview của Tiki| 
-| 2 | Url kết quả thanh toán | N/A| Chuyển về màn hình kết quả đơn hàng của tiki   (phụ thuộc vào đối tác) |
-| 3 | API kiểm tra giao dịch | N/A | Đối tác kiểm tra giao dịch tại Tiki |
-| 4 | API IPN trạng thái giao dịch | N/A | Cập nhật trạng thái thanh toán sang Tiki |
-| 5 | N/A | URL hoặc function để Tiki gọi qua màn hình thanh toán | Tiki sẽ thực hiện gọi từ webview để chuyển qua màn hình thanh toán của đối tác |
-| 6 | N/A | API kiểm tra giao dịch | Tiki gọi API để kiểm tra các giao dịch từ đối tác + phục vụ quá trình vận hành |
-| 7 | N/A | API refund (hoàn tiền từng phần + toàn phần) | Tiki gọi API để hoàn tiền cho khách hàng |
+| # | Tiki | Đối tác                              | Mô tả |  |
+| --- | ----------- | ------------------------------------- |--- |--- |
+| 1 | Url mở sản phẩm Tiki | N/A | Đối tác thực hiện tích hợp mở webview của Tiki|  [Xem chi tiết URL](https://developers.tiki.vn/docs/sdk/webview-overview#2-%C4%91%E1%BB%8Bnh-ngh%C4%A9a-full_url)|
+| 2 | Url kết quả thanh toán | N/A| Chuyển về màn hình kết quả đơn hàng của tiki   (phụ thuộc vào đối tác) |  [Xem chi tiết URL](https://developers.tiki.vn/docs/sdk/webview-overview#3-callback-v%E1%BB%81-webview-khi-thanh-to%C3%A1n-ho%C3%A0n-th%C3%A0nh) |
+| 3 | API kiểm tra giao dịch | N/A | Đối tác kiểm tra giao dịch tại Tiki | [Xem chi tiết API](/docs/sdk/backend/ref#2-api-để-lấy-thông-tin-chi-tiết-của-transaction-trên-tiki) |
+| 4 | API IPN trạng thái giao dịch | N/A | Cập nhật trạng thái thanh toán sang Tiki | [Xem chi tiết API](docs/sdk/backend/ref#1-api-nhận-ipn-từ-đối-tác) |
+| 5 | N/A | URL hoặc function để Tiki gọi qua màn hình thanh toán | Tiki sẽ thực hiện gọi từ webview để chuyển qua màn hình thanh toán của đối tác | |
+| 6 | N/A | API kiểm tra giao dịch | Tiki gọi API để kiểm tra các giao dịch từ đối tác + phục vụ quá trình vận hành | |
+| 7 | N/A | API refund (hoàn tiền từng phần + toàn phần) | Tiki gọi API để hoàn tiền cho khách hàng | |
 
 ### Đối soát
 
