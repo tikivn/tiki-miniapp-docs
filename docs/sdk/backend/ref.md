@@ -177,3 +177,60 @@ HTTP Status 200
 ##### Trường hợp thất bại
 
 HTTP Status 500
+
+
+### 4. API lấy thông tin url webview
+
+Mô tả API lấy thông tin URL webview
+
+| Field    | Value                                            |
+| -------- | ------------------------------------------------ |
+| PROD URL | https://api.tiki.vn/miniapp/tikivip/webview  |
+| UAT URL  | https://api.tala.xyz/miniapp/tikivip/webview |
+| method   | POST                                         |
+
+#### Body Params
+
+| Field                    | Type   | Required | Description                   |
+| ------------------------ | ------ | -------- | ----------------------------- |
+| identify_code | string | yes      | mã code để xác định khách hàng           |
+| identify_phone       | number | yes      | Số điện thoại của khách hàng     |
+| identify_fullname           | string | no      | Họ và tên khách hàng|
+
+
+#### Response
+
+##### Trường hợp thành công
+
+
+```json
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "url_open": "https://tiki.vn/apps/vn.tiki.vip?xxxxx",
+    "url_checkout_result": "https://tiki.vn//apps/vn.tiki.vip/callback/index?xxxxx",
+    "request_id": "8A43B011-0EC9-4AA5-8D83-6FE7B2BCE4EC"
+  }
+}
+```
+##### Trường hợp thất bại
+
+```json
+{
+  "code": 2,
+  "message": "error message"
+}
+```
+
+##### Bảng chi tiết mã lỗi 
+
+| Code               | Description   |
+| ------------------- | ------------ |
+|0|Thành công |
+|1|Request không hợp lệ |
+|2|Lỗi hệ thống    |
+
+##### HTTP Status 4xx, 5xx
+Lỗi về hệ thống cần liên hệ với Tiki
+
