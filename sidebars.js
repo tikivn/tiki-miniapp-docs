@@ -1065,6 +1065,7 @@ module.exports = {
         'sdk/backend/payment',
         'sdk/backend/api_signature',
         'sdk/backend/ref',
+        'sdk/reconcile-sftp'
       ],
     },
   ],
