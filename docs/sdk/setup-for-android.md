@@ -52,7 +52,7 @@ android.enableJetifier=true
 dependencies {
   // ...
   implementation 'com.facebook.conceal:conceal:1.1.3@aar'
-  implementation 'com.github.tikivn:tiniapp-sdk-android:v1.3.1'
+  implementation 'com.github.tikivn:tiniapp-sdk-android:v1.3.2'
 }
 ```
 
@@ -169,6 +169,14 @@ TiniAppSDK.getInstance().openMiniApp(this, "vn.tiki.vip", null, null);
 
 ```java
 TiniAppSDK.getInstance().openMiniApp(this, "vn.tiki.vip", null, null);
+```
+
+```java
+Bundle bundle = new Bundle();
+bundle.putString("code_order", "111111");
+bundle.putString("status", "false");
+bundle.putString("order_id", "111111");
+TiniAppSDK.getInstance().openMiniApp(this, "vn.tiki.vip", "pages/home/index", bundle);
 ```
 
   </TabItem>

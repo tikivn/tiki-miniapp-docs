@@ -35,7 +35,7 @@ target 'Example' do
   # Your libs
 
   # ==== TiniAppSDK ====
-  pod 'TiniAppSDK', :git => 'https://github.com/tikivn/tiniapp-sdk-ios.git', :tag => 'v1.24.0'
+  pod 'TiniAppSDK', '~> 1.9.2'
 end
 ```
 
