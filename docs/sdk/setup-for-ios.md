@@ -2,7 +2,6 @@
 title: Tích hợp SDK trên iOS
 ---
 
-
 ## Requirements
 
 TiniAppSDK là SDK cho ios để biến 1 ios app thành super app. SDK cung cấp các tính năng:
@@ -26,11 +25,10 @@ Ngoài ra, cặp key `partner_code` và `client_id` chỉ có thể sử dụng 
 
 ## Integration Steps
 
+### 1. Cài đặt CocoaPod
 
-
-### 1. Cài đặt CocoaPod 
 TiniSDK có thể được cài đặt từ CocoaPod.
-Nếu bạn đã cài đặt CocoaPod có thể bỏ qua bước này. 
+Nếu bạn đã cài đặt CocoaPod có thể bỏ qua bước này.
 
 Tham khảo về CocoaPod ở đây [Link](https://guides.cocoapods.org/using/getting-started.html#getting-started)
 
@@ -40,6 +38,7 @@ pod setup
 ```
 
 #### 1.1. Tạo Podfile
+
 Nếu đã có Podfile, bạn có thể bỏ qua step này
 Tạo 1 Podfile, tham khảo cách tạo Podfile ở đây [Link](https://guides.cocoapods.org/using/the-podfile.html)
 
@@ -50,11 +49,11 @@ target 'ExampleSDK' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod "TiniAppSDK"
+  pod "TiniAppSDK", "~> 1.9.2"
 
 end
 
-post_install do |installer|  
+post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
       config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
@@ -63,7 +62,7 @@ post_install do |installer|
     target.build_configurations.each do |config|
       config.build_settings['ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES'] = 'NO'
     end
-    
+
     if target.respond_to?(:product_type) and target.product_type == "com.apple.product-type.bundle"
       target.build_configurations.each do |config|
           config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
@@ -77,15 +76,18 @@ end
 
 ```pod
 # ...
-pod 'TiniAppSDK'
+pod 'TiniAppSDK', '~> 1.9.2'
 # ...
 ```
 
 #### 1.3. Install hoặc Update Pod
+
 ```
 pod install
 ```
+
 hoặc
+
 ```
 pod update
 ```
@@ -115,16 +117,16 @@ TiniAppSDK cần 1 số quyền runtime để xin quyền từ user khi cần, n
 <!-- ... -->
 ```
 
-| Quyền                      | Type     | JSAPI sử dụng                               |
-| -------------------------- | -------- | ------------------------------------------- |
-| NSCameraUsageDescription   | Camera   | my.chooseImage, my.chooseVideo my.scan |
-| NSPhotoLibraryUsageDescription   | Camera   | my.chooseImage, my.chooseVideo, my.scan, my.saveImage |
-| NSContactsUsageDescription   | Contact   | my.chooseContact, my.addPhoneContact |
-| NSFaceIDUsageDescription   | Biometric   | my.bioMetrics.createKey, my.bioMetrics.createSignature, my.bioMetrics.deleteKey, my.bioMetrics.isSupported,  my.bioMetrics.keyExists, my.bioMetrics.localAuth my.getEncryptedStorage,  my.setEncryptedStorage |
-| NSLocationAlwaysAndWhenInUseUsageDescription   | Location   | my.getLocation |
-| NSLocationAlwaysUsageDescription   | Location   | my.getLocation |
-| NSLocationWhenInUseUsageDescription   | Location   | my.getLocation |
-| NSMicrophoneUsageDescription   | Microphone   | my.chooseVideo, my.scan |
+| Quyền                                        | Type       | JSAPI sử dụng                                                                                                                                                                                               |
+| -------------------------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| NSCameraUsageDescription                     | Camera     | my.chooseImage, my.chooseVideo my.scan                                                                                                                                                                      |
+| NSPhotoLibraryUsageDescription               | Camera     | my.chooseImage, my.chooseVideo, my.scan, my.saveImage                                                                                                                                                       |
+| NSContactsUsageDescription                   | Contact    | my.chooseContact, my.addPhoneContact                                                                                                                                                                        |
+| NSFaceIDUsageDescription                     | Biometric  | my.bioMetrics.createKey, my.bioMetrics.createSignature, my.bioMetrics.deleteKey, my.bioMetrics.isSupported, my.bioMetrics.keyExists, my.bioMetrics.localAuth my.getEncryptedStorage, my.setEncryptedStorage |
+| NSLocationAlwaysAndWhenInUseUsageDescription | Location   | my.getLocation                                                                                                                                                                                              |
+| NSLocationAlwaysUsageDescription             | Location   | my.getLocation                                                                                                                                                                                              |
+| NSLocationWhenInUseUsageDescription          | Location   | my.getLocation                                                                                                                                                                                              |
+| NSMicrophoneUsageDescription                 | Microphone | my.chooseVideo, my.scan                                                                                                                                                                                     |
 
 ### 3. Khởi tạo SDK
 
@@ -136,49 +138,48 @@ import TabItem from '@theme/TabItem';
 <Tabs>
   <TabItem value="objc" label="Objective-C">
 
-  ```objectivec
-  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    TiniAppConfiguration *config = [[TiniAppConfiguration alloc] init];
-    config.partnerCode = @"partner code you get when register";
-    config.clientId = @"client id you get when register";
-    config.env = TiniEnvProd;
-    [TiniAppSDK configWith:config];
-    TiniAppSDK.sharedInstance.delegate = self;
-    return YES;
-  }
-  ```
-  
+```objectivec
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  TiniAppConfiguration *config = [[TiniAppConfiguration alloc] init];
+  config.partnerCode = @"partner code you get when register";
+  config.clientId = @"client id you get when register";
+  config.env = TiniEnvProd;
+  [TiniAppSDK configWith:config];
+  TiniAppSDK.sharedInstance.delegate = self;
+  return YES;
+}
+```
+
   </TabItem>
   <TabItem value="swift" label="Swift">
 
-  ```swift
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    let config = TiniAppConfiguration()
-    config.env = .prod
-    config.clientId = "76e643c9-5239-444f-a3e0-c777fd0cec09"
-    config.partnerCode = "app-demo"
-    TiniAppSDK.config(with:config)
-    // Override point for customization after application launch.
-    return true
-    }
-  ```
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+  let config = TiniAppConfiguration()
+  config.env = .prod
+  config.clientId = "76e643c9-5239-444f-a3e0-c777fd0cec09"
+  config.partnerCode = "app-demo"
+  TiniAppSDK.config(with:config)
+  // Override point for customization after application launch.
+  return true
+  }
+```
 
   </TabItem>
 </Tabs>
-
 
 ### 4. Mở 1 TiniApp
 
 Để mở 1 tiniapp, chúng ta có thể dùng cách sau:
 <Tabs>
-  <TabItem value="objc" label="Objective-C">
+<TabItem value="objc" label="Objective-C">
 
-  ```objectivec
-  TiniAppViewController *vc = [[TiniAppSDK sharedInstance] openMiniAppWithAppId:@"vn.tiki.vip" pathPath:nil params:nil];
-  vc.modalPresentationStyle = UIModalPresentationFullScreen;
-  [self presentViewController:vc animated:YES completion:nil];
-  ```
-  
+```objectivec
+TiniAppViewController *vc = [[TiniAppSDK sharedInstance] openMiniAppWithAppId:@"vn.tiki.vip" pathPath:nil params:nil];
+vc.modalPresentationStyle = UIModalPresentationFullScreen;
+[self presentViewController:vc animated:YES completion:nil];
+```
+
   </TabItem>
   <TabItem value="swift" label="Swift">
 
@@ -190,7 +191,6 @@ import TabItem from '@theme/TabItem';
 
   </TabItem>
 </Tabs>
-
 
 trong đó:
 
@@ -206,20 +206,20 @@ kết quả trả về:
 
 Để có thể mở 1 tiniapp từ deeplink, chúng ta cần implement các phương thức sau ở application delegate
 <Tabs>
-  <TabItem value="objc" label="Objective-C">
+<TabItem value="objc" label="Objective-C">
 
-  ```objectivec
+```objectivec
 - (BOOL)application:(UIApplication *)application
-   openURL:(NSURL *)url
-   options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-  return [[TiniApplicationDelegate sharedInstance] application:application openURL:url options:options];
+ openURL:(NSURL *)url
+ options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+return [[TiniApplicationDelegate sharedInstance] application:application openURL:url options:options];
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation {
-  return [[TiniApplicationDelegate sharedInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+return [[TiniApplicationDelegate sharedInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
 }
-  ```
-  
+```
+
   </TabItem>
   <TabItem value="swift" label="Swift">
 
@@ -247,43 +247,43 @@ Lưu ý:
 <Tabs>
   <TabItem value="objc" label="Objective-C">
 
-  ```objectivec
-  TiniAppSDK.sharedInstance.delegate = self;
+```objectivec
+TiniAppSDK.sharedInstance.delegate = self;
 
-  //implement các hàm của TiniAppSDKDelegate
+//implement các hàm của TiniAppSDKDelegate
 - (void)closeAppWithCompletedHandler:(void (NS_NOESCAPE ^)(void))completedHandler {
+dispatch_async(dispatch_get_main_queue(), ^{
+  UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
+  while (topController.presentedViewController) {
+    topController = topController.presentedViewController;
+  }
+  [topController dismissViewControllerAnimated:YES completion:nil];
+});
+}
+
+- (void)getUserInfoWithCompletedHandler:(void (NS_NOESCAPE ^ _Nonnull)(TiniUser* _Nullable, NSError * _Nullable))completedHandler {
+TiniUser *user = [[TiniUser alloc] initWithId:@"1234" name:@"Test user" email:@"test@gmail.com"  phoneNumber:@"0123456789"];
+completedHandler(user, nil);
+}
+
+
+- (void)openPaymentWithTransactionId:(NSString * _Nonnull)transactionId amount:(double)amount completedHandler:(void (^ _Nonnull)(NSDictionary<NSString *,id> * _Nullable, NSError * _Nullable))completedHandler {
   dispatch_async(dispatch_get_main_queue(), ^{
     UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
     while (topController.presentedViewController) {
       topController = topController.presentedViewController;
     }
-    [topController dismissViewControllerAnimated:YES completion:nil];
+    PaymentViewController *vc = [[PaymentViewController alloc] initWithNibName:@"PaymentViewController" bundle:nil];
+    vc.transactionId = transactionId;
+    vc.amount = amount;
+    vc.completionBlock = ^(id  response, NSError * error) {
+      completedHandler(response, error);
+    };
+    [topController presentViewController:vc animated:YES completion:nil];
   });
 }
+```
 
-- (void)getUserInfoWithCompletedHandler:(void (NS_NOESCAPE ^ _Nonnull)(TiniUser* _Nullable, NSError * _Nullable))completedHandler {
-  TiniUser *user = [[TiniUser alloc] initWithId:@"1234" name:@"Test user" email:@"test@gmail.com"  phoneNumber:@"0123456789"];
-  completedHandler(user, nil);
-}
-
-
-- (void)openPaymentWithTransactionId:(NSString * _Nonnull)transactionId amount:(double)amount completedHandler:(void (^ _Nonnull)(NSDictionary<NSString *,id> * _Nullable, NSError * _Nullable))completedHandler {
-    dispatch_async(dispatch_get_main_queue(), ^{
-      UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
-      while (topController.presentedViewController) {
-        topController = topController.presentedViewController;
-      }
-      PaymentViewController *vc = [[PaymentViewController alloc] initWithNibName:@"PaymentViewController" bundle:nil];
-      vc.transactionId = transactionId;
-      vc.amount = amount;
-      vc.completionBlock = ^(id  response, NSError * error) {
-        completedHandler(response, error);
-      };
-      [topController presentViewController:vc animated:YES completion:nil];
-    });
-}
-  ```
-  
   </TabItem>
   <TabItem value="swift" label="Swift">
 
@@ -293,12 +293,12 @@ TiniAppSDK.shared.delegate = self
 extension ViewController: TiniAppSDKDelegate {
   func openPayment(transactionId: String, amount: Double, completedHandler: @escaping ([String : Any]?, Error?) -> Void) {
   }
-  
+
   func getUserInfo(completedHandler: (TiniUser?, Error?) -> Void) {
       let tiniUser = TiniUser(id: "1", name: "Test user")
       completedHandler(tiniUser, nil)
   }
-  
+
   func closeApp(completedHandler:() -> Void) {
       DispatchQueue.main.async {
           let controller = UIApplication.topViewController()
@@ -310,7 +310,6 @@ extension ViewController: TiniAppSDKDelegate {
 
   </TabItem>
 </Tabs>
-
 
 ##### 6.1. Tích hợp đăng ký đăng nhập
 
@@ -327,16 +326,16 @@ Bạn có thể cài đặt delegate này như sau
   completedHandler(user, nil);
 }
 ```
-  
+
   </TabItem>
   <TabItem value="swift" label="Swift">
 
-  ```swift
-  func getUserInfo(completedHandler: (TiniUser?, Error?) -> Void) {
-    let tiniUser = TiniUser(id: "1", name: "Test user")
-    completedHandler(tiniUser, nil)
-  }
-  ```
+```swift
+func getUserInfo(completedHandler: (TiniUser?, Error?) -> Void) {
+  let tiniUser = TiniUser(id: "1", name: "Test user")
+  completedHandler(tiniUser, nil)
+}
+```
 
   </TabItem>
 </Tabs>
@@ -344,7 +343,7 @@ Bạn có thể cài đặt delegate này như sau
 
 Khi một Tini App cần thanh toán một đơn hàng, `TiniAppSDK` sẽ gọi tới hàm delegate `openPaymentWithTransactionId:amount:completeHandler`
 
-Bạn có thể implement delegate này như sau. 
+Bạn có thể implement delegate này như sau.
 
 <Tabs>
   <TabItem value="objc" label="Objective-C">
@@ -367,16 +366,16 @@ Bạn có thể implement delegate này như sau.
     });
 }
 ```
-  
+
   </TabItem>
   <TabItem value="swift" label="Swift">
 
-  ```swift
-    func openPayment(transactionId: String, amount: Double, completedHandler: @escaping ([String : Any]?, Error?) -> Void) {
-      //mở flow thanh toán và gọi completedHander bên dưới
-      completedHandler(["transactionId": transactionId], nil)
-    }
-  ```
+```swift
+  func openPayment(transactionId: String, amount: Double, completedHandler: @escaping ([String : Any]?, Error?) -> Void) {
+    //mở flow thanh toán và gọi completedHander bên dưới
+    completedHandler(["transactionId": transactionId], nil)
+  }
+```
 
   </TabItem>
 </Tabs>
@@ -401,18 +400,18 @@ Sau khi toàn bộ Tini App được đóng, `TiniAppSDK` sẽ gọi tới hàm 
   });
 }
 ```
-  
+
   </TabItem>
   <TabItem value="swift" label="Swift">
 
-  ```swift
-  func closeApp(completedHandler:() -> Void) {
-    DispatchQueue.main.async {
-        let controller = UIApplication.topViewController()
-        controller?.dismiss(animated: true)
-    }
+```swift
+func closeApp(completedHandler:() -> Void) {
+  DispatchQueue.main.async {
+      let controller = UIApplication.topViewController()
+      controller?.dismiss(animated: true)
   }
-  ```
+}
+```
 
   </TabItem>
 </Tabs>
@@ -422,6 +421,7 @@ Sau khi toàn bộ Tini App được đóng, `TiniAppSDK` sẽ gọi tới hàm 
 ## Ứng dụng tích hợp mẫu
 
 Bạn có thể xem một ứng dụng IOS mẫu đã được tích hợp tại địa chỉ [Link](https://github.com/tikivn/tiniapp-sdk-ios)
+
 - Download Example, mở terminator và cd tới folder Example, chạy `pod install`
 
 ```bash
@@ -430,7 +430,6 @@ pod install
 ```
 
 - Mở file ExampleSDK.xcworkspace, bấm build và chạy thử trên simulator
-
 
 ## API Interface
 
