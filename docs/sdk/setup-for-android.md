@@ -57,18 +57,19 @@ dependencies {
 ```
 
 ### 2. Các quyền truy cập mà SDK sử dụng
+
 Khi sử dụng các jsapi truy cập tới các dữ liêụ riêng tư, SDK cần sự cho phép của người dùng. Do đó các quyền dưới đây đã được thêm vào SDK
 
-| Quyền                      | Type     | JSAPI sử dụng                               |
-| -------------------------- | -------- | ------------------------------------------- |
-| android.permission.CAMERA   | Camera   | my.chooseImage, my.chooseVideo, my.scan |
-| android.permission.READ_EXTERNAL_STORAGE   | Storage   | my.chooseImage, my.chooseVideo, my.scan, my.getStorage, my.uploadFile |
-| android.permission.WRITE_EXTERNAL_STORAGE   | Storage   | my.saveImage, my.saveFile, my.setStorage, my.downloadFile |
-| android.permission.ACCESS_FINE_LOCATION   | Location   | my.getLocation |
-| android.permission.RECORD_AUDIO   | Microphone   | my.chooseVideo, my.scan |
-| android.permission.WRITE_CONTACTS"  | Contact   | my.addContact |
-| android.permission.READ_CONTACTS   | Contact   | my.getContact |
-| android.permission.READ_PROFILE   | Contact   | my.getContact |
+| Quyền                                     | Type       | JSAPI sử dụng                                                         |
+| ----------------------------------------- | ---------- | --------------------------------------------------------------------- |
+| android.permission.CAMERA                 | Camera     | my.chooseImage, my.chooseVideo, my.scan                               |
+| android.permission.READ_EXTERNAL_STORAGE  | Storage    | my.chooseImage, my.chooseVideo, my.scan, my.getStorage, my.uploadFile |
+| android.permission.WRITE_EXTERNAL_STORAGE | Storage    | my.saveImage, my.saveFile, my.setStorage, my.downloadFile             |
+| android.permission.ACCESS_FINE_LOCATION   | Location   | my.getLocation                                                        |
+| android.permission.RECORD_AUDIO           | Microphone | my.chooseVideo, my.scan                                               |
+| android.permission.WRITE_CONTACTS"        | Contact    | my.addContact                                                         |
+| android.permission.READ_CONTACTS          | Contact    | my.getContact                                                         |
+| android.permission.READ_PROFILE           | Contact    | my.getContact                                                         |
 
 ### 3. Khởi tạo SDK
 
@@ -147,11 +148,10 @@ tiniAppConfigBuilder.registerTiniAppCallback(object : TiniAppInterface {
     }
 })
 TiniAppSDK.sdkInit(this.applicationContext, tiniAppConfigBuilder.build())
- ```
+```
 
   </TabItem>
 </Tabs>
-       
 
 ### 4. Mở 1 miniapp
 
@@ -164,19 +164,29 @@ TiniAppSDK.sdkInit(this.applicationContext, tiniAppConfigBuilder.build())
 TiniAppSDK.getInstance().openMiniApp(this, "vn.tiki.vip", null, null);
 ```
 
-  </TabItem>
-  <TabItem value="kotlin" label="Kotlin">
-
-```java
-TiniAppSDK.getInstance().openMiniApp(this, "vn.tiki.vip", null, null);
-```
-
 ```java
 Bundle bundle = new Bundle();
 bundle.putString("code_order", "111111");
 bundle.putString("status", "false");
 bundle.putString("order_id", "111111");
+
 TiniAppSDK.getInstance().openMiniApp(this, "vn.tiki.vip", "pages/home/index", bundle);
+```
+
+  </TabItem>
+  <TabItem value="kotlin" label="Kotlin">
+
+```java
+TiniAppSDK.getInstance().openMiniApp(this, "vn.tiki.vip", null, null)
+```
+
+```java
+var bundle = Bundle()
+bundle.putString("code_order", "111111")
+bundle.putString("status", "false")
+bundle.putString("order_id", "111111")
+
+TiniAppSDK.getInstance().openMiniApp(this, "vn.tiki.vip", "pages/home/index", bundle)
 ```
 
   </TabItem>
@@ -211,30 +221,30 @@ TiniAppLinkInfo
 <Tabs>
   <TabItem value="java" label="Java">
 
-  ```java
+```java
 tiniAppConfigBuilder.registerTiniAppCallback(new TiniAppInterface() {
-    @Override
-    public void closeApp(Activity activity) {
-      activity.finish();
-    }
+  @Override
+  public void closeApp(Activity activity) {
+    activity.finish();
+  }
 
-    @Override
-    public void getUserInfo(TiniAppCallback<Bundle> callback) {
-      Bundle bundle = new Bundle();
-      bundle.putString("name", "Test user");
-      bundle.putString("email", "Test user");
-      callback.onSuccess(bundle);
-    }
+  @Override
+  public void getUserInfo(TiniAppCallback<Bundle> callback) {
+    Bundle bundle = new Bundle();
+    bundle.putString("name", "Test user");
+    bundle.putString("email", "Test user");
+    callback.onSuccess(bundle);
+  }
 
-    @Override
-    public void openPayment(String transactionId, double amount, TiniAppCallback<Bundle> callback) {
-      Bundle bundle = new Bundle();
-      bundle.putString("transactionId", transactionId);
-      callback.onSuccess(bundle);
-    }
+  @Override
+  public void openPayment(String transactionId, double amount, TiniAppCallback<Bundle> callback) {
+    Bundle bundle = new Bundle();
+    bundle.putString("transactionId", transactionId);
+    callback.onSuccess(bundle);
+  }
 });
-  ```
-  
+```
+
   </TabItem>
   <TabItem value="kotlin" label="Kotlin">
 
@@ -258,14 +268,13 @@ tiniAppConfigBuilder.registerTiniAppCallback(object : TiniAppInterface {
   </TabItem>
 </Tabs>
 
-
 #### 6.1. Tích hợp đăng ký đăng nhập
 
 Khi một Tini App cần lấy thông tin tài khoản đang đăng nhập từ Super App, `TiniAppSDK` sẽ gọi tới hàm implement `getUserInfo`
 
 Bạn có thể cài đặt implementation này như sau
 <Tabs>
-  <TabItem value="java" label="Java">
+<TabItem value="java" label="Java">
 
 ```java
 tiniAppConfigBuilder.registerTiniAppCallback(new TiniAppInterface() {
@@ -279,7 +288,7 @@ tiniAppConfigBuilder.registerTiniAppCallback(new TiniAppInterface() {
     }
 });
 ```
-  
+
   </TabItem>
   <TabItem value="kotlin" label="Kotlin">
 
@@ -301,21 +310,21 @@ tiniAppConfigBuilder.registerTiniAppCallback(object : TiniAppInterface {
 
 Khi một Tini App cần thanh toán một đơn hàng, `TiniAppSDK` sẽ gọi tới hàm implement `openPayment`
 
-Bạn có thể implement như sau. 
+Bạn có thể implement như sau.
 <Tabs>
-  <TabItem value="java" label="Java">
+<TabItem value="java" label="Java">
 
-  ```java
+```java
 tiniAppConfigBuilder.registerTiniAppCallback(new TiniAppInterface() {
-    @Override
-    public void openPayment(String transactionId, double amount, TiniAppCallback<Bundle> callback) {
-      Bundle bundle = new Bundle();
-      bundle.putString("transactionId", transactionId);
-      callback.onSuccess(bundle);
-    }
+  @Override
+  public void openPayment(String transactionId, double amount, TiniAppCallback<Bundle> callback) {
+    Bundle bundle = new Bundle();
+    bundle.putString("transactionId", transactionId);
+    callback.onSuccess(bundle);
+  }
 });
-  ```
-  
+```
+
   </TabItem>
   <TabItem value="kotlin" label="Kotlin">
 
@@ -336,21 +345,20 @@ tiniAppConfigBuilder.registerTiniAppCallback(object : TiniAppInterface {
   </TabItem>
 </Tabs>
 
-
 #### 6.3. Đóng toàn bộ Tini App
 
 <Tabs>
   <TabItem value="java" label="Java">
 
-  ```java
+```java
 tiniAppConfigBuilder.registerTiniAppCallback(new TiniAppInterface() {
-    @Override
-    public void closeApp(Activity activity) {
-      activity.finish();
-    }
+  @Override
+  public void closeApp(Activity activity) {
+    activity.finish();
+  }
 });
-  ```
-  
+```
+
   </TabItem>
   <TabItem value="kotlin" label="Kotlin">
 
@@ -364,7 +372,6 @@ tiniAppConfigBuilder.registerTiniAppCallback(object : TiniAppInterface {
 
   </TabItem>
 </Tabs>
-
 
 ## Ứng dụng tích hợp mẫu
 
@@ -387,6 +394,6 @@ Bạn có thể xem một ứng dụng Android mẫu đã được tích hợp t
 | Method                    | description                                  |
 | ------------------------- | -------------------------------------------- |
 | `setEnv()`                | Chỉ định môi trường test UAT hoặc Production |
-| `setPartnerCode`               | Partner Code từ TiniConsole                       |
-| `setClientId`               | Client ID từ TiniConsole                       |
+| `setPartnerCode`          | Partner Code từ TiniConsole                  |
+| `setClientId`             | Client ID từ TiniConsole                     |
 | `registerTiniAppCallback` | Implement các phương thức mà TiniApp cần     |
