@@ -73,6 +73,7 @@ Tài liệu mô tả API nhận IPN từ đối tác về các cập nhật củ
 |3|Giao dịch không tìm thấy   |Hoàn tiền|
 |4|Giao dịch không thuộc đối tác   |Hoàn tiền|
 |5|Số tiền giao dịch không hợp lệ   |Hoàn tiền|
+|6|Giao dịch bị huỷ   |Hoàn tiền|
 
 ##### HTTP Status 4xx, 5xx
 Lỗi về hệ thống cần liên hệ với Tiki
@@ -146,6 +147,7 @@ Các trạng thái của transaction
 |2|Lỗi hệ thống    |Thực hiện lại|
 |3|Giao dịch không tìm thấy   |Hoàn tiền|
 |4|Giao dịch không thuộc đối tác   |Kiểm tra lại tiki transaction id|
+|6|Giao dịch bị huỷ   |Hoàn tiền|
 
 ##### HTTP Status 4xx, 5xx
 Lỗi về hệ thống cần liên hệ với Tiki
