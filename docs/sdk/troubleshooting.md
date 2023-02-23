@@ -17,5 +17,7 @@ title: Các vấn đề thường gặp
 - **Giải pháp:** Thêm `exclude group: "androidx.lifecycle"` vào implementation Tini App SDK
 
 #### Build release bị crash app
+
 - App có sử dụng proguard để minify khi release thì thực hiện thêm đoạn cấu hình sau vào `proguard-rules.pro`
 - `-keep public class vn.tiki.tiniappsdk.** { public *;}`
+- `-keep public class com.tiniworker.** { public *;}`
