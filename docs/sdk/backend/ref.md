@@ -38,6 +38,7 @@ Tài liệu mô tả API nhận IPN từ đối tác về các cập nhật củ
 | transaction_amount       | number | yes      | Số tiền của transaction       |
 | transaction_id           | string | yes      | Transaction id ở phía đối tác |
 | status                   | string | yes      | SUCCESS / FAILURE / PENDING   |
+| partner_banking_method   | string | no       | Phương thức thanh toán khách hàng sử dụng tại ứng dụng của đối tác (đối tác cần cung cấp cho tiki các mã này)|   
 
 #### Response
 
