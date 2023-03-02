@@ -40,13 +40,6 @@ Tiki hỗ trợ thực hiện đối soát tự động qua API hoặc SFPT. Hai
 
 ## Các bước triển khai
 
-- url basic ~ {url_basic}
-
-| Environment | Endpoint                              |
-| ----------- | ------------------------------------- |
-| Production  | https://tiki.vn/apps  |
-| Sandbox     | https://beta.tala.xyz/apps |
-
 ### 1. Tiki cung cấp cho đối tác:
 
 - `partnerCode`: là một chuỗi duy nhất gắn với từng Super App
