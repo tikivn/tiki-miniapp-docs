@@ -320,7 +320,14 @@ tiniAppConfigBuilder.registerTiniAppCallback(new TiniAppInterface() {
   public void openPayment(String transactionId, double amount, TiniAppCallback<Bundle> callback) {
     Bundle bundle = new Bundle();
     bundle.putString("transactionId", transactionId);
+
+    // Trường hợp thanh toán thành công
+    // và thực hiện thông báo lại cho TiniApp SDK thì thực hiện đoạn code sau:
     callback.onSuccess(bundle);
+
+    // Trường hợp thanh toán thất bại
+    // và thực hiện thông báo lại cho TiniApp SDK thì thực hiện đoạn code sau:
+    callback.onError("{\"action\":\"goto_home\",\"msg_err\":\"Something's wrong\"}");
   }
 });
 ```

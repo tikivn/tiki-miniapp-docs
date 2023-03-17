@@ -360,7 +360,13 @@ Bạn có thể implement delegate này như sau.
       vc.transactionId = transactionId;
       vc.amount = amount;
       vc.completionBlock = ^(id  response, NSError * error) {
+        // Trường hợp thanh toán thành công
+        // và thực hiện thông báo lại cho TiniApp SDK thì thực hiện đoạn code sau:
         completedHandler(response, error);
+
+        // Trường hợp thanh toán thất bại
+        // và thực hiện thông báo lại cho TiniApp SDK thì thực hiện đoạn code sau:
+        self.completedHandler(nil, [NSError errorWithDomain:@"TINI_SDK" code:400 userInfo:@{NSLocalizedDescriptionKey: @"{\"action\":\"goto_home\",\"msg_err\":\"Something's wrong\"}"}]);
       };
       [topController presentViewController:vc animated:YES completion:nil];
 
@@ -374,13 +380,7 @@ Bạn có thể implement delegate này như sau.
 ```swift
   func openPayment(transactionId: String, amount: Double, completedHandler: @escaping ([String : Any]?, Error?) -> Void) {
     //mở flow thanh toán và gọi completedHander bên dưới
-    // Trường hợp thanh toán thành công
-    // và thực hiện thông báo lại cho TiniApp SDK thì thực hiện đoạn code sau:
     completedHandler(["transactionId": transactionId], nil)
-
-    // Trường hợp thanh toán thất bại
-    // và thực hiện thông báo lại cho TiniApp SDK thì thực hiện đoạn code sau:
-    self.completedHandler(nil, [NSError errorWithDomain:@"TINI_SDK" code:400 userInfo:@{NSLocalizedDescriptionKey: @"{\"action\":\"goto_home\",\"msg_err\":\"Something's wrong\"}"}]);
   }
 ```
 
