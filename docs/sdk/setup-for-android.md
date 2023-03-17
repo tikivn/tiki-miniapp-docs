@@ -337,7 +337,13 @@ tiniAppConfigBuilder.registerTiniAppCallback(object : TiniAppInterface {
   ) {
     val bundle = Bundle()
     bundle.putString("transactionId", transactionId)
+    // Trường hợp thanh toán thành công
+    // và thực hiện thông báo lại cho TiniApp SDK thì thực hiện đoạn code sau:
     callback?.onSuccess(bundle)
+
+    // Trường hợp thanh toán thất bại
+    // và thực hiện thông báo lại cho TiniApp SDK thì thực hiện đoạn code sau:
+    callback?.onError("{\"action\":\"goto_home\",\"msg_err\":\"Something's wrong\"}")
   }
 })
 ```

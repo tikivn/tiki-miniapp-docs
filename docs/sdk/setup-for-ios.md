@@ -339,6 +339,7 @@ func getUserInfo(completedHandler: (TiniUser?, Error?) -> Void) {
 
   </TabItem>
 </Tabs>
+
 ##### 6.2. Tích hợp thanh toán
 
 Khi một Tini App cần thanh toán một đơn hàng, `TiniAppSDK` sẽ gọi tới hàm delegate `openPaymentWithTransactionId:amount:completeHandler`
@@ -373,7 +374,13 @@ Bạn có thể implement delegate này như sau.
 ```swift
   func openPayment(transactionId: String, amount: Double, completedHandler: @escaping ([String : Any]?, Error?) -> Void) {
     //mở flow thanh toán và gọi completedHander bên dưới
+    // Trường hợp thanh toán thành công
+    // và thực hiện thông báo lại cho TiniApp SDK thì thực hiện đoạn code sau:
     completedHandler(["transactionId": transactionId], nil)
+
+    // Trường hợp thanh toán thất bại
+    // và thực hiện thông báo lại cho TiniApp SDK thì thực hiện đoạn code sau:
+    self.completedHandler(nil, [NSError errorWithDomain:@"TINI_SDK" code:400 userInfo:@{NSLocalizedDescriptionKey: @"{\"action\":\"goto_home\",\"msg_err\":\"Something's wrong\"}"}]);
   }
 ```
 
