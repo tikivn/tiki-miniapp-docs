@@ -49,7 +49,7 @@ target 'ExampleSDK' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod "TiniAppSDK", "~> 1.9.2"
+  pod "TiniAppSDK", "~> 1.9.5"
 
 end
 
@@ -76,7 +76,7 @@ end
 
 ```pod
 # ...
-pod 'TiniAppSDK', '~> 1.9.2'
+pod 'TiniAppSDK', '~> 1.9.5'
 # ...
 ```
 
